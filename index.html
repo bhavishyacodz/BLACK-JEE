@@ -114,7 +114,7 @@ function scheduleTick(){
  const releaseAt=midnight+18*60*60*1000,released=now>=releaseAt;
  $("solutionCountdown").textContent=released?"RESULT AVAILABLE":duration(releaseAt-now);
  $("solutionCountdown").classList.toggle("schedule-green",released);
- if(lastLoadedChallengeDate!==activeDate)loadQuestion();
+ if(supabase&&lastLoadedChallengeDate!==activeDate)loadQuestion();
  if(released&&supabase&&lastSolutionCheck!==resultDate){
   lastSolutionCheck=resultDate;
   supabase.functions.invoke("released-solution",{body:{question_date:resultDate}}).then(({data,error})=>{
