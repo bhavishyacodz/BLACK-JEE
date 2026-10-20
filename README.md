@@ -18,8 +18,8 @@ The daily challenge closes at **12:00 PM IST**. The official result panel is sch
 
 ## Quick start — owner/Admin
 
-1. Tap **ADMIN** on the website and enter your owner email.
-2. Tap **SEND SIGN-IN LINK** and open the email link on the same device/browser.
+1. Tap **ADMIN** on the website; the owner dashboard opens in a separate browser tab.
+2. Enter your owner email and password, then choose **OPEN ADMIN DASHBOARD**.
 3. If you see an admin-role warning, follow section 2 below to grant your owner account the admin role.
 4. In **Publish today's question**, enter the date, title, tags, difficulty, question, optional choices and solution; then tap **SAVE & GO LIVE**.
 5. The current `index.html` already contains the project's publishable key. Do not replace it unless you deliberately rotate the key.
@@ -32,6 +32,7 @@ The SQL creates:
 - \`attempt_submissions\` — name, time taken, optional photo path, review/publication state.
 - A **private** Storage bucket named \`attempt-photos\`. Photo URLs are signed for viewing; pending work is not publicly listed. The public question query cannot read the official \`solution\` column; \`get_released_solution\` releases it at 6 PM IST.
 - RLS policies so visitors can read live questions and submit attempts, the public sees only approved submissions, and only an account with the admin app-metadata role can manage questions or review submissions.
+- An index for submission/question joins. Official solutions are served through the `released-solution` Edge Function after the release gate; the database RPC is restricted to `service_role`.
 - A sample challenge for the active challenge's closing date. Publish the next day's challenge in Admin before noon.
 
 ## 2. Give your account admin access
@@ -71,7 +72,15 @@ GitHub Pages serves this static site; Supabase supplies the database, auth and p
 
 Question statements and solutions are plain text; line breaks are preserved. Answer options are one per line. Keep student names to nicknames/first names if you want to minimize personal information.
 
-## 5. Verify the setup
+## 5. Submission review and cleanup
+
+The Admin dashboard includes search, status filters, total/pending/reviewed/published counts, and page controls. Approve & publish adds work to Hall of Proof; Mark reviewed keeps it private; Unpublish removes it from the public list. CSV export downloads the currently filtered records. Individual deletion downloads a CSV first and removes the submission plus its associated photo. Clear Pending and Clear Reviewed also export first; Clear Reviewed excludes published work. Clear All includes published submissions and requires typing `CLEAR ALL BLACK JEE`, followed by a second confirmation after the CSV export starts.
+
+Deletion runs through the `admin-cleanup` Edge Function. It verifies the current signed-in user's server-managed `app_metadata.role = admin` before using server-only credentials. Never put a service-role key in this repository or browser code.
+
+For additional authentication hardening, open **Supabase Dashboard → Authentication → Settings / Security and Protection** and enable **Leaked password protection**. This setting must be switched on in the dashboard.
+
+## 6. Verify the setup
 
 After running the SQL, check the seeded question:
 \`\`\`sql
