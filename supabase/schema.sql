@@ -39,11 +39,12 @@ grant select on public.daily_questions to anon, authenticated;
 grant insert, update, delete on public.daily_questions to authenticated;
 grant select, insert on public.attempt_submissions to anon, authenticated;
 grant update on public.attempt_submissions to authenticated;
+grant select, insert on table storage.objects to anon, authenticated;
 
 drop policy if exists "Live questions are public; admins see all" on public.daily_questions;
 create policy "Live questions are public; admins see all"
 on public.daily_questions for select to anon, authenticated
-using ((is_live = true and question_date <= current_date)
+using ((is_live = true and question_date <= (now() at time zone 'Asia/Kolkata')::date)
   or (auth.jwt()->'app_metadata'->>'role' = 'admin'));
 
 drop policy if exists "Admins can insert questions" on public.daily_questions;
@@ -70,7 +71,7 @@ with check (
   and char_length(trim(display_name)) between 1 and 60
   and exists (
     select 1 from public.daily_questions q
-    where q.id = question_id and q.is_live = true
+    where q.id = attempt_submissions.question_id and q.is_live = true
   )
 );
 
@@ -110,13 +111,13 @@ using (
   )
 );
 
--- Seed a sample challenge for the day this setup is run.
+-- Seed a sample challenge for today's India date when this setup is run.
 -- If a row already exists for today, it is left unchanged.
 insert into public.daily_questions
   (question_date, title, statement, tags, difficulty, options, solution, solution_published, is_live)
 values
   (
-    current_date,
+    (now() at time zone 'Asia/Kolkata')::date,
     'The Grand Unification Problem',
     'A uniform conducting rod of mass m = 1 kg and length l = 1 m slides down two smooth vertical conducting rails. A uniform magnetic field B = 2 T is perpendicular to the plane of the rails. The rails are connected to an ideal capacitor C = 0.5 F. The rod is released from rest and falls h = 15 m; at that point, a switch disconnects the capacitor. All stored electrical energy is converted into N = 1.0 × 10^20 identical photons. The beam passes through an equilateral glass prism of refractive index μ = √2 at minimum deviation and then strikes a metal of work function Φ = 2.25 eV. Find δ_m × V_s. Take g = 10 m/s² and 1 eV = 1.6 × 10^-19 J.',
     array['Physics','EMI','Mechanics','Ray Optics','Modern Physics'],
