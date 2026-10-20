@@ -2,26 +2,37 @@
 
 A dark, mobile-friendly daily JEE challenge site. It includes a daily question board, start-to-submit timer, optional handwritten-photo upload, a public Hall of Proof for approved attempts, and an owner console for posting questions and reviewing submissions.
 
-## 1. Connect Supabase
+**Live website:** https://bhavishyacodz.github.io/BLACK-JEE/#challenge  
+**Repository:** https://github.com/bhavishyacodz/BLACK-JEE  
+**Correct Supabase project:** https://supabase.com/dashboard/project/yeydvwnihpwoixytcgek
 
-Project URL is already set in \`index.html\`:
-\`https://tmrrlbdyaldyomgiiwfc.supabase.co\`
+## Quick start — using the website
 
-1. Open your [Supabase project](https://supabase.com/dashboard/project/tmrrlbdyaldyomgiiwfc).
-2. Go to **SQL Editor → New query**.
-3. Copy all of \`supabase/schema.sql\` into the editor and run it once.
-4. Open **Project Settings → API Keys** and copy the **publishable key** (often begins with \`sb_publishable_\`; the legacy anon key also works).
-5. In \`index.html\`, replace \`PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE\` with that key.
-6. Commit the changed \`index.html\` to GitHub.
+1. Open the live website and wait for the daily question to load.
+2. Tap **START ATTEMPT**; the timer should begin.
+3. Select an option if the question has choices, then tap **SUBMIT ATTEMPT**.
+4. Enter a display name or nickname. You can attach a photo of handwritten work or skip the photo.
+5. The attempt stays private until the owner approves it in Admin.
+
+The daily challenge closes at **12:00 PM IST**. The official result panel is scheduled to update at **6:00 PM IST**. A question date represents the challenge's closing date. Publish the next day's question in Admin before noon so the website can switch without a gap.
+
+## Quick start — owner/Admin
+
+1. Tap **ADMIN** on the website and enter your owner email.
+2. Tap **SEND SIGN-IN LINK** and open the email link on the same device/browser.
+3. If you see an admin-role warning, follow section 2 below to grant your owner account the admin role.
+4. In **Publish today's question**, enter the date, title, tags, difficulty, question, optional choices and solution; then tap **SAVE & GO LIVE**.
+5. The current `index.html` already contains the project's publishable key. Do not replace it unless you deliberately rotate the key.
+6. The site code is already connected to this project.
 
 **Never put a Supabase service-role or secret key in \`index.html\`.** The publishable/anon key is intended for browser apps; Row Level Security (RLS) controls what it can access.
 
 The SQL creates:
 - \`daily_questions\` — daily prompt, options, tags and official solution.
 - \`attempt_submissions\` — name, time taken, optional photo path, review/publication state.
-- A **private** Storage bucket named \`attempt-photos\`. Photo URLs are signed for viewing; pending work is not publicly listed.
+- A **private** Storage bucket named \`attempt-photos\`. Photo URLs are signed for viewing; pending work is not publicly listed. The public question query cannot read the official \`solution\` column; \`get_released_solution\` releases it at 6 PM IST.
 - RLS policies so visitors can read live questions and submit attempts, the public sees only approved submissions, and only an account with the admin app-metadata role can manage questions or review submissions.
-- A sample challenge for the date the SQL is run. The owner can replace it in Admin.
+- A sample challenge for the active challenge's closing date. Publish the next day's challenge in Admin before noon.
 
 ## 2. Give your account admin access
 
