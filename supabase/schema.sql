@@ -51,23 +51,23 @@ using ((is_live = true and question_date <= (
     (now() at time zone 'Asia/Kolkata')::date
     + case when extract(hour from (now() at time zone 'Asia/Kolkata')) >= 12 then 1 else 0 end
   ))
-  or (auth.jwt()->'app_metadata'->>'role' = 'admin'));
+  or ((select auth.jwt())->'app_metadata'->>'role' = 'admin'));
 
 drop policy if exists "Admins can insert questions" on public.daily_questions;
 create policy "Admins can insert questions"
 on public.daily_questions for insert to authenticated
-with check (auth.jwt()->'app_metadata'->>'role' = 'admin');
+with check ((select auth.jwt())->'app_metadata'->>'role' = 'admin');
 
 drop policy if exists "Admins can update questions" on public.daily_questions;
 create policy "Admins can update questions"
 on public.daily_questions for update to authenticated
-using (auth.jwt()->'app_metadata'->>'role' = 'admin')
-with check (auth.jwt()->'app_metadata'->>'role' = 'admin');
+using ((select auth.jwt())->'app_metadata'->>'role' = 'admin')
+with check ((select auth.jwt())->'app_metadata'->>'role' = 'admin');
 
 drop policy if exists "Admins can delete questions" on public.daily_questions;
 create policy "Admins can delete questions"
 on public.daily_questions for delete to authenticated
-using (auth.jwt()->'app_metadata'->>'role' = 'admin');
+using ((select auth.jwt())->'app_metadata'->>'role' = 'admin');
 
 drop policy if exists "Visitors can submit attempts for review" on public.attempt_submissions;
 create policy "Visitors can submit attempts for review"
@@ -84,13 +84,13 @@ with check (
 drop policy if exists "Public sees approved attempts; admins see all" on public.attempt_submissions;
 create policy "Public sees approved attempts; admins see all"
 on public.attempt_submissions for select to anon, authenticated
-using (is_public = true or auth.jwt()->'app_metadata'->>'role' = 'admin');
+using (is_public = true or (select auth.jwt())->'app_metadata'->>'role' = 'admin');
 
 drop policy if exists "Admins can review attempts" on public.attempt_submissions;
 create policy "Admins can review attempts"
 on public.attempt_submissions for update to authenticated
-using (auth.jwt()->'app_metadata'->>'role' = 'admin')
-with check (auth.jwt()->'app_metadata'->>'role' = 'admin');
+using ((select auth.jwt())->'app_metadata'->>'role' = 'admin')
+with check ((select auth.jwt())->'app_metadata'->>'role' = 'admin');
 
 -- Private storage: unapproved photo URLs are not publicly accessible.
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
@@ -109,7 +109,7 @@ on storage.objects for select to anon, authenticated
 using (
   bucket_id = 'attempt-photos'
   and (
-    auth.jwt()->'app_metadata'->>'role' = 'admin'
+    (select auth.jwt())->'app_metadata'->>'role' = 'admin'
     or exists (
       select 1 from public.attempt_submissions s
       where s.photo_path = storage.objects.name and s.is_public = true
