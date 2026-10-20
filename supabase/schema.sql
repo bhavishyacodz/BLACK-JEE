@@ -35,7 +35,7 @@ alter table public.attempt_submissions enable row level security;
 
 revoke all on public.daily_questions from anon, authenticated;
 revoke all on public.attempt_submissions from anon, authenticated;
-grant select on public.daily_questions to anon, authenticated;
+grant select (id, question_date, title, statement, tags, difficulty, options, solution_published, is_live, created_at) on public.daily_questions to anon, authenticated;
 grant insert, update, delete on public.daily_questions to authenticated;
 grant select, insert on public.attempt_submissions to anon, authenticated;
 grant update on public.attempt_submissions to authenticated;
@@ -44,7 +44,10 @@ grant select, insert on table storage.objects to anon, authenticated;
 drop policy if exists "Live questions are public; admins see all" on public.daily_questions;
 create policy "Live questions are public; admins see all"
 on public.daily_questions for select to anon, authenticated
-using ((is_live = true and question_date <= (now() at time zone 'Asia/Kolkata')::date)
+using ((is_live = true and question_date <= (
+    (now() at time zone 'Asia/Kolkata')::date
+    + case when extract(hour from (now() at time zone 'Asia/Kolkata')) >= 12 then 1 else 0 end
+  ))
   or (auth.jwt()->'app_metadata'->>'role' = 'admin'));
 
 drop policy if exists "Admins can insert questions" on public.daily_questions;
@@ -111,19 +114,41 @@ using (
   )
 );
 
+-- Return the official solution only at 6:00 PM IST on the challenge closing date.
+create or replace function public.get_released_solution(p_question_date date)
+returns text
+language sql
+stable
+security definer
+set search_path = ''
+as $function$
+  select case
+    when (now() at time zone 'Asia/Kolkata') >= (p_question_date::timestamp + interval '18 hours')
+    then q.solution
+    else null
+  end
+  from public.daily_questions as q
+  where q.question_date = p_question_date
+    and q.is_live = true
+  limit 1;
+$function$;
+revoke all on function public.get_released_solution(date) from public;
+grant execute on function public.get_released_solution(date) to anon, authenticated;
+
 -- Seed a sample challenge for today's India date when this setup is run.
 -- If a row already exists for today, it is left unchanged.
 insert into public.daily_questions
   (question_date, title, statement, tags, difficulty, options, solution, solution_published, is_live)
 values
   (
-    (now() at time zone 'Asia/Kolkata')::date,
-    'The Grand Unification Problem',
-    'A uniform conducting rod of mass m = 1 kg and length l = 1 m slides down two smooth vertical conducting rails. A uniform magnetic field B = 2 T is perpendicular to the plane of the rails. The rails are connected to an ideal capacitor C = 0.5 F. The rod is released from rest and falls h = 15 m; at that point, a switch disconnects the capacitor. All stored electrical energy is converted into N = 1.0 × 10^20 identical photons. The beam passes through an equilateral glass prism of refractive index μ = √2 at minimum deviation and then strikes a metal of work function Φ = 2.25 eV. Find δ_m × V_s. Take g = 10 m/s² and 1 eV = 1.6 × 10^-19 J.',
-    array['Physics','EMI','Mechanics','Ray Optics','Modern Physics'],
-    'Extreme',
-    '["A) 60","B) 90","C) 120","D) 150"]'::jsonb,
-    '1. The motional emf is V = Blv. With C dV/dt = CBl a, the induced current is i = CBl a. The upward magnetic force is iBl = CB²l²a. Thus mg = (m + CB²l²)a, so a = 10/3 m/s². 2. From v² = 2ah with h = 15 m, v = 10 m/s. Therefore V = Blv = 20 V and capacitor energy U = ½CV² = 100 J. 3. Each photon has energy U/N = 10^-18 J = 6.25 eV. 4. For A = 60° and μ = √2, the minimum-deviation formula gives δ_m = 30°. 5. K_max = 6.25 − 2.25 = 4.00 eV, so V_s = 4.00 V. Product = 30 × 4 = 120. Correct option: C.',
+    ((now() at time zone 'Asia/Kolkata')::date
+      + case when extract(hour from (now() at time zone 'Asia/Kolkata')) >= 12 then 1 else 0 end),
+    'SHM: Speed at Half Amplitude',
+    'A particle performs simple harmonic motion with amplitude A and angular frequency ω. What is its speed when its displacement from the mean position is A/2?',
+    array['Physics','SHM','JEE Main'],
+    'JEE Main',
+    '["A) ωA/2","B) √3ωA/2","C) ωA","D) 2ωA"]'::jsonb,
+    'For simple harmonic motion, v² = ω²(A² − x²). At x = A/2, v = ω√(A² − A²/4) = (√3/2)ωA. Correct option: B.',
     false,
     true
   )
