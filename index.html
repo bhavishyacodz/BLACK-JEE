@@ -24,7 +24,7 @@
 </main>
 <footer class="footer"><div class="wrap footer-inner"><span>© BLACK JEE · NO MERCY.</span><span>Challenge yourself. Respect the work. Protect your privacy.</span></div></footer>
 <script>
-const supabaseReady = new Promise((resolve,reject)=>{const urls=["https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js","https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.js"];let i=0;function loadNext(){if(i>=urls.length){reject(new Error("Could not load Supabase from either CDN. Your network may be blocking these services."));return;}const s=document.createElement("script");s.src=urls[i++];s.onload=()=>window.supabase?resolve():loadNext();s.onerror=loadNext;document.head.appendChild(s);}loadNext();});
+const supabaseReady = new Promise((resolve,reject)=>{const urls=["https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm","https://esm.sh/@supabase/supabase-js@2?bundle"];let i=0;async function loadNext(){if(i>=urls.length){reject(new Error("Could not load the Supabase browser module from either CDN. Check whether your network blocks these services."));return;}const url=urls[i++];try{const mod=await import(url);if(mod&&typeof mod.createClient==="function"){window.supabase=mod;resolve(mod);return;}}catch(e){}loadNext();}loadNext();});
 </script>
 <script>
 /* Paste your project's publishable key from Supabase Dashboard > Project Settings > API Keys. Never use a service_role/secret key here. */
