@@ -136,8 +136,8 @@ as $function$
     and (now() at time zone 'Asia/Kolkata') >= (p_question_date::timestamp + interval '18 hours')
   limit 1;
 $function$;
-revoke all on function public.get_released_solution(date) from public;
-grant execute on function public.get_released_solution(date) to anon, authenticated;
+revoke all on function public.get_released_solution(date) from public, anon, authenticated;
+grant execute on function public.get_released_solution(date) to service_role;
 
 -- Seed a sample challenge for today's India date when this setup is run.
 -- If a row already exists for today, it is left unchanged.
