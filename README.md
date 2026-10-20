@@ -39,7 +39,7 @@ The SQL creates:
 
 1. Publish the site and configure its URL under **Supabase → Authentication → URL Configuration → Redirect URLs**. Add your GitHub Pages URL, for example:
    \`https://bhavishyacodz.github.io/BLACK-JEE/**\`
-2. In the site's **Admin** panel, enter your owner email and choose **Send sign-in link**. Open the email link on the same browser/device.
+2. Enter your owner email and password and choose **OPEN ADMIN DASHBOARD**.
 3. After your account exists in Supabase Auth, open **SQL Editor** and run this query, replacing the email with your own:
    \`\`\`sql
    update auth.users
