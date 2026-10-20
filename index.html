@@ -23,6 +23,23 @@ body{overflow-x:hidden;background:radial-gradient(ellipse at 78% 7%,rgba(237,38,
 @media(max-width:780px){.hero{padding-top:60px}.hero:before{right:-24%;top:0;width:75vw;height:75vw;opacity:.6}.protocol-grid{grid-template-columns:1fr}.protocol-card{min-height:unset;padding:18px}.protocol-card h3{margin-top:10px}.timerbar{position:static;box-shadow:none}.schedule-strip{gap:9px}.schedule-box{padding:12px}.section-head{align-items:flex-start}}
 @media(max-width:480px){.hero{padding-top:44px}.hero-stats{max-width:100%;gap:10px}.hero-stats .stat strong{font-size:1.15rem}.hero-stats .stat span{font-size:.63rem}.hero-bottom{align-items:stretch}.hero-bottom .btn{width:100%}.schedule-box small{font-size:.62rem;letter-spacing:.04em}.schedule-box strong{font-size:.95rem}.protocol-card{padding:16px}.privacy-note{padding:12px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* BLACK-JEE showcase UX polish */
+.question-title{font-size:clamp(1.35rem,3vw,2rem);line-height:1.2;letter-spacing:-.035em;margin:16px 0 12px}
+.question-text{font-size:clamp(1rem,1.5vw,1.12rem);line-height:1.9;overflow-wrap:anywhere;color:#ececef}
+.options{display:grid;gap:10px;margin:20px 0}
+.option{display:flex;align-items:center;gap:12px;min-height:60px;padding:13px 15px;border:1px solid #343438;border-radius:10px;background:linear-gradient(110deg,#171719,#101011);transition:border-color .18s,background .18s,transform .18s;cursor:pointer}
+.option:hover{border-color:#87404a;background:#201518;transform:translateY(-1px)}
+.option input{accent-color:#ef3340;flex:0 0 auto;width:18px;height:18px}
+.option:has(input:checked){border-color:#ef3340;background:linear-gradient(100deg,#311519,#171113);box-shadow:inset 3px 0 #ef3340,0 0 0 1px #ef334022}
+.option span{line-height:1.55;overflow-wrap:anywhere}
+.card:has(#questionOptions){border-color:#38262a;background:radial-gradient(ellipse at 0 0,#211114 0,transparent 48%),#0d0d0e}
+#questionText{white-space:pre-wrap}
+#questionOptions{scroll-margin-top:20px}
+#startBtn,#submitBtn{min-height:48px;letter-spacing:.045em}
+button:focus-visible,.option:focus-within,a:focus-visible{outline:2px solid #ff7781;outline-offset:3px}
+@media(max-width:520px){.question-title{font-size:1.4rem}.question-text{line-height:1.8}.option{min-height:58px;padding:12px}.card-body{padding:clamp(14px,4vw,22px)}}
+@media(prefers-reduced-motion:reduce){.option{transition:none}.option:hover{transform:none}}
 </style>
 </head>
 <body>
