@@ -72,7 +72,20 @@ GitHub Pages serves this static site; Supabase supplies the database, auth and p
 
 Question statements and solutions are plain text; line breaks are preserved. Answer options are one per line. Keep student names to nicknames/first names if you want to minimize personal information.
 
-## 5. Submission review and cleanup
+## 5. Question Studio and bulk scheduling
+
+The Admin **Question Studio** has a **Load Grand Unification Challenge** button that fills the editor with the integrated Electromagnetic Induction, Mechanics, Ray Optics, and Photoelectric Effect problem plus its worked solution. Review the date and wording before saving. The solution is kept unpublished by default.
+
+To schedule multiple questions, prepare a UTF-8 CSV with this exact header row:
+
+```csv
+question_date,title,statement,option_a,option_b,option_c,option_d,tags,difficulty,solution
+2026-10-24,"Example question","Question text goes here","A","B","C","D","Physics|Mechanics","JEE Advanced","Worked solution goes here"
+```
+
+Use ISO dates (`YYYY-MM-DD`). Quote any field containing commas or line breaks. Tags can be separated with `|`. In Admin, use **Get CSV Template**, select your file, choose **Validate & Preview**, check row-level errors, then **Import New Dates**. The import adds only dates that are not already present; existing dates are skipped rather than overwritten. Imported solutions remain unpublished. Keep CSV batches under 2 MB and fix duplicate dates before importing.
+
+## 6. Submission review and cleanup
 
 The Admin dashboard includes search, status filters, total/pending/reviewed/published counts, and page controls. Approve & publish adds work to Hall of Proof; Mark reviewed keeps it private; Unpublish removes it from the public list. CSV export downloads the currently filtered records. Individual deletion downloads a CSV first and removes the submission plus its associated photo. Clear Pending and Clear Reviewed also export first; Clear Reviewed excludes published work. Clear All includes published submissions and requires typing `CLEAR ALL BLACK JEE`, followed by a second confirmation after the CSV export starts.
 
@@ -80,7 +93,7 @@ Deletion runs through the `admin-cleanup` Edge Function. It verifies the current
 
 For additional authentication hardening, open **Supabase Dashboard → Authentication → Settings / Security and Protection** and enable **Leaked password protection**. This setting must be switched on in the dashboard.
 
-## 6. Verify the setup
+## 7. Verify the setup
 
 After running the SQL, check the seeded question:
 \`\`\`sql
