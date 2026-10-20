@@ -144,7 +144,7 @@ function parseCsvText(text){
  if(quoted)throw new Error("CSV contains an unclosed quoted field.");
  if(field.length||row.length){row.push(field.replace(/\r$/,""));if(row.some(v=>v.trim()!==""))rows.push(row);}
  if(rows.length<2)throw new Error("CSV needs a header row and at least one question.");
- const headers=rows.shift().map(h=>h.trim().toLowerCase());
+ const headers=rows.shift().map(h=>h.replace(/^\\uFEFF/,"").trim().toLowerCase());
  const required=["question_date","title","statement","option_a","option_b","option_c","option_d","tags","difficulty","solution"];
  const missing=required.filter(h=>!headers.includes(h));
  if(missing.length)throw new Error("Missing CSV headers: "+missing.join(", "));
