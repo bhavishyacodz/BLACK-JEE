@@ -33,6 +33,9 @@ create table if not exists public.attempt_submissions (
 alter table public.daily_questions enable row level security;
 alter table public.attempt_submissions enable row level security;
 
+-- Supports question joins and admin review queries.
+create index if not exists attempt_submissions_question_id_idx on public.attempt_submissions(question_id);
+
 revoke all on public.daily_questions from anon, authenticated;
 revoke all on public.attempt_submissions from anon, authenticated;
 grant select (id, question_date, title, statement, tags, difficulty, options, solution_published, is_live, created_at) on public.daily_questions to anon, authenticated;
@@ -114,7 +117,9 @@ using (
   )
 );
 
--- Return the official solution only at 6:00 PM IST on the challenge closing date.
+-- Return the official solution only after 6:00 PM IST, and only when the owner explicitly marked it for publication.
+-- SECURITY DEFINER is intentional: public clients must not have direct SELECT access to solution.
+-- Keep this function narrowly scoped and release-gated.
 create or replace function public.get_released_solution(p_question_date date)
 returns text
 language sql
@@ -122,14 +127,13 @@ stable
 security definer
 set search_path = ''
 as $function$
-  select case
-    when (now() at time zone 'Asia/Kolkata') >= (p_question_date::timestamp + interval '18 hours')
-    then q.solution
-    else null
-  end
+  select q.solution
   from public.daily_questions as q
   where q.question_date = p_question_date
     and q.is_live = true
+    and q.solution_published = true
+    and p_question_date <= (now() at time zone 'Asia/Kolkata')::date
+    and (now() at time zone 'Asia/Kolkata') >= (p_question_date::timestamp + interval '18 hours')
   limit 1;
 $function$;
 revoke all on function public.get_released_solution(date) from public;
