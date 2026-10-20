@@ -81,12 +81,12 @@ function scheduleTick(){
  if(lastLoadedChallengeDate!==activeDate)loadQuestion();
  if(released&&supabase&&lastSolutionCheck!==resultDate){
   lastSolutionCheck=resultDate;
-  supabase.rpc("get_released_solution",{p_question_date:resultDate}).then(({data,error})=>{
+  supabase.functions.invoke("released-solution",{body:{question_date:resultDate}}).then(({data,error})=>{
    if(error){console.error(error);$("solutionStatusCopy").textContent="Result service unavailable. Refresh and try again.";return;}
-   if(data){
+   if(data?.solution){
     $("releasedResult").classList.add("show");
     $("releasedResultMeta").textContent="CHALLENGE DATE · "+resultDate+" · RELEASED 6:00 PM IST";
-    $("releasedResultText").textContent=data;
+    $("releasedResultText").textContent=data.solution;
     $("solutionStatus").textContent="Official result is live";
     $("solutionStatusCopy").textContent="The official solution for the challenge that closed today is available below.";
    }else{
