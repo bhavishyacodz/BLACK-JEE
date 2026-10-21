@@ -64,7 +64,9 @@ body.attempt-page .submission-form{margin-top:24px}
 body.attempt-page .action-row .btn{flex:1 1 180px}
 body.attempt-page .solution-panel.show{margin-top:18px}
 
-</style>
+.question-text{white-space:pre-wrap;overflow-wrap:anywhere;font-size:clamp(1rem,2.4vw,1.12rem);line-height:1.9;letter-spacing:.005em}.question-text mjx-container,.option mjx-container,.solution-body mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}.solution-body{overflow-wrap:anywhere}.option{min-height:56px;align-items:flex-start}.option span{line-height:1.7;overflow-wrap:anywhere}.math-help{font-size:.82rem;line-height:1.7;margin:-3px 0 14px}.math-help code{color:#ff9ca5;background:#1c1214;padding:2px 5px;border-radius:4px}.question-preview{margin:12px 0 18px;padding:16px;border:1px solid #39303f;border-radius:10px;background:linear-gradient(145deg,#121015,#0b0b0b);overflow:hidden}.question-preview h4{font-size:1.05rem;margin:12px 0}.preview-options{display:grid;gap:8px;margin-top:12px}.preview-option{padding:10px 12px;border:1px solid #2b2b2b;border-radius:8px;overflow-wrap:anywhere}@media(max-width:600px){.question-text{font-size:1rem;line-height:1.85}.option{padding:15px 13px;gap:11px}.question-title{overflow-wrap:anywhere}.math-help{font-size:.78rem}.question-preview{padding:12px}}</style>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{typeset:false}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body class="attempt-page">
 <a class="skip-link" href="#challenge">Skip to today's challenge</a>
@@ -109,6 +111,7 @@ function clearNotify(el){el.className="notice";el.textContent="";}
 function formatTime(s){s=Math.max(0,Math.floor(s));return [Math.floor(s/3600),Math.floor(s%3600/60),s%60].map(n=>String(n).padStart(2,"0")).join(":");}
 function setTimer(){const s=startedAt?Math.floor((Date.now()-startedAt)/1000):elapsed;$("timer").textContent=formatTime(s);$("timer").classList.toggle("running",!!startedAt);$("timerState").textContent=startedAt?"CLOCK RUNNING":elapsed?"ATTEMPT PAUSED / SUBMITTED":"CLOCK NOT STARTED";$("progressFill").style.width=startedAt?Math.min(100,s/900*100)+"%":elapsed?"100%":"0%";$("progressLabel").textContent=startedAt?"TIME IS TICKING":elapsed?"ATTEMPT SUBMITTED":"READY WHEN YOU ARE";}
 function startAttempt(){if(startedAt)return;if(elapsed||submissionSaved){notify($("attemptNotice"),"This attempt has already been submitted. Refresh to start a new session.","error");return;}if(!currentQuestion?.id&&!currentQuestion?.question_link_id){notify($("attemptNotice"),"The live question is still loading. Please wait and try again.","error");return;}startedAt=Date.now();sessionQuestionId=currentQuestion.id||null;ticker=setInterval(setTimer,1000);$("startBtn").disabled=true;$("submitBtn").disabled=false;document.querySelectorAll('input[name="answer"]').forEach(input=>input.disabled=false);$("timerState").textContent="CLOCK RUNNING";setTimer();}
+function typesetMath(el){if(!el)return;const run=()=>{if(window.MathJax&&window.MathJax.typesetPromise){try{window.MathJax.typesetClear([el]);window.MathJax.typesetPromise([el]).catch(()=>{});}catch(e){}}};if(window.MathJax&&window.MathJax.startup&&window.MathJax.startup.promise){window.MathJax.startup.promise.then(run).catch(()=>{});}else{window.addEventListener("load",run,{once:true});}}
 function renderQuestion(q){
  currentQuestion=q;selectedOption=null;submissionSaved=false;submissionNameValue="";
  if(photoWindowTicker){clearInterval(photoWindowTicker);photoWindowTicker=null;}
@@ -135,7 +138,7 @@ function renderQuestion(q){
   (q?.options||[]).forEach(opt=>{const label=document.createElement("label");label.className="option";const input=document.createElement("input");input.type="radio";input.name="answer";input.value=opt;input.disabled=true;input.addEventListener("change",()=>{selectedOption=opt;if($("answerSelection")){$("answerSelection").textContent="Selected answer: "+opt;$("answerSelection").classList.add("active");}});const span=document.createElement("span");span.textContent=opt;label.append(input,span);$("questionOptions").appendChild(label);});
  }
  if(q?.solution_published&&q?.solution){$("solutionPanel").classList.add("show");$("solutionText").textContent=q.solution;$("solutionByline").textContent="OFFICIAL SOLUTION · "+(q.question_date||"");$("solutionStatus").textContent="Official solution is live";$("solutionStatusCopy").textContent="The owner has released the step-by-step solution.";}
- else{$("solutionPanel").classList.remove("show");$("solutionStatus").textContent="Locked until review";$("solutionStatusCopy").textContent="The official solution appears here when the challenge owner publishes it.";}
+ else{$("solutionPanel").classList.remove("show");$("solutionStatus").textContent="Locked until review";$("solutionStatusCopy").textContent="The official solution appears here when the challenge owner publishes it.";}typesetMath($("questionText"));typesetMath($("questionOptions"));typesetMath($("solutionText"));
 }
 async function loadQuestion(){
  lastLoadedChallengeDate=today();lastSolutionCheck=null;
