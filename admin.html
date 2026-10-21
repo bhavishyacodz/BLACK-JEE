@@ -139,10 +139,10 @@ if($("adminDate"))$("adminDate").value = today();
 let supabase = null, currentQuestion = null, startedAt = null, ticker = null, elapsed = 0, selectedOption = null, chosenPhoto = null, adminUser = null;
 let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null,lastSolutionCheckAt=0;
 const fallbackQuestion = {
- id:null, question_date:today(), title:"Ohm's Law: Find Current", difficulty:"JEE Main",
- tags:["Physics","Current Electricity","JEE Main"],
- statement:"A 6 V battery is connected across a 3 Ω resistor. What current flows through the resistor?",
- options:["A) 1 A","B) 2 A","C) 3 A","D) 4 A"], solution:"The official solution has not been published yet.", solution_published:false
+ id:null, question_date:today(), title:"Loading challenge board", difficulty:"",
+ tags:[],
+ statement:"Checking Supabase for the active or next scheduled challenge…",
+ options:[], solution:"", solution_published:false
 };
 renderQuestion(fallbackQuestion);
 $("liveStatus").textContent="CONNECTING TO LIVE BOARD";
