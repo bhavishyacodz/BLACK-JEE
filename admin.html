@@ -71,7 +71,7 @@ button:focus-visible,a:focus-visible{outline:3px solid rgba(255,83,100,.8);outli
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body class="admin-page">
-<header class="topbar"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span><span>BLACK <span class="red">JEE</span></span></a><div class="nav-right"><a class="nav-link" href="#challenge">TODAY'S CHALLENGE</a><a class="nav-link" href="#hall">HALL OF PROOF</a><a class="nav-link" href="admin.html?admin=1" target="_blank" rel="noopener">ADMIN DASHBOARD ↗</a><button class="btn btn-quiet" id="adminNav" type="button" onclick="window.open('admin.html?admin=1','_blank','noopener')">ADMIN ↗</button></div></div></header>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span><span>BLACK <span class="red">JEE</span></span></a><div class="nav-right"><a class="nav-link" href="#challenge">TODAY'S CHALLENGE</a><a class="nav-link" href="#hall">HALL OF PROOF</a><a class="nav-link" href="attempt.html?admin=1" target="_blank" rel="noopener">QUESTION STUDIO ↗</a><a class="nav-link" href="admin.html?admin=1" target="_blank" rel="noopener">ADMIN DASHBOARD ↗</a><button class="btn btn-quiet" id="adminNav" type="button" onclick="window.open('admin.html?admin=1','_blank','noopener')">ADMIN ↗</button></div></div></header>
 <main>
 <section class="hero wrap"><div class="eyebrow"><span class="live-dot"></span><span>Daily challenge / no shortcuts</span><span class="tag" id="dateTag">TODAY</span></div><h1>NO<br><span>MERCY.</span></h1><p class="hero-copy">The question doesn't care about your ego. One problem. A running clock. Your working on paper. Put your understanding to the test.</p><div class="hero-bottom"><a class="btn btn-red" href="#challenge">FACE TODAY'S QUESTION ↓</a><span class="tiny muted">BASICS → ADVANCED → EXTREME</span></div><div class="schedule-strip"><div class="schedule-box"><small>Challenge closes · 12:00 PM IST</small><strong id="challengeCountdown">12:00 PM IST</strong></div><div class="schedule-box"><small>Official result · 6:00 PM IST</small><strong id="solutionCountdown">6:00 PM IST</strong></div></div><div class="hero-stats"><div class="stat"><strong>01</strong><span>Question daily</span></div><div class="stat"><strong>∞</strong><span>Ways to think</span></div><div class="stat"><strong>0</strong><span>Excuses accepted</span></div></div></section>
 <section class="section wrap" id="challenge"><div class="section-head"><div><div class="tiny red">01 / The arena</div><h2>Today's challenge</h2></div><span class="tag" id="liveStatus">LOADING QUESTION</span></div>
@@ -137,10 +137,10 @@ async function loadQuestion(){
  const showEmpty=()=>{currentQuestion=null;$("questionTitle").textContent="No live question";$("questionText").textContent="No live question link or written question is published yet. Check back soon.";$("questionMeta").textContent="BLACK JEE / WAITING FOR THE NEXT CHALLENGE";$("questionChips").innerHTML="";$("questionOptions").innerHTML="";$("liveStatus").textContent="NO LIVE QUESTION";$("dateTag").textContent="COMING SOON";$("startBtn").disabled=true;$("submitBtn").disabled=true;};
  if(!supabase){showEmpty();return;}
  try{
-  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("*").eq("is_live",true).lte("question_date",today()).order("question_date",{ascending:false}).limit(1).maybeSingle();
+  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at").eq("is_live",true).lte("question_date",today()).order("question_date",{ascending:false}).limit(1).maybeSingle();
   if(writtenError)throw writtenError;
   if(!written){
-   const retry=await supabase.from("daily_questions").select("*").eq("is_live",true).order("question_date",{ascending:false}).limit(1).maybeSingle();
+   const retry=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at").eq("is_live",true).order("question_date",{ascending:false}).limit(1).maybeSingle();
    if(retry.error)throw retry.error;
    written=retry.data;
   }
