@@ -26,6 +26,46 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{background:radial-gradi
 /* Owner workspace polish */
 .admin-page #adminPanel{padding-top:28px;max-width:1160px;margin:0 auto}.admin-page .admin-grid,.admin-page .admin-grid>*{min-width:0}.admin-page .admin .card,.admin-page #adminPanel .card{border-radius:13px}.admin-page #adminPanel h1,.admin-page #adminPanel h2,.admin-page #adminPanel h3{letter-spacing:-.045em}.admin-page #adminPanel .card-top{gap:12px}.admin-page #adminPanel .field{min-width:0}.admin-page #adminPanel input,.admin-page #adminPanel textarea,.admin-page #adminPanel select{max-width:100%}.admin-page #adminPanel .review-item{border-radius:10px;border-color:#303540;background:#101216;padding:16px}.admin-page #adminPanel .review-actions{gap:8px}.admin-page #adminPanel .review-actions .btn{min-height:40px}.admin-page #adminPanel .question-preview{border-radius:11px;border-color:#303540;background:#0d0f13}.admin-page #adminPanel .preview-option{border-radius:8px;border-color:#303540;background:#14171d}.admin-page #adminPanel .admin-grid{gap:18px}.admin-page #adminPanel .submissions{gap:12px}.admin-page #adminPanel .tiny{color:#9ba3b0}.admin-page #adminPanel .red{color:#ff6570}.admin-page #adminPanel .divider{background:#292e37}@media(max-width:780px){.admin-page #adminPanel{padding-top:16px}.admin-page #adminPanel .admin-grid{grid-template-columns:1fr}.admin-page #adminPanel .card-body{padding:16px}}
 
+
+/* BLACK JEE — owner console visual refresh */
+:root{--bg:#080a0e;--panel:#10141b;--panel2:#151b24;--line:#28313d;--muted:#98a4b5;--white:#f3f6fb;--red:#ff4658;--red2:#d92940;--green:#5de0a1;--amber:#f4c46a}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:radial-gradient(ellipse at 50% -15%,rgba(255,70,88,.15),transparent 42%),radial-gradient(ellipse at 100% 45%,rgba(83,111,158,.08),transparent 32%),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-.012em}
+body:before{opacity:.055;background-size:34px 34px}::selection{background:rgba(255,70,88,.32);color:#fff}
+.wrap{width:min(1160px,calc(100% - 40px))}
+.topbar{background:rgba(8,10,14,.84);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(20px)}
+.nav{height:70px}.brand{font-size:.92rem;letter-spacing:.075em}.mark{width:36px;height:36px;clip-path:none;border-radius:10px;box-shadow:0 7px 24px rgba(255,70,88,.24)}
+.nav-link{padding:9px 12px;border-radius:9px;color:#aab4c3}.nav-link:hover{background:#171d26;color:#fff}
+.btn{border:1px solid #333e4d;background:linear-gradient(180deg,#1b222c,#141a22);color:#f5f7fb;border-radius:11px;padding:13px 17px;font-weight:700;transition:transform .18s,border-color .18s,box-shadow .18s;box-shadow:0 4px 12px #0002}
+.btn:hover{transform:translateY(-1px);border-color:#536174}.btn-red{background:linear-gradient(135deg,#ff5364,#d92740);border-color:#ff5364;box-shadow:0 9px 26px rgba(255,70,88,.2)}
+.btn-red:hover{background:linear-gradient(135deg,#ff6877,#e2344b);border-color:#ff8490}
+.hero{padding-top:clamp(48px,7vw,80px);padding-bottom:42px}h1{font-size:clamp(3.7rem,10vw,7rem);letter-spacing:-.09em;line-height:.85}h1 span{color:#ff5364}
+.hero-copy{color:#b0bac8;line-height:1.85}.schedule-box{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));border-color:#2b3542;border-radius:13px;padding:16px 18px}
+.section{padding:26px 0 62px}.section-head{gap:14px;margin-bottom:23px}.section-head h2{font-size:clamp(1.8rem,4vw,2.5rem);letter-spacing:-.06em}
+.tiny{font-size:.68rem;letter-spacing:.13em;font-weight:750}.tag{border-radius:999px;padding:7px 11px;background:rgba(255,70,88,.08);border:1px solid rgba(255,70,88,.23);font-weight:750;font-size:.65rem}
+.grid,.admin-grid,.form-grid{gap:16px}.card,.editor-card,.overview-card{border:1px solid #2b3542;border-radius:16px;background:linear-gradient(145deg,rgba(19,24,33,.98),rgba(11,14,20,.98));box-shadow:0 20px 60px rgba(0,0,0,.2);overflow:hidden}
+.card-top{padding:18px 21px;background:linear-gradient(100deg,rgba(255,255,255,.035),transparent);border-bottom:1px solid #28313d}.card-body{padding:clamp(18px,3vw,28px)}
+.question-title{font-size:clamp(1.5rem,3.6vw,2.1rem);letter-spacing:-.05em}.question-text{color:#e3e9f2;line-height:1.9}
+.chip{border:1px solid #303b49;background:#1a222d;color:#c4cedb;border-radius:999px;padding:6px 10px;font-size:.67rem;font-weight:650}
+.overview-card{padding:18px 20px}.overview-card strong{font-size:1.8rem;letter-spacing:-.06em}
+.editor-card{padding:clamp(17px,3vw,25px)}.editor-card h3{letter-spacing:-.04em}
+.field{gap:8px}.field label,.field>span{font-size:.69rem;letter-spacing:.1em;color:#b6c1cf;font-weight:750}
+input:not([type=radio]):not([type=checkbox]),textarea,select{width:100%;border:1px solid #354253;border-radius:10px;background:#0b1017;color:#f4f7fb;padding:13px 14px;outline:none;transition:border-color .18s,box-shadow .18s}
+input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:#ff5364;box-shadow:0 0 0 3px rgba(255,70,88,.13)}
+.question-preview{margin:14px 0 18px;padding:18px;border:1px solid #303b49;border-radius:13px;background:linear-gradient(145deg,#121923,#0c1016)}
+.preview-option{padding:12px 14px;border:1px solid #303b49;border-radius:9px;background:#151c25}
+.admin{border:1px solid #2b3542;border-radius:18px;background:linear-gradient(145deg,#121821,#0c1016);padding:clamp(17px,3vw,28px)}
+button:focus-visible,a:focus-visible{outline:3px solid rgba(255,83,100,.8);outline-offset:3px}
+@media(max-width:700px){
+ .wrap{width:calc(100% - 24px)}.nav{height:auto;min-height:62px;gap:8px}.nav-right{gap:3px;flex-wrap:wrap;justify-content:flex-end}.nav-link{font-size:.67rem;padding:7px 6px}.brand{gap:8px;font-size:.78rem}.mark{width:32px;height:32px}
+ .hero{padding-top:45px;padding-bottom:32px}h1{font-size:clamp(3.5rem,17vw,5.5rem)}.hero-bottom{display:flex;flex-direction:column;align-items:stretch}.hero-bottom .btn{width:100%}
+ .schedule-strip{grid-template-columns:1fr 1fr;gap:8px}.schedule-box{padding:12px 10px}.schedule-box small{font-size:.65rem}.schedule-box strong{font-size:1rem;overflow-wrap:anywhere}
+ .hero-stats{gap:14px}.stat strong{font-size:1.35rem}.stat span{font-size:.62rem}
+ .section{padding:22px 0 45px}.section-head{align-items:flex-start;flex-wrap:wrap}.section-head h2{font-size:1.8rem}
+ .card{border-radius:14px}.card-top{padding:15px}.card-body{padding:16px}.editor-card{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
 </style>
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{typeset:false}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
