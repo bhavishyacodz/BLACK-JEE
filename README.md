@@ -3,6 +3,7 @@
 A dark, mobile-friendly daily JEE challenge site. It includes a daily question board, start-to-submit timer, optional handwritten-photo upload, a public Hall of Proof for approved attempts, and an owner console for posting questions and reviewing submissions.
 
 **Live website:** https://bhavishyacodz.github.io/BLACK-JEE/#challenge  
+**Date-wise results archive:** https://bhavishyacodz.github.io/BLACK-JEE/archive.html  
 **Repository:** https://github.com/bhavishyacodz/BLACK-JEE  
 **Correct Supabase project:** https://supabase.com/dashboard/project/yeydvwnihpwoixytcgek
 
@@ -14,14 +15,14 @@ A dark, mobile-friendly daily JEE challenge site. It includes a daily question b
 4. Enter a display name or nickname. You can attach a photo of handwritten work or skip the photo.
 5. The attempt stays private until the owner approves it in Admin.
 
-The daily challenge closes at **12:00 PM IST**. The official result panel is scheduled to update at **6:00 PM IST**. A question date represents the challenge's closing date. Publish the next day's question in Admin before noon so the website can switch without a gap.
+The daily challenge closes at **12:00 PM IST**. Each challenge runs for **24 hours: 12:00 PM IST to 12:00 PM IST the next day**. Correct/incorrect feedback appears immediately after submission. The correct option, approved top-three winners, and worked solution (if published) are released at **6:00 PM IST on the closing date**. Schedule the next question in advance; it will go live automatically at noon.
 
 ## Quick start — owner/Admin
 
 1. Tap **ADMIN** on the website; the owner dashboard opens in a separate browser tab.
 2. Enter your owner email and password, then choose **OPEN ADMIN DASHBOARD**.
 3. If you see an admin-role warning, follow section 2 below to grant your owner account the admin role.
-4. In **Publish today's question**, enter the date, title, tags, difficulty, question, optional choices and solution; then tap **SAVE & GO LIVE**.
+4. Open **Question Studio** from the site. Enter the closing date, title, tags, difficulty, question, options, **correct option letter**, and worked solution; then tap **SAVE & GO LIVE**. Leave the results-release checkbox on to reveal the worked solution at 6:00 PM IST.
 5. The current `index.html` already contains the project's publishable key. Do not replace it unless you deliberately rotate the key.
 6. The site code is already connected to this project.
 
@@ -115,7 +116,7 @@ If tables appear in the database but the browser reports a table/API permission 
 
 ## Notes
 
-- The timer starts only when **Start Attempt** is clicked and stops on **Submit Attempt**.
+- The visible timer starts only when **Start Attempt** is clicked. The server records the start time and calculates completion time independently for leaderboard ranking.
 - Photo upload is optional. Supported images: JPG, PNG, WEBP, up to 6 MB.
 - An attempt is private until an admin approves it. The private Storage bucket also prevents direct public viewing of pending images.
 - This first version stores attempts without student accounts. The display name is self-entered and is not verified.
@@ -127,7 +128,8 @@ The student home, focused attempt page, and owner dashboard share the same respo
 
 - Student home: https://bhavishyacodz.github.io/BLACK-JEE/
 - Focused attempt page: https://bhavishyacodz.github.io/BLACK-JEE/attempt.html
-- Owner dashboard: https://bhavishyacodz.github.io/BLACK-JEE/admin.html?admin=1
+- Owner dashboard: https://bhavishyacodz.github.io/BLACK-JEE/admin.html?admin=1  
+Question Studio: https://bhavishyacodz.github.io/BLACK-JEE/attempt.html?admin=1
 - Deployment history: https://github.com/bhavishyacodz/BLACK-JEE/actions
 
 After changing HTML, wait for the GitHub Pages deployment to finish successfully before testing. On Android, if an older version appears, open the direct attempt link with a fresh query string or refresh the page.
