@@ -120,3 +120,14 @@ If tables appear in the database but the browser reports a table/API permission 
 - An attempt is private until an admin approves it. The private Storage bucket also prevents direct public viewing of pending images.
 - This first version stores attempts without student accounts. The display name is self-entered and is not verified.
 - The sample problem is seeded once for the date on which you run the SQL. Use the Admin panel to create the next day's challenge.
+
+## 8. Student and owner interface refresh
+
+The student home, focused attempt page, and owner dashboard share the same responsive visual system and remain static GitHub Pages files. The focused attempt page loads the current live written question first, then falls back to the active external question link. If it says there is no live question, check the Owner Dashboard's live status and the browser's connection to Supabase.
+
+- Student home: https://bhavishyacodz.github.io/BLACK-JEE/
+- Focused attempt page: https://bhavishyacodz.github.io/BLACK-JEE/attempt.html
+- Owner dashboard: https://bhavishyacodz.github.io/BLACK-JEE/admin.html?admin=1
+- Deployment history: https://github.com/bhavishyacodz/BLACK-JEE/actions
+
+After changing HTML, wait for the GitHub Pages deployment to finish successfully before testing. On Android, if an older version appears, open the direct attempt link with a fresh query string or refresh the page.
