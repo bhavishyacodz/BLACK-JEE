@@ -242,7 +242,7 @@ const today = () => challengeDate();
 const challengeDateLabel = date => new Date(date+"T00:00:00Z").toLocaleDateString("en-IN",{timeZone:"UTC",weekday:"short",month:"short",day:"numeric"}).toUpperCase();
 $("dateTag").textContent = challengeDateLabel(today());
 if($("adminDate"))$("adminDate").value = today();
-let supabase = null, currentQuestion = null, startedAt = null, ticker = null, elapsed = 0, selectedOption = null, chosenPhoto = null, adminUser = null, currentUser = null, lastSubmissionId = null;
+let supabase = null, currentQuestion = null, startedAt = null, ticker = null, elapsed = 0, selectedOption = null, chosenPhoto = null, adminUser = null, currentUser = null, lastSubmissionId = null, submissionSaved = false;
 let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null;
 const fallbackQuestion = {
  id:null, question_date:today(), title:"No live question", difficulty:"",
