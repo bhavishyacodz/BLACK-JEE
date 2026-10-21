@@ -214,7 +214,16 @@ h1 span,.red,.protocol-num,.live-dot{color:#f5f5f5!important}
 .chip.golden{border-color:#b68a32;background:linear-gradient(135deg,#211a0c,#14110a);color:#f2d58a}\n</style>
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{typeset:false}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+<style>
+.mobile-tabbar{position:fixed;z-index:99;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);padding:8px 7px calc(8px + env(safe-area-inset-bottom));background:rgba(9,10,13,.96);backdrop-filter:blur(16px);border-top:1px solid #292c34}
+.mobile-tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#858b97;min-height:44px;border-radius:9px}
+.mobile-tabbar a span{font-size:20px;line-height:1.2}.mobile-tabbar a small{font-size:10px;letter-spacing:.04em;font-weight:650}
+.mobile-tabbar a.active{color:#fff;background:#191b21}.mobile-tabbar a.active span{color:#f04452}
+body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+@media(min-width:850px){.mobile-tabbar{left:50%;right:auto;transform:translateX(-50%);width:min(560px,100%);border:1px solid #292c34;border-bottom:0;border-radius:14px 14px 0 0}}
+/* Prevent accidental sign-out taps from the public header; sign out stays available inside the profile/account area. */
+body:not(.admin-mode) #signOutBtn,body:not(.admin-mode) #adminSignOutBtn{display:none!important}
+</style></head>
 <body>
 <a class="skip-link" href="#challenge">Skip to today's challenge</a>
 <header class="topbar"><div class="wrap nav"><a class="brand" href="#"><span class="mark">B</span><span>BLACK <span class="red">JEE</span></span></a><div class="nav-right"><a class="nav-link" href="#challenge">CHALLENGE</a><a class="nav-link" href="#protocol">HOW IT WORKS</a><a class="nav-link" href="#hall">HALL OF PROOF</a><a class="nav-link" href="archive.html">ARCHIVE ↗</a><a class="nav-link" href="attempt.html?admin=1" target="_blank" rel="noopener">QUESTION STUDIO ↗</a><button class="btn btn-quiet" id="adminNav" type="button" onclick="window.open('attempt.html?admin=1', '_blank', 'noopener')">ADMIN ↗</button><span id="authStatus" class="tiny muted">GOOGLE LOGIN REQUIRED</span><button class="btn btn-quiet" id="googleAuthBtn" type="button" onclick="signInWithGoogle()">CONTINUE WITH GOOGLE</button><a class="btn btn-quiet" href="profile.html">PROFILE ↗</a></div></div></header>
@@ -360,4 +369,9 @@ function scheduleTick(){const p=indiaParts(),now=Date.now(),midnight=Date.UTC(p.
 async function init(){try{await supabaseReady;if(!window.supabase||!window.supabase.createClient){throw new Error("Supabase client did not load. Check your internet connection and refresh.");}if(SUPABASE_PUBLISHABLE_KEY.startsWith("PASTE_")){loadQuestion();loadPublicSubmissions();return;}supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);const sessionPromise=supabase.auth.getSession();supabase.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;adminUser=currentUser?.app_metadata?.role==="admin"?currentUser:null;updateAuthUI();showAdminState();});const questionPromise=loadQuestion();const publicPromise=loadPublicSubmissions();const {data:{session}}=await sessionPromise;currentUser=session?.user||null;adminUser=currentUser?.app_metadata?.role==="admin"?currentUser:null;updateAuthUI();showAdminState();await Promise.allSettled([questionPromise,publicPromise]);if(new URLSearchParams(location.search).has("admin")||document.body.classList.contains("admin-page")){$("adminPanel").classList.add("show");}}catch(e){console.error("BLACK JEE startup failed",e);$("liveStatus").textContent="OFFLINE PREVIEW";if(!currentQuestion)renderQuestion(fallbackQuestion);notify($("attemptNotice"),"Live database features are unavailable because the Supabase client could not load. The question and Admin panel still open; sign-in and submissions need the client connection.","error");} }
 scheduleTick();setInterval(scheduleTick,1000);init();
 </script>
-<nav class="mobile-tabs" aria-label="Main navigation"><a class="mobile-tab active" href="index.html" aria-label="Home"><span aria-hidden="true">⌂</span><small>Home</small></a><a class="mobile-tab " href="attempt.html" aria-label="Challenge"><span aria-hidden="true">◉</span><small>Challenge</small></a><a class="mobile-tab " href="archive.html" aria-label="Archive"><span aria-hidden="true">▤</span><small>Archive</small></a><a class="mobile-tab " href="profile.html" aria-label="Profile"><span aria-hidden="true">♙</span><small>Profile</small></a></nav></body></html>
+<nav class="mobile-tabs" aria-label="Main navigation"><a class="mobile-tab active" href="index.html" aria-label="Home"><span aria-hidden="true">⌂</span><small>Home</small></a><a class="mobile-tab " href="attempt.html" aria-label="Challenge"><span aria-hidden="true">◉</span><small>Challenge</small></a><a class="mobile-tab " href="archive.html" aria-label="Archive"><span aria-hidden="true">▤</span><small>Archive</small></a><a class="mobile-tab " href="profile.html" aria-label="Profile"><span aria-hidden="true">♙</span><small>Profile</small></a></nav><nav class="mobile-tabbar" aria-label="Main navigation">
+<a href="index.html" data-tab="home" class="active"><span>⌂</span><small>Home</small></a>
+<a href="attempt.html" data-tab="challenge"><span>◉</span><small>Challenge</small></a>
+<a href="archive.html" data-tab="archive"><span>▤</span><small>Archive</small></a>
+<a href="profile.html" data-tab="profile"><span>◎</span><small>Profile</small></a>
+</nav></body></html>
