@@ -48,7 +48,7 @@ button:focus-visible,.option:focus-within,a:focus-visible{outline:2px solid #ff7
 body.attempt-page .skip-link,
 
 body.attempt-page > footer,
-body.attempt-page main > section:not(#challenge){display:none!important}
+body.attempt-page main > section:not(#challenge):not(#adminPanel){display:none!important}
 body.attempt-page #challenge{display:block!important;padding-top:28px;padding-bottom:48px;min-height:100vh}
 body.attempt-page #challenge .section-head{margin-bottom:18px}
 body.attempt-page #challenge .grid{grid-template-columns:minmax(0,1fr);max-width:900px;margin:0 auto}
@@ -464,7 +464,7 @@ async function restoreExistingAttempt(){
   if(!data.photo_path){$("submissionFlow").classList.remove("hidden");$("photoStep").classList.remove("hidden");}
   else{$("submissionFlow").classList.add("hidden");}
   updateAttemptSteps();
-  notify($("attemptNotice"),"ATTEMPT ALREADY RECORDED — this account has used its one attempt for this question. Other students can still attempt.","success");
+  notify($("attemptNotice"),data.is_correct===true?"✓ CORRECT — your answer is recorded. The correct option and solution unlock at results time.":data.is_correct===false?"✕ NOT CORRECT — your answer is recorded. The correct option and solution unlock at results time.":"ATTEMPT ALREADY RECORDED — this account has used its one attempt for this question. Other students can still attempt.","success");
  }catch(e){
   attemptLookupKey=null;console.error("Could not check previous attempt",e);
   notify($("attemptNotice"),"Could not verify your previous attempt. Please refresh and try again before submitting.","error");
@@ -476,12 +476,12 @@ async function loadQuestion(){
  const showEmpty=(detail="No live question is available for this challenge date yet.")=>{currentQuestion=null;selectedOption=null;$("questionTitle").textContent="Waiting for today’s question";$("questionText").textContent=detail;$("questionMeta").textContent="BLACK JEE / WAITING FOR THE NEXT CHALLENGE";$("questionChips").innerHTML="";$("questionOptions").innerHTML="";const retry=document.createElement("button");retry.type="button";retry.className="btn";retry.textContent="RETRY QUESTION LOAD ↻";retry.addEventListener("click",async()=>{retry.disabled=true;retry.textContent="CHECKING…";await loadQuestion();if(!currentQuestion){retry.disabled=false;retry.textContent="RETRY QUESTION LOAD ↻";}});$("questionOptions").appendChild(retry);$("liveStatus").textContent="WAITING FOR QUESTION";$("dateTag").textContent=challengeDateLabel(today());$("startBtn").disabled=true;$("submitBtn").disabled=true;$("solutionPanel").classList.remove("show");};
  if(!supabase){showEmpty("The question service is still connecting. Retry in a moment.");return;}
  try{
-  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at").eq("is_live",true).lte("question_date",today()).order("question_date",{ascending:false}).limit(1).maybeSingle();
+  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at").eq("is_live",true).gt("ends_at",new Date().toISOString()).lte("question_date",today()).order("question_date",{ascending:false}).limit(1).maybeSingle();
   if(writtenError)throw writtenError;
   // RLS already limits public users to questions that are allowed to be live.
   // Retry without the client-side date filter in case its local challenge date differs.
   if(!written){
-   const retry=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at").eq("is_live",true).order("question_date",{ascending:false}).limit(1).maybeSingle();
+   const retry=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at").eq("is_live",true).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
    if(retry.error)throw retry.error;
    written=retry.data;
   }
