@@ -108,11 +108,11 @@ async function loadDashboard(){
   $("historyCount").textContent=attempts.length+" RECORD"+(attempts.length===1?"":"S");
   $("lastActivity").textContent=attempts.length?"Last attempt · "+safeDate(attempts[0].created_at):"No attempts yet. Your first submission will appear here.";
   const host=$("attemptHistory");host.innerHTML="";
-  if(!attempts.length){host.innerHTML='<div class="empty">No attempts yet.<br>Open today’s challenge when you’re ready to begin.</div>';return;}
+  
   const searchBox=$("historySearch"),filterBox=$("historyFilter");
   const renderHistory=(list)=>{
    const host=$("attemptHistory");host.innerHTML="";
-   if(!list.length){host.innerHTML='<div class="empty">No attempts match this search and filter.</div>';return;}
+   if(!list.length){host.innerHTML='<div class="empty">'+(attempts.length?'No attempts match this search and filter.':'No attempts yet. Open today’s challenge when you’re ready to begin.')+'</div>';return;}
    list.forEach(a=>{
     const card=document.createElement("article");card.className="attempt";
     const top=document.createElement("div");top.className="attempt-top";
