@@ -418,7 +418,7 @@ function typesetMath(el){if(!el)return;const run=()=>{if(window.MathJax&&window.
 function renderQuestion(q){
  currentQuestion=q;["questionTitle","questionText","questionOptions"].forEach(id=>$(id).classList.remove("hidden"));selectedOption=null;submissionSaved=false;submissionNameValue="";
  if(photoWindowTicker){clearInterval(photoWindowTicker);photoWindowTicker=null;}
- chosenPhoto=null;$("submissionFlow").classList.add("hidden");$("submissionName").value="";$("submissionName").disabled=false;
+ chosenPhoto=null;$("submissionFlow").classList.add("hidden");if($("submissionName")){$("submissionName").value="";$("submissionName").disabled=false;}
  if($("answerSelection")){$("answerSelection").textContent="Choose an option to record your selection.";$("answerSelection").classList.remove("active");}updateAttemptSteps();
  $("dateTag").textContent=challengeDateLabel(q?.question_date||today());
  $("startBtn").disabled=!(q?.id||q?.question_link_id);$("submitBtn").disabled=true;
