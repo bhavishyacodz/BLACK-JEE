@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090b"><meta name="description" content="BLACK JEE date-wise challenge archive, official answers, worked solutions and consented winners.">
+<title>BLACK JEE — Challenge Archive</title>
+<style>
+:root{color-scheme:dark;--bg:#08090b;--panel:#111318;--line:#2b2e36;--muted:#9299a5;--white:#f5f7fa;--red:#f04452;--green:#68d7a0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0,rgba(240,68,82,.12),transparent 36%),var(--bg);color:var(--white);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1000px,calc(100% - 28px));margin:auto}.top{border-bottom:1px solid var(--line);background:#08090beF;position:sticky;top:0;z-index:3}.nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{text-decoration:none;font-weight:800;letter-spacing:.08em}.red{color:var(--red)}.btn{display:inline-block;text-decoration:none;border:1px solid var(--line);background:#17191f;padding:10px 14px;border-radius:7px;font-weight:650}.hero{padding:52px 0 24px}.eyebrow{font-size:.75rem;letter-spacing:.14em;color:var(--red);text-transform:uppercase}.hero h1{font-size:clamp(2.4rem,8vw,5rem);line-height:.98;letter-spacing:-.07em;margin:12px 0}.hero p{color:var(--muted);max-width:620px}.status{margin:20px 0;color:var(--muted);font-size:.9rem}.archive{display:grid;gap:16px;padding-bottom:60px}.item{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#14161c,#0d0e12)}.item-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start;gap:14px}.item-head h2{font-size:1.2rem;margin:4px 0;line-height:1.35}.date{color:var(--red);font: .78rem ui-monospace,monospace;letter-spacing:.08em}.body{padding:20px}.statement{white-space:pre-wrap;line-height:1.85;color:#e1e3e8}.options{display:grid;gap:8px;margin:16px 0}.option{padding:10px 12px;border:1px solid #30333c;border-radius:7px;color:#cfd2da}.correct{border-color:#276445;background:#0e2117;color:#a8f0c2}.section-title{font-size:.75rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:22px 0 8px}.solution{white-space:pre-wrap;color:#d7e9dd;line-height:1.85;border-left:2px solid var(--green);padding-left:14px}.winners{display:grid;gap:8px}.winner{display:flex;gap:12px;align-items:center;border:1px solid #30333c;background:#101116;padding:10px 12px;border-radius:7px}.place{color:var(--red);font-weight:800;min-width:30px}.winner-name{font-weight:700}.winner-meta{color:var(--muted);font-size:.8rem}.empty{border:1px dashed #343740;padding:24px;border-radius:10px;text-align:center;color:var(--muted)}details summary{cursor:pointer;color:#c5c8d0;font-weight:700;margin-top:18px}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.82rem}@media(max-width:560px){.item-head{padding:15px}.body{padding:15px}.hero{padding-top:38px}.item-head h2{font-size:1.05rem}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html">BLACK <span class="red">JEE</span></a><a class="btn" href="attempt.html">LIVE CHALLENGE ↗</a></div></header>
+<main class="wrap"><section class="hero"><div class="eyebrow">The record · date-wise</div><h1>THE ARCHIVE.</h1><p>Every completed challenge stays here with its official correct option, published worked solution, and top three approved winners. Correct options and solutions remain hidden until results release at 6:00 PM IST.</p></section><div id="status" class="status">Loading official archive…</div><section id="archive" class="archive" aria-live="polite"></section></main>
+<footer><div class="wrap">BLACK JEE · Results are released after the challenge closes. Winner names appear only when the student has consented and the entry is approved.</div></footer>
+<script>
+const SUPABASE_URL="https://yeydvwnihpwoixytcgek.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_MEX3TmUJZt62P5fOQkvz8g_nVfrmsKi";
+const client=window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+const $=id=>document.getElementById(id);
+function esc(s){return String(s??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));}
+function dateLabel(s){const d=new Date(s+"T00:00:00Z");return d.toLocaleDateString("en-IN",{timeZone:"UTC",weekday:"long",year:"numeric",month:"long",day:"numeric"});}
+function renderRow(q){
+ const article=document.createElement("article");article.className="item";
+ const head=document.createElement("div");head.className="item-head";
+ const heading=document.createElement("div");const date=document.createElement("div");date.className="date";date.textContent=dateLabel(q.question_date).toUpperCase();
+ const title=document.createElement("h2");title.textContent=q.title||"Daily challenge";heading.append(date,title);
+ const badge=document.createElement("span");badge.className="date";badge.textContent="OFFICIAL RESULT";head.append(heading,badge);
+ const body=document.createElement("div");body.className="body";
+ const statement=document.createElement("div");statement.className="statement";statement.textContent=q.statement||"";
+ body.appendChild(statement);
+ const opts=document.createElement("div");opts.className="options";const correct=String(q.correct_answer||"").toUpperCase().slice(0,1);const options=Array.isArray(q.options)?q.options:[];
+ options.forEach((opt,i)=>{const line=document.createElement("div");line.className="option"+("ABCD"[i]===correct?" correct":"");line.textContent=opt;if("ABCD"[i]===correct)line.textContent="✓ "+opt+" · CORRECT";opts.appendChild(line);});body.appendChild(opts);
+ if(q.solution){const label=document.createElement("div");label.className="section-title";label.textContent="Official worked solution";const solution=document.createElement("div");solution.className="solution";solution.textContent=q.solution;body.append(label,solution);}
+ const wh=document.createElement("div");wh.className="section-title";wh.textContent="Top three winners";
+ const winners=document.createElement("div");winners.className="winners";const list=Array.isArray(q.winners)?q.winners:[];
+ if(!list.length){const empty=document.createElement("div");empty.className="winner-meta";empty.textContent="No consented, approved top-three entries were available for publication.";winners.appendChild(empty);}
+ list.forEach((w,i)=>{const row=document.createElement("div");row.className="winner";const place=document.createElement("span");place.className="place";place.textContent=["01","02","03"][i]||String(i+1);const info=document.createElement("div");const name=document.createElement("div");name.className="winner-name";name.textContent=w.display_name||"BLACK JEE challenger";const meta=document.createElement("div");meta.className="winner-meta";meta.textContent=(Number(w.score)||0)+" points · "+(Number(w.elapsed_seconds)||0)+" seconds";info.append(name,meta);row.append(place,info);winners.appendChild(row);});
+ body.append(wh,winners);article.append(head,body);return article;
+}
+async function load(){if(!client){$("status").textContent="Archive service unavailable. Check your connection and refresh.";return;}try{const {data,error}=await client.rpc("get_challenge_archive");if(error)throw error;const rows=Array.isArray(data)?data:[];$("archive").innerHTML="";if(!rows.length){$("status").textContent="No completed results have been released yet. New challenges will appear here after results time.";const empty=document.createElement("div");empty.className="empty";empty.textContent="The archive is ready. The first completed challenge will appear after 6:00 PM IST on its result date."; $("archive").appendChild(empty);return;}rows.forEach(q=>$("archive").appendChild(renderRow(q)));$("status").textContent=rows.length+" official challenge result"+(rows.length===1?"":"s")+" published · newest first.";}catch(e){$("status").textContent="Could not load archive: "+(e.message||"Please refresh later.");}}
+load();
+</script>
+</body></html>
