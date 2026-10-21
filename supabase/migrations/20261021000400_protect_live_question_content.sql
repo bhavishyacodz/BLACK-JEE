@@ -18,18 +18,18 @@ begin
     raise exception 'Admin permission required.' using errcode = '42501';
   end if;
 
+  -- Prefer the currently running challenge; if none is active, show the next scheduled one.
   select q.* into v_q
   from public.daily_questions as q
-  where q.is_live = true
-    and q.question_date <= (now() at time zone 'Asia/Kolkata')::date
-  order by q.question_date desc
+  where q.is_live = true and q.starts_at <= now() and q.ends_at > now()
+  order by q.starts_at desc
   limit 1;
 
   if not found then
     select q.* into v_q
     from public.daily_questions as q
-    where q.is_live = true and q.ends_at > now()
-    order by q.question_date desc
+    where q.is_live = true and q.starts_at > now()
+    order by q.starts_at asc
     limit 1;
   end if;
 
