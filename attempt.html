@@ -388,7 +388,7 @@ const challengeDateLabel = date => new Date(date+"T00:00:00Z").toLocaleDateStrin
 $("dateTag").textContent = challengeDateLabel(today());
 if($("adminDate"))$("adminDate").value = today();
 let supabase = null, currentQuestion = null, startedAt = null, ticker = null, elapsed = 0, selectedOption = null, chosenPhoto = null, adminUser = null, currentUser = null, lastSubmissionId = null, submissionSaved = false, photoWindowTicker = null, photoWindowDeadline = null, submissionNameValue = "";
-let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null;
+let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null, attemptLookupKey = null, attemptAlreadySubmitted = false;
 const fallbackQuestion = {
  id:null, question_date:today(), title:"No live question", difficulty:"",
  tags:[], statement:"No question is live right now. BLACK JEE is being refreshed. Please check back soon.",
@@ -410,13 +410,13 @@ function beginChallengeIntro(){
  const showBeat=()=>{word.classList.remove("pop");void word.offsetWidth;word.textContent=beats[index][0];caption.textContent=beats[index][1];word.classList.add("pop");index++;if(index<beats.length){setTimeout(showBeat,650);}else{setTimeout(()=>{layer.classList.remove("active");},550);}};
  showBeat();
 }
-function maybeStartFromDashboard(){if(new URLSearchParams(location.search).get("start")==="1"){startAttempt();const layer=$("challengeIntro");if(layer)layer.classList.remove("active");}}
+function maybeStartFromDashboard(){if(new URLSearchParams(location.search).get("start")==="1"&&!attemptAlreadySubmitted){startAttempt();const layer=$("challengeIntro");if(layer)layer.classList.remove("active");}}
 function revealChallenge(){document.body.classList.add("challenge-live");const pulse=$("challengePulse");if(pulse){pulse.classList.remove("hidden");pulse.classList.remove("pulse-in");void pulse.offsetWidth;pulse.classList.add("pulse-in");}const card=document.querySelector("#challenge .card");if(card){card.classList.remove("question-reveal");void card.offsetWidth;card.classList.add("question-reveal");}const start=$("startBtn");if(start){start.classList.add("hidden");}const submit=$("submitBtn");if(submit)submit.textContent="LOCK IN ANSWER →";}
 async function refreshCurrentUser(){if(!supabase)return null;try{const {data,error}=await supabase.auth.getSession();if(error)throw error;currentUser=data?.session?.user||null;adminUser=currentUser?.app_metadata?.role==="admin"?currentUser:null;updateAuthUI();showAdminState();return currentUser;}catch(e){console.error("BLACK JEE auth refresh failed",e);return currentUser;}}
 async function startAttempt(){if(startedAt)return;await refreshCurrentUser();if(!currentUser){notify($("attemptNotice"),"Sign in with Google first. Your account will remember your name for future attempts.","error");$("googleAuthBtn")?.scrollIntoView({behavior:"smooth",block:"center"});return;}if(elapsed||submissionSaved){notify($("attemptNotice"),"This attempt has already been submitted. Refresh to start a new session.","error");return;}if(!currentQuestion?.id&&!currentQuestion?.question_link_id){notify($("attemptNotice"),"Question not loaded yet. Retrying the live board…","error");$("startBtn").disabled=true;loadQuestion().then(()=>{if(currentQuestion?.id||currentQuestion?.question_link_id){startAttempt();}else{$("startBtn").disabled=false;notify($("attemptNotice"),"Still unable to load the live question. Refresh the page and try again.","error");}});return;}startedAt=Date.now();sessionQuestionId=currentQuestion.id||null;ticker=setInterval(setTimer,1000);updateAttemptSteps();$("startBtn").disabled=true;$("submitBtn").disabled=false;document.querySelectorAll('input[name="answer"]').forEach(input=>input.disabled=false);revealChallenge();$("timerState").textContent="CLOCK RUNNING";setTimer();}
 function typesetMath(el){if(!el)return;const run=()=>{if(window.MathJax&&window.MathJax.typesetPromise){try{window.MathJax.typesetClear([el]);window.MathJax.typesetPromise([el]).catch(()=>{});}catch(e){}}};if(window.MathJax&&window.MathJax.startup&&window.MathJax.startup.promise){window.MathJax.startup.promise.then(run).catch(()=>{});}else{window.addEventListener("load",run,{once:true});}}
 function renderQuestion(q){
- currentQuestion=q;["questionTitle","questionText","questionOptions"].forEach(id=>$(id).classList.remove("hidden"));selectedOption=null;submissionSaved=false;submissionNameValue="";
+ currentQuestion=q;["questionTitle","questionText","questionOptions"].forEach(id=>$(id).classList.remove("hidden"));selectedOption=null;submissionSaved=false;attemptAlreadySubmitted=false;attemptLookupKey=null;lastSubmissionId=null;elapsed=0;submissionNameValue="";
  if(photoWindowTicker){clearInterval(photoWindowTicker);photoWindowTicker=null;}
  chosenPhoto=null;$("submissionFlow").classList.add("hidden");if($("submissionName")){$("submissionName").value="";$("submissionName").disabled=false;}
  if($("answerSelection")){$("answerSelection").textContent="Choose an option to record your selection.";$("answerSelection").classList.remove("active");}updateAttemptSteps();
@@ -443,6 +443,32 @@ function renderQuestion(q){
  if(q?.solution_published&&q?.solution){$("solutionPanel").classList.add("show");$("solutionText").textContent=q.solution;$("solutionByline").textContent="OFFICIAL SOLUTION · "+(q.question_date||"");$("solutionStatus").textContent="Official solution is live";$("solutionStatusCopy").textContent="The owner has released the step-by-step solution.";}
  else{$("solutionPanel").classList.remove("show");$("solutionStatus").textContent="Locked until review";$("solutionStatusCopy").textContent="The official solution appears here when the challenge owner publishes it.";}typesetMath($("questionText"));typesetMath($("questionOptions"));typesetMath($("solutionText"));
 }
+async function restoreExistingAttempt(){
+ if(!supabase||!currentUser||!currentQuestion||(!currentQuestion.id&&!currentQuestion.question_link_id))return;
+ const key=currentUser.id+":"+(currentQuestion.id||("link:"+currentQuestion.question_link_id));
+ if(attemptLookupKey===key)return;
+ attemptLookupKey=key;
+ try{
+  let query=supabase.from("attempt_submissions").select("id,question_id,question_link_id,elapsed_seconds,selected_option,photo_path,created_at").eq("user_id",currentUser.id);
+  query=currentQuestion.id?query.eq("question_id",currentQuestion.id):query.eq("question_link_id",currentQuestion.question_link_id);
+  const {data,error}=await query.maybeSingle();
+  if(error)throw error;
+  if(!data)return;
+  attemptAlreadySubmitted=true;submissionSaved=true;lastSubmissionId=data.id;elapsed=Number(data.elapsed_seconds)||0;selectedOption=data.selected_option||null;startedAt=null;
+  if(ticker){clearInterval(ticker);ticker=null;}
+  setTimer();$("startBtn").disabled=true;$("submitBtn").disabled=true;
+  document.querySelectorAll('input[name="answer"]').forEach(input=>{input.disabled=true;input.checked=input.value===selectedOption;});
+  const textInput=$("questionOptions").querySelector('input[type="text"]');if(textInput){textInput.value=selectedOption||"";textInput.disabled=true;}
+  if(!data.photo_path){$("submissionFlow").classList.remove("hidden");$("photoStep").classList.remove("hidden");}
+  else{$("submissionFlow").classList.add("hidden");}
+  updateAttemptSteps();
+  notify($("attemptNotice"),"ATTEMPT ALREADY RECORDED — this account has used its one attempt for this question. Other students can still attempt.","success");
+ }catch(e){
+  attemptLookupKey=null;console.error("Could not check previous attempt",e);
+  notify($("attemptNotice"),"Could not verify your previous attempt. Please refresh and try again before submitting.","error");
+  $("startBtn").disabled=true;$("submitBtn").disabled=true;
+ }
+}
 async function loadQuestion(){
  lastLoadedChallengeDate=today();lastSolutionCheck=null;
  const showEmpty=(detail="No live question is available for this challenge date yet.")=>{currentQuestion=null;selectedOption=null;$("questionTitle").textContent="Waiting for today’s question";$("questionText").textContent=detail;$("questionMeta").textContent="BLACK JEE / WAITING FOR THE NEXT CHALLENGE";$("questionChips").innerHTML="";$("questionOptions").innerHTML="";const retry=document.createElement("button");retry.type="button";retry.className="btn";retry.textContent="RETRY QUESTION LOAD ↻";retry.addEventListener("click",async()=>{retry.disabled=true;retry.textContent="CHECKING…";await loadQuestion();if(!currentQuestion){retry.disabled=false;retry.textContent="RETRY QUESTION LOAD ↻";}});$("questionOptions").appendChild(retry);$("liveStatus").textContent="WAITING FOR QUESTION";$("dateTag").textContent=challengeDateLabel(today());$("startBtn").disabled=true;$("submitBtn").disabled=true;$("solutionPanel").classList.remove("show");};
@@ -457,12 +483,12 @@ async function loadQuestion(){
    if(retry.error)throw retry.error;
    written=retry.data;
   }
-  if(written){written.tags=Array.isArray(written.tags)?written.tags:[];written.options=Array.isArray(written.options)?written.options:[];renderQuestion(written);$("liveStatus").textContent="LIVE WRITTEN QUESTION";maybeStartFromDashboard();return;}
+  if(written){written.tags=Array.isArray(written.tags)?written.tags:[];written.options=Array.isArray(written.options)?written.options:[];renderQuestion(written);$("liveStatus").textContent="LIVE WRITTEN QUESTION";await restoreExistingAttempt();maybeStartFromDashboard();return;}
   const {data:link,error:linkError}=await supabase.from("active_question_links").select("id,title,url,updated_at").eq("is_live",true).maybeSingle();
   if(linkError)throw linkError;
   if(!link){showEmpty("No question is published for "+today()+" yet. The question owner needs to publish a live question for this challenge date.");return;}
   renderQuestion({id:null,question_link_id:link.id,title:link.title||"Today's question",url:link.url,question_date:today(),statement:"Open the published question below. You can type your final answer and attach a photo of your written solution.",tags:["External question link"],options:[],solution_published:false});
-  $("liveStatus").textContent="LIVE QUESTION LINK";maybeStartFromDashboard();
+  $("liveStatus").textContent="LIVE QUESTION LINK";await restoreExistingAttempt();maybeStartFromDashboard();
  }catch(e){showEmpty("The live question could not be loaded. Check your connection, then use RETRY QUESTION LOAD. Details: "+(e?.message||"database connection error"));notify($("attemptNotice"),"Could not load the live question: "+(e?.message||"database connection error"),"error");console.error("BLACK JEE loadQuestion failed",e);}
 }
 async function loadPublicSubmissions(){const host=$("publicSubmissions");if(!supabase){host.innerHTML='<div class="empty">Connect Supabase to see approved solutions here.</div>';return;}try{const {data,error}=await supabase.from("attempt_submissions").select("id,display_name,photo_path,elapsed_seconds,created_at").eq("is_public",true).order("created_at",{ascending:false}).limit(12);if(error)throw error;if(!data?.length){host.innerHTML='<div class="empty">No approved attempts yet. Be the first to put your work on the board.</div>';return;}host.innerHTML="";data.forEach(row=>{const card=document.createElement("article");card.className="submission";if(row.photo_path){const img=document.createElement("img");img.loading="lazy";img.alt="Approved handwritten solution by "+row.display_name;supabase.storage.from(BUCKET).createSignedUrl(row.photo_path,3600).then(({data:signed})=>{if(signed?.signedUrl)img.src=signed.signedUrl;});card.appendChild(img);}const info=document.createElement("div");info.className="submission-info";const name=document.createElement("strong");name.textContent=row.display_name;const time=document.createElement("p");time.textContent="TIME · "+formatTime(row.elapsed_seconds||0);const date=document.createElement("p");date.textContent=new Date(row.created_at).toLocaleDateString();info.append(name,time,date);card.appendChild(info);host.appendChild(card);});}catch(e){host.innerHTML='<div class="empty">Hall of Proof is unavailable right now. '+escapeHtml(e.message)+'</div>';}}
@@ -492,15 +518,15 @@ async function submitAttempt(){
 async function finishSubmission(){
  if(!supabase||!currentUser){notify($("attemptNotice"),"Please sign in with Google and try again.","error");$("submitBtn").disabled=false;return;}
  if(!currentQuestion?.question_link_id&&!currentQuestion?.id){notify($("attemptNotice"),"There is no live question to submit against. Refresh the page.","error");$("submitBtn").disabled=false;return;}
- if(submissionSaved)return;
+ if(submissionSaved||attemptAlreadySubmitted){notify($("attemptNotice"),"This account has already submitted an answer for this question. Each signed-in student gets one attempt.","error");return;}
  try{
   const payload={user_id:currentUser.id,question_id:currentQuestion.id||null,question_link_id:currentQuestion.question_link_id||null,display_name:displayNameFor(currentUser),elapsed_seconds:elapsed,selected_option:selectedOption,photo_path:null,is_public:false};
   const {data,error}=await supabase.from("attempt_submissions").insert(payload).select("id").single();if(error)throw error;
-  lastSubmissionId=data.id;submissionSaved=true;$("startBtn").disabled=true;
+  lastSubmissionId=data.id;submissionSaved=true;attemptAlreadySubmitted=true;attemptLookupKey=currentUser.id+":"+(currentQuestion.id||("link:"+currentQuestion.question_link_id));$("startBtn").disabled=true;
   $("submissionFlow").classList.remove("hidden");$("photoStep").classList.remove("hidden");
   notify($("attemptNotice"),"Attempt submitted successfully. Your solution photo is optional; send it below if you want it reviewed.","success");
   $("submissionFlow").scrollIntoView({behavior:"smooth",block:"center"});await loadPublicSubmissions();
- }catch(e){submissionSaved=false;$("submitBtn").disabled=false;notify($("attemptNotice"),"Submission failed: "+(e.message||"Please try again."),"error");}
+ }catch(e){const duplicate=String(e?.code||"")==="23505"||/duplicate key|unique constraint/i.test(e?.message||"");if(duplicate){attemptLookupKey=null;await restoreExistingAttempt();notify($("attemptNotice"),"ATTEMPT ALREADY RECORDED — you can submit only once per question with this account. Other students can still attempt.","error");}else{submissionSaved=false;$("submitBtn").disabled=false;document.querySelectorAll('input[name="answer"]').forEach(input=>input.disabled=false);notify($("attemptNotice"),"Submission failed: "+(e.message||"Please try again."),"error");}}
 }
 async function uploadSolutionPhoto(){
  if(!supabase||!currentUser||!lastSubmissionId||!chosenPhoto){notify($("attemptNotice"),"Choose a photo first, or tap NO THANKS.","error");return;}
@@ -553,7 +579,7 @@ function scheduleTick(){
   });
  }
 }
-async function init(){try{await supabaseReady;if(!window.supabase||!window.supabase.createClient){throw new Error("Supabase client did not load. Check your internet connection and refresh.");}if(SUPABASE_PUBLISHABLE_KEY.startsWith("PASTE_")){loadQuestion();loadPublicSubmissions();return;}supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);const sessionPromise=supabase.auth.getSession();supabase.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;adminUser=currentUser?.app_metadata?.role==="admin"?currentUser:null;updateAuthUI();showAdminState();});const questionPromise=loadQuestion();const publicPromise=loadPublicSubmissions();const {data:{session}}=await sessionPromise;currentUser=session?.user||null;adminUser=currentUser?.app_metadata?.role==="admin"?currentUser:null;updateAuthUI();showAdminState();await Promise.allSettled([questionPromise,publicPromise]);if(new URLSearchParams(location.search).has("admin")||document.body.classList.contains("admin-page")){$("adminPanel").classList.add("show");}}catch(e){console.error("BLACK JEE startup failed",e);$("liveStatus").textContent="OFFLINE PREVIEW";if(!currentQuestion)renderQuestion(fallbackQuestion);notify($("attemptNotice"),"Live database features are unavailable because the Supabase client could not load. The question and Admin panel still open; sign-in and submissions need the client connection.","error");} }
+async function init(){try{await supabaseReady;if(!window.supabase||!window.supabase.createClient){throw new Error("Supabase client did not load. Check your internet connection and refresh.");}if(SUPABASE_PUBLISHABLE_KEY.startsWith("PASTE_")){loadQuestion();loadPublicSubmissions();return;}supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);const sessionPromise=supabase.auth.getSession();supabase.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;adminUser=currentUser?.app_metadata?.role==="admin"?currentUser:null;updateAuthUI();showAdminState();if(currentUser&&currentQuestion)restoreExistingAttempt();});const questionPromise=loadQuestion();const publicPromise=loadPublicSubmissions();const {data:{session}}=await sessionPromise;currentUser=session?.user||null;adminUser=currentUser?.app_metadata?.role==="admin"?currentUser:null;updateAuthUI();showAdminState();await Promise.allSettled([questionPromise,publicPromise]);if(currentUser&&currentQuestion)await restoreExistingAttempt();if(new URLSearchParams(location.search).has("admin")||document.body.classList.contains("admin-page")){$("adminPanel").classList.add("show");}}catch(e){console.error("BLACK JEE startup failed",e);$("liveStatus").textContent="OFFLINE PREVIEW";if(!currentQuestion)renderQuestion(fallbackQuestion);notify($("attemptNotice"),"Live database features are unavailable because the Supabase client could not load. The question and Admin panel still open; sign-in and submissions need the client connection.","error");} }
 scheduleTick();setInterval(scheduleTick,1000);init();
 </script>
 </body></html>
