@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808"><meta name="color-scheme" content="dark">
+<meta name="description" content="Your BLACK JEE profile, attempt history and progress.">
+<title>Your Profile — BLACK JEE</title>
+<style>
+:root{color-scheme:dark;--bg:#080808;--panel:#111;--panel2:#171717;--line:#303030;--muted:#999;--white:#f5f5f5}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0,#1a1a1a,transparent 40%),var(--bg);color:var(--white);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}button{font:inherit;cursor:pointer}.wrap{width:min(1000px,calc(100% - 28px));margin:auto}.top{border-bottom:1px solid var(--line);background:#080808eF;position:sticky;top:0;z-index:2;backdrop-filter:blur(14px)}.nav{min-height:66px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:850;letter-spacing:.1em;text-decoration:none;display:flex;align-items:center;gap:10px}.mark{width:34px;height:34px;border:1px solid #555;display:grid;place-items:center;border-radius:7px}.actions{display:flex;gap:8px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 14px;border:1px solid #414141;border-radius:8px;background:#171717;color:#fff;text-decoration:none;font-size:.85rem;font-weight:700}.btn:hover{background:#242424;border-color:#777}.btn.primary{background:#f4f4f4;color:#090909;border-color:#f4f4f4}.hero{padding:42px 0 22px}.eyebrow{font-size:.7rem;letter-spacing:.16em;color:#aaa;text-transform:uppercase}.hero h1{font-size:clamp(2.3rem,7vw,4.4rem);letter-spacing:-.07em;line-height:1;margin:12px 0}.muted{color:var(--muted)}.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px;padding:10px 0 55px;align-items:start}.card{border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#141414,#0d0d0d);padding:20px;min-width:0}.avatar{width:62px;height:62px;border-radius:50%;border:1px solid #555;background:#1b1b1b;display:grid;place-items:center;font-size:1.35rem;font-weight:800;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.profile-name{font-size:1.2rem;font-weight:800;margin:14px 0 0;overflow-wrap:anywhere}.email{font-size:.82rem;color:#999;overflow-wrap:anywhere}.label{font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:#999}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:14px 0}.stat{padding:13px 10px;border:1px solid var(--line);border-radius:9px;background:#0b0b0b;min-width:0}.stat strong{display:block;font-size:1.35rem;letter-spacing:-.04em;overflow-wrap:anywhere}.stat span{font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;color:#999}.section-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.section-title h2{font-size:1.1rem;margin:0;letter-spacing:-.025em}.history{display:grid;gap:10px}.attempt{border:1px solid #303030;border-radius:10px;background:#0b0b0b;padding:14px}.attempt-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.attempt-title{font-weight:750;overflow-wrap:anywhere}.time{font:700 .85rem ui-monospace,monospace;white-space:nowrap}.meta{font-size:.76rem;color:#999;margin-top:5px;overflow-wrap:anywhere}.pill{display:inline-block;border:1px solid #444;border-radius:999px;padding:3px 8px;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;color:#ccc;margin-top:9px}.empty{padding:24px 15px;text-align:center;border:1px dashed #3b3b3b;border-radius:10px;color:#999;font-size:.9rem}.notice{display:none;margin:12px 0;padding:12px;border:1px solid #555;border-radius:8px;font-size:.85rem;overflow-wrap:anywhere}.notice.show{display:block}.notice.error{border-color:#7d4545;background:#211212}.notice.success{border-color:#555;background:#171717}.quicklinks{display:grid;gap:8px;margin-top:18px}.small{font-size:.78rem;color:#999}.hidden{display:none!important}.footer{border-top:1px solid var(--line);padding:22px 0 32px;color:#777;font-size:.75rem}@media(max-width:720px){.layout{grid-template-columns:1fr}.hero{padding-top:30px}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.card{padding:16px}}@media(max-width:430px){.nav{min-height:60px}.brand{font-size:.8rem}.mark{width:30px;height:30px}.actions .btn{padding:8px 9px;font-size:.72rem}.attempt-top{display:block}.time{display:block;margin-top:6px}.stat{padding:11px 8px}.stat strong{font-size:1.15rem}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span> BLACK JEE</a><div class="actions"><a class="btn" href="attempt.html">ATTEMPT ↗</a><button class="btn hidden" id="signOutBtn" type="button">SIGN OUT</button></div></div></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">YOUR ACCOUNT / TRAINING LOG</div><h1>YOUR PROFILE.</h1><p class="muted">Your BLACK JEE identity, submitted attempts and progress — in one place.</p></section>
+<div id="notice" class="notice" role="status"></div>
+<section id="signedOut" class="card"><div class="label">MEMBER ACCESS</div><h2 style="margin:8px 0">Sign in to see your dashboard.</h2><p class="muted">Use the same Google account you use in the attempt panel. Your attempt history is tied to that account.</p><button class="btn primary" id="googleBtn" type="button">CONTINUE WITH GOOGLE</button></section>
+<section id="dashboard" class="layout hidden">
+<aside class="card"><div class="avatar" id="avatar">B</div><div class="profile-name" id="profileName">JEE Challenger</div><div class="email" id="profileEmail"></div><div class="pill">GOOGLE ACCOUNT</div><div class="quicklinks"><a class="btn primary" href="attempt.html">START TODAY'S ATTEMPT ↗</a><a class="btn" href="index.html">BACK TO HOME</a></div><p class="small" style="margin-top:16px">Your private attempts are visible only to your signed-in account and authorized admins. Public Hall of Proof posts require approval.</p></aside>
+<div style="display:grid;gap:14px;min-width:0">
+<section class="card"><div class="section-title"><h2>Training overview</h2><span class="label">ACCOUNT STATS</span></div><div class="stats"><div class="stat"><strong id="attemptCount">0</strong><span>Attempts</span></div><div class="stat"><strong id="bestTime">—</strong><span>Best time</span></div><div class="stat"><strong id="publicCount">0</strong><span>Featured</span></div></div><p class="small" id="lastActivity">Your saved attempt history will appear below.</p></section>
+<section class="card"><div class="section-title"><h2>My attempts</h2><span class="label" id="historyCount">0 RECORDS</span></div><div class="history" id="attemptHistory"><div class="empty">Loading your training log…</div></div></section>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="wrap">BLACK JEE · TRAIN WITH INTENT. SHOW YOUR WORK.</div></footer>
+<script>
+const SUPABASE_URL="https://yeydvwnihpwoixytcgek.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_MEX3TmUJZt62P5fOQkvz8g_nVfrmsKi";
+let supabase=null,currentUser=null;
+const $=id=>document.getElementById(id);
+function notice(message,type="error"){const n=$("notice");n.textContent=message;n.className="notice show "+type;}
+function displayName(user){const m=user?.user_metadata||{};return String(m.full_name||m.name||m.preferred_username||user?.email?.split("@")[0]||"JEE Challenger").trim().slice(0,60);}
+function fmtTime(seconds){seconds=Math.max(0,Number(seconds)||0);const h=Math.floor(seconds/3600),m=Math.floor(seconds%3600/60),s=Math.floor(seconds%60);return [h,m,s].map(n=>String(n).padStart(2,"0")).join(":");}
+function safeDate(value){if(!value)return "Date unavailable";const d=new Date(value);return Number.isNaN(d.getTime())?"Date unavailable":d.toLocaleString("en-IN",{dateStyle:"medium",timeStyle:"short"});}
+function escapeText(value){return String(value??"");}
+async function signIn(){if(!supabase){notice("Sign-in service is loading. Refresh and try again.");return;}const {error}=await supabase.auth.signInWithOAuth({provider:"google",options:{redirectTo:window.location.href.split("?")[0].split("#")[0]}});if(error)notice("Google sign-in failed: "+error.message);}
+async function signOut(){if(!supabase)return;const {error}=await supabase.auth.signOut();if(error){notice("Could not sign out: "+error.message);return;}currentUser=null;renderSignedOut();}
+function renderSignedOut(){ $("dashboard").classList.add("hidden");$("signedOut").classList.remove("hidden");$("signOutBtn").classList.add("hidden");}
+async function loadDashboard(){
+ if(!currentUser){renderSignedOut();return;}
+ $("signedOut").classList.add("hidden");$("dashboard").classList.remove("hidden");$("signOutBtn").classList.remove("hidden");
+ const name=displayName(currentUser);$("profileName").textContent=name;$("profileEmail").textContent=currentUser.email||"Google account";
+ const picture=currentUser.user_metadata?.avatar_url||currentUser.user_metadata?.picture;
+ $("avatar").textContent=name.slice(0,1).toUpperCase();if(picture){const img=document.createElement("img");img.src=picture;img.alt="";img.referrerPolicy="no-referrer";img.onerror=()=>img.remove();$("avatar").replaceChildren(img);}
+ $("attemptHistory").innerHTML='<div class="empty">Loading your training log…</div>';
+ try{
+  const {data,error}=await supabase.from("attempt_submissions").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:false}).limit(100);
+  if(error)throw error;
+  const attempts=data||[];
+  const ids=[...new Set(attempts.map(a=>a.question_id).filter(Boolean))];
+  const titles={};
+  if(ids.length){const q=await supabase.from("daily_questions").select("id,title,question_date").in("id",ids);if(!q.error)(q.data||[]).forEach(item=>titles[item.id]=item.title||"Daily challenge");}
+  $("attemptCount").textContent=String(attempts.length);
+  const times=attempts.map(a=>Number(a.elapsed_seconds)).filter(n=>Number.isFinite(n)&&n>0);
+  $("bestTime").textContent=times.length?fmtTime(Math.min(...times)):"—";
+  $("publicCount").textContent=String(attempts.filter(a=>a.is_public===true).length);
+  $("historyCount").textContent=attempts.length+" RECORD"+(attempts.length===1?"":"S");
+  $("lastActivity").textContent=attempts.length?"Last attempt · "+safeDate(attempts[0].created_at):"No attempts yet. Your first submission will appear here.";
+  const host=$("attemptHistory");host.innerHTML="";
+  if(!attempts.length){host.innerHTML='<div class="empty">No attempts yet.<br>Open today’s challenge when you’re ready to begin.</div>';return;}
+  attempts.forEach(a=>{
+   const card=document.createElement("article");card.className="attempt";
+   const top=document.createElement("div");top.className="attempt-top";
+   const title=document.createElement("div");title.className="attempt-title";title.textContent=titles[a.question_id]||"BLACK JEE challenge";
+   const time=document.createElement("div");time.className="time";time.textContent=fmtTime(a.elapsed_seconds);
+   top.append(title,time);
+   const meta=document.createElement("div");meta.className="meta";meta.textContent=safeDate(a.created_at)+(a.selected_option?" · Answer: "+a.selected_option:"");
+   const status=document.createElement("span");status.className="pill";status.textContent=a.is_public?"FEATURED IN HALL OF PROOF":(a.is_reviewed?"REVIEWED":"SUBMITTED · UNDER REVIEW");
+   card.append(top,meta,status);
+   if(a.photo_path){const photo=document.createElement("div");photo.className="meta";photo.textContent="Solution photo submitted for review";card.appendChild(photo);}
+   host.appendChild(card);
+  });
+ }catch(e){$("attemptHistory").innerHTML='<div class="empty">Could not load your attempts: '+escapeText(e.message)+'</div>';notice("Your profile loaded, but attempt history could not be fetched. Check the Supabase ownership policy and retry.");}
+}
+async function init(){
+ try{
+  const client=await import("https://esm.sh/@supabase/supabase-js@2?bundle");supabase=client.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+  const {data,error}=await supabase.auth.getSession();if(error)throw error;currentUser=data.session?.user||null;
+  supabase.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;if(currentUser)loadDashboard();else renderSignedOut();});
+  if(currentUser)await loadDashboard();else renderSignedOut();
+ }catch(e){renderSignedOut();notice("Could not connect to the sign-in service: "+e.message);}
+}
+$("googleBtn").addEventListener("click",signIn);$("signOutBtn").addEventListener("click",signOut);init();
+</script>
+</body>
+</html>
