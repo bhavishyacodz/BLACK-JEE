@@ -184,5 +184,11 @@ input,textarea,select{min-height:44px;border-radius:10px!important}
 .admin-page .admin .card,.admin-page .review-item,.admin-page .bulk-scheduler{border-radius:14px!important;border-color:rgba(255,255,255,.11)!important}
 .admin-page .field label{font-weight:750;letter-spacing:.045em}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style><style id="blackjee-navigation-fix">
+.topbar .nav-right #adminNav,.topbar .nav-right #profileNav,.topbar .nav-right a[href="profile.html"]:not(.top-action-link),.topbar .nav-right a[href^="admin.html"]:not(.top-action-link){display:none!important}
+@media(max-width:780px){
+ .topbar .nav-right a[href="profile.html"]:not(.top-action-link),.topbar .nav-right a[href^="admin.html"]:not(.top-action-link){display:none!important}
+ header.top .actions>a.btn{display:none!important}
+}
 </style></body>
 </html>
