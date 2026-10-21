@@ -63,7 +63,7 @@ grant select (id, question_date, title, statement, tags, difficulty, options, so
 grant insert, update, delete on public.daily_questions to authenticated;
 grant select on public.attempt_submissions to anon, authenticated;
 grant insert on public.attempt_submissions to authenticated;
-grant update on public.attempt_submissions to authenticated;
+grant update (is_public, is_reviewed, photo_path) on public.attempt_submissions to authenticated;
 grant select, insert on table storage.objects to anon, authenticated;
 
 drop policy if exists "Live questions are public; admins see all" on public.daily_questions;
