@@ -8,6 +8,7 @@ from anon, authenticated;
 
 drop policy if exists "Admins can review attempts" on public.attempt_submissions;
 drop policy if exists "Users can attach photo to own pending attempts" on public.attempt_submissions;
+drop policy if exists "Admins review or users attach own photo" on public.attempt_submissions;
 
 create policy "Admins review or users attach own photo"
 on public.attempt_submissions
