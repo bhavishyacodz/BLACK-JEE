@@ -45,7 +45,7 @@ body.menu-open{overflow:hidden}
 .site-menu-panel a{-webkit-tap-highlight-color:transparent}
 </style></head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="index.html">BLACK <span class="red">JEE</span></a><a class="btn" href="attempt.html">LIVE CHALLENGE ↗</a><button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html">BLACK <span class="red">JEE</span></a><a class="btn" href="attempt.html">LIVE CHALLENGE ↗</a><div class="top-action-links"><a class="top-action-link" href="admin.html?admin=1" aria-label="Open admin dashboard">ADMIN</a><a class="top-action-link" href="profile.html" aria-label="Open your profile">PROFILE</a></div><button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
 <div class="site-menu-shell" id="siteMenu" hidden><div class="site-menu-panel" role="dialog" aria-modal="true" aria-label="BLACK JEE navigation"><div class="site-menu-heading"><div><strong>BLACK JEE</strong><small>Choose where to go</small></div><span aria-hidden="true">✦</span></div><a class="site-menu-link" href="index.html"><span class="menu-symbol">⌂</span><span>Home</span></a><a class="site-menu-link" href="attempt.html"><span class="menu-symbol">◉</span><span>Live challenge</span></a><a class="site-menu-link" href="archive.html"><span class="menu-symbol">▤</span><span>Challenge archive</span></a><a class="site-menu-link" href="profile.html"><span class="menu-symbol">◎</span><span>My profile</span></a><a class="site-menu-link" href="attempt.html?admin=1"><span class="menu-symbol">✎</span><span>Question studio</span></a><a class="site-menu-link menu-admin" href="admin.html?admin=1"><span class="menu-symbol">⚙</span><span>Admin dashboard</span></a><div class="site-menu-footer">One question. Full focus. Your next step starts here.</div></div></div>
 <main class="wrap"><section class="hero"><div class="eyebrow">The record · date-wise</div><h1>THE ARCHIVE.</h1><p>Every completed challenge stays here with its official correct option, published worked solution, and top three approved winners. Correct options and solutions remain hidden until results release at 6:00 PM IST.</p></section><div id="status" class="status">Loading official archive…</div><section id="archive" class="archive" aria-live="polite"></section></main>
 <footer><div class="wrap">BLACK JEE · Results are released after the challenge closes. Winner names appear only when the student has consented and the entry is approved. · <a href="rules.html">Rules & Privacy</a></div></footer>
@@ -77,4 +77,69 @@ function renderRow(q){
 async function load(){if(!client){$("status").textContent="Archive service unavailable. Check your connection and refresh.";return;}try{const {data,error}=await client.rpc("get_challenge_archive");if(error)throw error;const rows=Array.isArray(data)?data:[];$("archive").innerHTML="";if(!rows.length){$("status").textContent="No completed results have been released yet. New challenges will appear here after results time.";const empty=document.createElement("div");empty.className="empty";empty.textContent="The archive is ready. The first completed challenge will appear after 6:00 PM IST on its result date."; $("archive").appendChild(empty);return;}rows.forEach(q=>$("archive").appendChild(renderRow(q)));$("status").textContent=rows.length+" official challenge result"+(rows.length===1?"":"s")+" published · newest first.";}catch(e){$("status").textContent="Could not load archive: "+(e.message||"Please refresh later.");}}
 load();
 </script>
-<nav class="mobile-tabs" aria-label="Main navigation"><a class="mobile-tab " href="index.html" aria-label="Home"><span aria-hidden="true">⌂</span><small>Home</small></a><a class="mobile-tab " href="attempt.html" aria-label="Challenge"><span aria-hidden="true">◉</span><small>Challenge</small></a><a class="mobile-tab active" href="archive.html" aria-label="Archive"><span aria-hidden="true">▤</span><small>Archive</small></a><a class="mobile-tab " href="profile.html" aria-label="Profile"><span aria-hidden="true">♙</span><small>Profile</small></a></nav><nav class="mobile-tabbar"><a href="index.html"><span>⌂</span><small>Home</small></a><a href="attempt.html"><span>◉</span><small>Challenge</small></a><a href="archive.html" class="active"><span>▤</span><small>Archive</small></a><a href="profile.html"><span>◎</span><small>Profile</small></a></nav><script>(function(){const menu=document.getElementById("siteMenu");const toggle=document.getElementById("siteMenuToggle");if(!menu||!toggle)return;function closeMenu(){menu.hidden=true;toggle.setAttribute("aria-expanded","false");document.body.classList.remove("menu-open")}function openMenu(){menu.hidden=false;toggle.setAttribute("aria-expanded","true");document.body.classList.add("menu-open")}toggle.addEventListener("click",function(){menu.hidden?openMenu():closeMenu()});menu.addEventListener("click",function(e){if(e.target===menu)closeMenu()});menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",closeMenu)});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!menu.hidden){closeMenu();toggle.focus()}})})();</script></body></html>
+<nav class="mobile-tabs" aria-label="Main navigation"><a class="mobile-tab " href="index.html" aria-label="Home"><span aria-hidden="true">⌂</span><small>Home</small></a><a class="mobile-tab " href="attempt.html" aria-label="Challenge"><span aria-hidden="true">◉</span><small>Challenge</small></a><a class="mobile-tab active" href="archive.html" aria-label="Archive"><span aria-hidden="true">▤</span><small>Archive</small></a><a class="mobile-tab " href="profile.html" aria-label="Profile"><span aria-hidden="true">♙</span><small>Profile</small></a></nav><nav class="mobile-tabbar"><a href="index.html"><span>⌂</span><small>Home</small></a><a href="attempt.html"><span>◉</span><small>Challenge</small></a><a href="archive.html" class="active"><span>▤</span><small>Archive</small></a><a href="profile.html"><span>◎</span><small>Profile</small></a></nav><script>(function(){const menu=document.getElementById("siteMenu");const toggle=document.getElementById("siteMenuToggle");if(!menu||!toggle)return;function closeMenu(){menu.hidden=true;toggle.setAttribute("aria-expanded","false");document.body.classList.remove("menu-open")}function openMenu(){menu.hidden=false;toggle.setAttribute("aria-expanded","true");document.body.classList.add("menu-open")}toggle.addEventListener("click",function(){menu.hidden?openMenu():closeMenu()});menu.addEventListener("click",function(e){if(e.target===menu)closeMenu()});menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",closeMenu)});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!menu.hidden){closeMenu();toggle.focus()}})})();</script>
+<style id="blackjee-professional-ui-v2">
+:root{--brand-accent:#f04452}
+html{scroll-padding-top:88px}
+body{letter-spacing:-.006em;-webkit-font-smoothing:antialiased}
+header.topbar,header.top{position:sticky;top:0;z-index:110;backdrop-filter:blur(18px);background:rgba(8,9,12,.88);border-bottom:1px solid rgba(255,255,255,.09)}
+header .nav{min-height:70px}
+.brand{font-weight:850;letter-spacing:.075em}
+.top-action-links{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.top-action-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 13px;border:1px solid rgba(255,255,255,.14);border-radius:11px;background:rgba(255,255,255,.035);color:inherit;text-decoration:none;font-size:.76rem;font-weight:750;letter-spacing:.045em;white-space:nowrap;transition:background .16s,border-color .16s,transform .16s}
+.top-action-link:hover{background:rgba(240,68,82,.11);border-color:rgba(240,68,82,.48);transform:translateY(-1px)}
+.top-action-link.primary{background:#f04452;border-color:#f04452;color:#fff}
+.top-action-link.primary:hover{background:#ff5a66}
+.site-menu-toggle{width:46px!important;height:46px!important;border-radius:12px!important;border-color:rgba(255,255,255,.17)!important;background:#15161b!important}
+.site-menu-toggle:focus-visible,.top-action-link:focus-visible{outline:3px solid rgba(240,68,82,.65);outline-offset:3px}
+.site-menu-shell{z-index:200!important}
+.site-menu-panel{border-color:rgba(255,255,255,.13)!important}
+.site-menu-link{min-height:48px!important}
+.hero h1{letter-spacing:-.065em;line-height:.98}
+.hero-copy,.hero p{max-width:680px;line-height:1.75}
+.card,.submission,.schedule-box,.stat,.prestart-panel,.profile-card,.archive-card{border-radius:16px!important}
+.card{border-color:rgba(255,255,255,.105)!important;box-shadow:0 12px 36px rgba(0,0,0,.12)}
+.card-body{line-height:1.7}
+.btn{min-height:44px;border-radius:11px;transition:transform .15s ease,filter .15s ease}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+input,textarea,select{min-height:44px;border-radius:10px!important}
+.section-head{align-items:center;gap:12px;flex-wrap:wrap}
+.section-head h2{letter-spacing:-.04em}
+.tag,.chip{border-radius:999px!important}
+.mobile-tabbar{z-index:100!important}
+@media(max-width:780px){
+ header .nav{min-height:66px;gap:8px}
+ .top-action-links{gap:6px}
+ .top-action-link{min-height:40px;padding:0 9px;font-size:.66rem;letter-spacing:0}
+ .topbar .nav-right .nav-link,.topbar .nav-right #adminNav,.topbar .nav-right #profileNav,.topbar .nav-right a[href="profile.html"],.topbar .nav-right a[href^="admin.html"]{display:none!important}
+ .topbar .nav-right #googleAuthBtn,.topbar .nav-right #authStatus{display:none!important}
+ .topbar .nav-right{display:flex!important;align-items:center;gap:6px}
+ .admin-page .nav-right{display:flex!important;align-items:center;gap:6px}
+ .admin-page .nav-right .nav-link,.admin-page .nav-right #adminNav{display:none!important}
+ header.top .nav>a.btn,header.top .nav>.btn{display:none}
+ header.top .nav{justify-content:space-between}
+ header.top .nav .top-action-links{margin-left:auto}
+ header .actions{display:flex;align-items:center;gap:6px}
+ .hero{padding-top:48px!important;padding-bottom:34px!important}
+ .hero h1{font-size:clamp(2.9rem,14vw,5rem)}
+ .section{padding-top:30px;padding-bottom:36px}
+ .card-body{padding:17px!important}
+ .schedule-strip{gap:8px}
+ .schedule-box{padding:11px}
+ .schedule-box small{font-size:.62rem;letter-spacing:.04em}
+ .site-menu-shell{padding-top:76px!important}
+}
+@media(max-width:390px){
+ .top-action-link{padding:0 7px;font-size:.61rem}
+ .top-action-links{gap:4px}
+ .site-menu-toggle{width:42px!important;height:42px!important;flex-basis:42px!important}
+ .brand{font-size:.92rem}
+}
+.admin-page{--red:#f04452!important;--red2:#a90e1c!important}
+.admin-page:before{opacity:.07!important}
+.admin-page .topbar .brand:after{color:#aeb4c0!important}
+.admin-page .admin-grid{gap:14px}
+.admin-page .admin .card,.admin-page .review-item,.admin-page .bulk-scheduler{border-radius:14px!important;border-color:rgba(255,255,255,.11)!important}
+.admin-page .field label{font-weight:750;letter-spacing:.045em}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style></body></html>
