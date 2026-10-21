@@ -309,3 +309,9 @@ revoke all on function public.submit_challenge_answer(uuid,text,text,boolean) fr
 grant execute on function public.submit_challenge_answer(uuid,text,text,boolean) to authenticated;
 revoke all on function public.get_challenge_archive() from public;
 grant execute on function public.get_challenge_archive() to anon, authenticated;
+
+
+-- Security audit hardening (also recorded in migration 20261021000800_restrict_truncate_and_photo_paths.sql)
+revoke truncate, trigger, references on table public.active_question_links, public.daily_questions, public.attempt_submissions from anon, authenticated;
+drop policy if exists "Users can attach photo to own pending attempts" on public.attempt_submissions;
+create policy "Users can attach photo to own pending attempts" on public.attempt_submissions for update to authenticated using (user_id = (select auth.uid()) and is_public = false and is_reviewed = false) with check (user_id = (select auth.uid()) and is_public = false and is_reviewed = false and (photo_path is null or left(photo_path, length(((select auth.uid())::text) || '/')) = ((select auth.uid())::text || '/')));
