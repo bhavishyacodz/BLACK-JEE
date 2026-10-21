@@ -137,7 +137,7 @@ const today = () => challengeDate();
 $("dateTag").textContent = new Date().toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric"}).toUpperCase();
 if($("adminDate"))$("adminDate").value = today();
 let supabase = null, currentQuestion = null, startedAt = null, ticker = null, elapsed = 0, selectedOption = null, chosenPhoto = null, adminUser = null;
-let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null;
+let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null,lastSolutionCheckAt=0;
 const fallbackQuestion = {
  id:null, question_date:today(), title:"Ohm's Law: Find Current", difficulty:"JEE Main",
  tags:["Physics","Current Electricity","JEE Main"],
@@ -166,7 +166,7 @@ function renderQuestion(q){
  if(q.solution_published&&q.solution){$("solutionPanel").classList.add("show");$("solutionText").textContent=q.solution;$("solutionByline").textContent="OFFICIAL SOLUTION · "+(q.question_date||"");$("solutionStatus").textContent="Official solution is live";$("solutionStatusCopy").textContent="The owner has released the step-by-step solution.";}else{$("solutionPanel").classList.remove("show");$("solutionStatus").textContent="Official answer not released yet";$("solutionStatusCopy").textContent="After the official results release, check the Challenge Archive for the correct option, any published worked solution, and confirmed winners.";}typesetMath($("questionText"));typesetMath($("questionOptions"));typesetMath($("solutionText"));
 }
 async function loadQuestion(){
- lastLoadedChallengeDate=today();lastSolutionCheck=null;
+ lastLoadedChallengeDate=today();lastSolutionCheck=null,lastSolutionCheckAt=0;
  const showEmpty=()=>{currentQuestion=null;$("questionTitle").textContent="No live question";$("questionText").textContent="No live question link or written question is published yet. Check back soon.";$("questionMeta").textContent="BLACK JEE / WAITING FOR THE NEXT CHALLENGE";$("questionChips").innerHTML="";$("questionOptions").innerHTML="";$("liveStatus").textContent="NO LIVE QUESTION";$("dateTag").textContent="COMING SOON";$("startBtn").disabled=true;$("submitBtn").disabled=true;};
  if(!supabase){showEmpty();return;}
  try{
@@ -360,18 +360,20 @@ function scheduleTick(){
  $("solutionCountdown").textContent=released?"CHECK ARCHIVE":duration(releaseAt-now);
  $("solutionCountdown").classList.toggle("schedule-green",released);
  if(lastLoadedChallengeDate!==activeDate)loadQuestion();
- if(released&&supabase&&lastSolutionCheck!==resultDate){
-  lastSolutionCheck=resultDate;
+ if(released&&supabase&&lastSolutionCheck!==resultDate&&Date.now()-lastSolutionCheckAt>60000){
+  lastSolutionCheckAt=Date.now();
   supabase.functions.invoke("released-solution",{body:{question_date:resultDate}}).then(({data,error})=>{
-   if(error){console.error(error);$("solutionStatusCopy").textContent="Result service unavailable. Refresh and try again.";return;}
+   if(error){console.error(error);lastSolutionCheck=null;$("solutionStatusCopy").textContent="Result service unavailable. We’ll retry automatically; refresh if it continues.";return;}
    if(data?.solution){
+    lastSolutionCheck=resultDate;
     $("releasedResult").classList.add("show");
     $("releasedResultMeta").textContent="CHALLENGE DATE · "+resultDate+" · RELEASED 6:00 PM IST";
     $("releasedResultText").textContent=data.solution;
     $("solutionStatus").textContent="Official result is live";
     $("solutionStatusCopy").textContent="The official solution for the challenge that closed today is available below.";
    }else{
-    $("solutionStatusCopy").textContent="No official solution is available for "+resultDate+" yet.";
+    lastSolutionCheck=null;
+    $("solutionStatusCopy").textContent="No official solution is available for "+resultDate+" yet. We’ll check again automatically.";
    }
   });
  }
