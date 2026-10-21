@@ -283,7 +283,7 @@ async function loadQuestion(){
   // The active challenge date may be tomorrow after the daily release time.
   // If no older/equal row exists, accept the newest live row permitted by Supabase RLS.
   if(!written){
-   const retry=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
+   const retry=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,solution_published,is_live,created_at,starts_at,ends_at,challenge_type").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
    if(retry.error)throw retry.error;
    written=retry.data;
   }
