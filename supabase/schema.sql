@@ -18,29 +18,51 @@ create table if not exists public.daily_questions (
   created_at timestamptz not null default now()
 );
 
+create table if not exists public.active_question_links (
+  id uuid primary key default gen_random_uuid(),
+  title text not null default 'Today''s question',
+  url text not null,
+  is_live boolean not null default true,
+  updated_at timestamptz not null default now()
+);
+
 create table if not exists public.attempt_submissions (
   id uuid primary key default gen_random_uuid(),
-  question_id uuid not null references public.daily_questions(id) on delete cascade,
+  question_id uuid references public.daily_questions(id) on delete cascade,
+  question_link_id uuid references public.active_question_links(id) on delete cascade,
+  user_id uuid not null references auth.users(id) on delete cascade,
   display_name text not null check (char_length(display_name) between 1 and 60),
   elapsed_seconds integer not null check (elapsed_seconds >= 0 and elapsed_seconds <= 604800),
   selected_option text,
   photo_path text,
   is_reviewed boolean not null default false,
   is_public boolean not null default false,
-  created_at timestamptz not null default now()
+  created_at timestamptz not null default now(),
+  constraint attempt_submissions_exactly_one_question_target check (
+    (question_id is not null and question_link_id is null)
+    or (question_id is null and question_link_id is not null)
+  )
 );
 
 alter table public.daily_questions enable row level security;
 alter table public.attempt_submissions enable row level security;
 
--- Supports question joins and admin review queries.
+-- Supports question joins, per-user history, and admin review queries.
 create index if not exists attempt_submissions_question_id_idx on public.attempt_submissions(question_id);
+create index if not exists attempt_submissions_question_link_id_idx on public.attempt_submissions(question_link_id);
+create unique index if not exists attempt_submissions_one_per_user_question_idx
+  on public.attempt_submissions(user_id, question_id)
+  where user_id is not null and question_id is not null;
+create unique index if not exists attempt_submissions_one_per_user_link_idx
+  on public.attempt_submissions(user_id, question_link_id)
+  where user_id is not null and question_link_id is not null;
 
 revoke all on public.daily_questions from anon, authenticated;
 revoke all on public.attempt_submissions from anon, authenticated;
 grant select (id, question_date, title, statement, tags, difficulty, options, solution_published, is_live, created_at) on public.daily_questions to anon, authenticated;
 grant insert, update, delete on public.daily_questions to authenticated;
-grant select, insert on public.attempt_submissions to anon, authenticated;
+grant select on public.attempt_submissions to anon, authenticated;
+grant insert on public.attempt_submissions to authenticated;
 grant update on public.attempt_submissions to authenticated;
 grant select, insert on table storage.objects to anon, authenticated;
 
@@ -70,21 +92,35 @@ on public.daily_questions for delete to authenticated
 using ((select auth.jwt())->'app_metadata'->>'role' = 'admin');
 
 drop policy if exists "Visitors can submit attempts for review" on public.attempt_submissions;
-create policy "Visitors can submit attempts for review"
-on public.attempt_submissions for insert to anon, authenticated
+drop policy if exists "Signed-in users can submit their own attempt once" on public.attempt_submissions;
+create policy "Signed-in users can submit their own attempt once"
+on public.attempt_submissions for insert to authenticated
 with check (
-  is_public = false and is_reviewed = false
+  user_id = (select auth.uid())
+  and is_public = false and is_reviewed = false
   and char_length(trim(display_name)) between 1 and 60
-  and exists (
-    select 1 from public.daily_questions q
-    where q.id = attempt_submissions.question_id and q.is_live = true
+  and (
+    (question_id is not null and question_link_id is null and exists (
+      select 1 from public.daily_questions q
+      where q.id = attempt_submissions.question_id and q.is_live = true
+    ))
+    or
+    (question_id is null and question_link_id is not null and exists (
+      select 1 from public.active_question_links l
+      where l.id = attempt_submissions.question_link_id and l.is_live = true
+    ))
   )
 );
 
 drop policy if exists "Public sees approved attempts; admins see all" on public.attempt_submissions;
-create policy "Public sees approved attempts; admins see all"
+drop policy if exists "Users see their own attempts; public sees approved; admins see all" on public.attempt_submissions;
+create policy "Users see their own attempts; public sees approved; admins see all"
 on public.attempt_submissions for select to anon, authenticated
-using (is_public = true or (select auth.jwt())->'app_metadata'->>'role' = 'admin');
+using (
+  is_public = true
+  or user_id = (select auth.uid())
+  or (select auth.jwt())->'app_metadata'->>'role' = 'admin'
+);
 
 drop policy if exists "Admins can review attempts" on public.attempt_submissions;
 create policy "Admins can review attempts"
