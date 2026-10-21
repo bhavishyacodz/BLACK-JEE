@@ -147,9 +147,13 @@ on conflict (id) do update
 set public = false, file_size_limit = 6291456, allowed_mime_types = array['image/jpeg','image/png','image/webp'];
 
 drop policy if exists "Visitors can upload attempt photos" on storage.objects;
-create policy "Visitors can upload attempt photos"
-on storage.objects for insert to anon, authenticated
-with check (bucket_id = 'attempt-photos');
+drop policy if exists "Authenticated users upload own attempt photos" on storage.objects;
+create policy "Authenticated users upload own attempt photos"
+on storage.objects for insert to authenticated
+with check (
+  bucket_id = 'attempt-photos'
+  and (storage.foldername(name))[1] = (select auth.uid())::text
+);
 
 drop policy if exists "Approved photos and admins can view attempt photos" on storage.objects;
 create policy "Approved photos and admins can view attempt photos"
