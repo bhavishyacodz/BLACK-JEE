@@ -197,6 +197,56 @@ body.focus-mode .topbar:hover,body.focus-mode .topbar:focus-within{opacity:1}
 }
 @media(max-width:390px){.attempt-step small{display:none}.attempt-step strong{font-size:.65rem}.attempt-steps{gap:5px}}
 
+
+/* BLACK JEE: pure-black, low-reading, mobile-first attempt UI */
+:root{color-scheme:dark;--bg:#000;--panel:#080808;--panel2:#0d0d0d;--line:#202020;--muted:#888;--white:#f5f5f5;--red:#ff2638;--red2:#b80f20;--green:#69e3a1}
+html,body,body.attempt-page{background:#000!important;color:#f5f5f5}
+body:before{display:none!important}
+body.attempt-page .topbar{background:#000!important;border-bottom:1px solid #1b1b1b;backdrop-filter:none}
+body.attempt-page .nav{height:58px}
+body.attempt-page .hero{display:none!important}
+body.attempt-page #challenge{padding-top:12px!important;background:#000;min-height:calc(100dvh - 58px)}
+body.attempt-page #challenge .section-head{margin-bottom:12px}
+body.attempt-page #challenge .section-head h2{font-size:clamp(1.25rem,5vw,1.7rem);letter-spacing:-.04em}
+body.attempt-page #challenge .grid{width:100%;max-width:720px}
+body.attempt-page #challenge .card{background:#050505!important;border:1px solid #202020!important;border-radius:12px;box-shadow:none!important}
+body.attempt-page #challenge .card-top{background:#050505!important;border-bottom:1px solid #202020;padding:13px 15px}
+body.attempt-page #challenge .card-body{padding:clamp(15px,4vw,24px)}
+body.attempt-page #questionTitle{font-size:clamp(1.3rem,5vw,1.8rem);line-height:1.25;margin:10px 0}
+body.attempt-page #questionText{font-size:1rem;line-height:1.75;color:#eee}
+body.attempt-page .question-options{gap:9px}
+body.attempt-page .option{background:#080808!important;border:1px solid #292929!important;border-radius:10px;min-height:54px;padding:13px}
+body.attempt-page .option:has(input:checked){background:#170609!important;border-color:#ff2638!important;box-shadow:inset 3px 0 #ff2638!important}
+body.attempt-page .btn{background:#090909;border:1px solid #303030;border-radius:10px;box-shadow:none;min-height:48px;padding:12px 15px}
+body.attempt-page .btn-red{background:#ff2638!important;border-color:#ff2638!important;color:#fff!important}
+body.attempt-page #startBtn,body.attempt-page #submitBtn{width:100%;min-height:54px;font-size:1rem;font-weight:800;letter-spacing:.04em}
+body.attempt-page .action-row{display:grid;grid-template-columns:1fr;gap:10px}
+body.attempt-page .timerbar{position:sticky;bottom:8px;z-index:5;background:#050505!important;border-color:#252525;box-shadow:0 4px 22px #000!important;border-radius:10px}
+body.attempt-page .timer{font-size:1.5rem;font-variant-numeric:tabular-nums}
+body.attempt-page .tiny,body.attempt-page .muted{color:#8b8b8b}
+body.attempt-page .protocol-grid{display:none!important}
+body.attempt-page #protocol,body.attempt-page #hall,body.attempt-page footer{display:none!important}
+body.attempt-page .submission-form{background:#050505;border-color:#242424}
+body.attempt-page .field input,body.attempt-page .field textarea,body.attempt-page .field select{background:#000;border-color:#2a2a2a}
+body.attempt-page .notice.error{background:#160507;border-color:#69202a}
+body.attempt-page .notice.success{background:#041109;border-color:#205b39}
+body.attempt-page .challenge-intro{background:#000!important}
+body.attempt-page .intro-inner{background:#000!important;box-shadow:none!important}
+body.attempt-page .intro-word{color:#ff2638}
+body.attempt-page .intro-progress{background:#1c1c1c}
+body.attempt-page .intro-progress span{background:#ff2638}
+@media(max-width:520px){
+ body.attempt-page .wrap{width:calc(100% - 20px)!important}
+ body.attempt-page #challenge{padding-top:8px!important}
+ body.attempt-page #challenge .section-head{gap:8px}
+ body.attempt-page #challenge .section-head .tag{font-size:.62rem;padding:4px 6px}
+ body.attempt-page #challenge .card-body{padding:14px}
+ body.attempt-page .question-text{line-height:1.7}
+ body.attempt-page .option{min-height:52px;padding:12px}
+ body.attempt-page .timerbar{bottom:5px;margin:12px 0}
+}
+@media(prefers-reduced-motion:reduce){body.attempt-page *,body.attempt-page *:before,body.attempt-page *:after{animation:none!important;transition:none!important}}
+
 </style>
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{typeset:false}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
