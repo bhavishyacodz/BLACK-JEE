@@ -13,6 +13,9 @@ create table if not exists public.daily_questions (
   difficulty text not null default 'JEE Advanced',
   options jsonb not null default '[]'::jsonb,
   solution text,
+  correct_answer text,
+  starts_at timestamptz,
+  ends_at timestamptz,
   solution_published boolean not null default false,
   is_live boolean not null default true,
   created_at timestamptz not null default now()
@@ -37,6 +40,10 @@ create table if not exists public.attempt_submissions (
   photo_path text,
   is_reviewed boolean not null default false,
   is_public boolean not null default false,
+  is_correct boolean,
+  score integer not null default 0,
+  public_name_consent boolean not null default false,
+  submitted_at timestamptz not null default now(),
   created_at timestamptz not null default now(),
   constraint attempt_submissions_exactly_one_question_target check (
     (question_id is not null and question_link_id is null)
