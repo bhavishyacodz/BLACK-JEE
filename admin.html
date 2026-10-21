@@ -69,7 +69,7 @@ button:focus-visible,a:focus-visible{outline:3px solid rgba(255,83,100,.8);outli
 </style>
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{typeset:false}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+<style>.mobile-tabbar{position:fixed;z-index:99;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);padding:8px 7px calc(8px + env(safe-area-inset-bottom));background:rgba(9,10,13,.97);backdrop-filter:blur(16px);border-top:1px solid #292c34}.mobile-tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#858b97;min-height:44px;border-radius:9px}.mobile-tabbar a span{font-size:20px;line-height:1.2}.mobile-tabbar a small{font-size:10px;letter-spacing:.04em;font-weight:650}.mobile-tabbar a.active{color:#fff;background:#191b21}.mobile-tabbar a.active span{color:#f04452}body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}@media(min-width:850px){.mobile-tabbar{left:50%;right:auto;transform:translateX(-50%);width:min(560px,100%);border:1px solid #292c34;border-bottom:0;border-radius:14px 14px 0 0}}body:not(.admin-mode) #signOutBtn,body:not(.admin-mode) #adminSignOutBtn{display:none!important}</style></head>
 <body class="admin-page">
 <header class="topbar"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span><span>BLACK <span class="red">JEE</span></span></a><div class="nav-right"><a class="nav-link" href="#challenge">TODAY'S CHALLENGE</a><a class="nav-link" href="#hall">HALL OF PROOF</a><a class="nav-link" href="attempt.html?admin=1" target="_blank" rel="noopener">QUESTION STUDIO ↗</a><a class="nav-link" href="admin.html?admin=1" target="_blank" rel="noopener">ADMIN DASHBOARD ↗</a><button class="btn btn-quiet" id="adminNav" type="button" onclick="window.open('admin.html?admin=1','_blank','noopener')">ADMIN ↗</button></div></div></header>
 <main>
@@ -360,4 +360,4 @@ updateWrittenPreview();
 
 scheduleTick();setInterval(scheduleTick,1000);init();
 </script>
-</body></html>
+<nav class="mobile-tabbar"><a href="index.html"><span>⌂</span><small>Home</small></a><a href="attempt.html"><span>◉</span><small>Challenge</small></a><a href="archive.html"><span>▤</span><small>Archive</small></a><a href="profile.html"><span>◎</span><small>Profile</small></a></nav></body></html>
