@@ -128,6 +128,11 @@ on public.attempt_submissions for update to authenticated
 using ((select auth.jwt())->'app_metadata'->>'role' = 'admin')
 with check ((select auth.jwt())->'app_metadata'->>'role' = 'admin');
 
+drop policy if exists "Users can attach photo to own pending attempts" on public.attempt_submissions;
+create policy "Users can attach photo to own pending attempts" on public.attempt_submissions for update to authenticated
+using (user_id = (select auth.uid()) and is_public = false and is_reviewed = false)
+with check (user_id = (select auth.uid()) and is_public = false and is_reviewed = false);
+
 -- Private storage: unapproved photo URLs are not publicly accessible.
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
 values ('attempt-photos', 'attempt-photos', false, 6291456, array['image/jpeg','image/png','image/webp'])
