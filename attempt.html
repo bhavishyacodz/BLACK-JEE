@@ -512,6 +512,18 @@ async function restoreExistingAttempt(){
   const {data,error}=await query.maybeSingle();
   if(error)throw error;
   if(!data)return;
+  // If this account already submitted, restore the question it already saw
+  // so a refresh does not leave a blank options panel. The RPC returns no answer key.
+  if(currentQuestion.id){
+   try{
+    const {data:restored,error:restoreError}=await supabase.rpc("restore_submitted_challenge_attempt",{p_question_id:currentQuestion.id});
+    if(!restoreError&&restored?.statement&&Array.isArray(restored.options)){
+     renderQuestion({...currentQuestion,...restored});
+     revealChallenge();
+     attemptLookupKey=key;
+    }
+   }catch(restoreFailure){console.warn("Submitted question content could not be restored",restoreFailure);}
+  }
   attemptAlreadySubmitted=true;submissionSaved=true;lastSubmissionId=data.id;elapsed=Number(data.elapsed_seconds)||0;selectedOption=data.selected_option||null;startedAt=null;
   if(ticker){clearInterval(ticker);ticker=null;}
   setTimer();$("startBtn").disabled=true;$("submitBtn").disabled=true;
