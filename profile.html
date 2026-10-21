@@ -43,7 +43,21 @@ body.menu-open{overflow:hidden}
 :where(.btn,button.btn):active{transform:translateY(1px)}
 :where(.section){scroll-margin-top:86px}
 .site-menu-panel a{-webkit-tap-highlight-color:transparent}
-</style></head>
+</style>
+<style id="chunk-3-history-progress">
+.history-tools{display:grid;grid-template-columns:1fr;gap:8px;padding:14px;margin:0 0 14px;border:1px solid rgba(255,255,255,.09);border-radius:13px;background:rgba(255,255,255,.025)}
+.history-search-label{font-size:.68rem;font-weight:800;letter-spacing:.1em;color:#aeb4c0}
+.history-tools input,.history-tools select{width:100%;min-width:0;background:#101116;color:#f5f7fa;border:1px solid #343740;padding:11px 12px;font:inherit}
+.history-tools input:focus,.history-tools select:focus{outline:2px solid rgba(240,68,82,.65);outline-offset:1px}
+.history-tools .small{margin:0}
+.achievement-wrap{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.09)}
+.achievements{display:flex;flex-wrap:wrap;gap:8px}
+.achievement{display:inline-flex;align-items:center;max-width:100%;padding:8px 11px;border:1px solid #343740;border-radius:999px;font-size:.76rem;font-weight:750;line-height:1.4}
+.achievement.earned{border-color:rgba(104,215,160,.45);background:rgba(104,215,160,.08);color:#a8f0c2}
+.achievement.locked{color:#9299a5;background:rgba(255,255,255,.02)}
+@media(min-width:640px){.history-tools{grid-template-columns:minmax(0,1.2fr) minmax(180px,.8fr);align-items:end}.history-tools .history-search-label{grid-row:auto}.history-tools #historySearch{grid-column:1}.history-tools label[for="historyFilter"]{grid-column:2;grid-row:1}.history-tools #historyFilter{grid-column:2;grid-row:2}.history-tools #historySummary{grid-column:1/-1}}
+</style>
+</head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span> BLACK JEE</a><div class="actions"><a class="btn" href="attempt.html">ATTEMPT ↗</a><div class="top-action-links"><a class="top-action-link" href="admin.html?admin=1" aria-label="Open admin dashboard">ADMIN</a><a class="top-action-link" href="profile.html" aria-label="Open your profile">PROFILE</a></div><button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header>
 <div class="site-menu-shell" id="siteMenu" hidden><div class="site-menu-panel" role="dialog" aria-modal="true" aria-label="BLACK JEE navigation"><div class="site-menu-heading"><div><strong>BLACK JEE</strong><small>Choose where to go</small></div><span aria-hidden="true">✦</span></div><a class="site-menu-link" href="index.html"><span class="menu-symbol">⌂</span><span>Home</span></a><a class="site-menu-link" href="attempt.html"><span class="menu-symbol">◉</span><span>Live challenge</span></a><a class="site-menu-link" href="archive.html"><span class="menu-symbol">▤</span><span>Challenge archive</span></a><a class="site-menu-link" href="profile.html"><span class="menu-symbol">◎</span><span>My profile</span></a><a class="site-menu-link" href="attempt.html?admin=1"><span class="menu-symbol">✎</span><span>Question studio</span></a><a class="site-menu-link menu-admin" href="admin.html?admin=1"><span class="menu-symbol">⚙</span><span>Admin dashboard</span></a><div class="site-menu-footer">One question. Full focus. Your next step starts here.</div></div></div>
@@ -54,8 +68,8 @@ body.menu-open{overflow:hidden}
 <section id="dashboard" class="layout hidden">
 <aside class="card"><div class="avatar" id="avatar">B</div><div class="profile-name" id="profileName">JEE Challenger</div><div class="email" id="profileEmail"></div><div class="pill">GOOGLE ACCOUNT</div><div class="quicklinks"><a class="btn primary" href="attempt.html">GO TO CHALLENGE ↗</a><a class="btn" href="index.html">BACK TO HOME</a><button class="btn hidden" id="signOutBtn" type="button">SIGN OUT</button></div><p class="small" style="margin-top:16px">Your private attempts are visible only to your signed-in account and authorized admins. Public Hall of Proof posts require approval.</p></aside>
 <div style="display:grid;gap:14px;min-width:0">
-<section class="card"><div class="section-title"><h2>Training overview</h2><span class="label">ACCOUNT STATS</span></div><div class="stats"><div class="stat"><strong id="attemptCount">0</strong><span>Attempts</span></div><div class="stat"><strong id="bestTime">—</strong><span>Best time</span></div><div class="stat"><strong id="publicCount">0</strong><span>Public features</span></div></div><p class="small" id="lastActivity">Only attempts linked to your signed-in account appear here. This is separate from the browser-only quick log on the challenge page.</p></section>
-<section class="card"><div class="section-title"><h2>My attempts</h2><span class="label" id="historyCount">0 RECORDS</span></div><div class="history" id="attemptHistory"><div class="empty">Loading your training log…</div></div></section>
+<section class="card"><div class="section-title"><h2>Training overview</h2><span class="label">ACCOUNT STATS</span></div><div class="stats"><div class="stat"><strong id="attemptCount">0</strong><span>Attempts</span></div><div class="stat"><strong id="bestTime">—</strong><span>Best time</span></div><div class="stat"><strong id="publicCount">0</strong><span>Public features</span></div></div><p class="small" id="lastActivity">Only attempts linked to your signed-in account appear here. This is separate from the browser-only quick log on the challenge page.</p><div class="achievement-wrap"><div class="section-title"><h2>Milestones</h2><span class="label">EARNED THROUGH PRACTICE</span></div><div class="achievements" id="achievements"><span class="achievement locked">First Attempt · Start your training log</span><span class="achievement locked">Consistency · Complete 5 attempts</span><span class="achievement locked">Hall of Proof · Get a public feature</span><span class="achievement locked">Speed Run · Record an attempt under 5 minutes</span></div></div></section>
+<section class="card"><div class="section-title"><h2>My attempts</h2><span class="label" id="historyCount">0 RECORDS</span></div><div class="history-tools"><label class="history-search-label" for="historySearch">SEARCH HISTORY</label><input id="historySearch" type="search" placeholder="Search challenge title…" autocomplete="off"><label class="history-search-label" for="historyFilter">FILTER ATTEMPTS</label><select id="historyFilter"><option value="all">All attempts</option><option value="featured">Hall of Proof</option><option value="reviewed">Reviewed privately</option><option value="pending">Under review</option></select><p class="small" id="historySummary" aria-live="polite">Showing your latest attempts.</p></div><div class="history" id="attemptHistory"><div class="empty">Loading your training log…</div></div></section>
 </div>
 </section>
 </main>
@@ -95,18 +109,44 @@ async function loadDashboard(){
   $("lastActivity").textContent=attempts.length?"Last attempt · "+safeDate(attempts[0].created_at):"No attempts yet. Your first submission will appear here.";
   const host=$("attemptHistory");host.innerHTML="";
   if(!attempts.length){host.innerHTML='<div class="empty">No attempts yet.<br>Open today’s challenge when you’re ready to begin.</div>';return;}
-  attempts.forEach(a=>{
-   const card=document.createElement("article");card.className="attempt";
-   const top=document.createElement("div");top.className="attempt-top";
-   const title=document.createElement("div");title.className="attempt-title";title.textContent=titles[a.question_id]||"BLACK JEE challenge";
-   const time=document.createElement("div");time.className="time";time.textContent=fmtTime(a.elapsed_seconds);
-   top.append(title,time);
-   const meta=document.createElement("div");meta.className="meta";meta.textContent=safeDate(a.created_at)+(a.selected_option?" · Answer: "+a.selected_option:"");
-   const status=document.createElement("span");status.className="pill";status.textContent=a.is_public?"FEATURED IN HALL OF PROOF":(a.is_reviewed?"REVIEWED":"SUBMITTED · UNDER REVIEW");
-   card.append(top,meta,status);
-   if(a.photo_path){const photo=document.createElement("div");photo.className="meta";photo.textContent="Solution photo submitted for review";card.appendChild(photo);}
-   host.appendChild(card);
-  });
+  const searchBox=$("historySearch"),filterBox=$("historyFilter");
+  const renderHistory=(list)=>{
+   const host=$("attemptHistory");host.innerHTML="";
+   if(!list.length){host.innerHTML='<div class="empty">No attempts match this search and filter.</div>';return;}
+   list.forEach(a=>{
+    const card=document.createElement("article");card.className="attempt";
+    const top=document.createElement("div");top.className="attempt-top";
+    const title=document.createElement("div");title.className="attempt-title";title.textContent=titles[a.question_id]||"BLACK JEE challenge";
+    const time=document.createElement("div");time.className="time";time.textContent=fmtTime(a.elapsed_seconds);
+    top.append(title,time);
+    const meta=document.createElement("div");meta.className="meta";meta.textContent=safeDate(a.created_at)+(a.selected_option?" · Answer: "+a.selected_option:"");
+    const status=document.createElement("span");status.className="pill";status.textContent=a.is_public?"FEATURED IN HALL OF PROOF":(a.is_reviewed?"REVIEWED · PRIVATE":"SUBMITTED · UNDER REVIEW");
+    card.append(top,meta,status);
+    if(a.photo_path){const photo=document.createElement("div");photo.className="meta";photo.textContent="Solution photo submitted for review";card.appendChild(photo);}
+    host.appendChild(card);
+   });
+  };
+  const applyHistoryFilters=()=>{
+   const term=(searchBox?.value||"").trim().toLowerCase(),filter=filterBox?.value||"all";
+   const filtered=attempts.filter(a=>{
+    const title=(titles[a.question_id]||"BLACK JEE challenge").toLowerCase();
+    const matchesText=!term||title.includes(term)||(a.selected_option||"").toLowerCase().includes(term);
+    const matchesStatus=filter==="all"||(filter==="featured"&&a.is_public===true)||(filter==="reviewed"&&a.is_reviewed===true&&a.is_public!==true)||(filter==="pending"&&a.is_reviewed!==true&&a.is_public!==true);
+    return matchesText&&matchesStatus;
+   });
+   $("historySummary").textContent="Showing "+filtered.length+" of "+attempts.length+" latest attempts.";
+   renderHistory(filtered);
+  };
+  if(searchBox&&!searchBox.dataset.bound){searchBox.addEventListener("input",applyHistoryFilters);filterBox.addEventListener("change",applyHistoryFilters);searchBox.dataset.bound="1";}
+  applyHistoryFilters();
+  const earned=[];
+  if(attempts.length>=1)earned.push("First Attempt");
+  if(attempts.length>=5)earned.push("Consistency · 5 attempts");
+  if(attempts.some(a=>a.is_public===true))earned.push("Hall of Proof");
+  if(times.some(n=>n<300))earned.push("Speed Run · under 5 minutes");
+  const milestones=[["First Attempt",attempts.length>=1,"Start your training log"],["Consistency",attempts.length>=5,"Complete 5 attempts"],["Hall of Proof",attempts.some(a=>a.is_public===true),"Get a public feature"],["Speed Run",times.some(n=>n<300),"Record an attempt under 5 minutes"]];
+  $("achievements").replaceChildren();
+  milestones.forEach(([name,unlocked,goal])=>{const badge=document.createElement("span");badge.className="achievement "+(unlocked?"earned":"locked");badge.textContent=(unlocked?"✦ ":"○ ")+name+(unlocked?" · UNLOCKED":" · "+goal);$("achievements").appendChild(badge);});
  }catch(e){$("attemptHistory").innerHTML='<div class="empty">Could not load your attempts: '+escapeText(e.message)+'</div>';notice("Your profile loaded, but attempt history could not be fetched. Check the Supabase ownership policy and retry.");}
 }
 async function init(){
