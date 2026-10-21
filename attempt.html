@@ -81,11 +81,41 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{background:radial-gradi
 /* Attempt mode keeps the brand, hides the full navigation, and never hides the question. */
 body.attempt-page > header{display:block!important}body.attempt-page .topbar .nav-right{display:none!important}body.attempt-page .topbar .nav{justify-content:space-between}body.attempt-page .topbar .nav:after{content:"FOCUSED ATTEMPT";font-size:.66rem;letter-spacing:.13em;color:#9097a4;font-weight:700}body.attempt-page #challenge{padding-top:30px!important}body.attempt-page #challenge #questionTitle,body.attempt-page #challenge #questionText,body.attempt-page #challenge #questionOptions{display:block!important;visibility:visible!important;opacity:1!important;height:auto!important;max-height:none!important;overflow:visible!important}body.attempt-page #challenge .card,body.attempt-page #challenge .card-body{visibility:visible!important;opacity:1!important}body.attempt-page #challenge .section-head>a{display:none}@media(max-width:520px){body.attempt-page #challenge{padding-top:18px!important}body.attempt-page .topbar .nav:after{font-size:.59rem}}
 
+
+/* Live challenge reveal: the timer starts first, the question reveal is only visual. */
+.challenge-intro{position:fixed;inset:0;z-index:9999;display:none;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 45%,rgba(240,68,82,.18),transparent 38%),#08090bf7;backdrop-filter:blur(18px);text-align:center}
+.challenge-intro.active{display:grid;animation:intro-in .25s ease-out both}
+.intro-inner{width:min(560px,100%)}
+.intro-kicker{display:flex;justify-content:center;align-items:center;gap:10px;color:#c5c8d0;font:600 .72rem ui-monospace,monospace;letter-spacing:.17em}
+.intro-live-dot{width:7px;height:7px;border-radius:50%;background:#f04452;box-shadow:0 0 18px #f04452;animation:live-pulse 1s infinite}
+.intro-word{margin:34px 0 14px;font-size:clamp(4rem,16vw,8.5rem);font-weight:850;line-height:.9;letter-spacing:-.09em;color:#fff;text-shadow:0 0 38px #f0445228}
+.intro-word.pop{animation:intro-pop .36s cubic-bezier(.2,.8,.2,1) both}
+.intro-caption{min-height:28px;color:#a7acb7;font-size:clamp(.9rem,2.8vw,1.05rem);letter-spacing:.015em}
+.intro-progress{height:3px;width:min(300px,75%);margin:28px auto 0;background:#292d35;border-radius:4px;overflow:hidden}
+.intro-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#c62b39,#ff6975);box-shadow:0 0 15px #f04452}
+.challenge-intro.active .intro-progress span{animation:intro-load 3s linear both}
+.intro-foot{margin-top:22px;color:#656b77;font:600 .63rem ui-monospace,monospace;letter-spacing:.12em}
+.intro-foot span{color:#f04452;padding:0 5px}
+@keyframes intro-in{from{opacity:0}to{opacity:1}}
+@keyframes intro-pop{0%{opacity:.35;transform:scale(.86);filter:blur(5px)}100%{opacity:1;transform:scale(1);filter:blur(0)}}
+@keyframes intro-load{to{width:100%}}
+@keyframes live-pulse{50%{opacity:.35;box-shadow:0 0 4px #f04452}}
+@media(prefers-reduced-motion:reduce){.challenge-intro.active,.intro-word.pop,.intro-live-dot,.challenge-intro.active .intro-progress span{animation:none!important}.intro-progress span{width:100%}}
+
 </style>
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{typeset:false}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body class="attempt-page">
+<div class="challenge-intro" id="challengeIntro" aria-live="assertive" aria-label="Challenge starting">
+  <div class="intro-inner">
+    <div class="intro-kicker"><span class="intro-live-dot"></span> BLACK JEE · LIVE CHALLENGE</div>
+    <div class="intro-word" id="introWord">READY?</div>
+    <div class="intro-caption" id="introCaption">Your clock is starting. Trust your preparation.</div>
+    <div class="intro-progress"><span id="introProgress"></span></div>
+    <div class="intro-foot">ONE QUESTION <span>·</span> ONE FOCUS <span>·</span> YOUR ATTEMPT</div>
+  </div>
+</div>
 <a class="skip-link" href="#challenge">Skip to today's challenge</a>
 <header class="topbar"><div class="wrap nav"><a class="brand" href="#"><span class="mark">B</span><span>BLACK <span class="red">JEE</span></span></a><div class="nav-right"><a class="nav-link" href="#challenge">CHALLENGE</a><a class="nav-link" href="#protocol">HOW IT WORKS</a><a class="nav-link" href="#hall">HALL OF PROOF</a><a class="nav-link" href="admin.html?admin=1" target="_blank" rel="noopener">ADMIN ↗</a><button class="btn btn-quiet" id="adminNav" type="button" onclick="window.open('admin.html?admin=1', '_blank', 'noopener')">ADMIN ↗</button></div></div></header>
 <main>
@@ -127,7 +157,15 @@ function notify(el,msg,type="success"){el.className="notice show "+type;el.textC
 function clearNotify(el){el.className="notice";el.textContent="";}
 function formatTime(s){s=Math.max(0,Math.floor(s));return [Math.floor(s/3600),Math.floor(s%3600/60),s%60].map(n=>String(n).padStart(2,"0")).join(":");}
 function setTimer(){const s=startedAt?Math.floor((Date.now()-startedAt)/1000):elapsed;$("timer").textContent=formatTime(s);$("timer").classList.toggle("running",!!startedAt);$("timerState").textContent=startedAt?"CLOCK RUNNING":elapsed?"ATTEMPT PAUSED / SUBMITTED":"CLOCK NOT STARTED";$("progressFill").style.width=startedAt?Math.min(100,s/900*100)+"%":elapsed?"100%":"0%";$("progressLabel").textContent=startedAt?"TIME IS TICKING":elapsed?"ATTEMPT SUBMITTED":"READY WHEN YOU ARE";}
-function maybeStartFromDashboard(){if(new URLSearchParams(location.search).get("start")==="1")startAttempt();}
+function beginChallengeIntro(){
+ const layer=$("challengeIntro");if(!layer||layer.classList.contains("active"))return;
+ const word=$("introWord"),caption=$("introCaption");layer.classList.add("active");
+ const beats=[["3","Breathe. Focus. Begin."],["2","Read carefully. Trust your process."],["1","Your attempt is live."],["GO","Make every second count."]];
+ let index=0;
+ const showBeat=()=>{word.classList.remove("pop");void word.offsetWidth;word.textContent=beats[index][0];caption.textContent=beats[index][1];word.classList.add("pop");index++;if(index<beats.length){setTimeout(showBeat,650);}else{setTimeout(()=>{layer.classList.remove("active");},550);}};
+ showBeat();
+}
+function maybeStartFromDashboard(){if(new URLSearchParams(location.search).get("start")==="1"){startAttempt();if(startedAt)beginChallengeIntro();}}
 function startAttempt(){if(startedAt)return;if(elapsed||submissionSaved){notify($("attemptNotice"),"This attempt has already been submitted. Refresh to start a new session.","error");return;}if(!currentQuestion?.id&&!currentQuestion?.question_link_id){notify($("attemptNotice"),"The live question is still loading. Please wait and try again.","error");return;}startedAt=Date.now();sessionQuestionId=currentQuestion.id||null;ticker=setInterval(setTimer,1000);$("startBtn").disabled=true;$("submitBtn").disabled=false;document.querySelectorAll('input[name="answer"]').forEach(input=>input.disabled=false);$("timerState").textContent="CLOCK RUNNING";setTimer();}
 function typesetMath(el){if(!el)return;const run=()=>{if(window.MathJax&&window.MathJax.typesetPromise){try{window.MathJax.typesetClear([el]);window.MathJax.typesetPromise([el]).catch(()=>{});}catch(e){}}};if(window.MathJax&&window.MathJax.startup&&window.MathJax.startup.promise){window.MathJax.startup.promise.then(run).catch(()=>{});}else{window.addEventListener("load",run,{once:true});}}
 function renderQuestion(q){
