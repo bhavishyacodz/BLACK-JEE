@@ -531,13 +531,12 @@ function renderQuestion(q){
  else{$("solutionPanel").classList.remove("show");$("solutionStatus").textContent="Official answer not released yet";$("solutionStatusCopy").textContent="After the official results release, check the Challenge Archive for the correct option, any published worked solution, and confirmed winners.";}typesetMath($("questionText"));typesetMath($("questionOptions"));typesetMath($("solutionText"));
 }
 async function restoreExistingAttempt(){
- if(!supabase||!currentUser||!currentQuestion||(!currentQuestion.id&&!currentQuestion.question_link_id))return;
- const key=currentUser.id+":"+(currentQuestion.id||("link:"+currentQuestion.question_link_id));
+ if(!supabase||!currentUser||!currentQuestion?.id)return;
+ const key=currentUser.id+":"+currentQuestion.id;
  if(attemptLookupKey===key)return;
  attemptLookupKey=key;
  try{
-  let query=supabase.from("attempt_submissions").select("id,question_id,question_link_id,elapsed_seconds,selected_option,photo_path,created_at,is_correct,score,public_name_consent").eq("user_id",currentUser.id);
-  query=currentQuestion.id?query.eq("question_id",currentQuestion.id):query.eq("question_link_id",currentQuestion.question_link_id);
+  const query=supabase.from("attempt_submissions").select("id,question_id,elapsed_seconds,selected_option,photo_path,created_at,is_correct,score,public_name_consent").eq("user_id",currentUser.id).eq("question_id",currentQuestion.id);
   const {data,error}=await query.maybeSingle();
   if(error)throw error;
   if(!data)return;
