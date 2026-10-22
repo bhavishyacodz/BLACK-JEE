@@ -90,7 +90,7 @@
     "chapter": "Rotational Motion",
     "source_question_number": 50,
     "question_text": "Moment of inertia about an axis AB for a rod of mass 40 kg and length 3 m is the same as that of a solid sphere of mass 10 kg and radius R, if the axis is parallel to AB with separation of 3 m as shown. The value of R is given as √(α/2). The value of α is ______.",
-    "question_type": "SA",
+    "question_type": "Numerical",
     "options": [],
     "marks_correct": 4,
     "marks_wrong": 0,
