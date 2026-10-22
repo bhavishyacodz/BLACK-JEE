@@ -48,4 +48,13 @@ $("bulkUploadBtn").addEventListener("click",async()=>{let arr,count=0;try{arr=JS
 async function loadManageList(){if(!(await adminOn()))return;const {data,error}=await supabase.from("jee_pyq_questions").select("id,year,session,subject,chapter,question_text,is_published,created_at").order("created_at",{ascending:false}).limit(100);if(error){$("manageList").textContent=error.message;return;}const list=$("manageList");list.innerHTML=(data||[]).map(q=>'<article class="qcard"><div class="qmeta"><span class="pill">'+esc(fmt(q))+'</span><span class="pill">'+(q.is_published?"PUBLISHED":"DRAFT")+'</span></div><div>'+esc(q.question_text.slice(0,180))+'</div><div class="row" style="margin-top:10px"><button class="btn" data-toggle="'+q.id+'" data-pub="'+(!q.is_published)+'">'+(q.is_published?"UNPUBLISH":"PUBLISH")+'</button><button class="btn" data-delete="'+q.id+'">DELETE</button></div></article>').join("")||'<div class="qcard muted">No questions uploaded yet.</div>';list.querySelectorAll("[data-toggle]").forEach(b=>b.addEventListener("click",async()=>{const {error}=await supabase.from("jee_pyq_questions").update({is_published:b.dataset.pub==="true"}).eq("id",b.dataset.toggle);if(error)notify("adminNotice",error.message,true);else{await loadManageList();await loadBank();}}));list.querySelectorAll("[data-delete]").forEach(b=>b.addEventListener("click",async()=>{if(!confirm("Delete this PYQ and its answer key permanently?"))return;const {error}=await supabase.from("jee_pyq_questions").delete().eq("id",b.dataset.delete);if(error)notify("adminNotice",error.message,true);else{await loadManageList();await loadBank();}}));}
 async function boot(){try{const mod=await import("https://esm.sh/@supabase/supabase-js@2");supabase=mod.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);await loadBank();const {data:{session}}=await supabase.auth.getSession();if(session)await checkAdmin();}catch(e){notify("bankNotice","Could not initialize Supabase: "+e.message,true);}}
 boot();
-</script><nav class="mobile-nav" aria-label="Main navigation"><a href="index.html"><span>⌂</span>Home</a><a href="attempt.html"><span>◉</span>Challenge</a><a class="active" href="pyq.html" aria-current="page"><span>✦</span>PYQ</a><a href="archive.html"><span>▤</span>Results</a><a href="profile.html"><span>◎</span>Profile</a></nav></body></html>
+</script><nav class="mobile-nav" aria-label="Main navigation"><a href="index.html"><span>⌂</span>Home</a><a href="attempt.html"><span>◉</span>Challenge</a><a class="active" href="pyq.html" aria-current="page"><span>✦</span>PYQ</a><a href="archive.html"><span>▤</span>Results</a><a href="profile.html"><span>◎</span>Profile</a></nav>
+<script>
+/* Cache the page shell so the next tab opens immediately; data/auth still refresh live. */
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  }, { once: true });
+}
+</script>
+</body></html>
