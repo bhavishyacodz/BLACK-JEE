@@ -531,4 +531,13 @@ input,textarea,select{min-height:44px;border-radius:10px!important}
  img,video,iframe,table{max-width:100%}
 }
 @media(max-width:380px){.mobile-tabbar a small{font-size:9px}.wrap{width:calc(100% - 20px)}.hero h1{font-size:clamp(2.55rem,14vw,3.5rem)}.hero-stats{gap:7px}}
-</style></body></html>
+</style>
+<script>
+/* Cache the page shell so the next tab opens immediately; data/auth still refresh live. */
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  }, { once: true });
+}
+</script>
+</body></html>
