@@ -11,6 +11,7 @@ Use one file per question, for example:
 
 - `jee-main-2026-apr-2-shift-2/q42.svg` (Q42 LCR circuit)
 - `jee-main-2026-apr-2-shift-2/q50.svg` (Q50 moment-of-inertia figure)
+- `jee-main-2026-apr-2-shift-2/q57.svg` (Q57 reaction-kinetics graph)
 - `jee-main-2026-apr-2-shift-2/q32.png`
 - `jee-main-2026-apr-2-shift-2/q42.png`
 
