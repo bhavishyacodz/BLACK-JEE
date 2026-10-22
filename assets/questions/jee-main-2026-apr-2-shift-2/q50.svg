@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="300" viewBox="0 0 620 300" role="img" aria-labelledby="title desc">
+<title id="title">JEE Main 2026 April 2 Shift 2 Question 50 moment of inertia diagram</title>
+<desc id="desc">A uniform rod of mass 40 kilograms and length 3 metres lies horizontally with axis AB at its right end. A solid sphere of radius R is shown below-left, its centre 3 metres from the axis.</desc>
+<rect width="620" height="300" fill="white"/>
+<g stroke="#111" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M300 35 V255 M292 45 L300 30 L308 45 M292 245 L300 260 L308 245"/>
+<rect x="65" y="82" width="235" height="24" fill="#fff"/>
+<path d="M65 118 H300 M65 128 H300 M65 118 V128 M300 118 V128"/>
+<circle cx="105" cy="190" r="42" fill="#fff"/>
+<path d="M105 190 L130 166 M130 166 L124 168 M130 166 L128 173"/>
+<path d="M147 190 H300" stroke-dasharray="5 6"/>
+<path d="M105 238 V258 M98 250 L105 260 L112 250"/>
+</g>
+<g fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="21">
+<text x="312" y="45">A</text><text x="312" y="260">B</text>
+<text x="170" y="72">M = 40 kg</text><text x="155" y="148">3 m</text>
+<text x="120" y="173">R</text><text x="170" y="218">3 m</text>
+</g></svg>
