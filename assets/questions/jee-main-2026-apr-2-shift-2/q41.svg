@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-labelledby="title desc">
+<title id="title">JEE Main 2026 April 2 Shift 2 Question 41 prism diagram</title>
+<desc id="desc">An equilateral prism of refractive index 1.6 has its bottom face coated with paint of refractive index n2. A ray enters the left sloping face normally and travels inside toward the painted face.</desc>
+<rect width="560" height="300" fill="white"/>
+<g stroke="#111" stroke-width="3" stroke-linejoin="round" fill="none">
+<path d="M105 220 L245 40 L390 220 Z" fill="white"/>
+<path d="M105 220 L390 220 L390 244 L105 244 Z" fill="#ddd"/>
+<path d="M105 220 L390 220 M105 226 L390 226 M105 234 L390 234 M105 242 L390 242" stroke-width="1.5"/>
+<path d="M25 140 L103 188 M103 188 L89 184 M103 188 L98 174"/>
+<path d="M105 188 L118 168" stroke-dasharray="4 4"/>
+</g>
+<g fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="22">
+<text x="300" y="276">paint (n₂)</text><text x="420" y="135">n = 1.6</text>
+</g>
+</svg>
