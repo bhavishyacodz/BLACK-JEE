@@ -1,25 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" viewBox="0 0 760 260" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250" role="img" aria-labelledby="title desc">
 <title id="title">JEE Main 2026 April 2 Shift 2 Question 30 logic circuit</title>
-<desc id="desc">Two inputs X and Y feed separate NAND gates. Their outputs feed a third NAND gate, whose output passes through a final NAND gate wired as an inverter to Output.</desc>
-<rect width="760" height="260" fill="#fff"/>
-<g stroke="#111" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M70 72 H150 M70 188 H150"/>
-  <path d="M250 72 H318 V108 H350"/>
-  <path d="M250 188 H318 V152 H350"/>
-  <path d="M430 130 H480"/>
-  <path d="M530 130 H575"/>
-  <path d="M650 130 H680"/>
-  <path d="M150 42 H195 A30 30 0 0 1 225 72 A30 30 0 0 1 195 102 H150 Z"/>
-  <path d="M150 158 H195 A30 30 0 0 1 225 188 A30 30 0 0 1 195 218 H150 Z"/>
-  <path d="M350 100 H385 A30 30 0 0 1 415 130 A30 30 0 0 1 385 160 H350 Z"/>
-  <path d="M575 100 H610 A30 30 0 0 1 640 130 A30 30 0 0 1 610 160 H575 Z"/>
-  <circle cx="236" cy="72" r="5" fill="#fff"/>
-  <circle cx="236" cy="188" r="5" fill="#fff"/>
-  <circle cx="426" cy="130" r="5" fill="#fff"/>
-  <circle cx="651" cy="130" r="5" fill="#fff"/>
-  <path d="M132 59 H150 M132 175 H150 M550 120 H575"/>
+<desc id="desc">X and Y each feed a NAND gate with its inputs joined. Their outputs feed a NAND gate. Its output feeds a final NAND gate with joined inputs. The question asks which logic gate the circuit implements.</desc>
+<rect width="760" height="250" fill="white"/>
+<g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M75 65 H150 M75 180 H150"/>
+  <path d="M150 42 H190 A30 30 0 0 1 220 72 A30 30 0 0 1 190 102 H150 Z"/>
+  <path d="M150 157 H190 A30 30 0 0 1 220 187 A30 30 0 0 1 190 217 H150 Z"/>
+  <path d="M150 65 H170 M150 58 H170 M150 180 H170 M150 173 H170"/>
+  <path d="M170 58 V72 M170 173 V187"/>
+  <circle cx="231" cy="72" r="5" fill="white"/><circle cx="231" cy="187" r="5" fill="white"/>
+  <path d="M236 72 H275 V105 H305 M236 187 H275 V145 H305"/>
+  <path d="M305 100 H340 A30 30 0 0 1 370 130 A30 30 0 0 1 340 160 H305 Z"/>
+  <circle cx="381" cy="130" r="5" fill="white"/>
+  <path d="M386 130 H430 M430 130 V115 H452 M430 130 V145 H452"/>
+  <path d="M452 100 H492 A30 30 0 0 1 522 130 A30 30 0 0 1 492 160 H452 Z"/>
+  <circle cx="533" cy="130" r="5" fill="white"/>
+  <path d="M538 130 H615"/>
 </g>
-<g fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="25">
-  <text x="25" y="80">X</text><text x="25" y="196">Y</text><text x="690" y="138">Output</text>
+<g fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="24">
+  <text x="28" y="73">X</text><text x="28" y="188">Y</text><text x="625" y="138">Output</text>
 </g>
 </svg>
