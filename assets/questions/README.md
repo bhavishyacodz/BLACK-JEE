@@ -7,6 +7,8 @@ Store question diagrams and figure crops in this folder so they can be versioned
 Use one file per question, for example:
 
 - `jee-main-2026-apr-2-shift-2/q30.svg` (Q30 logic-circuit diagram)
+- `jee-main-2026-apr-2-shift-2/q41.svg` (Q41 prism and painted face)
+
 - `jee-main-2026-apr-2-shift-2/q42.svg` (Q42 LCR circuit)
 - `jee-main-2026-apr-2-shift-2/q50.svg` (Q50 moment-of-inertia figure)
 - `jee-main-2026-apr-2-shift-2/q32.png`
