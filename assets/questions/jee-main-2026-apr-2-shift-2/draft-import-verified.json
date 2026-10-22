@@ -1,0 +1,102 @@
+[
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Physics",
+    "chapter": "Units and Dimensions",
+    "source_question_number": 26,
+    "question_text": "Dimensions of universal gravitational constant (G) in terms of Planck's constant (h), distance (L), mass (M) and time (T) are ______.",
+    "question_type": "MCQ",
+    "options": [
+      "h T L M^-2",
+      "h T^-1 L M^-2",
+      "h T L^2 M^-2",
+      "h^-1 T^-1 L M^-2"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "h T^-1 L M^-2",
+    "solution": "Using dimensional analysis, [G] = M^-1 L^3 T^-2. Since [h] = M L^2 T^-1, the matching expression is h T^-1 L M^-2."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Physics",
+    "chapter": "Semiconductor Electronics",
+    "source_question_number": 30,
+    "question_text": "If X and Y are the inputs, the given circuit works as ______.",
+    "question_type": "MCQ",
+    "options": [
+      "OR gate",
+      "AND gate",
+      "NAND gate",
+      "NOR gate"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q30.svg",
+    "correct_answer": "NOR gate",
+    "solution": "The first two NAND gates have their inputs tied together, so they act as NOT gates. The next NAND produces X OR Y; the final tied-input NAND inverts that result, giving NOR."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Physics",
+    "chapter": "Ray Optics",
+    "source_question_number": 41,
+    "question_text": "One side of an equilateral prism is painted by a transparent material of refractive index n2. The refractive index of prism is 1.6. The minimum value of n2 required for total internal reflection from painted face is ______.",
+    "question_type": "MCQ",
+    "options": [
+      "3√3/1.6",
+      "√3",
+      "3.2/√3",
+      "4√3/5"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q41.svg",
+    "correct_answer": "4√3/5",
+    "solution": "The ray enters normally to the first face. For an equilateral prism, its incidence angle at the painted face is 60°. At the limiting condition, n2 = 1.6 sin 60° = 4√3/5."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Physics",
+    "chapter": "Alternating Current",
+    "source_question_number": 42,
+    "question_text": "The figure shows an LCR series circuit with two switches S1 and S2. When S1 is closed keeping S2 open, the phase difference (φ) between the current and source voltage is 30°; the phase difference is 60° when S2 is closed keeping S1 open. The value of (3L1 − L2) is ______ H.",
+    "question_type": "MCQ",
+    "options": [
+      "9/2",
+      "2/9",
+      "1/3",
+      "3"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q42.svg",
+    "correct_answer": "2/9",
+    "solution": "Using ω = 300 rad s^-1 and C = 100 μF, the phase-angle relations eliminate R in 3L1 − L2, giving 2/(ω²C) = 2/9 H."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Physics",
+    "chapter": "Rotational Motion",
+    "source_question_number": 50,
+    "question_text": "Moment of inertia about an axis AB for a rod of mass 40 kg and length 3 m is the same as that of a solid sphere of mass 10 kg and radius R, if the axis is parallel to AB with separation of 3 m as shown. The value of R is given as √(α/2). The value of α is ______.",
+    "question_type": "SA",
+    "options": [],
+    "marks_correct": 4,
+    "marks_wrong": 0,
+    "is_published": false,
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q50.svg",
+    "correct_answer": "15",
+    "solution": "For the rod about its end, I = ML²/3 = 120 kg m². For the sphere, I = (2/5)(10)R² + 10(3²) = 4R² + 90. Equating gives R² = 15/2, so α = 15."
+  }
+]
