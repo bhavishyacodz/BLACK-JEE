@@ -97,7 +97,26 @@ for item, source_path, qid, filename, (x, y, w, h), target_key in validated:
         q["diagram"] = {"required": True, "asset_path": rel, "alt_text": visual["alt_text"], "source_verified": False, "render_verified": False}
     qm = manifest_by_subject_number[target_key]
     qm["visual_required"] = True
-    qm.setdefault("assets", []).append(rel)
+    assets = qm.setdefault("assets", [])
+    option_match = re.search(r"option[_-]([a-d])", filename, re.I)
+    filename_lower = filename.lower()
+    asset_type = (
+        "option_image" if option_match else
+        "matching" if "matching" in filename_lower else
+        "reaction" if "reaction" in filename_lower else
+        item.get("kind", "diagram")
+    )
+    asset_record = {
+        "filename": filename,
+        "asset_type": asset_type,
+        "belongs_to": "option" if option_match else "question",
+        "option_letter": option_match.group(1).upper() if option_match else None,
+        "source_pdf_page": qm.get("source_pdf_page"),
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": False,
+    }
+    if not any(isinstance(existing, dict) and existing.get("filename") == filename for existing in assets):
+        assets.append(asset_record)
     # Keep all existing unresolved issues until a human confirms they are resolved.
 
 SHIFT_MANIFEST.write_text(json.dumps(shift_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
