@@ -1,0 +1,32 @@
+name: BLACK-JEE browser security guardrails
+
+on:
+  push:
+    paths:
+      - "*.html"
+      - "*.js"
+      - "scripts/audit_browser_security.py"
+      - ".github/workflows/browser-security.yml"
+  pull_request:
+    paths:
+      - "*.html"
+      - "*.js"
+      - "scripts/audit_browser_security.py"
+      - ".github/workflows/browser-security.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-security-surface:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scan browser-facing files for secret exposure and project drift
+        run: python scripts/audit_browser_security.py
