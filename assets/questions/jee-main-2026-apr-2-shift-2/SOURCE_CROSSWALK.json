@@ -64,45 +64,50 @@
       "subject": "Mathematics",
       "subject_question_number": 6,
       "section": "A",
-      "draft_candidate_global_number": 23,
-      "status": "candidate_needs_exact_review",
-      "notes": "circle-locus candidate"
+      "draft_candidate_global_number": 6,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q6 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121156, correct option ID 691121533 = C). Draft global Q6 matches all binomial coefficients, index ranges, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q6 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121156, correct option ID 691121533 = C). Draft global Q6 matches all binomial coefficients, index ranges, options, and key."
     },
     {
       "paper_order": 7,
       "subject": "Mathematics",
       "subject_question_number": 7,
       "section": "A",
-      "draft_candidate_global_number": 5,
-      "status": "candidate_needs_exact_review",
-      "notes": "series candidate"
+      "draft_candidate_global_number": 7,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q7 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121157, correct option ID 691121537 = C). Draft global Q7 matches the polygon triangle-count condition and prime-divisor sum, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q7 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121157, correct option ID 691121537 = C). Draft global Q7 matches the polygon triangle-count condition and prime-divisor sum, options, and key."
     },
     {
       "paper_order": 8,
       "subject": "Mathematics",
       "subject_question_number": 8,
       "section": "A",
-      "draft_candidate_global_number": 3,
-      "status": "candidate_needs_exact_review",
-      "notes": "linear-system candidate; second equation differs"
+      "draft_candidate_global_number": 8,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q8 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121158, correct option ID 691121541 = C). Draft global Q8 matches the repeated-coin scoring setup, reduced fraction request, options, and key; probability independently sums to 43/64.",
+      "verification_evidence": "Verified exact Mathematics Q8 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121158, correct option ID 691121541 = C). Draft global Q8 matches the repeated-coin scoring setup, reduced fraction request, options, and key; probability independently sums to 43/64."
     },
     {
       "paper_order": 9,
       "subject": "Mathematics",
       "subject_question_number": 9,
       "section": "A",
-      "draft_candidate_global_number": 17,
-      "status": "candidate_needs_exact_review",
-      "notes": "integral candidate"
+      "draft_candidate_global_number": 9,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q9 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121159, correct option ID 691121546 = D). Draft global Q9 matches mean, variance, partial sum, sum of squares, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q9 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121159, correct option ID 691121546 = D). Draft global Q9 matches mean, variance, partial sum, sum of squares, options, and key."
     },
     {
       "paper_order": 10,
       "subject": "Mathematics",
       "subject_question_number": 10,
       "section": "A",
-      "draft_candidate_global_number": 7,
-      "status": "candidate_needs_exact_review",
-      "notes": "polygon triangle-count candidate"
+      "draft_candidate_global_number": 10,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q10 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121160, correct option ID 691121549 = C). Draft global Q10 matches both perpendicular-line equations, chord line, requested squared length, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q10 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121160, correct option ID 691121549 = C). Draft global Q10 matches both perpendicular-line equations, chord line, requested squared length, options, and key."
     },
     {
       "paper_order": 11,
