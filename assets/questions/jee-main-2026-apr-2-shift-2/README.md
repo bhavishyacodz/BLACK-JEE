@@ -183,3 +183,12 @@ Post-cleanup database verification:
 - Re-fetched the committed SVG and checked its root element, viewBox, closing tag, and presence of the A/E placeholders. The checks passed.
 - Commits: [1cafae2](https://github.com/bhavishyacodz/BLACK-JEE/commit/1cafae2d256cff5607ecb5579aa2f6cb625c39e8) (answer-leak fix) and [819f07d](https://github.com/bhavishyacodz/BLACK-JEE/commit/819f07d5dbe09bd9fa29de804bfca5cc03461de3) (ring depiction polish).
 - The SVG source is structurally validated; actual browser/device rendering and comparison against the official Q68 page remain pending. No database or publication status was changed.
+
+## Verification log — Chunk 25: Diagram accessibility answer-leak audit (2026-10-23)
+
+- Audited the SVG title/description text as well as visible labels, because screen readers can expose text in SVG descriptions even when it is not visibly rendered.
+- **Q30:** removed the conclusion naming the equivalent logic gate from the accessible description; it now describes the circuit connections without giving the answer.
+- **Q67:** removed the visible sentence naming the hydrolysis products and changed it to neutral Y/Z wording. Updated the accessible description so it describes the substrate without revealing the products.
+- **Q75:** changed the accessible description to identify the reaction-sequence context without naming the product class.
+- Commits: [Q30](https://github.com/bhavishyacodz/BLACK-JEE/commit/9d38821d98840556fcd2682011f2ac709cd6741a), [Q67](https://github.com/bhavishyacodz/BLACK-JEE/commit/727ce5e23f8532683092beee0eb9b3d52d81103d), [Q75](https://github.com/bhavishyacodz/BLACK-JEE/commit/61045f8ebd21d17b72f1525e499e8196be1e4b97).
+- This was a source-level content/accessibility audit. SVGs were re-fetched for validation; a live screen-reader and mobile browser pass is still pending. No database rows or publication statuses were changed.
