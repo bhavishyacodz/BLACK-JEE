@@ -7,7 +7,7 @@ The source-order review exposed a foundational mismatch between the printed NTA 
 - **Official printed paper order:** Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25.
 - **Legacy draft global slots:** Mathematics 1–25, Physics 26–50, Chemistry 51–75.
 - **Corrected crosswalk:** source rows are ordered Physics → Chemistry → Mathematics and candidates are aligned to the draft by subject and subject-local question number.
-- **Current verification status:** 10 rows are marked `confirmed_mismatch`, 59 remain `needs_exact_review`, and 6 are `source_extraction_unresolved`. All 75 remain non-publishable; none is marked `verified_exact_match`. These are preliminary content-comparison statuses based on a readable transcription, not final answer-key certification.
+- **Current verification status (latest crosswalk):** 3 rows remain `confirmed_mismatch`, 65 are `needs_exact_review`, and 7 are `source_extraction_unresolved`. All 75 draft records remain unpublished in the JSON; none is certified `verified_exact_match`. These are preliminary content-comparison statuses based on the available readable transcription, not final answer-key certification.
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
@@ -118,3 +118,10 @@ After restoring the printed Physics MCQ/numerical formats for legacy global Q33 
 ## Crosswalk integrity correction — 2026-10-23
 
 A further audit found that a previous Physics crosswalk revision had incorrectly assumed a sequential mapping from printed Physics Q1–25 to legacy global records Q26–50. This assumption is invalid because the legacy draft records are arranged in a different question order. The crosswalk and audit view are now topic-mapped instead. Physics Q5 (photoelectric-effect candidate) and Q25 remain unmapped; Physics Q10, Q19 and Q24 are explicitly flagged as content mismatches against their candidate records. The embedded runtime ordering map was rebuilt from the corrected crosswalk (67 mapped question stems); the full-shift guard remains active. Current overall status: 11 confirmed mismatches, 57 requiring exact review, and 7 source-extraction unresolved. No publication approval.
+
+
+## Latest correction status — 23 October 2026
+
+The latest crosswalk supersedes the earlier mismatch counts and several older audit notes below. Six Mathematics source mismatches were corrected in the draft, crosswalk, audit view and `mock-tests.html`: printed Mathematics Q3, Q12, Q15, Q16, Section-B Q1 (printed Q21), and Section-B Q4 (printed Q24). These now remain `needs_exact_review`, not verified, pending exact source-page/options and final-key confirmation. Physics Q3/Q4/Q8/Q10/Q23 received additional stem, calculation or diagram corrections; reconstructed diagrams for Physics Q9/Q14/Q20/Q21 are attached but explicitly not source-certified. The current crosswalk has 3 `confirmed_mismatch`, 65 `needs_exact_review`, and 7 `source_extraction_unresolved` rows. The 3 confirmed mismatches are Physics Q19, Chemistry Q15, and Mathematics Q8. Unresolved extraction is Physics Q5/Q25, Chemistry Q25, and Mathematics Q17–Q20.
+
+**Physics Q23 / legacy Q42 correction:** the current draft target is `3L₂ − L₁`, not the earlier `3L₁ − L₂`. The current SVG labels S₁ as bypassing L₁ and S₂ as bypassing L₂. The derived candidate value is 2/9 H. This remains a reconstructed diagram and must be checked against the official page and key before certification. Earlier notes that state the opposite target are historical and superseded.
