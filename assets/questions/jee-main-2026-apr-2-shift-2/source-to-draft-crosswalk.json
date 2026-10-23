@@ -296,7 +296,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 29
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -304,7 +304,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 2 gives force (2×10⁻¹⁰ î + 3×10⁻¹⁰ ĵ) N and B=2×10⁻³ k̂ T. Draft Q29 uses a different force vector and B=4×10⁻³ k̂ T."
+      "note": "Legacy Q29 corrected to the readable transcription's force vector, magnetic field and options. Independent official final-key verification remains pending."
     },
     {
       "source": {
