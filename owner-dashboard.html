@@ -6,7 +6,42 @@
 <style>
 :root{color-scheme:dark;--bg:#090a0c;--panel:#121419;--line:#292c33;--muted:#a4aab5;--fg:#f5f6f8;--accent:#f0f2f5}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -24%,#252932 0,transparent 48%),var(--bg);color:var(--fg);font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}header{padding:30px 0 24px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;color:#cbd0d8}h1{font-size:clamp(30px,5vw,48px);line-height:1.04;letter-spacing:-.045em;margin:12px 0}p{color:var(--muted)}header p{max-width:560px;margin:0 0 15px}.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid #353943;border-radius:99px;font-size:12px;color:#d7dae0}.dot{width:6px;height:6px;border-radius:50%;background:#e4e7ec}main{padding:20px 0 48px}.heading{margin:24px 0 12px}.heading h2{font-size:19px;margin:0;letter-spacing:-.02em}.heading p{font-size:13px;margin:4px 0 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:linear-gradient(145deg,#15171c,#101115);border:1px solid var(--line);border-radius:15px;padding:18px;min-width:0}.card:hover{border-color:#5a606b}.kicker{font-size:10px;font-weight:800;letter-spacing:.14em;color:#c3c8d1}.card h3{font-size:18px;margin:7px 0}.card p{font-size:13px;margin:0 0 14px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid #3a3e47;border-radius:9px;background:#1b1e24;font-size:12px;font-weight:700}.btn:hover{background:#272b33}.btn.primary{background:var(--accent);color:#101216;border-color:var(--accent)}.btn.primary:hover{background:#dce0e6}.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.step{padding:12px;border:1px solid var(--line);border-radius:11px;background:#111318}.step b{display:block;font-size:12px;margin:5px 0}.step span{font-size:12px;color:var(--muted)}.checklist{border:1px solid var(--line);border-radius:15px;padding:17px;background:#111318}.checkhead{display:flex;justify-content:space-between;gap:12px;align-items:start;flex-wrap:wrap}.checkhead h3{margin:0;font-size:17px}.checkhead p{font-size:12px;margin:4px 0 0}.scope{display:grid;gap:5px;margin:14px 0}.scope label{font-size:12px;font-weight:700}.scope input{width:100%;max-width:500px;background:#090a0c;color:var(--fg);border:1px solid #3a3e47;border-radius:8px;padding:10px;font:inherit}.progress{height:6px;background:#292c33;border-radius:99px;overflow:hidden;margin:14px 0 7px}.progress span{display:block;width:0;height:100%;background:#dce0e6}.meta{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}.check{display:flex;gap:10px;padding:11px;border:1px solid #30333b;border-radius:10px;background:#0d0f13;cursor:pointer}.check input{accent-color:#e6e9ee;margin:3px 0 0;width:16px;height:16px;flex:none}.check strong{font-size:12px;display:block}.check small{font-size:12px;color:var(--muted);display:block;margin-top:3px}.check.done{border-color:#526052}.note{margin-top:14px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;color:#d1d5dc;font-size:12px;background:#0f1115}footer{border-top:1px solid var(--line);padding:18px 0 28px;color:var(--muted);font-size:12px}@media(max-width:650px){.grid,.checks{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:16px}.checklist{padding:14px}}
-</style></head>
+</style><style id="blackjee-layout-hierarchy-v1">
+/* Shared layout hierarchy: consistent reading width, type scale, spacing and touch targets. */
+:root{--bj-layout-max:1120px;--bj-layout-gutter:clamp(16px,3vw,28px)}
+html{scroll-padding-top:84px}
+body{font-size:15px;line-height:1.55;overflow-wrap:break-word}
+.wrap{width:min(var(--bj-layout-max),calc(100% - var(--bj-layout-gutter)*2));margin-inline:auto}
+main.wrap{padding-block:clamp(12px,2.5vw,28px) 40px}
+h1{font-size:clamp(1.85rem,4.5vw,3.15rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+h2{font-size:clamp(1.25rem,2.6vw,1.8rem);line-height:1.2;letter-spacing:-.02em;text-wrap:balance}
+h3{line-height:1.28;text-wrap:balance}
+p{line-height:1.6}
+section,.hero,.panel,.card,.side-card,.qcard,.manage-card,.checklist,.archive,.history,.stat,.field,.grid>*{min-width:0}
+img,svg,canvas,video{max-width:100%}
+button,.btn,[role="button"]{min-height:40px;max-width:100%;white-space:normal;line-height:1.3}
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),select,textarea{max-width:100%;min-width:0;font:inherit}
+.field input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),.field select,.field textarea{width:100%;min-height:42px}
+label{line-height:1.4}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks){min-width:0}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks)>*{min-width:0}
+:where(.question-text,.qtext,.answer,.notice,.empty,.lead,.muted){overflow-wrap:anywhere}
+:where(.section,.section-head,.section-title,.heading){scroll-margin-top:88px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-offset:3px}
+@media(max-width:720px){
+  :root{--bj-layout-gutter:16px}
+  body{font-size:14px}
+  main.wrap{padding-top:12px;padding-bottom:30px}
+  h1{font-size:clamp(1.7rem,8vw,2.35rem);letter-spacing:-.025em}
+  h2{font-size:clamp(1.2rem,5.5vw,1.55rem)}
+  :where(.grid,.form-grid,.admin-grid,.subject-grid,.layout){min-width:0}
+  :where(.card,.panel,.side-card,.manage-card){max-width:100%}
+  :where(.row,.actions,.action-row,.controls){flex-wrap:wrap}
+  :where(button,.btn,[role="button"]){min-height:42px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
 <body>
 <header><div class="wrap"><div class="eyebrow">BLACK-JEE · OWNER WORKSPACE</div><h1>Less clutter.<br>Clear control.</h1><p>Manage the daily challenge, PYQs and release checks from one simple starting point.</p><span class="pill"><span class="dot"></span> Owner tools · sign-in may be required</span></div></header>
 <main class="wrap">
