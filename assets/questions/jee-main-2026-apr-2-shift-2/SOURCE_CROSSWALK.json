@@ -114,45 +114,50 @@
       "subject": "Mathematics",
       "subject_question_number": 11,
       "section": "A",
-      "draft_candidate_global_number": 21,
-      "status": "candidate_needs_exact_review",
-      "notes": "relation candidate"
+      "draft_candidate_global_number": 11,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q11 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121161, correct option ID 691121553 = C). Draft global Q11 matches xy=12, midpoint (1/2,−1/2), options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q11 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121161, correct option ID 691121553 = C). Draft global Q11 matches xy=12, midpoint (1/2,−1/2), options, and key."
     },
     {
       "paper_order": 12,
       "subject": "Mathematics",
       "subject_question_number": 12,
       "section": "A",
-      "draft_candidate_global_number": 25,
-      "status": "candidate_needs_exact_review",
-      "notes": "greatest-integer candidate; expression differs"
+      "draft_candidate_global_number": 12,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q12 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121162, correct option ID 691121556 = B). Draft global Q12 matches parabola, point (1,−1), minimum vertex distance, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q12 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121162, correct option ID 691121556 = B). Draft global Q12 matches parabola, point (1,−1), minimum vertex distance, options, and key."
     },
     {
       "paper_order": 13,
       "subject": "Mathematics",
       "subject_question_number": 13,
       "section": "A",
-      "draft_candidate_global_number": 19,
-      "status": "candidate_needs_exact_review",
-      "notes": "integral candidate"
+      "draft_candidate_global_number": 13,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q13 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121163, correct option ID 691121559 = A). Draft global Q13 matches the set definitions and trigonometric expression, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q13 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121163, correct option ID 691121559 = A). Draft global Q13 matches the set definitions and trigonometric expression, options, and key."
     },
     {
       "paper_order": 14,
       "subject": "Mathematics",
       "subject_question_number": 14,
       "section": "A",
-      "draft_candidate_global_number": 10,
-      "status": "candidate_needs_exact_review",
-      "notes": "circle/chord candidate"
+      "draft_candidate_global_number": 14,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q14 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121164, correct option ID 691121564 = B). Draft global Q14 matches both vectors, dot-product constraints, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q14 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121164, correct option ID 691121564 = B). Draft global Q14 matches both vectors, dot-product constraints, options, and key."
     },
     {
       "paper_order": 15,
       "subject": "Mathematics",
       "subject_question_number": 15,
       "section": "A",
-      "draft_candidate_global_number": 20,
-      "status": "candidate_needs_exact_review",
-      "notes": "differential-equation candidate; requested expression differs"
+      "draft_candidate_global_number": 15,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q15 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121165, correct option ID 691121567 = A). Draft global Q15 matches the 3D line, midpoint coordinates, perpendicular-foot condition, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q15 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121165, correct option ID 691121567 = A). Draft global Q15 matches the 3D line, midpoint coordinates, perpendicular-foot condition, options, and key."
     },
     {
       "paper_order": 16,
