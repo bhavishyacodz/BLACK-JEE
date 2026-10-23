@@ -263,3 +263,17 @@ Added `q31.svg` as a conceptual Earth-fall diagram for Physics Q9 and `q38.svg` 
 ## Physics Q10 / legacy Q50 — moment-of-inertia correction (2026-10-23)
 
 The draft solution omitted the parallel-axis term for the sphere. With the sphere's axis 3 m from its centre, `I_sphere = (2/5)(10)R² + 10(3²) = 4R² + 90`; the rod's end-axis moment is `40(3²)/3 = 120`. Equating gives `R² = 15/2`, hence `α = 15`. Updated the answer, solution, crosswalk and audit view. The SVG depicts the 3 m separation but still requires visual comparison with the original source figure; status remains `needs_exact_review`, unpublished.
+
+
+## Mathematics correction pass — six source mismatches repaired (2026-10-23)
+
+Applied source-stem corrections and independently recomputed answers for the six Mathematics mismatches that had sufficient source details:
+
+- **Q3 / legacy Q16:** restored `PQ = −j + k` and `PS = i + j`; answer remains `√3/2`.
+- **Q12 / legacy Q25:** restored the greatest-integer expression `[x² − x + 2]`; the number of jumps on `[2,4]` is `10`.
+- **Q15 / legacy Q20:** corrected the requested output to `3x(e²)/e²`; solving the differential equation gives `2`. Options were transformed consistently from the candidate's solved values; confirm the printed options against the source page.
+- **Q16 / legacy Q24:** corrected the requested output to the coefficient `A` in area `A − 6 ln 3`; the integral gives `A = 8`.
+- **Section B Q1 / printed Q21 / legacy Q13:** restored `(cos²θ − sin²θ)sec 2θ = a²`; the left side is `1` on the stated domain, so `S={−1,1}` and `n(S)=2`.
+- **Section B Q4 / printed Q24 / legacy Q22:** restored matrix `B=[[1,3],[3,9]]`; `tr(A⁻¹B)=5/2`, so the requested absolute trace is `10`.
+
+The draft, crosswalk, audit view and `mock-tests.html` source-order keys were updated together. All six remain unpublished and `needs_exact_review` pending a direct check of the official printed page/options and final answer key. Mathematics Q8 remains a confirmed mismatch because its third equation is not fully recoverable from the currently available transcription; it was not guessed.
