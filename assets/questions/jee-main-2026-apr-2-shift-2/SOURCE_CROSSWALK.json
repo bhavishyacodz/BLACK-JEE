@@ -169,8 +169,8 @@
       "subject_question_number": 15,
       "section": "A",
       "draft_candidate_global_number": 29,
-      "status": "confirmed_mismatch",
-      "notes": "Source transcription page 2 gives force (2×10⁻¹⁰ î + 3×10⁻¹⁰ ĵ) N and B=2×10⁻³ k̂ T. Draft Q29 uses a different force vector and B=4×10⁻³ k̂ T.",
+      "status": "needs_exact_review",
+      "notes": "Legacy Q29 has been corrected to match the readable source transcription: force vector (2×10⁻¹⁰ î + 3×10⁻¹⁰ ĵ) N, B=2×10⁻³ k̂ T, and source velocity options. Calculation gives 50 î + 100 ĵ m/s. Official final-key verification remains pending.",
       "verification_evidence": "",
       "publishable": false
     },
