@@ -68,6 +68,41 @@ body.menu-open{overflow:hidden}
 :where(button,a,input,textarea,select):focus-visible{outline-color:#f0f0f0!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style>
+<style id="blackjee-layout-hierarchy-v1">
+/* Shared layout hierarchy: consistent reading width, type scale, spacing and touch targets. */
+:root{--bj-layout-max:1120px;--bj-layout-gutter:clamp(16px,3vw,28px)}
+html{scroll-padding-top:84px}
+body{font-size:15px;line-height:1.55;overflow-wrap:break-word}
+.wrap{width:min(var(--bj-layout-max),calc(100% - var(--bj-layout-gutter)*2));margin-inline:auto}
+main.wrap{padding-block:clamp(12px,2.5vw,28px) 40px}
+h1{font-size:clamp(1.85rem,4.5vw,3.15rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+h2{font-size:clamp(1.25rem,2.6vw,1.8rem);line-height:1.2;letter-spacing:-.02em;text-wrap:balance}
+h3{line-height:1.28;text-wrap:balance}
+p{line-height:1.6}
+section,.hero,.panel,.card,.side-card,.qcard,.manage-card,.checklist,.archive,.history,.stat,.field,.grid>*{min-width:0}
+img,svg,canvas,video{max-width:100%}
+button,.btn,[role="button"]{min-height:40px;max-width:100%;white-space:normal;line-height:1.3}
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),select,textarea{max-width:100%;min-width:0;font:inherit}
+.field input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),.field select,.field textarea{width:100%;min-height:42px}
+label{line-height:1.4}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks){min-width:0}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks)>*{min-width:0}
+:where(.question-text,.qtext,.answer,.notice,.empty,.lead,.muted){overflow-wrap:anywhere}
+:where(.section,.section-head,.section-title,.heading){scroll-margin-top:88px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-offset:3px}
+@media(max-width:720px){
+  :root{--bj-layout-gutter:16px}
+  body{font-size:14px}
+  main.wrap{padding-top:12px;padding-bottom:30px}
+  h1{font-size:clamp(1.7rem,8vw,2.35rem);letter-spacing:-.025em}
+  h2{font-size:clamp(1.2rem,5.5vw,1.55rem)}
+  :where(.grid,.form-grid,.admin-grid,.subject-grid,.layout){min-width:0}
+  :where(.card,.panel,.side-card,.manage-card){max-width:100%}
+  :where(.row,.actions,.action-row,.controls){flex-wrap:wrap}
+  :where(button,.btn,[role="button"]){min-height:42px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span> BLACK JEE</a><div class="actions"><a class="btn" href="attempt.html">ATTEMPT ↗</a><div class="top-action-links"><a class="top-action-link" href="admin.html?admin=1" aria-label="Open admin dashboard">ADMIN</a><a class="top-action-link" href="profile.html" aria-label="Open your profile">PROFILE</a></div><button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header>
