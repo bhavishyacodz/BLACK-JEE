@@ -1,13 +1,13 @@
 {
   "title": "JEE Main 2026 — 2 April Shift 2",
-  "purpose": "Source-to-draft reconciliation ledger. Verified rows have explicit evidence; all rows remain audit-only and cannot trigger automatic publication.",
+  "purpose": "Reconciled source-to-draft ledger. Statuses are synchronized to source-to-draft-crosswalk.json; unresolved and mismatched rows remain audit-only and cannot trigger automatic publication.",
   "source_order": [
     "Mathematics 1-25",
     "Physics 26-50",
     "Chemistry 51-75"
   ],
   "publication_status": "HOLD",
-  "verification_policy": "Match only after exact question text, values, options/numerical format, diagram if any, and official final answer-key comparison. No row may be published from this audit alone.",
+  "verification_policy": "Only verified_exact_match rows have exact-source status. All other statuses require review or replacement; no row may be published from this audit alone.",
   "rows": [
     {
       "paper_order": 1,
@@ -15,9 +15,10 @@
       "subject_question_number": 1,
       "section": "A",
       "draft_candidate_global_number": 1,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q1 against NTA question paper PDF p.1 and final answer key PDF p.2 (question ID 691121151, correct option ID 691121514 = D). Draft global Q1 matches statement, values, all four options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q1 against NTA question paper PDF p.1 and final answer key PDF p.2 (question ID 691121151, correct option ID 691121514 = D). Draft global Q1 matches statement, values, all four options, and key."
+      "verification_evidence": "Verified exact Mathematics Q1 against NTA question paper PDF p.1 and final answer key PDF p.2 (question ID 691121151, correct option ID 691121514 = D). Draft global Q1 matches statement, values, all four options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 2,
@@ -25,9 +26,10 @@
       "subject_question_number": 2,
       "section": "A",
       "draft_candidate_global_number": 2,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q2 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121152, correct option ID 691121517 = C). Draft global Q2 matches circle definitions, containment/minimum-distance condition, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q2 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121152, correct option ID 691121517 = C). Draft global Q2 matches circle definitions, containment/minimum-distance condition, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q2 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121152, correct option ID 691121517 = C). Draft global Q2 matches circle definitions, containment/minimum-distance condition, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 3,
@@ -35,9 +37,10 @@
       "subject_question_number": 3,
       "section": "A",
       "draft_candidate_global_number": 3,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q3 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121153, correct option ID 691121520 = B). Draft global Q3 matches all three equations, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q3 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121153, correct option ID 691121520 = B). Draft global Q3 matches all three equations, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q3 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121153, correct option ID 691121520 = B). Draft global Q3 matches all three equations, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 4,
@@ -45,9 +48,10 @@
       "subject_question_number": 4,
       "section": "A",
       "draft_candidate_global_number": 4,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q4 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121154, correct option ID 691121526 = D). Draft global Q4 matches AP/GP conditions, values, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q4 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121154, correct option ID 691121526 = D). Draft global Q4 matches AP/GP conditions, values, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q4 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121154, correct option ID 691121526 = D). Draft global Q4 matches AP/GP conditions, values, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 5,
@@ -55,9 +59,10 @@
       "subject_question_number": 5,
       "section": "A",
       "draft_candidate_global_number": 5,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q5 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121155, correct option ID 691121528 = B). Draft global Q5 matches the sum expression, eight terms, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q5 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121155, correct option ID 691121528 = B). Draft global Q5 matches the sum expression, eight terms, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q5 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121155, correct option ID 691121528 = B). Draft global Q5 matches the sum expression, eight terms, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 6,
@@ -65,9 +70,10 @@
       "subject_question_number": 6,
       "section": "A",
       "draft_candidate_global_number": 6,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q6 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121156, correct option ID 691121533 = C). Draft global Q6 matches all binomial coefficients, index ranges, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q6 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121156, correct option ID 691121533 = C). Draft global Q6 matches all binomial coefficients, index ranges, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q6 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121156, correct option ID 691121533 = C). Draft global Q6 matches all binomial coefficients, index ranges, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 7,
@@ -75,9 +81,10 @@
       "subject_question_number": 7,
       "section": "A",
       "draft_candidate_global_number": 7,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q7 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121157, correct option ID 691121537 = C). Draft global Q7 matches the polygon triangle-count condition and prime-divisor sum, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q7 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121157, correct option ID 691121537 = C). Draft global Q7 matches the polygon triangle-count condition and prime-divisor sum, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q7 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121157, correct option ID 691121537 = C). Draft global Q7 matches the polygon triangle-count condition and prime-divisor sum, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 8,
@@ -85,9 +92,10 @@
       "subject_question_number": 8,
       "section": "A",
       "draft_candidate_global_number": 8,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q8 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121158, correct option ID 691121541 = C). Draft global Q8 matches the repeated-coin scoring setup, reduced fraction request, options, and key; probability independently sums to 43/64.",
-      "verification_evidence": "Verified exact Mathematics Q8 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121158, correct option ID 691121541 = C). Draft global Q8 matches the repeated-coin scoring setup, reduced fraction request, options, and key; probability independently sums to 43/64."
+      "verification_evidence": "Verified exact Mathematics Q8 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121158, correct option ID 691121541 = C). Draft global Q8 matches the repeated-coin scoring setup, reduced fraction request, options, and key; probability independently sums to 43/64.",
+      "publishable": false
     },
     {
       "paper_order": 9,
@@ -95,9 +103,10 @@
       "subject_question_number": 9,
       "section": "A",
       "draft_candidate_global_number": 9,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q9 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121159, correct option ID 691121546 = D). Draft global Q9 matches mean, variance, partial sum, sum of squares, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q9 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121159, correct option ID 691121546 = D). Draft global Q9 matches mean, variance, partial sum, sum of squares, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q9 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121159, correct option ID 691121546 = D). Draft global Q9 matches mean, variance, partial sum, sum of squares, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 10,
@@ -105,9 +114,10 @@
       "subject_question_number": 10,
       "section": "A",
       "draft_candidate_global_number": 10,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q10 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121160, correct option ID 691121549 = C). Draft global Q10 matches both perpendicular-line equations, chord line, requested squared length, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q10 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121160, correct option ID 691121549 = C). Draft global Q10 matches both perpendicular-line equations, chord line, requested squared length, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q10 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121160, correct option ID 691121549 = C). Draft global Q10 matches both perpendicular-line equations, chord line, requested squared length, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 11,
@@ -115,9 +125,10 @@
       "subject_question_number": 11,
       "section": "A",
       "draft_candidate_global_number": 11,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q11 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121161, correct option ID 691121553 = C). Draft global Q11 matches xy=12, midpoint (1/2,−1/2), options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q11 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121161, correct option ID 691121553 = C). Draft global Q11 matches xy=12, midpoint (1/2,−1/2), options, and key."
+      "verification_evidence": "Verified exact Mathematics Q11 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121161, correct option ID 691121553 = C). Draft global Q11 matches xy=12, midpoint (1/2,−1/2), options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 12,
@@ -125,9 +136,10 @@
       "subject_question_number": 12,
       "section": "A",
       "draft_candidate_global_number": 12,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q12 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121162, correct option ID 691121556 = B). Draft global Q12 matches parabola, point (1,−1), minimum vertex distance, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q12 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121162, correct option ID 691121556 = B). Draft global Q12 matches parabola, point (1,−1), minimum vertex distance, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q12 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121162, correct option ID 691121556 = B). Draft global Q12 matches parabola, point (1,−1), minimum vertex distance, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 13,
@@ -135,9 +147,10 @@
       "subject_question_number": 13,
       "section": "A",
       "draft_candidate_global_number": 13,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q13 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121163, correct option ID 691121559 = A). Draft global Q13 matches the set definitions and trigonometric expression, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q13 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121163, correct option ID 691121559 = A). Draft global Q13 matches the set definitions and trigonometric expression, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q13 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121163, correct option ID 691121559 = A). Draft global Q13 matches the set definitions and trigonometric expression, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 14,
@@ -145,9 +158,10 @@
       "subject_question_number": 14,
       "section": "A",
       "draft_candidate_global_number": 14,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q14 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121164, correct option ID 691121564 = B). Draft global Q14 matches both vectors, dot-product constraints, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q14 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121164, correct option ID 691121564 = B). Draft global Q14 matches both vectors, dot-product constraints, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q14 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121164, correct option ID 691121564 = B). Draft global Q14 matches both vectors, dot-product constraints, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 15,
@@ -155,9 +169,10 @@
       "subject_question_number": 15,
       "section": "A",
       "draft_candidate_global_number": 15,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q15 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121165, correct option ID 691121567 = A). Draft global Q15 matches the 3D line, midpoint coordinates, perpendicular-foot condition, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q15 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121165, correct option ID 691121567 = A). Draft global Q15 matches the 3D line, midpoint coordinates, perpendicular-foot condition, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q15 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121165, correct option ID 691121567 = A). Draft global Q15 matches the 3D line, midpoint coordinates, perpendicular-foot condition, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 16,
@@ -165,9 +180,10 @@
       "subject_question_number": 16,
       "section": "A",
       "draft_candidate_global_number": 16,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q16 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121166, correct option ID 691121571 = B). Draft global Q16 matches both vector sides, rotation condition, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q16 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121166, correct option ID 691121571 = B). Draft global Q16 matches both vector sides, rotation condition, options, and key."
+      "verification_evidence": "Verified exact Mathematics Q16 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121166, correct option ID 691121571 = B). Draft global Q16 matches both vector sides, rotation condition, options, and key.",
+      "publishable": false
     },
     {
       "paper_order": 17,
@@ -175,9 +191,10 @@
       "subject_question_number": 17,
       "section": "A",
       "draft_candidate_global_number": 17,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q17 against NTA paper PDF p.7 and final answer key PDF p.2. Source integral is ∫₀²⁰π(sin⁴x+cos⁴x)dx with options 15π/2, 25π, 15π, 25π/2; key maps question ID 691121167 to option ID 691121577 (C). Draft global Q17 matches; answer 15π.",
-      "verification_evidence": "Verified exact Mathematics Q17 against NTA paper PDF p.7 and final answer key PDF p.2. Source integral is ∫₀²⁰π(sin⁴x+cos⁴x)dx with options 15π/2, 25π, 15π, 25π/2; key maps question ID 691121167 to option ID 691121577 (C). Draft global Q17 matches; answer 15π."
+      "verification_evidence": "Verified exact Mathematics Q17 against NTA paper PDF p.7 and final answer key PDF p.2. Source integral is ∫₀²⁰π(sin⁴x+cos⁴x)dx with options 15π/2, 25π, 15π, 25π/2; key maps question ID 691121167 to option ID 691121577 (C). Draft global Q17 matches; answer 15π.",
+      "publishable": false
     },
     {
       "paper_order": 18,
@@ -185,9 +202,10 @@
       "subject_question_number": 18,
       "section": "A",
       "draft_candidate_global_number": 18,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q18 against NTA paper PDF p.7 and final answer key PDF p.2. Source polynomial/extrema/limit wording and options 0, 50, 92, 112 match draft global Q18; key maps question ID 691121168 to option ID 691121582 (D). Independently, f(x)=3x⁵−5x³ gives f(2)−f(−2)=112.",
-      "verification_evidence": "Verified exact Mathematics Q18 against NTA paper PDF p.7 and final answer key PDF p.2. Source polynomial/extrema/limit wording and options 0, 50, 92, 112 match draft global Q18; key maps question ID 691121168 to option ID 691121582 (D). Independently, f(x)=3x⁵−5x³ gives f(2)−f(−2)=112."
+      "verification_evidence": "Verified exact Mathematics Q18 against NTA paper PDF p.7 and final answer key PDF p.2. Source polynomial/extrema/limit wording and options 0, 50, 92, 112 match draft global Q18; key maps question ID 691121168 to option ID 691121582 (D). Independently, f(x)=3x⁵−5x³ gives f(2)−f(−2)=112.",
+      "publishable": false
     },
     {
       "paper_order": 19,
@@ -195,9 +213,10 @@
       "subject_question_number": 19,
       "section": "A",
       "draft_candidate_global_number": 19,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q19 against NTA paper PDF p.7 and final answer key PDF p.2. Integrand, f(4), f(7), natural-number exponents and options 31, 37, 39, 41 match draft global Q19; key maps question ID 691121169 to option ID 691121585 (C).",
-      "verification_evidence": "Verified exact Mathematics Q19 against NTA paper PDF p.7 and final answer key PDF p.2. Integrand, f(4), f(7), natural-number exponents and options 31, 37, 39, 41 match draft global Q19; key maps question ID 691121169 to option ID 691121585 (C)."
+      "verification_evidence": "Verified exact Mathematics Q19 against NTA paper PDF p.7 and final answer key PDF p.2. Integrand, f(4), f(7), natural-number exponents and options 31, 37, 39, 41 match draft global Q19; key maps question ID 691121169 to option ID 691121585 (C).",
+      "publishable": false
     },
     {
       "paper_order": 20,
@@ -205,9 +224,10 @@
       "subject_question_number": 20,
       "section": "A",
       "draft_candidate_global_number": 20,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q20 against NTA paper PDF p.8 and final answer key PDF p.2. Differential equation, domain y>1, condition x(e)=e and options match draft global Q20; key maps question ID 691121170 to option ID 691121588 (B).",
-      "verification_evidence": "Verified exact Mathematics Q20 against NTA paper PDF p.8 and final answer key PDF p.2. Differential equation, domain y>1, condition x(e)=e and options match draft global Q20; key maps question ID 691121170 to option ID 691121588 (B)."
+      "verification_evidence": "Verified exact Mathematics Q20 against NTA paper PDF p.8 and final answer key PDF p.2. Differential equation, domain y>1, condition x(e)=e and options match draft global Q20; key maps question ID 691121170 to option ID 691121588 (B).",
+      "publishable": false
     },
     {
       "paper_order": 21,
@@ -215,9 +235,10 @@
       "subject_question_number": 21,
       "section": "B",
       "draft_candidate_global_number": 21,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q21 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121171, numeric answer 120). Draft global Q21 matches the set A, relation definition, and requested cardinality; answer independently counted.",
-      "verification_evidence": "Verified exact Mathematics Q21 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121171, numeric answer 120). Draft global Q21 matches the set A, relation definition, and requested cardinality; answer independently counted."
+      "verification_evidence": "Verified exact Mathematics Q21 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121171, numeric answer 120). Draft global Q21 matches the set A, relation definition, and requested cardinality; answer independently counted.",
+      "publishable": false
     },
     {
       "paper_order": 22,
@@ -225,9 +246,10 @@
       "subject_question_number": 22,
       "section": "B",
       "draft_candidate_global_number": 22,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q22 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121172, numeric answer 34). Draft global Q22 matches both matrices, PA=B and AQ=B, and requested absolute trace; result independently checked.",
-      "verification_evidence": "Verified exact Mathematics Q22 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121172, numeric answer 34). Draft global Q22 matches both matrices, PA=B and AQ=B, and requested absolute trace; result independently checked."
+      "verification_evidence": "Verified exact Mathematics Q22 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121172, numeric answer 34). Draft global Q22 matches both matrices, PA=B and AQ=B, and requested absolute trace; result independently checked.",
+      "publishable": false
     },
     {
       "paper_order": 23,
@@ -235,9 +257,10 @@
       "subject_question_number": 23,
       "section": "B",
       "draft_candidate_global_number": 23,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q23 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121173, numeric answer 18). Draft global Q23 matches A=(3,0), circle x²+y²=36, internal tangency, and 72e²; result independently checked.",
-      "verification_evidence": "Verified exact Mathematics Q23 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121173, numeric answer 18). Draft global Q23 matches A=(3,0), circle x²+y²=36, internal tangency, and 72e²; result independently checked."
+      "verification_evidence": "Verified exact Mathematics Q23 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121173, numeric answer 18). Draft global Q23 matches A=(3,0), circle x²+y²=36, internal tangency, and 72e²; result independently checked.",
+      "publishable": false
     },
     {
       "paper_order": 24,
@@ -245,9 +268,10 @@
       "subject_question_number": 24,
       "section": "B",
       "draft_candidate_global_number": 24,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q24 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121174, numeric answer 24). Draft global Q24 matches hyperbola, line, area expression, and requested quantity; result independently checked.",
-      "verification_evidence": "Verified exact Mathematics Q24 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121174, numeric answer 24). Draft global Q24 matches hyperbola, line, area expression, and requested quantity; result independently checked."
+      "verification_evidence": "Verified exact Mathematics Q24 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121174, numeric answer 24). Draft global Q24 matches hyperbola, line, area expression, and requested quantity; result independently checked.",
+      "publishable": false
     },
     {
       "paper_order": 25,
@@ -255,9 +279,10 @@
       "subject_question_number": 25,
       "section": "B",
       "draft_candidate_global_number": 25,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Mathematics Q25 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121175, numeric answer 10). Draft global Q25 matches the interval, greatest-integer expression, and discontinuity count; result independently checked.",
-      "verification_evidence": "Verified exact Mathematics Q25 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121175, numeric answer 10). Draft global Q25 matches the interval, greatest-integer expression, and discontinuity count; result independently checked."
+      "verification_evidence": "Verified exact Mathematics Q25 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121175, numeric answer 10). Draft global Q25 matches the interval, greatest-integer expression, and discontinuity count; result independently checked.",
+      "publishable": false
     },
     {
       "paper_order": 26,
@@ -265,7 +290,7 @@
       "subject_question_number": 1,
       "section": "A",
       "draft_candidate_global_number": 26,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q26; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 26,
@@ -276,7 +301,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 27,
@@ -284,7 +310,7 @@
       "subject_question_number": 2,
       "section": "A",
       "draft_candidate_global_number": 27,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q27; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 27,
@@ -295,7 +321,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 28,
@@ -303,7 +330,7 @@
       "subject_question_number": 3,
       "section": "A",
       "draft_candidate_global_number": 28,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q28; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 28,
@@ -314,7 +341,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 29,
@@ -322,7 +350,7 @@
       "subject_question_number": 4,
       "section": "A",
       "draft_candidate_global_number": 29,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q29; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 29,
@@ -333,7 +361,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 30,
@@ -341,7 +370,7 @@
       "subject_question_number": 5,
       "section": "A",
       "draft_candidate_global_number": 30,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q30; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 30,
@@ -352,7 +381,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 31,
@@ -360,7 +390,7 @@
       "subject_question_number": 6,
       "section": "A",
       "draft_candidate_global_number": 31,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q31; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 31,
@@ -371,7 +401,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 32,
@@ -379,7 +410,7 @@
       "subject_question_number": 7,
       "section": "A",
       "draft_candidate_global_number": 32,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q32; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 32,
@@ -390,7 +421,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 33,
@@ -398,7 +430,7 @@
       "subject_question_number": 8,
       "section": "A",
       "draft_candidate_global_number": 33,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q33; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 33,
@@ -409,7 +441,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 34,
@@ -417,7 +450,7 @@
       "subject_question_number": 9,
       "section": "A",
       "draft_candidate_global_number": 34,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q34; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 34,
@@ -428,7 +461,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 35,
@@ -436,7 +470,7 @@
       "subject_question_number": 10,
       "section": "A",
       "draft_candidate_global_number": 35,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q35; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 35,
@@ -447,7 +481,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 36,
@@ -455,7 +490,7 @@
       "subject_question_number": 11,
       "section": "A",
       "draft_candidate_global_number": 36,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q36; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 36,
@@ -466,7 +501,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 37,
@@ -474,7 +510,7 @@
       "subject_question_number": 12,
       "section": "A",
       "draft_candidate_global_number": 37,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q37; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 37,
@@ -485,7 +521,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 38,
@@ -493,7 +530,7 @@
       "subject_question_number": 13,
       "section": "A",
       "draft_candidate_global_number": 38,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q38; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 38,
@@ -504,7 +541,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 39,
@@ -512,7 +550,7 @@
       "subject_question_number": 14,
       "section": "A",
       "draft_candidate_global_number": 39,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q39; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 39,
@@ -523,7 +561,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 40,
@@ -531,7 +570,7 @@
       "subject_question_number": 15,
       "section": "A",
       "draft_candidate_global_number": 40,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q40; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 40,
@@ -542,7 +581,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 41,
@@ -550,7 +590,7 @@
       "subject_question_number": 16,
       "section": "A",
       "draft_candidate_global_number": 41,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q41; official final answer-key option ID checked. Prism diagram visually checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 41,
@@ -561,7 +601,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 42,
@@ -569,7 +610,7 @@
       "subject_question_number": 17,
       "section": "A",
       "draft_candidate_global_number": 42,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q42; official final answer-key option ID checked. LCR circuit diagram visually checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 42,
@@ -580,7 +621,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 43,
@@ -588,7 +630,7 @@
       "subject_question_number": 18,
       "section": "A",
       "draft_candidate_global_number": 43,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q43; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 43,
@@ -599,7 +641,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 44,
@@ -607,7 +650,7 @@
       "subject_question_number": 19,
       "section": "A",
       "draft_candidate_global_number": 44,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q44; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 44,
@@ -618,7 +661,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 45,
@@ -626,7 +670,7 @@
       "subject_question_number": 20,
       "section": "A",
       "draft_candidate_global_number": 45,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Exact statement/values/options matched to source PDF Q45; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
       "verification_evidence": {
         "source_pdf_question_number": 45,
@@ -637,7 +681,8 @@
           "diagram_if_any",
           "official_final_answer_key"
         ]
-      }
+      },
+      "publishable": false
     },
     {
       "paper_order": 46,
@@ -645,9 +690,10 @@
       "subject_question_number": 21,
       "section": "B",
       "draft_candidate_global_number": 46,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified against NTA source Q46: exact YDSE intensity/path-difference statement and requested x; independently checked result x=6 against final key. No source diagram is required. Audit-only; full-shift release gate stays closed.",
-      "verification_evidence": "NTA question paper PDF p.18, Q46; final answer key PDF p.2, Physics Q ID 691121196 gives 6. Independently checked YDSE relation and x=6."
+      "verification_evidence": "NTA question paper PDF p.18, Q46; final answer key PDF p.2, Physics Q ID 691121196 gives 6. Independently checked YDSE relation and x=6.",
+      "publishable": false
     },
     {
       "paper_order": 47,
@@ -655,9 +701,10 @@
       "subject_question_number": 22,
       "section": "B",
       "draft_candidate_global_number": 47,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified against NTA source Q47: exact Bohr-model magnetic-field ratio prompt; independently checked B₂/B₄=32 against final key. Audit-only; full-shift release gate stays closed.",
-      "verification_evidence": "NTA question paper PDF p.18, Q47; final answer key PDF p.2, Physics Q ID 691121197 gives 32. Independently checked Bohr-orbit magnetic-field ratio B2/B4=32."
+      "verification_evidence": "NTA question paper PDF p.18, Q47; final answer key PDF p.2, Physics Q ID 691121197 gives 32. Independently checked Bohr-orbit magnetic-field ratio B2/B4=32.",
+      "publishable": false
     },
     {
       "paper_order": 48,
@@ -665,9 +712,10 @@
       "subject_question_number": 23,
       "section": "B",
       "draft_candidate_global_number": 48,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified against NTA source Q48: exact 5-mole constant-volume heating data, cp and R units, and requested ΔU in calories; independently checked result 300 against final key. Audit-only; full-shift release gate stays closed.",
-      "verification_evidence": "NTA question paper PDF p.19, Q48; final answer key PDF p.2, Physics Q ID 691121198 gives 300. Independently checked ΔU=5(8−2)10=300 cal."
+      "verification_evidence": "NTA question paper PDF p.19, Q48; final answer key PDF p.2, Physics Q ID 691121198 gives 300. Independently checked ΔU=5(8−2)10=300 cal.",
+      "publishable": false
     },
     {
       "paper_order": 49,
@@ -675,9 +723,10 @@
       "subject_question_number": 24,
       "section": "B",
       "draft_candidate_global_number": 49,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified against NTA source Q49: exact sunlight/convex-lens, 30 cm focal distance, 60 cm curvature radius, and α/10 refractive-index prompt; independently checked α=20 against final key. Audit-only; full-shift release gate stays closed.",
-      "verification_evidence": "NTA question paper PDF p.19, Q49; final answer key PDF p.2, Physics Q ID 691121199 gives 20. Independently checked lens-maker result n=2 and α=20."
+      "verification_evidence": "NTA question paper PDF p.19, Q49; final answer key PDF p.2, Physics Q ID 691121199 gives 20. Independently checked lens-maker result n=2 and α=20.",
+      "publishable": false
     },
     {
       "paper_order": 50,
@@ -685,9 +734,10 @@
       "subject_question_number": 25,
       "section": "B",
       "draft_candidate_global_number": 50,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified against NTA source Q50: exact rod/sphere masses, length/radius, 3 m axis separation, and R=√(α/2) prompt. q50.svg diagram was visually compared with the source figure; independently checked α=60 against final key. Audit-only; full-shift release gate stays closed.",
-      "verification_evidence": "NTA question paper PDF p.19, Q50 and source figure; final answer key PDF p.2, Physics Q ID 691121200 gives 60. Visually compared q50.svg rod/sphere axes and 3 m separation with source; independently checked α=60."
+      "verification_evidence": "NTA question paper PDF p.19, Q50 and source figure; final answer key PDF p.2, Physics Q ID 691121200 gives 60. Visually compared q50.svg rod/sphere axes and 3 m separation with source; independently checked α=60.",
+      "publishable": false
     },
     {
       "paper_order": 51,
@@ -695,9 +745,10 @@
       "subject_question_number": 1,
       "section": "A",
       "draft_candidate_global_number": 51,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Chemistry Q51 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121201, correct option ID 691121682 = B). Draft global Q51 matches the carbon-to-hydrogen mass ratio, combustion mass, options, and independently calculated 11.44 g CO₂.",
-      "verification_evidence": "Verified exact Chemistry Q51 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121201, correct option ID 691121682 = B). Draft global Q51 matches the carbon-to-hydrogen mass ratio, combustion mass, options, and independently calculated 11.44 g CO₂."
+      "verification_evidence": "Verified exact Chemistry Q51 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121201, correct option ID 691121682 = B). Draft global Q51 matches the carbon-to-hydrogen mass ratio, combustion mass, options, and independently calculated 11.44 g CO₂.",
+      "publishable": false
     },
     {
       "paper_order": 52,
@@ -705,9 +756,10 @@
       "subject_question_number": 2,
       "section": "A",
       "draft_candidate_global_number": 52,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Chemistry Q52 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121202, correct option ID 691121687 = C). Draft global Q52 matches both ionization constants, HCl concentration, HA⁻ request, options, and equilibrium estimate.",
-      "verification_evidence": "Verified exact Chemistry Q52 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121202, correct option ID 691121687 = C). Draft global Q52 matches both ionization constants, HCl concentration, HA⁻ request, options, and equilibrium estimate."
+      "verification_evidence": "Verified exact Chemistry Q52 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121202, correct option ID 691121687 = C). Draft global Q52 matches both ionization constants, HCl concentration, HA⁻ request, options, and equilibrium estimate.",
+      "publishable": false
     },
     {
       "paper_order": 53,
@@ -715,9 +767,10 @@
       "subject_question_number": 3,
       "section": "A",
       "draft_candidate_global_number": 53,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Chemistry Q53 against NTA question paper PDF pp.20–21 and final answer key PDF p.2 (question ID 691121203, correct option ID 691121690 = B). Draft global Q53 matches the five species and combinations; seesaw-shape reasoning supports C and E only.",
-      "verification_evidence": "Verified exact Chemistry Q53 against NTA question paper PDF pp.20–21 and final answer key PDF p.2 (question ID 691121203, correct option ID 691121690 = B). Draft global Q53 matches the five species and combinations; seesaw-shape reasoning supports C and E only."
+      "verification_evidence": "Verified exact Chemistry Q53 against NTA question paper PDF pp.20–21 and final answer key PDF p.2 (question ID 691121203, correct option ID 691121690 = B). Draft global Q53 matches the five species and combinations; seesaw-shape reasoning supports C and E only.",
+      "publishable": false
     },
     {
       "paper_order": 54,
@@ -725,9 +778,10 @@
       "subject_question_number": 4,
       "section": "A",
       "draft_candidate_global_number": 54,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified exact Chemistry Q54 against NTA question paper PDF p.21 and final answer key PDF p.2 (question ID 691121204, correct option ID 691121696 = D). Draft global Q54 matches both process statements and options; first-law calculation gives 14 J of work done on the gas.",
-      "verification_evidence": "Verified exact Chemistry Q54 against NTA question paper PDF p.21 and final answer key PDF p.2 (question ID 691121204, correct option ID 691121696 = D). Draft global Q54 matches both process statements and options; first-law calculation gives 14 J of work done on the gas."
+      "verification_evidence": "Verified exact Chemistry Q54 against NTA question paper PDF p.21 and final answer key PDF p.2 (question ID 691121204, correct option ID 691121696 = D). Draft global Q54 matches both process statements and options; first-law calculation gives 14 J of work done on the gas.",
+      "publishable": false
     },
     {
       "paper_order": 55,
@@ -735,9 +789,10 @@
       "subject_question_number": 5,
       "section": "A",
       "draft_candidate_global_number": 55,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified Chemistry Q55 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121205, correct option ID 691121697 = A). Draft options were reordered incorrectly; restored source order. Applying π=(n/V)RT gives x=y=z=9.96×10⁻⁴ bar, which is option A in the official source ordering.",
-      "verification_evidence": "Verified Chemistry Q55 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121205, correct option ID 691121697 = A). Draft options were reordered incorrectly; restored source order. Applying π=(n/V)RT gives x=y=z=9.96×10⁻⁴ bar, which is option A in the official source ordering."
+      "verification_evidence": "Verified Chemistry Q55 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121205, correct option ID 691121697 = A). Draft options were reordered incorrectly; restored source order. Applying π=(n/V)RT gives x=y=z=9.96×10⁻⁴ bar, which is option A in the official source ordering.",
+      "publishable": false
     },
     {
       "paper_order": 56,
@@ -745,9 +800,10 @@
       "subject_question_number": 6,
       "section": "A",
       "draft_candidate_global_number": 56,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified source Chemistry Q56 against NTA paper PDF p.21 and final answer key PDF p.2 (question ID 691121206, correct option ID 691121702 = B). Draft global Q56 matches acid concentration, volume, Ka/pKa, α≪1, pH checkpoints and option ordering.",
-      "verification_evidence": "Verified source Chemistry Q56 against NTA paper PDF p.21 and final answer key PDF p.2 (question ID 691121206, correct option ID 691121702 = B). Draft global Q56 matches acid concentration, volume, Ka/pKa, α≪1, pH checkpoints and option ordering."
+      "verification_evidence": "Verified source Chemistry Q56 against NTA paper PDF p.21 and final answer key PDF p.2 (question ID 691121206, correct option ID 691121702 = B). Draft global Q56 matches acid concentration, volume, Ka/pKa, α≪1, pH checkpoints and option ordering.",
+      "publishable": false
     },
     {
       "paper_order": 57,
@@ -755,9 +811,10 @@
       "subject_question_number": 7,
       "section": "A",
       "draft_candidate_global_number": 57,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified after correcting draft global Q57 to match NTA Chemistry Q57 exactly: rate constant 1×10⁻³ mol⁻¹ L s⁻¹, statements A–E, four original options, and source graph. NTA final answer key PDF p.2 maps question ID 691121207 to option ID 691121705 (A and B Only).",
-      "verification_evidence": "Verified after correcting draft global Q57 to match NTA Chemistry Q57 exactly: rate constant 1×10⁻³ mol⁻¹ L s⁻¹, statements A–E, four original options, and source graph. NTA final answer key PDF p.2 maps question ID 691121207 to option ID 691121705 (A and B Only)."
+      "verification_evidence": "Verified after correcting draft global Q57 to match NTA Chemistry Q57 exactly: rate constant 1×10⁻³ mol⁻¹ L s⁻¹, statements A–E, four original options, and source graph. NTA final answer key PDF p.2 maps question ID 691121207 to option ID 691121705 (A and B Only).",
+      "publishable": false
     },
     {
       "paper_order": 58,
@@ -765,9 +822,10 @@
       "subject_question_number": 8,
       "section": "A",
       "draft_candidate_global_number": 58,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified source Chemistry Q58 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121208, correct option ID 691121711 = C). Draft global Q58 matches all four oxide sets and the key.",
-      "verification_evidence": "Verified source Chemistry Q58 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121208, correct option ID 691121711 = C). Draft global Q58 matches all four oxide sets and the key."
+      "verification_evidence": "Verified source Chemistry Q58 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121208, correct option ID 691121711 = C). Draft global Q58 matches all four oxide sets and the key.",
+      "publishable": false
     },
     {
       "paper_order": 59,
@@ -775,9 +833,10 @@
       "subject_question_number": 9,
       "section": "A",
       "draft_candidate_global_number": 59,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified source Chemistry Q59 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121209, correct option ID 691121714 = B). Draft global Q59 matches both statements and options; both statements are false, consistent with official key.",
-      "verification_evidence": "Verified source Chemistry Q59 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121209, correct option ID 691121714 = B). Draft global Q59 matches both statements and options; both statements are false, consistent with official key."
+      "verification_evidence": "Verified source Chemistry Q59 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121209, correct option ID 691121714 = B). Draft global Q59 matches both statements and options; both statements are false, consistent with official key.",
+      "publishable": false
     },
     {
       "paper_order": 60,
@@ -785,9 +844,10 @@
       "subject_question_number": 10,
       "section": "A",
       "draft_candidate_global_number": 60,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified source Chemistry Q60 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121210, correct option ID 691121717 = A). Draft global Q60 matches both statements, complex order and option ordering; official key is option A.",
-      "verification_evidence": "Verified source Chemistry Q60 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121210, correct option ID 691121717 = A). Draft global Q60 matches both statements, complex order and option ordering; official key is option A."
+      "verification_evidence": "Verified source Chemistry Q60 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121210, correct option ID 691121717 = A). Draft global Q60 matches both statements, complex order and option ordering; official key is option A.",
+      "publishable": false
     },
     {
       "paper_order": 61,
@@ -795,9 +855,10 @@
       "subject_question_number": 11,
       "section": "A",
       "draft_candidate_global_number": 61,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified source Chemistry Q61 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121211, correct option ID 691121722 = B). Draft global Q61 matches the five complex pairs and option order; coordination isomerism applies to B, D and E only.",
-      "verification_evidence": "Verified source Chemistry Q61 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121211, correct option ID 691121722 = B). Draft global Q61 matches the five complex pairs and option order; coordination isomerism applies to B, D and E only."
+      "verification_evidence": "Verified source Chemistry Q61 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121211, correct option ID 691121722 = B). Draft global Q61 matches the five complex pairs and option order; coordination isomerism applies to B, D and E only.",
+      "publishable": false
     },
     {
       "paper_order": 62,
@@ -805,9 +866,10 @@
       "subject_question_number": 12,
       "section": "A",
       "draft_candidate_global_number": 62,
-      "status": "verified",
+      "status": "verified_exact_match",
       "notes": "Verified source Chemistry Q62 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121212, numeric answer 273). Draft global Q62 matches combustion masses, C/H percentages, molar masses, nearest-integer request and answer.",
-      "verification_evidence": "Verified source Chemistry Q62 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121212, numeric answer 273). Draft global Q62 matches combustion masses, C/H percentages, molar masses, nearest-integer request and answer."
+      "verification_evidence": "Verified source Chemistry Q62 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121212, numeric answer 273). Draft global Q62 matches combustion masses, C/H percentages, molar masses, nearest-integer request and answer.",
+      "publishable": false
     },
     {
       "paper_order": 63,
@@ -815,9 +877,10 @@
       "subject_question_number": 13,
       "section": "A",
       "draft_candidate_global_number": 63,
-      "status": "verified",
-      "notes": "Exact statement wording, both substituted diarylmethyl ion structures, four answer choices, and answer A reconciled against the JEEPrep Chemistry Q63 transcription. Official NTA final key: question ID 691121213 → option ID 691121729 (A). q63.svg was inspected and depicts the para-nitro/para-methoxy carbocation and carbanion. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact statement wording, both substituted diarylmethyl ion structures, four answer choices, and answer A reconciled against the JEEPrep Chemistry Q63 transcription. Official NTA final key: question ID 691121213 → option ID 691121729 (A). q63.svg was inspected and depicts the para-nitro/para-methoxy carbocation and carbanion. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "status": "needs_diagram_review",
+      "notes": "Candidate global Q63 has the matching substituted diarylmethyl carbocation/carbanion topic and q63.svg, but its wording is a paraphrase. Compare the original source text and diagram directly before marking exact match.",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 64,
@@ -825,9 +888,10 @@
       "subject_question_number": 14,
       "section": "A",
       "draft_candidate_global_number": 64,
-      "status": "verified",
-      "notes": "Exact X reaction sequence and four choices reconciled against the JEEPrep Chemistry Q64 transcription. Official NTA final key: question ID 691121214 → option ID 691121735 (C). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact X reaction sequence and four choices reconciled against the JEEPrep Chemistry Q64 transcription. Official NTA final key: question ID 691121214 → option ID 691121735 (C). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "status": "needs_exact_review",
+      "notes": "Candidate global Q64 has the matching heptane/isomerization-aromatization-cyclization topic, but exact source wording/options still require direct comparison. Keep audit-only.",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 65,
@@ -835,109 +899,120 @@
       "subject_question_number": 15,
       "section": "A",
       "draft_candidate_global_number": 65,
-      "status": "verified",
-      "notes": "All five statements and four combination choices reconciled against the JEEPrep Chemistry Q65 transcription. Official NTA final key: question ID 691121215 → option ID 691121739 (C). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "All five statements and four combination choices reconciled against the JEEPrep Chemistry Q65 transcription. Official NTA final key: question ID 691121215 → option ID 691121739 (C). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "status": "needs_exact_review",
+      "notes": "Candidate global Q65 has the matching alkyl-halide statement-combination topic, but exact source wording/options still require direct comparison. Keep audit-only.",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 66,
       "subject": "Chemistry",
       "subject_question_number": 16,
       "section": "A",
-      "draft_candidate_global_number": 66,
-      "status": "verified",
-      "notes": "Exact compound constraints, molar mass, product choices, and answer C reconciled against the JEEPrep Chemistry Q66 transcription. Official NTA final key: question ID 691121216 → option ID 691121743 (C). q66.svg contains the four corresponding candidate product structures. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact compound constraints, molar mass, product choices, and answer C reconciled against the JEEPrep Chemistry Q66 transcription. Official NTA final key: question ID 691121216 → option ID 691121743 (C). q66.svg contains the four corresponding candidate product structures. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": null,
+      "status": "no_candidate_confirmed",
+      "notes": "source asks for increasing CFSE order of three cobalt complexes",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 67,
       "subject": "Chemistry",
       "subject_question_number": 17,
       "section": "A",
-      "draft_candidate_global_number": 67,
-      "status": "verified",
-      "notes": "Exact enol-ether hydrolysis prompt, four statement-combination choices, and answer D reconciled against the JEEPrep Chemistry Q67 transcription. Official NTA final key: question ID 691121217 → option ID 691121748 (D). q67.svg depicts CH3–CH=CH–O–C(CH3)=CH2. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact enol-ether hydrolysis prompt, four statement-combination choices, and answer D reconciled against the JEEPrep Chemistry Q67 transcription. Official NTA final key: question ID 691121217 → option ID 691121748 (D). q67.svg depicts CH3–CH=CH–O–C(CH3)=CH2. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": 70,
+      "status": "confirmed_mismatch",
+      "notes": "Confirmed mismatch against NTA source: Chemistry Q67 (global source Q67; question ID 691121217) has the source choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy draft global Q70 instead uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺ and a different question formulation. Do not mark verified; replace the draft using exact source prompt/options and official final key.",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 68,
       "subject": "Chemistry",
       "subject_question_number": 18,
       "section": "A",
-      "draft_candidate_global_number": 68,
-      "status": "verified",
-      "notes": "Reaction sequence and all four A/E choices reconciled against the JEEPrep Chemistry Q68 transcription; draft choices were corrected to the source order and answer B. Official NTA final key: question ID 691121218 → option ID 691121750 (B). q68.svg was inspected as a schematic; it intentionally leaves unknown structures A and E undisclosed. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Reaction sequence and all four A/E choices reconciled against the JEEPrep Chemistry Q68 transcription; draft choices were corrected to the source order and answer B. Official NTA final key: question ID 691121218 → option ID 691121750 (B). q68.svg was inspected as a schematic; it intentionally leaves unknown structures A and E undisclosed. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": 69,
+      "status": "needs_exact_review",
+      "notes": "amino-acid/hormone identification topic matches; verify exact codes and options",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 69,
       "subject": "Chemistry",
       "subject_question_number": 19,
       "section": "A",
-      "draft_candidate_global_number": 69,
-      "status": "verified",
-      "notes": "Exact amino-acid/hormone prompt, four choices, and answer C reconciled against the JEEPrep Chemistry Q69 transcription. Official NTA final key: question ID 691121219 → option ID 691121755 (C). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact amino-acid/hormone prompt, four choices, and answer C reconciled against the JEEPrep Chemistry Q69 transcription. Official NTA final key: question ID 691121219 → option ID 691121755 (C). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": null,
+      "status": "source_diagram_unresolved",
+      "notes": "source product-identification item depends on the organic structure; no exact candidate confirmed",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 70,
       "subject": "Chemistry",
       "subject_question_number": 20,
       "section": "A",
-      "draft_candidate_global_number": 70,
-      "status": "verified",
-      "notes": "Exact ion list, borax-bead-test/ionisation-enthalpy prompt, four choices, and answer D reconciled against the JEEPrep Chemistry Q70 transcription. Official NTA final key: question ID 691121220 → option ID 691121760 (D). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact ion list, borax-bead-test/ionisation-enthalpy prompt, four choices, and answer D reconciled against the JEEPrep Chemistry Q70 transcription. Official NTA final key: question ID 691121220 → option ID 691121760 (D). No source diagram is required. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": 75,
+      "status": "source_diagram_unresolved",
+      "notes": "source asks AgBr mass from a Carius-method sample; no exact draft match confirmed",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 71,
       "subject": "Chemistry",
       "subject_question_number": 21,
       "section": "B",
-      "draft_candidate_global_number": 71,
-      "status": "verified",
-      "notes": "Exact photoelectric-effect values, requested x × 10² nm format, and numerical answer 5 reconciled against the JEEPrep Chemistry Q71 transcription. Official NTA final key: question ID 691121221 → numerical answer 5. Independent calculation gives λ ≈ 500 nm, hence x = 5. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact photoelectric-effect values, requested x × 10² nm format, and numerical answer 5 reconciled against the JEEPrep Chemistry Q71 transcription. Official NTA final key: question ID 691121221 → numerical answer 5. Independent calculation gives λ ≈ 500 nm, hence x = 5. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": 67,
+      "status": "needs_exact_review",
+      "notes": "product-X/product-Y statement question appears related; verify structures and all statements",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 72,
       "subject": "Chemistry",
       "subject_question_number": 22,
       "section": "B",
-      "draft_candidate_global_number": 72,
-      "status": "verified",
-      "notes": "Exact gas-phase reaction, pressure/time values, requested partial pressure, and numerical answer 20 reconciled against the JEEPrep Chemistry Q72 transcription. Official NTA final key: question ID 691121222 → numerical answer 20. Independent stoichiometric pressure calculation gives 20 mm Hg. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact gas-phase reaction, pressure/time values, requested partial pressure, and numerical answer 20 reconciled against the JEEPrep Chemistry Q72 transcription. Official NTA final key: question ID 691121222 → numerical answer 20. Independent stoichiometric pressure calculation gives 20 mm Hg. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": 65,
+      "status": "needs_exact_review",
+      "notes": "alkyl-halide statement topic matches; exact statements/options need comparison",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 73,
       "subject": "Chemistry",
       "subject_question_number": 23,
       "section": "B",
-      "draft_candidate_global_number": 73,
-      "status": "verified",
-      "notes": "Both half-cell reactions, standard potentials, efficiency, pressure, temperature, and requested volume-change format reconciled against the JEEPrep Chemistry Q73 transcription. Official NTA final key: question ID 691121223 → numerical answer 560. Independent work/pressure calculation gives about 560 m³. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Both half-cell reactions, standard potentials, efficiency, pressure, temperature, and requested volume-change format reconciled against the JEEPrep Chemistry Q73 transcription. Official NTA final key: question ID 691121223 → numerical answer 560. Independent work/pressure calculation gives about 560 m³. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": 68,
+      "status": "needs_exact_review",
+      "notes": "reaction-sequence identification topic appears related; verify starting structure, reagents and labels",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 74,
       "subject": "Chemistry",
       "subject_question_number": 24,
       "section": "B",
-      "draft_candidate_global_number": 74,
-      "status": "verified",
-      "notes": "Exact ten-ion list and atomic numbers reconciled against the JEEPrep Chemistry Q74 transcription. Official NTA final key: question ID 691121224 → numerical answer 3. Electron configurations independently identify Mn²⁺, Cu²⁺ and Gd³⁺ as paramagnetic. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact ten-ion list and atomic numbers reconciled against the JEEPrep Chemistry Q74 transcription. Official NTA final key: question ID 691121224 → numerical answer 3. Electron configurations independently identify Mn²⁺, Cu²⁺ and Gd³⁺ as paramagnetic. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": 63,
+      "status": "confirmed_mismatch",
+      "notes": "source statements describe +R effects on a carbocation; draft's second statement describes a different effect",
+      "verification_evidence": "",
+      "publishable": false
     },
     {
       "paper_order": 75,
       "subject": "Chemistry",
       "subject_question_number": 25,
       "section": "B",
-      "draft_candidate_global_number": 75,
-      "status": "verified",
-      "notes": "Exact p-nitrotoluene reagent sequence, Carius analysis prompt, atomic masses, and numerical answer 1 reconciled against the JEEPrep Chemistry Q75 transcription. Official NTA final key: question ID 691121225 → numerical answer 1. q75.svg was inspected as a reaction-sequence schematic. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry",
-      "verification_evidence": "Exact p-nitrotoluene reagent sequence, Carius analysis prompt, atomic masses, and numerical answer 1 reconciled against the JEEPrep Chemistry Q75 transcription. Official NTA final key: question ID 691121225 → numerical answer 1. q75.svg was inspected as a reaction-sequence schematic. Source text: https://jeeprep.app/pyq/2026-apr-2-shift-2/chemistry"
+      "draft_candidate_global_number": null,
+      "status": "source_diagram_unresolved",
+      "notes": "source structure-dependent hydrocarbon item lacks a confirmed exact candidate",
+      "verification_evidence": "",
+      "publishable": false
     }
   ]
 }
