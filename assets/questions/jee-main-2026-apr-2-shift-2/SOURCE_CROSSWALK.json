@@ -26,8 +26,8 @@
       "subject_question_number": 2,
       "section": "A",
       "draft_candidate_global_number": 27,
-      "status": "confirmed_mismatch",
-      "notes": "Legacy Q27 currently uses different drum radius/mass/rotation data than the source PDF; confirmed content mismatch.",
+      "status": "needs_exact_review",
+      "notes": "Updated legacy Q27 to match the source PDF's drum data (0.5 kg, radius 4 m, 5 rad/s) and option set; final-key verification pending.",
       "verification_evidence": "",
       "publishable": false
     },
@@ -115,7 +115,7 @@
       "section": "A",
       "draft_candidate_global_number": 35,
       "status": "needs_exact_review",
-      "notes": "Legacy Q35 has matching bubble dimensions/velocity/density, but its option set differs from the PDF transcription; confirmed option mismatch.",
+      "notes": "Updated legacy Q35 to match the source PDF's air-bubble diameter, liquid density, rise speed and option set; calculated candidate is 8.8 poise, final-key verification pending.",
       "verification_evidence": "",
       "publishable": false
     },
@@ -125,8 +125,8 @@
       "subject_question_number": 11,
       "section": "A",
       "draft_candidate_global_number": 36,
-      "status": "confirmed_mismatch",
-      "notes": "Legacy Q36 currently uses different ball mass and drop height than the source PDF; confirmed content mismatch.",
+      "status": "needs_exact_review",
+      "notes": "Updated legacy Q36 to match the source PDF's 2 kg ball, 10 m drop, 10 cm penetration and option set; calculated candidate is 2020 N, final-key verification pending.",
       "verification_evidence": "",
       "publishable": false
     },
