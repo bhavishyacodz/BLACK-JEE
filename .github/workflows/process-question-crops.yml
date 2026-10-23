@@ -4,8 +4,6 @@ on:
   push:
     paths:
       - "assets/gemini-inbox/crop-manifest.json"
-      - ".github/workflows/process-question-crops.yml"
-      - "scripts/process_question_crops.py"
   workflow_dispatch:
 
 permissions:
@@ -17,7 +15,7 @@ concurrency:
 
 jobs:
   crop-and-attach:
-    if: github.actor != 'github-actions[bot]'
+    if: github.actor != 'github-actions[bot]' && hashFiles('assets/gemini-inbox/crop-manifest.json') != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
