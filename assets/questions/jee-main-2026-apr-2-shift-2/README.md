@@ -34,7 +34,9 @@ Use raw GitHub URLs for the database's `image_url` field:
 
 ## Current database attachment status
 
-The latest recorded database audit found **23 rows** for this shift: **22 published and 1 draft**. That count is historical and has not been rechecked in this session because the available Supabase tool returned a permissions error. The recorded audit said Q30 is published with a diagram URL; Q28 had an SVG but no database row; Q57 and Q63 had URLs in draft metadata; and Q66, Q67, Q68 and Q75 had SVGs but no retained draft records. Treat these attachment details as unverified until database access is restored.
+The latest recorded database audit found **23 rows** for this shift: **22 published and 1 draft**. That count is historical and has not been rechecked in this session because the available Supabase tool returned a permissions error. The recorded audit said Q30 is published with a diagram URL; Q28 had an SVG but no database row; Q57 and Q63 had URLs in draft metadata; and Q66, Q67, Q68 and Q75 were not attached to live database rows. Treat these attachment details as unverified until database access is restored.
+
+A complete 75-record JSON batch has now been restored to this repository at [full-shift-2-75-draft.json](full-shift-2-75-draft.json). All 75 records are marked `is_published: false`. This is a draft archive only: it has not been imported into Supabase and has not been verified against the original source paper.
 
 The PYQ browse pages and Prep Studio now retry a failed raw-GitHub diagram request using the GitHub Pages asset URL, then show an explicit fallback link if both loads fail.
 
@@ -46,6 +48,7 @@ The prior audit flagged Q41's “minimum” refractive-index wording as potentia
 ## Verification log — 2026-10-23
 
 - Repository path check: all 11 SVG paths listed above were retrievable from the default branch.
+- Restored the 75-record JSON draft archive to the default branch; static validation found 25 records per subject, no duplicate question numbers within each subject sequence, all required fields present, and all 75 records unpublished. These structural checks do not establish that the questions reproduce the official paper or that every answer is correct.
 - Q30 and Q42 SVG source files were re-fetched and exist; this is not a live-browser render test or proof of source-paper fidelity.
 - Q63 SVG was corrected in commit [e6f99e83920d9ad9814c615d80ee91d1ebd36724](https://github.com/bhavishyacodz/BLACK-JEE/commit/e6f99e83920d9ad9814c615d80ee91d1ebd36724) to make the diarylmethyl central-carbon/ring connections explicit.
 - The responsive gallery at [diagram-audit.html](../../../../diagram-audit.html) is an asset-loading preview only; its status badges do not certify scientific correctness.
