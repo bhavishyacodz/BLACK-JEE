@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09090b">
+<title>BLACK-JEE · Image Crop Studio</title>
+<style>
+:root{color-scheme:dark;--bg:#09090b;--panel:#131316;--panel2:#1a1a20;--line:#303039;--muted:#a5a5b1;--text:#f6f6f8;--red:#ef4050;--green:#75e0ad;--amber:#f3c96b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#251116 0,transparent 38%),var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:#b8d0ff}.wrap{width:min(1280px,calc(100% - 24px));margin:auto}.top{position:sticky;top:0;z-index:10;background:#0b0b0dec;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand{font-size:12px;font-weight:900;letter-spacing:.14em}.brand b{color:var(--red)}.nav a,.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 13px;border:1px solid #41414a;border-radius:9px;background:#1a1a20;color:#fff;text-decoration:none;font:inherit;font-size:13px;font-weight:800;cursor:pointer}.btn.primary{background:var(--red);border-color:var(--red)}.btn:disabled{opacity:.45;cursor:not-allowed}.hero{padding:24px 0 12px}.eyebrow{color:var(--red);font-size:11px;letter-spacing:.16em;font-weight:900}.hero h1{font-size:clamp(27px,5vw,43px);line-height:1.04;letter-spacing:-.04em;margin:7px 0}.muted{color:var(--muted)}.panel{background:linear-gradient(145deg,#17171c,#101013);border:1px solid var(--line);border-radius:14px;padding:15px;margin:12px 0}.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,350px);gap:14px;align-items:start}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.field label{font-size:11px;letter-spacing:.08em;font-weight:850;color:#c5c5ce}.field input,.field select,.field textarea{width:100%;min-width:0;border:1px solid #3c3c45;border-radius:8px;padding:11px;background:#0b0b0e;color:#fff;font:inherit}.stage{position:relative;overflow:auto;background:#050506;border:1px solid #363640;border-radius:10px;min-height:280px;display:grid;place-items:center}.stage img{display:block;max-width:100%;max-height:68vh;object-fit:contain;user-select:none;-webkit-user-drag:none}.stage canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.preview{background:#fff;border-radius:9px;min-height:130px;display:grid;place-items:center;overflow:hidden}.preview canvas{max-width:100%;height:auto;display:block}.status{padding:10px 12px;border-radius:9px;background:#1a1a20;border:1px solid var(--line);color:var(--muted);font-size:13px}.status.ok{color:var(--green)}.status.warn{color:var(--amber)}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.small{font-size:12px}.pill{border:1px solid var(--line);padding:4px 8px;border-radius:999px;font-size:11px;color:var(--muted)}.crop-list{display:grid;gap:8px}.crop-item{border:1px solid var(--line);border-radius:9px;padding:10px;display:flex;gap:8px;justify-content:space-between;align-items:center}.crop-item strong{font-size:12px;overflow-wrap:anywhere}.crop-item button{background:#282830;border:1px solid #454550;border-radius:7px;color:white;padding:6px 8px}.warning{border-color:#665124;background:#211b0d;color:#f4d48b}.good{border-color:#23543c;background:#102017;color:#a6f0c7}footer{padding:20px 0 35px;color:var(--muted);font-size:12px}@media(max-width:850px){.grid{grid-template-columns:1fr}.stage{min-height:230px}.stage img{max-height:58vh}}
+</style></head>
+<body>
+<header class="top"><div class="wrap nav"><div class="brand">BLACK<b>—</b>JEE <span class="muted">/ IMAGE CROP STUDIO</span></div><div class="row"><a href="owner-dashboard.html">Owner dashboard</a><a href="shift-workbench.html">Shift workbench</a></div></div></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">SOURCE IMAGE → VERIFIED CROP → QUESTION ASSET</div><h1>Crop once. Attach precisely.</h1><p class="muted">Pick the screenshot already in the GitHub inbox, draw around the exact question/diagram/reaction/options, choose its question ID, then export a crop manifest. The processing workflow creates permanent assets and removes only screenshots it successfully processed.</p></section>
+<div id="status" class="status">Loading inbox screenshots and the question index…</div>
+<section class="panel">
+<div class="grid">
+<div>
+<div class="field"><label for="source">SOURCE SCREENSHOT</label><select id="source"><option>Loading…</option></select></div>
+<div class="stage" id="stage"><img id="sourceImage" alt="Selected source screenshot"><canvas id="overlay"></canvas></div>
+<div class="row" style="margin-top:10px"><button class="btn" id="reset">Reset crop</button><button class="btn" id="full">Use full image</button><span class="pill" id="dimensions">No image</span></div>
+<p class="muted small">Drag over the screenshot to select the crop. Include the complete diagram, labels, reaction arrows, matching columns or option figures. You can crop several regions from the same screenshot.</p>
+</div>
+<div>
+<div class="field"><label for="question">TARGET QUESTION</label><select id="question"><option>Loading…</option></select></div>
+<div class="field"><label for="kind">CROP TYPE</label><select id="kind"><option value="question_visual">Question text + visual</option><option value="diagram">Diagram / graph / circuit</option><option value="reaction">Chemical reaction / structure</option><option value="matching">Match-the-following table</option><option value="option_a">Option A visual</option><option value="option_b">Option B visual</option><option value="option_c">Option C visual</option><option value="option_d">Option D visual</option><option value="options_grid">All option visuals together</option></select></div>
+<div class="field"><label for="alt">ACCESSIBLE DESCRIPTION / NOTE</label><input id="alt" placeholder="e.g. Logic circuit diagram from source paper"></div>
+<div class="preview" id="preview"><span style="color:#555">Crop preview appears here</span></div>
+<div class="row" style="margin-top:10px"><button class="btn primary" id="add" disabled>Add crop to batch</button><button class="btn" id="removeAll">Clear batch</button></div>
+<p class="muted small">Crop boundaries are normalized to the source image, so processing remains consistent even if the screenshot is resized.</p>
+</div>
+</div>
+</section>
+<section class="panel">
+<div class="row" style="justify-content:space-between"><div><strong>Batch manifest</strong><div class="muted small">Each crop must map to the correct question before export.</div></div><span class="pill" id="count">0 crops</span></div>
+<div id="crops" class="crop-list" style="margin:12px 0"></div>
+<div class="row"><button class="btn primary" id="export" disabled>Export crop-manifest.json</button><button class="btn" id="downloadPreview" disabled>Download current crop PNG</button></div>
+<p class="muted small">After exporting, add <code>crop-manifest.json</code> to <code>assets/gemini-inbox/</code> on GitHub. The processing workflow will crop images, attach them to the shift's draft manifest, and delete source screenshots only after a successful run. It will not publish questions automatically.</p>
+</section>
+</main>
+<footer class="wrap">BLACK-JEE · Source screenshots are temporary. Permanent crops belong in the shift's question-assets folder.</footer>
+<script>
+const OWNER='bhavishyacodz',REPO='BLACK-JEE',INBOX='assets/gemini-inbox',SHIFT='jee-main-2026-apr-4-shift-1';
+const $=id=>document.getElementById(id);
+let files=[],questions=[],img=null,selection=null,crops=[],currentSource='',naturalW=0,naturalH=0,displayRect=null,dragStart=null;
+const status=(msg,kind='')=>{$('status').textContent=msg;$('status').className='status '+kind};
+async function api(path){const r=await fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path+'?ref=main',{headers:{Accept:'application/vnd.github+json'}});if(!r.ok)throw Error('GitHub API '+r.status+' while reading '+path);return r.json()}
+async function init(){
+ try{
+  const [listing,mf]=await Promise.all([api(INBOX),fetch('assets/questions/'+SHIFT+'/manifest.json').then(r=>{if(!r.ok)throw Error('Question manifest unavailable');return r.json()})]);
+  files=listing.filter(x=>x.type==='file'&&/^Screenshot_.*\.(jpg|jpeg|png|webp)$/i.test(x.name)).map(x=>({name:x.name,path:x.path,url:'https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/'+x.path,size:x.size}));
+  questions=mf;
+  $('source').innerHTML=files.length?files.map((f,i)=>'<option value="'+i+'">'+escapeHtml(f.name)+' · '+Math.round(f.size/1024)+' KB</option>').join(''):'<option value="">No screenshots found in inbox</option>';
+  $('question').innerHTML=questions.map(q=>'<option value="'+escapeHtml(q.question_id)+'">'+escapeHtml(q.question_id)+' · '+escapeHtml(q.subject)+' · Q'+q.paper_question_number+(q.visual_required?' · VISUAL':'')+'</option>').join('');
+  if(!files.length){status('No screenshot files found in '+INBOX+'. Upload screenshots there first.','warn');return}
+  $('source').value='0';await loadSource();status(files.length+' screenshot(s) and '+questions.length+' question IDs loaded. Select a screenshot, draw a crop and assign its question.','ok');
+ }catch(e){status('Could not load the GitHub inbox: '+e.message+'. Open this page from the published BLACK-JEE site and check repository visibility.','warn')}
+}
+function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+async function loadSource(){
+ const f=files[Number($('source').value)];if(!f)return;
+ currentSource=f.path;selection=null;$('alt').value='';$('add').disabled=true;
+ const im=new Image();im.crossOrigin='anonymous';im.onload=()=>{img=im;naturalW=im.naturalWidth;naturalH=im.naturalHeight;$('sourceImage').src=im.src;$('dimensions').textContent=naturalW+' × '+naturalH+' px';requestAnimationFrame(drawOverlay);renderPreview();};im.onerror=()=>status('Could not load '+f.name+'. Try refreshing once.','warn');im.src=f.url;
+}
+function getImageRect(){const stage=$('stage'),im=$('sourceImage'),sr=stage.getBoundingClientRect(),ir=im.getBoundingClientRect();return {x:ir.left-sr.left,y:ir.top-sr.top,w:ir.width,h:ir.height,stageW:sr.width,stageH:sr.height}}
+function drawOverlay(){
+ const c=$('overlay'),stage=$('stage'),r=stage.getBoundingClientRect(),d=window.devicePixelRatio||1;c.width=Math.max(1,Math.round(r.width*d));c.height=Math.max(1,Math.round(r.height*d));c.style.width=r.width+'px';c.style.height=r.height+'px';const ctx=c.getContext('2d');ctx.setTransform(d,0,0,d,0,0);ctx.clearRect(0,0,r.width,r.height);displayRect=getImageRect();
+ if(selection){const x=displayRect.x+selection.x*displayRect.w,y=displayRect.y+selection.y*displayRect.h,w=selection.w*displayRect.w,h=selection.h*displayRect.h;ctx.fillStyle='rgba(239,64,80,.16)';ctx.fillRect(x,y,w,h);ctx.strokeStyle='#ff5260';ctx.lineWidth=2;ctx.strokeRect(x,y,w,h)}
+}
+function pointerPos(e){const r=$('overlay').getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top}}
+const canvas=$('overlay');
+canvas.addEventListener('pointerdown',e=>{if(!img)return;const p=pointerPos(e),r=getImageRect();if(p.x<r.x||p.x>r.x+r.w||p.y<r.y||p.y>r.y+r.h)return;dragStart={x:(p.x-r.x)/r.w,y:(p.y-r.y)/r.h};canvas.setPointerCapture(e.pointerId)});
+canvas.addEventListener('pointerup',e=>{if(!dragStart||!img)return;const p=pointerPos(e),r=getImageRect(),end={x:Math.max(0,Math.min(1,(p.x-r.x)/r.w)),y:Math.max(0,Math.min(1,(p.y-r.y)/r.h))};const x=Math.min(dragStart.x,end.x),y=Math.min(dragStart.y,end.y),w=Math.abs(end.x-dragStart.x),h=Math.abs(end.y-dragStart.y);dragStart=null;if(w<.008||h<.008){status('Crop too small. Drag a larger region.','warn');return}selection={x,y,w,h};drawOverlay();renderPreview();$('add').disabled=false});
+$('source').addEventListener('change',loadSource);window.addEventListener('resize',drawOverlay);$('sourceImage').addEventListener('load',drawOverlay);
+function cropCanvas(){if(!img||!selection)return null;const sx=Math.round(selection.x*naturalW),sy=Math.round(selection.y*naturalH),sw=Math.max(1,Math.round(selection.w*naturalW)),sh=Math.max(1,Math.round(selection.h*naturalH));const c=document.createElement('canvas');c.width=sw;c.height=sh;c.getContext('2d').drawImage(img,sx,sy,sw,sh,0,0,sw,sh);return c}
+function renderPreview(){const holder=$('preview');holder.innerHTML='';const c=cropCanvas();if(!c){holder.innerHTML='<span style="color:#555">Draw a crop to preview</span>';$('downloadPreview').disabled=true;return}c.style.maxHeight='230px';c.style.objectFit='contain';holder.appendChild(c);$('downloadPreview').disabled=false}
+$('reset').onclick=()=>{selection=null;drawOverlay();renderPreview();$('add').disabled=true};
+$('full').onclick=()=>{selection={x:0,y:0,w:1,h:1};drawOverlay();renderPreview();$('add').disabled=false};
+$('add').onclick=()=>{if(!selection||!currentSource)return;const q=$('question').value,kind=$('kind').value;const existing=crops.filter(c=>c.question_id===q).length+1;const clean=q.replace(/[^a-zA-Z0-9_-]/g,'-');crops.push({source_screenshot:currentSource,question_id:q,kind,alt_text:$('alt').value.trim(),crop:{x:+selection.x.toFixed(6),y:+selection.y.toFixed(6),width:+selection.w.toFixed(6),height:+selection.h.toFixed(6)},asset_filename:clean+'-'+kind+'-'+existing+'.png'});renderCrops();status('Crop added for '+q+'. Continue with another crop or export the batch.','ok')};
+function renderCrops(){$('count').textContent=crops.length+' crop'+(crops.length===1?'':'s');$('crops').innerHTML=crops.length?crops.map((c,i)=>'<div class="crop-item"><div><strong>'+escapeHtml(c.question_id)+'</strong><div class="muted small">'+escapeHtml(c.kind)+' · '+escapeHtml(c.source_screenshot.split('/').pop())+'</div></div><button data-remove="'+i+'">Remove</button></div>').join(''):'<div class="muted small">No crops added yet.</div>';$('export').disabled=!crops.length;$('crops').querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{crops.splice(Number(b.dataset.remove),1);renderCrops()})}
+$('removeAll').onclick=()=>{crops=[];renderCrops()};
+$('downloadPreview').onclick=()=>{const c=cropCanvas();if(!c)return;c.toBlob(blob=>downloadBlob(blob,($('question').value||'question')+'-crop.png'))};
+$('export').onclick=()=>{const manifest={schema_version:1,shift_folder:SHIFT,delete_sources_after_success:true,created_at:new Date().toISOString(),instructions:'Review crop coordinates and question IDs. The processing workflow saves PNG assets and deletes only screenshots referenced here after successful processing.',crops:crops.map(c=>({...c}))};downloadBlob(new Blob([JSON.stringify(manifest,null,2)],{type:'application/json'}),'crop-manifest.json');status('Manifest exported. Upload it to assets/gemini-inbox/crop-manifest.json to run processing. Source screenshots are not deleted until the workflow succeeds.','ok')};
+function downloadBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500)}
+init();
+</script></body></html>
