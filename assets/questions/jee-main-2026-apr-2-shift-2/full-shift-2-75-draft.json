@@ -873,7 +873,7 @@
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q43.svg",
     "correct_answer": "D",
     "solution": "By reciprocity, calculate the flux through the small circular loop due to current I in the large square loop. Since L≫R, the field over the circle is approximately the square loop's central field B=2√2 μ₀I/(πL). Thus Φ≈BπR²=2√2 μ₀IR²/L, giving M=Φ/I=2√2 μ₀R²/L. Option D."
   },
@@ -931,7 +931,7 @@
     "marks_correct": 4,
     "marks_wrong": 0,
     "is_published": false,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q46.svg",
     "correct_answer": "6",
     "solution": "For equal-intensity slits, I/Imax = cos²(πΔ/λ). With I/Imax=3/4, the smallest positive path difference is Δ=λ/6. Thus x=6."
   },
