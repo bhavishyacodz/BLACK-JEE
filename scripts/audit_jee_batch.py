@@ -67,6 +67,20 @@ def audit_file(path):
     report["records"] = len(records)
     subject_counts, type_counts = Counter(), Counter()
     seen = defaultdict(list)
+
+    # Preserve source-paper order: the canonical shift batch must not silently
+    # shuffle questions between tabs/subjects during import.
+    ordered_numbers = [
+        q.get("source_question_number") if isinstance(q, dict) else None
+        for q in records
+    ]
+    if all(isinstance(n, int) for n in ordered_numbers):
+        if ordered_numbers != sorted(ordered_numbers):
+            issue(report, "ERROR", "SOURCE_ORDER", path.name,
+                  "Records are not in ascending source_question_number order; restore original paper order.")
+        if len(set(ordered_numbers)) != len(ordered_numbers):
+            issue(report, "ERROR", "DUPLICATE_GLOBAL_NUMBER", path.name,
+                  "Duplicate source question numbers found across the batch.")
     for index, q in enumerate(records, 1):
         where = f"{path.name}[{index}]"
         if not isinstance(q, dict):
