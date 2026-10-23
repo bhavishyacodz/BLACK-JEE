@@ -25,3 +25,13 @@ python scripts/audit_jee_batch.py --expect 75 --expect-per-subject 25 --json-out
 ```
 
 For a different shift, update the canonical batch path and expected counts to match that exam's actual structure before running the audit.
+
+
+## Numbering convention (important)
+
+Keep two concepts separate in every future import:
+
+- `paper_order`: one unique 1–75 sequence for the entire source document, preserving its actual page/section order.
+- `subject_question_number`: the number printed within that subject/section, normally 1–25 for this shift, including Section B's printed question positions as specified by the source.
+
+Do not overload one field to represent both. The current legacy draft uses `source_question_number` as its unique global sequence, so the current audit checks subject ranges against that legacy convention. When migrating the application schema, update the importer, filters, UI labels, and tests together; do not silently rename the field in the JSON alone.
