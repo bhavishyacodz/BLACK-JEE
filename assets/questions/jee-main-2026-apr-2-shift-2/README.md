@@ -36,7 +36,7 @@ Use raw GitHub URLs for the database's `image_url` field:
 
 The latest recorded database audit found **23 rows** for this shift: **22 published and 1 draft**. That count is historical and has not been rechecked in this session because the available Supabase tool returned a permissions error. The recorded audit said Q30 is published with a diagram URL; Q28 had an SVG but no database row; Q57 and Q63 had URLs in draft metadata; and Q66, Q67, Q68 and Q75 were not attached to live database rows. Treat these attachment details as unverified until database access is restored.
 
-A complete 75-record JSON batch has now been restored to this repository at [full-shift-2-75-draft.json](full-shift-2-75-draft.json). All 75 records are marked `is_published: false`. This is a draft archive only: it has not been imported into Supabase and has not been verified against the original source paper.
+A complete 75-record JSON batch is stored at [full-shift-2-75-draft.json](full-shift-2-75-draft.json). It has now been reconciled against the configured BLACK-JEE PYQ database by normalized question text: all 75 source records match a database row, and all have answer keys and solutions. The batch is not fully source-verified; newly staged records remain drafts and are not visible to students.
 
 The PYQ browse pages and Prep Studio now retry a failed raw-GitHub diagram request using the GitHub Pages asset URL, then show an explicit fallback link if both loads fail.
 
@@ -53,12 +53,15 @@ The official [NTA question paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2f
 - Q30 and Q42 SVG source files were re-fetched and exist; live-browser rendering is still unverified.
 - Q63 SVG was corrected in commit [e6f99e83920d9ad9814c615d80ee91d1ebd36724](https://github.com/bhavishyacodz/BLACK-JEE/commit/e6f99e83920d9ad9814c615d80ee91d1ebd36724) to make the diarylmethyl central-carbon/ring connections explicit.
 - The responsive gallery at [diagram-audit.html](../../../../diagram-audit.html) is an asset-loading preview only; its status badges do not certify scientific correctness.
-- Supabase table inspection was denied in this session. No database writes were made.
+- Correct Supabase project identified from `pyq.html`: `yeydvwnihpwoixytcgek` (the earlier project reference was not the PYQ uploader's configured project).
+- Imported the missing batch records in chunks as unpublished drafts. Database verification: 76 total rows for this shift/session label and 76 answer-key rows; 75 source questions matched, with 21 matching rows already published and 54 matching rows unpublished. One additional legacy Q41 “maximum” version remains as an unpublished duplicate; it was taken out of publication because the official paper says “minimum”.
+- **Q57 is on audit hold:** the SVG shows a first-order logarithmic plot, while the question text's rate-constant units imply second order. Its answer key/solution is flagged for review, and it remains unpublished.
+- No newly imported question was published during this step because the full answer-key and diagram audit is not complete.
 
 ## Outstanding before calling the shift complete
 
 1. Compare every diagram and its labels/values against the original JEE Main 2026 April 2 Shift 2 paper.
 2. Verify all 75 question statements, options, answer keys and explanations against a reliable source.
-3. Restore authorized read access and reconcile question records, publication status and image URLs; confirm Q28 and chemistry records.
+3. Resolve the Q57 graph/units contradiction and verify every answer key against the official paper.
 4. Open the live student experience and verify the correct image appears on each question.
 5. Do not describe the shift as complete until all checks above pass.
