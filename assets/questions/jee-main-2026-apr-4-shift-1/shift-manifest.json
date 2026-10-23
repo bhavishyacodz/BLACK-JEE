@@ -1456,7 +1456,7 @@
       "slot_id": "mathematics-01",
       "subject": "Mathematics",
       "subject_question_number": 1,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let \\([\\,\\cdot\\,]\\) denote the greatest integer function. If the domain of the function \\(f(x)=\\cos^{-1}\\left(\\frac{4x+2[x]}{3}\\right)\\) is \\([\\alpha,\\beta]\\), then \\(12(\\alpha+\\beta)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
@@ -1487,7 +1487,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 1,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1497,7 +1497,7 @@
       "slot_id": "mathematics-02",
       "subject": "Mathematics",
       "subject_question_number": 2,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "If the set of all solutions of \\(|x^2+x-9|=|x|+|x^2-9|\\) is \\([\\alpha,\\beta]\\cup[\\gamma,\\infty)\\), then \\((\\alpha^2+\\beta^2+\\gamma^2)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
@@ -1528,7 +1528,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1538,7 +1538,7 @@
       "slot_id": "mathematics-03",
       "subject": "Mathematics",
       "subject_question_number": 3,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let \\(z\\) be a complex number such that \\(|z+2|=|z-2|\\) and \\(\\arg\\left(\\frac{z+3}{z-i}\\right)=\\frac{\\pi}{4}\\). Then \\(|z|^2\\) is equal to:",
       "question_type": "MCQ",
       "options": [
@@ -1569,7 +1569,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1620,7 +1620,7 @@
       "slot_id": "mathematics-05",
       "subject": "Mathematics",
       "subject_question_number": 5,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let S={A=[a b; c d]: a,b,c,d∈{0,1,2,3,4} and A²−4A+3I=0} be a set of 2×2 matrices. Then the number of matrices in S, for which the sum of the diagonal elements is equal to 4, is:",
       "question_type": "MCQ",
       "options": [
@@ -1651,7 +1651,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1661,7 +1661,7 @@
       "slot_id": "mathematics-06",
       "subject": "Mathematics",
       "subject_question_number": 6,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let \\(A=\\begin{bmatrix}1&1&2\\\\-2&0&1\\\\1&3&5\\end{bmatrix}\\). Then the sum of all elements of the matrix \\(\\operatorname{adj}(\\operatorname{adj}(2(\\operatorname{adj}A)^{-1}))\\) is equal to:",
       "question_type": "MCQ",
       "options": [
@@ -1692,7 +1692,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1702,7 +1702,7 @@
       "slot_id": "mathematics-07",
       "subject": "Mathematics",
       "subject_question_number": 7,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "The first term of an A.P. of 30 non-negative terms is 10/3. If the sum of this A.P. is the cube of its last term, then its common difference is:",
       "question_type": "MCQ",
       "options": [
@@ -1733,7 +1733,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1784,7 +1784,7 @@
       "slot_id": "mathematics-09",
       "subject": "Mathematics",
       "subject_question_number": 9,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let the smallest value of \\(k\\in\\mathbb N\\), for which the coefficient of \\(x^3\\) in \\((1+x)^3+(1+x)^4+(1+x)^5+\\cdots+(1+x)^{99}+(1+kx)^{100}\\), \\(x\\ne0\\), is \\(\\left(43n+\\frac{101}{4}\\right)\\binom{100}{3}\\) for some \\(n\\in\\mathbb N\\), be \\(p\\). Then the value of \\(p+n\\) is:",
       "question_type": "MCQ",
       "options": [
@@ -1815,7 +1815,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1907,7 +1907,7 @@
       "slot_id": "mathematics-12",
       "subject": "Mathematics",
       "subject_question_number": 12,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let the vertex \\(A\\) of a triangle \\(ABC\\) be \\((1,2)\\), and the mid-point of the side \\(AB\\) be \\((5,-1)\\). If the centroid of this triangle is \\((3,4)\\) and its circumcenter is \\((\\alpha,\\beta)\\), then \\(21(\\alpha+\\beta)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
@@ -1938,7 +1938,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -1948,7 +1948,7 @@
       "slot_id": "mathematics-13",
       "subject": "Mathematics",
       "subject_question_number": 13,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Suppose that two chords, drawn from the point \\((1,2)\\) on the circle \\(x^2+y^2+x-3y=0\\), are bisected by the \\(y\\)-axis. If the other ends of these chords are \\(R\\) and \\(S\\), and the midpoint of the line segment \\(RS\\) is \\((\\alpha,\\beta)\\), then \\(6(\\alpha+\\beta)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
@@ -1979,7 +1979,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 5,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
@@ -2113,7 +2113,7 @@
       "slot_id": "mathematics-17",
       "subject": "Mathematics",
       "subject_question_number": 17,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let \\(f\\) be a real polynomial of degree \\(n\\) such that \\(f(x)=f'(x)f''(x)\\) for all \\(x\\in\\mathbb R\\). If \\(f(0)=0\\), then \\(36\\left(f'(2)+f''(2)+\\int_0^2 f(x)\\,dx\\right)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
@@ -2144,7 +2144,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 6,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "source_paper_question_number": 17,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
@@ -2197,7 +2197,7 @@
       "slot_id": "mathematics-19",
       "subject": "Mathematics",
       "subject_question_number": 19,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let \\([\\,\\cdot\\,]\\) denote the greatest integer function. If \\(\\int_{-2}^{2}\\left(|\\sin x|+[x\\sin x]\\right)\\,dx=2(3-\\cos 2)+\\beta\\), then \\(\\beta\\sin\\left(\\frac{\\beta}{2}\\right)\\) equals:",
       "question_type": "MCQ",
       "options": [
@@ -2228,7 +2228,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 7,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "source_paper_question_number": 19,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
@@ -2312,9 +2312,7 @@
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Numerical-type question; answer not supplied."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-22",
@@ -2359,7 +2357,7 @@
       "slot_id": "mathematics-23",
       "subject": "Mathematics",
       "subject_question_number": 23,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "If \\(A=\\frac{\\sin3^\\circ}{\\cos9^\\circ}+\\frac{\\sin9^\\circ}{\\cos27^\\circ}+\\frac{\\sin27^\\circ}{\\cos81^\\circ}\\) and \\(B=\\tan81^\\circ-\\tan3^\\circ\\), then \\(\\frac BA\\) is equal to:",
       "question_type": "numerical",
       "options": [],
@@ -2385,7 +2383,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 8,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "source_paper_question_number": 23,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
@@ -2396,7 +2394,7 @@
       "slot_id": "mathematics-24",
       "subject": "Mathematics",
       "subject_question_number": 24,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let \\(\\vec a_k=(\\tan\\theta_k)\\hat i+\\hat j\\) and \\(\\vec b_k=\\hat i-(\\cot\\theta_k)\\hat j\\), where \\(\\theta_k=\\frac{2^{k-1}\\pi}{2^n+1}\\), for some \\(n\\in\\mathbb N,\\ n>5\\). Then the value of \\(\\frac{\\sum_{k=1}^{n}|\\vec a_k|^2}{\\sum_{k=1}^{n}|\\vec b_k|^2}\\) is:",
       "question_type": "numerical",
       "options": [],
@@ -2422,7 +2420,7 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 8,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "supplied_verification_status": "content_added",
         "source_paper_question_number": 24,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
