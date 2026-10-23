@@ -828,10 +828,10 @@ input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
       osc.frequency.setValueAtTime(preview ? 620 : 470, now);
       osc.frequency.exponentialRampToValueAtTime(preview ? 780 : 540, now + .025);
       gain.gain.setValueAtTime(.0001, now);
-      gain.gain.exponentialRampToValueAtTime(preview ? .022 : .012, now + .006);
-      gain.gain.exponentialRampToValueAtTime(.0001, now + .045);
+      gain.gain.exponentialRampToValueAtTime(preview ? .055 : .032, now + .008);
+      gain.gain.exponentialRampToValueAtTime(.0001, now + .075);
       osc.connect(gain); gain.connect(audioCtx.destination);
-      osc.start(now); osc.stop(now + .05);
+      osc.start(now); osc.stop(now + .08);
     } catch (_) {}
   }
   function updateToggle(btn) {
