@@ -3016,7 +3016,7 @@
         "19"
       ],
       "correct_answer": "19",
-      "solution": "The matrix condition reduces to \\(a^2+b^2=25\\) for integers \\(a,b\\). The integer pairs are \\((\\pm5,0)\\), \\((0,\\pm5)\\), and \\((\\pm3,\\pm4)\\), including both sign choices for each coordinate in the latter family. Counting the admissible matrices gives \\(19\\).",
+      "solution": "Let A = [[a,b],[c,d]]. The condition is A²−4A+3I=0 and a+d=4. By the 2×2 Cayley–Hamilton identity, A²−(a+d)A+(ad−bc)I=0. Comparing with the given equation and using a+d=4 gives ad−bc=3. Thus the diagonal pairs (a,d) are (0,4),(1,3),(2,2),(3,1),(4,0). For (0,4) and (4,0), bc=−3, impossible. For (1,3) and (3,1), bc=0; with b,c∈{0,1,2,3,4}, there are 9 ordered pairs (b,c) for each case, giving 18 matrices. For (2,2), bc=1, so only (b,c)=(1,1), giving one matrix. Total = 18+1 = 19.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3026,8 +3026,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -3053,7 +3053,7 @@
       "review_notes": [
         "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
-        "Solution-quality audit: the current explanation is too abbreviated to independently verify the result. Expand the derivation and compare the exact question wording/options with the source before approval."
+        "Independent count using the trace/determinant condition and all allowed diagonal pairs gives 19 matrices. Exact source wording and student-page rendering remain pending."
       ]
     },
     {
@@ -3123,8 +3123,8 @@
         "\\(\\frac{15}{29}\\)",
         "\\(\\frac{5}{29}\\)"
       ],
-      "correct_answer": "\\(\\frac{5}{87}\\)",
-      "solution": "The arithmetic progression has last term \\(\\ell=5\\). Applying the given sum condition and simplifying gives the common difference \\(d=\\frac{5}{87}\\).",
+      "correct_answer": "\\frac{5}{87}",
+      "solution": "Let the last term be ℓ. The sum of 30 terms is S = 30/2 × (10/3 + ℓ) = 15(10/3 + ℓ) = 50 + 15ℓ. Given S = ℓ³, so ℓ³ − 15ℓ − 50 = 0. Since ℓ=5 is a root, the polynomial factors as (ℓ−5)(ℓ²+5ℓ+10)=0; the quadratic has negative discriminant, so the real last term is ℓ=5. Using ℓ = 10/3 + 29d, we get 29d = 5−10/3 = 5/3, hence d = 5/87.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3134,8 +3134,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -3161,7 +3161,7 @@
       "review_notes": [
         "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
-        "Solution-quality audit: the current explanation is too abbreviated to independently verify the result. Expand the derivation and compare the exact question wording/options with the source before approval."
+        "Expanded derivation confirms last term ℓ=5 and common difference d=5/87. Exact source wording and student-page rendering remain pending."
       ]
     },
     {
@@ -3286,7 +3286,7 @@
         "131"
       ],
       "correct_answer": "131",
-      "solution": "Substituting the given mean and mean absolute-deviation conditions yields a pair of linear equations in the unknowns. Solving them gives \\(2a=131\\).",
+      "solution": "There are nine numbers, and their mean is 40, so their sum is 360. The seven fixed numbers sum to 280; hence a+b=80. The sum of absolute deviations from 21 for the seven fixed numbers is |21−21|+|8−21|+|17−21|+|51−21|+|103−21|+|13−21|+|67−21| = 183. The mean deviation is 26, so the total absolute-deviation sum is 9×26=234. Therefore |a−21|+|b−21|=234−183=51. Since a>b and a+b=80, the consistent case is a>21>b, giving a−b=51. Solving a+b=80 and a−b=51 gives a=65.5, so 2a=131.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3296,8 +3296,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -3323,7 +3323,7 @@
       "review_notes": [
         "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
-        "Solution-quality audit: the current explanation is too abbreviated to independently verify the result. Expand the derivation and compare the exact question wording/options with the source before approval."
+        "Expanded calculation uses nine listed values: a+b=80 and |a−21|+|b−21|=51, giving a=65.5 and 2a=131. Exact source wording and student-page rendering remain pending."
       ]
     },
     {
@@ -3340,7 +3340,7 @@
         "3:2"
       ],
       "correct_answer": "5:1",
-      "solution": "Applying the angle-bisector theorem in the obtuse-angle configuration and using the given perpendicular relation gives \\(BC^2:AC^2=5:1\\).",
+      "solution": "The intersections with x=−3 are A=(−3,−3) on y=x and B=(−3,9) on y=−3x. The angle bisectors of x−y=0 and 3x+y=0 satisfy |x−y|/√2 = |3x+y|/√10. On x=−3, the bisector of the obtuse angle gives C=(−3, 3√5−6). Therefore BC²/AC² = (9−(3√5−6))²/((3√5−6)+3)² = (15−3√5)²/(3√5−3)² = 5, so BC²:AC²=5:1.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3350,8 +3350,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -3377,7 +3377,7 @@
       "review_notes": [
         "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
-        "Solution-quality audit: the current explanation is too abbreviated to independently verify the result. Expand the derivation and compare the exact question wording/options with the source before approval."
+        "Recomputed line intersections and the obtuse-angle bisector; the squared-distance ratio is 5:1. Exact source wording and student-page rendering remain pending."
       ]
     },
     {
