@@ -60,3 +60,12 @@ The following five answer/solution calculations were reworked and saved to the s
 
 These are calculation checks on the staged text, not proof that every OCR-transcribed quantity matches the source PDF. The visual, mobile-rendering and release gates above remain in force.
 
+### Mathematics Q5, Q7, Q10 and Q11 — derivations expanded
+
+- **Q5 (matrices):** using the trace/determinant form of the 2×2 Cayley–Hamilton identity gives \(ad-bc=3\) with \(a+d=4\). Enumerating the five allowed diagonal pairs gives 9 matrices for each of (1,3) and (3,1), one for (2,2), and none for (0,4) or (4,0): total 19.
+- **Q7 (A.P.):** if the last term is \(\ell\), the condition is \(\ell^3=50+15\ell\), whose real root is \(\ell=5\). Then \(d=(5-10/3)/29=5/87\).
+- **Q10 (mean/median):** nine numbers have sum 360, so \(a+b=80\). The seven fixed values contribute 183 to the sum of absolute deviations from 21; the total is \(9\times26=234\), leaving \(|a-21|+|b-21|=51\). With \(a>b\), this yields \(a-b=51\), so \(a=65.5\) and \(2a=131\).
+- **Q11 (angle bisector):** the intersections are \(A=(-3,-3)\) and \(B=(-3,9)\). Solving the obtuse-angle bisector gives \(C=(-3,3\sqrt5-6)\); substituting into the squared-distance ratio gives \(BC^2:AC^2=5:1\).
+
+These derivations were saved and marked as independently calculated in the staging manifest. Source wording, browser math rendering, mobile layout, and the overall publication gate remain pending.
+
