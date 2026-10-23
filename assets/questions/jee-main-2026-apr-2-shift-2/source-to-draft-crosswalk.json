@@ -1312,7 +1312,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Draft global Q66 contains the organic-compound/KOH-under-reflux item shown in a secondary transcription, but the previous CFSE note was a wrong mapping. Candidate is reset to global Q66. Compare exact wording, structure/options, and final NTA key before verification."
+      "note": "Draft global Q66 contains the organic-compound/KOH-under-reflux item shown in a secondary transcription, but the previous CFSE note was a wrong mapping. Candidate reset to global Q66. Compare exact wording, structure/options, and final NTA key before verification."
     },
     {
       "source": {
