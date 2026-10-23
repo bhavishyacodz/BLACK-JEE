@@ -683,29 +683,29 @@
       "printed_question_number": 24,
       "section": "B",
       "legacy_global_question_number": 36,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Topic candidate legacy Q36 (ball penetrating sand) uses different mass/height than the source transcription; confirmed content mismatch.",
+      "audit_notes": "Candidate legacy Q36 corrected to match the readable source transcription: 1 kg, 20 m, 10 cm penetration, options 1000/1980/2010/2020 N. Candidate answer 2010 N; official final answer key still needs checking.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Physics",
         "chapter": "Work, Energy and Power",
         "source_question_number": 36,
-        "question_text": "A spherical ball of mass 2 kg falls from a height of 10 m and is brought to rest after penetrating 10 cm into sand. Find the average force exerted by the sand on the ball. (Take g = 10 m/s².)",
+        "question_text": "A small ball of mass 1 kg is released from a height of 20 m above sand. It penetrates 10 cm into the sand and comes to rest. Find the average force exerted by the sand on the ball. (Take g = 10 m/s².)",
         "question_type": "MCQ",
         "options": [
+          "1000 N",
           "1980 N",
-          "2020 N",
-          "2000 N",
-          "1000 N"
+          "2010 N",
+          "2020 N"
         ],
         "marks_correct": 4,
         "marks_wrong": -1,
         "is_published": false,
         "image_url": "",
-        "correct_answer": "B",
-        "solution": "The ball loses gravitational potential energy over 10.1 m: mg(10.1) = 2×10×10.1 = 202 J. The sand force does work over 0.1 m while stopping the ball, so Favg×0.1 = 202 J and Favg = 2020 N. Candidate answer B; official final-key confirmation remains pending."
+        "correct_answer": "C",
+        "solution": "Using work–energy, the ball loses gravitational potential energy over the 20.1 m total descent: mg(20.1) = 1×10×20.1 = 201 J. The sand’s average force acts over 0.10 m to stop it, so F_avg × 0.10 = 201 J and F_avg = 2010 N. Candidate answer C; the official final answer key still requires confirmation."
       }
     },
     {
