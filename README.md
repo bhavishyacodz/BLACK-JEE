@@ -120,7 +120,7 @@ The active repository staging package for JEE Main 2026, 4 April Shift 1 is:
 
 - [Shift manifest](assets/questions/jee-main-2026-apr-4-shift-1/shift-manifest.json) — 75 subject-local tracking slots and review status.
 - [Question metadata manifest](assets/questions/jee-main-2026-apr-4-shift-1/manifest.json) — source question IDs and referenced visual assets.
-- [Physics audit](assets/questions/jee-main-2026-apr-4-shift-1/PHYSICS_AUDIT_ROUND1.md) and [round-two audit](assets/questions/jee-main-2026-apr-4-shift-1/SECOND_AUDIT_ROUND2.md) — known review gaps and release gates.
+- [Physics audit](assets/questions/jee-main-2026-apr-4-shift-1/PHYSICS_AUDIT_ROUND1.md), [round-two audit](assets/questions/jee-main-2026-apr-4-shift-1/SECOND_AUDIT_ROUND2.md), and [round-three follow-up](assets/questions/jee-main-2026-apr-4-shift-1/THIRD_AUDIT_ROUND3.md) — known review gaps, verified follow-ups, and release gates.
 - [Shift Workbench](https://bhavishyacodz.github.io/BLACK-JEE/shift-workbench.html) — inspect the question-management workflow.
 
 The GitHub Actions **April 4 Shift 1 manifest audit** checks the 75-slot structure, subject counts, draft-only staging policy, and existence of referenced assets. It is a structural check only; it does not prove official question wording, answer-key correctness, solution quality, or source-diagram fidelity.
