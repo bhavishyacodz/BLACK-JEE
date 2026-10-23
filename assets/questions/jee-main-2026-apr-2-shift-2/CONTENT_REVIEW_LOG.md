@@ -199,3 +199,10 @@ This log records content-level findings that structural validation alone cannot 
 - Applied the question-count limit only after sorting.
 - Built the order lookup from the existing audit-only paper-order JSON and matched on subject plus question stem; did not add a presumed Supabase column dependency.
 - This is a code-level correction only. The 75-question content and AC diagram remain on HOLD pending source/key verification. Awaiting Actions result and browser test.
+
+
+## Full-shift section validation hardening — 2026-10-23
+- Audited all 75 draft records: Physics currently has 18 MCQ + 7 Numerical; Chemistry 20 + 5; Mathematics 20 + 5.
+- Source crosswalk says Physics Q1–20 are Section A and Q21–25 are Section B. Some candidate records therefore have type labels inconsistent with the expected section. Their types/options are not being silently changed because exact source choices must be verified.
+- Updated full-shift validation in `mock-tests.html` to show actual per-subject counts when blocked, rather than a generic error.
+- Publication remains HOLD; this is validation hardening, not content certification.
