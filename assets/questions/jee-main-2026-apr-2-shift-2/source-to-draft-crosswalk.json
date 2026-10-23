@@ -19,14 +19,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 28
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source and draft use Atwood-machine centre-of-mass displacement; verify diagram/options"
     },
     {
       "source": {
@@ -38,14 +39,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 37
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source field components and propagation-direction wording differ from draft electromagnetic-wave question"
     },
     {
       "source": {
@@ -57,14 +59,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 27
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source cylinder radius 1 m and angular speed 10 rad/s; draft uses a different setup/radius"
     },
     {
       "source": {
@@ -76,14 +79,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 35
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "bubble radius, speed and liquid density align; verify answer choices and unit"
     },
     {
       "source": {
@@ -99,7 +103,8 @@
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source photoelectric item uses work function 2.3 eV and kinetic energy 0.18 eV"
     },
     {
       "source": {
@@ -111,14 +116,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 45
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "SHM expression and first-zero-time request appear aligned; verify option ordering"
     },
     {
       "source": {
@@ -130,14 +136,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 44
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source proton mass is 1.007276 u; draft uses 1.007825 u"
     },
     {
       "source": {
@@ -149,14 +156,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 32
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "screw-gauge givens appear aligned; verify zero-error sign and options"
     },
     {
       "source": {
@@ -168,14 +176,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 31
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "both concern gravitational fall from far away, but source asks speed and gives Earth radius and surface gravity"
     },
     {
       "source": {
@@ -187,14 +196,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 50
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source axis separation is 9 m; draft says 3 m"
     },
     {
       "source": {
@@ -206,14 +216,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 33
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "soap-bubble surface tension and diameter change appear aligned"
     },
     {
       "source": {
@@ -225,14 +236,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 49
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "lens/burning-paper concept appears related; verify the source's curvature, refractive-index expression and wording"
     },
     {
       "source": {
@@ -244,14 +256,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 47
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "Bohr-orbit magnetic-field ratio appears aligned; verify orbit labels and ratio direction"
     },
     {
       "source": {
@@ -263,14 +276,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 38
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_diagram_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "both concern potential across a bulb; the circuit image and ratings must match exactly"
     },
     {
       "source": {
@@ -282,14 +296,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 29
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source force is (2i+3j)×10^-10 N and B=2×10^-3 k T; draft uses different values"
     },
     {
       "source": {
@@ -301,14 +316,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 41
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "both involve an equilateral prism and a refractive layer; compare ray diagram and refractive-index values"
     },
     {
       "source": {
@@ -320,14 +336,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 26
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "dimensional analysis of G using Planck constant appears related; verify exact answer forms"
     },
     {
       "source": {
@@ -339,14 +356,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 30
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_diagram_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "logic-gate equivalence item needs exact circuit comparison"
     },
     {
       "source": {
@@ -358,14 +376,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 40
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source uses two concentric-origin spheres of radii 4 m and 6 m with charges 8 μC and 2 μC; draft uses point charges at positions and different sign"
     },
     {
       "source": {
@@ -377,14 +396,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 43
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_diagram_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "mutual-inductance loop geometry appears related; verify the source figure and exact options"
     },
     {
       "source": {
@@ -396,14 +416,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 46
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_diagram_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "YDSE intensity/path-difference item needs exact comparison of the diagram and requested quantity"
     },
     {
       "source": {
@@ -415,14 +436,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 48
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "ideal-gas heat-capacity/temperature-change givens align; verify required output"
     },
     {
       "source": {
@@ -434,14 +456,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 42
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source asks for 3L₂−L₁ from two switch states and phase angles; draft is a different LCR phase-difference prompt"
     },
     {
       "source": {
@@ -453,14 +476,15 @@
         "subject": "Physics",
         "legacy_global_question_number": 36
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source mass 1 kg and drop height 20 m; draft uses 2 kg and 10 m"
     },
     {
       "source": {
@@ -469,14 +493,15 @@
         "paper_order": 25
       },
       "draft_candidate": null,
-      "status": "no_candidate_confirmed",
+      "status": "source_extraction_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "the text-extracted source used in this audit does not expose a confirmed question statement for this slot"
     },
     {
       "source": {
@@ -488,14 +513,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 72
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "reaction matches, but source says t=30 seconds; draft says 30 minutes"
     },
     {
       "source": {
@@ -507,14 +533,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 55
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "same protein osmotic-pressure/mixing setup; compare all numerical options"
     },
     {
       "source": {
@@ -530,7 +557,8 @@
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source is H₂SO₄ molarity 4.9 M with density 1.40 g/mL, asking molality and mole fraction"
     },
     {
       "source": {
@@ -542,14 +570,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 71
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "photoelectric item appears related; source uses wavelength y×10² nm and KE 2.8×10^-20 J"
     },
     {
       "source": {
@@ -561,14 +590,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 51
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "hydrocarbon combustion mass ratio and 3.38 g sample appear aligned"
     },
     {
       "source": {
@@ -580,14 +610,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 73
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "same half-cell reactions and 80% efficiency concept; verify expansion pressure and requested ΔV"
     },
     {
       "source": {
@@ -599,14 +630,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 54
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source work by gas is 10 J and heat absorbed is 2 J; draft uses different values"
     },
     {
       "source": {
@@ -618,14 +650,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 57
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "second-order kinetics statement set appears aligned; compare every statement and option"
     },
     {
       "source": {
@@ -637,14 +670,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 52
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source is H₂S/HS⁻ equilibrium with Ka₁=8.3×10^-8 and Ka₂=10^-13; draft is a different acid"
     },
     {
       "source": {
@@ -656,14 +690,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 56
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "weak-acid/NaOH titration appears aligned; verify exact pH outputs and option order"
     },
     {
       "source": {
@@ -675,14 +710,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 74
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source ion list includes Gd²⁺; draft uses Gd³⁺"
     },
     {
       "source": {
@@ -694,14 +730,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 53
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source includes BrF₄⁺; draft lists BrF₄⁻"
     },
     {
       "source": {
@@ -713,14 +750,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 58
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "oxide-classification topic matches; exact options differ or need comparison"
     },
     {
       "source": {
@@ -732,14 +770,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 59
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "ionisation-energy statements need exact trend wording and options checked"
     },
     {
       "source": {
@@ -751,14 +790,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 61
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "coordination-isomerism topic matches, but the complex list/options require exact comparison"
     },
     {
       "source": {
@@ -774,7 +814,8 @@
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source asks for increasing CFSE order of three cobalt complexes"
     },
     {
       "source": {
@@ -786,14 +827,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 70
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source choices are Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺; draft includes Cr²⁺"
     },
     {
       "source": {
@@ -805,14 +847,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 69
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "amino-acid/hormone identification topic matches; verify exact codes and options"
     },
     {
       "source": {
@@ -821,14 +864,15 @@
         "paper_order": 44
       },
       "draft_candidate": null,
-      "status": "no_candidate_confirmed",
+      "status": "source_diagram_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source product-identification item depends on the organic structure; no exact candidate confirmed"
     },
     {
       "source": {
@@ -840,14 +884,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 75
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "source_diagram_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source asks AgBr mass from a Carius-method sample; no exact draft match confirmed"
     },
     {
       "source": {
@@ -859,14 +904,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 67
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "product-X/product-Y statement question appears related; verify structures and all statements"
     },
     {
       "source": {
@@ -878,14 +924,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 65
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "alkyl-halide statement topic matches; exact statements/options need comparison"
     },
     {
       "source": {
@@ -897,14 +944,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 68
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "reaction-sequence identification topic appears related; verify starting structure, reagents and labels"
     },
     {
       "source": {
@@ -916,14 +964,15 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 63
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source statements describe +R effects on a carbocation; draft's second statement describes a different effect"
     },
     {
       "source": {
@@ -932,14 +981,15 @@
         "paper_order": 50
       },
       "draft_candidate": null,
-      "status": "no_candidate_confirmed",
+      "status": "source_diagram_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source structure-dependent hydrocarbon item lacks a confirmed exact candidate"
     },
     {
       "source": {
@@ -951,14 +1001,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 9
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "mean/variance with partial sum 48 and sum of squares 496 appears aligned"
     },
     {
       "source": {
@@ -970,14 +1021,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 18
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "degree-five polynomial, extrema at ±1 and limit −5 appear aligned"
     },
     {
       "source": {
@@ -989,14 +1041,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 16
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source vectors are PS=i+j and PQ=−j+k; draft has different vectors"
     },
     {
       "source": {
@@ -1008,14 +1061,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 2
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "nested-circle distance problem appears aligned"
     },
     {
       "source": {
@@ -1027,14 +1081,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 12
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "parabola through (1,−1) and vertex-distance condition appears aligned"
     },
     {
       "source": {
@@ -1046,14 +1101,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 23
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "circle of radius 6 and A=(3,0) diameter-locus problem appears aligned"
     },
     {
       "source": {
@@ -1065,14 +1121,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 5
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "eight-term series appears aligned"
     },
     {
       "source": {
@@ -1084,14 +1141,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 3
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source's second linear equation is 2x+2y+4z=1; draft uses different coefficients/RHS"
     },
     {
       "source": {
@@ -1103,14 +1161,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 17
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "integral of sin⁴x+cos⁴x from 0 to 20π appears aligned"
     },
     {
       "source": {
@@ -1122,14 +1181,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 7
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "polygon triangle-count condition appears aligned"
     },
     {
       "source": {
@@ -1141,14 +1201,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 21
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "relation on A×A with divisibility and ≤ appears aligned"
     },
     {
       "source": {
@@ -1160,14 +1221,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 25
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source greatest-integer expression is [x²−x+2]; draft uses x²−x−1/2"
     },
     {
       "source": {
@@ -1179,14 +1241,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 19
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "partial-fraction integral and logarithm condition appear aligned"
     },
     {
       "source": {
@@ -1198,14 +1261,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 10
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "perpendicular-line intersection as circle centre and chord-length problem appears aligned"
     },
     {
       "source": {
@@ -1217,14 +1281,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 20
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "source asks for 3x(e²)/e²; draft asks for x(e²)"
     },
     {
       "source": {
@@ -1236,14 +1301,15 @@
         "subject": "Mathematics",
         "legacy_global_question_number": 24
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "curves align, but source asks A from area=A−6ln3 while draft asks a different transformed expression"
     },
     {
       "source": {
@@ -1251,18 +1317,16 @@
         "subject_question_number": 17,
         "paper_order": 67
       },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 13
-      },
-      "status": "candidate_only_needs_exact_verification",
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
     },
     {
       "source": {
@@ -1270,18 +1334,16 @@
         "subject_question_number": 18,
         "paper_order": 68
       },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 6
-      },
-      "status": "candidate_only_needs_exact_verification",
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
     },
     {
       "source": {
@@ -1289,18 +1351,16 @@
         "subject_question_number": 19,
         "paper_order": 69
       },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 15
-      },
-      "status": "candidate_only_needs_exact_verification",
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
     },
     {
       "source": {
@@ -1308,18 +1368,16 @@
         "subject_question_number": 20,
         "paper_order": 70
       },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 22
-      },
-      "status": "candidate_only_needs_exact_verification",
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
     },
     {
       "source": {
@@ -1329,16 +1387,17 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 8
+        "legacy_global_question_number": 13
       },
-      "status": "candidate_only_needs_exact_verification",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "this is Section-B numerical question 1, not source Mathematics question 17; the expression differs from the draft"
     },
     {
       "source": {
@@ -1346,15 +1405,19 @@
         "subject_question_number": 22,
         "paper_order": 72
       },
-      "draft_candidate": null,
-      "status": "no_candidate_confirmed",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 6
+      },
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "this is Section-B numerical question 2; binomial-coefficient identity appears aligned"
     },
     {
       "source": {
@@ -1362,15 +1425,19 @@
         "subject_question_number": 23,
         "paper_order": 73
       },
-      "draft_candidate": null,
-      "status": "no_candidate_confirmed",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 15
+      },
+      "status": "candidate_matches_core_setup",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "this is Section-B numerical question 3; 3D foot/midpoint setup appears aligned"
     },
     {
       "source": {
@@ -1378,15 +1445,19 @@
         "subject_question_number": 24,
         "paper_order": 74
       },
-      "draft_candidate": null,
-      "status": "no_candidate_confirmed",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 22
+      },
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "this is Section-B numerical question 4; source matrix B is [[1,3],[3,9]], unlike the draft"
     },
     {
       "source": {
@@ -1394,15 +1465,21 @@
         "subject_question_number": 25,
         "paper_order": 75
       },
-      "draft_candidate": null,
-      "status": "no_candidate_confirmed",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 8
+      },
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
         "options_or_numerical_format",
         "diagram_if_any",
         "official_final_answer_key"
-      ]
+      ],
+      "note": "this is Section-B numerical question 5; source asks for m+n, while draft asks for probability m/n"
     }
-  ]
+  ],
+  "source_pdf": "https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf",
+  "audit_note": "Status labels are conservative audit annotations based on text-extracted source material. Candidate alignment does not establish exact equivalence. Mathematics source slots 17–20 were not present in the extracted text and are explicitly unresolved; Section-B numerical questions are mapped to subject-local slots 21–25."
 }
