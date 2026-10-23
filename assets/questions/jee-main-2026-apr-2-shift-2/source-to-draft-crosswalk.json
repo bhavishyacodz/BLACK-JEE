@@ -511,7 +511,7 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 51
+        "legacy_global_question_number": 72
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -521,73 +521,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Chemistry Q1 is the first-order reaction 2A(g)→4B(g)+C(g), total pressures 300 torr at 30 s and 600 torr at infinity; compare time units and exact values against legacy Q72."
     },
     {
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 2,
         "paper_order": 27
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 52
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 3,
-        "paper_order": 28
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 53
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 4,
-        "paper_order": 29
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 54
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 5,
-        "paper_order": 30
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -601,18 +541,15 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Chemistry Q2 asks osmotic pressures x, y and z for two protein solutions and their mixture; compare exact solution setup and all option values against legacy Q55."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 6,
-        "paper_order": 31
+        "subject_question_number": 3,
+        "paper_order": 28
       },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 56
-      },
+      "draft_candidate": null,
       "status": "needs_exact_review",
       "publishable": false,
       "verification": [
@@ -621,278 +558,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription Chemistry Q3 is 4.9 M H₂SO₄ with density 1.40 g/mL, asking molality and mole fraction. No matching Chemistry draft candidate was found; do not substitute a different acid-equilibrium question."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 7,
-        "paper_order": 32
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 57
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 8,
-        "paper_order": 33
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 58
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 9,
-        "paper_order": 34
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 59
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 10,
-        "paper_order": 35
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 60
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 11,
-        "paper_order": 36
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 61
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 12,
-        "paper_order": 37
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 62
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 13,
-        "paper_order": 38
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 63
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 14,
-        "paper_order": 39
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 64
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 15,
-        "paper_order": 40
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 65
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 16,
-        "paper_order": 41
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 66
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 17,
-        "paper_order": 42
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 67
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 18,
-        "paper_order": 43
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 68
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 19,
-        "paper_order": 44
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 69
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 20,
-        "paper_order": 45
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 70
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 21,
-        "paper_order": 46
+        "subject_question_number": 4,
+        "paper_order": 29
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -906,17 +578,17 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Strong candidate: source Chemistry Q4 gives work function 2.3 eV and maximum kinetic energy 2.8×10⁻²⁰ J, asking wavelength y×10² nm. Legacy Q71 has the same values; verify exact formula, answer and key."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 22,
-        "paper_order": 47
+        "subject_question_number": 5,
+        "paper_order": 30
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 72
+        "legacy_global_question_number": 51
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -926,13 +598,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Chemistry Q5 hydrocarbon with C:H mass ratio 12:1, two carbon atoms and 3.38 g combustion; compare the exact requested CO₂ mass and options against legacy Q51."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 23,
-        "paper_order": 48
+        "subject_question_number": 6,
+        "paper_order": 31
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -946,17 +618,17 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Chemistry Q6 fuel-cell half-reactions with 80% efficiency and expansion against 1 kPa; compare exact conditions and requested ΔV against legacy Q73."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 24,
-        "paper_order": 49
+        "subject_question_number": 7,
+        "paper_order": 32
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 74
+        "legacy_global_question_number": 54
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -966,13 +638,238 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Chemistry Q7 reversible thermodynamic process with heat/work data; compare all signed heat/work values and answer options against legacy Q54."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 25,
-        "paper_order": 50
+        "subject_question_number": 8,
+        "paper_order": 33
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 57
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q8 reaction order/rate-constant statements; compare rate constant, statements and correct combination against legacy Q57."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 9,
+        "paper_order": 34
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 52
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Chemistry Q9 is H₂S added to 0.1 M HCl and asks [HS⁻], with Ka1=8.3×10⁻⁸ and Ka2=10⁻¹³. Legacy Q52 instead uses a weak dibasic acid H₂A and Ka1=8.1×10⁻⁸; species and data differ."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 10,
+        "paper_order": 35
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 56
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q10 titrates 20 mL of 0.2 M HA with 10 mL of 0.2 M NaOH, Ka=5×10⁻⁴ and asks initial/final pH; compare against legacy Q56."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 11,
+        "paper_order": 36
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 74
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Chemistry Q11 asks paramagnetic count for Lu³⁺, Yb²⁺, Gd²⁺, Ce⁴⁺, La³⁺, Zn²⁺, Cu²⁺, Mn²⁺, Sc³⁺ and Ti⁴⁺. Legacy Q74 substitutes Gd³⁺ for Gd²⁺, changing the ion list."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 12,
+        "paper_order": 37
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 53
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q12 asks which listed species are isostructural with SF₄. Legacy Q53 has a similar list but appears to use BrF₄⁻ where the transcription reads BrF₄⁺; inspect the source PDF image before deciding the exact mismatch."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 13,
+        "paper_order": 38
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 58
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Topic-level candidate: source Chemistry Q13 asks for the set covering basic, acidic, amphoteric and neutral oxides; compare all four source options against legacy Q58."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 14,
+        "paper_order": 39
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 59
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Topic-level candidate: source Chemistry Q14 contains two ionization-enthalpy ordering statements; compare exact inequalities and answer options against legacy Q59."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 15,
+        "paper_order": 40
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 61
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [],
+      "note": "Source Chemistry Q15 lists coordination complexes including [Fe(NH₃)₆][Co(CN)₆], [Cr(NH₃)₆][Co(CN)₆] and [Fe(NH₃)₆][Cr(CN)₆]. Legacy Q61 uses a different complex list, so it is not an exact transcription."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 16,
+        "paper_order": 41
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 60
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q16 asks the increasing order of CFSE for [Co(H₂O)₆]²⁺, [Co(H₂O)₆]³⁺ and [Co(en)₃]³⁺. Legacy Q60 bundles a complex-order statement with an ionization-energy statement; isolate and compare the exact question before verification."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 17,
+        "paper_order": 42
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 70
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Chemistry Q17 asks which ion both gives a positive borax-bead test and has the largest ionization energy, among Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy Q70 substitutes Cr²⁺ for Co²⁺."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 18,
+        "paper_order": 43
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 69
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q18 asks for the amino-acid one-letter code and its iodinated derivative hormone; compare the T/Y options and spelling against legacy Q69."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 19,
+        "paper_order": 44
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 66
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q19 gives an organic compound treated with KOH then H⁺ and asks for product P with the same C:H:O molar ratio; compare the source structure and conditions against legacy Q66."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 20,
+        "paper_order": 45
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -986,7 +883,104 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Chemistry Q20 asks the mass of AgBr from Carius analysis of 1 g of product. Legacy Q75 has a Carius-analysis prompt, but its preceding reaction sequence must be compared to the source before mapping is accepted."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 21,
+        "paper_order": 46
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 67
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q21 asks statements about products X and Y, including NaHCO₃, 2,4-DNP, molar mass and HCN reaction rates. Compare the source diagram and all statements against legacy Q67."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 22,
+        "paper_order": 47
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 65
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q22 asks correct statements about aryl/alkyl halides, SN1, alcoholic KOH and SOCl₂. Compare each statement and option grouping against legacy Q65."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 23,
+        "paper_order": 48
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 68
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q23 asks to identify A and E in a reaction sequence. Legacy Q68 includes a sequence starting from 1-ethyl-4-nitrobenzene; compare the full source scheme and products."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 24,
+        "paper_order": 49
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 63
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Chemistry Q24 compares resonance stabilization of two substituted carbocations. Verify the charges, substituent positions and full statement wording against legacy Q63."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 25,
+        "paper_order": 50
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "The readable transcription only exposes the fragment “(A) is hydrocarbon” for Chemistry Q25; the full stem/diagram is missing. No candidate assigned until the source page image is inspected."
     },
     {
       "source": {
