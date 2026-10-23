@@ -3502,7 +3502,7 @@
         "1204"
       ],
       "correct_answer": "1014",
-      "solution": "Substituting the line parameter into the given condition and simplifying gives \\(225a^2=1014\\), which is the required value.",
+      "solution": "Parameterize the two given lines as P=(2t,3t,3t−1) and Q=(−1−s,2+s,4s). Since PQ is parallel to the required direction (1,−1,2), write Q−P=λ(1,−1,2). The first two coordinate equations give (−1−s−2t)+(2+s−3t)=0, so t=1/5. The first coordinate then gives λ=−7/5−s. The third coordinate gives 4s−3/5+1=2λ, i.e. 4s+2/5=2λ. Solving yields s=−8/15 and λ=−13/15. Thus a=|PQ|=|λ|√(1²+(−1)²+2²)=13√6/15, and 225a²=225×(169×6/225)=1014.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3512,8 +3512,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -3539,7 +3539,7 @@
       "review_notes": [
         "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
-        "Solution-quality audit: the current explanation is too abbreviated to independently verify the result. Expand the derivation and compare the exact question wording/options with the source before approval."
+        "Full parameter solution gives PQ=(−13/15)(1,−1,2), hence 225a²=1014. Source wording and math/mobile rendering remain pending."
       ]
     },
     {
@@ -3556,7 +3556,7 @@
         "12"
       ],
       "correct_answer": "6",
-      "solution": "Solving the two line equations gives the intersection points \\(P\\) and \\(Q\\). Substituting their coordinates into the distance formula gives \\(PQ^2=6\\).",
+      "solution": "The given line is P=(1+t,1+2t,−t). A line through A=(−2,−8,6) parallel to direction (1,−1,2) is Q=(−2+s,−8−s,6+2s). Equating coordinates gives t−s=−3, 2t+s=−9, and t+2s=−6. Solving gives s=−1 and t=−4, so the required displacement along the second line has length |s|√(1²+(−1)²+2²)=√6. The square of the distance is 6.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3566,8 +3566,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -3593,7 +3593,7 @@
       "review_notes": [
         "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
-        "Solution-quality audit: the current explanation is too abbreviated to independently verify the result. Expand the derivation and compare the exact question wording/options with the source before approval."
+        "Solving the line/parallel-displacement equations gives parameter s=−1, so the squared distance is 6. Source wording and math/mobile rendering remain pending."
       ]
     },
     {
