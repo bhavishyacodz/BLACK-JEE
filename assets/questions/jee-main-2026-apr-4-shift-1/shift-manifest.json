@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "source_checked_content_added_needs_review",
+  "workflow_status": "content_added_source_verification_pending",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "45 populated questions (Mathematics subject slots 1–25 and Physics subject slots 1–20, corresponding to paper questions 1–45) have been checked against the official NTA question-paper PDF. Source wording, options, and available diagrams were compared visually; OCR/transcription errors in the latest Physics batch were corrected, including the omitted logic-gate diagram. Mathematics slot 22 remains needs_review because the official wording itself is unusual and requires subject-matter interpretation. Answer keys, worked solutions, MathJax browser checks, and mobile rendering checks remain pending. Required diagram descriptions are source-verified, but diagram assets/rendering still need completion. All entries are staging drafts; nothing has been imported into Supabase or published.",
+  "important_note": "All 75 question slots now contain staging content: Mathematics slots 1–25, Physics slots 1–25, and Chemistry slots 1–25, corresponding to paper questions 1–75. The first 45 questions were previously checked against the official NTA paper. Newly supplied paper questions 46–75 have been transcribed into the manifest but have not yet been independently checked against the official PDF; OCR-corrupted formulas and structure-dependent questions are explicitly flagged for review. Answer keys, worked solutions, MathJax browser checks, mobile rendering checks, and diagram asset/render verification remain pending. All entries remain staging-only; nothing has been imported into Supabase or published.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -877,14 +877,14 @@
       "slot_id": "physics-21",
       "subject": "Physics",
       "subject_question_number": 21,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A 1 kg block subjected to two simultaneous forces \\((2\\hat{i}+3\\hat{j}+4\\hat{k})\\,N\\) and \\((3\\hat{i}-\\hat{j}-2\\hat{k})\\,N\\) is moved a distance of 25 m along \\((3\\hat{i}-4\\hat{j})\\) direction. The work done in this process is _____ J.",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -897,21 +897,31 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-046",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 17,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 46,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-22",
       "subject": "Physics",
       "subject_question_number": 22,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "The surface tension of a soap solution is \\(3.5\\times10^{-2}\\,N/m\\). The work required to increase the radius of a soap bubble from 1 cm to 2 cm is \\(\\alpha\\times10^{-6}\\,J\\). The value of \\(\\alpha\\) is _____ (\\(\\pi=22/7\\)).",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -924,21 +934,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-047",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 17,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 47,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "OCR correction from supplied batch: '1 em' interpreted as '1 cm'; verify against the source PDF."
+      ]
     },
     {
       "slot_id": "physics-23",
       "subject": "Physics",
       "subject_question_number": 23,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "The velocity of a particle executing simple harmonic motion along x-axis is described as \\(v^{2}=50-x^{2}\\), where x represents displacement. If the time period of motion is [EXPRESSION UNCLEAR IN SUPPLIED OCR], the value is _____.",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -951,21 +973,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-048",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 17,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 48,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "The supplied OCR time-period expression is incomplete/corrupted; recover exact expression from source PDF before approval."
+      ]
     },
     {
       "slot_id": "physics-24",
       "subject": "Physics",
       "subject_question_number": 24,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "A body of mass 2 kg begins to move under the influence of time-dependent force \\(\\vec{F}=(2t\\hat{i}+6t^{2}\\hat{j})\\,N\\), where \\(\\hat{i}\\) and \\(\\hat{j}\\) are unit vectors along x and y-axis respectively. The power produced by the force at \\(t=2\\,s\\) is _____ W.",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -978,21 +1012,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-049",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 17,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 49,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Duplicated OCR words and time formatting normalized; verify against the source PDF."
+      ]
     },
     {
       "slot_id": "physics-25",
       "subject": "Physics",
       "subject_question_number": 25,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "An inductor of 10 mH, capacitor of 0.1 μF and a resistor of 100 Ω are connected in series across an a.c. power supply of 220 V, 70 Hz. The power factor of the given circuit is 0.5. The difference in the inductive reactance and capacitive reactance is [EXPRESSION UNCLEAR IN SUPPLIED OCR]. The value of α is _____.",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1005,21 +1051,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-050",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 18,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 50,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "OCR fragment for reactance difference is garbled; recover exact expression from source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-01",
       "subject": "Chemistry",
       "subject_question_number": 1,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Number of moles and number of molecules in 1.4187 L of \\(SO_{2}\\) at STP respectively are:",
+      "question_type": "MCQ",
+      "options": [
+        "0.1266; \\(3.812\\times10^{22}\\)",
+        "0.0633; \\(3.812\\times10^{22}\\)",
+        "0.1266; \\(7.6238\\times10^{22}\\)",
+        "0.0633; \\(7.6238\\times10^{22}\\)"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1032,21 +1095,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-051",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 18,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 51,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Scientific-notation superscripts normalized from OCR; verify volume/STP convention and options against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-02",
       "subject": "Chemistry",
       "subject_question_number": 2,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "What is the ratio of wave number of first line (lowest energy line) of Balmer series of H atomic spectrum to first line of its Brackett series?",
+      "question_type": "MCQ",
+      "options": [
+        "5:1",
+        "5:0.81",
+        "5:1.75",
+        "5:27"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1059,21 +1139,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-052",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 18,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 52,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-03",
       "subject": "Chemistry",
       "subject_question_number": 3,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Which of the following is the correct set of four quantum numbers of the 19th electron in Chromium (atomic number = 24) in accordance with the Aufbau principle?",
+      "question_type": "MCQ",
+      "options": [
+        "\\(n=3,\\ l=2,\\ m=+2,\\ s=+\\frac12\\)",
+        "\\(n=3,\\ l=2,\\ m=-2,\\ s=+\\frac12\\)",
+        "\\(n=4,\\ l=1,\\ m=0,\\ s=+\\frac12\\)",
+        "\\(n=4,\\ l=0,\\ m=0,\\ s=+\\frac12\\)"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1086,21 +1181,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-053",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 19,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 53,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Removed apparent OCR artifacts from options; verify exact formatting against the source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-04",
       "subject": "Chemistry",
       "subject_question_number": 4,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Given below are two statements:\nStatement I: For an ideal gas, heat capacity at constant volume is always greater than the heat capacity at constant pressure.\nStatement II: In a constant-volume process, no work is produced and all the heat withdrawn goes into the chaotic motion and is reflected by a temperature increase of the ideal gas.\nIn the light of the above statements, choose the correct answer from the options given below.",
+      "question_type": "MCQ",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1113,21 +1225,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-054",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 19,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 54,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-05",
       "subject": "Chemistry",
       "subject_question_number": 5,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "At \\(T\\,K\\), the equilibrium constant of \\(A_{2}(g)+B_{2}(g)\\rightleftharpoons C(g)\\) is \\(2.7\\times10^{-5}\\). What is the equilibrium constant for \\(\\frac13A_{2}(g)+\\frac13B_{2}(g)\\rightleftharpoons\\frac13C(g)\\) at the same temperature?",
+      "question_type": "MCQ",
+      "options": [
+        "\\((2.7\\times10^{-5})^{3}\\)",
+        "\\(6\\times10^{-2}\\)",
+        "\\(\\sqrt{2.7\\times10^{-5}}\\)",
+        "\\(3\\times10^{-2}\\)"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1140,21 +1267,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-055",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 19,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 55,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Duplicated OCR word normalized; verify reaction and options against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-06",
       "subject": "Chemistry",
       "subject_question_number": 6,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "In order to oxidise a mixture of 1 mole each of \\(FeC_{2}O_{4}\\), \\(Fe_{2}(C_{2}O_{4})_{3}\\), \\(FeSO_{4}\\) and \\(Fe_{2}(SO_{4})_{3}\\) in acidic medium, the number of moles of \\(KMnO_{4}\\) required is:",
+      "question_type": "MCQ",
+      "options": [
+        "3",
+        "2",
+        "5",
+        "7"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1167,21 +1311,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-056",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 20,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 56,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Punctuation and compound separation normalized from OCR; verify against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-07",
       "subject": "Chemistry",
       "subject_question_number": 7,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Consider the first-order reaction \\(R\\rightarrow P\\). The fraction of molecules decomposed in the given first-order reaction can be expressed as:",
+      "question_type": "MCQ",
+      "options": [
+        "\\(1-e^{k_{1}t}\\)",
+        "\\(1+e^{k_{1}t}\\)",
+        "\\(1+e^{-k_{1}t}\\)",
+        "\\(1-e^{-k_{1}t}\\)"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1194,21 +1355,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-057",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 20,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 57,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Option braces/exponents normalized from OCR; source-PDF check required."
+      ]
     },
     {
       "slot_id": "chemistry-08",
       "subject": "Chemistry",
       "subject_question_number": 8,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A monoatomic anion (A) has 45 neutrons and 36 electrons. Atomic mass, group in the periodic table and physical state at room temperature of the element (A), respectively, are:",
+      "question_type": "MCQ",
+      "options": [
+        "80, 17, liquid",
+        "81, 16, solid",
+        "80, 16, gas",
+        "81, 15, gas"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1221,21 +1399,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-058",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 20,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 58,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-09",
       "subject": "Chemistry",
       "subject_question_number": 9,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Given below are two statements:\nStatement I: The covalency of oxygen is generally two but it can exceed up to four. The oxidation state of oxygen in \\(SO_{2}\\) is −2 and in \\(OF_{2}\\) it is +2.\nStatement II: The anomalous behaviour of oxygen when compared to the other elements of group 16 is due to its small size and high electronegativity.\nIn the light of the above statements, choose the correct answer from the options given below.",
+      "question_type": "MCQ",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1248,21 +1441,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-059",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 21,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 59,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-10",
       "subject": "Chemistry",
       "subject_question_number": 10,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The correct statements among the following are:\nA. \\(Mo(VI)\\) and \\(W(VI)\\) are less stable than \\(Cr(VI)\\).\nB. \\(Ce^{4+}\\) and \\(Tb^{4+}\\) are oxidants while \\(Eu^{2+}\\) and \\(Yb^{2+}\\) are reductants.\nC. Cm and Am have seven unpaired electrons.\nD. Actinoid contraction is greater from element to element than lanthanoid contraction.\nChoose the correct answer from the options given below.",
+      "question_type": "MCQ",
+      "options": [
+        "A and B only",
+        "C and D only",
+        "B and D only",
+        "A and C only"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1275,21 +1483,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-060",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 21,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 60,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-11",
       "subject": "Chemistry",
       "subject_question_number": 11,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Correct statements from the following are:\nA. Potassium dichromate is an oxidising agent and it oxidises \\(FeSO_{4}\\) to \\(Fe_{2}(SO_{4})_{3}\\) in acidic medium.\nB. Sodium dichromate can be used as a primary standard in volumetric estimation.\nC. \\(CrO_{4}^{2-}\\) and \\(Cr_{2}O_{7}^{2-}\\) are interconvertible in aqueous solution by varying the pH of the solution.\nD. The Cr–O–Cr bond angle in \\(Cr_{2}O_{7}^{2-}\\) is \\(126^{\\circ}\\).\nChoose the correct answer from the options given below:",
+      "question_type": "MCQ",
+      "options": [
+        "A, B and C only",
+        "A, C and D only",
+        "A and C only",
+        "B and D only"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1302,21 +1525,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-061",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 21,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 61,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-12",
       "subject": "Chemistry",
       "subject_question_number": 12,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Match List-I with List-II.\nList-I — Complex ion:\nA. \\([Cr(H_{2}O)_{6}]^{2+}\\)\nB. \\([Co(H_{2}O)_{6}]^{2+}\\)\nC. \\([Cu(H_{2}O)_{6}]^{2+}\\)\nD. \\([Mn(H_{2}O)_{6}]^{2+}\\)\nList-II — Calculated spin-only magnetic moment (BM): I. 3.87; II. 5.92; III. 4.90; IV. 1.73.\nChoose the correct answer from the options given below:",
+      "question_type": "MCQ",
+      "options": [
+        "A-I, B-III, C-IV, D-II",
+        "A-II, B-I, C-III, D-IV",
+        "A-IV, B-II, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1329,21 +1567,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-062",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 22,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 62,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-13",
       "subject": "Chemistry",
       "subject_question_number": 13,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Increasing order of electron-withdrawing power of the following functional groups is:\na. −CN; b. −COOH; c. −NO₂; d. −I",
+      "question_type": "MCQ",
+      "options": [
+        "c < b < d < a",
+        "c < a < b < d",
+        "d < b < a < c",
+        "a < b < c < d"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1356,23 +1609,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-063",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 22,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 63,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "chemistry-14",
       "subject": "Chemistry",
       "subject_question_number": 14,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "An alkene (X) on ozonolysis followed by reduction gives the products shown in the source-paper figure. The alkene (X) is:",
+      "question_type": "MCQ",
+      "options": [
+        "[option A structure missing in OCR]",
+        "[option B structure missing in OCR]",
+        "[option C structure missing in OCR]",
+        "[option D structure missing in OCR]"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
+        "alt_text": "Reaction-product structure and all four alkene option structures are not recoverable from the supplied text OCR; transcribe from the source-paper image.",
         "source_verified": false,
         "render_verified": false
       },
@@ -1383,21 +1651,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-064",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 23,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 64,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Do not approve or publish until source image and all four option structures are recovered; supplied OCR has severe structure loss."
+      ]
     },
     {
       "slot_id": "chemistry-15",
       "subject": "Chemistry",
       "subject_question_number": 15,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Match List-I with List-II.\nList-I — Name of reaction: A. Finkelstein reaction; B. Swarts reaction; C. Sandmeyer reaction; D. Fittig reaction.\nList-II — Reagent or catalyst used: I. \\(SbF_{3}\\); II. Na, dry ether; III. NaI; IV. \\(Cu_{2}Cl_{2}\\).\nChoose the correct answer from the options given below:",
+      "question_type": "MCQ",
+      "options": [
+        "A-I, B-IV, C-III, D-II",
+        "A-III, B-I, C-IV, D-II",
+        "A-IV, B-II, C-I, D-III",
+        "A-I, B-III, C-II, D-IV"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1410,23 +1695,40 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-065",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 23,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 65,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Option mappings normalized from OCR; verify all mappings against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-16",
       "subject": "Chemistry",
       "subject_question_number": 16,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Amongst the following, the total number of compounds soluble in aqueous NaOH at room temperature is:",
+      "question_type": "MCQ",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
+        "alt_text": "The source figure contains nine labelled chemical structures (I)–(IX); recover and check each structure against the original paper.",
         "source_verified": false,
         "render_verified": false
       },
@@ -1437,23 +1739,40 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-066",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 24,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 66,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Visual audit of all nine structures is required; text-only record is insufficient to validate the answer."
+      ]
     },
     {
       "slot_id": "chemistry-17",
       "subject": "Chemistry",
       "subject_question_number": 17,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Product C of the following reaction sequence will be: aniline → (Br₂/water) intermediate A (major product) → (NaNO₂/HCl, 273–278 K) intermediate B → (i) HBF₄, followed by (ii) NaNO₂, Cu, heat → product C.",
+      "question_type": "MCQ",
+      "options": [
+        "1-Bromo-4-nitrobenzene",
+        "1,3,5-Tribromo-2-nitrobenzene",
+        "4-Bromo-1-nitrobenzene",
+        "1,3,5-Tribromobenzene"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
+        "alt_text": "Reaction scheme from aniline through bromination, diazotization and subsequent reagents; verify exact final-step sequence from source figure.",
         "source_verified": false,
         "render_verified": false
       },
@@ -1464,23 +1783,40 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-067",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 24,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 67,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Question depends on exact source reaction scheme; verify reagent sequence and options visually before approving."
+      ]
     },
     {
       "slot_id": "chemistry-18",
       "subject": "Chemistry",
       "subject_question_number": 18,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Given below are two statements:\nStatement I: The structure of maltose is given below. Maltose is a non-reducing sugar.\nStatement II: The structure of lactose is given below. Lactose is a reducing sugar.\nIn the light of the above statements, choose the correct answer from the options given below.",
+      "question_type": "MCQ",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
+        "alt_text": "Recover both source-paper structures labelled maltose and lactose from the original page.",
         "source_verified": false,
         "render_verified": false
       },
@@ -1491,21 +1827,38 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-068",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 25,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 68,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "The supplied OCR garbles the structures; verify both structure images against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-19",
       "subject": "Chemistry",
       "subject_question_number": 19,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Match List-I with List-II.\nList-I — Name of amino acid: A. Arginine; B. Aspartic acid; C. Lysine; D. Glutamic acid.\nList-II — One-letter symbol/type: I. D / Non-essential; II. R / Essential; III. E / Non-essential; IV. K / Essential.\nChoose the correct answer from the options given below:",
+      "question_type": "MCQ",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-IV, B-III, C-II, D-I",
+        "A-III, B-IV, C-I, D-II",
+        "A-II, B-IV, C-I, D-III"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1518,23 +1871,40 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-069",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 25,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 69,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Option punctuation normalized from OCR; verify mappings against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-20",
       "subject": "Chemistry",
       "subject_question_number": 20,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Identify the colour of compound X in the reaction sequence: phthalic anhydride reacts with two equivalents of phenol in concentrated H₂SO₄ to form phenolphthalein; the intermediate then reacts with excess NaOH to form X.",
+      "question_type": "MCQ",
+      "options": [
+        "Violet",
+        "Green",
+        "Red",
+        "Colourless"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
+        "alt_text": "Reaction sequence and final compound X are shown in source diagram; supplied transcription says the final structure is labelled '(Pink)'.",
         "source_verified": false,
         "render_verified": false
       },
@@ -1545,21 +1915,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-070",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 26,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 70,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Source figure's '(Pink)' label seems inconsistent with the answer choices; inspect the original figure and intended species before approval."
+      ]
     },
     {
       "slot_id": "chemistry-21",
       "subject": "Chemistry",
       "subject_question_number": 21,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "According to Lewis theory, the total number of σ-bond pairs and lone pairs of electrons around the central atom of \\([XeO_{6}]^{4-}\\) is _____.",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1572,21 +1954,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-071",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 26,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 71,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Normalized OCR 'o bond-pairs' to 'σ-bond pairs'; verify wording against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-22",
       "subject": "Chemistry",
       "subject_question_number": 22,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Consider the following sequence of reactions to give the major product (X): (i) CH₃Cl / anhydrous AlCl₃; (ii) Cl₂ / FeCl₃; (iii) K₂Cr₂O₇ / H₂SO₄. P g of the major product (X) formed is reacted with NaHCO₃ solution to liberate a gas which occupies 11.2 dm³ at STP. P = _____ g. (Given molar masses in g mol⁻¹: H = 1, C = 12, O = 16, Cl = 35.5.)",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1599,21 +1993,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-072",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 27,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 72,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "The supplied OCR duplicates step (ii); step (iii) reconstructed tentatively. Verify complete reaction sequence and answer line against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-23",
       "subject": "Chemistry",
       "subject_question_number": 23,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "2.0 g of a bromo hydrocarbon (X) was subjected to Carius analysis, giving 3.36 g of AgBr. The percentage of carbon in compound X is 26.7%. The total number of carbon atoms in the empirical formula for compound X is _____. (Given molar masses in g mol⁻¹: H = 1, C = 12, Br = 80, Ag = 108.)",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1626,21 +2032,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-073",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 27,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 73,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Normalized molar-mass unit from OCR; verify numerical data against source PDF."
+      ]
     },
     {
       "slot_id": "chemistry-24",
       "subject": "Chemistry",
       "subject_question_number": 24,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "The pH of a solution obtained by mixing 5 mL of 0.1 M NH₄OH solution with 250 mL of 0.1 M NH₄Cl solution is _____. Given: pK_b (NH₄OH) = 4.74; log 2 = 0.30; log 3 = 0.48; log 5 = 0.70. (Nearest integer; supplied OCR shows a detached \\(\\times10^{-2}\\) at the bottom of the page.)",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1653,21 +2071,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-074",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 27,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 74,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
+      "reviewer_notes": [
+        "Detached '×10⁻²' may be an answer-line fragment; exact required answer format needs source-PDF verification."
+      ]
     },
     {
       "slot_id": "chemistry-25",
       "subject": "Chemistry",
       "subject_question_number": 25,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A non-volatile, non-electrolyte solid solute is dissolved in 40 g of a solvent, and the vapour pressure of the solvent decreases from 760 mm Hg to 750 mm Hg. If the same solution boils at 320 K, then the number of moles of the solvent present in the solution is _____. (Nearest integer. Given: boiling point of the pure solvent = 319.5 K; \\(K_b\\) of the solvent = 0.3 K kg mol⁻¹.)",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1680,7 +2110,17 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-CHE-075",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 28,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 75,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": null
+      },
       "reviewer_notes": []
     },
     {
