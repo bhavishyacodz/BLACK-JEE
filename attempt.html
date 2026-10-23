@@ -823,13 +823,15 @@ input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
       if (!audioCtx) audioCtx = new Ctx();
       if (audioCtx.state === "suspended") audioCtx.resume().catch(()=>{});
       const patterns = {
-        tap:      {notes:[440], gap:.00, duration:.055, volume:.018, wave:"sine"},
-        nav:      {notes:[523,659], gap:.045, duration:.075, volume:.022, wave:"sine"},
-        answer:   {notes:[660,523], gap:.035, duration:.065, volume:.023, wave:"sine"},
-        review:   {notes:[392,494], gap:.055, duration:.065, volume:.018, wave:"triangle"},
-        submit:{notes:[440,554],gap:.06,duration:.07,volume:.018,wave:"triangle"},success:{notes:[523,659,784],gap:.065,duration:.105,volume:.028,wave:"sine"},
-        gentle:   {notes:[349,311], gap:.07, duration:.09, volume:.018, wave:"sine"},
-        preview:  {notes:[587,740], gap:.055, duration:.085, volume:.026, wave:"sine"}
+        // Short, restrained UI cues: each action has its own pitch contour and timbre.
+        tap:     {notes:[620], gap:0, duration:.032, volume:.010, wave:"sine"},
+        nav:     {notes:[520,690], gap:.038, duration:.045, volume:.012, wave:"triangle"},
+        answer:  {notes:[740,590], gap:.032, duration:.040, volume:.012, wave:"sine"},
+        review:  {notes:[440,554], gap:.048, duration:.048, volume:.010, wave:"triangle"},
+        submit:  {notes:[494,622,740], gap:.042, duration:.050, volume:.012, wave:"triangle"},
+        success: {notes:[523,659,831,1046], gap:.048, duration:.075, volume:.016, wave:"sine"},
+        gentle:  {notes:[330,294], gap:.075, duration:.070, volume:.012, wave:"triangle"},
+        preview: {notes:[587,784,988], gap:.045, duration:.060, volume:.014, wave:"sine"}
       };
       const p = patterns[preview ? "preview" : kind] || patterns.tap;
       p.notes.forEach((frequency, index) => {
