@@ -196,6 +196,7 @@ def audit_crosswalk(report, batch_records):
         if isinstance(q, dict) and isinstance(q.get("source_question_number"), int)
     }
     status_counts = Counter()
+    candidate_usage = {}
     for index, row in enumerate(rows, 1):
         where = f"{CROSSWALK_PATH.name}.rows[{index}]"
         if not isinstance(row, dict):
@@ -219,6 +220,11 @@ def audit_crosswalk(report, batch_records):
         status_counts[status] += 1
         candidate = row.get("draft_candidate_global_number")
         if candidate is not None:
+            candidate_usage.setdefault(candidate, []).append({
+                "paper_order": order,
+                "status": status,
+                "where": where,
+            })
             draft = by_number.get(candidate)
             if draft is None:
                 issue(report, "ERROR", "CROSSWALK_CANDIDATE_MISSING", where,
@@ -232,6 +238,17 @@ def audit_crosswalk(report, batch_records):
         if row.get("publishable") is not False:
             issue(report, "ERROR", "CROSSWALK_PUBLICATION_GUARD", where,
                   "Every crosswalk row must remain publishable=false until the shift is approved.")
+    # A draft question must not silently satisfy multiple source-paper positions.
+    # Keep unresolved duplicate candidates visible as warnings; duplicate verified
+    # mappings are hard errors because they would certify one draft twice.
+    for candidate, uses in candidate_usage.items():
+        if len(uses) > 1:
+            verified_uses = [use for use in uses if use["status"] in {"verified", "verified_exact_match"}]
+            level = "ERROR" if len(verified_uses) > 1 else "WARN"
+            issue(report, level, "CROSSWALK_CANDIDATE_REUSED", CROSSWALK_PATH.name,
+                  f"Draft candidate {candidate} is mapped to source positions "
+                  f"{[use['paper_order'] for use in uses]}; review candidate reuse before release.")
+
     allowed_statuses = {
         "unmatched", "candidate_needs_exact_review", "verified",
         "verified_exact_match", "needs_diagram_review", "needs_exact_review",
