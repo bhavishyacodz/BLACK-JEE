@@ -1,6 +1,6 @@
 # Source-Fidelity Audit — JEE Main 2 April 2026 Shift 2
 
-## Status: HOLD — 62/75 questions verified; 13 remain
+## Status: HOLD — 75/75 source mappings checked; student-side visual/scoring validation remains
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
