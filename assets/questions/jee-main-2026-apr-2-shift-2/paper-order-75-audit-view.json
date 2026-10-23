@@ -1497,16 +1497,16 @@
       "printed_question_number": 3,
       "section": "A",
       "legacy_global_question_number": 16,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Source Mathematics Q3 uses PS = i+j and PQ = −j+k. Legacy Q16 uses different parallelogram side vectors (PQ = j+k and PS = i−j); the vectors differ.",
+      "audit_notes": "Corrected legacy Q16 to use the source vectors PQ = −j + k and PS = i + j. The calculation still gives α = 30° and answer √3/2. Exact final-key check remains open.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Mathematics",
         "chapter": "Trigonometry",
         "source_question_number": 16,
-        "question_text": "Two adjacent sides of a parallelogram PQRS are PQ = j + k and PS = i − j. If side PS is rotated about P by an acute angle α in the plane of the parallelogram so that it becomes perpendicular to side PQ, then sin²(5α/2) − sin²(α/2) equals:",
+        "question_text": "Two adjacent sides of a parallelogram PQRS are PQ = −j + k and PS = i + j. If side PS is rotated about P by an acute angle α in the plane of the parallelogram so that it becomes perpendicular to side PQ, then sin²(5α/2) − sin²(α/2) equals:",
         "question_type": "MCQ",
         "options": [
           "1/2",
@@ -1519,7 +1519,7 @@
         "is_published": false,
         "image_url": "",
         "correct_answer": "B",
-        "solution": "The vectors have equal length √2 and dot product −1, so the angle between them is 120°. The acute rotation needed to make them perpendicular is α=30°. Therefore sin²75°−sin²15°=cos30°=√3/2."
+        "solution": "The vectors PQ = (0,−1,1) and PS = (1,1,0) have equal length √2 and dot product −1, so the angle between them is 120°. The acute rotation needed to make them perpendicular is α = 30°. Therefore sin²75° − sin²15° = cos30° = √3/2, option B."
       }
     },
     {
@@ -1766,15 +1766,15 @@
       "printed_question_number": 12,
       "section": "A",
       "legacy_global_question_number": 25,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Source Mathematics Q12 uses the greatest-integer function [x²−x+2] on [2,4]; legacy Q25 uses [x²−x−1/2]. The expression differs.",
+      "audit_notes": "Corrected the floor-function expression to the source form [x² − x + 2]. The monotonic expression crosses integer levels 5 through 14, giving 10 discontinuities on [2,4]. Final key check remains open.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Mathematics",
         "chapter": "Greatest Integer Function",
-        "question_text": "Q25. The number of points in [2,4] at which f(x)=[x^2-x-1/2], where [.] denotes the greatest integer function, is discontinuous, is ____.",
+        "question_text": "Q25. The number of points in [2,4] at which f(x) = [x² − x + 2], where [.] denotes the greatest integer function, is discontinuous, is ____.",
         "question_type": "Numerical",
         "options": [],
         "marks_correct": 4,
@@ -1782,7 +1782,7 @@
         "is_published": false,
         "image_url": "",
         "correct_answer": "10",
-        "solution": "The expression x^2-x-1/2 is strictly increasing on [2,4], from 3/2 to 23/2. It crosses the integers 2 through 11, giving 10 discontinuities.",
+        "solution": "The expression x² − x + 2 is strictly increasing on [2,4], from 4 to 14. It crosses integer levels 5 through 14, producing ten jumps on this interval, including the jump at x = 4. Answer: 10.",
         "source_question_number": 25
       }
     },
@@ -1955,16 +1955,16 @@
       "printed_question_number": 21,
       "section": "B",
       "legacy_global_question_number": 13,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Source Mathematics Section-B Q1 uses (cos²θ−sin²θ)sec2θ = a²; legacy Q13 uses 2(cos⁸θ−sin⁸θ)sec2θ = a². The expression differs.",
+      "audit_notes": "Corrected legacy Q13's expression to the source form (cos²θ − sin²θ)sec 2θ = a². Since the product is 1 on the stated domain, the integer set is {−1,1}, giving n(S)=2. Final key check remains open.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Mathematics",
         "chapter": "Trigonometric Equations",
         "source_question_number": 13,
-        "question_text": "Let P = {θ ∈ [0, 4π] : tan²θ ≠ 1} and S = {a ∈ ℤ : 2(cos⁸θ − sin⁸θ) sec 2θ = a², θ ∈ P}. Then n(S) is:",
+        "question_text": "Let P = {θ ∈ [0, 4π] : tan²θ ≠ 1} and S = {a ∈ ℤ : (cos²θ − sin²θ) sec 2θ = a², θ ∈ P}. Then n(S) is:",
         "question_type": "MCQ",
         "options": [
           "0",
@@ -1976,8 +1976,8 @@
         "marks_wrong": -1,
         "is_published": false,
         "image_url": "",
-        "correct_answer": "A",
-        "solution": "Since cos⁸θ−sin⁸θ=(cos⁴θ−sin⁴θ)(cos⁴θ+sin⁴θ)=cos2θ(cos⁴θ+sin⁴θ), the left side is 2(cos⁴θ+sin⁴θ)=2−sin²2θ. For tan²θ≠1, this value is strictly greater than 1 and at most 2. There is no integer square in (1,2], so S is empty and n(S)=0, option A."
+        "correct_answer": "C",
+        "solution": "Since cos²θ − sin²θ = cos 2θ and θ ∈ P excludes tan²θ = 1, the factor sec 2θ is defined and the product equals 1. Hence a² = 1, so S = {−1, 1} and n(S) = 2, option C."
       }
     },
     {
@@ -2048,23 +2048,23 @@
       "printed_question_number": 24,
       "section": "B",
       "legacy_global_question_number": 22,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Source Mathematics Section-B Q4 matrix B is [[1,3],[3,9]], while legacy Q22 uses [[3,9],[1,3]]. Matrix entries differ.",
+      "audit_notes": "Corrected matrix B to the source matrix [[1,3],[3,9]]. Using A⁻¹B gives trace 5/2; hence |tr(2(P+Q))| = 10. Final key check remains open.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Mathematics",
         "chapter": "Matrices",
-        "question_text": "Q22. Let A=[[2,-2],[4,-2]] and B=[[3,9],[1,3]]. If PA=B and AQ=B, find the absolute value of the sum of the diagonal elements of 2(P+Q).",
+        "question_text": "Q22. Let A = [[2,−2],[4,−2]] and B = [[1,3],[3,9]]. If PA = B and AQ = B, find the absolute value of the sum of the diagonal elements of 2(P + Q).",
         "question_type": "Numerical",
         "options": [],
         "marks_correct": 4,
         "marks_wrong": 0,
         "is_published": false,
         "image_url": "",
-        "correct_answer": "34",
-        "solution": "P=BA^-1 and Q=A^-1B. By cyclic invariance of trace, tr(P)=tr(Q)=tr(A^-1B)=-17/2. Thus |tr(2(P+Q))|=34.",
+        "correct_answer": "10",
+        "solution": "P = BA⁻¹ and Q = A⁻¹B. By cyclic invariance of trace, tr(P) = tr(Q) = tr(A⁻¹B) = 5/2. Therefore |tr(2(P + Q))| = |2(5/2 + 5/2)| = 10.",
         "source_question_number": 22
       }
     },
