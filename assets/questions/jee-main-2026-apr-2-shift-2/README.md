@@ -9,7 +9,7 @@ This folder contains custom SVG redraws associated with legacy draft records. **
 | Q28 | Atwood machine with 2 kg and 1 kg blocks | [q28.svg](q28.svg) |
 | Q30 | NAND logic circuit / equivalent gate (Semiconductor Electronics) | [q30.svg](q30.svg) |
 | Q41 | Equilateral prism with painted face / total internal reflection | [q41.svg](q41.svg) |
-| Q42 | LCR series circuit with switches S1 and S2 | [q42.svg](q42.svg) |
+| Q42 | Series RLC loop; S₂ bypasses L₂ and S₁ bypasses L₁ (redraw pending source verification) | [q42.svg](q42.svg) |
 | Q50 | Moment of inertia: rod and sphere, parallel axes | [q50.svg](q50.svg) |
 | Q57 | Chemical kinetics statements (no diagram in the source question) | No image asset |
 | Q63 | Diarylmethyl carbocation / carbanion resonance statements | [q63.svg](q63.svg) |
