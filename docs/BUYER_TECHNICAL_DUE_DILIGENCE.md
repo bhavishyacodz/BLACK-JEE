@@ -3,7 +3,7 @@
 **Review date:** 2026-10-23  
 **Repository:** https://github.com/bhavishyacodz/BLACK-JEE  
 **Production Supabase project:** `yeydvwnihpwoixytcgek` (region `ap-south-1`)  
-**Decision:** **Not yet buyer-ready.** The PYQ solution RPC has now been hardened and the new CI guardrails are in place, but auth configuration and full integration/visual testing remain open.
+**Decision:** **Not yet buyer-ready.** The PYQ solution RPC has now been hardened and the new CI guardrails are in place. Leaked-password protection, remaining database-advisor findings, and full integration/visual testing remain open.
 
 ## What was inspected
 
@@ -26,7 +26,7 @@
 
 The database function `public.grade_jee_pyq(uuid, text)` previously returned `correct_answer` and `solution` to any caller. A database migration now records wrong attempts against the authenticated user and question in the private schema. Anonymous users can still check correctness but receive no answer key or solution; signed-in users receive the worked solution only after two incorrect attempts. The attempt table has RLS enabled and direct table privileges revoked. The front-end practice page supports retrying incorrect answers and offers Google sign-in for server-side tracking.
 
-**Validation still required:** exercise first-wrong, second-wrong, correct-first, anonymous, cross-user, and direct-RPC cases in a dedicated integration test. Do not call this fully closed until those tests pass.
+**Smoke tests performed:** an anonymous RPC call returned correctness only with no answer/solution fields; two wrong authenticated calls unlocked the solution; a different user began at one wrong attempt rather than inheriting the first user's counter; the temporary test writes were rolled back. These were direct SQL smoke tests, not yet automated CI integration tests.
 
 ### P1 — Leaked-password protection is disabled
 
@@ -34,7 +34,7 @@ Supabase's security advisor reports that leaked-password protection is disabled.
 
 ### P2 — Security-definer RPCs need an explicit allowlist review
 
-The advisor flags several `SECURITY DEFINER` functions callable by public or authenticated roles. Some are intentionally public and enforce a release window or role check in the function body; that should be documented and tested, not blindly revoked. Review each function's grants, fixed `search_path`, input validation, authorization, and returned columns. The PYQ grading RPC is the confirmed high-priority issue.
+The advisor still flags several `SECURITY DEFINER` functions callable by public or authenticated roles. The PYQ grader now has a fixed empty `search_path` and returns no answer key to anonymous callers; the archive RPC only returns challenges after the release time, while admin/attempt RPCs check role or identity internally. These warnings still require a documented per-function grant review rather than blindly revoking legitimate application calls.
 
 ### P2 — CI does not yet validate the whole product
 
@@ -52,7 +52,7 @@ The existing PYQ workflow validates question-batch structure and crosswalk data;
 - `scripts/check_inline_js.py` extracts inline scripts and asks Node.js to syntax-check them.
 - `.github/workflows/browser-security.yml` runs both checks when browser files or the guardrail scripts change.
 
-These checks are intentionally narrow. They do **not** prove that RLS policies are correct, that RPCs are safe, or that a buyer-facing penetration test would pass.
+The new browser guardrail workflow passed on commit `68f9f812`, including inline JavaScript syntax validation. The question-batch audit also passed on commit `db08c1a9`. These checks are intentionally narrow. They do **not** prove that RLS policies are correct, that RPCs are safe, or that a buyer-facing penetration test would pass.
 
 ## Release / sale gate
 
