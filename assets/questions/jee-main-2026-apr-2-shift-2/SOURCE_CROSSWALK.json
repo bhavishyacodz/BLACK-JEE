@@ -258,8 +258,8 @@
       "section": "B",
       "draft_candidate_global_number": 42,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q42 (AC circuit); the SVG is reconstructed, not source-certified; official key pending.",
-      "verification_evidence": "",
+      "notes": "Legacy Q42 corrected to the source expression 3L₂ − L₁. S₁ now bypasses L₁ and S₂ bypasses L₂ in the SVG; algebra gives 2/9 H. Final answer-key and source-figure comparison remain pending.",
+      "verification_evidence": "Readable transcription gives target 3L₂ − L₁ and phase angles 30°/60°; reconstructed diagram switch placement corrected to match algebra.",
       "publishable": false
     },
     {
