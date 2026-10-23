@@ -217,9 +217,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 21
+        "legacy_global_question_number": 11
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -227,7 +227,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "relation on A×A with divisibility and ≤ appears aligned"
+      "note": "Verified exact Mathematics Q11 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121161, correct option ID 691121553 = C). Draft global Q11 matches xy=12, midpoint (1/2,−1/2), options, and key."
     },
     {
       "source": {
@@ -237,9 +237,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 25
+        "legacy_global_question_number": 12
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -247,7 +247,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source greatest-integer expression is [x²−x+2]; draft uses x²−x−1/2"
+      "note": "Verified exact Mathematics Q12 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121162, correct option ID 691121556 = B). Draft global Q12 matches parabola, point (1,−1), minimum vertex distance, options, and key."
     },
     {
       "source": {
@@ -257,9 +257,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 19
+        "legacy_global_question_number": 13
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -267,7 +267,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "partial-fraction integral and logarithm condition appear aligned"
+      "note": "Verified exact Mathematics Q13 against NTA question paper PDF p.5 and final answer key PDF p.2 (question ID 691121163, correct option ID 691121559 = A). Draft global Q13 matches the set definitions and trigonometric expression, options, and key."
     },
     {
       "source": {
@@ -277,9 +277,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 10
+        "legacy_global_question_number": 14
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -287,7 +287,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "perpendicular-line intersection as circle centre and chord-length problem appears aligned"
+      "note": "Verified exact Mathematics Q14 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121164, correct option ID 691121564 = B). Draft global Q14 matches both vectors, dot-product constraints, options, and key."
     },
     {
       "source": {
@@ -297,9 +297,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 20
+        "legacy_global_question_number": 15
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -307,7 +307,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source asks for 3x(e²)/e²; draft asks for x(e²)"
+      "note": "Verified exact Mathematics Q15 against NTA question paper PDF p.6 and final answer key PDF p.2 (question ID 691121165, correct option ID 691121567 = A). Draft global Q15 matches the 3D line, midpoint coordinates, perpendicular-foot condition, options, and key."
     },
     {
       "source": {
