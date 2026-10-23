@@ -201,12 +201,14 @@
     "question_id": "BJ-JM-20260404-S1-MAT-019",
     "paper_question_number": 19,
     "subject": "Mathematics",
-    "source_pdf_page": null,
-    "question_text_status": "REVIEW_REQUIRED",
-    "options_status": "REVIEW_REQUIRED",
+    "source_pdf_page": 7,
+    "question_text_status": "VERIFIED",
+    "options_status": "VERIFIED",
     "assets": [],
     "visual_required": false,
-    "unresolved_issues": []
+    "unresolved_issues": [
+      "Student-page mathematical notation and mobile rendering remain unverified."
+    ]
   },
   {
     "question_id": "BJ-JM-20260404-S1-MAT-020",
@@ -780,8 +782,8 @@
     "question_id": "BJ-JM-20260404-S1-CHE-064",
     "paper_question_number": 64,
     "subject": "Chemistry",
-    "source_pdf_page": null,
-    "question_text_status": "REVIEW_REQUIRED",
+    "source_pdf_page": 23,
+    "question_text_status": "VERIFIED",
     "options_status": "REVIEW_REQUIRED",
     "assets": [
       {
@@ -832,7 +834,8 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified.",
+      "Four option crops and the reaction crop still need visual comparison against the official PDF; answer mapping remains unset."
     ]
   },
   {
@@ -988,7 +991,7 @@
     "question_id": "BJ-JM-20260404-S1-CHE-072",
     "paper_question_number": 72,
     "subject": "Chemistry",
-    "source_pdf_page": null,
+    "source_pdf_page": 27,
     "question_text_status": "REVIEW_REQUIRED",
     "options_status": "REVIEW_REQUIRED",
     "assets": [
