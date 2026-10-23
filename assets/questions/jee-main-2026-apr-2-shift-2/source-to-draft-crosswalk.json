@@ -216,7 +216,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 33
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -224,7 +224,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 2 asks for numerical α. Draft Q33 changes it to MCQ with four decimal options; the source response format is not preserved."
+      "note": "Legacy Q33 corrected to numerical-response format and α calculated as 1.92 from the source values. Official final-key verification remains pending."
     },
     {
       "source": {
