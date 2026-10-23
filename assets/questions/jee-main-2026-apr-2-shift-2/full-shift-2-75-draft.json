@@ -996,8 +996,8 @@
     "marks_wrong": 0,
     "is_published": false,
     "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q50.svg",
-    "correct_answer": "60",
-    "solution": "The rod rotates about the axis through its end, so I_rod = ML²/3 = 40×3²/3 = 120 kg·m². The sphere's parallel axis passes through its centre, so I_sphere = (2/5)MR² = 4R². Equating gives 120 = 4R², hence R² = 30. Since R = √(α/2), α = 60."
+    "correct_answer": "15",
+    "solution": "The rod rotates about an axis through one end and perpendicular to its length, so I_rod = ML²/3 = 40×3²/3 = 120 kg·m². The sphere's parallel axis is 3 m from its centre, so I_sphere = (2/5)mR² + md² = (2/5)(10)R² + 10×3² = 4R² + 90. Equating the moments gives 120 = 4R² + 90, hence R² = 15/2. Since R = √(α/2), α = 15. Candidate answer 15; final NTA answer-key confirmation remains pending."
   },
   {
     "year": 2026,
