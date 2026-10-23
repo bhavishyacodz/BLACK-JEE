@@ -38,8 +38,12 @@ source_paths = set()
 used_names = set()
 for index, item in enumerate(crops, 1):
     qid = item.get("question_id", "")
-    if qid not in questions_by_id or qid not in manifest_by_id:
-        fail(f"crop #{index}: unknown question_id {qid!r}; expected IDs present in both shift manifests")
+    if qid not in questions_by_id:
+        fail(f"crop #{index}: unknown question_id {qid!r} in shift-manifest.json")
+    target_q = questions_by_id[qid]
+    target_key = (target_q.get("subject"), int(target_q.get("subject_question_number", -1)))
+    if target_key not in manifest_by_subject_number:
+        fail(f"crop #{index}: no matching question in manifest.json for {target_key!r}")
     source = item.get("source_screenshot", "")
     if not source.startswith("assets/gemini-inbox/") or Path(source).parent.as_posix() != "assets/gemini-inbox":
         fail(f"crop #{index}: source_screenshot must be a filename directly inside {INBOX}")
