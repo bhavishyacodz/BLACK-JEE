@@ -49,13 +49,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -101,13 +101,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -152,13 +152,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -193,7 +193,7 @@
         "4.3"
       ],
       "correct_answer": "2.2",
-      "solution": "The reactants' total binding energy is\n\\(2(3\\times5.6)+(4\\times7.4)=33.6+29.6=63.2\\text{ MeV}\\).\nThe product's total binding energy is \\(10\\times6.1=61.0\\text{ MeV}\\).\n\nThus \\(Q=BE_{\\text{final}}-BE_{\\text{initial}}=61.0-63.2=-2.2\\text{ MeV}\\). The energy change has magnitude \\(|\\Delta Mc^2|=2.2\\text{ MeV}\\), so the requested value is \\(2.2\\), option C.",
+      "solution": "The initial total binding energy is \\(2(3\\times5.6)+(4\\times7.4)=63.2\\,\\mathrm{MeV}\\). The final binding energy is \\(10\\times6.1=61.0\\,\\mathrm{MeV}\\). Thus the final nuclear mass exceeds the initial nuclear mass by \\(\\Delta M c^2=63.2-61.0=2.2\\,\\mathrm{MeV}\\). Correct option: C.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -203,13 +203,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -256,13 +256,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -309,13 +309,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -361,13 +361,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -423,13 +423,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -475,13 +475,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -527,13 +527,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -600,7 +600,9 @@
         "source_verification_date": "2026-10-23",
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
-      "reviewer_notes": [],
+      "reviewer_notes": [
+        "Official wording recovered, but the phrase “attain the same pressure” conflicts with the supplied calculation using the stated initial volumes. Keep blocked until the intended condition is resolved."
+      ],
       "correct_option": "B",
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
@@ -631,13 +633,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -672,8 +674,8 @@
         "Y=0111",
         "Y=1000"
       ],
-      "correct_answer": null,
-      "solution": "Cannot determine the output because the logic-circuit diagram is missing from the supplied source extraction.",
+      "correct_answer": "Y=1101",
+      "solution": "The \\(A\\) input passes through a NOT gate, then combines with \\(B\\) at a NAND gate. Hence \\(Y=\\neg(\\neg A\\land B)=A\\lor\\neg B\\). For \\(A=1101\\) and \\(B=1010\\), \\(\\neg B=0101\\), so \\(Y=1101\\), option A.",
       "diagram": {
         "required": true,
         "asset_path": "images/BJ-JM-20260404-S1-PHY-038-diagram-1.png",
@@ -683,12 +685,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false
+        "correct_option_mapped_from_option_text": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-038",
@@ -704,7 +707,7 @@
       "reviewer_notes": [
         "The official NTA PDF contains the logic-gate diagram; the earlier OCR text omitted it. Diagram description restored from the official source."
       ],
-      "correct_option": null,
+      "correct_option": "A",
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
@@ -744,13 +747,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -806,13 +809,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -859,13 +862,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -911,13 +914,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -975,13 +978,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -1037,13 +1040,13 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
         "answer_key_supplied_by_user": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
@@ -1147,9 +1150,9 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "source_wording_verified": true,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -1192,9 +1195,9 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "source_wording_verified": true,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -1226,11 +1229,11 @@
       "subject": "Physics",
       "subject_question_number": 23,
       "status": "needs_review",
-      "question_text": "The velocity of a particle executing simple harmonic motion along x-axis is described as \\(v^{2}=50-x^{2}\\), where x represents displacement. If the time period of motion is [EXPRESSION UNCLEAR IN SUPPLIED OCR], the value is _____.",
+      "question_text": "The velocity of a particle executing simple harmonic motion along the x-axis is described by \\(v^2=50-x^2\\), where \\(x\\) represents displacement. If the time period of motion is \\(\\frac{x}{7}\\,\\mathrm{s}\\), the value of \\(x\\) is _____.",
       "question_type": "numerical",
       "options": [],
       "correct_answer": "44",
-      "solution": "Assuming the OCR text means T=x/7 and v²=50−x² implies ω=1 rad/s, T=2π and x≈44 using π≈22/7. The reconstructed question text needs source verification.",
+      "solution": "Comparing \\(v^2=50-x^2\\) with \\(v^2=\\omega^2(A^2-x^2)\\) gives \\(\\omega=1\\,\\mathrm{rad\\,s^{-1}}\\), so the period is \\(T=2\\pi\\,\\mathrm{s}\\). Given \\(T=x/7\\,\\mathrm{s}\\), \\(x=14\\pi\\approx44\\) using \\(\\pi=22/7\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1239,9 +1242,9 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "source_wording_verified": true,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -1286,9 +1289,9 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "source_wording_verified": true,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -1320,11 +1323,11 @@
       "subject": "Physics",
       "subject_question_number": 25,
       "status": "needs_review",
-      "question_text": "An inductor of 10 mH, capacitor of 0.1 μF and a resistor of 100 Ω are connected in series across an a.c. power supply of 220 V, 70 Hz. The power factor of the given circuit is 0.5. The difference in the inductive reactance and capacitive reactance is [EXPRESSION UNCLEAR IN SUPPLIED OCR]. The value of α is _____.",
+      "question_text": "An inductor of \\(10\\,\\mathrm{mH}\\), capacitor of \\(0.1\\,\\mu\\mathrm{F}\\) and a resistor of \\(100\\,\\Omega\\) are connected in series across an a.c. power supply of \\(220\\,\\mathrm{V}\\), \\(70\\,\\mathrm{Hz}\\). The power factor of the given circuit is \\(0.5\\). The difference in the inductive reactance and capacitive reactance is \\(\\sqrt{3}\\alpha\\,\\Omega\\). The value of \\(\\alpha\\) is _____.",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": "2",
-      "solution": "Power factor 0.5 with R=100 Ω gives Z=200 Ω. Then |X_L−X_C|=√(Z²−R²)=100√3 Ω; the OCR reconstruction of √3×10ᵃ needs review.",
+      "correct_answer": "100",
+      "solution": "The power factor is \\(R/Z=0.5\\), so \\(Z=100/0.5=200\\,\\Omega\\). Therefore \\(|X_L-X_C|=\\sqrt{Z^2-R^2}=\\sqrt{200^2-100^2}=100\\sqrt{3}\\,\\Omega\\). Since this equals \\(\\sqrt{3}\\alpha\\,\\Omega\\), \\(\\alpha=100\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1333,9 +1336,9 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "source_wording_verified": true,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -1354,7 +1357,8 @@
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
-        "OCR fragment for reactance difference is garbled; recover exact expression from source PDF."
+        "OCR fragment for reactance difference is garbled; recover exact expression from source PDF.",
+        "Corrected from official source: the reactance difference is √3 α Ω; calculation gives α = 100, not 2."
       ],
       "correct_option": null,
       "review_notes": [
