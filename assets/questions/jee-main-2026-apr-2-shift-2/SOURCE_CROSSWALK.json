@@ -175,7 +175,7 @@
       "subject_question_number": 17,
       "section": "A",
       "draft_candidate_global_number": null,
-      "status": "source_extraction_unresolved",
+      "status": "candidate_needs_exact_review",
       "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
       "verification_evidence": ""
     },
@@ -185,7 +185,7 @@
       "subject_question_number": 18,
       "section": "A",
       "draft_candidate_global_number": null,
-      "status": "source_extraction_unresolved",
+      "status": "candidate_needs_exact_review",
       "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
       "verification_evidence": ""
     },
@@ -195,7 +195,7 @@
       "subject_question_number": 19,
       "section": "A",
       "draft_candidate_global_number": null,
-      "status": "source_extraction_unresolved",
+      "status": "candidate_needs_exact_review",
       "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
       "verification_evidence": ""
     },
@@ -205,7 +205,7 @@
       "subject_question_number": 20,
       "section": "A",
       "draft_candidate_global_number": null,
-      "status": "source_extraction_unresolved",
+      "status": "candidate_needs_exact_review",
       "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
       "verification_evidence": ""
     },
@@ -815,7 +815,7 @@
       "subject_question_number": 13,
       "section": "A",
       "draft_candidate_global_number": 63,
-      "status": "candidate_needs_diagram_review",
+      "status": "candidate_needs_exact_review",
       "notes": "Candidate global Q63 has the matching substituted diarylmethyl carbocation/carbanion topic and q63.svg, but its wording is a paraphrase. Compare the original source text and diagram directly before marking exact match.",
       "verification_evidence": ""
     },
