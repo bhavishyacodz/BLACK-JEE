@@ -28,6 +28,12 @@ The database function `public.grade_jee_pyq(uuid, text)` previously returned `co
 
 **Regression test executed:** `supabase/tests/secure_jee_pyq_solution_gate.sql` passed against the active database inside a transaction and rolled back its test writes. It checks anonymous key/solution withholding, no unlock after one wrong answer, unlock after two wrong answers, and cross-user attempt isolation. This test is committed but not yet wired into CI because CI has no database credentials; rerun it in staging after future database changes.
 
+### P1 — PYQ tables previously had excessive browser-role grants — remediated
+
+The database review found that `anon` and `authenticated` had `TRUNCATE`, `TRIGGER`, and other unnecessary privileges on the PYQ tables. Row Level Security does not protect against `TRUNCATE`, so RLS alone was not an adequate control. A migration now removes all anonymous access to `jee_pyq_answer_keys`, leaves anonymous `SELECT` only on `jee_pyq_questions`, and removes `TRUNCATE`, `TRIGGER`, and `REFERENCES` from browser roles. Authenticated CRUD on the two PYQ tables remains subject to the admin-only RLS policy.
+
+**Validation:** the live grant query now shows anonymous users have only `SELECT` on questions and no listed privileges on answer keys; authenticated users have CRUD but no `TRUNCATE` on either table.
+
 ### P1 — Leaked-password protection is disabled
 
 Supabase's security advisor reports that leaked-password protection is disabled. Enable it in Supabase Auth settings and verify the configuration after changing it.
