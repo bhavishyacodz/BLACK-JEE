@@ -992,8 +992,8 @@
     "paper_question_number": 72,
     "subject": "Chemistry",
     "source_pdf_page": 27,
-    "question_text_status": "REVIEW_REQUIRED",
-    "options_status": "REVIEW_REQUIRED",
+    "question_text_status": "VERIFIED",
+    "options_status": "NOT_APPLICABLE",
     "assets": [
       {
         "filename": "BJ-JM-20260404-S1-CHE-072-reaction-1.png",
@@ -1007,7 +1007,8 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified.",
+      "Answer is independently calculated as 78.25 g; official answer-key and student-page rendering verification remain pending."
     ]
   },
   {
