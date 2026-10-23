@@ -214,45 +214,50 @@
       "subject": "Mathematics",
       "subject_question_number": 21,
       "section": "B",
-      "draft_candidate_global_number": 13,
-      "status": "candidate_needs_exact_review",
-      "notes": "Section-B trigonometry candidate; expression differs"
+      "draft_candidate_global_number": 21,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q21 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121171, numeric answer 120). Draft global Q21 matches the set A, relation definition, and requested cardinality; answer independently counted.",
+      "verification_evidence": "Verified exact Mathematics Q21 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121171, numeric answer 120). Draft global Q21 matches the set A, relation definition, and requested cardinality; answer independently counted."
     },
     {
       "paper_order": 22,
       "subject": "Mathematics",
       "subject_question_number": 22,
       "section": "B",
-      "draft_candidate_global_number": 6,
-      "status": "candidate_needs_exact_review",
-      "notes": "Section-B binomial identity candidate"
+      "draft_candidate_global_number": 22,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q22 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121172, numeric answer 34). Draft global Q22 matches both matrices, PA=B and AQ=B, and requested absolute trace; result independently checked.",
+      "verification_evidence": "Verified exact Mathematics Q22 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121172, numeric answer 34). Draft global Q22 matches both matrices, PA=B and AQ=B, and requested absolute trace; result independently checked."
     },
     {
       "paper_order": 23,
       "subject": "Mathematics",
       "subject_question_number": 23,
       "section": "B",
-      "draft_candidate_global_number": 15,
-      "status": "candidate_needs_exact_review",
-      "notes": "Section-B 3D geometry candidate"
+      "draft_candidate_global_number": 23,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q23 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121173, numeric answer 18). Draft global Q23 matches A=(3,0), circle x²+y²=36, internal tangency, and 72e²; result independently checked.",
+      "verification_evidence": "Verified exact Mathematics Q23 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121173, numeric answer 18). Draft global Q23 matches A=(3,0), circle x²+y²=36, internal tangency, and 72e²; result independently checked."
     },
     {
       "paper_order": 24,
       "subject": "Mathematics",
       "subject_question_number": 24,
       "section": "B",
-      "draft_candidate_global_number": 22,
-      "status": "candidate_needs_exact_review",
-      "notes": "Section-B matrix candidate; matrix B differs"
+      "draft_candidate_global_number": 24,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q24 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121174, numeric answer 24). Draft global Q24 matches hyperbola, line, area expression, and requested quantity; result independently checked.",
+      "verification_evidence": "Verified exact Mathematics Q24 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121174, numeric answer 24). Draft global Q24 matches hyperbola, line, area expression, and requested quantity; result independently checked."
     },
     {
       "paper_order": 25,
       "subject": "Mathematics",
       "subject_question_number": 25,
       "section": "B",
-      "draft_candidate_global_number": 8,
-      "status": "candidate_needs_exact_review",
-      "notes": "Section-B probability candidate"
+      "draft_candidate_global_number": 25,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q25 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121175, numeric answer 10). Draft global Q25 matches the interval, greatest-integer expression, and discontinuity count; result independently checked.",
+      "verification_evidence": "Verified exact Mathematics Q25 against NTA question paper PDF p.9 and final answer key PDF p.2 (question ID 691121175, numeric answer 10). Draft global Q25 matches the interval, greatest-integer expression, and discontinuity count; result independently checked."
     },
     {
       "paper_order": 26,
