@@ -7,7 +7,12 @@
     "source_question_number": 58,
     "question_text": "The correct set that contains all kinds (basic, acidic, amphoteric and neutral) of oxides is:",
     "question_type": "MCQ",
-    "options": ["Na₂O, K₂O, Al₂O₃ and As₂O₃", "Al₂O₃, As₂O₃, CO and NO", "K₂O, Cl₂O₇, As₂O₃ and NO", "Na₂O, N₂O, Al₂O₃ and CO"],
+    "options": [
+      "Na₂O, K₂O, Al₂O₃ and As₂O₃",
+      "Al₂O₃, As₂O₃, CO and NO",
+      "K₂O, Cl₂O₇, As₂O₃ and NO",
+      "Na₂O, N₂O, Al₂O₃ and CO"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -23,13 +28,18 @@
     "source_question_number": 59,
     "question_text": "Statement I: The second ionization enthalpy of B, Al and Ga is in the order B > Al > Ga. Statement II: The increasing order of first ionization enthalpy is Si < Ge < Pb < Sn. Choose the correct answer.",
     "question_type": "MCQ",
-    "options": ["Both statements are true", "Both statements are false", "Statement I is true but Statement II is false", "Statement I is false but Statement II is true"],
+    "options": [
+      "Both statements are true",
+      "Both statements are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "C",
-    "solution": "Statement I is true: the second ionization enthalpy decreases from B to Al to Ga due to shell and shielding effects. Statement II is false; the listed first-ionization-enthalpy order is not increasing (the approximate values are Si 786, Ge 762, Pb 716 and Sn 709 kJ mol⁻¹). Option C."
+    "correct_answer": "B",
+    "solution": "Statement I is false: the approximate second ionization enthalpies are B ≈ 25.15 eV, Ga ≈ 20.52 eV and Al ≈ 18.83 eV, so the order is B > Ga > Al, not B > Al > Ga. Statement II is also false; the stated order is not increasing (approximate first-ionization enthalpies are Si 786, Ge 762, Pb 716 and Sn 709 kJ mol⁻¹). Therefore both statements are false, option B."
   },
   {
     "year": 2026,
@@ -39,7 +49,12 @@
     "source_question_number": 61,
     "question_text": "Which of the following pairs of complexes will show coordination isomerism? A. [Ag(NH₃)₂][Ag(CN)₂] B. [Co(NH₃)₆][Cr(CN)₆] C. [Co(NH₃)₆][Co(CN)₆] D. [Fe(NH₃)₆][Co(CN)₆] E. [Co(NH₃)₆][Fe(CN)₆]. Choose the correct combination.",
     "question_type": "MCQ",
-    "options": ["B, C and D only", "B, D and E only", "A, C and D only", "C, D and E only"],
+    "options": [
+      "B, C and D only",
+      "B, D and E only",
+      "A, C and D only",
+      "C, D and E only"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -55,7 +70,12 @@
     "source_question_number": 62,
     "question_text": "Complete combustion of X g of an organic compound gave 0.25 g of CO₂ and 0.12 g of H₂O. If the mass percentages of carbon and hydrogen are 25% and 4.89%, respectively, then X = ____ × 10⁻³ g (nearest integer).",
     "question_type": "MCQ",
-    "options": ["273", "27", "2730", "227"],
+    "options": [
+      "273",
+      "27",
+      "2730",
+      "227"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -71,7 +91,12 @@
     "source_question_number": 63,
     "question_text": "Statement I: In the para-nitro/para-methoxy substituted diarylmethyl carbocation shown in the source, the carbocation is stabilised by the +R effect of the –OCH₃ group. Statement II: In the corresponding carbanion, the negative charge is stabilised by the −R effect of the –NO₂ group. Choose the correct answer.",
     "question_type": "MCQ",
-    "options": ["Both Statement I and Statement II are true", "Both Statement I and Statement II are false", "Statement I is true but Statement II is false", "Statement I is false but Statement II is true"],
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -87,7 +112,12 @@
     "source_question_number": 64,
     "question_text": "Compound X on (i) heating in the presence of anhydrous AlCl₃ and HCl gas gives 2,4-dimethylpentane, (ii) aromatization gives toluene and (iii) cyclisation gives methylcyclohexane. The correct name of X is:",
     "question_type": "MCQ",
-    "options": ["Hept-2-ene", "Hepta-1,3,5-triene", "Heptane", "Hepta-2,4,6-triene"],
+    "options": [
+      "Hept-2-ene",
+      "Hepta-1,3,5-triene",
+      "Heptane",
+      "Hepta-2,4,6-triene"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
