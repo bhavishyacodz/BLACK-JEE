@@ -3,9 +3,9 @@
   "purpose": "Audit-only crosswalk. Candidate links indicate where to inspect; they are not verified equivalence and must not drive automatic renumbering or publication.",
   "source_paper": "JEE Main 2026 April 2 Shift 2",
   "source_order": [
-    "Mathematics 1-25",
-    "Physics 26-50",
-    "Chemistry 51-75"
+    "Physics 1-25",
+    "Chemistry 1-25",
+    "Mathematics 1-25"
   ],
   "draft_file": "assets/questions/jee-main-2026-apr-2-shift-2/full-shift-2-75-draft.json",
   "records": [
@@ -17,9 +17,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 26
+        "legacy_global_question_number": 28
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -27,7 +27,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 1: Atwood machine; draft Q28 has the same core setup but converts the source's fraction-and-direction options into decimal distances without direction, so it is not an exact source transcription."
     },
     {
       "source": {
@@ -37,9 +37,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 27
+        "legacy_global_question_number": 37
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -47,7 +47,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 1 gives B = −2×10⁻⁷ ĵ T; draft Q37 uses B = +2×10⁻⁷ ĵ T and different option signs. Sign/answer orientation differs."
     },
     {
       "source": {
@@ -57,9 +57,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 28
+        "legacy_global_question_number": 27
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -67,7 +67,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 1: hollow cylinder radius 1 m and angular velocity 10 rad/s. Draft Q27 uses radius 4 m and angular velocity 5 rad/s; the numeric combination happens to match but the source values differ."
     },
     {
       "source": {
@@ -77,9 +77,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 29
+        "legacy_global_question_number": 35
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -87,7 +87,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 1 asks an MCQ in poise with options 70/9, 20, 80/9, 50. Draft Q35 is numerical-entry format and changes the answer format/options; not an exact PYQ transcription."
     },
     {
       "source": {
@@ -95,10 +95,7 @@
         "subject_question_number": 5,
         "paper_order": 5
       },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 30
-      },
+      "draft_candidate": null,
       "status": "needs_exact_review",
       "publishable": false,
       "verification": [
@@ -107,7 +104,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 1 is a photoelectric-effect question (work function 2.3 eV, maximum kinetic energy 0.18 eV). No Physics draft candidate found; a work-function question exists at legacy Q71 but is incorrectly labelled Chemistry and needs separate triage."
     },
     {
       "source": {
@@ -117,7 +114,7 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 31
+        "legacy_global_question_number": 45
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -127,13 +124,33 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source transcription page 2 SHM question with x=A sin(50t+π/3), asking first times for zero speed and zero acceleration; compare every symbol, unit and option against draft Q45 before any verification."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 7,
         "paper_order": 7
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 44
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source transcription page 2 binding energy per nucleon of ²⁰⁹Bi; compare the exact isotope mass, constants and options against draft Q44."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 8,
+        "paper_order": 8
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -147,27 +164,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 8,
-        "paper_order": 8
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 33
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source transcription page 2 screw-gauge question; verify the zero-error convention, values and options against draft Q32."
     },
     {
       "source": {
@@ -177,9 +174,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 34
+        "legacy_global_question_number": 31
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -187,7 +184,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 2 asks for speed only. Draft Q31 asks for both speed and kinetic energy, so the question/answer format differs."
     },
     {
       "source": {
@@ -197,9 +194,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 35
+        "legacy_global_question_number": 50
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -207,7 +204,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 2 specifies a 9 m axis separation and R=α/2. Draft Q50 uses a 3 m separation and different mass/length values; not an exact transcription."
     },
     {
       "source": {
@@ -217,9 +214,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 36
+        "legacy_global_question_number": 33
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -227,7 +224,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 2 asks for numerical α. Draft Q33 changes it to MCQ with four decimal options; the source response format is not preserved."
     },
     {
       "source": {
@@ -237,7 +234,7 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 37
+        "legacy_global_question_number": 49
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -247,13 +244,33 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source transcription page 2 lens burning-paper question; verify the exact radius, focal distance, refractive-index expression and numerical answer against draft Q49."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 13,
         "paper_order": 13
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 47
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source transcription page 2 Bohr-orbit magnetic-field ratio; verify the exact orbit notation and requested ratio against draft Q47."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 14,
+        "paper_order": 14
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -267,27 +284,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 14,
-        "paper_order": 14
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 39
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 2 refers to potential difference across a bulb shown in a figure. Draft Q38 contains a specific 200 Ω/400 Ω network; exact circuit diagram and values must be compared before treating as a match."
     },
     {
       "source": {
@@ -297,9 +294,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 40
+        "legacy_global_question_number": 29
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -307,7 +304,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 2 gives force (2×10⁻¹⁰ î + 3×10⁻¹⁰ ĵ) N and B=2×10⁻³ k̂ T. Draft Q29 uses a different force vector and B=4×10⁻³ k̂ T."
     },
     {
       "source": {
@@ -327,7 +324,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate only: source transcription page 2 asks for refractive index of a thin layer below an equilateral prism using a ray diagram. Draft Q41 concerns a prism/coating and total internal reflection; inspect the actual diagrams and all conditions before deciding whether it is the same question."
     },
     {
       "source": {
@@ -337,7 +334,7 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 42
+        "legacy_global_question_number": 26
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -347,13 +344,53 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source transcription page 2 asks for dimensions of G using h, L, M and T. Draft Q26 has the same topic; compare exact options and the source's dimensional expression."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 18,
         "paper_order": 18
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 30
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source transcription page 2 logic-gate circuit. Draft Q30 has a custom SVG; exact gate symbols and connections must be visually compared to the source figure."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 19,
+        "paper_order": 19
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 40
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source transcription page 2 specifies sphere radii 4 m and 6 m with charges 8 μC and 2 μC. Draft Q40 instead uses point charges at 2 cm and 4 cm and spheres of 3 cm and 5 cm; geometry and values differ."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 20,
+        "paper_order": 20
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -367,47 +404,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 19,
-        "paper_order": 19
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 44
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 20,
-        "paper_order": 20
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 45
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source transcription page 2 mutual-inductance system with a square of side L and R≪L. Draft Q43 has a similar setup; compare the source diagram, current geometry and options before verification."
     },
     {
       "source": {
@@ -427,33 +424,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source transcription page 7 YDSE question with intensity 3/4 of maximum and path difference λ/α; compare the source figure and exact requested symbol against draft Q46."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 22,
         "paper_order": 22
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 47
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 23,
-        "paper_order": 23
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -467,7 +444,27 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source transcription page 8 ideal-gas internal-energy change with 5 moles, Cp=8 cal/mol°C and temperature 10°C to 20°C; verify exact wording and units against draft Q48."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 23,
+        "paper_order": 23
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 42
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source transcription page 8 switch/phase-angle capacitor question; compare the circuit diagram, component labels and expression 3L₂−L₁ against draft Q42."
     },
     {
       "source": {
@@ -477,9 +474,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 49
+        "legacy_global_question_number": 36
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -487,7 +484,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source transcription page 8 specifies a 1 kg ball dropped from 20 m and 10 cm penetration. Draft Q36 uses a 2 kg ball dropped from 10 m; the values differ."
     },
     {
       "source": {
@@ -495,11 +492,8 @@
         "subject_question_number": 25,
         "paper_order": 25
       },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 50
-      },
-      "status": "needs_exact_review",
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -507,7 +501,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "The available transcription jumps from Physics Q24 to Chemistry Q1 and does not expose Physics Q25. No candidate is assigned until the missing source item is inspected in the PDF page image."
     },
     {
       "source": {
