@@ -349,12 +349,12 @@
     "options_status": "REVIEW_REQUIRED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-PHY-032-missing-diagram.png",
+        "filename": "BJ-JM-20260404-S1-PHY-032-diagram-1.png",
         "asset_type": "diagram",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -427,12 +427,12 @@
     "options_status": "REVIEW_REQUIRED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-PHY-038-missing-diagram.png",
+        "filename": "BJ-JM-20260404-S1-PHY-038-diagram-1.png",
         "asset_type": "diagram",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -450,12 +450,12 @@
     "options_status": "VERIFIED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-PHY-039-missing-diagram.png",
+        "filename": "BJ-JM-20260404-S1-PHY-039-diagram-1.png",
         "asset_type": "diagram",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -495,12 +495,12 @@
     "options_status": "VERIFIED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-PHY-042-missing-diagram.png",
+        "filename": "BJ-JM-20260404-S1-PHY-042-diagram-1.png",
         "asset_type": "diagram",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -518,12 +518,12 @@
     "options_status": "VERIFIED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-PHY-043-missing-diagram.png",
+        "filename": "BJ-JM-20260404-S1-PHY-043-diagram-1.png",
         "asset_type": "diagram",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -552,12 +552,12 @@
     "options_status": "VERIFIED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-PHY-045-missing-diagram.png",
+        "filename": "BJ-JM-20260404-S1-PHY-045-diagram-1.png",
         "asset_type": "diagram",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -749,7 +749,17 @@
     "source_pdf_page": null,
     "question_text_status": "VERIFIED",
     "options_status": "VERIFIED",
-    "assets": [],
+    "assets": [
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-062-matching-1.png",
+        "asset_type": "matching",
+        "belongs_to": "question",
+        "option_letter": null,
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      }
+    ],
     "visual_required": false,
     "unresolved_issues": []
   },
@@ -773,12 +783,48 @@
     "options_status": "REVIEW_REQUIRED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-CHE-064-missing-diagram.png",
-        "asset_type": "diagram",
+        "filename": "BJ-JM-20260404-S1-CHE-064-option_a-2.png",
+        "asset_type": "option_image",
+        "belongs_to": "option",
+        "option_letter": "A",
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      },
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-064-option_b-3.png",
+        "asset_type": "option_image",
+        "belongs_to": "option",
+        "option_letter": "B",
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      },
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-064-option_c-4.png",
+        "asset_type": "option_image",
+        "belongs_to": "option",
+        "option_letter": "C",
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      },
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-064-option_d-5.png",
+        "asset_type": "option_image",
+        "belongs_to": "option",
+        "option_letter": "D",
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      },
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-064-reaction-1.png",
+        "asset_type": "reaction",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -794,7 +840,17 @@
     "source_pdf_page": null,
     "question_text_status": "VERIFIED",
     "options_status": "VERIFIED",
-    "assets": [],
+    "assets": [
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-065-matching-1.png",
+        "asset_type": "matching",
+        "belongs_to": "question",
+        "option_letter": null,
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      }
+    ],
     "visual_required": false,
     "unresolved_issues": []
   },
@@ -807,12 +863,12 @@
     "options_status": "VERIFIED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-CHE-066-missing-diagram.png",
-        "asset_type": "diagram",
+        "filename": "BJ-JM-20260404-S1-CHE-066-reaction-1.png",
+        "asset_type": "reaction",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -830,12 +886,12 @@
     "options_status": "VERIFIED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-CHE-067-missing-diagram.png",
-        "asset_type": "diagram",
+        "filename": "BJ-JM-20260404-S1-CHE-067-reaction-1.png",
+        "asset_type": "reaction",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -853,12 +909,12 @@
     "options_status": "REVIEW_REQUIRED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-CHE-068-missing-diagram.png",
-        "asset_type": "diagram",
+        "filename": "BJ-JM-20260404-S1-CHE-068-reaction-1.png",
+        "asset_type": "reaction",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -874,7 +930,17 @@
     "source_pdf_page": null,
     "question_text_status": "VERIFIED",
     "options_status": "VERIFIED",
-    "assets": [],
+    "assets": [
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-069-matching-1.png",
+        "asset_type": "matching",
+        "belongs_to": "question",
+        "option_letter": null,
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      }
+    ],
     "visual_required": false,
     "unresolved_issues": []
   },
@@ -887,12 +953,12 @@
     "options_status": "VERIFIED",
     "assets": [
       {
-        "filename": "BJ-JM-20260404-S1-CHE-070-missing-diagram.png",
-        "asset_type": "diagram",
+        "filename": "BJ-JM-20260404-S1-CHE-070-reaction-1.png",
+        "asset_type": "reaction",
         "belongs_to": "question",
         "option_letter": null,
         "source_pdf_page": null,
-        "extraction_status": "NOT_EXTRACTED_DUE_TO_ENVIRONMENT",
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
         "visual_details_verified": false
       }
     ],
@@ -920,25 +986,15 @@
     "question_text_status": "REVIEW_REQUIRED",
     "options_status": "REVIEW_REQUIRED",
     "assets": [
-      "images/BJ-JM-20260404-S1-PHY-032-diagram-1.png",
-      "images/BJ-JM-20260404-S1-PHY-038-diagram-1.png",
-      "images/BJ-JM-20260404-S1-PHY-039-diagram-1.png",
-      "images/BJ-JM-20260404-S1-PHY-042-diagram-1.png",
-      "images/BJ-JM-20260404-S1-PHY-043-diagram-1.png",
-      "images/BJ-JM-20260404-S1-PHY-045-diagram-1.png",
-      "images/BJ-JM-20260404-S1-CHE-062-matching-1.png",
-      "images/BJ-JM-20260404-S1-CHE-064-reaction-1.png",
-      "images/BJ-JM-20260404-S1-CHE-064-option_a-2.png",
-      "images/BJ-JM-20260404-S1-CHE-064-option_b-3.png",
-      "images/BJ-JM-20260404-S1-CHE-064-option_c-4.png",
-      "images/BJ-JM-20260404-S1-CHE-064-option_d-5.png",
-      "images/BJ-JM-20260404-S1-CHE-065-matching-1.png",
-      "images/BJ-JM-20260404-S1-CHE-067-reaction-1.png",
-      "images/BJ-JM-20260404-S1-CHE-066-reaction-1.png",
-      "images/BJ-JM-20260404-S1-CHE-068-reaction-1.png",
-      "images/BJ-JM-20260404-S1-CHE-069-matching-1.png",
-      "images/BJ-JM-20260404-S1-CHE-070-reaction-1.png",
-      "images/BJ-JM-20260404-S1-CHE-072-reaction-1.png"
+      {
+        "filename": "BJ-JM-20260404-S1-CHE-072-reaction-1.png",
+        "asset_type": "reaction",
+        "belongs_to": "question",
+        "option_letter": null,
+        "source_pdf_page": null,
+        "extraction_status": "CROP_PRESENT_UNVERIFIED",
+        "visual_details_verified": false
+      }
     ],
     "visual_required": true,
     "unresolved_issues": []
