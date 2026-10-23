@@ -1,13 +1,16 @@
 {
+  "report_scope": "Current April 4 Shift 1 repository inventory and verification status",
   "questions_inspected": 75,
-  "visual_assets_extracted": 0,
-  "questions_with_diagrams_expected": 10,
-  "answer_option_diagrams_extracted": 0,
+  "image_files_present": 19,
+  "question_ids_with_image_files": 15,
+  "visual_asset_questions": 15,
+  "answer_option_image_files": 4,
   "complete_question_crops_created": 0,
-  "questions_with_ocr_concerns": 10,
-  "unresolved_or_missing_assets": 10,
-  "manifest_asset_match": false,
-  "manifest_paths_exist": false,
+  "missing_referenced_asset_files": 0,
+  "source_verified_visual_questions": 0,
+  "render_verified_visual_questions": 0,
   "all_ids_unique_and_present": true,
-  "unprocessed_pages": "Original PDF was not supplied; only OCR text was available in the context."
+  "source_pdf_supplied": false,
+  "status": "ASSET_FILES_PRESENT_SOURCE_AND_RENDER_VERIFICATION_PENDING",
+  "note": "Image files exist and are mapped to their question IDs. Do not treat file presence as proof that an image matches the official paper. Review source fidelity, math notation, answers, and student-page rendering before release."
 }
