@@ -1,6 +1,6 @@
 # Source-Fidelity Audit — JEE Main 2 April 2026 Shift 2
 
-## Status: HOLD — 75/75 source mappings checked; student-side visual/scoring validation remains
+## Status: HOLD — 62/75 exact mappings verified; 13 rows remain unresolved or mismatched, and student-side visual/scoring validation remains
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
@@ -16,11 +16,11 @@ Mathematics Q1–Q16 and Q21–Q25, Physics Q26–Q50, and Chemistry Q51–Q62 h
 
 ## Remaining work
 
-The source crosswalk now records all 75 question mappings as verified, including Chemistry Q63–Q75 after reconciliation with the available source transcription and the official NTA final answer key. The automated question-batch audit has passed for the latest crosswalk commit. This is **source mapping and structural validation**, not proof that every diagram, mathematical rendering, answer interaction, scoring result, or mobile layout has passed in the live student experience. Keep the shift unpublished until those end-to-end checks are completed.
+The authoritative `source-to-draft-crosswalk.json` currently records 62 `verified_exact_match` rows and 13 rows requiring review or replacement: 1 `needs_diagram_review`, 6 `needs_exact_review`, 1 `no_candidate_confirmed`, 2 `confirmed_mismatch`, and 3 `source_diagram_unresolved`. The automated structural audit passes, but a passing structural audit does not turn unresolved rows into exact matches. `SOURCE_CROSSWALK.json` has been synchronized to these statuses so it no longer overstates verification. This is **source mapping and structural validation**, not proof that every diagram, mathematical rendering, answer interaction, scoring result, or mobile layout has passed in the live student experience. Keep the shift unpublished until unresolved rows are resolved and end-to-end checks are completed.
 
 ## Chemistry answer-key cross-check (source questions 63–75)
 
-The official final answer-key mappings for Chemistry Q63–Q75 are recorded in `SOURCE_CROSSWALK.json` and cross-checked against the reconciled draft mapping:
+The official final answer-key IDs/results for Chemistry Q63–Q75 are recorded below. These answer-key mappings alone do **not** certify that the current draft question text, options, or diagrams match the official paper:
 
 | Chemistry source question | Official answer-key result |
 |---:|---|
@@ -38,8 +38,8 @@ The official final answer-key mappings for Chemistry Q63–Q75 are recorded in `
 | 74 | Numerical answer 3 (691121224) |
 | 75 | Numerical answer 1 (691121225) |
 
-The mapping and answer-key reconciliation is complete for these rows. The separate release hold remains until the live student interface passes diagram rendering, mathematical formatting, answer selection, scoring, and mobile layout checks.
+The official answer-key identifiers are recorded, but the source-to-draft crosswalk still flags several Chemistry candidates for exact wording/diagram review or replacement. Do not treat this table as proof that the draft content is publishable. The release hold remains until those issues and the live student interface are verified.
 
 ## Release gate
 
-Keep the shift unpublished until all 75 source mappings have explicit evidence, all diagrams are checked, the answer key is reconciled, and the student mock passes end-to-end rendering and scoring tests.
+Keep the shift unpublished until all 75 source mappings have explicit evidence, every unresolved/mismatched candidate is corrected or replaced, all diagrams are checked, the answer key is reconciled against the exact question, and the student mock passes end-to-end rendering and scoring tests.
