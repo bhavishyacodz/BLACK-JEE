@@ -907,7 +907,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 46
       },
-      "status": "needs_diagram_review",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -915,7 +915,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "YDSE intensity/path-difference item needs exact comparison of the diagram and requested quantity"
+      "note": "Verified against NTA source Q46: exact YDSE intensity/path-difference statement and requested x; independently checked result x=6 against final key. No source diagram is required. Audit-only; full-shift release gate stays closed."
     },
     {
       "source": {
@@ -925,9 +925,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 48
+        "legacy_global_question_number": 47
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -935,7 +935,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "ideal-gas heat-capacity/temperature-change givens align; verify required output"
+      "note": "Verified against NTA source Q47: exact Bohr-model magnetic-field ratio prompt; independently checked B₂/B₄=32 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "source": {
@@ -945,9 +945,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 42
+        "legacy_global_question_number": 48
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -955,7 +955,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source asks for 3L₂−L₁ from two switch states and phase angles; draft is a different LCR phase-difference prompt"
+      "note": "Verified against NTA source Q48: exact 5-mole constant-volume heating data, cp and R units, and requested ΔU in calories; independently checked result 300 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "source": {
@@ -965,9 +965,9 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 36
+        "legacy_global_question_number": 49
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -975,7 +975,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source mass 1 kg and drop height 20 m; draft uses 2 kg and 10 m"
+      "note": "Verified against NTA source Q49: exact sunlight/convex-lens, 30 cm focal distance, 60 cm curvature radius, and α/10 refractive-index prompt; independently checked α=20 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "source": {
@@ -983,8 +983,11 @@
         "subject_question_number": 25,
         "paper_order": 50
       },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 50
+      },
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -992,7 +995,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "the text-extracted source used in this audit does not expose a confirmed question statement for this slot"
+      "note": "Verified against NTA source Q50: exact rod/sphere masses, length/radius, 3 m axis separation, and R=√(α/2) prompt. q50.svg diagram was visually compared with the source figure; independently checked α=60 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "source": {
