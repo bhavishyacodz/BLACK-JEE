@@ -1,0 +1,2054 @@
+{
+  "schema_version": "1.0.0",
+  "project": "BLACK-JEE",
+  "paper": {
+    "year": 2026,
+    "exam": "JEE Main",
+    "date_label": "4 April",
+    "shift": 1,
+    "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
+  },
+  "workflow_status": "awaiting_source_content",
+  "publication_policy": "DRAFT_ONLY",
+  "expected_counts": {
+    "Physics": 25,
+    "Chemistry": 25,
+    "Mathematics": 25,
+    "total": 75
+  },
+  "important_note": "This is a tracking manifest only. It contains no authentic question wording, answer keys, solutions, or verified diagrams. Do not import these slots as student questions or publish them.",
+  "status_definitions": {
+    "awaiting_source": "Question content has not yet been recovered or supplied.",
+    "content_added": "Content added but not verified against a trustworthy source.",
+    "needs_review": "A mismatch or quality issue needs correction.",
+    "verified_draft": "Question, answer, solution, and any required diagram were reviewed; still unpublished.",
+    "approved_for_publish": "Explicitly approved after full source and rendering checks."
+  },
+  "questions": [
+    {
+      "slot_id": "physics-01",
+      "subject": "Physics",
+      "subject_question_number": 1,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-02",
+      "subject": "Physics",
+      "subject_question_number": 2,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-03",
+      "subject": "Physics",
+      "subject_question_number": 3,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-04",
+      "subject": "Physics",
+      "subject_question_number": 4,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-05",
+      "subject": "Physics",
+      "subject_question_number": 5,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-06",
+      "subject": "Physics",
+      "subject_question_number": 6,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-07",
+      "subject": "Physics",
+      "subject_question_number": 7,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-08",
+      "subject": "Physics",
+      "subject_question_number": 8,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-09",
+      "subject": "Physics",
+      "subject_question_number": 9,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-10",
+      "subject": "Physics",
+      "subject_question_number": 10,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-11",
+      "subject": "Physics",
+      "subject_question_number": 11,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-12",
+      "subject": "Physics",
+      "subject_question_number": 12,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-13",
+      "subject": "Physics",
+      "subject_question_number": 13,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-14",
+      "subject": "Physics",
+      "subject_question_number": 14,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-15",
+      "subject": "Physics",
+      "subject_question_number": 15,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-16",
+      "subject": "Physics",
+      "subject_question_number": 16,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-17",
+      "subject": "Physics",
+      "subject_question_number": 17,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-18",
+      "subject": "Physics",
+      "subject_question_number": 18,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-19",
+      "subject": "Physics",
+      "subject_question_number": 19,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-20",
+      "subject": "Physics",
+      "subject_question_number": 20,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-21",
+      "subject": "Physics",
+      "subject_question_number": 21,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-22",
+      "subject": "Physics",
+      "subject_question_number": 22,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-23",
+      "subject": "Physics",
+      "subject_question_number": 23,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-24",
+      "subject": "Physics",
+      "subject_question_number": 24,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "physics-25",
+      "subject": "Physics",
+      "subject_question_number": 25,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-01",
+      "subject": "Chemistry",
+      "subject_question_number": 1,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-02",
+      "subject": "Chemistry",
+      "subject_question_number": 2,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-03",
+      "subject": "Chemistry",
+      "subject_question_number": 3,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-04",
+      "subject": "Chemistry",
+      "subject_question_number": 4,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-05",
+      "subject": "Chemistry",
+      "subject_question_number": 5,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-06",
+      "subject": "Chemistry",
+      "subject_question_number": 6,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-07",
+      "subject": "Chemistry",
+      "subject_question_number": 7,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-08",
+      "subject": "Chemistry",
+      "subject_question_number": 8,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-09",
+      "subject": "Chemistry",
+      "subject_question_number": 9,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-10",
+      "subject": "Chemistry",
+      "subject_question_number": 10,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-11",
+      "subject": "Chemistry",
+      "subject_question_number": 11,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-12",
+      "subject": "Chemistry",
+      "subject_question_number": 12,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-13",
+      "subject": "Chemistry",
+      "subject_question_number": 13,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-14",
+      "subject": "Chemistry",
+      "subject_question_number": 14,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-15",
+      "subject": "Chemistry",
+      "subject_question_number": 15,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-16",
+      "subject": "Chemistry",
+      "subject_question_number": 16,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-17",
+      "subject": "Chemistry",
+      "subject_question_number": 17,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-18",
+      "subject": "Chemistry",
+      "subject_question_number": 18,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-19",
+      "subject": "Chemistry",
+      "subject_question_number": 19,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-20",
+      "subject": "Chemistry",
+      "subject_question_number": 20,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-21",
+      "subject": "Chemistry",
+      "subject_question_number": 21,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-22",
+      "subject": "Chemistry",
+      "subject_question_number": 22,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-23",
+      "subject": "Chemistry",
+      "subject_question_number": 23,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-24",
+      "subject": "Chemistry",
+      "subject_question_number": 24,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "chemistry-25",
+      "subject": "Chemistry",
+      "subject_question_number": 25,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-01",
+      "subject": "Mathematics",
+      "subject_question_number": 1,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-02",
+      "subject": "Mathematics",
+      "subject_question_number": 2,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-03",
+      "subject": "Mathematics",
+      "subject_question_number": 3,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-04",
+      "subject": "Mathematics",
+      "subject_question_number": 4,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-05",
+      "subject": "Mathematics",
+      "subject_question_number": 5,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-06",
+      "subject": "Mathematics",
+      "subject_question_number": 6,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-07",
+      "subject": "Mathematics",
+      "subject_question_number": 7,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-08",
+      "subject": "Mathematics",
+      "subject_question_number": 8,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-09",
+      "subject": "Mathematics",
+      "subject_question_number": 9,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-10",
+      "subject": "Mathematics",
+      "subject_question_number": 10,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-11",
+      "subject": "Mathematics",
+      "subject_question_number": 11,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-12",
+      "subject": "Mathematics",
+      "subject_question_number": 12,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-13",
+      "subject": "Mathematics",
+      "subject_question_number": 13,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-14",
+      "subject": "Mathematics",
+      "subject_question_number": 14,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-15",
+      "subject": "Mathematics",
+      "subject_question_number": 15,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-16",
+      "subject": "Mathematics",
+      "subject_question_number": 16,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-17",
+      "subject": "Mathematics",
+      "subject_question_number": 17,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-18",
+      "subject": "Mathematics",
+      "subject_question_number": 18,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-19",
+      "subject": "Mathematics",
+      "subject_question_number": 19,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-20",
+      "subject": "Mathematics",
+      "subject_question_number": 20,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-21",
+      "subject": "Mathematics",
+      "subject_question_number": 21,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-22",
+      "subject": "Mathematics",
+      "subject_question_number": 22,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-23",
+      "subject": "Mathematics",
+      "subject_question_number": 23,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-24",
+      "subject": "Mathematics",
+      "subject_question_number": 24,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    },
+    {
+      "slot_id": "mathematics-25",
+      "subject": "Mathematics",
+      "subject_question_number": 25,
+      "status": "awaiting_source",
+      "question_text": null,
+      "question_type": null,
+      "options": null,
+      "correct_answer": null,
+      "solution": null,
+      "diagram": {
+        "required": null,
+        "asset_path": null,
+        "alt_text": null,
+        "source_verified": false,
+        "render_verified": false
+      },
+      "quality_checks": {
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
+        "solution_steps_checked": false,
+        "math_render_checked": false,
+        "mobile_render_checked": false
+      },
+      "source_reference": null,
+      "reviewer_notes": []
+    }
+  ]
+}
