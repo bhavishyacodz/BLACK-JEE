@@ -1257,7 +1257,7 @@
     "subject": "Chemistry",
     "chapter": "General Organic Chemistry",
     "source_question_number": 63,
-    "question_text": "Statement I: In the para-nitro/para-methoxy substituted diarylmethyl carbocation shown in the source, the carbocation is stabilised by the +R effect of the –OCH₃ group. Statement II: In the corresponding carbanion, the negative charge is stabilised by the −R effect of the –NO₂ group. Choose the correct answer.",
+    "question_text": "Given below are two statements. Statement I: In O₂N–C₆H₄–CH⁺–C₆H₄–OCH₃ (para-substituted rings), the carbocation is stabilised by the +R effect of the –OCH₃ group. Statement II: In O₂N–C₆H₄–CH⁻–C₆H₄–OCH₃ (para-substituted rings), the carbanion is stabilised by the −R effect of the –NO₂ group. In the light of the above statements, choose the correct answer.",
     "question_type": "MCQ",
     "options": [
       "Both Statement I and Statement II are true",
@@ -1270,7 +1270,7 @@
     "is_published": false,
     "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q63.svg",
     "correct_answer": "A",
-    "solution": "The para-methoxy group donates electron density by resonance and stabilises a conjugated carbocation. The para-nitro group withdraws electron density by resonance and can stabilise a conjugated carbanion. Both statements are true, option A."
+    "solution": "The para-methoxy group donates electron density by resonance and stabilises the conjugated benzylic carbocation. The para-nitro group withdraws electron density by resonance and stabilises the conjugated benzylic carbanion. Both statements are true, option A."
   },
   {
     "year": 2026,
@@ -1278,13 +1278,13 @@
     "subject": "Chemistry",
     "chapter": "Hydrocarbons",
     "source_question_number": 64,
-    "question_text": "Compound X on (i) heating in the presence of anhydrous AlCl₃ and HCl gas gives 2,4-dimethylpentane, (ii) aromatization gives toluene and (iii) cyclisation gives methylcyclohexane. The correct name of X is:",
+    "question_text": "The compound X on (i) heating in the presence of anhydrous AlCl₃ and HCl gas gives 2,4-dimethylpentane, (ii) aromatization gives toluene, and (iii) cyclisation gives methylcyclohexane. The correct name of compound X is:",
     "question_type": "MCQ",
     "options": [
       "Hept-2-ene",
-      "Hepta-1,3,5-triene",
+      "Hept-1,3,5-triene",
       "Heptane",
-      "Hepta-2,4,6-triene"
+      "Hept-2,4,6-triene"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
@@ -1299,7 +1299,7 @@
     "subject": "Chemistry",
     "chapter": "Haloalkanes and Haloarenes",
     "source_question_number": 65,
-    "question_text": "Correct statements regarding alkyl halides (R–X) among the following are: A. Alcoholic KOH favours elimination because alcohol is less polar than water. B. Reactivity towards Sᴺ1 is C₆H₅CH₂Cl > (C₆H₅)₂CHCl. C. Non-substituted aryl halides exhibit properties similar to alkyl halides. D. Vinyl chloride is a haloalkene and allyl chloride is a haloalkyne. E. R–Cl can be prepared from R–OH using SOCl₂, but Ar–Cl cannot be prepared from Ar–OH using SOCl₂. Choose the correct combination.",
+    "question_text": "Correct statements regarding alkyl halides (R–X) among the following are:\nA. Alcohol being less polar solvent as compared to water, alcoholic KOH favours elimination reaction with R–X.\nB. Order of reactivity towards the S_N1 mechanism is C₆H₅–CH₂–Cl > C₆H₅–CHCl–C₆H₅.\nC. Non-substituted aryl halides exhibit properties similar to alkyl halides.\nD. Vinyl chloride is an example of haloalkene and allyl chloride is an example of haloalkyne.\nE. R–Cl can be prepared by reacting R–OH with SOCl₂ but Ar–Cl cannot be prepared by reacting Ar–OH with SOCl₂.\nChoose the correct answer from the options given below:",
     "question_type": "MCQ",
     "options": [
       "A, B and C only",
@@ -1312,20 +1312,20 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "C",
-    "solution": "A is true: alcoholic KOH favours elimination. B is false because the diphenylmethyl carbocation is more resonance-stabilised than the benzyl carbocation. C is false: aryl halides are less reactive toward ordinary nucleophilic substitution. D is false: allyl chloride is an allylic halide, not a haloalkyne. E is true because thionyl chloride converts alcohols to alkyl chlorides, but phenols do not undergo the analogous substitution. Hence A and E only, option C."
+    "solution": "A and E are true. B is false because the diphenylmethyl carbocation is more resonance-stabilised than the benzyl carbocation. C is false because aryl halides do not generally show the same substitution behaviour as alkyl halides. D is false: allyl chloride is an allylic halide, not a haloalkyne. Therefore A and E only, option C."
   },
   {
     "year": 2026,
     "session": "2 April Shift 2",
     "subject": "Chemistry",
-    "chapter": "Aldehydes and Ketones",
+    "chapter": "Organic Compounds Containing Oxygen",
     "source_question_number": 66,
-    "question_text": "An organic compound X, in which the molar amounts of C, O and H are equal, on treatment with 50% KOH under reflux followed by acidification produces Y. The molar mass of X is 58 g mol⁻¹. The most likely structure of Y is:",
+    "question_text": "An organic compound X, in which the molar ratio of C, O and H is 1:1:1, on treatment with 50% KOH under reflux followed by acidification produces Y. The molar mass of X is 58 g mol⁻¹. The most likely structure of Y is:",
     "question_type": "MCQ",
     "options": [
-      "CH₂=CH–COOH (acrylic acid)",
-      "CH₃–CH=CH–CHO (crotonaldehyde)",
-      "HO–CH₂–COOH (glycolic acid)",
+      "CH₂=CH–COOH (prop-2-enoic acid)",
+      "CH₃–CH=CH–CHO (but-2-enal)",
+      "HO–CH₂–COOH (2-hydroxyacetic acid)",
       "CH₃–COOH (acetic acid)"
     ],
     "marks_correct": 4,
@@ -1339,9 +1339,9 @@
     "year": 2026,
     "session": "2 April Shift 2",
     "subject": "Chemistry",
-    "chapter": "Aldehydes and Ketones",
+    "chapter": "Organic Compounds Containing Oxygen",
     "source_question_number": 67,
-    "question_text": "A molecule X with the structure shown in the diagram is hydrolysed under mild acidic conditions to produce Y and Z. Identify the correct statements: A. Y and Z have the same molar mass. B. Y and Z can be distinguished from each other by NaHCO₃. C. Y and Z react with HCN at the same rates. D. Y and Z undergo addition reactions with 2,4-DNP. Choose the correct combination.",
+    "question_text": "A molecule X with the structure shown in the diagram is hydrolysed under mild acidic conditions to produce Y and Z. Identify the correct statements about Y and Z.\nA. Y and Z have the same molar mass.\nB. Y and Z can be distinguished from each other by NaHCO₃.\nC. Y and Z react with HCN at the same rates.\nD. Y and Z undergo addition reaction with 2,4-DNP.\nChoose the correct answer from the options given below:",
     "question_type": "MCQ",
     "options": [
       "A, B and C only",
@@ -1360,22 +1360,22 @@
     "year": 2026,
     "session": "2 April Shift 2",
     "subject": "Chemistry",
-    "chapter": "Aromatic Compounds",
+    "chapter": "Organic Compounds Containing Nitrogen",
     "source_question_number": 68,
-    "question_text": "Identify compounds A and E in the reaction sequence shown in the diagram. The starting material is p-ethylnitrobenzene; the sequence uses Br₂/AlBr₃, Sn/HCl, NaNO₂/HCl at 273–278 K, ethanol, and finally KMnO₄/KOH followed by H₃O⁺.",
+    "question_text": "Identify compounds A and E in the following reaction sequence. The starting material is 1-ethyl-4-nitrobenzene. It is treated with Br₂/AlBr₃ to form A, then Sn/HCl, then NaNO₂/HCl at 273–278 K, followed by C₂H₅OH, and finally (i) KMnO₄/KOH and (ii) H₃O⁺ to form E.",
     "question_type": "MCQ",
     "options": [
-      "A: 2-bromo-1-ethyl-4-nitrobenzene; E: 2-bromobenzoic acid",
-      "A: 1-(2-bromoethyl)-4-nitrobenzene; E: benzoic acid",
-      "A: 2-bromo-1-ethyl-4-nitrobenzene; E: 2-bromo-4-hydroxybenzoic acid",
-      "A: 1-ethyl-2-bromo-4-nitrobenzene; E: 3-bromobenzoic acid"
+      "A is 1-ethyl-2-bromo-4-nitrobenzene (Br ortho to NO₂ and meta to ethyl); E is 3-bromobenzoic acid",
+      "A is 2-bromo-1-ethyl-4-nitrobenzene (Br ortho to ethyl); E is 2-bromobenzoic acid",
+      "A is 1-(2-bromoethyl)-4-nitrobenzene; E is benzoic acid",
+      "A is 2-bromo-1-ethyl-4-nitrobenzene; E is 3-bromo-4-hydroxybenzoic acid"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q68.svg",
-    "correct_answer": "A",
-    "solution": "Ethyl directs electrophilic substitution ortho/para; with the para position occupied by nitro, bromination occurs ortho to ethyl and meta to nitro. Sn/HCl reduces nitro to amino; diazotisation followed by ethanol replaces the amino group with hydrogen. Oxidation converts the ethyl side chain to COOH without removing ring bromine, giving 2-bromobenzoic acid. Option A."
+    "correct_answer": "B",
+    "solution": "Bromination occurs on the ring; the ethyl group directs ortho/para and the para position is occupied, giving 2-bromo-1-ethyl-4-nitrobenzene. Sn/HCl reduces –NO₂ to –NH₂, diazotisation followed by ethanol replaces the amino group with hydrogen, and oxidation converts the ethyl side chain to –COOH while retaining ring bromine. E is 2-bromobenzoic acid. Option B."
   },
   {
     "year": 2026,
@@ -1383,7 +1383,7 @@
     "subject": "Chemistry",
     "chapter": "Biomolecules",
     "source_question_number": 69,
-    "question_text": "Identify the correct pair having amino acid (A) and hormone (B) that is an iodinated derivative of the amino acid. (T and Y represent one-letter codes for amino acids.)",
+    "question_text": "Identify the correct pair having amino acid A and hormone B, which is an iodinated derivative of amino acid A. (T and Y represent one-letter codes for amino acids.)",
     "question_type": "MCQ",
     "options": [
       "T — Insulin",
@@ -1404,7 +1404,7 @@
     "subject": "Chemistry",
     "chapter": "d- and f-Block Elements",
     "source_question_number": 70,
-    "question_text": "Among Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺, the ion that shows a positive borax-bead test and has the highest ionisation enthalpy is:",
+    "question_text": "Among Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺, the ion that shows a positive borax bead test and has the highest ionisation enthalpy is:",
     "question_type": "MCQ",
     "options": [
       "Fe²⁺",
@@ -1425,7 +1425,7 @@
     "subject": "Chemistry",
     "chapter": "Atomic Structure",
     "source_question_number": 71,
-    "question_text": "The surface of sodium metal is irradiated with radiation of wavelength λ nm. The kinetic energy of ejected electrons is 2.8 × 10⁻²⁰ J. The work function of sodium is 2.3 eV. The value of λ is x × 10² nm (nearest integer). Given h = 6.6 × 10⁻³⁴ J s, 1 eV = 1.6 × 10⁻¹⁹ J and c = 3.0 × 10⁸ m s⁻¹. Find x.",
+    "question_text": "The surface of sodium metal is irradiated with radiation of wavelength x nm. The kinetic energy of ejected electrons is 2.8 × 10⁻²⁰ J. The work function of sodium is 2.3 eV. The value of x is ____ × 10² nm (nearest integer). Given: h = 6.6 × 10⁻³⁴ J s; 1 eV = 1.6 × 10⁻¹⁹ J; c = 3.0 × 10⁸ m s⁻¹. Find the blank.",
     "question_type": "Numerical",
     "options": [],
     "marks_correct": 4,
@@ -1441,7 +1441,7 @@
     "subject": "Chemistry",
     "chapter": "Chemical Kinetics",
     "source_question_number": 72,
-    "question_text": "Consider the gas-phase reaction 2A(g) → 4B(g) + C(g) in a closed vessel at 25°C. The total pressure is 300 mm Hg after 30 minutes and 600 mm Hg at completion. The pressure of C(g) after 30 minutes is ______ mm Hg (nearest integer).",
+    "question_text": "Consider the following gas-phase reaction in a closed vessel at 25°C: 2A(g) → 4B(g) + C(g). The total pressure of the system is 300 mm Hg at 30 minutes and 600 mm Hg at t = ∞. The pressure of C(g) at 30 minutes is ____ mm Hg (nearest integer).",
     "question_type": "Numerical",
     "options": [],
     "marks_correct": 4,
@@ -1455,9 +1455,9 @@
     "year": 2026,
     "session": "2 April Shift 2",
     "subject": "Chemistry",
-    "chapter": "Electrochemistry",
+    "chapter": "Redox Reactions and Electrochemistry",
     "source_question_number": 73,
-    "question_text": "Consider the half-cell reactions CO₂ + 6H⁺ + 6e⁻ → CH₃OH + H₂O, E°red = 0.02 V, and ½O₂ + 2H⁺ + 2e⁻ → H₂O, E°red = 1.23 V. A fuel cell uses these reactions at 1 bar and 298 K with 80% efficiency. If the work obtained using 1 mol of CH₃OH is used to compress an ideal gas isothermally against a constant pressure of 1 kPa, find the magnitude of the gas volume change ΔV in m³ (nearest integer). Take F = 96500 C mol⁻¹.",
+    "question_text": "Consider the following half-cell reactions and standard reduction potentials:\nCO₂ + 6H⁺ + 6e⁻ → CH₃OH + H₂O, E°red = 0.02 V\n½O₂ + 2H⁺ + 2e⁻ → H₂O, E°red = 1.23 V\nA fuel cell operates under standard conditions (1 bar, 298 K) with 80% efficiency. The work derived using 1 mol of CH₃OH is used to compress an ideal gas isothermally against a constant pressure of 1 kPa. Find the magnitude of ΔV in m³ (nearest integer). Given F = 96500 C mol⁻¹.",
     "question_type": "Numerical",
     "options": [],
     "marks_correct": 4,
@@ -1473,7 +1473,7 @@
     "subject": "Chemistry",
     "chapter": "d- and f-Block Elements",
     "source_question_number": 74,
-    "question_text": "How many of the following ions are paramagnetic? Mn²⁺, Cu²⁺, Zn²⁺, Yb²⁺, Sc³⁺, La³⁺, Gd³⁺, Lu³⁺, Ti⁴⁺ and Ce⁴⁺. Atomic numbers: Mn=25, Cu=29, Zn=30, Yb=70, Sc=21, La=57, Gd=64, Lu=71, Ti=22, Ce=58.",
+    "question_text": "The number of paramagnetic ions among the following d- and f-block metal ions is ____: Mn²⁺, Cu²⁺, Zn²⁺, Yb²⁺, Sc³⁺, La³⁺, Gd³⁺, Lu³⁺, Ti⁴⁺, Ce⁴⁺. Atomic numbers: Mn = 25, Cu = 29, Zn = 30, Yb = 70, Sc = 21, La = 57, Gd = 64, Lu = 71, Ti = 22, Ce = 58.",
     "question_type": "Numerical",
     "options": [],
     "marks_correct": 4,
@@ -1487,9 +1487,9 @@
     "year": 2026,
     "session": "2 April Shift 2",
     "subject": "Chemistry",
-    "chapter": "Organic Chemistry: Basic Principles",
+    "chapter": "Organic Compounds Containing Nitrogen",
     "source_question_number": 75,
-    "question_text": "Consider the reaction sequence shown in the diagram for p-nitrotoluene: (i) Sn/HCl; OH⁻, (ii) (CH₃CO)₂O, (iii) Br₂/AlBr₃, (iv) H₃O⁺. When product P is subjected to Carius analysis using AgNO₃, 1.0 g of P produces ______ g of AgBr precipitate (nearest integer). Atomic masses: C=12, H=1, O=16, N=14, Br=80, Ag=108.",
+    "question_text": "Consider the following reaction sequence starting from p-nitrotoluene: (i) Sn/HCl; OH⁻, (ii) (CH₃CO)₂O, (iii) Br₂/AlBr₃, (iv) H₃O⁺, to give product P. When P is subjected to Carius analysis using AgNO₃, 1.0 g of P produces ____ g of AgBr precipitate (nearest integer). Given molar masses (g mol⁻¹): C = 12, H = 1, O = 16, N = 14, Br = 80, Ag = 108.",
     "question_type": "Numerical",
     "options": [],
     "marks_correct": 4,
