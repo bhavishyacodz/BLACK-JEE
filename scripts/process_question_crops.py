@@ -31,7 +31,7 @@ for q in shift_data.get("questions", []):
     qid = (q.get("source_reference") or {}).get("question_id")
     if qid:
         questions_by_id[qid] = q
-manifest_by_id = {q.get("question_id"): q for q in question_data if q.get("question_id")}
+manifest_by_subject_number = {(q.get("subject"), int(q.get("paper_question_number", -1))): q for q in question_data if q.get("question_id") and str(q.get("paper_question_number", "")).isdigit()}
 
 validated = []
 source_paths = set()
@@ -41,7 +41,7 @@ for index, item in enumerate(crops, 1):
     if qid not in questions_by_id or qid not in manifest_by_id:
         fail(f"crop #{index}: unknown question_id {qid!r}; expected IDs present in both shift manifests")
     source = item.get("source_screenshot", "")
-    if not source.startswith("assets/gemini-inbox/") or Path(source).name != source:
+    if not source.startswith("assets/gemini-inbox/") or Path(source).parent.as_posix() != "assets/gemini-inbox":
         fail(f"crop #{index}: source_screenshot must be a filename directly inside {INBOX}")
     source_path = ROOT / source
     if not source_path.is_file():
@@ -90,7 +90,7 @@ for item, source_path, qid, filename, (x, y, w, h) in validated:
     q.setdefault("visual_assets", []).append(visual)
     if item.get("kind") in ("diagram", "reaction", "matching", "question_visual") and not (q.get("diagram") or {}).get("asset_path"):
         q["diagram"] = {"required": True, "asset_path": rel, "alt_text": visual["alt_text"], "source_verified": False, "render_verified": False}
-    qm = manifest_by_id[qid]
+    qm = manifest_by_subject_number[(q.get("subject"), int(q.get("subject_question_number", -1)))]
     qm["visual_required"] = True
     qm.setdefault("assets", []).append(rel)
     qm["unresolved_issues"] = [issue for issue in qm.get("unresolved_issues", []) if "missing" not in str(issue).lower()]
