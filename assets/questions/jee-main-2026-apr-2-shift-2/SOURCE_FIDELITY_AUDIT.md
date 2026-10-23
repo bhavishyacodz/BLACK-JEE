@@ -98,3 +98,8 @@ Legacy Q52 was aligned to the readable source transcription: H₂S in 0.1 M HCl,
 ## Mock-test source-order correction (2026-10-23)
 
 Updated `mock-tests.html` to sort a full shift by Physics → Chemistry → Mathematics, with Section A before Section B in each subject, and by the explicit source-paper question number from a local crosswalk keyed to each candidate question stem. Sorting occurs before the question-count limit is applied, preventing a 10/20/30-question test from being selected from an arbitrary database order. The ordering map is derived from the audit-only paper-order view and does not certify question content. Questions absent from the candidate crosswalk still require source extraction and must not be treated as verified. The app query does not depend on a newly assumed database column. Build/deployment and browser-level verification remain pending.
+
+
+## Full-shift structure gate diagnostic (2026-10-23)
+
+A structural audit of the 75-record draft found that the current legacy candidate set is not valid JEE Main Paper 1 section structure: Physics has 18 MCQ + 7 Numerical, while Chemistry and Mathematics each have 20 MCQ + 5 Numerical. Crosswalk sections classify Physics Q1–20 as Section A and Q21–25 as Section B, so the mismatch appears to include incorrectly typed candidate records. Do not force types or invent options without source confirmation. Updated `mock-tests.html` validation errors to report per-subject MCQ/numerical counts and keep a full-shift start blocked until the structure is corrected.
