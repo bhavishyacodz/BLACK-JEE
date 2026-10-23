@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" role="img" aria-labelledby="t d"><title id="t">Question 63 resonance-stabilisation structures</title><desc id="d">Two diarylmethyl structures: a benzylic carbocation with para nitro and para methoxy substituents, and a corresponding carbanion.</desc><rect width="760" height="300" fill="white"/><g stroke="#111" stroke-width="2.5" fill="none"><path d="M70 65 l25 -15 25 15 0 30 -25 15 -25 -15 z M230 65 l25 -15 25 15 0 30 -25 15 -25 -15 z M70 205 l25 -15 25 15 0 30 -25 15 -25 -15 z M230 205 l25 -15 25 15 0 30 -25 15 -25 -15 z"/></g><g fill="#111" font-family="Arial,Helvetica,sans-serif" font-size="18"><text x="20" y="81">O₂N—</text><text x="125" y="82">—CH⁺—</text><text x="285" y="82">—OCH₃</text><text x="20" y="221">O₂N—</text><text x="125" y="222">—CH⁻—</text><text x="285" y="222">—OCH₃</text><text x="380" y="81" font-size="17">Statement I: carbocation</text><text x="380" y="221" font-size="17">Statement II: carbanion</text><text x="20" y="25" font-weight="700">Q63 · Compare resonance effects of –OCH₃ and –NO₂</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img" aria-labelledby="title desc">
+<title id="title">JEE Main 2026 April 2 Shift 2 Question 63 substituted diarylmethyl ions</title>
+<desc id="desc">Two diarylmethyl structures are shown. In each, a central carbon is bonded to two phenyl rings: the left ring bears a para nitro substituent and the right ring bears a para methoxy substituent. The upper structure is a carbocation and the lower structure is a carbanion.</desc>
+<rect width="760" height="340" fill="white"/>
+<g stroke="#111" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Upper row: p-nitro / diarylmethyl carbocation -->
+  <path d="M90 76 L120 58 L150 76 L150 110 L120 128 L90 110 Z"/>
+  <path d="M96 79 L120 65 M144 80 L144 106 M120 121 L96 107" stroke-width="1.5"/>
+  <path d="M150 93 H205 M278 93 H325"/>
+  <path d="M325 76 L355 58 L385 76 L385 110 L355 128 L325 110 Z"/>
+  <path d="M331 79 L355 65 M379 80 L379 106 M355 121 L331 107" stroke-width="1.5"/>
+  <!-- para substituents -->
+  <path d="M90 93 H48 M385 93 H430"/>
+  <!-- Lower row: p-nitro / diarylmethyl carbanion -->
+  <path d="M90 226 L120 208 L150 226 L150 260 L120 278 L90 260 Z"/>
+  <path d="M96 229 L120 215 M144 230 L144 256 M120 271 L96 257" stroke-width="1.5"/>
+  <path d="M150 243 H205 M278 243 H325"/>
+  <path d="M325 226 L355 208 L385 226 L385 260 L355 278 L325 260 Z"/>
+  <path d="M331 229 L355 215 M379 230 L379 256 M355 271 L331 257" stroke-width="1.5"/>
+  <path d="M90 243 H48 M385 243 H430"/>
+</g>
+<g fill="#111" font-family="Arial,Helvetica,sans-serif" font-size="19">
+  <text x="8" y="98">O₂N</text>
+  <text x="205" y="100">CH⁺</text>
+  <text x="433" y="99">OCH₃</text>
+  <text x="490" y="99" font-size="17">I · carbocation</text>
+  <text x="8" y="248">O₂N</text>
+  <text x="205" y="250">CH⁻</text>
+  <text x="433" y="249">OCH₃</text>
+  <text x="490" y="249" font-size="17">II · carbanion</text>
+  <text x="24" y="28" font-weight="700">Q63 · Compare resonance effects of –NO₂ and –OCH₃</text>
+  <text x="24" y="318" font-size="15">Substituents are para to the diarylmethyl carbon attachment.</text>
+</g>
+</svg>
