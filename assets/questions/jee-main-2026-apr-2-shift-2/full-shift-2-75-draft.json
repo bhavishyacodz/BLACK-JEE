@@ -1092,8 +1092,8 @@
     "question_text": "Solution A is prepared by dissolving 1 g of a protein (molar mass 50000 g mol⁻¹) in 0.5 L of water at 300 K; its osmotic pressure is x bar. Solution B is prepared by dissolving 2 g of the same protein in 1 L of water at 300 K; its osmotic pressure is y bar. The entire solution A is mixed with the entire solution B at the same temperature and the resultant osmotic pressure is z bar. Given R=0.083 L bar mol⁻¹ K⁻¹, find x, y and z.",
     "question_type": "MCQ",
     "options": [
-      "9.96×10⁻⁴, 9.96×10⁻⁴, 19.92×10⁻⁴",
       "9.96×10⁻⁴, 9.96×10⁻⁴, 9.96×10⁻⁴",
+      "9.96×10⁻⁴, 9.96×10⁻⁴, 19.92×10⁻⁴",
       "4.98×10⁻⁴, 4.98×10⁻⁴, 9.96×10⁻⁴",
       "4.98×10⁻⁴, 4.98×10⁻⁴, 4.98×10⁻⁴"
     ],
@@ -1101,8 +1101,8 @@
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "B",
-    "solution": "π=(n/V)RT. For A, n=1/50000 mol and V=0.5 L, so concentration=4×10⁻⁵ mol L⁻¹. For B, n=2/50000 mol and V=1 L, giving the same concentration. Thus x=y=(4×10⁻⁵)(0.083)(300)=9.96×10⁻⁴ bar. After mixing, total moles are 6×10⁻⁵ and total volume is 1.5 L, again giving 4×10⁻⁵ M, so z is the same. Option B."
+    "correct_answer": "A",
+    "solution": "Osmotic pressure is π=(n/V)RT. For solution A, n=1/50000 mol and V=0.5 L, so n/V=4×10⁻⁵ mol L⁻¹. For solution B, n=2/50000 mol and V=1 L, giving the same concentration. Thus x=y=(4×10⁻⁵)(0.083)(300)=9.96×10⁻⁴ bar. After mixing, total moles are 6×10⁻⁵ mol and total volume is 1.5 L, again giving 4×10⁻⁵ mol L⁻¹, so z is also 9.96×10⁻⁴ bar. The source option order places this triple in option A, matching NTA final answer key option ID 691121697."
   },
   {
     "year": 2026,
