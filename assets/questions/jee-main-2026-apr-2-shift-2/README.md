@@ -192,3 +192,5 @@ Post-cleanup database verification:
 - **Q75:** changed the accessible description to identify the reaction-sequence context without naming the product class.
 - Commits: [Q30](https://github.com/bhavishyacodz/BLACK-JEE/commit/9d38821d98840556fcd2682011f2ac709cd6741a), [Q67](https://github.com/bhavishyacodz/BLACK-JEE/commit/727ce5e23f8532683092beee0eb9b3d52d81103d), [Q75](https://github.com/bhavishyacodz/BLACK-JEE/commit/61045f8ebd21d17b72f1525e499e8196be1e4b97).
 - This was a source-level content/accessibility audit. SVGs were re-fetched for validation; a live screen-reader and mobile browser pass is still pending. No database rows or publication statuses were changed.
+
+- Follow-up check found that Q67's visible SVG label still named the products even after its accessible description was corrected. Removed that visible answer leak in [commit 53a511a](https://github.com/bhavishyacodz/BLACK-JEE/commit/53a511a6392258b26927d42199dd73dedcc7a29b); the diagram now says only that hydrolysis produces Y and Z.
