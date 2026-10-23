@@ -103,3 +103,8 @@ Updated `mock-tests.html` to sort a full shift by Physics → Chemistry → Math
 ## Full-shift structure gate diagnostic (2026-10-23)
 
 A structural audit of the 75-record draft found that the current legacy candidate set is not valid JEE Main Paper 1 section structure: Physics has 18 MCQ + 7 Numerical, while Chemistry and Mathematics each have 20 MCQ + 5 Numerical. Crosswalk sections classify Physics Q1–20 as Section A and Q21–25 as Section B, so the mismatch appears to include incorrectly typed candidate records. Do not force types or invent options without source confirmation. Updated `mock-tests.html` validation errors to report per-subject MCQ/numerical counts and keep a full-shift start blocked until the structure is corrected.
+
+
+## Source-order crosswalk correction — 2026-10-23
+
+The previous embedded `APR2S2_SOURCE_ORDER` lookup used keys that did not match the runtime lookup (`subject|question_text`), so those mappings could silently fall through to the fallback ordering. Rebuilt the map from the crosswalk and exact draft stems, and rebased Physics Q1–25 to the printed source sequence (legacy global Q26–50). Physics MCQ structure is now 20 MCQs + 5 numerical candidates after restoring legacy Q33 and Q42 to MCQ format. Q33's extracted surface-tension/options combination is internally inconsistent and remains unresolved; Q42's diagram remains a reconstruction. This does not certify the paper for publication.
