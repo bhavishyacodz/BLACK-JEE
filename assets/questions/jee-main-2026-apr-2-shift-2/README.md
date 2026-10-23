@@ -85,3 +85,13 @@ Independently checked the draft calculations and keyed responses for Physics Q26
 - **Publication decision:** no additional questions were published by this audit. Continue holding Q41 and any item whose exact source wording/diagram is not yet verified.
 
 Next: compare the remaining Physics/Chemistry/Mathematics drafts line-by-line against the official paper and reconcile the Q41 source/key contradiction before a broader publication.
+
+
+## Verification log — Chunk 21: Chemistry Q51–Q75 calculation/concept audit (2026-10-23)
+
+Checked the current draft solutions and keyed answers for Chemistry Q51–Q75 against the written chemistry/math in the draft. The checked calculations and conceptual classifications agree with the stored answers in this pass, including combustion stoichiometry (Q51, Q62), acid equilibrium (Q52), molecular shape (Q53), first-law sign convention (Q54), osmotic pressure (Q55), titration at half-equivalence (Q56), kinetics order (Q57), oxide classification (Q58), ionisation-enthalpy trend (Q59), coordination isomerism (Q61), organic reaction logic (Q64–Q68), photoelectric effect (Q71), reaction-pressure stoichiometry (Q72), electrochemical work (Q73), paramagnetism (Q74), and Carius analysis (Q75).
+
+- **Q57:** retained as an unpublished draft; the earlier unrelated kinetics graph is not linked to the question.
+- **Q63, Q66, Q67, Q68 and Q75:** the associated SVGs are present in the repository and their intended subject matter matches the question topics. This is a topic/structure check, not a pixel-by-pixel match to the official figures.
+- **Source-fidelity limitation:** this pass validates the logic of the draft as currently written. It does not establish that every option, compound name, diagram detail, or statement is transcribed verbatim from the official question paper.
+- **Publication decision:** no questions were published by this audit. Continue keeping the batch staged as drafts until the source transcription and official answer-key reconciliation are complete; Q41 remains a known wording/key conflict.
