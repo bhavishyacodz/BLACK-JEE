@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BLACK-JEE · Draft Diagram Asset QA</title>
+<title>BLACK-JEE · April 4 Shift 1 Visual Asset QA</title>
 <style>
 :root{color-scheme:dark;--bg:#080a0f;--panel:#121722;--line:#283244;--muted:#a6b0c2;--text:#f4f6fb;--ok:#78e0ac;--warn:#ffd17a}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
@@ -14,22 +14,31 @@ main{padding:18px 0 36px}.grid{display:grid;grid-template-columns:repeat(auto-fi
 </style>
 </head>
 <body>
-<header><div class="wrap"><h1>BLACK-JEE · Draft Diagram Asset QA</h1><p>Responsive preview of legacy draft SVG assets for the April 2, 2026 Shift 2 work. Q labels are candidate IDs; treat them as NTA displayed question numbers only after individual verification. This page checks file loading only, not source-paper fidelity.</p><div class="summary"><span class="pill" id="total">10 assets</span><span class="pill" id="loaded">Checking…</span><span class="pill">Tap “Open SVG” to inspect a diagram separately</span></div></div></header>
+<header><div class="wrap"><h1>BLACK-JEE · Draft Diagram Asset QA</h1><p>Preview of the retained image assets for JEE Main 2026, 4 April Shift 1. This page checks file loading only; it does not prove that an image matches the official source paper.</p><div class="summary"><span class="pill" id="total">10 assets</span><span class="pill" id="loaded">Checking…</span><span class="pill">Tap “Open SVG” to inspect a diagram separately</span></div></div></header>
 <main class="wrap"><section class="grid" id="grid" aria-live="polite"></section></main>
 <footer class="footer"><div class="wrap">BLACK-JEE · Draft Diagram Asset QA · Match every asset against the official NTA paper before attaching it to a source question or publishing.</div></footer>
 <script>
-const base="assets/questions/jee-main-2026-apr-2-shift-2/";
+const base="assets/questions/jee-main-2026-apr-4-shift-1/images/";
 const items=[
- ["Q28","Atwood machine · 2 kg and 1 kg blocks","q28.svg"],
- ["Q30","Semiconductor electronics · logic circuit","q30.svg"],
- ["Q41","Optics · prism / painted face","q41.svg"],
- ["Q42","Alternating current · LCR circuit and switches","q42.svg"],
- ["Q50","Rotational mechanics · rod and sphere","q50.svg"],
- ["Q63","Organic chemistry · resonance structures","q63.svg"],
- ["Q66","Organic chemistry · product structures","q66.svg"],
- ["Q67","Organic chemistry · enol ether substrate","q67.svg"],
- ["Q68","Organic chemistry · reaction sequence","q68.svg"],
- ["Q75","Organic chemistry · reaction / analysis sequence","q75.svg"]
+ ["Physics Q32","Photoelectric-effect graph","BJ-JM-20260404-S1-PHY-032-diagram-1.png"],
+ ["Physics Q38","Logic-circuit diagram","BJ-JM-20260404-S1-PHY-038-diagram-1.png"],
+ ["Physics Q39","Mirror and rod diagram","BJ-JM-20260404-S1-PHY-039-diagram-1.png"],
+ ["Physics Q42","Circuit diagram","BJ-JM-20260404-S1-PHY-042-diagram-1.png"],
+ ["Physics Q43","Circuit diagram","BJ-JM-20260404-S1-PHY-043-diagram-1.png"],
+ ["Physics Q45","Brewster-angle / polarization diagram","BJ-JM-20260404-S1-PHY-045-diagram-1.png"],
+ ["Chemistry Q62","Matching-question visual","BJ-JM-20260404-S1-CHE-062-matching-1.png"],
+ ["Chemistry Q64","Reaction visual","BJ-JM-20260404-S1-CHE-064-reaction-1.png"],
+ ["Chemistry Q64","Option A visual","BJ-JM-20260404-S1-CHE-064-option_a-2.png"],
+ ["Chemistry Q64","Option B visual","BJ-JM-20260404-S1-CHE-064-option_b-3.png"],
+ ["Chemistry Q64","Option C visual","BJ-JM-20260404-S1-CHE-064-option_c-4.png"],
+ ["Chemistry Q64","Option D visual","BJ-JM-20260404-S1-CHE-064-option_d-5.png"],
+ ["Chemistry Q65","Matching-question visual","BJ-JM-20260404-S1-CHE-065-matching-1.png"],
+ ["Chemistry Q66","Reaction visual","BJ-JM-20260404-S1-CHE-066-reaction-1.png"],
+ ["Chemistry Q67","Reaction visual","BJ-JM-20260404-S1-CHE-067-reaction-1.png"],
+ ["Chemistry Q68","Reaction visual","BJ-JM-20260404-S1-CHE-068-reaction-1.png"],
+ ["Chemistry Q69","Matching-question visual","BJ-JM-20260404-S1-CHE-069-matching-1.png"],
+ ["Chemistry Q70","Reaction visual","BJ-JM-20260404-S1-CHE-070-reaction-1.png"],
+ ["Chemistry Q72","Reaction visual","BJ-JM-20260404-S1-CHE-072-reaction-1.png"]
 ];
 document.getElementById("total").textContent=items.length+" assets";
 const grid=document.getElementById("grid"),counts={ok:0,bad:0};
@@ -46,7 +55,7 @@ items.forEach(([id,topic,file])=>{
  img.addEventListener("error",()=>{if(status.dataset.done)return;status.dataset.done="1";counts.bad++;status.className="status bad";status.textContent="Load failed";preview.innerHTML="<span style=\"color:#6b7280;text-align:center\">Could not load asset<br>"+file+"</span>";update();});
  preview.append(img);
  const links=document.createElement("div");links.className="details";
- const open=document.createElement("a");open.href=url;open.target="_blank";open.rel="noopener";open.textContent="Open SVG ↗";
+ const open=document.createElement("a");open.href=url;open.target="_blank";open.rel="noopener";open.textContent="Open image ↗";
  const source=document.createElement("a");source.href="https://github.com/bhavishyacodz/BLACK-JEE/blob/main/"+url;source.target="_blank";source.rel="noopener";source.textContent="View source ↗";
  links.append(open,source);
  const note=document.createElement("div");note.className="note";note.textContent="Load status only — compare the diagram with a trusted source before publishing.";
