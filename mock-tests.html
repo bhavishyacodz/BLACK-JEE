@@ -65,7 +65,7 @@ const SUBJECTS=["Physics","Chemistry","Mathematics"];
 let db=null,bank=[],questions=[],states={},activeSubject="Physics",activeSection="A",currentId=null,deadline=0,timerId=null,startAt=0,spent={},finished=false,reviewRows=[];
 const ATTEMPT_KEY="blackjee_mock_attempt_v1";let restoredAttempt=null;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function prettyQuestionText(value){const supers={"0":"⁰","1":"¹","2":"²","3":"³","4":"⁴","5":"⁵","6":"⁶","7":"⁷","8":"⁸","9":"⁹","-":"⁻","+":"⁺","n":"ⁿ","i":"ⁱ"};return String(value??"").replace(/\^([+-]?\d+|[+-]?[ni])/g,(_,power)=>Array.from(power).map(ch=>supers[ch]||ch).join("")).replace(/<=/g,"≤").replace(/>=/g,"≥").replace(/!=/g,"≠").replace(/->/g,"→");}
+function prettyQuestionText(value){const supers={"0":"⁰","1":"¹","2":"²","3":"³","4":"⁴","5":"⁵","6":"⁶","7":"⁷","8":"⁸","9":"⁹","-":"⁻","+":"⁺","n":"ⁿ","i":"ⁱ"};const normalize=part=>part.replace(/\^([+-]?\d+|[+-]?[ni])/g,(_,power)=>Array.from(power).map(ch=>supers[ch]||ch).join("")).replace(/<=/g,"≤").replace(/>=/g,"≥").replace(/!=/g,"≠").replace(/->/g,"→");return String(value??"").split(/(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$[^$\n]*\$)/g).map(part=>/^(?:\$\$|\\\[|\\\(|\$)/.test(part)?part:normalize(part)).join("");}
 
 const isMCQ=q=>String(q.question_type||"").toLowerCase()==="mcq";
 const typeSection=q=>isMCQ(q)?"A":"B";
