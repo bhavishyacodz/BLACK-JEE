@@ -37,8 +37,35 @@ body{background:#15181f}
  .mobile-nav a span{font-size:21px}
 }
 
+
+/* Consistent BLACK-JEE PYQ navigation and visual system */
+:root{--bg:#090909;--panel:#111;--panel2:#171717;--line:#292929;--muted:#999;--white:#f4f4f4;--red:#ed2637;--green:#79d9a5;--amber:#f4c46a}
+body{background:radial-gradient(ellipse at 88% 0%,rgba(237,38,55,.09),transparent 34%),var(--bg)}
+.top{background:rgba(9,9,9,.95);border-bottom-color:#292929}
+.brand span,.eyebrow,.tiny{color:var(--red)}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff}
+.launch-tile{background:linear-gradient(135deg,#1a1012,#111 72%);border-color:#3b2529}
+.launch-icon{background:#ed2637;color:#fff}
+.launch-arrow{color:var(--red)}
+.quick-route a>span{background:#281116;color:#ff8992}
+.qcard,.shift-card{background:#101010;border-color:#2d2d2d}
+.tabs button.active{background:#281014;border-color:#6b2029;color:#fff}
+.option:has(input:checked){border-color:var(--red);background:#211013}
+.option input{accent-color:var(--red)}
+.mobile-nav{background:rgba(10,10,10,.98);border-top-color:#303030}
+.mobile-nav a.active{background:#271014;color:#fff}
+.mobile-nav a.active span{color:var(--red)}
+.pyq-subnav{display:flex;gap:8px;overflow-x:auto;padding:12px 0 18px;scrollbar-width:none}
+.pyq-subnav::-webkit-scrollbar{display:none}
+.pyq-subnav a{flex:0 0 auto;display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border:1px solid #292929;border-radius:999px;background:#101010;color:#c5c5c5;text-decoration:none;font-size:.82rem;font-weight:750;white-space:nowrap}
+.pyq-subnav a[aria-current="page"]{border-color:#6b2029;background:#281014;color:#fff}
+.pyq-subnav .route-dot{width:6px;height:6px;border-radius:50%;background:#666}
+.pyq-subnav a[aria-current="page"] .route-dot{background:var(--red);box-shadow:0 0 10px #ed263766}
+@media(max-width:720px){.wrap{width:calc(100% - 30px)}.top .nav{height:60px}.brand{font-size:.95rem;letter-spacing:0}.navlinks{display:none}.pyq-subnav{margin:0 -15px;padding:12px 15px 16px}.launch-tile{border-radius:14px}.mobile-nav{padding:7px 5px calc(7px + env(safe-area-inset-bottom))}}
+
 </style></head><body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html">BLACK <span>JEE</span> / PYQ</a><nav class="navlinks"><a href="index.html">Home</a><a href="prep.html">Prep Studio</a><a href="attempt.html">Challenge</a><a href="archive.html">Results</a><a href="profile.html">Profile</a></nav></div></header>
+<nav class="pyq-subnav wrap" aria-label="PYQ study modes"><a href="pyq.html" aria-current="page"><span class="route-dot"></span>All PYQs</a><a href="chapterwise.html"><span class="route-dot"></span>Chapter-wise</a><a href="mock-tests.html"><span class="route-dot"></span>Full Mock Tests</a><a href="prep.html"><span class="route-dot"></span>Prep Studio</a><a href="attempt.html"><span class="route-dot"></span>Daily Challenge</a></nav>
 <main class="wrap"><section class="hero" id="legacyHero"><div class="eyebrow">PRACTICE BUILDS PRECISION</div><h1>THE PYQ <span>ZONE.</span></h1><p class="lead">JEE Main previous-year questions, organized subject-wise and chapter-wise. Pick a chapter, take a timed practice set, review your score, and come back as new questions are added every day.</p><div class="stats"><div class="stat"><strong id="totalCount">—</strong><small>Published questions</small></div><div class="stat"><strong id="chapterCount">—</strong><small>Chapters covered</small></div><div class="stat"><strong>Daily</strong><small>New uploads planned</small></div></div></section>
 <section class="pyq-launch wrap"><a class="launch-tile" href="chapterwise.html" target="_blank" rel="noopener"><span class="launch-icon">⌕</span><span class="launch-title">CHAPTER-WISE JEE MAIN PYQ</span><span class="launch-subtitle">Physics · Chemistry · Mathematics · Chapter folders</span><span class="launch-arrow">↗</span></a><a class="launch-tile" href="mock-tests.html" target="_blank" rel="noopener"><span class="launch-icon">▤</span><span class="launch-title">JEE PYQ MOCK TEST</span><span class="launch-subtitle">Year → shift → question paper · Timed test</span><span class="launch-arrow">↗</span></a></section>
 <section id="shiftPicker" class="panel hidden"><div class="row"><h2 class="section-title">Choose your JEE Main shift</h2><button class="btn" id="backToLaunch">← Back</button></div><div id="shiftList" class="shift-list"><div class="qcard muted">Loading available shifts…</div></div><div id="shiftNotice" class="notice"></div></section>
