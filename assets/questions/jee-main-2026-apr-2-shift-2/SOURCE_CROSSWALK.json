@@ -378,8 +378,8 @@
       "subject_question_number": 9,
       "section": "A",
       "draft_candidate_global_number": 52,
-      "status": "confirmed_mismatch",
-      "notes": "Source Chemistry Q9 is H₂S added to 0.1 M HCl and asks [HS⁻], with Ka1=8.3×10⁻⁸ and Ka2=10⁻¹³. Legacy Q52 instead uses a weak dibasic acid H₂A and Ka1=8.1×10⁻⁸; species and data differ.",
+      "status": "needs_exact_review",
+      "notes": "Legacy Q52 corrected to source species H₂S, source Ka₁=8.3×10⁻⁸ and Ka₂=1.0×10⁻¹³, and asks [HS⁻]. Calculated candidate 8.3×10⁻⁸ M. Exact source options and official final key remain unverified.",
       "verification_evidence": "",
       "publishable": false
     },
