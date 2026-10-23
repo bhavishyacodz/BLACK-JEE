@@ -1,29 +1,23 @@
 # Source-Fidelity Audit — JEE Main 2 April 2026 Shift 2
 
-## Status: HOLD — all 75 source-to-draft matches require re-verification
+## Status: HOLD — 20/75 questions verified; 55 remain
 
-Use the original question-paper PDF for question wording, options, and diagrams. Use the official NTA final answer key for answer-key validation. Keep the source PDF's subject section order distinct from the answer-key challenge system's question-ID order.
+Official source documents:
+- [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
+- [NTA final answer key PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf)
 
-- [Official NTA JEE Main documents page](https://jeemain.nta.nic.in/documents/)
+## Correct source order
 
-## Source PDF order vs answer-key order
+The NTA question-paper PDF displays Mathematics Q1–25, Physics Q26–50, then Chemistry Q51–75. The legacy draft uses the same displayed global numbering blocks. Answer-key question IDs are a separate identifier system; do not infer source order from the numeric appearance of answer-key IDs.
 
-The question-paper PDF's sections are Physics, Chemistry, Mathematics, with each subject's own questions 1–25. The answer-key challenge system lists Paper 1 question IDs in Mathematics, Physics, Chemistry order. These are different numbering conventions and must not be conflated.
+## Verified Physics chunk
 
-The legacy draft JSON uses global blocks Mathematics 1–25, Physics 26–50, Chemistry 51–75. Those are legacy draft identifiers, not proof of source question numbers. The source crosswalk's paper_order represents the PDF's section order: Physics 1–25, Chemistry 26–50, Mathematics 51–75 (crosswalk positions; each source subject question remains locally numbered 1–25).
+Physics Q26–Q45 (subject-local Physics Q1–Q20) have been compared against the original paper for exact statement, values, options, and the official final answer-key option ID. The Q41 prism and Q42 LCR circuit diagrams were visually compared with the source. The verified rows remain audit-only; this does not authorize publication of the full shift.
 
-## Verification correction
+## Remaining work
 
-A previous update incorrectly marked Physics subject-local Q1–Q10 as exact matches by assuming the answer-key ordering was the question-paper order. Those ten statuses have been revoked and reset to review-needed. No claim of exact wording/options/diagram/key verification should be inferred from those prior notes.
-
-## Required checks for every source question
-
-1. Compare the exact statement, numerical values, units, and all options with the original source PDF.
-2. Verify the matching diagram, including labels, connectivity, values, orientation, and any omitted elements.
-3. Independently calculate numerical answers where applicable.
-4. Check the keyed option/answer against the official final answer key, keeping the NTA question-ID convention separate from the PDF's subject section order.
-5. Record evidence for each verified source-to-draft match; never mark a candidate exact from topic similarity alone.
+Physics Q46–Q50, Chemistry Q51–Q75, and Mathematics Q1–Q25 remain unverified for publication purposes (55 questions). Recheck exact wording, values, options, diagrams, and final-key evidence for every row. Independently recalculate answers where applicable.
 
 ## Release gate
 
-All 75 source mappings remain unverified for publication purposes. Keep the shift unpublished until every question has explicit source and answer-key evidence, all diagrams are checked, and the end-to-end student mock is tested.
+Keep the shift unpublished until all 75 source mappings have explicit evidence, all diagrams are checked, the answer key is reconciled, and the student mock passes end-to-end rendering and scoring tests.
