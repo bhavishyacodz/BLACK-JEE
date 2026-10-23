@@ -526,20 +526,20 @@
     "subject": "Physics",
     "chapter": "Laws of Motion",
     "source_question_number": 27,
-    "question_text": "A 0.5 kg mass is in contact against the inner wall of a cylindrical drum of radius 4 m rotating about its vertical axis. The minimum rotational speed of the drum to enable the mass to remain stuck to the wall (without falling) is 5 rad/s. Find the coefficient of friction between the drum's inner wall and the mass. (Take g = 10 m/s².)",
+    "question_text": "A hollow cylinder of radius 1 m is rotating with angular velocity ω = 10 rad/s. Find the minimum coefficient of friction μ so that a block remains at rest with respect to the cylinder.",
     "question_type": "MCQ",
     "options": [
       "0.1",
-      "0.5",
-      "0.7",
-      "0.3"
+      "0.2",
+      "0.15",
+      "0.25"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
     "correct_answer": "A",
-    "solution": "The normal force is N = mω²r = 0.5 × 5² × 4 = 50 N. To prevent falling, μN ≥ mg, so μ ≥ 5/50 = 0.1. Candidate answer A; official final-key confirmation remains pending."
+    "solution": "The normal force supplied by the rotating cylinder is N = mω²r. For the block not to slide down, friction must balance its weight: μN ≥ mg. Thus μ_min = g/(ω²r) = 10/(10²×1) = 0.1, option A. Official final-key confirmation remains pending."
   },
   {
     "year": 2026,
@@ -631,20 +631,20 @@
     "subject": "Physics",
     "chapter": "Units and Measurements",
     "source_question_number": 32,
-    "question_text": "In a screw gauge, the zero of the main scale reference line coincides with the fifth division of the circular scale when two studs are in contact. There are 100 divisions in the circular scale and the pitch is 0.1 mm. When the diameter of a sphere is measured, the reading of the main scale is 5 mm and the 50th division of the circular scale coincides with the reference line of the main scale. The diameter of the sphere is ____ mm.",
+    "question_text": "A screw gauge has a pitch of 0.1 mm and 100 divisions on its circular scale. When both jaws touch, the fifth division of the circular scale coincides with zero. When a sphere is placed between the jaws, the linear-scale reading is 5 mm and the 50th circular-scale division coincides with zero of the main scale. Find the diameter of the sphere.",
     "question_type": "MCQ",
     "options": [
-      "5.045",
-      "5.055",
-      "5.450",
-      "5.550"
+      "5.55 mm",
+      "5.45 mm",
+      "5.056 mm",
+      "5.045 mm"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "A",
-    "solution": "Least count = 0.1/100 = 0.001 mm. Observed reading = 5 + 50(0.001) = 5.050 mm. The positive zero error is 5(0.001)=0.005 mm, so corrected diameter = 5.045 mm. Option A."
+    "correct_answer": "D",
+    "solution": "Least count = 0.1/100 = 0.001 mm. The observed reading is 5 + 50(0.001) = 5.050 mm. The fifth division gives a zero error of 0.005 mm; applying the corresponding correction gives 5.045 mm, option D. The sign convention should be checked against the source figure before publication; official final-key confirmation remains pending."
   },
   {
     "year": 2026,
@@ -694,20 +694,20 @@
     "subject": "Physics",
     "chapter": "Properties of Solids and Liquids",
     "source_question_number": 35,
-    "question_text": "If an air bubble of diameter 2 mm rises steadily through a liquid of density 2000 kg/m³ at a rate of 0.5 cm/s, find the coefficient of viscosity of the liquid in poise. (Take g = 10 m/s².)",
+    "question_text": "An air bubble of radius 1 mm rises with constant speed 0.5 cm/s in a liquid of density 2000 kg/m³. Find the coefficient of viscosity η in poise.",
     "question_type": "MCQ",
     "options": [
-      "0.88",
-      "8.8",
-      "88.8",
-      "0.088"
+      "70/9 poise",
+      "20 poise",
+      "80/9 poise",
+      "50 poise"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "B",
-    "solution": "Using Stokes' law for a small rising bubble with negligible bubble density, η ≈ 2r²ρg/(9v). With r = 1×10⁻³ m, ρ = 2000 kg/m³, g = 10 m/s² and v = 5×10⁻³ m/s, η ≈ 0.889 Pa·s = 8.89 poise. Candidate answer B (8.8); verify the approximation and official key before publication."
+    "correct_answer": "C",
+    "solution": "Using Stokes' law for a small rising bubble and neglecting the bubble's density, η = 2r²ρg/(9v). With r = 1×10⁻³ m, ρ = 2000 kg/m³, g = 10 m/s² and v = 5×10⁻³ m/s, η = 8/9 Pa·s = 80/9 poise, option C. Official final-key confirmation remains pending."
   },
   {
     "year": 2026,
