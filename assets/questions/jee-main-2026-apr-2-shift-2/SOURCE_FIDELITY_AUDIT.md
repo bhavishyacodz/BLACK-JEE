@@ -176,3 +176,17 @@ Added `source-to-draft-crosswalk.json`, containing 75 source slots in source ord
 ## Latest automation observation
 
 GitHub Actions runs were still queued during the latest status check, so the newest crosswalk commit has not yet received a confirmed audit result. The last completed structural audit failed on the expected subject-number ranges. Do not describe the current branch as passing CI until a completed run confirms it.
+
+
+## Machine-readable crosswalk and stronger CI checks
+
+Added [`SOURCE_CROSSWALK.json`](./SOURCE_CROSSWALK.json), with 75 source-position rows. It records the expected source order, subject-local question number, Section A/B, a draft candidate when one was identified, and the reason it remains unverified.
+
+Current ledger counts:
+- Candidate links requiring exact review: 65
+- No draft candidate confirmed: 10
+- Fully verified rows: 0
+
+These are candidate links only; the ledger deliberately does not mark any record as source-verified.
+
+The batch audit now checks the crosswalk's 1–75 order, expected subject sequence, subject-local numbering, Section A/B placement, and whether each draft candidate exists under the same subject. Any row marked `verified` must include verification evidence. The audit emits a source-fidelity warning while any row remains unverified. This makes the reconciliation queue machine-readable without allowing a topic-level similarity to masquerade as a verified match.
