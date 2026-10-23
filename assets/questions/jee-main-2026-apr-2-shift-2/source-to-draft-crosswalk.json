@@ -1300,41 +1300,9 @@
         "subject_question_number": 16,
         "paper_order": 66
       },
-      "draft_candidate": null,
-      "status": "no_candidate_confirmed",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source asks for increasing CFSE order of three cobalt complexes"
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 17,
-        "paper_order": 67
-      },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 70
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [],
-      "note": "Confirmed mismatch against NTA source: Chemistry Q67 (global source Q67; question ID 691121217) has the source choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy draft global Q70 instead uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺ and a different question formulation. Do not mark verified; replace the draft using exact source prompt/options and official final key."
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 18,
-        "paper_order": 68
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 69
+        "legacy_global_question_number": 66
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -1344,50 +1312,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "amino-acid/hormone identification topic matches; verify exact codes and options"
+      "note": "Draft global Q66 contains the organic-compound/KOH-under-reflux item shown in a secondary transcription, but the previous CFSE note was a wrong mapping. Candidate is reset to global Q66. Compare exact wording, structure/options, and final NTA key before verification."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 19,
-        "paper_order": 69
-      },
-      "draft_candidate": null,
-      "status": "source_diagram_unresolved",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source product-identification item depends on the organic structure; no exact candidate confirmed"
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 20,
-        "paper_order": 70
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 75
-      },
-      "status": "source_diagram_unresolved",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source asks AgBr mass from a Carius-method sample; no exact draft match confirmed"
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 21,
-        "paper_order": 71
+        "subject_question_number": 17,
+        "paper_order": 67
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1401,33 +1332,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "product-X/product-Y statement question appears related; verify structures and all statements"
+      "note": "Draft global Q67 contains the mild-acid hydrolysis item shown in a secondary transcription. The previous mapping to Q70 was incorrect. Candidate reset to global Q67; directly compare the source structure diagram and all wording/options against NTA before verification."
     },
     {
       "source": {
         "subject": "Chemistry",
-        "subject_question_number": 22,
-        "paper_order": 72
-      },
-      "draft_candidate": {
-        "subject": "Chemistry",
-        "legacy_global_question_number": 65
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "alkyl-halide statement topic matches; exact statements/options need comparison"
-    },
-    {
-      "source": {
-        "subject": "Chemistry",
-        "subject_question_number": 23,
-        "paper_order": 73
+        "subject_question_number": 18,
+        "paper_order": 68
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1441,7 +1352,107 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "reaction-sequence identification topic appears related; verify starting structure, reagents and labels"
+      "note": "Draft global Q68 contains the 1-ethyl-4-nitrobenzene reaction-sequence item shown in a secondary transcription. The previous mapping to Q69 was incorrect. Candidate reset to global Q68; verify the source structures, reaction labels, options and final key against NTA."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 19,
+        "paper_order": 69
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 69
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Draft global Q69 contains the amino-acid/thyroxine identification item shown in a secondary transcription. The previous mapping was incorrect. Candidate reset to global Q69; verify exact wording, code labels, options and final key against NTA."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 20,
+        "paper_order": 70
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 70
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Draft global Q70 contains the borax-bead/ionisation-enthalpy item shown in a secondary transcription. The previous mismatch note confused this item with source Q67. Candidate reset to global Q70; verify exact prompt, ion order, options and final NTA key before approval."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 21,
+        "paper_order": 71
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 71
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Draft global Q71 contains the sodium photoelectric-effect numerical item shown in a secondary transcription. Candidate reset to global Q71; independently check constants, requested units, answer and exact source wording against NTA."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 22,
+        "paper_order": 72
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 72
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Draft global Q72 contains the gas-phase kinetics/total-pressure numerical item shown in a secondary transcription. Candidate reset to global Q72; independently check the stoichiometry, pressures, requested quantity and final answer against NTA."
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 23,
+        "paper_order": 73
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 73
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Draft global Q73 contains the methanol fuel-cell/volume-change numerical item shown in a secondary transcription. Candidate reset to global Q73; independently check half-cell equations, potentials, efficiency, units and answer against NTA."
     },
     {
       "source": {
@@ -1451,9 +1462,9 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 63
+        "legacy_global_question_number": 74
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1461,7 +1472,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source statements describe +R effects on a carbocation; draft's second statement describes a different effect"
+      "note": "Draft global Q74 contains the paramagnetic-ion count numerical item shown in a secondary transcription. The previous mapping to Q63 was incorrect. Candidate reset to global Q74; independently verify the ion list, atomic numbers and final key against NTA."
     },
     {
       "source": {
@@ -1469,7 +1480,10 @@
         "subject_question_number": 25,
         "paper_order": 75
       },
-      "draft_candidate": null,
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 75
+      },
       "status": "source_diagram_unresolved",
       "publishable": false,
       "verification": [
@@ -1478,7 +1492,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source structure-dependent hydrocarbon item lacks a confirmed exact candidate"
+      "note": "Draft global Q75 contains the p-nitrotoluene reaction-sequence/Carius-analysis numerical item shown in a secondary transcription. The previous mapping to Q70 was incorrect. Candidate reset to global Q75; directly inspect the source reaction structure/labels and verify the calculation and final NTA key before approval."
     }
   ],
   "source_pdf": "https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf",
