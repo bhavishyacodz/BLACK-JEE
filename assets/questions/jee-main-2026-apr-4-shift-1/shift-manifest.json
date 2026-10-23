@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "math_q1_q15_solution_syntax_normalized_render_pending",
+  "workflow_status": "solutions_batch_2_added_math_q16_q25_physics_q1_q5_render_and_source_review_pending",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "Solutions batch 1: Mathematics questions 1–15 have answer keys and independently checked derivations in staging. Browser MathJax/mobile rendering remains unchecked. Questions remain unpublished; no Supabase import was performed. Awaiting solutions for Mathematics Q16–25, Physics Q26–50, and Chemistry Q51–75.",
+  "important_note": "Solutions batch 2 added for Mathematics Q16–25 and Physics Q26–30 (Physics subject-local slots 1–5). Correct option is stored separately in correct_option for MCQs; correct_answer stores the answer value. MAT-019 solution corrected to match the supplied question's beta*sin(beta/2) expression, but its source statement still needs confirmation. MAT-022 remains needs_review. All items remain unpublished; answer/solution verification and browser MathJax/mobile rendering are pending. No Supabase import was performed.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -38,8 +38,8 @@
         "5\\times10^{-2}",
         "5\\times10^{-3}"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "5\\times10^{-3}",
+      "solution": "Pitch \\(=\\frac{2.5\\text{ mm}}{5}=0.5\\text{ mm}\\). The least count is pitch divided by the 100 circular-scale divisions:\n\\(\\text{LC}=\\frac{0.5\\text{ mm}}{100}=0.005\\text{ mm}=5\\times10^{-3}\\text{ mm}\\).\nCorrect option: D.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -52,20 +52,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-026",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 9,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 26,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "D",
+      "review_notes": [
+        "Option D maps to the supplied value; source option text contains an OCR artifact noted in the batch."
+      ]
     },
     {
       "slot_id": "physics-02",
@@ -80,8 +85,8 @@
         "6%",
         "4%"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "3%",
+      "solution": "The bulk modulus is \\(B=\\frac{\\Delta P}{|\\Delta V|/V}\\), so the magnitude of the fractional volume decrease is\n\\(\\frac{|\\Delta V|}{V}=\\frac{\\Delta P}{B}=\\frac{6.3\\times10^7}{2.1\\times10^9}=3\\times10^{-2}\\).\nAs a percentage, this is \\(3\\%\\). Correct option: B.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -94,20 +99,23 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-027",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 9,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 27,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": []
     },
     {
       "slot_id": "physics-03",
@@ -122,8 +130,8 @@
         "5/9",
         "4/9"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "\\frac59",
+      "solution": "On the smooth \\(45^\\circ\\) incline, \\(a_1=g/\\sqrt2\\). On the rough incline, \\(a_2=\\frac g{\\sqrt2}(1-\\mu_k)\\).\n\nFor a block starting from rest and sliding the same distance, \\(t=\\sqrt{2S/a}\\). Given \\(t_2=\\frac32t_1\\), squaring yields \\(a_1=\\frac94a_2\\). Hence\n\\(1=\\frac94(1-\\mu_k)\\), so \\(\\mu_k=1-\\frac49=\\frac59\\).\nCorrect option: C.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -136,20 +144,23 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-028",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 10,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 28,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": []
     },
     {
       "slot_id": "physics-04",
@@ -164,8 +175,8 @@
         "2.2",
         "4.3"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2.2",
+      "solution": "The reactants' total binding energy is\n\\(2(3\\times5.6)+(4\\times7.4)=33.6+29.6=63.2\\text{ MeV}\\).\nThe product's total binding energy is \\(10\\times6.1=61.0\\text{ MeV}\\).\n\nThus \\(Q=BE_{\\text{final}}-BE_{\\text{initial}}=61.0-63.2=-2.2\\text{ MeV}\\). The energy change has magnitude \\(|\\Delta Mc^2|=2.2\\text{ MeV}\\), so the requested value is \\(2.2\\), option C.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -178,20 +189,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-029",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 10,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 29,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": [
+        "The answer is the positive magnitude requested by ΔMc²; confirm the exact sign convention used in the source wording."
+      ]
     },
     {
       "slot_id": "physics-05",
@@ -206,8 +222,8 @@
         "140",
         "210"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "70",
+      "solution": "The smaller sphere has mass \\(M/8\\). Since its material density is unchanged, \\((r/R)^3=1/8\\), so \\(r=R/2\\). Its moment of inertia is\n\\(I_1=\\frac25\\frac M8\\left(\\frac R2\\right)^2=\\frac{MR^2}{80}\\).\n\nThe disc has mass \\(7M/8\\) and radius \\(2R\\). About a diameter,\n\\(I_2=\\frac14\\frac{7M}{8}(2R)^2=\\frac{7MR^2}{8}\\).\n\nTherefore \\(\\frac{I_2}{I_1}=\\frac{7/8}{1/80}=70\\). Correct option: B.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -220,22 +236,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-030",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 10,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 30,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Question wording matches the official source. Answer and solution remain pending; review the mass/radius relationship carefully when solving."
-      ]
+      ],
+      "correct_option": "B",
+      "review_notes": []
     },
     {
       "slot_id": "physics-06",
@@ -2783,8 +2802,8 @@
         "1",
         "2"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "1",
+      "solution": "Let \\(y=y_1+y_2\\), where\n\\(y_1=\\tan^{-1}\\left(\\frac{3\\cos x-4\\sin x}{4\\cos x+3\\sin x}\\right)\\) and\n\\(y_2=2\\tan^{-1}\\left(\\frac{x}{1+\\sqrt{1-x^2}}\\right)\\).\n\nFor \\(y_1\\), set \\(\\tan\\alpha=\\frac34\\). The fraction becomes \\(\\tan(\\alpha-x)\\), so locally on each interval where the principal arctangent branch is continuous, \\(\\frac{dy_1}{dx}=-1\\).\n\nFor \\(y_2\\), use \\(x=\\sin\\theta\\), with \\(\\theta=\\sin^{-1}x\\). Since\n\\(\\frac{\\sin\\theta}{1+\\cos\\theta}=\\tan\\frac{\\theta}{2}\\), we get \\(y_2=\\theta=\\sin^{-1}x\\), and hence \\(\\frac{dy_2}{dx}=\\frac{1}{\\sqrt{1-x^2}}\\).\n\nAt \\(x=\\frac{\\sqrt3}{2}\\), the derivative is\n\\(\\frac{dy}{dx}=-1+\\frac{1}{\\sqrt{1-\\frac34}}=-1+2=1\\).\nTherefore the correct option is C.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2797,20 +2816,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-016",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 6,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 16,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": [
+        "Supplied derivation assumes the principal-arctangent branch is locally continuous at the evaluation point; verify the original function's denominator/domain from the official paper."
+      ]
     },
     {
       "slot_id": "mathematics-17",
@@ -2825,8 +2849,8 @@
         "56",
         "66"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "56",
+      "solution": "Let \\(f\\) have degree \\(n\\). Since \\(f=f'f''\\), degree comparison gives \\(n=(n-1)+(n-2)\\), so \\(n=3\\). Write \\(f(x)=ax^3+bx^2+cx+d\\). From \\(f(0)=0\\), \\(d=0\\).\n\nThen \\(f'=3ax^2+2bx+c\\) and \\(f''=6ax+2b\\). Comparing coefficients in\n\\(ax^3+bx^2+cx=(3ax^2+2bx+c)(6ax+2b)\\) gives \\(a=18a^2\\), \\(b=18ab\\), \\(c=4b^2+6ac\\), and \\(2bc=0\\). Since \\(a\\ne0\\), \\(a=\\frac1{18}\\). The remaining equations force \\(b=c=0\\), so \\(f(x)=\\frac{x^3}{18}\\).\n\nThus \\(f'(2)=\\frac23\\), \\(f''(2)=\\frac23\\), and\n\\(\\int_0^2 f(x)\\,dx=\\int_0^2\\frac{x^3}{18}\\,dx=\\frac29\\).\n\nTherefore\n\\(36\\left(f'(2)+f''(2)+\\int_0^2 f(x)\\,dx\\right)\n=36\\left(\\frac23+\\frac23+\\frac29\\right)=56\\).\nCorrect option: C.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2839,20 +2863,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-017",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 6,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 17,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": [
+        "Supplied calculation independently re-derived algebraically; official answer-key confirmation and rendered math checks remain pending."
+      ]
     },
     {
       "slot_id": "mathematics-18",
@@ -2867,8 +2896,8 @@
         "\\frac{\\pi^2}{8}-1",
         "4+\\frac{\\pi^2}{2}"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2+\\frac{\\pi^2}{4}",
+      "solution": "The region is symmetric about the \\(y\\)-axis, so calculate its area for \\(x\\ge0\\) and double it. For \\(0\\le x\\le\\frac{\\pi}{2}\\), the upper boundary is \\(y=x\\sin x\\); for \\(\\frac{\\pi}{2}\\le x\\le\\pi\\), it is \\(y=\\pi-x\\).\n\nThe half-area is\n\\(A_+=\\int_0^{\\pi/2}x\\sin x\\,dx+\\int_{\\pi/2}^{\\pi}(\\pi-x)\\,dx\\).\n\nIntegration by parts gives \\(\\int_0^{\\pi/2}x\\sin x\\,dx=1\\), and direct integration gives \\(\\int_{\\pi/2}^{\\pi}(\\pi-x)\\,dx=\\frac{\\pi^2}{8}\\).\n\nHence the total area is\n\\(A=2A_+=2\\left(1+\\frac{\\pi^2}{8}\\right)=2+\\frac{\\pi^2}{4}\\).\nCorrect option: B.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2881,26 +2910,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-018",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 6,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 18,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Solution calculation checked algebraically against the supplied statement; source answer-key and browser-render verification remain pending."
+      ]
     },
     {
       "slot_id": "mathematics-19",
       "subject": "Mathematics",
       "subject_question_number": 19,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "Let \\([\\,\\cdot\\,]\\) denote the greatest integer function. If \\(\\int_{-2}^{2}\\left(|\\sin x|+[x\\sin x]\\right)\\,dx=2(3-\\cos 2)+\\beta\\), then \\(\\beta\\sin\\left(\\frac{\\beta}{2}\\right)\\) equals:",
       "question_type": "MCQ",
       "options": [
@@ -2909,8 +2943,8 @@
         "4",
         "8"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2",
+      "solution": "Let \\(\\alpha\\in(0,2)\\) be the unique solution of \\(\\alpha\\sin\\alpha=1\\). The integrand is even, so\n\\(I=2\\int_0^2\\sin x\\,dx+2\\int_0^2\\lfloor x\\sin x\\rfloor\\,dx\\).\n\nBecause \\(\\sin x>0\\) on \\((0,2]\\), the first term is \\(2(1-\\cos2)\\). The function \\(x\\sin x\\) increases from \\(0\\) to a value greater than \\(1\\) on \\([0,2]\\), and it crosses \\(1\\) at \\(\\alpha\\). Thus \\(\\lfloor x\\sin x\\rfloor=0\\) on \\([0,\\alpha)\\) and \\(1\\) on \\([\\alpha,2]\\), giving the second term \\(2(2-\\alpha)\\).\n\nTherefore \\(I=2(3-\\cos2)-2\\alpha\\). Comparing with \\(I=2(3-\\cos2)+\\beta\\), we obtain \\(\\beta=-2\\alpha\\).\n\nThe requested expression is\n\\(\\beta\\sin(\\beta/2)=(-2\\alpha)\\sin(-\\alpha)=2\\alpha\\sin\\alpha=2\\).\nCorrect option: B.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2923,20 +2957,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-019",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 7,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 19,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Corrected a mismatch in the supplied draft: the question asks β sin(β/2), not 3 sin(β/2). Under the supplied question wording, the result is 2 (option B). Confirm the integrand/statement against the official paper before approval."
+      ]
     },
     {
       "slot_id": "mathematics-20",
@@ -2951,8 +2990,8 @@
         "\\sqrt3\\tan(\\frac{11\\sqrt3}{12})",
         "\\frac{\\sqrt3}{2}\\tan(\\frac{11\\sqrt3}{6})"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "\\sqrt3\\tan\\left(\\frac{11\\sqrt3}{12}\\right)",
+      "solution": "Separate variables:\n\\(\\int\\frac{dy}{y^2-y+1}=\\int(1+x+x^2)\\,dx\\).\n\nSince \\(y^2-y+1=(y-\\frac12)^2+\\frac34\\), integration gives\n\\(\\frac{2}{\\sqrt3}\\tan^{-1}\\left(\\frac{2y-1}{\\sqrt3}\\right)=\\frac{x^3}{3}+\\frac{x^2}{2}+x+C\\).\n\nUsing \\(y(0)=\\frac12\\) gives \\(C=0\\). At \\(x=1\\), the right side is \\(\\frac13+\\frac12+1=\\frac{11}{6}\\). Therefore\n\\(\\tan^{-1}\\left(\\frac{2y(1)-1}{\\sqrt3}\\right)=\\frac{11\\sqrt3}{12}\\).\n\nTaking tangent,\n\\(2y(1)-1=\\sqrt3\\tan\\left(\\frac{11\\sqrt3}{12}\\right)\\).\nCorrect option: C.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2965,20 +3004,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-020",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 7,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 20,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": [
+        "Algebraic derivation checked against supplied equation; official answer-key confirmation and rendered math checks remain pending."
+      ]
     },
     {
       "slot_id": "mathematics-21",
@@ -2988,8 +3032,8 @@
       "question_text": "A coin is tossed 8 times. If the probability that exactly 4 heads appear in the first six tosses and exactly 3 heads appear in the last five tosses is p, then 96p is equal to:",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "9",
+      "solution": "Let \\(k\\) be the number of heads among the overlapping tosses \\(T_4,T_5,T_6\\). The first six tosses must contain exactly four heads, and the last five exactly three heads. The number of valid sequences is\n\\(\\sum_{k=1}^{3}\\binom3k\\binom3{4-k}\\binom2{3-k}\\).\n\nFor \\(k=1,2,3\\), the terms are respectively \\(3\\), \\(18\\), and \\(3\\), for a total of \\(24\\) sequences. All \\(2^8=256\\) sequences are equally likely, so \\(p=\\frac{24}{256}=\\frac3{32}\\). Hence \\(96p=96\\cdot\\frac3{32}=9\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3002,20 +3046,24 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-021",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 7,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 21,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "review_notes": [
+        "Numerical-response item; no A/B/C/D option key applies."
+      ]
     },
     {
       "slot_id": "mathematics-22",
@@ -3025,8 +3073,8 @@
       "question_text": "Consider the parabola \\(P:y^2=4kx\\) and the ellipse \\(E:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\). Let the line segment joining the points of intersection of \\(P\\) and \\(E\\), be their latus rectums. If the eccentricity of \\(E\\) is \\(e\\), then \\(e^2+2\\sqrt2\\) is equal to:",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "3",
+      "solution": "For the parabola \\(y^2=4kx\\), its latus rectum lies on \\(x=k\\) and has endpoints \\((k,\\pm2k)\\). For an ellipse with semiaxes \\(a,b\\) and eccentricity \\(e\\), the corresponding latus rectum lies on \\(x=ae\\) and has endpoints \\((ae,\\pm b^2/a)\\).\n\nIf the segments coincide, then \\(k=ae\\) and \\(2k=b^2/a\\), so \\(b^2=2a^2e\\). Using \\(b^2=a^2(1-e^2)\\) gives \\(e^2+2e-1=0\\). Since \\(0<e<1\\), \\(e=\\sqrt2-1\\).\n\nThus \\(e^2+2\\sqrt2=(\\sqrt2-1)^2+2\\sqrt2=3\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3039,21 +3087,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-022",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 8,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 22,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "The wording has been checked against the official NTA PDF and preserved as printed. Its mathematical interpretation is unusual; keep in needs_review until a subject-matter reviewer confirms the intended meaning."
+      ],
+      "review_notes": [
+        "Kept in needs_review: the wording about the intersection segment being the latus rectums is ambiguous and this interpretation must be checked against the official source before approval."
       ]
     },
     {
@@ -3064,8 +3116,8 @@
       "question_text": "If \\(A=\\frac{\\sin3^\\circ}{\\cos9^\\circ}+\\frac{\\sin9^\\circ}{\\cos27^\\circ}+\\frac{\\sin27^\\circ}{\\cos81^\\circ}\\) and \\(B=\\tan81^\\circ-\\tan3^\\circ\\), then \\(\\frac BA\\) is equal to:",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2",
+      "solution": "Use\n\\(\\tan3x-\\tan x=\\frac{\\sin3x\\cos x-\\cos3x\\sin x}{\\cos3x\\cos x}=\\frac{\\sin2x}{\\cos3x\\cos x}=2\\frac{\\sin x}{\\cos3x}\\).\n\nTherefore\n\\(A=\\frac12(\\tan9^\\circ-\\tan3^\\circ)+\\frac12(\\tan27^\\circ-\\tan9^\\circ)+\\frac12(\\tan81^\\circ-\\tan27^\\circ)\\).\nThe sum telescopes to \\(A=\\frac12(\\tan81^\\circ-\\tan3^\\circ)=\\frac B2\\). Hence \\(\\frac BA=2\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3078,20 +3130,22 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-023",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 8,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 23,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "review_notes": []
     },
     {
       "slot_id": "mathematics-24",
@@ -3101,8 +3155,8 @@
       "question_text": "Let \\(\\vec a_k=(\\tan\\theta_k)\\hat i+\\hat j\\) and \\(\\vec b_k=\\hat i-(\\cot\\theta_k)\\hat j\\), where \\(\\theta_k=\\frac{2^{k-1}\\pi}{2^n+1}\\), for some \\(n\\in\\mathbb N,\\ n>5\\). Then the value of \\(\\frac{\\sum_{k=1}^{n}|\\vec a_k|^2}{\\sum_{k=1}^{n}|\\vec b_k|^2}\\) is:",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "3",
+      "solution": "Let \\(x=\\frac{\\pi}{2^n+1}\\), so \\(\\theta_k=2^{k-1}x\\). The identity\n\\(\\sec^2\\theta+\\csc^2\\theta=4\\csc^2(2\\theta)\\)\nimplies \\(\\sec^2\\theta=4\\csc^2(2\\theta)-\\csc^2\\theta\\).\n\nWriting \\(S_1=\\sum_{k=1}^n\\sec^2(2^{k-1}x)\\) and \\(S_2=\\sum_{k=1}^n\\csc^2(2^{k-1}x)\\), we obtain\n\\(S_1=4\\sum_{k=1}^n\\csc^2(2^kx)-S_2\\).\n\nSince \\((2^n+1)x=\\pi\\), \\(2^nx=\\pi-x\\), and \\(\\csc^2(2^nx)=\\csc^2x\\). Thus the sum \\(\\sum_{k=1}^n\\csc^2(2^kx)\\) is exactly \\(S_2\\) with its terms reordered. Consequently \\(S_1=4S_2-S_2=3S_2\\), and the requested ratio is \\(3\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3115,20 +3169,24 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-024",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 8,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 24,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "review_notes": [
+        "The supplied solution notes an OCR artifact in the question text; source wording should be confirmed before approval."
+      ]
     },
     {
       "slot_id": "mathematics-25",
@@ -3138,8 +3196,8 @@
       "question_text": "The number of points at which \\(f(x)=\\max\\{6x,\\,2+3x^2\\}+|x-1|\\cos|x^2-\\frac14|\\), \\(x\\in(-\\pi,\\pi)\\), is not differentiable, is:",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "3",
+      "solution": "For \\(g(x)=\\max\\{6x,2+3x^2\\}\\), the branches intersect when \\(6x=2+3x^2\\), giving \\(x=1\\pm\\frac1{\\sqrt3}\\). At both points, the branch derivatives differ, so \\(g\\) is not differentiable there.\n\nAlso,\n\\(|x-1|\\cos|x^2-\\frac14|=|x-1|\\cos(x^2-\\frac14)\\),\nbecause cosine is even. This term is not differentiable at \\(x=1\\), since its smooth factor there is \\(\\cos(3/4)\\ne0\\). At \\(x=1\\), \\(g(x)=6x\\) locally and is differentiable; at the two branch intersections, the absolute-value term is smooth. Thus no cancellation removes these three points.\n\nThe function is not differentiable at exactly three points.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -3152,20 +3210,24 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-025",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 9,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 25,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "review_notes": [
+        "Numerical-response item; no A/B/C/D option key applies."
+      ]
     }
   ],
   "important_notes": [
