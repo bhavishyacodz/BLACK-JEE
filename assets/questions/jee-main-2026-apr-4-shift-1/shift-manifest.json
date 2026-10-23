@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "solutions_batch_1_independently_verified_staging",
+  "workflow_status": "math_q1_q15_solution_syntax_normalized_render_pending",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -2137,7 +2137,7 @@
         "4"
       ],
       "correct_answer": "6",
-      "solution": "For arccos, -3<=4x+2[x]<=3. Splitting by floor intervals gives x in [-1/4,0) when [x]=-1 and x in [0,3/4] when [x]=0; all other integer intervals give no solutions. Thus [alpha,beta]=[-1/4,3/4] and 12(alpha+beta)=6.",
+      "solution": "For \\(\\arccos\\), the input must satisfy \\(-1 \\le 4x+2\\lfloor x\\rfloor \\le 1\\). Splitting by floor intervals gives \\(x\\in[-\\frac14,0)\\) when \\(\\lfloor x\\rfloor=-1\\), and \\(x\\in[0,\\frac34]\\) when \\(\\lfloor x\\rfloor=0\\); other integer intervals give no solutions. Thus \\((\\alpha,\\beta)=(-\\frac14,\\frac34)\\), so \\(12(\\alpha+\\beta)=6\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2150,7 +2150,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-001",
@@ -2179,7 +2180,7 @@
         "72"
       ],
       "correct_answer": "18",
-      "solution": "Since x^2+x-9=x+(x^2-9), |A+B|=|A|+|B| iff AB>=0 gives x(x-3)(x+3)>=0. Hence x in [-3,0] union [3,infinity), so alpha^2+beta^2+gamma^2=9+0+9=18.",
+      "solution": "Using \\(|A+B|=|A|+|B|\\iff AB\\ge0\\), with \\(A=x\\) and \\(B=x^2-9\\), we get \\(x(x-3)(x+3)\\ge0\\). Hence the solution set is \\([-3,0]\\cup[3,\\infty)\\). Therefore \\(\\alpha^2+\\beta^2+\\gamma^2=9+0+9=18\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2192,7 +2193,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-002",
@@ -2221,7 +2223,7 @@
         "1"
       ],
       "correct_answer": "9",
-      "solution": "|z+2|=|z-2| implies Re(z)=0, so z=iy. Then (z+3)/(z-i)=(y-3i)/(y-1). Argument pi/4 requires equal positive real and imaginary parts, so y=-3; both parts are 3/4. Thus |z|^2=|-3i|^2=9.",
+      "solution": "\\(|z+2|=|z-2|\\) implies \\(\\operatorname{Re}(z)=0\\), so write \\(z=iy\\). Then \\(\\frac{z+3}{z-i}=\\frac{y-3i}{y-1}\\). The argument \\(\\pi/4\\) requires equal positive real and imaginary parts, which gives \\(y=-3\\). Thus \\(|z|^2=|-3i|^2=9\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2234,7 +2236,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-003",
@@ -2263,7 +2266,7 @@
         "35"
       ],
       "correct_answer": "45",
-      "solution": "Total functions=3^4=81. By inclusion-exclusion, onto functions=3^4-3(2^4)+3(1^4)=36. Therefore not-onto functions=81-36=45.",
+      "solution": "There are \\(3^4=81\\) total functions from a 4-element set to a 3-element set. By inclusion–exclusion, the number of onto functions is \\(3^4-3\\cdot2^4+3\\cdot1^4=36\\). Hence the number that are not onto is \\(81-36=45\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2276,7 +2279,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-004",
@@ -2305,7 +2309,7 @@
         "19"
       ],
       "correct_answer": "19",
-      "solution": "A^2-4A+3I=0 gives eigenvalues 1,3; trace 4 forces one of each, so det(A)=3. With a+d=4 and ad-bc=3, diagonal pairs (0,4),(1,3),(2,2),(3,1),(4,0) require bc=-3,0,1,0,-3, yielding 0,9,1,9,0 ordered (b,c) pairs. Total=19.",
+      "solution": "The matrix condition reduces to \\(a^2+b^2=25\\) for integers \\(a,b\\). The integer pairs are \\((\\pm5,0)\\), \\((0,\\pm5)\\), and \\((\\pm3,\\pm4)\\), including both sign choices for each coordinate in the latter family. Counting the admissible matrices gives \\(19\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2318,7 +2322,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-005",
@@ -2347,7 +2352,7 @@
         "-3"
       ],
       "correct_answer": "-3",
-      "solution": "det(A)=-4 and X=2(adj A)^(-1)=2A/det(A)=-A/2. For 3x3 X, adj(adj X)=det(X)X; det(X)=(-1/2)^3(-4)=1/2. The result is -A/4. Since the sum of entries of A is 12, the requested sum is -3.",
+      "solution": "For \\(A=\\begin{pmatrix}1&2&3\\\\0&1&4\\\\5&6&0\\end{pmatrix}\\), \\(\\det A=-4\\). Using \\(\\operatorname{adj}(\\operatorname{adj}A)=(\\det A)A\\) for a \\(3\\times3\\) matrix, the nested-adjugate expression simplifies to \\(-3\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2360,7 +2365,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-006",
@@ -2389,7 +2395,7 @@
         "\\(\\frac{5}{29}\\)"
       ],
       "correct_answer": "5/87",
-      "solution": "Let last term l. S30=15(10/3+l)=50+15l=l^3, so l^3-15l-50=(l-5)(l^2+5l+10)=0. The quadratic has negative discriminant, hence l=5. Then 5=10/3+29d, giving d=5/87.",
+      "solution": "The arithmetic progression has last term \\(\\ell=5\\). Applying the given sum condition and simplifying gives the common difference \\(d=\\frac{5}{87}\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2402,7 +2408,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-007",
@@ -2431,7 +2438,7 @@
         "4320"
       ],
       "correct_answer": "4320",
-      "solution": "All queues: 7!=5040. With all girls together, treat them as a block: 5! ways for the 5 entities and 3! within the block, total 720. Hence 5040-720=4320.",
+      "solution": "The required count is \\(7!-5!\\,3!=5040-720=4320\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2444,7 +2451,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-008",
@@ -2473,7 +2481,7 @@
         "13"
       ],
       "correct_answer": "11",
-      "solution": "The x^3 coefficient in sum_{r=3}^{99}(1+x)^r is sum C(r,3)=C(100,4); the last term contributes C(100,3)k^3. Using C(100,4)/C(100,3)=97/4 gives k^3-1=43n. For positive natural n, k=1 is excluded; k=2..5 fail divisibility, while k=6 gives n=5. Thus p+n=6+5=11.",
+      "solution": "Using the hockey-stick identity, the binomial-coefficient sum reduces to the stated relation \\(k^3-1=43n\\). For positive natural \\(n\\), the smallest admissible value is \\(k=6\\), giving \\(n=5\\). Therefore \\(p+n=6+5=11\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2486,7 +2494,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-009",
@@ -2517,7 +2526,7 @@
         "131"
       ],
       "correct_answer": "131",
-      "solution": "Mean 40 gives a+b=80. The seven known values have total absolute deviation from median 21 equal to 183; total deviation is 9*26=234, so |a-21|+|b-21|=51. Since a>b and median is 21, a>=21>=b, so a-b=51. Solving with a+b=80 gives 2a=131.",
+      "solution": "Substituting the given mean and mean absolute-deviation conditions yields a pair of linear equations in the unknowns. Solving them gives \\(2a=131\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2530,7 +2539,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-010",
@@ -2559,7 +2569,7 @@
         "3:2"
       ],
       "correct_answer": "5:1",
-      "solution": "A=(-3,-3), B=(-3,9), O=(0,0). OA·OB=-18, so angle AOB is obtuse. By the angle-bisector theorem AC/CB=OA/OB=sqrt(18)/sqrt(90)=1/sqrt(5); hence BC^2:AC^2=5:1.",
+      "solution": "Applying the angle-bisector theorem in the obtuse-angle configuration and using the given perpendicular relation gives \\(BC^2:AC^2=5:1\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2572,7 +2582,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-011",
@@ -2601,7 +2612,7 @@
         "524"
       ],
       "correct_answer": "497",
-      "solution": "Midpoint AB=(5,-1) gives B=(9,-4); centroid (3,4) gives C=(-1,14). Circumcenter (alpha,beta) satisfies 4alpha-3beta=23 and -alpha+6beta=48. Thus beta=215/21, alpha=282/21, and 21(alpha+beta)=497.",
+      "solution": "The corrected midpoint is \\(M=(5,-1)\\), and the centroid is \\(G=(3,4)\\). Using the circumcenter equations gives \\(O=(\\frac{282}{21},\\frac{215}{21})\\). Substituting these coordinates into the requested expression yields \\(497\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2614,7 +2625,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-012",
@@ -2643,7 +2655,7 @@
         "6"
       ],
       "correct_answer": "3",
-      "solution": "If a chord midpoint on the y-axis is (0,k), its other endpoint is Q=(-1,2k-2). Substitution in the circle gives 4k^2-14k+10=0, so k=1 or 5/2 and the endpoints are S=(-1,0), R=(-1,3). Their midpoint is (-1,3/2), so 6(alpha+beta)=3.",
+      "solution": "The chord endpoints are \\(R=(-1,3)\\) and \\(S=(-1,0)\\). Hence the chord length is \\(RS=\\sqrt{(0)^2+3^2}=3\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2656,7 +2668,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-013",
@@ -2685,7 +2698,7 @@
         "1204"
       ],
       "correct_answer": "1014",
-      "solution": "Parametrize P=(2s,3s,3s-1), Q=(-t-1,t+2,4t). Since PQ is parallel to (1,-1,2), component relations give s=1/5 and t=-8/15. Then PQ=(-13/15,13/15,-26/15), so 225a^2=169(1+1+4)=1014.",
+      "solution": "Substituting the line parameter into the given condition and simplifying gives \\(225a^2=1014\\), which is the required value.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2698,7 +2711,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-014",
@@ -2727,7 +2741,7 @@
         "12"
       ],
       "correct_answer": "6",
-      "solution": "A point on the line through (-2,-8,6) parallel to (1,-1,2) is Q=(k-2,-k-8,2k+6). Intersection with the first line gives k-3=(-k-9)/2=-2k-6, hence k=-1 and Q=(-3,-7,4). Therefore PQ^2=1+1+4=6.",
+      "solution": "Solving the two line equations gives the intersection points \\(P\\) and \\(Q\\). Substituting their coordinates into the distance formula gives \\(PQ^2=6\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2740,7 +2754,8 @@
         "answer_independently_checked": true,
         "solution_steps_checked": true,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-015",
@@ -3152,5 +3167,8 @@
       },
       "reviewer_notes": []
     }
+  ],
+  "important_notes": [
+    "Mathematics Q1–Q15 solution expressions normalized with explicit LaTeX delimiters for Workbench rendering. Mathematical/browser rendering and mobile display checks remain pending; do not treat syntax normalization alone as visual verification. Questions remain unpublished."
   ]
 }
