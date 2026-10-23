@@ -743,45 +743,49 @@
       "subject": "Chemistry",
       "subject_question_number": 6,
       "section": "A",
-      "draft_candidate_global_number": 73,
-      "status": "candidate_needs_exact_review",
-      "notes": "electrochemistry candidate; half-reactions and efficiency need verification"
+      "draft_candidate_global_number": 56,
+      "status": "verified",
+      "notes": "Verified source Chemistry Q56 against NTA paper PDF p.21 and final answer key PDF p.2 (question ID 691121206, correct option ID 691121702 = B). Draft global Q56 matches acid concentration, volume, Ka/pKa, α≪1, pH checkpoints and option ordering.",
+      "verification_evidence": "Verified source Chemistry Q56 against NTA paper PDF p.21 and final answer key PDF p.2 (question ID 691121206, correct option ID 691121702 = B). Draft global Q56 matches acid concentration, volume, Ka/pKa, α≪1, pH checkpoints and option ordering."
     },
     {
       "paper_order": 57,
       "subject": "Chemistry",
       "subject_question_number": 7,
       "section": "A",
-      "draft_candidate_global_number": 54,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source work by gas 10 J and heat absorbed 2 J"
+      "draft_candidate_global_number": 57,
+      "status": "confirmed_mismatch",
+      "notes": "CONFIRMED MISMATCH: NTA Chemistry Q57 (paper PDF p.21; question ID 691121207) gives k=1×10⁻³ mol⁻¹ L s⁻¹ and five statements A–E with combinations. Draft global Q57 instead gives k=0.3 M⁻¹ s⁻¹ and rewrites the statements/options. Do not verify or publish this draft row until replaced with exact source wording/options and keyed to option ID 691121705."
     },
     {
       "paper_order": 58,
       "subject": "Chemistry",
       "subject_question_number": 8,
       "section": "A",
-      "draft_candidate_global_number": 57,
-      "status": "candidate_needs_exact_review",
-      "notes": "kinetics candidate; compare all statements/options"
+      "draft_candidate_global_number": 58,
+      "status": "verified",
+      "notes": "Verified source Chemistry Q58 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121208, correct option ID 691121711 = C). Draft global Q58 matches all four oxide sets and the key.",
+      "verification_evidence": "Verified source Chemistry Q58 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121208, correct option ID 691121711 = C). Draft global Q58 matches all four oxide sets and the key."
     },
     {
       "paper_order": 59,
       "subject": "Chemistry",
       "subject_question_number": 9,
       "section": "A",
-      "draft_candidate_global_number": 52,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source uses H2S/HS- and different Ka values"
+      "draft_candidate_global_number": 59,
+      "status": "verified",
+      "notes": "Verified source Chemistry Q59 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121209, correct option ID 691121714 = B). Draft global Q59 matches both statements and options; both statements are false, consistent with official key.",
+      "verification_evidence": "Verified source Chemistry Q59 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121209, correct option ID 691121714 = B). Draft global Q59 matches both statements and options; both statements are false, consistent with official key."
     },
     {
       "paper_order": 60,
       "subject": "Chemistry",
       "subject_question_number": 10,
       "section": "A",
-      "draft_candidate_global_number": 56,
-      "status": "candidate_needs_exact_review",
-      "notes": "titration candidate; preserve exact volumes/constants/log values"
+      "draft_candidate_global_number": 60,
+      "status": "verified",
+      "notes": "Verified source Chemistry Q60 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121210, correct option ID 691121717 = A). Draft global Q60 matches both statements, complex order and option ordering; official key is option A.",
+      "verification_evidence": "Verified source Chemistry Q60 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121210, correct option ID 691121717 = A). Draft global Q60 matches both statements, complex order and option ordering; official key is option A."
     },
     {
       "paper_order": 61,
