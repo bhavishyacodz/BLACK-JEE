@@ -14,45 +14,50 @@
       "subject": "Mathematics",
       "subject_question_number": 1,
       "section": "A",
-      "draft_candidate_global_number": 9,
-      "status": "candidate_needs_exact_review",
-      "notes": "mean/variance candidate"
+      "draft_candidate_global_number": 1,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q1 against NTA question paper PDF p.1 and final answer key PDF p.2 (question ID 691121151, correct option ID 691121514 = D). Draft global Q1 matches statement, values, all four options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q1 against NTA question paper PDF p.1 and final answer key PDF p.2 (question ID 691121151, correct option ID 691121514 = D). Draft global Q1 matches statement, values, all four options, and key."
     },
     {
       "paper_order": 2,
       "subject": "Mathematics",
       "subject_question_number": 2,
       "section": "A",
-      "draft_candidate_global_number": 18,
-      "status": "candidate_needs_exact_review",
-      "notes": "degree-five polynomial candidate"
+      "draft_candidate_global_number": 2,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q2 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121152, correct option ID 691121517 = C). Draft global Q2 matches circle definitions, containment/minimum-distance condition, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q2 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121152, correct option ID 691121517 = C). Draft global Q2 matches circle definitions, containment/minimum-distance condition, options, and key."
     },
     {
       "paper_order": 3,
       "subject": "Mathematics",
       "subject_question_number": 3,
       "section": "A",
-      "draft_candidate_global_number": 16,
-      "status": "candidate_needs_exact_review",
-      "notes": "vector candidate; vector components differ"
+      "draft_candidate_global_number": 3,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q3 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121153, correct option ID 691121520 = B). Draft global Q3 matches all three equations, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q3 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121153, correct option ID 691121520 = B). Draft global Q3 matches all three equations, options, and key."
     },
     {
       "paper_order": 4,
       "subject": "Mathematics",
       "subject_question_number": 4,
       "section": "A",
-      "draft_candidate_global_number": 2,
-      "status": "candidate_needs_exact_review",
-      "notes": "complex-circle candidate"
+      "draft_candidate_global_number": 4,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q4 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121154, correct option ID 691121526 = D). Draft global Q4 matches AP/GP conditions, values, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q4 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121154, correct option ID 691121526 = D). Draft global Q4 matches AP/GP conditions, values, options, and key."
     },
     {
       "paper_order": 5,
       "subject": "Mathematics",
       "subject_question_number": 5,
       "section": "A",
-      "draft_candidate_global_number": 12,
-      "status": "candidate_needs_exact_review",
-      "notes": "parabola candidate"
+      "draft_candidate_global_number": 5,
+      "status": "verified",
+      "notes": "Verified exact Mathematics Q5 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121155, correct option ID 691121528 = B). Draft global Q5 matches the sum expression, eight terms, options, and key.",
+      "verification_evidence": "Verified exact Mathematics Q5 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121155, correct option ID 691121528 = B). Draft global Q5 matches the sum expression, eight terms, options, and key."
     },
     {
       "paper_order": 6,
