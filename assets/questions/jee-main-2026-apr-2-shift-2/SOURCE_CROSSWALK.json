@@ -103,8 +103,8 @@
       "subject_question_number": 9,
       "section": "A",
       "draft_candidate_global_number": 31,
-      "status": "confirmed_mismatch",
-      "notes": "Source transcription page 2 asks for speed only. Draft Q31 asks for both speed and kinetic energy, so the question/answer format differs.",
+      "status": "needs_exact_review",
+      "notes": "Legacy Q31 has been rewritten to match the readable source transcription's speed-only question and options. The candidate's original stem incorrectly asked for both speed and kinetic energy. Final NTA key verification remains pending.",
       "verification_evidence": "",
       "publishable": false
     },
