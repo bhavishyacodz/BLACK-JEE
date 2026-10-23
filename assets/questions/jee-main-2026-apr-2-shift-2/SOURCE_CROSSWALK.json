@@ -104,8 +104,8 @@
       "section": "A",
       "draft_candidate_global_number": 31,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q31 (object falling from infinity); exact values/options and key pending.",
-      "verification_evidence": "",
+      "notes": "Added conceptual Earth-fall SVG for the source question's long-distance release setup. Diagram is schematic, not source-certified; compare with original figure and verify final key.",
+      "verification_evidence": "Missing diagram replaced with explicitly labelled schematic reconstruction; original source-figure comparison and final answer-key check remain pending.",
       "publishable": false
     },
     {
@@ -159,8 +159,8 @@
       "section": "A",
       "draft_candidate_global_number": 38,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q38 (bulb/resistor circuit); verify the diagram and exact requested potential difference.",
-      "verification_evidence": "",
+      "notes": "Added circuit schematic from the candidate stem (100 V, 200 Ω and 400 Ω; bulb across 400 Ω). Compare against original source figure before certification; do not mark verified.",
+      "verification_evidence": "Missing diagram replaced with explicitly labelled schematic reconstruction; original source-figure comparison and final answer-key check remain pending.",
       "publishable": false
     },
     {
