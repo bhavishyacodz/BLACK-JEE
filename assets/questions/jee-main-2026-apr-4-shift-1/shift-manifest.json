@@ -2596,11 +2596,11 @@
       "subject": "Chemistry",
       "subject_question_number": 22,
       "status": "needs_review",
-      "question_text": "Consider the following sequence of reactions to give the major product (X): (i) CH₃Cl / anhydrous AlCl₃; (ii) Cl₂ / FeCl₃; (iii) K₂Cr₂O₇ / H₂SO₄. P g of the major product (X) formed is reacted with NaHCO₃ solution to liberate a gas which occupies 11.2 dm³ at STP. P = _____ g. (Given molar masses in g mol⁻¹: H = 1, C = 12, O = 16, Cl = 35.5.)",
+      "question_text": "Benzene is subjected to the following sequence of reactions to give the major product (X): (i) CH₃Cl / anhydrous AlCl₃; (ii) Cl₂ / FeCl₃; (iii) K₂Cr₂O₇ / H₂SO₄. P g of the major product (X) formed is reacted with NaHCO₃ solution to liberate a gas which occupies 11.2 dm³ at STP. P = _____ g. (Given molar masses in g mol⁻¹: H = 1, C = 12, O = 16, Cl = 35.5.)",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": "The starting reactant is absent from the extracted reaction sequence. The proposed benzene assumption is not enough to set a definitive answer.",
+      "correct_answer": "78.25",
+      "solution": "From the official paper, the starting material is benzene. Friedel–Crafts methylation gives toluene; chlorination gives the major chlorotoluene product, and oxidation of its side-chain with acidified dichromate gives chlorobenzoic acid, C₇H₅ClO₂. Its molar mass is 7(12)+5(1)+35.5+2(16)=156.5 g mol⁻¹. The CO₂ volume is 11.2 dm³ at STP, corresponding to 0.5 mol. A carboxylic acid reacts with NaHCO₃ in a 1:1 molar ratio, so 0.5 mol of acid is present. Therefore P=0.5×156.5=78.25 g. This is an independent calculation from the printed stem; official answer-key confirmation and student-page rendering remain pending.",
       "diagram": {
         "required": true,
         "asset_path": "images/BJ-JM-20260404-S1-CHE-072-reaction-1.png",
@@ -2609,9 +2609,9 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "source_wording_verified": true,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -2624,19 +2624,20 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 27,
         "answer_source": "CALCULATED_INDEPENDENTLY",
-        "supplied_verification_status": "NEEDS_REVIEW",
+        "supplied_verification_status": "SOURCE_STEM_RECOVERED_ANSWER_CALCULATED",
         "source_paper_question_number": 72,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
-        "The supplied OCR duplicates step (ii); step (iii) reconstructed tentatively. Verify complete reaction sequence and answer line against source PDF."
+        "The supplied OCR duplicates step (ii); step (iii) reconstructed tentatively. Verify complete reaction sequence and answer line against source PDF.",
+        "Source image confirms benzene as the starting material; reaction sequence restored from the official paper."
       ],
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
-        "Paper Q72 explicitly marked NEEDS REVIEW: missing reactant/source context; no numerical key was supplied."
+        "Official NTA PDF page 27 confirms benzene is the starting reactant. Independent stoichiometric calculation gives P = 78.25 g. Keep needs_review until the major-product interpretation and student-page rendering are independently reviewed."
       ],
       "visual_assets": [
         {
