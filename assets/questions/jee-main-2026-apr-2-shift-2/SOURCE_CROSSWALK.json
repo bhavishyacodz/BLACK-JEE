@@ -587,9 +587,9 @@
       "subject_question_number": 3,
       "section": "A",
       "draft_candidate_global_number": 16,
-      "status": "confirmed_mismatch",
-      "notes": "Source Mathematics Q3 uses PS = i+j and PQ = −j+k. Legacy Q16 uses different parallelogram side vectors (PQ = j+k and PS = i−j); the vectors differ.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Corrected legacy Q16 to use the source vectors PQ = −j + k and PS = i + j. The calculation still gives α = 30° and answer √3/2. Exact final-key check remains open.",
+      "verification_evidence": "Source-specific stem/expression correction and independent calculation applied to candidate; official NTA answer-key check remains pending.",
       "publishable": false
     },
     {
@@ -686,9 +686,9 @@
       "subject_question_number": 12,
       "section": "A",
       "draft_candidate_global_number": 25,
-      "status": "confirmed_mismatch",
-      "notes": "Source Mathematics Q12 uses the greatest-integer function [x²−x+2] on [2,4]; legacy Q25 uses [x²−x−1/2]. The expression differs.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Corrected the floor-function expression to the source form [x² − x + 2]. The monotonic expression crosses integer levels 5 through 14, giving 10 discontinuities on [2,4]. Final key check remains open.",
+      "verification_evidence": "Source-specific stem/expression correction and independent calculation applied to candidate; official NTA answer-key check remains pending.",
       "publishable": false
     },
     {
@@ -785,9 +785,9 @@
       "subject_question_number": 21,
       "section": "B",
       "draft_candidate_global_number": 13,
-      "status": "confirmed_mismatch",
-      "notes": "Source Mathematics Section-B Q1 uses (cos²θ−sin²θ)sec2θ = a²; legacy Q13 uses 2(cos⁸θ−sin⁸θ)sec2θ = a². The expression differs.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Corrected legacy Q13's expression to the source form (cos²θ − sin²θ)sec 2θ = a². Since the product is 1 on the stated domain, the integer set is {−1,1}, giving n(S)=2. Final key check remains open.",
+      "verification_evidence": "Source-specific stem/expression correction and independent calculation applied to candidate; official NTA answer-key check remains pending.",
       "publishable": false
     },
     {
@@ -818,9 +818,9 @@
       "subject_question_number": 24,
       "section": "B",
       "draft_candidate_global_number": 22,
-      "status": "confirmed_mismatch",
-      "notes": "Source Mathematics Section-B Q4 matrix B is [[1,3],[3,9]], while legacy Q22 uses [[3,9],[1,3]]. Matrix entries differ.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Corrected matrix B to the source matrix [[1,3],[3,9]]. Using A⁻¹B gives trace 5/2; hence |tr(2(P+Q))| = 10. Final key check remains open.",
+      "verification_evidence": "Source-specific stem/expression correction and independent calculation applied to candidate; official NTA answer-key check remains pending.",
       "publishable": false
     },
     {
