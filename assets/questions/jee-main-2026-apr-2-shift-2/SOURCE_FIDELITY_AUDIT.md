@@ -1,41 +1,29 @@
 # Source-Fidelity Audit — JEE Main 2 April 2026 Shift 2
 
-## Status: HOLD — 65 of 75 questions still need verification
+## Status: HOLD — all 75 source-to-draft matches require re-verification
 
-The official NTA paper and Session-II final answer key are the authority for this audit.
+Use the original question-paper PDF for question wording, options, and diagrams. Use the official NTA final answer key for answer-key validation. Keep the source PDF's subject section order distinct from the answer-key challenge system's question-ID order.
 
-- [Official NTA question paper — B Tech 2nd Apr 2026 Shift 2](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
-- [Official NTA Session-II final answer key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf)
+- [Official NTA JEE Main documents page](https://jeemain.nta.nic.in/documents/)
 
-## Correct NTA displayed order
+## Source PDF order vs answer-key order
 
-The official paper is ordered Mathematics Q1–25, Physics Q26–50, then Chemistry Q51–75. The staged JSON uses those same global question-number blocks. Earlier audit notes incorrectly assumed Physics came first and used incorrect subject-local labels for several Physics candidates. Those stale findings have been superseded; do not use the previous candidate notes as evidence.
+The question-paper PDF's sections are Physics, Chemistry, Mathematics, with each subject's own questions 1–25. The answer-key challenge system lists Paper 1 question IDs in Mathematics, Physics, Chemistry order. These are different numbering conventions and must not be conflated.
 
-## Verified chunk
+The legacy draft JSON uses global blocks Mathematics 1–25, Physics 26–50, Chemistry 51–75. Those are legacy draft identifiers, not proof of source question numbers. The source crosswalk's paper_order represents the PDF's section order: Physics 1–25, Chemistry 26–50, Mathematics 51–75 (crosswalk positions; each source subject question remains locally numbered 1–25).
 
-Physics displayed Q26–35 (10 questions) has now been compared with the official NTA question paper and the final answer key:
+## Verification correction
 
-- Q26: universal gravitational constant dimensions — wording/options and keyed option match.
-- Q27: rotating cylindrical drum — radius 4 m, angular speed 5 rad/s; wording/options and keyed option match.
-- Q28: 2 kg / 1 kg Atwood machine and centre-of-mass displacement — wording/options and keyed option match; `q28.svg` compared visually with the source diagram.
-- Q29: charged particle in electric and magnetic fields — wording/options and keyed option match.
-- Q30: NAND logic circuit — wording/options and keyed option match; `q30.svg` compared visually with the source diagram.
-- Q31: body falling from infinity — wording/options and keyed option match.
-- Q32: screw-gauge reading with zero error — wording/options and keyed option match.
-- Q33: soap-bubble surface energy — wording/options and keyed option match.
-- Q34: CO₂/O₂ ideal-gas mixture — wording/options and keyed option match.
-- Q35: rising air-bubble viscosity — wording/options and keyed option match.
+A previous update incorrectly marked Physics subject-local Q1–Q10 as exact matches by assuming the answer-key ordering was the question-paper order. Those ten statuses have been revoked and reset to review-needed. No claim of exact wording/options/diagram/key verification should be inferred from those prior notes.
 
-These records are marked `verified` in the reconciliation ledger. This is a limited verified chunk, not approval to publish the full shift.
+## Required checks for every source question
 
-## Remaining work
-
-The other 65 questions are not yet verified against both the official paper and final answer key. Their older candidate notes were generated using faulty source-number assumptions and must be re-reviewed rather than trusted or automatically renumbered. Continue by reconciling exact wording, constants, option order, numerical-answer format, diagram fidelity, and official answer-key option for each question.
+1. Compare the exact statement, numerical values, units, and all options with the original source PDF.
+2. Verify the matching diagram, including labels, connectivity, values, orientation, and any omitted elements.
+3. Independently calculate numerical answers where applicable.
+4. Check the keyed option/answer against the official final answer key, keeping the NTA question-ID convention separate from the PDF's subject section order.
+5. Record evidence for each verified source-to-draft match; never mark a candidate exact from topic similarity alone.
 
 ## Release gate
 
-1. Verify every source question against the official NTA paper and final answer key.
-2. Check all diagram assets visually and confirm the correct asset is attached to the correct displayed question.
-3. Recalculate numerical answers independently and document any discrepancy.
-4. Run the structural audit and inspect its machine-readable report.
-5. Keep the shift unpublished until all 75 questions have explicit verification evidence and the end-to-end mock test has been checked.
+All 75 source mappings remain unverified for publication purposes. Keep the shift unpublished until every question has explicit source and answer-key evidence, all diagrams are checked, and the end-to-end student mock is tested.
