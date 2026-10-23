@@ -194,3 +194,11 @@ Post-cleanup database verification:
 - This was a source-level content/accessibility audit. SVGs were re-fetched for validation; a live screen-reader and mobile browser pass is still pending. No database rows or publication statuses were changed.
 
 - Follow-up check found that Q67's visible SVG label still named the products even after its accessible description was corrected. Removed that visible answer leak in [commit 53a511a](https://github.com/bhavishyacodz/BLACK-JEE/commit/53a511a6392258b26927d42199dd73dedcc7a29b); the diagram now says only that hydrolysis produces Y and Z.
+
+## Verification log — Chunk 26: Diagram QA gallery stale asset fix (2026-10-23)
+
+- Found a stale Q57 gallery entry in `diagram-audit.html`. Q57 has no source-paper diagram and its former SVG had already been removed, so the QA page would show a false load failure for a non-existent asset.
+- Removed Q57 from the gallery, changed the displayed total to 10 assets, and made the count derive from the actual gallery list to prevent future count drift.
+- Re-fetched the committed gallery and all 10 referenced SVGs. Every referenced file exists and has an SVG root and closing tag; no stale Q57 reference remains.
+- Commits: [e1bd53b](https://github.com/bhavishyacodz/BLACK-JEE/commit/e1bd53bd4573124ce5ef4087d9af4a6eca890d80) (remove stale entry) and [d687a97](https://github.com/bhavishyacodz/BLACK-JEE/commit/d687a976745aa322c65d0da29a9666207e0bd4d6) (dynamic asset count).
+- This is source-level validation. Browser rendering and actual mobile load behavior remain to be tested. No question records or publication states were changed.
