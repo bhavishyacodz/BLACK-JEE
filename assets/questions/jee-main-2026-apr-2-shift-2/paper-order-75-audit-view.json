@@ -654,14 +654,14 @@
       "legacy_global_question_number": 42,
       "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Topic candidate legacy Q42 (AC circuit); the SVG is reconstructed, not source-certified; official key pending.",
+      "audit_notes": "Corrected target to 3L₂ − L₁ and swapped switch labels in the reconstructed diagram so S₁ bypasses L₁ and S₂ bypasses L₂. Calculation gives 2/9 H; official key/source-figure check remains open.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Physics",
         "chapter": "Alternating Current",
         "source_question_number": 42,
-        "question_text": "The figure shows an LCR series circuit with two switches S₁ and S₂. When S₁ is closed while S₂ is open, the phase difference φ between current and source voltage is 30°. When S₂ is closed while S₁ is open, the phase difference is 60°. Find (3L₁ − L₂) in henries.",
+        "question_text": "The figure shows an LCR series circuit with two switches S₁ and S₂. When S₁ is closed while S₂ is open, the phase difference φ between current and source voltage is 30°. When S₂ is closed while S₁ is open, the phase difference is 60°. Find (3L₂ − L₁) in henries.",
         "question_type": "MCQ",
         "options": [
           "9/2",
@@ -674,7 +674,7 @@
         "is_published": false,
         "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q42.svg",
         "correct_answer": "B",
-        "solution": "With the switches bypassing the opposite inductors, the phase-angle equations give 3L₁ − L₂ = 2/(ω²C). Here ω = 300 rad/s and C = 100 μF, so the candidate value is 2/[300² × 100 × 10⁻⁶] = 2/9 H (option B). The source diagram is still a reconstruction; verify its switch wiring and the official final key before publication."
+        "solution": "Let X = 1/(ωC). With S₁ closed, L₁ is bypassed and L₂ remains in the circuit, so tan 30° = (ωL₂ − X)/R. With S₂ closed, L₂ is bypassed and L₁ remains, so tan 60° = (ωL₁ − X)/R. Since tan 60° = 3 tan 30°, ωL₁ − X = 3(ωL₂ − X), giving 3L₂ − L₁ = 2/(ω²C). Here ω = 300 rad/s and C = 100 μF, so the value is 2/[300² × 100 × 10⁻⁶] = 2/9 H, option B. This derivation depends on the corrected switch placement in the schematic; final answer-key confirmation remains pending."
       }
     },
     {
