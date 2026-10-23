@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 
 CROSSWALK = Path("assets/questions/jee-main-2026-apr-2-shift-2/source-to-draft-crosswalk.json")
-SUBJECTS = ("Physics", "Chemistry", "Mathematics")
+SUBJECTS = ("Mathematics", "Physics", "Chemistry")
 ALLOWED_STATUSES = {
     "candidate_matches_core_setup",
     "confirmed_mismatch",
@@ -19,9 +19,9 @@ ALLOWED_STATUSES = {
     "source_extraction_unresolved",
 }
 EXPECTED_LEGACY_BLOCKS = {
+    "Mathematics": range(1, 26),
     "Physics": range(26, 51),
     "Chemistry": range(51, 76),
-    "Mathematics": range(1, 26),
 }
 
 
@@ -62,7 +62,7 @@ def main() -> int:
             errors.append(f"duplicate source slot {slot}")
         seen_slots.add(slot)
 
-        expected_order = {"Physics": 0, "Chemistry": 25, "Mathematics": 50}[subject] + local
+        expected_order = {"Mathematics": 0, "Physics": 25, "Chemistry": 50}[subject] + local
         if paper_order != expected_order:
             errors.append(f"record {i}: {subject} Q{local} should have paper_order {expected_order}, got {paper_order!r}")
         if status not in ALLOWED_STATUSES:
@@ -84,7 +84,7 @@ def main() -> int:
     if sorted(seen_orders) != list(range(1, 76)):
         errors.append("paper_order must contain each integer 1..75 exactly once")
     if observed_record_order != list(range(1, 76)):
-        errors.append("records must be stored in exact source-paper order: Physics 1–25, Chemistry 1–25, Mathematics 1–25")
+        errors.append("records must be stored in exact NTA displayed order: Mathematics 1–25, Physics 26–50, Chemistry 51–75")
     expected_slots = {(subject, number) for subject in SUBJECTS for number in range(1, 26)}
     missing_slots = sorted(expected_slots - seen_slots)
     if missing_slots:
