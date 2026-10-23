@@ -705,7 +705,8 @@
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
-        "The official NTA PDF contains the logic-gate diagram; the earlier OCR text omitted it. Diagram description restored from the official source."
+        "The official NTA PDF contains the logic-gate diagram; the earlier OCR text omitted it. Diagram description restored from the official source.",
+        "Answer independently checked against the official circuit diagram (option A, Y=1101). The repository diagram asset still needs visual comparison and browser/mobile rendering verification."
       ],
       "correct_option": "A",
       "review_notes": [
@@ -768,7 +769,9 @@
         "source_verification_date": "2026-10-23",
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
-      "reviewer_notes": [],
+      "reviewer_notes": [
+        "Answer calculation gives 5 cm from the source geometry; stored diagram asset and mobile rendering still need visual verification."
+      ],
       "correct_option": "B",
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
@@ -999,7 +1002,9 @@
         "source_verification_date": "2026-10-23",
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
-      "reviewer_notes": [],
+      "reviewer_notes": [
+        "Official diagram indicates four 27 V source branches with 3 Ω internal resistance and a 6 Ω diagonal load; calculation gives 24 V and 4 A. Stored diagram asset/mobile rendering still need visual verification."
+      ],
       "correct_option": "B",
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
@@ -1263,7 +1268,7 @@
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
-        "The supplied OCR time-period expression is incomplete/corrupted; recover exact expression from source PDF before approval."
+        "Question wording recovered from the official NTA PDF: the period is x/7 s. The calculation gives x=14π≈44. Keep in needs_review until math rendering and mobile display are verified."
       ],
       "correct_option": null,
       "review_notes": [
@@ -1357,8 +1362,7 @@
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
-        "OCR fragment for reactance difference is garbled; recover exact expression from source PDF.",
-        "Corrected from official source: the reactance difference is √3 α Ω; calculation gives α = 100, not 2."
+        "Question wording recovered from the official NTA PDF: the reactance difference is √3 α Ω. The corrected calculation gives α=100 (the previous stored answer 2 was incorrect). Keep in needs_review until math rendering and mobile display are verified."
       ],
       "correct_option": null,
       "review_notes": [
