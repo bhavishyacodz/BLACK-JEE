@@ -186,14 +186,20 @@ def main():
         except Exception:
             records = []
         if isinstance(records, list):
+            # This shift's draft uses global paper numbering: Mathematics 1–25,
+            # Physics 26–50, Chemistry 51–75. Do not assume numbering restarts per subject.
+            subject_starts = {"Mathematics": 1, "Physics": args.expect_per_subject + 1,
+                              "Chemistry": 2 * args.expect_per_subject + 1}
             for subject in sorted(SUBJECTS):
                 numbers = sorted(q.get("source_question_number") for q in records
                                  if isinstance(q, dict) and q.get("subject") == subject
                                  and isinstance(q.get("source_question_number"), int))
-                expected_numbers = list(range(1, args.expect_per_subject + 1))
+                start = subject_starts[subject]
+                end = start + args.expect_per_subject - 1
+                expected_numbers = list(range(start, end + 1))
                 if numbers != expected_numbers:
                     issue(report, "ERROR", "SUBJECT_COVERAGE", report["file"],
-                          f"{subject}: expected question numbers 1..{args.expect_per_subject}; found {numbers}.")
+                          f"{subject}: expected global question numbers {start}..{end}; found {numbers}.")
             finalize(report)
     if args.expect is not None and len(reports) == 1 and reports[0]["records"] != args.expect:
         issue(reports[0], "ERROR", "UNEXPECTED_RECORD_COUNT", reports[0]["file"],
