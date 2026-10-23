@@ -3,7 +3,7 @@
 **Review date:** 2026-10-23  
 **Repository:** https://github.com/bhavishyacodz/BLACK-JEE  
 **Production Supabase project:** `yeydvwnihpwoixytcgek` (region `ap-south-1`)  
-**Decision:** **Not yet buyer-ready.** The browser bundle has no obvious embedded service-role secret in the static scan, but at least one database RPC defeats the intended answer/solution reveal boundary.
+**Decision:** **Not yet buyer-ready.** The PYQ solution RPC has now been hardened and the new CI guardrails are in place, but auth configuration and full integration/visual testing remain open.
 
 ## What was inspected
 
@@ -22,11 +22,11 @@
 
 ## Findings to fix before a sale
 
-### P1 — PYQ grading RPC returns the answer key and solution immediately
+### P1 — PYQ grading RPC previously returned the answer key and solution immediately — remediation deployed, tests still required
 
-The database function `public.grade_jee_pyq(uuid, text)` is executable by both `anon` and `authenticated`. It returns `is_correct`, `correct_answer`, and `solution` in the same response. A caller can invoke the RPC directly without using the intended UI flow, so any UI rule such as “show the solution after two incorrect attempts” is not enforceable by the current backend.
+The database function `public.grade_jee_pyq(uuid, text)` previously returned `correct_answer` and `solution` to any caller. A database migration now records wrong attempts against the authenticated user and question in the private schema. Anonymous users can still check correctness but receive no answer key or solution; signed-in users receive the worked solution only after two incorrect attempts. The attempt table has RLS enabled and direct table privileges revoked. The front-end practice page supports retrying incorrect answers and offers Google sign-in for server-side tracking.
 
-**Required remediation:** move attempt counting and solution-release authorization server-side; use a trustworthy user/session identity; return only the minimum result needed at each step; release the answer/solution only when the server-side attempt policy allows it. Update all three consumer pages and add integration tests before deployment. Do not treat a client-side counter as security.
+**Validation still required:** exercise first-wrong, second-wrong, correct-first, anonymous, cross-user, and direct-RPC cases in a dedicated integration test. Do not call this fully closed until those tests pass.
 
 ### P1 — Leaked-password protection is disabled
 
@@ -46,16 +46,18 @@ The existing PYQ workflow validates question-batch structure and crosswalk data;
 
 `SOURCE_FIDELITY_AUDIT.md` still says 62/75 verified and says Chemistry Q63–Q75 remain unresolved, while the latest crosswalk update and successful automated batch-audit run indicate the source-mapping work was updated. Reconcile the report with the actual canonical crosswalk and distinguish **source mapping verification** from **rendered UI/scoring verification**. Do not publish the shift solely because the structural batch audit passes.
 
-## New automated guardrail
+## New automated guardrails
 
-`scripts/audit_browser_security.py` scans root-level HTML/JS for common embedded-secret patterns and enforces one consistent Supabase project reference. `.github/workflows/browser-security.yml` runs it when browser files change.
+- `scripts/audit_browser_security.py` scans root-level HTML/JS for common embedded-secret patterns and enforces one consistent Supabase project reference.
+- `scripts/check_inline_js.py` extracts inline scripts and asks Node.js to syntax-check them.
+- `.github/workflows/browser-security.yml` runs both checks when browser files or the guardrail scripts change.
 
-This check is intentionally narrow. It does **not** prove that RLS policies are correct, that RPCs are safe, or that a buyer-facing penetration test would pass.
+These checks are intentionally narrow. They do **not** prove that RLS policies are correct, that RPCs are safe, or that a buyer-facing penetration test would pass.
 
 ## Release / sale gate
 
 Do not claim “security audited” or “buyer-ready” until:
-1. The PYQ answer/solution RPC is fixed server-side and regression-tested.
+1. The PYQ answer/solution RPC regression tests pass for anonymous, authenticated, and cross-user scenarios.
 2. Leaked-password protection is enabled.
 3. RLS, Storage policies, all security-definer grants, and admin role checks are reviewed.
 4. Automated integration tests cover attempt uniqueness, scoring, photo privacy, and timed release.
