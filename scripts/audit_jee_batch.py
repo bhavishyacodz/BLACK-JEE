@@ -165,6 +165,7 @@ def main():
     parser.add_argument("--all-json", action="store_true", help="Audit every JSON file in the April 2 Shift 2 folder.")
     parser.add_argument("--json-out", help="Write full machine-readable report to this path.")
     parser.add_argument("--expect", type=int, default=None, help="Expected record count for the selected batch.")
+    parser.add_argument("--expect-per-subject", type=int, default=None, help="Require each of Physics, Chemistry, and Mathematics to have this many questions numbered 1..N.")
     args = parser.parse_args()
 
     folder = ROOT / "assets/questions/jee-main-2026-apr-2-shift-2"
@@ -177,6 +178,23 @@ def main():
         return 2
 
     reports = [audit_file(p) for p in paths]
+    if args.expect_per_subject is not None and len(reports) == 1:
+        path = paths[0]
+        report = reports[0]
+        try:
+            records = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            records = []
+        if isinstance(records, list):
+            for subject in sorted(SUBJECTS):
+                numbers = sorted(q.get("source_question_number") for q in records
+                                 if isinstance(q, dict) and q.get("subject") == subject
+                                 and isinstance(q.get("source_question_number"), int))
+                expected_numbers = list(range(1, args.expect_per_subject + 1))
+                if numbers != expected_numbers:
+                    issue(report, "ERROR", "SUBJECT_COVERAGE", report["file"],
+                          f"{subject}: expected question numbers 1..{args.expect_per_subject}; found {numbers}.")
+            finalize(report)
     if args.expect is not None and len(reports) == 1 and reports[0]["records"] != args.expect:
         issue(reports[0], "ERROR", "UNEXPECTED_RECORD_COUNT", reports[0]["file"],
               f"Expected {args.expect} records, found {reports[0]['records']}.")
