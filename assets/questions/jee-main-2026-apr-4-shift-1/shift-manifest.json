@@ -508,7 +508,7 @@
       "subject": "Physics",
       "subject_question_number": 10,
       "status": "content_added",
-      "question_text": "One gas of \\(n_1\\) mole of molecules at temperature \\(T_1\\), volume \\(V_1\\), and pressure \\(P_1\\), and another gas of \\(n_2\\) mole of molecules at temperature \\(T_2\\), volume \\(V_2\\), and pressure \\(P_2, are mixed resulting in pressure P and volume V of the mixture. The temperature of the mixture is:",
+      "question_text": "One gas of \\(n_1\\) mole of molecules at temperature \\(T_1\\), volume \\(V_1\\), and pressure \\(P_1\\), and another gas of \\(n_2\\) mole of molecules at temperature \\(T_2\\), volume \\(V_2\\), and pressure \\(P_2\\), are mixed resulting in pressure P and volume V of the mixture. The temperature of the mixture is:",
       "question_type": "MCQ",
       "options": [
         "\\frac{T_1+T_2}{2}",
@@ -560,7 +560,7 @@
       "subject": "Physics",
       "subject_question_number": 11,
       "status": "needs_review",
-      "question_text": "An ideal gas undergoes a process maintaining relation between pressure (P) and volume (V) as \\(P=P_0\\left[1+\\left(\\frac{V_0}{V}\\right)^2\\right]^{-1}\\), where P_0 and V_0 are constants. If two samples A and B (two moles each) with initial volumes V_0 and 3V_0 respectively undergo the above-mentioned process and attain the same pressure, then the difference in the temperatures of these samples, \\(T_B-T_A\\), is: (R = gas constant)",
+      "question_text": "An ideal gas undergoes a process maintaining relation between pressure (P) and volume (V) as \\(P=P_0\\left[1+\\left(\\frac{V_0}{V}\\right)^2\\right]^{-1}\\), where \\(P_0\\) and \\(V_0\\) are constants. If two samples A and B (two moles each) with initial volumes V_0 and 3V_0 respectively undergo the above-mentioned process and attain the same pressure, then the difference in the temperatures of these samples, \\(T_B-T_A\\), is: (R = gas constant)",
       "question_type": "MCQ",
       "options": [
         "\\frac{9P_0V_0}{8R}",
@@ -612,7 +612,7 @@
       "subject": "Physics",
       "subject_question_number": 12,
       "status": "content_added",
-      "question_text": "A voltmeter with internal resistance \\(x\\,\\Omega\\) can be used to measure up to 20 V. In order to increase its measuring range to 30 V, the required modification is to:",
+      "question_text": "A voltmeter with internal resistance \\(x\\,\\Omega\\) can be used to measure up to \\(20\\,\\mathrm{V}\\). In order to increase its measuring range to \\(30\\,\\mathrm{V}\\), the required modification is to:",
       "question_type": "MCQ",
       "options": [
         "Connect a resistor of \\frac{x}{2}\\,\\Omega in series with the voltmeter.",
@@ -787,7 +787,7 @@
       "subject": "Physics",
       "subject_question_number": 15,
       "status": "content_added",
-      "question_text": "A parallel-plate air capacitor is connected to a battery. The plates are pulled apart at uniform speed v. If x is the separation between the plates at any instant, then the time rate of change of electrostatic energy of the capacitor is proportional to \\(x^\\alpha\\), where \\(\\alpha\\) is:",
+      "question_text": "A parallel-plate air capacitor is connected to a battery. The plates are pulled apart at uniform speed \\(v\\). If \\(x\\) is the separation between the plates at any instant, then the time rate of change of electrostatic energy of the capacitor is proportional to \\(x^\\alpha\\), where \\(\\alpha\\) is:",
       "question_type": "MCQ",
       "options": [
         "-2",
@@ -1018,7 +1018,7 @@
       "subject": "Physics",
       "subject_question_number": 19,
       "status": "content_added",
-      "question_text": "A telescope with objective diameter R is used to observe a distant star emitting light of wavelength \\(500\\,\\mathrm{nm}\\), at a resolution of \\(5\\times10^{-7}\\) radian. The value of R is ___ cm.",
+      "question_text": "A telescope with objective diameter \\(R\\) is used to observe a distant star emitting light of wavelength \\(500\\,\\mathrm{nm}\\), at a resolution of \\(5\\times10^{-7}\\) radian. The value of \\(R\\) is ___ cm.",
       "question_type": "MCQ",
       "options": [
         "61",
