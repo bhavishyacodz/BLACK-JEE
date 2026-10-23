@@ -46,29 +46,29 @@
       "printed_question_number": 2,
       "section": "A",
       "legacy_global_question_number": 27,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Legacy Q27 currently uses different drum radius/mass/rotation data than the source PDF; confirmed content mismatch.",
+      "audit_notes": "Updated legacy Q27 to match the source PDF's drum data (0.5 kg, radius 4 m, 5 rad/s) and option set; final-key verification pending.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Physics",
-        "chapter": "Rotational Motion",
+        "chapter": "Laws of Motion",
         "source_question_number": 27,
-        "question_text": "A hollow cylinder of radius 1 m is rotating with angular velocity ω = 10 rad/s. Find the minimum coefficient of friction μ so that a block remains at rest with respect to the cylinder. (Take g = 10 m/s².)",
+        "question_text": "A 0.5 kg mass is in contact against the inner wall of a cylindrical drum of radius 4 m rotating about its vertical axis. The minimum rotational speed of the drum to enable the mass to remain stuck to the wall (without falling) is 5 rad/s. Find the coefficient of friction between the drum's inner wall and the mass. (Take g = 10 m/s².)",
         "question_type": "MCQ",
         "options": [
           "0.1",
-          "0.2",
-          "0.15",
-          "0.25"
+          "0.5",
+          "0.7",
+          "0.3"
         ],
         "marks_correct": 4,
         "marks_wrong": -1,
         "is_published": false,
         "image_url": "",
         "correct_answer": "A",
-        "solution": "The normal force supplies the centripetal force: N = mω²r. At the limiting condition μN = mg, so μ = g/(ω²r) = 10/(100×1) = 0.1. Option A. The source wording/options have been transcribed; final-key confirmation remains pending."
+        "solution": "The normal force is N = mω²r = 0.5 × 5² × 4 = 50 N. To prevent falling, μN ≥ mg, so μ ≥ 5/50 = 0.1. Candidate answer A; official final-key confirmation remains pending."
       }
     },
     {
@@ -296,27 +296,27 @@
       "legacy_global_question_number": 35,
       "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Legacy Q35 has matching bubble dimensions/velocity/density, but its option set differs from the PDF transcription; confirmed option mismatch.",
+      "audit_notes": "Updated legacy Q35 to match the source PDF's air-bubble diameter, liquid density, rise speed and option set; calculated candidate is 8.8 poise, final-key verification pending.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Physics",
-        "chapter": "Mechanical Properties of Fluids",
+        "chapter": "Properties of Solids and Liquids",
         "source_question_number": 35,
-        "question_text": "An air bubble of radius 1 mm is rising upward with constant speed 0.5 cm/s in a liquid of density 2000 kg/m³. Find the coefficient of viscosity η in poise.",
+        "question_text": "If an air bubble of diameter 2 mm rises steadily through a liquid of density 2000 kg/m³ at a rate of 0.5 cm/s, find the coefficient of viscosity of the liquid in poise. (Take g = 10 m/s².)",
         "question_type": "MCQ",
         "options": [
-          "70/9 poise",
-          "20 poise",
-          "80/9 poise",
-          "50 poise"
+          "0.88",
+          "8.8",
+          "88.8",
+          "0.088"
         ],
         "marks_correct": 4,
         "marks_wrong": -1,
         "is_published": false,
         "image_url": "",
-        "correct_answer": "C",
-        "solution": "Using Stokes' law for a small bubble with negligible air density, v = 2r²ρg/(9η). With r = 1×10⁻³ m, v = 5×10⁻³ m/s, ρ = 2000 kg/m³ and g ≈ 10 m/s², η ≈ 0.889 Pa·s = 8.89 poise = 80/9 poise. Option C. Final-key confirmation remains pending."
+        "correct_answer": "B",
+        "solution": "Using Stokes' law for a small rising bubble with negligible bubble density, η ≈ 2r²ρg/(9v). With r = 1×10⁻³ m, ρ = 2000 kg/m³, g = 10 m/s² and v = 5×10⁻³ m/s, η ≈ 0.889 Pa·s = 8.89 poise. Candidate answer B (8.8); verify the approximation and official key before publication."
       }
     },
     {
@@ -325,29 +325,29 @@
       "printed_question_number": 11,
       "section": "A",
       "legacy_global_question_number": 36,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Legacy Q36 currently uses different ball mass and drop height than the source PDF; confirmed content mismatch.",
+      "audit_notes": "Updated legacy Q36 to match the source PDF's 2 kg ball, 10 m drop, 10 cm penetration and option set; calculated candidate is 2020 N, final-key verification pending.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Physics",
         "chapter": "Work, Energy and Power",
         "source_question_number": 36,
-        "question_text": "A small ball of mass 1 kg is released from a height of 20 m above sand. It penetrates 10 cm into the sand and comes to rest. Find the average force exerted by the sand on the ball. (Take g = 10 m/s².)",
+        "question_text": "A spherical ball of mass 2 kg falls from a height of 10 m and is brought to rest after penetrating 10 cm into sand. Find the average force exerted by the sand on the ball. (Take g = 10 m/s².)",
         "question_type": "MCQ",
         "options": [
-          "1000 N",
           "1980 N",
-          "2010 N",
-          "2020 N"
+          "2020 N",
+          "2000 N",
+          "1000 N"
         ],
         "marks_correct": 4,
         "marks_wrong": -1,
         "is_published": false,
         "image_url": "",
-        "correct_answer": "C",
-        "solution": "The ball loses gravitational potential energy over the full 20.1 m descent: mg(20.1) = 1×10×20.1 = 201 J. The average sand force does work over 0.1 m while stopping it, so F×0.1 = 201 J and F = 2010 N. Option C. Final-key confirmation remains pending."
+        "correct_answer": "B",
+        "solution": "The ball loses gravitational potential energy over 10.1 m: mg(10.1) = 2×10×10.1 = 202 J. The sand force does work over 0.1 m while stopping the ball, so Favg×0.1 = 202 J and Favg = 2020 N. Candidate answer B; official final-key confirmation remains pending."
       }
     },
     {
