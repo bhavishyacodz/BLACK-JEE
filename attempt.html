@@ -883,12 +883,12 @@ async function loadQuestion(){
  const showEmpty=(detail="No live question is available for this challenge date yet.")=>{document.body.classList.remove("question-ready","challenge-live");currentQuestion=null;selectedOption=null;$("questionTitle").textContent="Waiting for today’s question";$("questionText").textContent=detail;$("questionMeta").textContent="BLACK JEE / WAITING FOR THE NEXT CHALLENGE";$("questionChips").innerHTML="";$("questionOptions").innerHTML="";const retry=document.createElement("button");retry.type="button";retry.className="btn";retry.textContent="RETRY QUESTION LOAD ↻";retry.addEventListener("click",async()=>{retry.disabled=true;retry.textContent="CHECKING…";await loadQuestion();if(!currentQuestion){retry.disabled=false;retry.textContent="RETRY QUESTION LOAD ↻";}});$("questionOptions").appendChild(retry);$("liveStatus").textContent="WAITING FOR QUESTION";$("dateTag").textContent=challengeDateLabel(today());$("startBtn").disabled=true;$("submitBtn").disabled=true;$("solutionPanel").classList.remove("show");};
  if(!supabase){showEmpty("The question service is still connecting. Retry in a moment.");return;}
  try{
-  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,image_url,solution_published,is_live,created_at,starts_at,ends_at,challenge_type").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
+  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("id,question_date,title,tags,difficulty,solution_published,is_live,created_at,starts_at,ends_at,challenge_type,show_in_archive,results_release_at").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
   if(writtenError)throw writtenError;
   // RLS already limits public users to questions that are allowed to be live.
   // Retry without the client-side date filter in case its local challenge date differs.
   if(!written){
-   const retry=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,image_url,solution_published,is_live,created_at,starts_at,ends_at,challenge_type").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
+   const retry=await supabase.from("daily_questions").select("id,question_date,title,tags,difficulty,solution_published,is_live,created_at,starts_at,ends_at,challenge_type,show_in_archive,results_release_at").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
    if(retry.error)throw retry.error;
    written=retry.data;
   }
@@ -950,9 +950,9 @@ async function loadCurrentQuestionForEdit(){
  if(!supabase||adminUser?.app_metadata?.role!=="admin"){notify(notice,"Admin sign-in required.","error");return;}
  const now=new Date().toISOString();
  try{
-  const {data,error}=await supabase.from("daily_questions").select("*").eq("is_live",true).lte("starts_at",now).gt("ends_at",now).order("starts_at",{ascending:false}).limit(1).maybeSingle();
+  const {data,error}=await supabase.rpc("admin_get_live_question");
   if(error)throw error;
-  if(!data){notify(notice,"No currently active live question was found. You can still schedule a new question below.","error");return;}
+  if(!data){notify(notice,"No active or next scheduled question was found. You can still schedule a new question below.","error");return;}
   editingCurrentQuestionId=data.id;
   $("adminDate").value=data.question_date||today();$("adminDate").disabled=true;
   $("adminTitle").value=data.title||"";
