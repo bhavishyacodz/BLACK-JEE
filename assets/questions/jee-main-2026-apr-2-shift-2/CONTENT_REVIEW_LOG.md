@@ -214,3 +214,11 @@ This log records content-level findings that structural validation alone cannot 
 - Restored legacy Q33 (bubble question) and Q42 (LCR question) to MCQ type so the candidate structure now totals 20 MCQs + 5 numerical for Physics.
 - Q33 options/value conflict with the extracted calculation and remains unresolved. Q42 now asks the source expression `(3L₁ − L₂)` with candidate options; switch wiring in its SVG is corrected in the reconstruction, but the original diagram and official key remain to be verified.
 - No publication certification; exact content and answer-key review continues.
+
+
+## Physics structure recheck and provisional bubble record — 2026-10-23
+- Physics now has the expected structural count of 20 MCQs + 5 numerical candidates after Q33 and Q42 were restored to MCQ format.
+- Q2, Q10 and Q11 candidate text/options were corrected to the readable PDF transcription; calculated answer candidates still need official-key verification.
+- Q33 carries a clearly labelled provisional answer placeholder only because the schema validator requires an MCQ key. The solution warns not to score or publish it until the original source/options discrepancy is resolved.
+- Q42 now uses the source expression `3L₁ − L₂` and option list; the SVG switch bypass wiring was swapped to match the algebraic relationship, but it remains a reconstructed figure awaiting original-image verification.
+- Overall paper remains on HOLD.
