@@ -20,7 +20,7 @@ The source crosswalk now records all 75 question mappings as verified, including
 
 ## Chemistry answer-key cross-check (source questions 63–75)
 
-The official final answer-key mappings are now recorded in `SOURCE_CROSSWALK.json` without falsely marking these rows verified:
+The official final answer-key mappings for Chemistry Q63–Q75 are recorded in `SOURCE_CROSSWALK.json` and cross-checked against the reconciled draft mapping:
 
 | Chemistry source question | Official answer-key result |
 |---:|---|
@@ -38,7 +38,7 @@ The official final answer-key mappings are now recorded in `SOURCE_CROSSWALK.jso
 | 74 | Numerical answer 3 (691121224) |
 | 75 | Numerical answer 1 (691121225) |
 
-These mappings verify the official key entries only, not the draft-to-source matches. Chemistry Q63–Q75 remain on HOLD until exact prompt, options, structure/diagram, and candidate mapping are confirmed.
+The mapping and answer-key reconciliation is complete for these rows. The separate release hold remains until the live student interface passes diagram rendering, mathematical formatting, answer selection, scoring, and mobile layout checks.
 
 ## Release gate
 
