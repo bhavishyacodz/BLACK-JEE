@@ -1854,29 +1854,29 @@
       "printed_question_number": 15,
       "section": "A",
       "legacy_global_question_number": 20,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Source Mathematics Q15 asks for 3x(e²)/e² from the differential equation; legacy Q20 asks directly for x(e²). The requested output differs.",
+      "audit_notes": "Corrected the requested output to 3x(e²)/e² and transformed the legacy options consistently from the solved x(e²) values. The derived answer is 2; original printed options and official key still need direct source-page confirmation.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Mathematics",
         "chapter": "Differential Equations",
         "source_question_number": 20,
-        "question_text": "Let x=x(y) be the solution of 2y²(dx/dy) − 2xy + x² = 0, y > 1, with x(e)=e. Then x(e²) is:",
+        "question_text": "Let x = x(y) be the solution of 2y²(dx/dy) − 2xy + x² = 0, y > 1, with x(e) = e. Then 3x(e²)/e² is:",
         "question_type": "MCQ",
         "options": [
-          "(3/2)e²",
-          "(2/3)e²",
-          "e²",
-          "2e²"
+          "9/2",
+          "2",
+          "3",
+          "6"
         ],
         "marks_correct": 4,
         "marks_wrong": -1,
         "is_published": false,
         "image_url": "",
         "correct_answer": "B",
-        "solution": "Set x=yz. The differential equation reduces to 2y(dz/dy)+z²=0, so 1/z=(1/2)ln y+C. From x(e)=e, z(e)=1 and C=1/2. Hence x=2y/(1+ln y), giving x(e²)=2e²/3."
+        "solution": "Set x = yz. Then 2y(dz/dy) + z² = 0, so 1/z = (1/2)ln y + C. From x(e)=e, z(e)=1 and C=1/2. Thus x = 2y/(1+ln y), giving x(e²)=2e²/3. Therefore 3x(e²)/e² = 2, option B."
       }
     },
     {
@@ -1885,23 +1885,23 @@
       "printed_question_number": 16,
       "section": "A",
       "legacy_global_question_number": 24,
-      "source_match_status": "confirmed_mismatch",
+      "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Source Mathematics Q16 asks A where the area is expressed as A−6 ln 3; legacy Q24 asks for 3(A+6 ln 3). The requested expression differs.",
+      "audit_notes": "Corrected the requested output to the source form where the area is A − 6 ln 3; the candidate integral gives A = 8. Exact printed stem and official key remain pending.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
         "subject": "Mathematics",
         "chapter": "Area Under Curves",
-        "question_text": "Q24. If A is the area of the region bounded by 16x^2-9y^2=144 and 8x-3y=24, find 3(A+6 ln 3).",
+        "question_text": "The area of the region bounded by 16x² − 9y² = 144 and 8x − 3y = 24 can be written as A − 6 ln 3. Find A.",
         "question_type": "Numerical",
         "options": [],
         "marks_correct": 4,
         "marks_wrong": 0,
         "is_published": false,
         "image_url": "",
-        "correct_answer": "24",
-        "solution": "The intersections are (3,0) and (5,16/3). Integrating the upper hyperbola minus the line from x=3 to x=5 gives A=8-6 ln 3. Therefore 3(A+6 ln 3)=24.",
+        "correct_answer": "8",
+        "solution": "The intersections are (3,0) and (5,16/3). Integrating the upper hyperbola minus the line from x=3 to x=5 gives the area A − 6 ln 3 = 8 − 6 ln 3. Hence A = 8.",
         "source_question_number": 24
       }
     },
