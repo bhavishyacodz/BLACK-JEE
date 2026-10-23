@@ -46,7 +46,7 @@ The official [NTA question paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2f
 
 ## Verification log — 2026-10-23
 
-- Repository path check: all 11 SVG paths listed above were retrievable from the default branch.
+- Repository path check: all SVG paths listed in the table above were retrievable from the default branch.
 - Restored the 75-record JSON draft archive to the default branch; static validation found 25 records per subject, no duplicate question numbers within each subject sequence, all required fields present, and all 75 records unpublished. These structural checks do not establish that the questions reproduce the official paper or that every answer is correct.
 - Compared the following question content and diagram topics against the official NTA PDF: Q28 Atwood machine, Q30 NAND circuit, Q41 prism, Q42 LCR circuit, Q50 rod/sphere axes, Q57 chemical kinetics, Q63 substituted diarylmethyl ions, Q66 product structures, Q67 enol ether, Q68 reaction sequence and Q75 Carius-analysis sequence. These spot checks do not establish that the entire 75-question bank and every answer key are correct.
 - Q30 and Q42 SVG source files were re-fetched and exist; live-browser rendering is still unverified.
@@ -71,3 +71,17 @@ The official [NTA question paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2f
 3. Continue verifying every answer key against the official paper; Q57's statement set has been corrected, but the other answer keys remain unaudited.
 4. Open the live student experience and verify the correct image appears on each question.
 5. Do not describe the shift as complete until all checks above pass.
+
+
+## Verification log — Chunk 20: Physics Q26–Q50 calculation and diagram audit (2026-10-23)
+
+Independently checked the draft calculations and keyed responses for Physics Q26–Q50. The numerical/algebraic checks agree with the stored answers for this pass, including Q26–Q40 and Q43–Q50. This is a calculation audit of the current draft wording, not proof that every reconstructed statement matches the official paper verbatim.
+
+- **Q30 semiconductor circuit:** inspected the SVG topology. The two input NAND gates feed a NAND, whose output is inverted by the final tied-input NAND; the depicted network implements NOR, consistent with option D. The diagram is present in the JSON.
+- **Q41 prism/TIR:** remains **blocked from publication**. The preserved source wording says “minimum” although the critical-angle condition gives the maximum permissible coating index, (n_2 = 1.6\sin 60^\circ = 4\sqrt{3}/5). The source wording and answer are inconsistent and need an authoritative key/diagram check.
+- **Q42 LCR circuit:** the redrawn SVG includes the source (v=V_0\sin(300t)), (C=100\,\mu F), both inductors and switches. The stored result (3L_1-L_2=2/(\omega^2 C)=2/9\,H) follows from the two phase-angle conditions under the depicted switch-bypass arrangement. The SVG is a redraw, not a pixel-verified copy of the official figure.
+- **Q49 lens-maker calculation:** the stored answer α=20 follows if the lens is symmetric biconvex with both radii of curvature of magnitude 60 cm. The draft wording should be checked against the official diagram/text to ensure that this assumption is stated or shown.
+- **Q28, Q30, Q41, Q42 and Q50:** their SVG assets were inspected. Q28/Q50 are schematic redraws; Q41 preserves the stated incidence geometry; Q42 includes the circuit labels and source details. They have not been claimed as pixel-perfect reproductions.
+- **Publication decision:** no additional questions were published by this audit. Continue holding Q41 and any item whose exact source wording/diagram is not yet verified.
+
+Next: compare the remaining Physics/Chemistry/Mathematics drafts line-by-line against the official paper and reconcile the Q41 source/key contradiction before a broader publication.
