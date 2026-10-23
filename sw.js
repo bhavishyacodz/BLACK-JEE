@@ -1,5 +1,5 @@
 /* BLACK-JEE app-shell cache: instant page shell, live data stays network-backed. */
-const CACHE_NAME = "black-jee-shell-v14";
+const CACHE_NAME = "black-jee-shell-v15";
 const APP_FILES = ["index.html", "attempt.html", "pyq.html", "archive.html", "profile.html", "pyq-admin.html", "chapterwise.html", "chapter-practice.html", "mock-tests.html", "prep.html", "rules.html", "admin.html", "diagram-audit.html"];
 
 self.addEventListener("install", event => {
