@@ -1,6 +1,6 @@
 # Content audit log — April 2, 2026 Shift 2
 
-> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. All 75 source crosswalk rows have been reset to `needs_exact_review`. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
+> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. Current crosswalk statuses: 21 `confirmed_mismatch`, 48 `needs_exact_review`, 6 `source_extraction_unresolved`; all 75 remain non-publishable and none is certified exact. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
 
 This log records content-level findings that structural validation alone cannot catch. It is intentionally short so future review passes can load only the active issues.
 
