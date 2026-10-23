@@ -1,13 +1,13 @@
 {
   "title": "JEE Main 2026 — 2 April Shift 2",
-  "purpose": "Source-to-draft reconciliation ledger. Candidate links are not verified matches.",
+  "purpose": "Source-to-draft reconciliation ledger. Verified rows have explicit evidence; all rows remain audit-only and cannot trigger automatic publication.",
   "source_order": [
     "Mathematics 1-25",
     "Physics 26-50",
     "Chemistry 51-75"
   ],
   "publication_status": "HOLD",
-  "verification_policy": "No row is verified. Match only after exact question text, options, diagram and answer-key comparison. Do not renumber or publish based on topic similarity.",
+  "verification_policy": "Match only after exact question text, values, options/numerical format, diagram if any, and official final answer-key comparison. No row may be published from this audit alone.",
   "rows": [
     {
       "paper_order": 1,
@@ -620,44 +620,44 @@
       "subject_question_number": 21,
       "section": "B",
       "draft_candidate_global_number": 46,
-      "status": "candidate_needs_exact_review",
-      "notes": "YDSE candidate; verify diagram and requested integer"
+      "status": "verified",
+      "notes": "Verified against NTA source Q46: exact YDSE intensity/path-difference statement and requested x; independently checked result x=6 against final key. No source diagram is required. Audit-only; full-shift release gate stays closed."
     },
     {
       "paper_order": 47,
       "subject": "Physics",
       "subject_question_number": 22,
       "section": "B",
-      "draft_candidate_global_number": 48,
-      "status": "candidate_needs_exact_review",
-      "notes": "gas thermodynamics candidate; verify all numerical data"
+      "draft_candidate_global_number": 47,
+      "status": "verified",
+      "notes": "Verified against NTA source Q47: exact Bohr-model magnetic-field ratio prompt; independently checked B₂/B₄=32 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "paper_order": 48,
       "subject": "Physics",
       "subject_question_number": 23,
       "section": "B",
-      "draft_candidate_global_number": 42,
-      "status": "candidate_needs_exact_review",
-      "notes": "LCR candidate; exact circuit and switch states need verification"
+      "draft_candidate_global_number": 48,
+      "status": "verified",
+      "notes": "Verified against NTA source Q48: exact 5-mole constant-volume heating data, cp and R units, and requested ΔU in calories; independently checked result 300 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "paper_order": 49,
       "subject": "Physics",
       "subject_question_number": 24,
       "section": "B",
-      "draft_candidate_global_number": 36,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source mass 1 kg and height 20 m; draft differs"
+      "draft_candidate_global_number": 49,
+      "status": "verified",
+      "notes": "Verified against NTA source Q49: exact sunlight/convex-lens, 30 cm focal distance, 60 cm curvature radius, and α/10 refractive-index prompt; independently checked α=20 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "paper_order": 50,
       "subject": "Physics",
       "subject_question_number": 25,
       "section": "B",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "no exact candidate confirmed for this Section-B question"
+      "draft_candidate_global_number": 50,
+      "status": "verified",
+      "notes": "Verified against NTA source Q50: exact rod/sphere masses, length/radius, 3 m axis separation, and R=√(α/2) prompt. q50.svg diagram was visually compared with the source figure; independently checked α=60 against final key. Audit-only; full-shift release gate stays closed."
     },
     {
       "paper_order": 51,
