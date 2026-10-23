@@ -794,18 +794,20 @@
       "subject": "Chemistry",
       "subject_question_number": 11,
       "section": "A",
-      "draft_candidate_global_number": 74,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source list includes Gd2+; draft uses Gd3+"
+      "draft_candidate_global_number": 61,
+      "status": "verified",
+      "notes": "Verified source Chemistry Q61 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121211, correct option ID 691121722 = B). Draft global Q61 matches the five complex pairs and option order; coordination isomerism applies to B, D and E only.",
+      "verification_evidence": "Verified source Chemistry Q61 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121211, correct option ID 691121722 = B). Draft global Q61 matches the five complex pairs and option order; coordination isomerism applies to B, D and E only."
     },
     {
       "paper_order": 62,
       "subject": "Chemistry",
       "subject_question_number": 12,
       "section": "A",
-      "draft_candidate_global_number": 53,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: BrF4 charge differs; inspect source image"
+      "draft_candidate_global_number": 62,
+      "status": "verified",
+      "notes": "Verified source Chemistry Q62 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121212, numeric answer 273). Draft global Q62 matches combustion masses, C/H percentages, molar masses, nearest-integer request and answer.",
+      "verification_evidence": "Verified source Chemistry Q62 against NTA question paper PDF p.24 and final answer key PDF p.2 (question ID 691121212, numeric answer 273). Draft global Q62 matches combustion masses, C/H percentages, molar masses, nearest-integer request and answer."
     },
     {
       "paper_order": 63,
