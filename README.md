@@ -15,7 +15,7 @@ A dark, mobile-friendly daily JEE challenge site. It includes a daily question b
 4. Enter a display name or nickname. You can attach a photo of handwritten work or skip the photo.
 5. The attempt stays private until the owner approves it in Admin.
 
-The daily challenge closes at **12:00 PM IST**. Each challenge runs for **24 hours: 12:00 PM IST to 12:00 PM IST the next day**. Correct/incorrect feedback appears immediately after submission. The correct option, approved top-three winners, and worked solution (if published) are released at **6:00 PM IST on the closing date**. Schedule the next question in advance; it will go live automatically at noon.
+Each challenge runs for **24 hours: 12:00 PM IST on the day before its results date until 12:00 PM IST on its results date**. The `question_date` is the closing/results date. Correct/incorrect feedback appears immediately after submission. The correct option, approved top-three winners, and worked solution (if published) are released at **6:00 PM IST on the results date**. Schedule questions in advance; each opens automatically at noon the day before its results date.
 
 ## Quick start — owner/Admin
 
@@ -29,7 +29,7 @@ The daily challenge closes at **12:00 PM IST**. Each challenge runs for **24 hou
 **Never put a Supabase service-role or secret key in \`index.html\`.** The publishable/anon key is intended for browser apps; Row Level Security (RLS) controls what it can access.
 
 The SQL creates:
-- \`daily_questions\` — daily prompt, options, tags and official solution.
+- \`daily_questions\` — daily prompt, options, tags, official solution, a noon-to-noon attempt window, and a separate \`results_release_at\` timestamp for the 6 PM release gate.
 - \`attempt_submissions\` — name, time taken, optional photo path, review/publication state.
 - A **private** Storage bucket named \`attempt-photos\`. Photo URLs are signed for viewing; pending work is not publicly listed. The public question query cannot read the official \`solution\` column; \`get_released_solution\` releases it at 6 PM IST.
 - RLS policies so visitors can read live questions and submit attempts, the public sees only approved submissions, and only an account with the admin app-metadata role can manage questions or review submissions.
@@ -132,8 +132,8 @@ The generic `scripts/audit_jee_batch.py` validator is retained for future import
 - The visible timer starts only when **Start Attempt** is clicked. The server records the start time and calculates completion time independently for leaderboard ranking.
 - Photo upload is optional. Supported images: JPG, PNG, WEBP, up to 6 MB.
 - An attempt is private until an admin approves it. The private Storage bucket also prevents direct public viewing of pending images.
-- This first version stores attempts without student accounts. The display name is self-entered and is not verified.
-- The sample problem is seeded once for the date on which you run the SQL. Use the Admin panel to create the next day's challenge.
+- Official challenge attempts require a signed-in Supabase Auth account and are limited by the server-side attempt session. The display name is self-entered and is not independently verified.
+- The sample problem is seeded once for its results date. Publish upcoming challenges in Admin in advance; each opens at noon on the day before its results date.
 
 ## 8. Student and owner interface refresh
 
