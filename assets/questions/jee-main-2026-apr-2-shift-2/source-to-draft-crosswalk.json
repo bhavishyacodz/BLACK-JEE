@@ -1225,17 +1225,12 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 58
+        "legacy_global_question_number": 63
       },
-      "status": "needs_exact_review",
+      "status": "needs_diagram_review",
       "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "oxide-classification topic matches; exact options differ or need comparison"
+      "verification": [],
+      "note": "Candidate global Q63 has the matching substituted diarylmethyl carbocation/carbanion topic and q63.svg, but its wording is a paraphrase. Compare the original source text and diagram directly before marking exact match."
     },
     {
       "source": {
@@ -1245,17 +1240,12 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 59
+        "legacy_global_question_number": 64
       },
       "status": "needs_exact_review",
       "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "ionisation-energy statements need exact trend wording and options checked"
+      "verification": [],
+      "note": "Candidate global Q64 has the matching heptane/isomerization-aromatization-cyclization topic, but exact source wording/options still require direct comparison. Keep audit-only."
     },
     {
       "source": {
@@ -1265,17 +1255,12 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 61
+        "legacy_global_question_number": 65
       },
       "status": "needs_exact_review",
       "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "coordination-isomerism topic matches, but the complex list/options require exact comparison"
+      "verification": [],
+      "note": "Candidate global Q65 has the matching alkyl-halide statement-combination topic, but exact source wording/options still require direct comparison. Keep audit-only."
     },
     {
       "source": {
