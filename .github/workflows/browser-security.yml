@@ -7,12 +7,15 @@ on:
       - "*.js"
       - "scripts/audit_browser_security.py"
       - "scripts/check_inline_js.py"
+      - "scripts/audit_static_references.py"
       - ".github/workflows/browser-security.yml"
   pull_request:
     paths:
       - "*.html"
       - "*.js"
       - "scripts/audit_browser_security.py"
+      - "scripts/check_inline_js.py"
+      - "scripts/audit_static_references.py"
       - ".github/workflows/browser-security.yml"
   workflow_dispatch:
 
@@ -33,3 +36,5 @@ jobs:
         run: python scripts/audit_browser_security.py
       - name: Syntax-check inline JavaScript
         run: python scripts/check_inline_js.py
+      - name: Check local HTML resource references
+        run: python scripts/audit_static_references.py
