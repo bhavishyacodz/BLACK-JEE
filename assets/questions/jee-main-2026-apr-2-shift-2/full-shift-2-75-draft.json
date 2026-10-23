@@ -610,20 +610,20 @@
     "subject": "Physics",
     "chapter": "Gravitation",
     "source_question_number": 31,
-    "question_text": "If a body of mass 1 kg falls on the earth from infinity, it attains velocity v and kinetic energy K on reaching the surface of earth. The values of v and K respectively are (Earth radius = 6400 km, g = 9.8 m/s²).",
+    "question_text": "Find the speed of a 1 kg object when it reaches close to Earth's surface from a long distance after it is released from rest. Given: Earth's radius Re = 6400 km and surface gravitational acceleration gs = 9.8 m/s².",
     "question_type": "MCQ",
     "options": [
-      "11.2 km/s; 6.27×10⁷ J",
-      "11.2 km/s; 12.54×10⁷ J",
-      "8.8 km/s; 6.27×10⁷ J",
-      "8.8 km/s; 12.54×10⁷ J"
+      "12.5 km/s",
+      "11.2 km/s",
+      "9.8 km/s",
+      "2.4 km/s"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "A",
-    "solution": "Energy conservation gives v=√(2gR)=√(2×9.8×6.4×10⁶)≈11.2 km/s. K=½mv²=gR≈6.272×10⁷ J for m=1 kg. Option A."
+    "correct_answer": "B",
+    "solution": "Using conservation of energy for an object released from rest at a very large distance, v = √(2GM/Re) = √(2gsRe) = √(2×9.8×6.4×10⁶) ≈ 11.2 km/s. Option B. Final NTA answer-key verification remains pending."
   },
   {
     "year": 2026,
