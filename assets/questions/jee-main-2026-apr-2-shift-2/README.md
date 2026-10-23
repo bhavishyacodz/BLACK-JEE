@@ -34,10 +34,27 @@ Use raw GitHub URLs for the database's `image_url` field:
 
 ## Current database attachment status
 
-The BLACK-JEE Supabase project currently has **23 rows** for this shift: **22 published and 1 draft**. Q30 is already published and its database row has a Q30 diagram URL. Q28's SVG has been created and its existing draft metadata points to it, but there is no Q28 database row yet. Q57 and Q63 have diagram URLs in their draft metadata. Q66, Q67, Q68 and Q75 have SVG assets in this folder, but their new draft records were not retained and they are not attached to live database rows.
+The latest recorded database audit found **23 rows** for this shift: **22 published and 1 draft**. That count is historical and has not been rechecked in this session because the available Supabase tool returned a permissions error. The recorded audit said Q30 is published with a diagram URL; Q28 had an SVG but no database row; Q57 and Q63 had URLs in draft metadata; and Q66, Q67, Q68 and Q75 had SVGs but no retained draft records. Treat these attachment details as unverified until database access is restored.
 
 The PYQ browse pages and Prep Studio now retry a failed raw-GitHub diagram request using the GitHub Pages asset URL, then show an explicit fallback link if both loads fail.
 
 ## Source wording note
 
-The source paper's Q41 wording says “minimum” for the refractive index needed for total internal reflection, but the listed limiting answer corresponds to the **maximum** coating refractive index. The draft wording uses “maximum” to make the physics condition consistent with the answer.
+The prior audit flagged Q41's “minimum” refractive-index wording as potentially inconsistent with the TIR upper-limit condition; the original question and options must be rechecked before changing the wording. Do not silently rewrite the exam question.
+
+
+## Verification log — 2026-10-23
+
+- Repository path check: all 11 SVG paths listed above were retrievable from the default branch.
+- Q30 and Q42 SVG source files were re-fetched and exist; this is not a live-browser render test or proof of source-paper fidelity.
+- Q63 SVG was corrected in commit [e6f99e83920d9ad9814c615d80ee91d1ebd36724](https://github.com/bhavishyacodz/BLACK-JEE/commit/e6f99e83920d9ad9814c615d80ee91d1ebd36724) to make the diarylmethyl central-carbon/ring connections explicit.
+- The responsive gallery at [diagram-audit.html](../../../../diagram-audit.html) is an asset-loading preview only; its status badges do not certify scientific correctness.
+- Supabase table inspection was denied in this session. No database writes were made.
+
+## Outstanding before calling the shift complete
+
+1. Compare every diagram and its labels/values against the original JEE Main 2026 April 2 Shift 2 paper.
+2. Verify all 75 question statements, options, answer keys and explanations against a reliable source.
+3. Restore authorized read access and reconcile question records, publication status and image URLs; confirm Q28 and chemistry records.
+4. Open the live student experience and verify the correct image appears on each question.
+5. Do not describe the shift as complete until all checks above pass.
