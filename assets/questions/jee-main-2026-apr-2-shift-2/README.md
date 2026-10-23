@@ -163,3 +163,14 @@ Verified database counts after the update:
 - Total: **76 published rows**.
 
 **Important:** the intended shift set is 75 questions; Physics has one extra legacy duplicate row, so the live database currently contains 76 published rows. This is flagged for deduplication during the correction pass. Publishing was an owner's explicit choice and does not mean all source text, answers, or diagrams have been independently verified. Corrections will be made one by one; Q41 wording/key and diagram-source fidelity remain priorities.
+
+
+## Duplicate cleanup — 23 October 2026
+
+Removed the extra Physics record `ea58f588-c951-458b-8537-b09443a2735d` (the alternate Q41 draft) so only one Q41 record remains in the shift set. Kept the record matching the official source wording for now; the wording-versus-physics issue remains flagged for correction.
+
+Post-cleanup database verification:
+- Physics: 25 rows, all published
+- Chemistry: 25 rows, all published
+- Mathematics: 25 rows, all published
+- **Total: exactly 75 published rows**
