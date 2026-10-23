@@ -35,15 +35,24 @@ let supabase=null,rows=[];
 const subjects=["Physics","Chemistry","Mathematics"];
 const checklistItems=["All source question slots accounted for","Physics compared against source","Chemistry compared against source","Mathematics compared against source","Answer keys independently checked","Diagram/image references verified","Math rendering and options checked","Student flow tested on mobile"];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function mathMarkup(value){
- let t=String(value??"");
- // Already-delimited formulas must pass through untouched; nested MathJax delimiters break otherwise valid LaTeX.
- if(/\\\(|\\\[|\$/.test(t)) return esc(t);
- // For older OCR batches with bare LaTeX, wrap common commands so they render instead of appearing as raw slashes.
- t=t.replace(/\\(frac|dfrac|tfrac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g,(_,cmd,a,b)=>'\\('+'\\'+cmd+'{'+a+'}{'+b+'}'+'\\)');
- t=t.replace(/\\(alpha|beta|gamma|theta|pi|lambda|mu|sigma|omega|infty|cdot|times|pm|neq|leq|geq|sqrt)\b/g,m=>'\\('+m+'\\)');
- t=t.replace(/\\(cos|sin|tan|log|ln|arg|lim)\b/g,m=>'\\('+m+'\\)');
- return esc(t);
+function mathMarkup(value,forceMath=false){
+ const raw=String(value??"");
+ // Standalone options and answer values frequently contain bare LaTeX.
+ if(forceMath&&!(/\\\(|\\\[|\$/.test(raw))&&(/\\[A-Za-z]+|[_^]/.test(raw))) return esc('\\('+raw+'\\)');
+ // Keep existing math delimiters intact while repairing bare formulas around them.
+ const chunks=raw.split(/(\\\([^]*?\\\)|\\\[[^]*?\\\]|\$[^$]*\$)/g);
+ const repaired=chunks.map((chunk,i)=>{
+  if(i%2===1) return chunk;
+  let t=chunk;
+  t=t.replace(/\\(dfrac|tfrac|frac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g,m=>'\\('+m+'\\)');
+  t=t.replace(/\\times\s*\d+(?:\^\{[^{}]+\})?/g,m=>'\\('+m+'\\)');
+  t=t.replace(/\\sqrt\s*\{[^{}]*\}/g,m=>'\\('+m+'\\)');
+  t=t.replace(/\\(alpha|beta|gamma|theta|pi|lambda|mu|sigma|omega|nu|Delta|delta|infty|cdot|pm|neq|leq|geq|hat|vec)\b(?:\{[^{}]*\})?/g,m=>'\\('+m+'\\)');
+  t=t.replace(/\\mathrm\{[^{}]*\}(?:\/[^\s,.;:)]+)?/g,m=>'\\('+m+'\\)');
+  t=t.replace(/([A-Za-z][A-Za-z0-9]*[_^]\{[^{}]+\})/g,m=>'\\('+m+'\\)');
+  return t;
+ }).join("");
+ return esc(repaired);
 }
 const norm=s=>String(s??"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
 const keyForShift=s=>"blackjee-shift-checks:"+s;
@@ -129,7 +138,7 @@ function renderStaging(){
  if(q.diagram?.required===true&&!(q.diagram?.source_verified&&q.diagram?.render_verified))blockers.push("diagram not verified");
  const readiness=marked?"Local-browser QA mark only. It does not verify the source, change the shared manifest, approve publication, or publish to students.":blockers.length?"BLOCKERS: "+blockers.join(" · "):"Basic content fields present; complete source and QA verification before approval.";
  const options=Array.isArray(q.options)?q.options:[];
- const optionsHtml=options.length?'<div class="option-list">'+options.map((o,i)=>'<div class="option-item"><b>'+String.fromCharCode(65+i)+'.</b> <span class="math-inline">'+mathMarkup(o)+'</span></div>').join('')+'</div>':'<div class="notice">Options not supplied.</div>';
+ const optionsHtml=options.length?'<div class="option-list">'+options.map((o,i)=>'<div class="option-item"><b>'+String.fromCharCode(65+i)+'.</b> <span class="math-inline">'+mathMarkup(o,true)+'</span></div>').join('')+'</div>':'<div class="notice">Options not supplied.</div>';
   const visualAssets=Array.isArray(q.visual_assets)?q.visual_assets.slice():[];
   if(q.diagram?.asset_path&&!visualAssets.some(v=>v.asset_path===q.diagram.asset_path))visualAssets.unshift({kind:"diagram",asset_path:q.diagram.asset_path,alt_text:q.diagram.alt_text||"Question diagram"});
   const visualsHtml=visualAssets.length?'<div class="visual-assets" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px;margin:12px 0">'+visualAssets.map(v=>{let path=String(v.asset_path||"");while(path.startsWith("/"))path=path.slice(1);const src="assets/questions/jee-main-2026-apr-4-shift-1/"+path;return '<figure style="margin:0;padding:8px;border:1px solid var(--line,#333);border-radius:10px;background:var(--panel,#111)"><figcaption style="font-size:11px;color:var(--muted,#aaa);margin-bottom:6px">'+esc(v.kind||"question visual")+(v.source_verified&&v.render_verified?" · VERIFIED":" · DRAFT / UNVERIFIED")+'</figcaption><a href="'+esc(src)+'" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="'+esc(src)+'" alt="'+esc(v.alt_text||q.slot_id||"Question visual")+'" style="display:block;max-width:100%;max-height:260px;object-fit:contain;background:#fff;border-radius:5px"></a></figure>'}).join('')+'</div>':'';
@@ -139,7 +148,7 @@ function renderStaging(){
  const solution=q.solution??"(Worked solution not added)";
  const cardClass=marked?"qcard perfect-card":"qcard";
  const statusClass=marked?"pill perfect-pill":"pill draft";
- const answerDetails='<details'+(q.solution||q.correct_answer?' open':'')+'><summary>ANSWER KEY & WORKED SOLUTION</summary><div class="solution-block"><b>Correct option</b>\\n'+(correctOption?esc(correctOption):'(Option key pending)')+'\\n\\n<b>Answer value</b>\\n'+mathMarkup(answer)+'\\n\\n<b>Worked solution</b>\\n'+mathMarkup(solution)+'</div></details>';
+ const answerDetails='<details'+(q.solution||q.correct_answer?' open':'')+'><summary>ANSWER KEY & WORKED SOLUTION</summary><div class="solution-block"><b>Correct option</b>\\n'+(correctOption?esc(correctOption):'(Option key pending)')+'\\n\\n<b>Answer value</b>\\n'+mathMarkup(answer,true)+'\\n\\n<b>Worked solution</b>\\n'+mathMarkup(solution)+'</div></details>';
  const perfectButton=marked?'<button class="btn" data-perfect="'+esc(q.slot_id)+'" data-approved="false">UNDO PERFECT</button>':'<button class="btn primary" data-perfect="'+esc(q.slot_id)+'" data-approved="true">✓ MARK PERFECT</button>';
  return '<article class="'+cardClass+'"><div class="row"><div class="qmeta"><b>'+esc(q.subject)+'</b><span>·</span><span>Slot '+num+'</span><span>·</span><span>'+esc(q.slot_id)+'</span></div><span class="'+statusClass+'">'+esc(label)+'</span></div><div class="qtext math-inline">'+(q.question_text?mathMarkup(q.question_text):'<span class="muted">Question content has not been added yet.</span>')+'</div>'+optionsHtml+visualsHtml+'<div class="qmeta"><span>'+esc(diagram)+'</span><span>·</span><span>Answer '+(q.correct_answer?'added':'pending')+'</span><span>·</span><span>Solution '+(q.solution?'added':'pending')+'</span></div><div class="qmeta" style="margin-top:9px">'+esc(sourceLine)+'</div>'+(source.official_source_url?'<div class="qmeta" style="margin-top:6px"><a href="'+esc(source.official_source_url)+'#page='+Number(source.source_page||1)+'" target="_blank" rel="noopener noreferrer">OPEN OFFICIAL NTA SOURCE ↗</a></div>':'')+answerDetails+'<div class="'+(marked?'good':'warning')+'"><b>'+(marked?'PERFECT MARK':'Pre-flight')+':</b> '+esc(readiness)+'</div>'+(unchecked.length?'<div class="notice">QA pending: '+esc(unchecked.join(" · "))+'</div>':'<div class="good">All listed QA checks marked complete.</div>')+(review.length?'<div class="warning"><b>Review note:</b> '+esc(Array.isArray(review)?review.join(" · "):review)+'</div>':'')+'<details><summary>Inspect source and stored fields</summary><div class="answer"><b>Source reference</b>\n'+esc(JSON.stringify(source,null,2))+'\n\n<b>Stored question type</b>\n'+esc(q.question_type||"not supplied")+'\n\n<b>Reviewer notes</b>\n'+esc((q.reviewer_notes||[]).join("\n")||"None recorded")+'\n\n<b>Quality checks</b>\n'+esc(JSON.stringify(checks,null,2))+'</div></details><div class="perfect-actions">'+perfectButton+'</div></article>';
  }).join("");
