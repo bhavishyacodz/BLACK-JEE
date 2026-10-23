@@ -854,7 +854,7 @@
       "subject_question_number": 17,
       "section": "A",
       "draft_candidate_global_number": 70,
-      "status": "confirmed_mismatch",
+      "status": "candidate_needs_exact_review",
       "notes": "Confirmed mismatch against NTA source: Chemistry Q67 (global source Q67; question ID 691121217) has the source choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy draft global Q70 instead uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺ and a different question formulation. Do not mark verified; replace the draft using exact source prompt/options and official final key.",
       "verification_evidence": ""
     },
