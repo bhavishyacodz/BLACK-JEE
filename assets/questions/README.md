@@ -6,14 +6,11 @@ Store question diagrams and figure crops in this folder so they can be versioned
 
 Use one file per question, for example:
 
-- `jee-main-2026-apr-2-shift-2/q30.svg` (Q30 logic-circuit diagram)
-- `jee-main-2026-apr-2-shift-2/q41.svg` (Q41 prism and painted face)
+- `jee-main-2026-apr-4-shift-1/images/BJ-JM-20260404-S1-PHY-032-diagram-1.png`
+- `jee-main-2026-apr-4-shift-1/images/BJ-JM-20260404-S1-PHY-038-diagram-1.png`
+- `jee-main-2026-apr-4-shift-1/images/BJ-JM-20260404-S1-CHE-064-reaction-1.png`
 
-- `jee-main-2026-apr-2-shift-2/q42.svg` (Q42 LCR circuit)
-- `jee-main-2026-apr-2-shift-2/q50.svg` (Q50 moment-of-inertia figure)
-- `jee-main-2026-apr-2-shift-2/q57.svg` (Q57 reaction-kinetics graph)
-- `jee-main-2026-apr-2-shift-2/q32.png`
-- `jee-main-2026-apr-2-shift-2/q42.png`
+Use the exact existing asset path recorded in the April 4 manifest; never infer or reuse a diagram from another question.
 
 Create the subfolder in GitHub if needed. Keep the original question number in the filename; do not renumber by subject or crop order.
 
@@ -21,7 +18,7 @@ Create the subfolder in GitHub if needed. Keep the original question number in t
 
 1. Open the repository and upload the image into the matching folder.
 2. Open the BLACK-JEE Admin page and choose the written-question editor.
-3. Paste the exact relative path into **Optional Question Image / Diagram Path**, for example `assets/questions/jee-main-2026-apr-2-shift-2/q30.svg`, `assets/questions/jee-main-2026-apr-2-shift-2/q42.svg`, or `assets/questions/jee-main-2026-apr-2-shift-2/q50.svg`.
+3. Paste the exact relative path into **Optional Question Image / Diagram Path**, for example `assets/questions/your-question-diagram.svg` for a new daily-challenge diagram. For the April 4 PYQ assets, use the exact path from that shift's manifest.
 4. Check the preview, then publish the question.
 5. Open the student attempt page and confirm the diagram matches the question.
 
