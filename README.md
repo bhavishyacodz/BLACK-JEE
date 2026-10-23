@@ -9,10 +9,10 @@ A dark, mobile-friendly daily JEE challenge site. It includes a daily question b
 
 ## Quick start — using the website
 
-1. Open the live website and wait for the daily question to load.
-2. Tap **START ATTEMPT**; the timer should begin.
-3. Select an option if the question has choices, then tap **SUBMIT ATTEMPT**.
-4. Enter a display name or nickname. You can attach a photo of handwritten work or skip the photo.
+1. Open the Home dashboard; it shows the schedule and challenge title, not the question itself.
+2. Tap **START ATTEMPT** to open the dedicated attempt tab, then sign in with Google.
+3. Tap the reveal/start control on that tab. The server returns the question and starts the attempt clock; submit your answer once.
+4. You can attach a handwritten solution photo or skip it.
 5. The attempt stays private until the owner approves it in Admin.
 
 Each challenge runs for **24 hours: 12:00 PM IST on the day before its results date until 12:00 PM IST on its results date**. The `question_date` is the closing/results date. Correct/incorrect feedback appears immediately after submission. The correct option, approved top-three winners, and worked solution (if published) are released at **6:00 PM IST on the results date**. Schedule questions in advance; each opens automatically at noon the day before its results date.
@@ -22,7 +22,7 @@ Each challenge runs for **24 hours: 12:00 PM IST on the day before its results d
 1. Tap **ADMIN** on the website; the owner dashboard opens in a separate browser tab.
 2. Enter your owner email and password, then choose **OPEN ADMIN DASHBOARD**.
 3. If you see an admin-role warning, follow section 2 below to grant your owner account the admin role.
-4. Open **Question Studio** from the site. Enter the closing date, title, tags, difficulty, question, options, **correct option letter**, and worked solution; then tap **SAVE & GO LIVE**. Leave the results-release checkbox on to reveal the worked solution at 6:00 PM IST.
+4. Open **Question Studio**. Enter the results date, title, tags, difficulty, question, options, correct option letter, and worked solution; then schedule it. The database enforces the noon-to-noon attempt window and the 6:00 PM IST results release.
 5. The current `index.html` already contains the project's publishable key. Do not replace it unless you deliberately rotate the key.
 6. The site code is already connected to this project.
 
@@ -31,10 +31,10 @@ Each challenge runs for **24 hours: 12:00 PM IST on the day before its results d
 The SQL creates:
 - \`daily_questions\` — daily prompt, options, tags, official solution, a noon-to-noon attempt window, and a separate \`results_release_at\` timestamp for the 6 PM release gate.
 - \`attempt_submissions\` — name, time taken, optional photo path, review/publication state.
-- A **private** Storage bucket named \`attempt-photos\`. Photo URLs are signed for viewing; pending work is not publicly listed. The public question query cannot read the official \`solution\` column; \`get_released_solution\` releases it at 6 PM IST.
-- RLS policies so visitors can read live questions and submit attempts, the public sees only approved submissions, and only an account with the admin app-metadata role can manage questions or review submissions.
-- An index for submission/question joins. Official solutions are served through the `released-solution` Edge Function after the release gate; the database RPC is restricted to `service_role`.
-- A sample challenge for the active challenge's closing date. Publish the next day's challenge in Admin before noon.
+- A **private** Storage bucket named \`attempt-photos\`. Photo URLs are signed for viewing; pending work is not publicly listed. Browser roles cannot directly select question statements, options, diagrams, correct answers or solutions; the `released-solution` Edge Function enforces the 6 PM IST release gate.
+- RLS policies so visitors can read only live schedule metadata; question text, choices and diagrams are returned by the signed-in `start_challenge_attempt` RPC after the student starts. The public sees only approved submissions, and only an account with the admin app-metadata role can manage questions or review submissions.
+- An index for submission/question joins. The `released-solution` Edge Function enforces the 6:00 PM IST release gate.
+- A sample challenge for its results date. `question_date` is the closing/results date: a challenge opens at noon the previous day, closes at noon on that date, and results release at 6 PM.
 
 ## 2. Give your account admin access
 
