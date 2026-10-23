@@ -34,7 +34,7 @@ Use raw GitHub URLs for the database's `image_url` field:
 
 ## Current database attachment status
 
-The BLACK-JEE Supabase project currently has **23 rows** for this shift: **22 published and 1 draft**. Q30 is already published and its database row has a Q30 diagram URL. Q28's SVG has been created and its local draft metadata points to it, but there is no Q28 database row yet. The other new diagram URLs are present in the repository's draft metadata; they are not all attached to live database rows.
+The BLACK-JEE Supabase project currently has **23 rows** for this shift: **22 published and 1 draft**. Q30 is already published and its database row has a Q30 diagram URL. Q28's SVG has been created and its existing draft metadata points to it, but there is no Q28 database row yet. Q57 and Q63 have diagram URLs in their draft metadata. Q66, Q67, Q68 and Q75 have SVG assets in this folder, but their new draft records were not retained and they are not attached to live database rows.
 
 The PYQ browse pages and Prep Studio now retry a failed raw-GitHub diagram request using the GitHub Pages asset URL, then show an explicit fallback link if both loads fail.
 
