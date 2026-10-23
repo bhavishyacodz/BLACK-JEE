@@ -1,0 +1,44 @@
+[
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Straight Lines and Circles",
+    "source_question_number": 10,
+    "question_text": "Let a circle pass through the origin and its centre be the point of intersection of the two mutually perpendicular lines x + (k − 1)y + 3 = 0 and 2x + k²y − 4 = 0. If the line x − y + 2 = 0 intersects the circle at A and B, then (AB)² is equal to:",
+    "question_type": "MCQ",
+    "options": [
+      "10",
+      "27",
+      "18",
+      "34"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "C",
+    "solution": "The lines are perpendicular when k²(k−1)=−2, giving the real value k=−1. Their intersection is (1,2), so the circle through the origin has radius √5. The distance from (1,2) to x−y+2=0 is 1/√2. The chord length squared is 4(r²−d²)=4(5−1/2)=18, option C."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Trigonometric Equations",
+    "source_question_number": 13,
+    "question_text": "Let P = {θ ∈ [0, 4π] : tan²θ ≠ 1} and S = {a ∈ ℤ : 2(cos⁸θ − sin⁸θ) sec 2θ = a², θ ∈ P}. Then n(S) is:",
+    "question_type": "MCQ",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "A",
+    "solution": "Since cos⁸θ−sin⁸θ=(cos⁴θ−sin⁴θ)(cos⁴θ+sin⁴θ)=cos2θ(cos⁴θ+sin⁴θ), the left side is 2(cos⁴θ+sin⁴θ)=2−sin²2θ. For tan²θ≠1, this value is strictly greater than 1 and at most 2. There is no integer square in (1,2], so S is empty and n(S)=0, option A."
+  }
+]
