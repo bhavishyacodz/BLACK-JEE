@@ -7,7 +7,7 @@ The source-order review exposed a foundational mismatch between the printed NTA 
 - **Official printed paper order:** Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25.
 - **Legacy draft global slots:** Mathematics 1–25, Physics 26–50, Chemistry 51–75.
 - **Corrected crosswalk:** source rows are ordered Physics → Chemistry → Mathematics and candidates are aligned to the draft by subject and subject-local question number.
-- **Current verification status:** 15 rows are marked `confirmed_mismatch`, 54 remain `needs_exact_review`, and 6 are `source_extraction_unresolved`. All 75 remain non-publishable; none is marked `verified_exact_match`. These are preliminary content-comparison statuses based on a readable transcription, not final answer-key certification.
+- **Current verification status:** 14 rows are marked `confirmed_mismatch`, 55 remain `needs_exact_review`, and 6 are `source_extraction_unresolved`. All 75 remain non-publishable; none is marked `verified_exact_match`. These are preliminary content-comparison statuses based on a readable transcription, not final answer-key certification.
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
@@ -60,3 +60,8 @@ Updated legacy draft candidates for Physics source Q1, Q2, Q3, Q4 and Q24 (legac
 ## Correction pass — Physics Q9 candidate (2026-10-23)
 
 Legacy draft Q31 was corrected to match source Physics Q9: the question asks only for the speed of a 1 kg object falling from a long distance, with options 12.5, 11.2, 9.8 and 2.4 km/s. The prior draft incorrectly also asked for kinetic energy and had paired speed/energy options. The row is now `needs_exact_review`, not verified, pending the official final answer key.
+
+
+## Correction pass — Physics Q15 (2026-10-23)
+
+Legacy Q29 was aligned to the readable transcription's force vector, magnetic field (2×10⁻³ k̂ T), and velocity options. Recalculation gives 50 î + 100 ĵ m/s (option A). The crosswalk status changed from `confirmed_mismatch` to `needs_exact_review`; the official final answer key has not yet been independently confirmed. Publication remains HOLD.
