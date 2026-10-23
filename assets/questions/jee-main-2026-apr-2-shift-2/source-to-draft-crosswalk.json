@@ -1,0 +1,1408 @@
+{
+  "schema_version": 1,
+  "purpose": "Audit-only crosswalk. Candidate links indicate where to inspect; they are not verified equivalence and must not drive automatic renumbering or publication.",
+  "source_paper": "JEE Main 2026 April 2 Shift 2",
+  "source_order": [
+    "Physics 1-25",
+    "Chemistry 1-25",
+    "Mathematics 1-25"
+  ],
+  "draft_file": "assets/questions/jee-main-2026-apr-2-shift-2/full-shift-2-75-draft.json",
+  "records": [
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 1,
+        "paper_order": 1
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 28
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 2,
+        "paper_order": 2
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 37
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 3,
+        "paper_order": 3
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 27
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 4,
+        "paper_order": 4
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 35
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 5,
+        "paper_order": 5
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 6,
+        "paper_order": 6
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 45
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 7,
+        "paper_order": 7
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 44
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 8,
+        "paper_order": 8
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 32
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 9,
+        "paper_order": 9
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 31
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 10,
+        "paper_order": 10
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 50
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 11,
+        "paper_order": 11
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 33
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 12,
+        "paper_order": 12
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 49
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 13,
+        "paper_order": 13
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 47
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 14,
+        "paper_order": 14
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 38
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 15,
+        "paper_order": 15
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 29
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 16,
+        "paper_order": 16
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 41
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 17,
+        "paper_order": 17
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 26
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 18,
+        "paper_order": 18
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 30
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 19,
+        "paper_order": 19
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 40
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 20,
+        "paper_order": 20
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 43
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 21,
+        "paper_order": 21
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 46
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 22,
+        "paper_order": 22
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 48
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 23,
+        "paper_order": 23
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 42
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 24,
+        "paper_order": 24
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 36
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 25,
+        "paper_order": 25
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 1,
+        "paper_order": 26
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 72
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 2,
+        "paper_order": 27
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 55
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 3,
+        "paper_order": 28
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 4,
+        "paper_order": 29
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 71
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 5,
+        "paper_order": 30
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 51
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 6,
+        "paper_order": 31
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 73
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 7,
+        "paper_order": 32
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 54
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 8,
+        "paper_order": 33
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 57
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 9,
+        "paper_order": 34
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 52
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 10,
+        "paper_order": 35
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 56
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 11,
+        "paper_order": 36
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 74
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 12,
+        "paper_order": 37
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 53
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 13,
+        "paper_order": 38
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 58
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 14,
+        "paper_order": 39
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 59
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 15,
+        "paper_order": 40
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 61
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 16,
+        "paper_order": 41
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 17,
+        "paper_order": 42
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 70
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 18,
+        "paper_order": 43
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 69
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 19,
+        "paper_order": 44
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 20,
+        "paper_order": 45
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 75
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 21,
+        "paper_order": 46
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 67
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 22,
+        "paper_order": 47
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 65
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 23,
+        "paper_order": 48
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 68
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 24,
+        "paper_order": 49
+      },
+      "draft_candidate": {
+        "subject": "Chemistry",
+        "legacy_global_question_number": 63
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Chemistry",
+        "subject_question_number": 25,
+        "paper_order": 50
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 1,
+        "paper_order": 51
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 9
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 2,
+        "paper_order": 52
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 18
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 3,
+        "paper_order": 53
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 16
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 4,
+        "paper_order": 54
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 2
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 5,
+        "paper_order": 55
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 12
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 6,
+        "paper_order": 56
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 23
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 7,
+        "paper_order": 57
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 5
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 8,
+        "paper_order": 58
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 3
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 9,
+        "paper_order": 59
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 17
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 10,
+        "paper_order": 60
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 7
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 11,
+        "paper_order": 61
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 21
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 12,
+        "paper_order": 62
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 25
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 13,
+        "paper_order": 63
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 19
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 14,
+        "paper_order": 64
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 10
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 15,
+        "paper_order": 65
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 20
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 16,
+        "paper_order": 66
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 24
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 17,
+        "paper_order": 67
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 13
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 18,
+        "paper_order": 68
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 6
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 19,
+        "paper_order": 69
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 15
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 20,
+        "paper_order": 70
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 22
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 21,
+        "paper_order": 71
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 8
+      },
+      "status": "candidate_only_needs_exact_verification",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 22,
+        "paper_order": 72
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 23,
+        "paper_order": 73
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 24,
+        "paper_order": 74
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 25,
+        "paper_order": 75
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ]
+    }
+  ]
+}
