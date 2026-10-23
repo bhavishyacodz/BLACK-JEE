@@ -93,3 +93,8 @@ Created `paper-order-75-audit-view.json` to inspect the paper in the printed seq
 ## Correction pass — Chemistry Q9 (2026-10-23)
 
 Legacy Q52 was aligned to the readable source transcription: H₂S in 0.1 M HCl, Ka₁=8.3×10⁻⁸, Ka₂=1.0×10⁻¹³, and the requested species [HS⁻]. The equilibrium estimate gives 8.3×10⁻⁸ M. The option list is only a candidate reconstruction; exact source options and official final-key verification remain open. Status moved to `needs_exact_review`; publication remains HOLD.
+
+
+## Mock-test source-order correction (2026-10-23)
+
+Updated `mock-tests.html` to sort a full shift by Physics → Chemistry → Mathematics, with Section A before Section B in each subject, and by the explicit source-paper question number from a local crosswalk keyed to each candidate question stem. Sorting occurs before the question-count limit is applied, preventing a 10/20/30-question test from being selected from an arbitrary database order. The ordering map is derived from the audit-only paper-order view and does not certify question content. Questions absent from the candidate crosswalk still require source extraction and must not be treated as verified. The app query does not depend on a newly assumed database column. Build/deployment and browser-level verification remain pending.
