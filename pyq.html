@@ -107,6 +107,21 @@ function prettyQuestionText(value){
  return chunks.map((part,i)=>i%2===1?part.replace(/^(\$\$|\\\[|\\\(|\$)([\s\S]*?)(\$\$|\\\]|\\\)|\$)$/,(whole,open,body,close)=>open+normalizeMath(body)+close):normalizeText(part)).join("");
 }
 
+
+function prettyOptionText(value,q){
+ const raw=String(value??"");
+ const isApr4Physics=Number(q?.year)===2026&&/4\\s*April\\s*Shift\\s*1/i.test(String(q?.session||""))&&String(q?.subject||"").toLowerCase()==="physics";
+ if(!isApr4Physics)return prettyQuestionText(raw);
+ if(/\\\\\\(|\\\\\\[|\\$/.test(raw))return prettyQuestionText(raw);
+ // Preserve the actual option value for grading; add TeX delimiters only to its display string.
+ if(/\\b(?:Connect|All the metals)\\b/i.test(raw)){
+  const display=raw.replace(/\\\\frac\\{[^{}]+\\}\\{[^{}]+\\}\\\\,\\\\Omega|\\b(?:2x|x)\\\\,\\\\Omega/g,match=>"\\\\("+match+"\\\\)");
+  return prettyQuestionText(display);
+ }
+ if(/\\\\[A-Za-z]+|[_^]/.test(raw)&&!/[A-Za-z]{3,}\\s+[A-Za-z]{3,}/.test(raw))return prettyQuestionText("\\\\("+raw+"\\\\)");
+ return prettyQuestionText(raw);
+}
+
 function notify(id,msg,bad=false){const e=$(id);if(e){e.textContent=msg;e.style.color=bad?"#ff8992":"#9aa3b2";}}
 function fmt(q){return q.year+(q.session?" · "+q.session:"")+" · "+q.subject+" · "+q.chapter;}
 function optionsOf(q){return Array.isArray(q.options)?q.options:[];}
