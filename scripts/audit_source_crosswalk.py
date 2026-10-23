@@ -34,6 +34,7 @@ def main() -> int:
 
     seen_orders: list[int] = []
     seen_slots: set[tuple[str, int]] = set()
+    observed_record_order: list[int] = []
     counts: Counter[str] = Counter()
     status_counts: Counter[str] = Counter()
 
@@ -55,6 +56,7 @@ def main() -> int:
             errors.append(f"record {i}: invalid paper_order {paper_order!r}")
         else:
             seen_orders.append(paper_order)
+            observed_record_order.append(paper_order)
         slot = (subject, local)
         if slot in seen_slots:
             errors.append(f"duplicate source slot {slot}")
@@ -81,6 +83,12 @@ def main() -> int:
 
     if sorted(seen_orders) != list(range(1, 76)):
         errors.append("paper_order must contain each integer 1..75 exactly once")
+    if observed_record_order != list(range(1, 76)):
+        errors.append("records must be stored in exact source-paper order: Physics 1–25, Chemistry 1–25, Mathematics 1–25")
+    expected_slots = {(subject, number) for subject in SUBJECTS for number in range(1, 26)}
+    missing_slots = sorted(expected_slots - seen_slots)
+    if missing_slots:
+        errors.append(f"missing source slots: {missing_slots}")
     for subject in SUBJECTS:
         if counts[subject] != 25:
             errors.append(f"{subject}: expected 25 records, found {counts[subject]}")
