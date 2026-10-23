@@ -1,6 +1,6 @@
 # Content audit log — April 2, 2026 Shift 2
 
-> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. Current crosswalk statuses: 11 `confirmed_mismatch`, 58 `needs_exact_review`, 6 `source_extraction_unresolved`; all 75 remain non-publishable and none is certified exact. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
+> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. Current crosswalk statuses: 10 `confirmed_mismatch`, 59 `needs_exact_review`, 6 `source_extraction_unresolved`; all 75 remain non-publishable and none is certified exact. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
 
 This log records content-level findings that structural validation alone cannot catch. It is intentionally short so future review passes can load only the active issues.
 
@@ -186,3 +186,9 @@ This log records content-level findings that structural validation alone cannot 
 - Corrected expression to `3L₂ − L₁`; changed response type to numerical and removed MCQ options.
 - Calculated candidate answer: `2/9 H` for ω=300 rad/s and C=100 μF.
 - Still on HOLD pending independent comparison with the original NTA diagram and final answer key.
+
+
+## Chemistry Q9 correction — 2026-10-23
+- Legacy Q52 now uses H₂S, Ka₁=8.3×10⁻⁸ and Ka₂=1.0×10⁻¹³, and asks for [HS⁻].
+- Calculated candidate: 8.3×10⁻⁸ M. The reconstructed option list and final answer key remain unverified.
+- Crosswalk status: `needs_exact_review`; no publication until source options and official key are checked.
