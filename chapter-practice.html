@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090909">
 <title>BLACK-JEE · Chapter Practice</title>
 <meta name="description" content="Focused chapter-wise JEE Main PYQ practice on BLACK-JEE.">
-<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$","$"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$","$"]],processEscapes:true,processEnvironments:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <style>
 :root{color-scheme:dark;--bg:#090909;--panel:#111;--panel2:#171717;--line:#292929;--muted:#999;--white:#f4f4f4;--red:#ed2637;--green:#79d9a5;--amber:#f4c46a}
@@ -29,7 +29,7 @@ const params=new URLSearchParams(location.search),subject=params.get("subject")|
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let supabase=null,questions=[],sessionQuestions=[],answers={},grades={},index=0,deadline=0,timerHandle=null,finished=false;
 function note(id,message,bad=false){$(id).textContent=message;$(id).style.color=bad?"#ff9ca5":""}
-function typeset(el){if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([el]).catch(()=>{})}
+function typeset(el){if(!el||!window.MathJax?.typesetPromise)return;try{window.MathJax.typesetClear([el]);window.MathJax.typesetPromise([el]).catch(()=>{});}catch(_){}}
 function imageHtml(q){const url=String(q.image_url||"").trim();if(!url)return"";return '<img class="qimage" loading="lazy" alt="Question diagram" src="'+esc(url)+'" onerror="this.style.display=\'none\'">'}
 function fmt(q){return [q.year,q.session].filter(Boolean).join(" · ")}
 function shuffle(arr){const out=arr.slice();for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]]}return out}
@@ -143,7 +143,7 @@ input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
       : /correct|well done|great job/.test(text) ? "success"
       : /incorrect|wrong answer|try again/.test(text) ? "gentle"
       : control.matches("a[href]") ? "nav" : "tap";
-    if (navigator.vibrate) { try { navigator.vibrate(kind === "submit" ? [8,25,8] : kind === "answer" ? 6 : 8); } catch (_) {} }
+    if (/check answer|check your answer/i.test(text) || control.id === "checkBtn") return; if (navigator.vibrate) { try { navigator.vibrate(kind === "submit" ? [8,25,8] : kind === "answer" ? 6 : 8); } catch (_) {} }
     playSound(kind);
   }, true);
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", setup, {once:true});
