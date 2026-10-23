@@ -220,6 +220,7 @@ input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
     });
     document.body.appendChild(btn);
   }
+  document.addEventListener("blackjee:answer-graded", event => { const correct = !!event.detail?.correct; if (navigator.vibrate) { try { navigator.vibrate(correct ? [12,18,12] : [18,35,18]); } catch (_) {} } playSound(correct ? "success" : "gentle"); });
   let lastFeedbackAt = 0;
   document.addEventListener("click", event => {
     const target = event.target instanceof Element ? event.target : null;
