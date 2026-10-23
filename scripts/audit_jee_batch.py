@@ -179,7 +179,7 @@ def main():
     parser.add_argument("--all-json", action="store_true", help="Audit every JSON file in the April 2 Shift 2 folder.")
     parser.add_argument("--json-out", help="Write full machine-readable report to this path.")
     parser.add_argument("--expect", type=int, default=None, help="Expected record count for the selected batch.")
-    parser.add_argument("--expect-per-subject", type=int, default=None, help="Require each of Physics, Chemistry, and Mathematics to have this many questions numbered 1..N.")
+    parser.add_argument("--expect-per-subject", type=int, default=None, help="Require the expected global source-number ranges for each subject.")
     args = parser.parse_args()
 
     folder = ROOT / "assets/questions/jee-main-2026-apr-2-shift-2"
@@ -200,10 +200,10 @@ def main():
         except Exception:
             records = []
         if isinstance(records, list):
-            # This shift's draft uses global paper numbering: Mathematics 1–25,
-            # Physics 26–50, Chemistry 51–75. Do not assume numbering restarts per subject.
-            subject_starts = {"Mathematics": 1, "Physics": args.expect_per_subject + 1,
-                              "Chemistry": 2 * args.expect_per_subject + 1}
+            # JEE Main Paper 1 source order for this shift: Physics, Chemistry,
+            # Mathematics. Keep global source numbers aligned with the original paper.
+            subject_starts = {"Physics": 1, "Chemistry": args.expect_per_subject + 1,
+                              "Mathematics": 2 * args.expect_per_subject + 1}
             for subject in sorted(SUBJECTS):
                 numbers = sorted(q.get("source_question_number") for q in records
                                  if isinstance(q, dict) and q.get("subject") == subject
