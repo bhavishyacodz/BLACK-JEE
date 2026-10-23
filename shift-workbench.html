@@ -36,7 +36,12 @@ const subjects=["Physics","Chemistry","Mathematics"];
 const checklistItems=["All source question slots accounted for","Physics compared against source","Chemistry compared against source","Mathematics compared against source","Answer keys independently checked","Diagram/image references verified","Math rendering and options checked","Student flow tested on mobile"];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function mathMarkup(value,forceMath=false){
- const raw=String(value??"");
+ let raw=String(value??"");
+ raw=raw.replace(/\b10\s+ki\s+minus\s+(\d+)\b/gi,(_,n)=>"\\(10^{-"+n+"}\\)");
+ raw=raw.replace(/\b10\s+to\s+the\s+power\s+minus\s+(\d+)\b/gi,(_,n)=>"\\(10^{-"+n+"}\\)");
+ raw=raw.replace(/\b([A-Za-z])small([A-Za-z0-9]+)\b/g,(_,base,sub)=>"\\("+base+"_{"+sub+"}\\)");
+ raw=raw.replace(/\b([A-Za-z])\s+small\s+([A-Za-z0-9]+)\b/gi,(_,base,sub)=>"\\("+base+"_{"+sub+"}\\)");
+ raw=raw.replace(/\b([A-Za-z])\s+square\b/gi,(_,base)=>"\\("+base+"^2\\)");
  // Standalone options/answers are expressions, so render bare LaTeX as one unit.
  if(forceMath&&!(/\\\(|\\\[|\$/.test(raw))){
   if(/^\s*-?\d+\/\d+\s*$/.test(raw)){const p=raw.trim().split("/");return esc('\\(\\frac{'+p[0]+'}{'+p[1]+'}\\)');}
