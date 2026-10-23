@@ -1291,13 +1291,8 @@
       },
       "status": "confirmed_mismatch",
       "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source choices are Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺; draft includes Cr²⁺"
+      "verification": [],
+      "note": "Confirmed mismatch against NTA source: Chemistry Q67 (global source Q67; question ID 691121217) has the source choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy draft global Q70 instead uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺ and a different question formulation. Do not mark verified; replace the draft using exact source prompt/options and official final key."
     },
     {
       "source": {
