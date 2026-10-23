@@ -1,6 +1,6 @@
 # Content audit log — April 2, 2026 Shift 2
 
-> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. Current crosswalk statuses: 21 `confirmed_mismatch`, 48 `needs_exact_review`, 6 `source_extraction_unresolved`; all 75 remain non-publishable and none is certified exact. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
+> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. Current crosswalk statuses: 16 `confirmed_mismatch`, 53 `needs_exact_review`, 6 `source_extraction_unresolved`; all 75 remain non-publishable and none is certified exact. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
 
 This log records content-level findings that structural validation alone cannot catch. It is intentionally short so future review passes can load only the active issues.
 
@@ -149,3 +149,9 @@ This log records content-level findings that structural validation alone cannot 
 ## Critical source-fidelity gate — 2 April 2026 Shift 2
 
 **HOLD publication.** The official printed paper order is Physics Q1–25, Chemistry Q1–25, then Mathematics Q1–25, while the legacy draft uses internal global slots Mathematics 1–25, Physics 26–50, Chemistry 51–75. The source-to-draft crosswalk has been reordered to official paper order and candidate links remapped by subject-local question number. All 75 rows are now marked `needs_exact_review`; previous claims of 62 verified matches and the old Chemistry global-Q63–75 answer-key table are withdrawn pending exact source-by-source reconciliation. Do not publish or write to the live database until all 75 questions, diagrams and final keys have been verified.
+
+
+## Physics transcription-alignment pass — 2026-10-23
+- **Updated candidates:** legacy Q27 (rotating cylinder), Q28 (Atwood machine), Q35 (air-bubble viscosity), Q36 (falling ball into sand), Q37 (electromagnetic-wave field).
+- **Scope:** question stems, numerical values, options, and candidate answers were aligned with the readable transcription where legible.
+- **Gate:** these five are still `needs_exact_review`; official final-key verification and source-image comparison remain open. Do not publish yet.
