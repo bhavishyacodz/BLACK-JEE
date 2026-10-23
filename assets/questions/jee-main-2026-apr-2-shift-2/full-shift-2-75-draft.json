@@ -568,20 +568,20 @@
     "subject": "Physics",
     "chapter": "Moving Charges and Magnetism",
     "source_question_number": 29,
-    "question_text": "A particle having charge 10⁻⁹ C moving in the x-y plane in fields E = 0.4 ĵ N/C and B = 4×10⁻³ k̂ T experiences a force (4 î + 2 ĵ)×10⁻¹⁰ N. The velocity of the particle at that instant is:",
+    "question_text": "A particle of charge 10⁻⁹ C moves in the x-y plane in uniform fields E⃗ = 0.4 ĵ V/m and B⃗ = 2 × 10⁻³ k̂ T. The force on the particle is F⃗ = (2 × 10⁻¹⁰ î + 3 × 10⁻¹⁰ ĵ) N. The velocity of the particle is:",
     "question_type": "MCQ",
     "options": [
-      "50 î + 100 ĵ",
-      "100 î + 50 ĵ",
-      "−50 î + 100 ĵ",
-      "50 î − 100 ĵ"
+      "50 î + 100 ĵ m/s",
+      "100 î + 100 ĵ m/s",
+      "50 î + 50 ĵ m/s",
+      "50 î + 10 ĵ m/s"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
     "correct_answer": "A",
-    "solution": "Divide F=q(E+v×B) by q=10⁻⁹ C to get force per charge (0.4 î+0.2 ĵ) N/C. For v=vₓî+vᵧĵ, v×B=(0.004vᵧ)î−(0.004vₓ)ĵ. Comparing components gives vᵧ=100 and vₓ=50 m/s. Option A."
+    "solution": "Use F⃗ = q(E⃗ + v⃗ × B⃗). For v⃗ = vₓ î + vᵧ ĵ and B⃗ = 2×10⁻³ k̂, v⃗ × B⃗ = 2×10⁻³(vᵧ î − vₓ ĵ). The î component gives 2×10⁻¹⁰/10⁻⁹ = 2×10⁻³vᵧ, hence vᵧ = 100 m/s. The ĵ component gives 3×10⁻¹⁰/10⁻⁹ = 0.4 − 2×10⁻³vₓ, hence vₓ = 50 m/s. Therefore v⃗ = 50 î + 100 ĵ m/s, option A. Official answer-key verification remains pending."
   },
   {
     "year": 2026,
