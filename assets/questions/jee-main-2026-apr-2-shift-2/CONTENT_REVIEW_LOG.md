@@ -253,3 +253,8 @@ The source transcription asks for `3L₂ − L₁`, but the draft incorrectly as
 ## Diagram recovery — Physics Q20 and Q21 (2026-10-23)
 
 Added missing SVGs for the mutual-inductance setup (concentric coplanar square/circular loops, L ≫ R) and the YDSE path-difference setup (slits S₁/S₂, screen point P, paths S₁P and S₂P). Attached both assets to the draft records and audit view. These are clearly described as schematic reconstructions, not pixel-exact source figures. Compare against the original paper figures and verify final keys before certification; both rows remain `needs_exact_review` and unpublished.
+
+
+## Diagram recovery — Physics Q9 and Q14 (2026-10-23)
+
+Added `q31.svg` as a conceptual Earth-fall diagram for Physics Q9 and `q38.svg` as a schematic circuit for Physics Q14. Both SVGs include accessible titles/descriptions and explicitly state that they are reconstructions, not pixel-exact source copies. Attached them to the draft and audit view; crosswalk rows remain `needs_exact_review` until compared with the original paper figures and final answer key.
