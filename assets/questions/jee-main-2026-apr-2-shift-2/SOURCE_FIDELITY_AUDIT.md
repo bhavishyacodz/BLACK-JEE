@@ -189,4 +189,4 @@ Current ledger counts:
 
 These are candidate links only; the ledger deliberately does not mark any record as source-verified.
 
-The batch audit now checks the crosswalk's 1–75 order, expected subject sequence, subject-local numbering, Section A/B placement, and whether each draft candidate exists under the same subject. Any row marked `verified` must include verification evidence. The audit emits a source-fidelity warning while any row remains unverified. This makes the reconciliation queue machine-readable without allowing a topic-level similarity to masquerade as a verified match.
+The batch audit now checks the crosswalk's 1–75 order, expected subject sequence, subject-local numbering, Section A/B placement, and whether each draft candidate exists under the same subject. Any row marked `verified` must include verification evidence. Any unverified row now raises a hard CI error, so the batch cannot pass the release gate while source reconciliation remains incomplete. This makes the reconciliation queue machine-readable without allowing a topic-level similarity to masquerade as a verified match.
