@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="360" viewBox="0 0 620 360" role="img" aria-labelledby="title desc">
+<title id="title">JEE Main 2026 April 2 Shift 2 Question 28 Atwood machine</title>
+<desc id="desc">A light string passes over a fixed, light, frictionless pulley. A 2 kilogram block hangs on the left and a 1 kilogram block hangs on the right. The blocks start at the same height and are released.</desc>
+<rect width="620" height="360" fill="white"/>
+<g stroke="#171717" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M120 54 H500" stroke-width="7"/>
+ <path d="M290 54 V76 M330 54 V76"/>
+ <path d="M290 76 H330"/>
+ <circle cx="310" cy="117" r="43" fill="#f8fafc"/>
+ <path d="M267 117 H353"/>
+ <path d="M267 117 C267 93 286 74 310 74 C334 74 353 93 353 117"/>
+ <path d="M267 117 C267 141 286 160 310 160 C334 160 353 141 353 117"/>
+ <path d="M267 117 V250 M353 117 V250"/>
+ <rect x="241" y="250" width="52" height="45" fill="#e5e7eb"/>
+ <rect x="327" y="250" width="52" height="45" fill="#e5e7eb"/>
+ <path d="M267 250 V232 M353 250 V232"/>
+</g>
+<g fill="#171717" font-family="Arial, Helvetica, sans-serif">
+ <text x="267" y="278" font-size="22" text-anchor="middle">2 kg</text>
+ <text x="353" y="278" font-size="22" text-anchor="middle">1 kg</text>
+ <text x="310" y="184" font-size="15" text-anchor="middle">fixed pulley</text>
+ <text x="310" y="324" font-size="17" text-anchor="middle">Released from the same horizontal level</text>
+</g>
+</svg>
