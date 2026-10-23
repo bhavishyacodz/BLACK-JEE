@@ -1,6 +1,6 @@
 # Source-Fidelity Audit — JEE Main 2 April 2026 Shift 2
 
-## Status: HOLD — 58/75 questions verified; 17 remain
+## Status: HOLD — 62/75 questions verified; 13 remain
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
@@ -16,7 +16,7 @@ Mathematics Q1–Q16 and Q21–Q25, Physics Q26–Q50, and Chemistry Q51–Q62 h
 
 ## Remaining work
 
-Mathematics Q17–Q20 and Chemistry Q63–Q75 remain unverified for publication purposes (17 questions). Mathematics Q17–Q20 are intentionally marked source-extraction-unresolved; their draft mappings were removed rather than guessed. Chemistry Q63–Q75 still need exact source text/options, diagram review where applicable, and final-key reconciliation. One concrete mismatch is recorded: source Chemistry Q67 uses the choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺, whereas legacy draft global Q70 uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺. It remains blocked until the exact source prompt/options and final-key mapping are restored. Chemistry Q55's option order was corrected to match NTA; the equal osmotic pressures x=y=z=9.96×10⁻⁴ bar are option A and match the final key. Chemistry Q57 was also corrected to the exact source rate constant, statements A–E, original option set, answer, and graph; its final-key mapping is verified. Recheck exact wording, values, options, diagrams, and final-key evidence for every row. Independently recalculate answers where applicable.
+Chemistry Q63–Q75 remain unverified for publication purposes (13 questions). Mathematics Q17–Q20 have now been matched against the NTA paper and final answer key: Q17 option C (15π), Q18 option D (112), Q19 option C (39), and Q20 option B. Chemistry Q63–Q75 still need exact source text/options, diagram review where applicable, and final-key reconciliation. One concrete mismatch is recorded: source Chemistry Q67 uses the choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺, whereas legacy draft global Q70 uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺. It remains blocked until the exact source prompt/options and final-key mapping are restored. Chemistry Q55's option order was corrected to match NTA; the equal osmotic pressures x=y=z=9.96×10⁻⁴ bar are option A and match the final key. Chemistry Q57 was also corrected to the exact source rate constant, statements A–E, original option set, answer, and graph; its final-key mapping is verified. Recheck exact wording, values, options, diagrams, and final-key evidence for every row. Independently recalculate answers where applicable.
 
 ## Release gate
 
