@@ -5,11 +5,15 @@ on:
     paths:
       - "assets/questions/jee-main-2026-apr-2-shift-2/**"
       - "scripts/audit_jee_batch.py"
+      - "scripts/audit_source_crosswalk.py"
+      - "assets/questions/jee-main-2026-apr-2-shift-2/source-to-draft-crosswalk.json"
       - ".github/workflows/jee-pyq-audit.yml"
   pull_request:
     paths:
       - "assets/questions/jee-main-2026-apr-2-shift-2/**"
       - "scripts/audit_jee_batch.py"
+      - "scripts/audit_source_crosswalk.py"
+      - "assets/questions/jee-main-2026-apr-2-shift-2/source-to-draft-crosswalk.json"
       - ".github/workflows/jee-pyq-audit.yml"
   workflow_dispatch:
 
@@ -27,6 +31,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Validate source-to-draft crosswalk integrity
+        run: python scripts/audit_source_crosswalk.py
 
       - name: Audit the canonical 75-question batch
         run: python scripts/audit_jee_batch.py --expect 75 --expect-per-subject 25 --json-out audit-report.json
