@@ -117,9 +117,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 23
+        "legacy_global_question_number": 6
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -127,7 +127,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "circle of radius 6 and A=(3,0) diameter-locus problem appears aligned"
+      "note": "Verified exact Mathematics Q6 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121156, correct option ID 691121533 = C). Draft global Q6 matches all binomial coefficients, index ranges, options, and key."
     },
     {
       "source": {
@@ -137,9 +137,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 5
+        "legacy_global_question_number": 7
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -147,7 +147,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "eight-term series appears aligned"
+      "note": "Verified exact Mathematics Q7 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121157, correct option ID 691121537 = C). Draft global Q7 matches the polygon triangle-count condition and prime-divisor sum, options, and key."
     },
     {
       "source": {
@@ -157,9 +157,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 3
+        "legacy_global_question_number": 8
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -167,7 +167,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source's second linear equation is 2x+2y+4z=1; draft uses different coefficients/RHS"
+      "note": "Verified exact Mathematics Q8 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121158, correct option ID 691121541 = C). Draft global Q8 matches the repeated-coin scoring setup, reduced fraction request, options, and key; probability independently sums to 43/64."
     },
     {
       "source": {
@@ -177,9 +177,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 17
+        "legacy_global_question_number": 9
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -187,7 +187,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "integral of sin⁴x+cos⁴x from 0 to 20π appears aligned"
+      "note": "Verified exact Mathematics Q9 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121159, correct option ID 691121546 = D). Draft global Q9 matches mean, variance, partial sum, sum of squares, options, and key."
     },
     {
       "source": {
@@ -197,9 +197,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 7
+        "legacy_global_question_number": 10
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -207,7 +207,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "polygon triangle-count condition appears aligned"
+      "note": "Verified exact Mathematics Q10 against NTA question paper PDF p.4 and final answer key PDF p.2 (question ID 691121160, correct option ID 691121549 = C). Draft global Q10 matches both perpendicular-line equations, chord line, requested squared length, options, and key."
     },
     {
       "source": {
