@@ -621,7 +621,7 @@
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q31.svg",
     "correct_answer": "B",
     "solution": "Using conservation of energy for an object released from rest at a very large distance, v = √(2GM/Re) = √(2gsRe) = √(2×9.8×6.4×10⁶) ≈ 11.2 km/s. Option B. Final NTA answer-key verification remains pending."
   },
@@ -768,7 +768,7 @@
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q38.svg",
     "correct_answer": "B",
     "solution": "The bulb's rated resistance is R=V²/P=200²/100=400 Ω. It is in parallel with the 400 Ω resistor, giving 200 Ω; in series with 200 Ω, the total is 400 Ω. Current is 100/400=0.25 A, so the parallel branch voltage is 0.25×200=50 V. Option B."
   },
