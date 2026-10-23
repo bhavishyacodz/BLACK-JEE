@@ -121,3 +121,24 @@ This log records content-level findings that structural validation alone cannot 
 - **Chemistry Q59:** Both periodic-trend statements are false using the usual first/second ionisation data, option B; check source values and phrasing before release.
 - **Chemistry Q60:** The draft's qualitative explanation supports both statements as true, option A; verify the exact phrase “third valence electron” and official key.
 - **Boundary:** These are internal consistency checks, not source-paper transcription or official-key verification. Q41, Q42 and Q50 remain explicit manual-review items.
+
+
+## Independent calculation pass — Chemistry Q61–Q75
+
+- **Status:** Internal consistency checks against the draft wording only; official transcription and answer-key matching remain outstanding.
+- **Q61:** Coordination-isomerism reasoning supports B, D and E only (option B), pending source/key comparison.
+- **Q62:** Carbon- and hydrogen-percentage calculations independently give X ≈ 0.273 g, so the requested nearest integer is 273 (option A).
+- **Q63:** The resonance-effect explanation supports both statements as true if the source structures are transcribed correctly; compare q63.svg with the original diagram.
+- **Q64:** Heptane is consistent with the stated C₇ transformations; verify the exact reaction conditions/source wording.
+- **Q65:** Statements A and E are true while B–D are false, supporting option C.
+- **Q66:** C₂H₂O₂ is consistent with the equal molar amounts and 58 g mol⁻¹; glyoxal disproportionation gives glycolic acid, supporting option C, subject to reaction-condition/source verification.
+- **Q67:** The described hydrolysis products propanal and acetone have equal molar masses and both react with 2,4-DNP; A and D only, option D, if q67.svg matches the source.
+- **Q68:** The described sequence supports 2-bromobenzoic acid as E and option A; verify regiochemistry and diagram labels against q68.svg/source.
+- **Q69:** Tyrosine (Y) is the precursor for thyroid hormones such as thyroxine, option C.
+- **Q70:** Remains unresolved: verify the exact ionisation-enthalpy meaning and borax-bead observation against official source/key. Do not publish based only on the current qualitative rationale.
+- **Q71:** Photon-energy balance gives wavelength 500 nm, so x = 5.
+- **Q72:** Stoichiometric total-pressure calculation gives partial pressure of C = 20 mm Hg.
+- **Q73:** Using the stated standard potentials and 80% efficiency gives useful work ≈ 560472 J; at 1 kPa this corresponds to |ΔV| ≈ 560 m³.
+- **Q74:** Mn²⁺, Cu²⁺ and Gd³⁺ are paramagnetic; count = 3.
+- **Q75:** Monobrominated toluidine C₇H₈BrN gives about 1.01 g AgBr per 1.0 g product; nearest integer = 1, if q75.svg confirms a single bromination.
+- **Boundary:** All results above are draft-level calculations, not certification of official wording, answer keys, or diagram fidelity. Q63, Q66–Q70 and Q75 need source-specific checks where noted.
