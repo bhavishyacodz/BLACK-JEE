@@ -13,7 +13,7 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "A",
-    "solution": "For levitation, qE=ρ(4πr³/3)g. With ρ=1500 kg/m³, r=10⁻³ m and q=5×10⁻⁹ C, E=mg/q=4.0×10⁴ V/m. The plate spacing is 0.12/π m, so the required potential difference magnitude is Ed=480 V. The positive droplets need an upward field, so the lower plate B must be at higher potential: V_A=100 V, V_B=580 V. Option A."
+    "solution": "For levitation, qE=ρ(4πr³/3)g. With ρ=1500 kg/m³, r=10⁻³ m and q=5×10⁻⁹ C, E=mg/q=4000π V/m≈1.257×10⁴ V/m. The plate spacing is 0.12/π m, so the required potential difference magnitude is Ed=480 V. The positive droplets need an upward field, so the lower plate B must be at higher potential: V_A=100 V, V_B=580 V. Option A."
   },
   {
     "year": 2026,
