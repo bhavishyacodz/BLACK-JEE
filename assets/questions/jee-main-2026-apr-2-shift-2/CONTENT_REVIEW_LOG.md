@@ -192,3 +192,10 @@ This log records content-level findings that structural validation alone cannot 
 - Legacy Q52 now uses H₂S, Ka₁=8.3×10⁻⁸ and Ka₂=1.0×10⁻¹³, and asks for [HS⁻].
 - Calculated candidate: 8.3×10⁻⁸ M. The reconstructed option list and final answer key remain unverified.
 - Crosswalk status: `needs_exact_review`; no publication until source options and official key are checked.
+
+
+## Mock-test ordering fix — 2026-10-23
+- Changed full-shift ordering to Physics → Chemistry → Mathematics, Section A before Section B, then explicit printed question order where the source crosswalk has a candidate.
+- Applied the question-count limit only after sorting.
+- Built the order lookup from the existing audit-only paper-order JSON and matched on subject plus question stem; did not add a presumed Supabase column dependency.
+- This is a code-level correction only. The 75-question content and AC diagram remain on HOLD pending source/key verification. Awaiting Actions result and browser test.
