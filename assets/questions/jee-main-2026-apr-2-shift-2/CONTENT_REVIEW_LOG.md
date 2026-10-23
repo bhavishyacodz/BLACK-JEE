@@ -95,3 +95,29 @@ This log records content-level findings that structural validation alone cannot 
 - Keep diagrams as separate version-controlled assets referenced by stable paths from the canonical records. Never replace a missing diagram with a guess; flag it and block publication.
 - Run automated structure/order/duplicate/asset checks first, then calculation/key checks and official-paper visual comparison. Publish only after the review gate passes; keep the staging dataset unpublished while any critical issue remains.
 - Target: fast ingestion and deterministic checks, with uncertain content flagged rather than silently “fixed.” Automated checks reduce avoidable mistakes but cannot guarantee perfection without source comparison.
+
+
+## Independent calculation pass — Physics Q41–Q50 and Chemistry Q51–Q60
+
+- **Status:** Internal checks against the staged wording only. Official source transcription, answer-key match and diagram fidelity still require direct source comparison.
+- **Physics Q41:** The calculation n₂ = 1.6 sin 60° = 4√3/5 is the critical upper limit for the coating index in the described setup, not a minimum. Existing warning retained; do not publish until official wording/key are resolved.
+- **Physics Q42:** The stated circuit result is not independently certified from text alone; verify switch wiring and values in q42.svg against the official diagram.
+- **Physics Q43:** The large-square-loop central field approximation gives M ≈ 2√2 μ₀R²/L, option D, under the stated L ≫ R approximation.
+- **Physics Q44:** Using the supplied atomic masses gives binding energy per nucleon about 7.84 MeV, option B.
+- **Physics Q45:** First positive velocity-zero time is π/300 s; first positive zero-acceleration time is π/75 s, option A.
+- **Physics Q46:** Equal-slit interference gives the smallest positive path difference λ/6, so x = 6.
+- **Physics Q47:** In the Bohr model, the orbital field scales as n⁻⁵; B₂/B₄ = 32.
+- **Physics Q48:** With R ≈ 2 cal mol⁻¹ K⁻¹, Cᵥ ≈ 6 cal mol⁻¹ K⁻¹ and ΔU = 300 cal.
+- **Physics Q49:** The symmetric thin-lens formula gives n = 2, so α = 20, assuming the two radii have equal magnitude as implied by the draft.
+- **Physics Q50:** The draft's result α = 60 follows if the rod axis is through its end and the sphere axis passes through its centre. Verify both axes and the 3 m separation against q50.svg and the official paper.
+- **Chemistry Q51:** The mass ratio gives C₂H₂; 3.38 g yields 11.44 g CO₂, option B.
+- **Chemistry Q52:** In 0.1 M HCl, the first dissociation estimate gives [HA⁻] ≈ 8.1×10⁻⁸ M, option C.
+- **Chemistry Q53:** Electron-domain analysis gives seesaw structures for IF₄⁺ and XeO₂F₂; draft option B, subject to source/key confirmation.
+- **Chemistry Q54:** The reverse path has ΔU = +8 J and Q = −6 J, so 14 J of work is done on the gas, option D.
+- **Chemistry Q55:** Both starting solutions and their mixture have the same protein molarity, giving x = y = z = 9.96×10⁻⁴ bar, option B.
+- **Chemistry Q56:** Initial pH is about 2.0; at half-equivalence pH = pKa = 3.3, option B.
+- **Chemistry Q57:** Second-order units imply statements (i) and (iii) only, option B; the unrelated graph asset was removed from this record.
+- **Chemistry Q58:** K₂O, Cl₂O₇, As₂O₃ and NO represent basic, acidic, amphoteric and neutral oxides, respectively, option C.
+- **Chemistry Q59:** Both periodic-trend statements are false using the usual first/second ionisation data, option B; check source values and phrasing before release.
+- **Chemistry Q60:** The draft's qualitative explanation supports both statements as true, option A; verify the exact phrase “third valence electron” and official key.
+- **Boundary:** These are internal consistency checks, not source-paper transcription or official-key verification. Q41, Q42 and Q50 remain explicit manual-review items.
