@@ -19,31 +19,10 @@ CASES = [
 ]
 
 def extract_function(source: str, signature: str) -> str:
-    match = re.search(signature + r"\s*\{", source)
+    match = re.search(signature + r"\s*\{[\s\S]*?^\}", source, re.MULTILINE)
     if not match:
-        raise ValueError("normalizer function not found")
-    start = match.start()
-    brace = source.find("{", match.start())
-    depth, quote, escaped = 0, None, False
-    for i in range(brace, len(source)):
-        ch = source[i]
-        if quote:
-            if escaped:
-                escaped = False
-            elif ch == "\\\\":
-                escaped = True
-            elif ch == quote:
-                quote = None
-            continue
-        if ch in ("'", '"', "`"):
-            quote = ch
-        elif ch == "{":
-            depth += 1
-        elif ch == "}":
-            depth -= 1
-            if depth == 0:
-                return source[start:i + 1]
-    raise ValueError("normalizer function has unbalanced braces")
+        raise ValueError("normalizer function not found or outer closing brace not on its own line")
+    return match.group(0)
 
 def main() -> int:
     pages = {
