@@ -41,7 +41,7 @@ for index, item in enumerate(crops, 1):
     if qid not in questions_by_id:
         fail(f"crop #{index}: unknown question_id {qid!r} in shift-manifest.json")
     target_q = questions_by_id[qid]
-    target_key = (target_q.get("subject"), int(target_q.get("subject_question_number", -1)))
+    source_number = int(qid.rsplit("-", 1)[-1])\n    target_key = (target_q.get("subject"), source_number)
     if target_key not in manifest_by_subject_number:
         fail(f"crop #{index}: no matching question in manifest.json for {target_key!r}")
     source = item.get("source_screenshot", "")
