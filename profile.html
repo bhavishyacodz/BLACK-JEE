@@ -57,6 +57,17 @@ body.menu-open{overflow:hidden}
 .achievement.locked{color:#9299a5;background:rgba(255,255,255,.02)}
 @media(min-width:640px){.history-tools{grid-template-columns:minmax(0,1.2fr) minmax(180px,.8fr);align-items:end}.history-tools .history-search-label{grid-row:auto}.history-tools #historySearch{grid-column:1}.history-tools label[for="historyFilter"]{grid-column:2;grid-row:1}.history-tools #historyFilter{grid-column:2;grid-row:2}.history-tools #historySummary{grid-column:1/-1}}
 </style>
+<style id="blackjee-monochrome-consistency-v1">
+/* BLACK-JEE student UI: neutral monochrome accent, consistent across screens. */
+:root{--red:#f0f0f0!important;--red2:#bdbdbd!important;--brand-accent:#f0f0f0!important;--home-gold:#ededed!important;--clarity-gold:#e0e0e0!important;--amber:#d8d8d8!important;--green:#c5c5c5!important}
+.red,.tiny.red,.gold-subtitle,.guide-kicker{color:#ededed!important}
+.live-dot{background:#ededed!important;box-shadow:0 0 0 4px #ededed18!important}
+.btn-red,.hero-bottom .btn-red,.section-head .btn-red{background:#f0f0f0!important;border-color:#f0f0f0!important;color:#090909!important;box-shadow:none!important}
+.mobile-tabbar a.active,.mobile-tabbar a.active span,.mobile-tabs .mobile-tab.active{color:#f2f2f2!important}
+.mobile-tabbar a.active span{color:#f2f2f2!important}
+:where(button,a,input,textarea,select):focus-visible{outline-color:#f0f0f0!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span> BLACK JEE</a><div class="actions"><a class="btn" href="attempt.html">ATTEMPT ↗</a><div class="top-action-links"><a class="top-action-link" href="admin.html?admin=1" aria-label="Open admin dashboard">ADMIN</a><a class="top-action-link" href="profile.html" aria-label="Open your profile">PROFILE</a></div><button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header>
