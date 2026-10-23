@@ -56,3 +56,13 @@ This log records content-level findings that structural validation alone cannot 
 - **Q14:** The two dot-product equations yield λ = 1, μ = −1, hence c = (−2, −2, 2) and |c|² = 12 (option B).
 - **Q15:** Midpoint, line-membership and perpendicularity conditions give a = b = 0 and α = 1; requested value is 1 (option A).
 - **Boundary:** Mathematical consistency only; official source/key verification is still needed.
+
+## Independent calculation pass — Mathematics Q6–Q10
+
+- **Status:** Calculations checked against the displayed draft statements; official source transcription and final answer-key comparison remain outstanding.
+- **Q6:** By symmetry of binomial coefficients and Vandermonde's identity, the sum is C(33,r), so m = 33 (option C).
+- **Q7:** C(n+1,3) − C(n,3) = C(n,2) = 66 gives n = 12; distinct prime divisors sum to 5 (option C).
+- **Q8:** The score equation is 2H + T = 6. The possible head counts H = 0,1,2,3 contribute probabilities 1/64, 10/64, 24/64, 8/64; total 43/64 and m+n = 107 (option C).
+- **Q9:** Variance gives total square sum 80n. Equating the last observation and its square yields 4n² − 53n + 175 = 0; the only integer solution is n = 7 (option D).
+- **Q10:** Perpendicularity gives k = −1; the circle centre is (1,2), radius squared 5, and line distance squared 1/2. Chord squared is 18 (option C).
+- **Boundary:** These are independent mathematical checks, not proof of official paper transcription or answer-key fidelity.
