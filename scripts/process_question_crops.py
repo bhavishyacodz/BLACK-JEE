@@ -65,11 +65,11 @@ for index, item in enumerate(crops, 1):
     if filename in used_names:
         fail(f"duplicate output filename: {filename}")
     used_names.add(filename)
-    validated.append((item, source_path, qid, filename, (x, y, w, h)))
+    validated.append((item, source_path, qid, filename, (x, y, w, h), target_key))
     source_paths.add(source_path)
 
 # Validate every crop before writing or deleting anything.
-for item, source_path, qid, filename, (x, y, w, h) in validated:
+for item, source_path, qid, filename, (x, y, w, h), target_key in validated:
     try:
         with Image.open(source_path) as im:
             im.verify()
@@ -78,7 +78,7 @@ for item, source_path, qid, filename, (x, y, w, h) in validated:
 
 asset_dir = SHIFT / "images"
 asset_dir.mkdir(parents=True, exist_ok=True)
-for item, source_path, qid, filename, (x, y, w, h) in validated:
+for item, source_path, qid, filename, (x, y, w, h), target_key in validated:
     with Image.open(source_path) as original:
         im = original.convert("RGB")
         left, top = round(x*im.width), round(y*im.height)
