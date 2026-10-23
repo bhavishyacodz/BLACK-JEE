@@ -222,3 +222,10 @@ This log records content-level findings that structural validation alone cannot 
 - Q33 carries a clearly labelled provisional answer placeholder only because the schema validator requires an MCQ key. The solution warns not to score or publish it until the original source/options discrepancy is resolved.
 - Q42 now uses the source expression `3L₁ − L₂` and option list; the SVG switch bypass wiring was swapped to match the algebraic relationship, but it remains a reconstructed figure awaiting original-image verification.
 - Overall paper remains on HOLD.
+
+
+## Crosswalk integrity correction — 2026-10-23
+- Corrected a flawed assumption that legacy global records Q26–50 were in the same order as printed Physics Q1–25. Rebuilt Physics mapping from topic-matched candidates and synchronized the source-to-draft crosswalk, audit view, and runtime order map.
+- Physics Q5 and Q25 are unmapped; do not substitute unrelated records. Physics Q10, Q19 and Q24 remain confirmed content mismatches.
+- The runtime order map now has 67 mapped stems; eight source questions lack candidate mappings. Full-shift start remains blocked until all mappings and content are reviewed.
+- Current crosswalk statuses: 11 confirmed mismatches, 57 needing exact review, 7 source-extraction unresolved. Paper remains on HOLD.
