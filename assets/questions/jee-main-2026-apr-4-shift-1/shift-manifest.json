@@ -354,9 +354,9 @@
       "solution": "Photoelectric Kmax=hν−Φ. The smallest threshold frequency means the smallest work function, so X₁ gives the greatest kinetic energy for the same incident wavelength.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Graph of stopping potential V_0 against incident frequency nu. Three parallel straight lines X_1, X_2 and X_3 intercept the frequency axis at 1.0, 1.5 and 2.0 respectively, with the frequency scale marked ×10^14 Hz.",
-        "source_verified": true,
+        "asset_path": "images/BJ-JM-20260404-S1-PHY-032-diagram-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-032",
+        "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
@@ -387,6 +387,16 @@
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "diagram",
+          "asset_path": "images/BJ-JM-20260404-S1-PHY-032-diagram-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-032",
+          "source_screenshot": "Screenshot_20261023_213123.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -666,9 +676,9 @@
       "solution": "Cannot determine the output because the logic-circuit diagram is missing from the supplied source extraction.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Logic circuit from the official paper: input A passes through an inverter (NOT gate), then enters an AND-shaped gate with an inversion bubble at the output (NAND); input B enters the second gate directly. The output is Y.",
-        "source_verified": true,
+        "asset_path": "images/BJ-JM-20260404-S1-PHY-038-diagram-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-038",
+        "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
@@ -698,6 +708,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
+      ],
+      "visual_assets": [
+        {
+          "kind": "diagram",
+          "asset_path": "images/BJ-JM-20260404-S1-PHY-038-diagram-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-038",
+          "source_screenshot": "Screenshot_20261023_213134.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -717,9 +737,9 @@
       "solution": "Mirror formula gives image endpoints v₁=−20 cm for u₁=−20 cm and v₂=−15 cm for u₂=−30 cm; image length is 5 cm. Diagram-dependent geometry needs source review.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "A 10 cm rod lies along the principal axis in front of a concave mirror. The rod endpoint nearer the mirror is 20 cm from the pole.",
-        "source_verified": true,
+        "asset_path": "images/BJ-JM-20260404-S1-PHY-039-diagram-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-039",
+        "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
@@ -750,6 +770,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "diagram",
+          "asset_path": "images/BJ-JM-20260404-S1-PHY-039-diagram-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-039",
+          "source_screenshot": "Screenshot_20261023_213146.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -874,9 +904,9 @@
       "solution": "The forward-biased diode contributes 10 Ω in series with 100 Ω. τ=(110 Ω)(20 μF)=2.2×10⁻³ s.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "A voltage source V, capacitor C=20 μF, and resistor R=100 Ω are in series with a pair of identical anti-parallel diodes. The forward-bias resistance of a diode is 10 Ω.",
-        "source_verified": true,
+        "asset_path": "images/BJ-JM-20260404-S1-PHY-042-diagram-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-042",
+        "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
@@ -909,6 +939,16 @@
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "diagram",
+          "asset_path": "images/BJ-JM-20260404-S1-PHY-042-diagram-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-042",
+          "source_screenshot": "Screenshot_20261023_213205.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -928,9 +968,9 @@
       "solution": "Four identical 27 V branches with 3 Ω internal resistance give Rth=3/4 Ω. A 6 Ω load then carries 27/(6.75)=4 A and has 24 V across it; verify the circuit diagram.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Circuit between nodes A and B with four outer branches: three branches contain a 27 V cell and a 3 Ω resistor, while one contains 14 V and 13 V cells in series followed by a 3 Ω resistor. A diagonal branch from A to B contains two 3 Ω resistors in series. Cell polarities are as drawn in the official source.",
-        "source_verified": true,
+        "asset_path": "images/BJ-JM-20260404-S1-PHY-043-diagram-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-043",
+        "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
@@ -961,6 +1001,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "diagram",
+          "asset_path": "images/BJ-JM-20260404-S1-PHY-043-diagram-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-043",
+          "source_screenshot": "Screenshot_20261023_213205.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -1032,9 +1082,9 @@
       "solution": "The proposed polarization/phase answer relies on a diagram and option interpretation; the supplied explanation itself notes that its selected option has a polarization-factor mismatch. Needs review.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Three-dimensional coordinate diagram of an air–dielectric interface. The interface is the x-y plane, with z directed down into the medium; incident light rays approach the interface in the x-z plane.",
-        "source_verified": true,
+        "asset_path": "images/BJ-JM-20260404-S1-PHY-045-diagram-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-045",
+        "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
@@ -1067,6 +1117,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "diagram",
+          "asset_path": "images/BJ-JM-20260404-S1-PHY-045-diagram-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-PHY-045",
+          "source_screenshot": "Screenshot_20261023_213215.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -1900,9 +1960,9 @@
       "correct_answer": "A-III, B-I, C-IV, D-II",
       "solution": "High-spin aqua complexes give Cr²⁺: 4 unpaired, Co²⁺: 3, Cu²⁺: 1, Mn²⁺: 5; spin-only moments match III, I, IV, II respectively.",
       "diagram": {
-        "required": false,
-        "asset_path": null,
-        "alt_text": null,
+        "required": true,
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-062-matching-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-062",
         "source_verified": false,
         "render_verified": false
       },
@@ -1934,6 +1994,16 @@
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "matching",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-062-matching-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-062",
+          "source_screenshot": "Screenshot_20261023_213230.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2005,8 +2075,8 @@
       "solution": "Ozonolysis structures and answer options are unreadable/missing in the source extraction; no answer should be guessed.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Reaction-product structure and all four alkene option structures are not recoverable from the supplied text OCR; transcribe from the source-paper image.",
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-064-reaction-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-064",
         "source_verified": false,
         "render_verified": false
       },
@@ -2037,6 +2107,48 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
+      ],
+      "visual_assets": [
+        {
+          "kind": "reaction",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-064-reaction-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-064",
+          "source_screenshot": "Screenshot_20261023_213242.jpg",
+          "source_verified": false,
+          "render_verified": false
+        },
+        {
+          "kind": "option_a",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-064-option_a-2.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-064",
+          "source_screenshot": "Screenshot_20261023_213242.jpg",
+          "source_verified": false,
+          "render_verified": false
+        },
+        {
+          "kind": "option_b",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-064-option_b-3.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-064",
+          "source_screenshot": "Screenshot_20261023_213242.jpg",
+          "source_verified": false,
+          "render_verified": false
+        },
+        {
+          "kind": "option_c",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-064-option_c-4.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-064",
+          "source_screenshot": "Screenshot_20261023_213242.jpg",
+          "source_verified": false,
+          "render_verified": false
+        },
+        {
+          "kind": "option_d",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-064-option_d-5.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-064",
+          "source_screenshot": "Screenshot_20261023_213242.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2055,9 +2167,9 @@
       "correct_answer": "A-III, B-I, C-IV, D-II",
       "solution": "Finkelstein: NaI; Swarts: SbF₃; Sandmeyer: Cu(I) chloride; Fittig: Na/dry ether.",
       "diagram": {
-        "required": false,
-        "asset_path": null,
-        "alt_text": null,
+        "required": true,
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-065-matching-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-065",
         "source_verified": false,
         "render_verified": false
       },
@@ -2091,6 +2203,16 @@
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "matching",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-065-matching-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-065",
+          "source_screenshot": "Screenshot_20261023_213242.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2110,8 +2232,8 @@
       "solution": "The supplied list identifies 1-naphthol, dimethylaminophenol, ethylphenol, benzoic acid and naphthoic acid as soluble in aqueous NaOH; count=5. Verify the exact structures in the source.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "The source figure contains nine labelled chemical structures (I)–(IX); recover and check each structure against the original paper.",
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-066-reaction-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-066",
         "source_verified": false,
         "render_verified": false
       },
@@ -2145,6 +2267,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "reaction",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-066-reaction-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-066",
+          "source_screenshot": "Screenshot_20261023_213255.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2164,8 +2296,8 @@
       "solution": "Aniline bromination gives 2,4,6-tribromoaniline, followed by diazotization and replacement of the diazonium group by NO₂ in the stated sequence. The final numbering/name needs checking against the original structures.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Reaction scheme from aniline through bromination, diazotization and subsequent reagents; verify exact final-step sequence from source figure.",
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-067-reaction-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-067",
         "source_verified": false,
         "render_verified": false
       },
@@ -2199,6 +2331,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "reaction",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-067-reaction-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-067",
+          "source_screenshot": "Screenshot_20261023_213255.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2218,8 +2360,8 @@
       "solution": "Maltose and lactose are reducing sugars because each retains a free anomeric carbon; therefore the maltose statement is false and the lactose statement true.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Recover both source-paper structures labelled maltose and lactose from the original page.",
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-068-reaction-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-068",
         "source_verified": false,
         "render_verified": false
       },
@@ -2253,6 +2395,16 @@
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "reaction",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-068-reaction-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-068",
+          "source_screenshot": "Screenshot_20261023_213312.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2271,9 +2423,9 @@
       "correct_answer": "A-II, B-I, C-IV, D-III",
       "solution": "Arginine→R/essential or semi-essential; aspartic acid→D/non-essential; lysine→K/essential; glutamic acid→E/non-essential. Check exact source classification of arginine.",
       "diagram": {
-        "required": false,
-        "asset_path": null,
-        "alt_text": null,
+        "required": true,
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-069-matching-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-069",
         "source_verified": false,
         "render_verified": false
       },
@@ -2307,6 +2459,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "matching",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-069-matching-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-069",
+          "source_screenshot": "Screenshot_20261023_213312.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2326,8 +2488,8 @@
       "solution": "Excess strong NaOH can convert phenolphthalein to a carbinol form with disrupted conjugation, which is colourless. Confirm the depicted compound X from the source.",
       "diagram": {
         "required": true,
-        "asset_path": null,
-        "alt_text": "Reaction sequence and final compound X are shown in source diagram; supplied transcription says the final structure is labelled '(Pink)'.",
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-070-reaction-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-070",
         "source_verified": false,
         "render_verified": false
       },
@@ -2361,6 +2523,16 @@
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ],
+      "visual_assets": [
+        {
+          "kind": "reaction",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-070-reaction-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-070",
+          "source_screenshot": "Screenshot_20261023_213323.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
@@ -2421,9 +2593,9 @@
       "correct_answer": null,
       "solution": "The starting reactant is absent from the extracted reaction sequence. The proposed benzene assumption is not enough to set a definitive answer.",
       "diagram": {
-        "required": false,
-        "asset_path": null,
-        "alt_text": null,
+        "required": true,
+        "asset_path": "images/BJ-JM-20260404-S1-CHE-072-reaction-1.png",
+        "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-072",
         "source_verified": false,
         "render_verified": false
       },
@@ -2456,6 +2628,16 @@
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
         "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Paper Q72 explicitly marked NEEDS REVIEW: missing reactant/source context; no numerical key was supplied."
+      ],
+      "visual_assets": [
+        {
+          "kind": "reaction",
+          "asset_path": "images/BJ-JM-20260404-S1-CHE-072-reaction-1.png",
+          "alt_text": "Source-paper visual for BJ-JM-20260404-S1-CHE-072",
+          "source_screenshot": "Screenshot_20261023_213336.jpg",
+          "source_verified": false,
+          "render_verified": false
+        }
       ]
     },
     {
