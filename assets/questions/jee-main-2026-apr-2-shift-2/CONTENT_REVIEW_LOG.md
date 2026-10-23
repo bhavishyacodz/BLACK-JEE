@@ -36,3 +36,13 @@ This log records content-level findings that structural validation alone cannot 
 - **Q24:** Integrating between the upper hyperbola branch and line on x ∈ [3,5] gives A = 8 − 6 ln 3; requested value is 24.
 - **Q25:** The increasing expression crosses integer levels 2 through 11 on [2,4], giving 10 discontinuities.
 - **Boundary:** These checks validate the displayed mathematics only; they do not prove transcription fidelity to the official paper or the final NTA key.
+
+## Independent calculation pass — Mathematics Q16–Q20
+
+- **Status:** Independent calculations checked against the displayed draft statements; official transcription and final-key comparison remain outstanding.
+- **Q16:** The side vectors have dot product −1 and equal squared magnitudes 2, giving included angle 120°. A 30° rotation makes them perpendicular; the expression evaluates to √3/2 (option B).
+- **Q17:** The average of sin⁴x + cos⁴x over full periods is 3/4. On [0, 20π], the integral is 15π (option C).
+- **Q18:** The limit and extrema conditions yield f(x) = 3x⁵ − 5x³, so f(2) − f(−2) = 112 (option D).
+- **Q19:** Partial fractions give 7/(x+5) + 9/(x−3). Applying f(4) fixes the constant at zero; f(7) = 32 ln 2 + 7 ln 3, so α + β = 39 (option C).
+- **Q20:** Substitution x = yz gives x = 2y/(1 + ln y); hence x(e²) = 2e²/3 (option B).
+- **Boundary:** This is a mathematical consistency pass only. Do not treat it as official source/key verification.
