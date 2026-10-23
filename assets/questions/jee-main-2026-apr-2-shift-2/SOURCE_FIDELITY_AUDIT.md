@@ -33,6 +33,15 @@ This pass found clear differences in Chemistry Q9 (H₂S vs H₂A and changed Ka
 
 **Result:** no Chemistry row is promoted to verified; publication remains HOLD.
 
+
+## Source comparison pass — Mathematics Q1–Q25 (2026-10-23)
+
+**Source used:** [Readable transcription of the NTA paper](https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf). Candidate links are content-based leads, not exact-match certification.
+
+Clear differences were found in Mathematics Q3 (different vectors), Q8 (different linear-system coefficients), Q12 (different greatest-integer expression), Q15 (different requested expression), Q16 (different requested area expression), Section-B Q1 (different trigonometric expression), and Section-B Q4 (matrix B entries differ). Those rows are marked `confirmed_mismatch`. The available transcription omits Section-A Q17–Q20, so those four source rows have no guessed candidates and remain `source_extraction_unresolved`. Other candidates still require exact statement/options and final-key verification.
+
+**Result:** no Mathematics row is promoted to verified; publication remains HOLD.
+
 ## Audit gates
 
 1. Compare each source question with the subject-local draft candidate, including every value, option, diagram and question type.
