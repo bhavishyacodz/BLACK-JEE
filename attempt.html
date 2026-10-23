@@ -993,10 +993,10 @@ async function saveQuestion(){
   }
   const isSunday=new Date(date+"T00:00:00Z").getUTCDay()===0;
   if(isSunday&&!title.toUpperCase().startsWith("THE SOVEREIGN GAUNTLET"))title="THE SOVEREIGN GAUNTLET — GOLDEN SUNDAY: "+title;
-  const startsAt=new Date(date+"T06:00:00+05:30");const endsAt=new Date(date+"T18:00:00+05:30");
+  const endsAt=new Date(date+"T12:00:00+05:30");const startsAt=new Date(endsAt.getTime()-24*60*60*1000);
   const payload={question_date:date,...editable,title,solution_published:false,is_live:true,starts_at:startsAt.toISOString(),ends_at:endsAt.toISOString()};
   const {error}=await supabase.from("daily_questions").insert(payload);if(error){if(error.code==="23505")throw new Error("A challenge is already saved for "+date+". Historical dates are protected from accidental replacement. Choose a new date, or load the current live question to edit that active record.");throw error;}
-  notify(note,isSunday?"GOLDEN SUNDAY scheduled. THE SOVEREIGN GAUNTLET opens at 6:00 AM IST on Sunday; results and the worked solution release at 6:00 PM IST.":"Question scheduled. It opens at 6:00 AM IST on its question date and closes with results release at 6:00 PM IST.");
+  notify(note,isSunday?"GOLDEN SUNDAY scheduled. THE SOVEREIGN GAUNTLET opens at 12:00 PM IST the day before its results date, closes at noon on Sunday, and releases results at 6:00 PM IST Sunday.":"Question scheduled. It opens at 12:00 PM IST the day before its results date, closes at noon on that date, and releases results at 6:00 PM IST.");
   if(date===today())await loadQuestion();
  }catch(e){notify(note,"Could not save question: "+e.message,"error");}
 }
