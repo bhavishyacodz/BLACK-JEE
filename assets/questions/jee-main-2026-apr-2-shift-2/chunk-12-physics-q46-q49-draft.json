@@ -28,8 +28,8 @@
     "marks_wrong": 0,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "8",
-    "solution": "In the Bohr model, the orbital current scales as 1/n² and the orbit radius scales as n², so the magnetic field at the nucleus scales as B∝1/n³. Therefore B₂/B₄=(4/2)³=8."
+    "correct_answer": "32",
+    "solution": "In the Bohr model, orbital radius rₙ∝n² and orbital period Tₙ∝n³, so current Iₙ=e/Tₙ∝n⁻³. The magnetic field at the centre of a circular orbit is Bₙ=μ₀Iₙ/(2rₙ), hence Bₙ∝n⁻⁵. Therefore B₂/B₄=(4/2)⁵=32."
   },
   {
     "year": 2026,
