@@ -1099,7 +1099,7 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 55
       },
-      "status": "needs_exact_review",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1107,7 +1107,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "NOT VERIFIED: source wording/options match draft Q55, but NTA final answer key PDF p.2 maps question ID 691121205 to option A (ID 691121697), while independently applying π=nRT/V to the stated 0.5 L and 1 L solutions gives equal x, y, and z (option B). Keep this row on hold pending discrepancy resolution."
+      "note": "Verified Chemistry Q55 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121205, correct option ID 691121697 = A). Draft options were reordered incorrectly; restored source order. Applying π=(n/V)RT gives x=y=z=9.96×10⁻⁴ bar, which is option A in the official source ordering."
     },
     {
       "source": {
