@@ -24,6 +24,15 @@ The subject-local mapping assumption has been replaced for Physics with topic-ba
 
 **Result:** no Physics row is promoted to verified; all remain non-publishable. Publication status stays HOLD.
 
+
+## Source comparison pass — Chemistry Q1–Q25 (2026-10-23)
+
+**Source used:** [Readable transcription of the NTA paper](https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf). Candidate links below are topic-based leads, not exact-match certification.
+
+This pass found clear differences in Chemistry Q9 (H₂S vs H₂A and changed Ka), Q11 (Gd²⁺ vs Gd³⁺), Q15 (different coordination-complex list) and Q17 (Co²⁺ vs Cr²⁺). Those rows are marked `confirmed_mismatch`. Chemistry Q3 has no matching draft candidate; Q25 is incomplete in the available transcription. Other links remain pending exact statement, options/diagram and official-key review. Chemistry Q4's work-function item appears to correspond to legacy Q71; it is distinct from Physics Q5's different photoelectric-effect question.
+
+**Result:** no Chemistry row is promoted to verified; publication remains HOLD.
+
 ## Audit gates
 
 1. Compare each source question with the subject-local draft candidate, including every value, option, diagram and question type.
