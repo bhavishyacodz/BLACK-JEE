@@ -206,3 +206,11 @@ This log records content-level findings that structural validation alone cannot 
 - Source crosswalk says Physics Q1–20 are Section A and Q21–25 are Section B. Some candidate records therefore have type labels inconsistent with the expected section. Their types/options are not being silently changed because exact source choices must be verified.
 - Updated full-shift validation in `mock-tests.html` to show actual per-subject counts when blocked, rather than a generic error.
 - Publication remains HOLD; this is validation hardening, not content certification.
+
+
+## Crosswalk runtime-key fix and Physics rebase — 2026-10-23
+- Rebuilt the embedded source-order map so its keys match the actual runtime lookup `subject|question_text`; prior numeric-style keys could never match that lookup.
+- Rebased Physics Q1–25 to legacy global Q26–50 using the source PDF sequence.
+- Restored legacy Q33 (bubble question) and Q42 (LCR question) to MCQ type so the candidate structure now totals 20 MCQs + 5 numerical for Physics.
+- Q33 options/value conflict with the extracted calculation and remains unresolved. Q42 now asks the source expression `(3L₁ − L₂)` with candidate options; switch wiring in its SVG is corrected in the reconstruction, but the original diagram and official key remain to be verified.
+- No publication certification; exact content and answer-key review continues.
