@@ -1,6 +1,6 @@
 # Content audit log — April 2, 2026 Shift 2
 
-> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. Current crosswalk statuses: 14 `confirmed_mismatch`, 55 `needs_exact_review`, 6 `source_extraction_unresolved`; all 75 remain non-publishable and none is certified exact. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
+> **CURRENT RELEASE GATE (2026-10-23): HOLD.** The official printed source order is Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25; the legacy draft uses a different internal global numbering scheme. Current crosswalk statuses: 13 `confirmed_mismatch`, 56 `needs_exact_review`, 6 `source_extraction_unresolved`; all 75 remain non-publishable and none is certified exact. Older calculations, candidate matches, and answer-key notes below are historical draft notes only and are **not verified source matches**. Follow `SOURCE_FIDELITY_AUDIT.md` for current status. Do not publish or write this batch to the live database until all 75 questions, diagrams, and final keys are reconciled.
 
 This log records content-level findings that structural validation alone cannot catch. It is intentionally short so future review passes can load only the active issues.
 
@@ -167,3 +167,9 @@ This log records content-level findings that structural validation alone cannot 
 - **Updated:** legacy Q29 now matches the readable source transcription's force vector, magnetic field and answer options.
 - **Recomputed answer:** 50 î + 100 ĵ m/s (option A).
 - **Gate:** `needs_exact_review`; final NTA key verification remains open.
+
+
+## Physics Q11 correction — 2026-10-23
+- **Updated:** legacy Q33 changed from MCQ to numerical-response format to preserve the source's requested α.
+- **Calculated value:** α = 1.92 using the two surfaces of a soap bubble.
+- **Gate:** `needs_exact_review`; official final-key verification remains open.
