@@ -226,22 +226,36 @@ def audit_crosswalk(report, batch_records):
             elif draft.get("subject") != row.get("subject"):
                 issue(report, "ERROR", "CROSSWALK_CANDIDATE_SUBJECT", where,
                       f"Candidate {candidate} is {draft.get('subject')!r}, not {row.get('subject')!r}.")
-        if status == "verified" and not str(row.get("verification_evidence", "")).strip():
+        if status in {"verified", "verified_exact_match"} and not str(row.get("verification_evidence", "")).strip():
             issue(report, "ERROR", "CROSSWALK_VERIFICATION_EVIDENCE", where,
                   "Verified rows require a source citation/page and answer-key check note.")
-    allowed_statuses = {"unmatched", "candidate_needs_exact_review", "verified"}
+        if row.get("publishable") is not False:
+            issue(report, "ERROR", "CROSSWALK_PUBLICATION_GUARD", where,
+                  "Every crosswalk row must remain publishable=false until the shift is approved.")
+    allowed_statuses = {
+        "unmatched", "candidate_needs_exact_review", "verified",
+        "verified_exact_match", "needs_diagram_review", "needs_exact_review",
+        "no_candidate_confirmed", "confirmed_mismatch", "source_diagram_unresolved",
+        "source_extraction_unresolved",
+    }
     for status in status_counts:
         if status not in allowed_statuses:
             issue(report, "ERROR", "CROSSWALK_UNKNOWN_STATUS", CROSSWALK_PATH.name,
                   f"Unsupported crosswalk status: {status!r}.")
-    pending = sum(count for status, count in status_counts.items() if status != "verified")
+    verified_rows = status_counts.get("verified", 0) + status_counts.get("verified_exact_match", 0)
+    pending = len(rows) - verified_rows
     if pending:
-        issue(report, "ERROR", "SOURCE_FIDELITY_PENDING", CROSSWALK_PATH.name,
-              f"{pending} of {len(rows)} source rows are not verified; publication gate must fail.")
+        issue(report, "WARN", "SOURCE_FIDELITY_PENDING", CROSSWALK_PATH.name,
+              f"{pending} of {len(rows)} source rows still need review or replacement; keep publication on HOLD.")
+    if manifest.get("publication_status") != "HOLD":
+        issue(report, "ERROR", "CROSSWALK_PUBLICATION_STATUS", CROSSWALK_PATH.name,
+              "The publication_status must remain HOLD until all source and student-side checks pass.")
     report["crosswalk"] = {
         "rows": len(rows),
         "statuses": dict(sorted((str(k), v) for k, v in status_counts.items())),
-        "verified_rows": status_counts.get("verified", 0),
+        "verified_rows": verified_rows,
+        "pending_rows": pending,
+        "publication_status": manifest.get("publication_status"),
     }
 
 
