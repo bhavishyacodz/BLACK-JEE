@@ -15,6 +15,15 @@ Official source documents:
 
 A published transcription of the paper identifies the parts as Physics, Chemistry, then Mathematics; the repository's prior audit text incorrectly stated Mathematics, Physics, then Chemistry. That earlier statement and its 62/75 verified count are withdrawn. The old Chemistry answer-key table labelled source Q63–Q75 is also not authoritative for global source order and must not be used as proof of exact matches.
 
+
+## Source comparison pass — Physics Q1–Q25 (2026-10-23)
+
+**Source used:** [Readable transcription of the NTA paper](https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf), checked against the staged JSON. This is a transcription aid, not a substitute for inspecting the original source figure and final NTA key.
+
+The subject-local mapping assumption has been replaced for Physics with topic-based candidate links. This pass found clear source/draft differences at Physics Q1–Q4, Q9–Q11, Q15, Q19 and Q24 (option format, question type, signs, values or geometry differ). Those rows are marked `confirmed_mismatch`, not verified. Other topic candidates remain `needs_exact_review` until exact wording, diagrams and the final answer key are checked. Source Physics Q5 has no correctly classified Physics candidate; a work-function question appears in the Chemistry-labelled draft at legacy Q71 and needs triage. The available transcription omits Physics Q25, so it remains `source_extraction_unresolved` with no guessed candidate.
+
+**Result:** no Physics row is promoted to verified; all remain non-publishable. Publication status stays HOLD.
+
 ## Audit gates
 
 1. Compare each source question with the subject-local draft candidate, including every value, option, diagram and question type.
