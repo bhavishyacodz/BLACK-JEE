@@ -1071,7 +1071,7 @@
       "slot_id": "physics-21",
       "subject": "Physics",
       "subject_question_number": 21,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "A 1 kg block subjected to two simultaneous forces \\((2\\hat{i}+3\\hat{j}+4\\hat{k})\\,N\\) and \\((3\\hat{i}-\\hat{j}-2\\hat{k})\\,N\\) is moved a distance of 25 m along \\((3\\hat{i}-4\\hat{j})\\) direction. The work done in this process is _____ J.",
       "question_type": "numerical",
       "options": [],
@@ -1091,7 +1091,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -1110,7 +1109,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -1118,7 +1116,7 @@
       "slot_id": "physics-22",
       "subject": "Physics",
       "subject_question_number": 22,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "The surface tension of a soap solution is \\(3.5\\times10^{-2}\\,N/m\\). The work required to increase the radius of a soap bubble from 1 cm to 2 cm is \\(\\alpha\\times10^{-6}\\,J\\). The value of \\(\\alpha\\) is _____ (\\(\\pi=22/7\\)).",
       "question_type": "numerical",
       "options": [],
@@ -1138,7 +1136,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -1159,7 +1156,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -1187,7 +1183,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -1208,7 +1203,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -1216,7 +1210,7 @@
       "slot_id": "physics-24",
       "subject": "Physics",
       "subject_question_number": 24,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "A body of mass 2 kg begins to move under the influence of time-dependent force \\(\\vec{F}=(2t\\hat{i}+6t^{2}\\hat{j})\\,N\\), where \\(\\hat{i}\\) and \\(\\hat{j}\\) are unit vectors along x and y-axis respectively. The power produced by the force at \\(t=2\\,s\\) is _____ W.",
       "question_type": "numerical",
       "options": [],
@@ -1236,7 +1230,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -1257,7 +1250,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -1285,7 +1277,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -1306,7 +1297,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -2395,7 +2385,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -2416,7 +2405,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -2492,7 +2480,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -2513,7 +2500,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -2541,7 +2527,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -2562,7 +2547,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -2570,7 +2554,7 @@
       "slot_id": "chemistry-25",
       "subject": "Chemistry",
       "subject_question_number": 25,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "A non-volatile, non-electrolyte solid solute is dissolved in 40 g of a solvent, and the vapour pressure of the solvent decreases from 760 mm Hg to 750 mm Hg. If the same solution boils at 320 K, then the number of moles of the solvent present in the solution is _____. (Nearest integer. Given: boiling point of the pure solvent = 319.5 K; \\(K_b\\) of the solvent = 0.3 K kg mol⁻¹.)",
       "question_type": "numerical",
       "options": [],
@@ -2590,7 +2574,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -2609,7 +2592,6 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
@@ -3579,7 +3561,7 @@
         "4",
         "8"
       ],
-      "correct_answer": "2",
+      "correct_answer": null,
       "solution": "Let \\(\\alpha\\in(0,2)\\) be the unique solution of \\(\\alpha\\sin\\alpha=1\\). The integrand is even, so\n\\(I=2\\int_0^2\\sin x\\,dx+2\\int_0^2\\lfloor x\\sin x\\rfloor\\,dx\\).\n\nBecause \\(\\sin x>0\\) on \\((0,2]\\), the first term is \\(2(1-\\cos2)\\). The function \\(x\\sin x\\) increases from \\(0\\) to a value greater than \\(1\\) on \\([0,2]\\), and it crosses \\(1\\) at \\(\\alpha\\). Thus \\(\\lfloor x\\sin x\\rfloor=0\\) on \\([0,\\alpha)\\) and \\(1\\) on \\([\\alpha,2]\\), giving the second term \\(2(2-\\alpha)\\).\n\nTherefore \\(I=2(3-\\cos2)-2\\alpha\\). Comparing with \\(I=2(3-\\cos2)+\\beta\\), we obtain \\(\\beta=-2\\alpha\\).\n\nThe requested expression is\n\\(\\beta\\sin(\\beta/2)=(-2\\alpha)\\sin(-\\alpha)=2\\alpha\\sin\\alpha=2\\).\nCorrect option: B.",
       "diagram": {
         "required": false,
@@ -3595,7 +3577,8 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": false
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-019",
@@ -3671,7 +3654,7 @@
       "slot_id": "mathematics-21",
       "subject": "Mathematics",
       "subject_question_number": 21,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "A coin is tossed 8 times. If the probability that exactly 4 heads appear in the first six tosses and exactly 3 heads appear in the last five tosses is p, then 96p is equal to:",
       "question_type": "numerical",
       "options": [],
@@ -3691,7 +3674,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -3709,10 +3691,8 @@
       "reviewer_notes": [],
       "review_notes": [
         "Numerical-response item; no A/B/C/D option key applies.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
-      ],
-      "correct_option": null
+      ]
     },
     {
       "slot_id": "mathematics-22",
@@ -3738,7 +3718,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -3758,16 +3737,14 @@
       ],
       "review_notes": [
         "Kept in needs_review: the wording about the intersection segment being the latus rectums is ambiguous and this interpretation must be checked against the official source before approval.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
-      ],
-      "correct_option": null
+      ]
     },
     {
       "slot_id": "mathematics-23",
       "subject": "Mathematics",
       "subject_question_number": 23,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "If \\(A=\\frac{\\sin3^\\circ}{\\cos9^\\circ}+\\frac{\\sin9^\\circ}{\\cos27^\\circ}+\\frac{\\sin27^\\circ}{\\cos81^\\circ}\\) and \\(B=\\tan81^\\circ-\\tan3^\\circ\\), then \\(\\frac BA\\) is equal to:",
       "question_type": "numerical",
       "options": [],
@@ -3787,7 +3764,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -3804,16 +3780,14 @@
       },
       "reviewer_notes": [],
       "review_notes": [
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
-      ],
-      "correct_option": null
+      ]
     },
     {
       "slot_id": "mathematics-24",
       "subject": "Mathematics",
       "subject_question_number": 24,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Let \\(\\vec a_k=(\\tan\\theta_k)\\hat i+\\hat j\\) and \\(\\vec b_k=\\hat i-(\\cot\\theta_k)\\hat j\\), where \\(\\theta_k=\\frac{2^{k-1}\\pi}{2^n+1}\\), for some \\(n\\in\\mathbb N,\\ n>5\\). Then the value of \\(\\frac{\\sum_{k=1}^{n}|\\vec a_k|^2}{\\sum_{k=1}^{n}|\\vec b_k|^2}\\) is:",
       "question_type": "numerical",
       "options": [],
@@ -3833,7 +3807,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -3851,16 +3824,14 @@
       "reviewer_notes": [],
       "review_notes": [
         "The supplied solution notes an OCR artifact in the question text; source wording should be confirmed before approval.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
-      ],
-      "correct_option": null
+      ]
     },
     {
       "slot_id": "mathematics-25",
       "subject": "Mathematics",
       "subject_question_number": 25,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "The number of points at which \\(f(x)=\\max\\{6x,\\,2+3x^2\\}+|x-1|\\cos|x^2-\\frac14|\\), \\(x\\in(-\\pi,\\pi)\\), is not differentiable, is:",
       "question_type": "numerical",
       "options": [],
@@ -3880,7 +3851,6 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
         "answer_key_supplied_by_user": true
       },
       "source_reference": {
@@ -3898,10 +3868,8 @@
       "reviewer_notes": [],
       "review_notes": [
         "Numerical-response item; no A/B/C/D option key applies.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
         "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
-      ],
-      "correct_option": null
+      ]
     }
   ],
   "important_notes": [
