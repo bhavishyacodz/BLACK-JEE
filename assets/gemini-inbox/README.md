@@ -36,5 +36,5 @@ Safety rules:
 - A crop is a source image asset, not proof that its text/answer has been verified. Source/render verification remains false until checked.
 - Processing does not publish questions or write to Supabase.
 - If a workflow fails, source screenshots remain in GitHub; fix the reported error and rerun.
-- After a successful run, the manifest records the processed source names and the number of generated assets.
+- After a successful run, the workflow removes the temporary crop manifest and the referenced source screenshots from the inbox. Permanent PNGs and attached draft metadata remain in the shift folder.
 
