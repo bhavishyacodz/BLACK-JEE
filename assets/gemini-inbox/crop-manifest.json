@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "shift_folder": "jee-main-2026-apr-4-shift-1",
+  "delete_sources_after_success": true,
+  "created_at": "2026-10-23T17:07:55.914Z",
+  "instructions": "Review crop coordinates and question IDs. The processing workflow saves PNG assets and deletes only screenshots referenced here after successful processing.",
+  "crops": [
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213123.jpg",
+      "question_id": "BJ-JM-20260404-S1-PHY-032",
+      "kind": "diagram",
+      "alt_text": "",
+      "crop": {
+        "x": 0.091928,
+        "y": 0.287671,
+        "width": 0.282718,
+        "height": 0.327037
+      },
+      "asset_filename": "BJ-JM-20260404-S1-PHY-032-diagram-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213134.jpg",
+      "question_id": "BJ-JM-20260404-S1-PHY-038",
+      "kind": "diagram",
+      "alt_text": "",
+      "crop": {
+        "x": 0.078168,
+        "y": 0.287541,
+        "width": 0.205225,
+        "height": 0.124958
+      },
+      "asset_filename": "BJ-JM-20260404-S1-PHY-038-diagram-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213146.jpg",
+      "question_id": "BJ-JM-20260404-S1-PHY-039",
+      "kind": "diagram",
+      "alt_text": "",
+      "crop": {
+        "x": 0.081505,
+        "y": 0.522412,
+        "width": 0.238565,
+        "height": 0.209023
+      },
+      "asset_filename": "BJ-JM-20260404-S1-PHY-039-diagram-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213205.jpg",
+      "question_id": "BJ-JM-20260404-S1-PHY-042",
+      "kind": "diagram",
+      "alt_text": "",
+      "crop": {
+        "x": 0.09025,
+        "y": 0.217357,
+        "width": 0.35807,
+        "height": 0.174967
+      },
+      "asset_filename": "BJ-JM-20260404-S1-PHY-042-diagram-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213205.jpg",
+      "question_id": "BJ-JM-20260404-S1-PHY-043",
+      "kind": "diagram",
+      "alt_text": "",
+      "crop": {
+        "x": 0.088083,
+        "y": 0.613363,
+        "width": 0.306572,
+        "height": 0.211498
+      },
+      "asset_filename": "BJ-JM-20260404-S1-PHY-043-diagram-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213215.jpg",
+      "question_id": "BJ-JM-20260404-S1-PHY-045",
+      "kind": "diagram",
+      "alt_text": "",
+      "crop": {
+        "x": 0.084584,
+        "y": 0.229364,
+        "width": 0.295139,
+        "height": 0.334462
+      },
+      "asset_filename": "BJ-JM-20260404-S1-PHY-045-diagram-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213230.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-062",
+      "kind": "matching",
+      "alt_text": "",
+      "crop": {
+        "x": 0.071668,
+        "y": 0.187731,
+        "width": 0.449719,
+        "height": 0.366737
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-062-matching-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213242.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-064",
+      "kind": "reaction",
+      "alt_text": "",
+      "crop": {
+        "x": 0.053284,
+        "y": 0.154776,
+        "width": 0.722347,
+        "height": 0.109061
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-064-reaction-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213242.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-064",
+      "kind": "option_a",
+      "alt_text": "",
+      "crop": {
+        "x": 0.157397,
+        "y": 0.27124,
+        "width": 0.10149,
+        "height": 0.063723
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-064-option_a-2.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213242.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-064",
+      "kind": "option_b",
+      "alt_text": "",
+      "crop": {
+        "x": 0.16518,
+        "y": 0.348508,
+        "width": 0.074371,
+        "height": 0.070207
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-064-option_b-3.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213242.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-064",
+      "kind": "option_c",
+      "alt_text": "",
+      "crop": {
+        "x": 0.165424,
+        "y": 0.428837,
+        "width": 0.087613,
+        "height": 0.064048
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-064-option_c-4.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213242.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-064",
+      "kind": "option_d",
+      "alt_text": "",
+      "crop": {
+        "x": 0.164594,
+        "y": 0.512373,
+        "width": 0.094747,
+        "height": 0.063183
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-064-option_d-5.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213242.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-065",
+      "kind": "matching",
+      "alt_text": "",
+      "crop": {
+        "x": 0.085372,
+        "y": 0.666207,
+        "width": 0.425577,
+        "height": 0.120939
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-065-matching-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213255.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-067",
+      "kind": "reaction",
+      "alt_text": "",
+      "crop": {
+        "x": 0.086451,
+        "y": 0.729249,
+        "width": 0.660276,
+        "height": 0.11283
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-067-reaction-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213255.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-066",
+      "kind": "reaction",
+      "alt_text": "",
+      "crop": {
+        "x": 0.073971,
+        "y": 0.236357,
+        "width": 0.608765,
+        "height": 0.283205
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-066-reaction-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213312.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-068",
+      "kind": "reaction",
+      "alt_text": "",
+      "crop": {
+        "x": 0.074629,
+        "y": 0.184154,
+        "width": 0.567199,
+        "height": 0.269882
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-068-reaction-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213312.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-069",
+      "kind": "matching",
+      "alt_text": "",
+      "crop": {
+        "x": 0.078569,
+        "y": 0.670452,
+        "width": 0.432834,
+        "height": 0.095412
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-069-matching-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213323.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-070",
+      "kind": "reaction",
+      "alt_text": "",
+      "crop": {
+        "x": 0.084199,
+        "y": 0.098666,
+        "width": 0.56382,
+        "height": 0.59735
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-070-reaction-1.png"
+    },
+    {
+      "source_screenshot": "assets/gemini-inbox/Screenshot_20261023_213336.jpg",
+      "question_id": "BJ-JM-20260404-S1-CHE-072",
+      "kind": "reaction",
+      "alt_text": "",
+      "crop": {
+        "x": 0.069186,
+        "y": 0.222281,
+        "width": 0.396991,
+        "height": 0.190275
+      },
+      "asset_filename": "BJ-JM-20260404-S1-CHE-072-reaction-1.png"
+    }
+  ]
+}
