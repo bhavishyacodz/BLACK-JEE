@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "30 populated questions (Mathematics subject slots 1–25 and Physics subject slots 1–5, corresponding to paper questions 1–30) have been cross-checked against the official NTA question-paper PDF. Source wording and options were verified against the cited PDF pages; OCR/transcription errors found during comparison were corrected. Mathematics slot 22 remains needs_review because the official wording itself is unusual and requires subject-matter interpretation. Answer keys, worked solutions, MathJax browser checks, and mobile rendering checks remain pending. All entries are staging drafts; nothing has been imported into Supabase or published.",
+  "important_note": "45 populated questions (Mathematics subject slots 1–25 and Physics subject slots 1–20, corresponding to paper questions 1–45) have been checked against the official NTA question-paper PDF. Source wording, options, and available diagrams were compared visually; OCR/transcription errors in the latest Physics batch were corrected, including the omitted logic-gate diagram. Mathematics slot 22 remains needs_review because the official wording itself is unusual and requires subject-matter interpretation. Answer keys, worked solutions, MathJax browser checks, and mobile rendering checks remain pending. Required diagram descriptions are source-verified, but diagram assets/rendering still need completion. All entries are staging drafts; nothing has been imported into Supabase or published.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -241,406 +241,637 @@
       "slot_id": "physics-06",
       "subject": "Physics",
       "subject_question_number": 6,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The two projectiles are projected with the same initial velocities at the 15° and 30° with respect to the horizontal. The ratio of their ranges is 1:x. The value of x is:",
+      "question_type": "MCQ",
+      "options": [
+        "\\sqrt{2}",
+        "\\sqrt{3}",
+        "2\\sqrt{3}",
+        "\\frac{1}{\\sqrt{2}}"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-031",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 11,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 31,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-07",
       "subject": "Physics",
       "subject_question_number": 7,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The graph shows variation of stopping potential V_0 with the frequency \\nu of the incident radiation for three photosensitive metals X_1, X_2 and X_3. Which metal will give out electrons with greater kinetic energy, for the same wavelength of incident radiation?",
+      "question_type": "MCQ",
+      "options": [
+        "X_1",
+        "X_2",
+        "X_3",
+        "All the metals will give out photoelectrons with same kinetic energies."
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
-        "source_verified": false,
+        "alt_text": "Graph of stopping potential V_0 against incident frequency nu. Three parallel straight lines X_1, X_2 and X_3 intercept the frequency axis at 1.0, 1.5 and 2.0 respectively, with the frequency scale marked ×10^14 Hz.",
+        "source_verified": true,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-032",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 11,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 32,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-08",
       "subject": "Physics",
       "subject_question_number": 8,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A slit of width a is illuminated by light of wavelength \\lambda. The linear separation between 1st and 3rd minima in the diffraction pattern produced on a screen placed at a distance D from the slit system is:",
+      "question_type": "MCQ",
+      "options": [
+        "\\frac{D\\lambda}{a}",
+        "1.5\\frac{D\\lambda}{a}",
+        "2\\frac{D\\lambda}{a}",
+        "3\\frac{D\\lambda}{a}"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-033",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 11,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 33,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-09",
       "subject": "Physics",
       "subject_question_number": 9,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A string A of length 0.314 m and Young's modulus 2\\times10^{10}\\,\\mathrm{N/m^2} is connected to another string B of length and Young's modulus both twice of those of A. This series combination of strings is then suspended from a rigid support and its free end is fixed to a load of mass 0.8 kg. The net change in length of the combination is ___ mm. (Radius of both the strings is 0.2 mm and acceleration due to gravity = 10 m/s^2.) (Mass of both strings is to be neglected as compared to the mass of load.)",
+      "question_type": "MCQ",
+      "options": [
+        "3",
+        "2",
+        "1.9",
+        "1"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-034",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 12,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 34,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-10",
       "subject": "Physics",
       "subject_question_number": 10,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "One gas of n_1 mole of molecules at temperature T_1, volume V_1, and pressure P_1, and another gas of n_2 mole of molecules at temperature T_2, volume V_2, and pressure P_2, are mixed resulting in pressure P and volume V of the mixture. The temperature of the mixture is:",
+      "question_type": "MCQ",
+      "options": [
+        "\\frac{T_1+T_2}{2}",
+        "\\frac{T_1T_2PV}{T_2P_1V_1+T_1P_2V_2}",
+        "\\frac{T_2P_1V_1+T_1P_2V_2}{T_1T_2PV}",
+        "\\frac{|T_1-T_2|}{2}"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-035",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 12,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 35,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-11",
       "subject": "Physics",
       "subject_question_number": 11,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "An ideal gas undergoes a process maintaining relation between pressure (P) and volume (V) as P=P_0\\left[1+\\left(\\frac{V_0}{V}\\right)^2\\right]^{-1}, where P_0 and V_0 are constants. If two samples A and B (two moles each) with initial volumes V_0 and 3V_0 respectively undergo the above-mentioned process and attain the same pressure, then the difference in the temperatures of these samples, T_B-T_A, is: (R = gas constant)",
+      "question_type": "MCQ",
+      "options": [
+        "\\frac{9P_0V_0}{8R}",
+        "\\frac{11P_0V_0}{10R}",
+        "\\frac{7P_0V_0}{6R}",
+        "\\frac{13P_0V_0}{11R}"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-036",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 12,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 36,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-12",
       "subject": "Physics",
       "subject_question_number": 12,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A voltmeter with internal resistance x\\,\\Omega can be used to measure up to 20 V. In order to increase its measuring range to 30 V, the required modification is to:",
+      "question_type": "MCQ",
+      "options": [
+        "Connect a resistor of \\frac{x}{2}\\,\\Omega in series with the voltmeter.",
+        "Connect a resistor of \\frac{x}{2}\\,\\Omega in parallel to the voltmeter.",
+        "Connect a resistor of x\\,\\Omega in series with the voltmeter.",
+        "Connect a resistor of 2x\\,\\Omega in parallel to the voltmeter."
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-037",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 13,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 37,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-13",
       "subject": "Physics",
       "subject_question_number": 13,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Two 4-bit binary numbers, A=1101 and B=1010, are given at the inputs of a logic circuit shown in the figure below. The output (Y) will be:",
+      "question_type": "MCQ",
+      "options": [
+        "Y=1101",
+        "Y=0010",
+        "Y=0111",
+        "Y=1000"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
-        "source_verified": false,
+        "alt_text": "Logic circuit from the official paper: input A passes through an inverter (NOT gate), then enters an AND-shaped gate with an inversion bubble at the output (NAND); input B enters the second gate directly. The output is Y.",
+        "source_verified": true,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-038",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 13,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 38,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
+      "reviewer_notes": [
+        "The official NTA PDF contains the logic-gate diagram; the earlier OCR text omitted it. Diagram description restored from the official source."
+      ]
     },
     {
       "slot_id": "physics-14",
       "subject": "Physics",
       "subject_question_number": 14,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A rod of length 10 cm lies along the principal axis of a concave mirror of focal length 10 cm as shown in the figure. The length of the image is ___ cm.",
+      "question_type": "MCQ",
+      "options": [
+        "2.5",
+        "5",
+        "7.5",
+        "7"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
-        "source_verified": false,
+        "alt_text": "A 10 cm rod lies along the principal axis in front of a concave mirror. The rod endpoint nearer the mirror is 20 cm from the pole.",
+        "source_verified": true,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-039",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 14,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 39,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-15",
       "subject": "Physics",
       "subject_question_number": 15,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A parallel-plate air capacitor is connected to a battery. The plates are pulled apart at uniform speed v. If x is the separation between the plates at any instant, then the time rate of change of electrostatic energy of the capacitor is proportional to x^\\alpha, where \\alpha is:",
+      "question_type": "MCQ",
+      "options": [
+        "-2",
+        "1",
+        "-1",
+        "2"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-040",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 14,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 40,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-16",
       "subject": "Physics",
       "subject_question_number": 16,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "An insulated wire is wound so that it forms a flat coil with N=200 turns. The radius of the innermost turn is r_1=3 cm, and of the outermost turn r_2=6 cm. If 20 mA current flows in it, then the magnetic moment will be \\alpha\\times10^{-2}\\,\\mathrm{A\\,m^2}. The value of \\alpha is:",
+      "question_type": "MCQ",
+      "options": [
+        "4.4",
+        "2.64",
+        "3.25",
+        "1.2"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-041",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 14,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 41,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-17",
       "subject": "Physics",
       "subject_question_number": 17,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Consider a circuit consisting of a capacitor (20\\,\\mu\\mathrm{F}), resistor (100\\,\\Omega) and two identical diodes as shown in the figure. The resistance of a diode under forward-biasing condition is 10\\,\\Omega. The time constant of the circuit is \\alpha\\times10^{-3}\\,\\mathrm{s}. The value of \\alpha is:",
+      "question_type": "MCQ",
+      "options": [
+        "2.2",
+        "2.0",
+        "2.1",
+        "2.4"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
-        "source_verified": false,
+        "alt_text": "A voltage source V, capacitor C=20 μF, and resistor R=100 Ω are in series with a pair of identical anti-parallel diodes. The forward-bias resistance of a diode is 10 Ω.",
+        "source_verified": true,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-042",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 15,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 42,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
+      "reviewer_notes": [
+        "OCR notation normalized against the official PDF: diode forward resistance is 10 Ω and the requested coefficient is alpha."
+      ]
     },
     {
       "slot_id": "physics-18",
       "subject": "Physics",
       "subject_question_number": 18,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The voltage and the current between points A and B shown in the circuit are:",
+      "question_type": "MCQ",
+      "options": [
+        "24 V, 12 A",
+        "24 V, 4 A",
+        "18 V, 12 A",
+        "27 V, 4 A"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
-        "source_verified": false,
+        "alt_text": "Circuit between nodes A and B with four outer branches: three branches contain a 27 V cell and a 3 Ω resistor, while one contains 14 V and 13 V cells in series followed by a 3 Ω resistor. A diagonal branch from A to B contains two 3 Ω resistors in series. Cell polarities are as drawn in the official source.",
+        "source_verified": true,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-043",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 15,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 43,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-19",
       "subject": "Physics",
       "subject_question_number": 19,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A telescope with objective diameter R is used to observe a distant star emitting light of wavelength 500 nm, at a resolution of 5\\times10^{-7} radian. The value of R is ___ cm.",
+      "question_type": "MCQ",
+      "options": [
+        "61",
+        "122",
+        "244",
+        "305"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-044",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 16,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 44,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-20",
       "subject": "Physics",
       "subject_question_number": 20,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "An unpolarized light is incident on the plane interface of air-dielectric medium shown in the figure. If the incident angle is equal to Brewster angle, identify the expression representing reflected wave.",
+      "question_type": "MCQ",
+      "options": [
+        "(E_x\\hat{i}+E_y\\hat{j})\\sin(kx-kz-\\omega t)",
+        "(E_x\\hat{i}+E_z\\hat{k})\\sin(kx+ky-\\omega t)",
+        "(E_x\\hat{j}+E_y\\hat{k})\\sin(ky+kz-\\omega t)",
+        "(E_x\\hat{i}+E_y\\hat{j}+E_z\\hat{k})\\sin(kx+ky-kz-\\omega t)"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": true,
         "asset_path": null,
-        "alt_text": null,
-        "source_verified": false,
+        "alt_text": "Three-dimensional coordinate diagram of an air–dielectric interface. The interface is the x-y plane, with z directed down into the medium; incident light rays approach the interface in the x-z plane.",
+        "source_verified": true,
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-045",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 16,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 45,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
+      },
+      "reviewer_notes": [
+        "Vector hats, omega, and option subscripts normalized from the official PDF to correct OCR artifacts."
+      ]
     },
     {
       "slot_id": "physics-21",
