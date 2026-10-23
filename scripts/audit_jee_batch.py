@@ -20,8 +20,6 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_BATCH = ROOT / "assets/questions/jee-main-2026-apr-2-shift-2/full-shift-2-75-draft.json"
-CROSSWALK_PATH = ROOT / "assets/questions/jee-main-2026-apr-2-shift-2/SOURCE_CROSSWALK.json"
 REQUIRED = (
     "year", "session", "subject", "chapter", "source_question_number",
     "question_text", "question_type", "options", "marks_correct", "marks_wrong",
@@ -169,116 +167,6 @@ def audit_file(path):
 
 
 
-def audit_crosswalk(report, batch_records):
-    """Validate the source-to-draft crosswalk without treating candidates as verified."""
-    if not CROSSWALK_PATH.is_file():
-        issue(report, "ERROR", "CROSSWALK_MISSING", CROSSWALK_PATH,
-              "Source crosswalk is missing; every shift needs a reconciliation ledger.")
-        return
-    try:
-        manifest = json.loads(CROSSWALK_PATH.read_text(encoding="utf-8"))
-    except Exception as exc:
-        issue(report, "ERROR", "CROSSWALK_PARSE", CROSSWALK_PATH,
-              f"Cannot parse source crosswalk: {exc}")
-        return
-    rows = manifest.get("rows") if isinstance(manifest, dict) else None
-    if not isinstance(rows, list):
-        issue(report, "ERROR", "CROSSWALK_ROWS", CROSSWALK_PATH,
-              "Crosswalk must contain a rows array.")
-        return
-    # Official NTA printed order is Physics, Chemistry, Mathematics. The draft JSON
-    # keeps its own legacy global slots (Mathematics, Physics, Chemistry); the
-    # crosswalk maps between these two orders by subject-local question number.
-    expected_subject = ["Physics"] * 25 + ["Chemistry"] * 25 + ["Mathematics"] * 25
-    orders = [row.get("paper_order") if isinstance(row, dict) else None for row in rows]
-    if orders != list(range(1, 76)):
-        issue(report, "ERROR", "CROSSWALK_ORDER", CROSSWALK_PATH,
-              "Crosswalk must contain exactly paper_order 1..75 in ascending order.")
-    by_number = {
-        q.get("source_question_number"): q for q in batch_records
-        if isinstance(q, dict) and isinstance(q.get("source_question_number"), int)
-    }
-    status_counts = Counter()
-    candidate_usage = {}
-    for index, row in enumerate(rows, 1):
-        where = f"{CROSSWALK_PATH.name}.rows[{index}]"
-        if not isinstance(row, dict):
-            issue(report, "ERROR", "CROSSWALK_ROW_TYPE", where, "Each crosswalk row must be an object.")
-            continue
-        order = row.get("paper_order")
-        if isinstance(order, int) and 1 <= order <= 75:
-            expected = expected_subject[order - 1]
-            if row.get("subject") != expected:
-                issue(report, "ERROR", "CROSSWALK_SUBJECT_ORDER", where,
-                      f"Paper position {order} must be {expected}, not {row.get('subject')!r}.")
-            local_number = ((order - 1) % 25) + 1
-            if row.get("subject_question_number") != local_number:
-                issue(report, "ERROR", "CROSSWALK_LOCAL_NUMBER", where,
-                      f"Expected subject_question_number {local_number}.")
-            expected_section = "A" if local_number <= 20 else "B"
-            if row.get("section") != expected_section:
-                issue(report, "ERROR", "CROSSWALK_SECTION", where,
-                      f"Expected section {expected_section} for subject question {local_number}.")
-        status = row.get("status")
-        status_counts[status] += 1
-        candidate = row.get("draft_candidate_global_number")
-        if candidate is not None:
-            candidate_usage.setdefault(candidate, []).append({
-                "paper_order": order,
-                "status": status,
-                "where": where,
-            })
-            draft = by_number.get(candidate)
-            if draft is None:
-                issue(report, "ERROR", "CROSSWALK_CANDIDATE_MISSING", where,
-                      f"Draft candidate global number {candidate} does not exist.")
-            elif draft.get("subject") != row.get("subject"):
-                issue(report, "ERROR", "CROSSWALK_CANDIDATE_SUBJECT", where,
-                      f"Candidate {candidate} is {draft.get('subject')!r}, not {row.get('subject')!r}.")
-        if status in {"verified", "verified_exact_match"} and not str(row.get("verification_evidence", "")).strip():
-            issue(report, "ERROR", "CROSSWALK_VERIFICATION_EVIDENCE", where,
-                  "Verified rows require a source citation/page and answer-key check note.")
-        if row.get("publishable") is not False:
-            issue(report, "ERROR", "CROSSWALK_PUBLICATION_GUARD", where,
-                  "Every crosswalk row must remain publishable=false until the shift is approved.")
-    # A draft question must not silently satisfy multiple source-paper positions.
-    # Keep unresolved duplicate candidates visible as warnings; duplicate verified
-    # mappings are hard errors because they would certify one draft twice.
-    for candidate, uses in candidate_usage.items():
-        if len(uses) > 1:
-            verified_uses = [use for use in uses if use["status"] in {"verified", "verified_exact_match"}]
-            level = "ERROR" if len(verified_uses) > 1 else "WARN"
-            issue(report, level, "CROSSWALK_CANDIDATE_REUSED", CROSSWALK_PATH.name,
-                  f"Draft candidate {candidate} is mapped to source positions "
-                  f"{[use['paper_order'] for use in uses]}; review candidate reuse before release.")
-
-    allowed_statuses = {
-        "unmatched", "candidate_needs_exact_review", "verified",
-        "verified_exact_match", "needs_diagram_review", "needs_exact_review",
-        "no_candidate_confirmed", "confirmed_mismatch", "source_diagram_unresolved",
-        "source_extraction_unresolved",
-    }
-    for status in status_counts:
-        if status not in allowed_statuses:
-            issue(report, "ERROR", "CROSSWALK_UNKNOWN_STATUS", CROSSWALK_PATH.name,
-                  f"Unsupported crosswalk status: {status!r}.")
-    verified_rows = status_counts.get("verified", 0) + status_counts.get("verified_exact_match", 0)
-    pending = len(rows) - verified_rows
-    if pending:
-        issue(report, "WARN", "SOURCE_FIDELITY_PENDING", CROSSWALK_PATH.name,
-              f"{pending} of {len(rows)} source rows still need review or replacement; keep publication on HOLD.")
-    if manifest.get("publication_status") != "HOLD":
-        issue(report, "ERROR", "CROSSWALK_PUBLICATION_STATUS", CROSSWALK_PATH.name,
-              "The publication_status must remain HOLD until all source and student-side checks pass.")
-    report["crosswalk"] = {
-        "rows": len(rows),
-        "statuses": dict(sorted((str(k), v) for k, v in status_counts.items())),
-        "verified_rows": verified_rows,
-        "pending_rows": pending,
-        "publication_status": manifest.get("publication_status"),
-    }
-
-
 def finalize(report):
     report["errors"] = sum(i["level"] == "ERROR" for i in report["issues"])
     report["warnings"] = sum(i["level"] == "WARN" for i in report["issues"])
@@ -288,20 +176,15 @@ def finalize(report):
 def main():
     parser = argparse.ArgumentParser(description="Run fast structural QA on BLACK-JEE question JSON.")
     parser.add_argument("batch", nargs="?", help="JSON batch path, relative to repo root or absolute.")
-    parser.add_argument("--all-json", action="store_true", help="Audit every JSON file in the April 2 Shift 2 folder.")
     parser.add_argument("--json-out", help="Write full machine-readable report to this path.")
     parser.add_argument("--expect", type=int, default=None, help="Expected record count for the selected batch.")
     parser.add_argument("--expect-per-subject", type=int, default=None, help="Require the expected global source-number ranges for each subject.")
     args = parser.parse_args()
 
-    folder = ROOT / "assets/questions/jee-main-2026-apr-2-shift-2"
-    if args.all_json:
-        paths = sorted(folder.glob("*.json"))
-    else:
-        paths = [Path(args.batch).resolve() if args.batch else DEFAULT_BATCH.resolve()]
-    if not paths:
-        print("ERROR: no JSON files selected", file=sys.stderr)
+    if not args.batch:
+        print("ERROR: pass an explicit JSON batch path; the obsolete default batch was removed.", file=sys.stderr)
         return 2
+    paths = [Path(args.batch).resolve()]
 
     reports = [audit_file(p) for p in paths]
     if args.expect_per_subject is not None and len(reports) == 1:
@@ -327,8 +210,6 @@ def main():
                 if numbers != expected_numbers:
                     issue(report, "ERROR", "SUBJECT_COVERAGE", report["file"],
                           f"{subject}: expected global question numbers {start}..{end}; found {numbers}.")
-            if path.resolve() == DEFAULT_BATCH.resolve():
-                audit_crosswalk(report, records)
             finalize(report)
     if args.expect is not None and len(reports) == 1 and reports[0]["records"] != args.expect:
         issue(reports[0], "ERROR", "UNEXPECTED_RECORD_COUNT", reports[0]["file"],
