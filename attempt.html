@@ -488,6 +488,66 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<style id="blackjee-attempt-ux-v2">
+/* Attempt flow UX: one obvious next action, larger touch surfaces, legible question work area. */
+#challenge .card{border-radius:16px;overflow:hidden}
+#challenge .card-body{padding:clamp(16px,2.5vw,28px)}
+.attempt-steps{gap:clamp(6px,1.4vw,12px);padding:14px;border-radius:12px;border-color:#303238;background:#111215}
+.attempt-step{flex:1}
+.attempt-step strong{display:block;font-size:.83rem;line-height:1.3}
+.attempt-step small{display:block;font-size:.7rem;line-height:1.4;margin-top:3px}
+.step-connector{flex:0 0 clamp(8px,2vw,22px)}
+.prestart-panel{border-color:#414349;border-radius:16px;background:radial-gradient(ellipse at 0 0,rgba(255,255,255,.07),transparent 62%),linear-gradient(145deg,#17181c,#0d0e10);box-shadow:none}
+.prestart-start{width:100%;min-height:54px;background:#f2f2f2!important;color:#101010!important;border-color:#f2f2f2!important;font-weight:800;letter-spacing:.035em}
+.prestart-start:hover{background:#fff!important}
+.prestart-rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.prestart-rules span{min-width:0;padding:10px;border:1px solid #303238;border-radius:10px;background:#101114;font-size:.7rem;line-height:1.45}
+.prestart-rules b{display:block;color:#f2f2f2;margin-top:3px;font-size:.76rem}
+.question-text{font-size:clamp(1rem,1.4vw,1.08rem);line-height:1.85;overflow-wrap:anywhere}
+.options{gap:10px}
+.option{min-height:52px;padding:14px;border-radius:12px;border-color:#34363b;background:#111215;line-height:1.65;transition:border-color .15s,background .15s}
+.option:hover{border-color:#777;background:#17181b}
+.option:has(input:checked){border-color:#eee;background:#1b1c20;box-shadow:inset 0 0 0 1px #eee}
+.option input{width:18px;height:18px;flex:0 0 18px;accent-color:#eee}
+.timerbar{border-radius:12px;border-color:#34363b;background:#101114;padding:15px}
+.timer{font-variant-numeric:tabular-nums;font-size:clamp(1.35rem,4vw,1.7rem)}
+#submitBtn,.action-row .btn{min-height:48px}
+#submitBtn:not(:disabled){background:#f2f2f2;color:#101010;border-color:#f2f2f2;font-weight:800}
+.submission-form{border-radius:14px;padding:clamp(14px,3vw,22px);border-color:#34363b;background:#111215}
+.photo-actions .btn,.submission-form .action-row .btn{min-height:46px}
+@media(max-width:780px){
+ .attempt-steps{padding:10px 8px;margin-bottom:17px;gap:5px}
+ .attempt-step{gap:6px}
+ .attempt-step .step-number{width:27px;height:27px;flex:0 0 27px}
+ .attempt-step strong{font-size:.72rem}
+ .attempt-step small{font-size:.62rem}
+ .step-connector{flex-basis:7px}
+ .prestart-panel{padding:18px 15px;margin:12px 0 18px}
+ .prestart-icon{width:42px;height:42px}
+ .prestart-panel h3{font-size:1.45rem;line-height:1.2}
+ .prestart-panel>p{font-size:.9rem;line-height:1.65}
+ .prestart-rules{gap:6px}
+ .prestart-rules span{padding:9px 7px;font-size:.64rem}
+ .prestart-rules b{font-size:.7rem}
+ .prestart-note{font-size:.73rem;line-height:1.55}
+ .question-text{line-height:1.8}
+ .option{padding:14px 12px;gap:10px}
+ .timerbar{align-items:center}
+ .timerbar .tiny{font-size:.67rem}
+ .action-row{display:grid;grid-template-columns:minmax(0,1fr)}
+ .action-row .btn{width:100%;min-height:50px}
+ .photo-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .photo-actions .btn{width:100%;min-width:0}
+ .side-card{border-radius:14px}
+}
+@media(max-width:360px){
+ .attempt-step small{display:none}
+ .attempt-steps{padding:9px 6px}
+ .prestart-rules span{font-size:.6rem}
+ .prestart-rules b{font-size:.65rem}
+}
+@media(prefers-reduced-motion:reduce){.option{transition:none}}
+</style>
 </head>
 <body class="attempt-page">
 <div class="challenge-intro" id="challengeIntro" aria-live="assertive" aria-label="Challenge starting">
