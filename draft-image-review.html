@@ -7,6 +7,41 @@
 :root{color-scheme:dark;--bg:#09090b;--panel:#141418;--line:#303039;--muted:#a4a4af;--text:#f4f4f7;--red:#ef4050;--green:#78dfaa;--amber:#f0c56a}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#251116,transparent 38%),var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{width:min(1120px,calc(100% - 24px));margin:auto}.top{position:sticky;top:0;z-index:4;background:#0b0b0dee;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{min-height:60px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.brand{font-weight:900;letter-spacing:.12em;font-size:12px}.brand b{color:var(--red)}a{color:#c5d6ff}.btn{display:inline-flex;padding:9px 12px;border:1px solid #42424b;border-radius:8px;background:#1a1a20;color:white;text-decoration:none;font-weight:800;font-size:12px}.hero{padding:25px 0 12px}.hero h1{font-size:clamp(27px,5vw,42px);line-height:1.05;margin:6px 0}.muted{color:var(--muted)}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.controls input,.controls select{min-width:0;flex:1;border:1px solid #3c3c45;border-radius:9px;padding:11px;background:#101014;color:white;font:inherit}.summary{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.pill{font-size:11px;border:1px solid var(--line);border-radius:99px;padding:4px 8px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px}.card{border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#17171c,#101013);padding:13px;min-width:0}.head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.head strong{overflow-wrap:anywhere}.subject{font-size:11px;color:var(--muted);margin-top:3px}.visuals{display:grid;gap:10px;margin-top:12px}.visual{border:1px solid #363640;border-radius:9px;padding:8px;background:#0b0b0e}.visual img{display:block;width:100%;max-height:330px;object-fit:contain;background:white;border-radius:5px}.visual img.broken{display:none}.vlabel{font-size:11px;color:#d2d2db;margin-bottom:6px}.flags{font-size:11px;color:var(--amber);margin-top:9px}.empty{border:1px dashed var(--line);padding:25px;text-align:center;color:var(--muted);border-radius:12px}footer{padding:24px 0 40px;color:var(--muted);font-size:12px}
 </style><style id="black-jee-workspace-guide">.bj-workspace-guide{position:relative;z-index:6;background:#101216;border-bottom:1px solid #30343d;color:#f1f3f6;font:13px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}.bj-workspace-guide .bj-guide-inner{width:min(1120px,calc(100% - 28px));margin:auto;padding:10px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.bj-workspace-guide strong{font-size:11px;letter-spacing:.09em}.bj-workspace-guide p{margin:3px 0 0;color:#b1b7c2;max-width:720px}.bj-workspace-guide nav{display:flex;gap:6px;flex-wrap:wrap}.bj-workspace-guide a{display:inline-flex;align-items:center;padding:7px 9px;border:1px solid #3a3f49;border-radius:7px;color:#f1f3f6;text-decoration:none;font-size:12px;font-weight:700}.bj-workspace-guide a:focus-visible{outline:2px solid #fff;outline-offset:2px}.bj-workspace-guide a:hover{background:#242831}@media(max-width:600px){.bj-workspace-guide .bj-guide-inner{align-items:flex-start}.bj-workspace-guide nav{width:100%}.bj-workspace-guide nav a{flex:1;justify-content:center;text-align:center}}</style>
+<style id="blackjee-layout-hierarchy-v1">
+/* Shared layout hierarchy: consistent reading width, type scale, spacing and touch targets. */
+:root{--bj-layout-max:1120px;--bj-layout-gutter:clamp(16px,3vw,28px)}
+html{scroll-padding-top:84px}
+body{font-size:15px;line-height:1.55;overflow-wrap:break-word}
+.wrap{width:min(var(--bj-layout-max),calc(100% - var(--bj-layout-gutter)*2));margin-inline:auto}
+main.wrap{padding-block:clamp(12px,2.5vw,28px) 40px}
+h1{font-size:clamp(1.85rem,4.5vw,3.15rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+h2{font-size:clamp(1.25rem,2.6vw,1.8rem);line-height:1.2;letter-spacing:-.02em;text-wrap:balance}
+h3{line-height:1.28;text-wrap:balance}
+p{line-height:1.6}
+section,.hero,.panel,.card,.side-card,.qcard,.manage-card,.checklist,.archive,.history,.stat,.field,.grid>*{min-width:0}
+img,svg,canvas,video{max-width:100%}
+button,.btn,[role="button"]{min-height:40px;max-width:100%;white-space:normal;line-height:1.3}
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),select,textarea{max-width:100%;min-width:0;font:inherit}
+.field input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),.field select,.field textarea{width:100%;min-height:42px}
+label{line-height:1.4}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks){min-width:0}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks)>*{min-width:0}
+:where(.question-text,.qtext,.answer,.notice,.empty,.lead,.muted){overflow-wrap:anywhere}
+:where(.section,.section-head,.section-title,.heading){scroll-margin-top:88px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-offset:3px}
+@media(max-width:720px){
+  :root{--bj-layout-gutter:16px}
+  body{font-size:14px}
+  main.wrap{padding-top:12px;padding-bottom:30px}
+  h1{font-size:clamp(1.7rem,8vw,2.35rem);letter-spacing:-.025em}
+  h2{font-size:clamp(1.2rem,5.5vw,1.55rem)}
+  :where(.grid,.form-grid,.admin-grid,.subject-grid,.layout){min-width:0}
+  :where(.card,.panel,.side-card,.manage-card){max-width:100%}
+  :where(.row,.actions,.action-row,.controls){flex-wrap:wrap}
+  :where(button,.btn,[role="button"]){min-height:42px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 <div class="bj-workspace-guide" role="region" aria-label="Workspace guide"><div class="bj-guide-inner"><div><strong>DRAFT IMAGE REVIEW</strong><p>Review each image crop against its original question and options. Keep assets in draft until source fidelity and student-side rendering are verified.</p></div><nav aria-label="Related workspaces"><a href="owner-dashboard.html">Owner Dashboard ↗</a><a href="image-crop-studio.html">Crop Studio ↗</a><a href="shift-workbench.html">Shift Workbench ↗</a></nav></div></div>
