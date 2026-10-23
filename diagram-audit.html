@@ -13,6 +13,41 @@ main{padding:18px 0 36px}.grid{display:grid;grid-template-columns:repeat(auto-fi
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}.cardhead{padding:12px 14px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px;border-bottom:1px solid var(--line)}h2{font-size:1rem;margin:0}.topic{font-size:.82rem;color:var(--muted)}.status{font-size:.76rem;border:1px solid var(--line);border-radius:999px;padding:3px 8px;white-space:nowrap}.status.ok{color:var(--ok)}.status.bad{color:var(--warn)}.preview{height:230px;background:#fff;display:grid;place-items:center;padding:10px}.preview img{max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}.details{padding:11px 14px;display:flex;gap:12px;flex-wrap:wrap}.details a{color:#b9d2ff;text-decoration:none}.details a:hover{text-decoration:underline}.note{font-size:.8rem;color:var(--muted);padding:0 14px 12px}.footer{padding:18px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
 </style>
 <style id="black-jee-workspace-guide">.bj-workspace-guide{position:relative;z-index:6;background:#101216;border-bottom:1px solid #30343d;color:#f1f3f6;font:13px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}.bj-workspace-guide .bj-guide-inner{width:min(1120px,calc(100% - 28px));margin:auto;padding:10px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.bj-workspace-guide strong{font-size:11px;letter-spacing:.09em}.bj-workspace-guide p{margin:3px 0 0;color:#b1b7c2;max-width:720px}.bj-workspace-guide nav{display:flex;gap:6px;flex-wrap:wrap}.bj-workspace-guide a{display:inline-flex;align-items:center;padding:7px 9px;border:1px solid #3a3f49;border-radius:7px;color:#f1f3f6;text-decoration:none;font-size:12px;font-weight:700}.bj-workspace-guide a:focus-visible{outline:2px solid #fff;outline-offset:2px}.bj-workspace-guide a:hover{background:#242831}@media(max-width:600px){.bj-workspace-guide .bj-guide-inner{align-items:flex-start}.bj-workspace-guide nav{width:100%}.bj-workspace-guide nav a{flex:1;justify-content:center;text-align:center}}</style>
+<style id="blackjee-layout-hierarchy-v1">
+/* Shared layout hierarchy: consistent reading width, type scale, spacing and touch targets. */
+:root{--bj-layout-max:1120px;--bj-layout-gutter:clamp(16px,3vw,28px)}
+html{scroll-padding-top:84px}
+body{font-size:15px;line-height:1.55;overflow-wrap:break-word}
+.wrap{width:min(var(--bj-layout-max),calc(100% - var(--bj-layout-gutter)*2));margin-inline:auto}
+main.wrap{padding-block:clamp(12px,2.5vw,28px) 40px}
+h1{font-size:clamp(1.85rem,4.5vw,3.15rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+h2{font-size:clamp(1.25rem,2.6vw,1.8rem);line-height:1.2;letter-spacing:-.02em;text-wrap:balance}
+h3{line-height:1.28;text-wrap:balance}
+p{line-height:1.6}
+section,.hero,.panel,.card,.side-card,.qcard,.manage-card,.checklist,.archive,.history,.stat,.field,.grid>*{min-width:0}
+img,svg,canvas,video{max-width:100%}
+button,.btn,[role="button"]{min-height:40px;max-width:100%;white-space:normal;line-height:1.3}
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),select,textarea{max-width:100%;min-width:0;font:inherit}
+.field input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),.field select,.field textarea{width:100%;min-height:42px}
+label{line-height:1.4}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks){min-width:0}
+:where(.grid,.form-grid,.admin-grid,.subject-grid,.checks,.stats,.layout,.quicklinks)>*{min-width:0}
+:where(.question-text,.qtext,.answer,.notice,.empty,.lead,.muted){overflow-wrap:anywhere}
+:where(.section,.section-head,.section-title,.heading){scroll-margin-top:88px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-offset:3px}
+@media(max-width:720px){
+  :root{--bj-layout-gutter:16px}
+  body{font-size:14px}
+  main.wrap{padding-top:12px;padding-bottom:30px}
+  h1{font-size:clamp(1.7rem,8vw,2.35rem);letter-spacing:-.025em}
+  h2{font-size:clamp(1.2rem,5.5vw,1.55rem)}
+  :where(.grid,.form-grid,.admin-grid,.subject-grid,.layout){min-width:0}
+  :where(.card,.panel,.side-card,.manage-card){max-width:100%}
+  :where(.row,.actions,.action-row,.controls){flex-wrap:wrap}
+  :where(button,.btn,[role="button"]){min-height:42px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 <div class="bj-workspace-guide" role="region" aria-label="Workspace guide"><div class="bj-guide-inner"><div><strong>DIAGRAM QUALITY CHECK</strong><p>This page confirms whether image files load. A loaded image is not automatically source-verified; compare it with the official paper before publishing.</p></div><nav aria-label="Related workspaces"><a href="owner-dashboard.html">Owner Dashboard ↗</a><a href="draft-image-review.html">Draft Image Review ↗</a><a href="shift-workbench.html">Shift Workbench ↗</a></nav></div></div>
