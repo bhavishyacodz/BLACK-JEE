@@ -17,9 +17,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 9
+        "legacy_global_question_number": 1
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -27,7 +27,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "mean/variance with partial sum 48 and sum of squares 496 appears aligned"
+      "note": "Verified exact Mathematics Q1 against NTA question paper PDF p.1 and final answer key PDF p.2 (question ID 691121151, correct option ID 691121514 = D). Draft global Q1 matches statement, values, all four options, and key."
     },
     {
       "source": {
@@ -37,9 +37,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 18
+        "legacy_global_question_number": 2
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -47,7 +47,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "degree-five polynomial, extrema at ±1 and limit −5 appear aligned"
+      "note": "Verified exact Mathematics Q2 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121152, correct option ID 691121517 = C). Draft global Q2 matches circle definitions, containment/minimum-distance condition, options, and key."
     },
     {
       "source": {
@@ -57,9 +57,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 16
+        "legacy_global_question_number": 3
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -67,7 +67,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source vectors are PS=i+j and PQ=−j+k; draft has different vectors"
+      "note": "Verified exact Mathematics Q3 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121153, correct option ID 691121520 = B). Draft global Q3 matches all three equations, options, and key."
     },
     {
       "source": {
@@ -77,9 +77,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 2
+        "legacy_global_question_number": 4
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -87,7 +87,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "nested-circle distance problem appears aligned"
+      "note": "Verified exact Mathematics Q4 against NTA question paper PDF p.2 and final answer key PDF p.2 (question ID 691121154, correct option ID 691121526 = D). Draft global Q4 matches AP/GP conditions, values, options, and key."
     },
     {
       "source": {
@@ -97,9 +97,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 12
+        "legacy_global_question_number": 5
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -107,7 +107,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "parabola through (1,−1) and vertex-distance condition appears aligned"
+      "note": "Verified exact Mathematics Q5 against NTA question paper PDF p.3 and final answer key PDF p.2 (question ID 691121155, correct option ID 691121528 = B). Draft global Q5 matches the sum expression, eight terms, options, and key."
     },
     {
       "source": {
