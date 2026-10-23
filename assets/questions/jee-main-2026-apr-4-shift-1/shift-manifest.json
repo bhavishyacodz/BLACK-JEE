@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "solutions_batch_2_added_math_q16_q25_physics_q1_q5_render_and_source_review_pending",
+  "workflow_status": "solutions_batches_3_5_staged_physics_q31_q50_chemistry_q51_q75_review_pending",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "Solutions batch 2 added for Mathematics Q16–25 and Physics Q26–30 (Physics subject-local slots 1–5). Correct option is stored separately in correct_option for MCQs; correct_answer stores the answer value. MAT-019 solution corrected to match the supplied question's beta*sin(beta/2) expression, but its source statement still needs confirmation. MAT-022 remains needs_review. All items remain unpublished; answer/solution verification and browser MathJax/mobile rendering are pending. No Supabase import was performed.",
+  "important_note": "Solutions for paper questions 31–75 have been staged from user-supplied solution batches. This is not publication approval. Questions with OCR/diagram/chemistry concerns remain needs_review; answer keys, source fidelity, MathJax and mobile rendering are not independently verified. No Supabase import or student publication was performed.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -269,8 +269,8 @@
         "2\\sqrt{3}",
         "\\frac{1}{\\sqrt{2}}"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "sqrt(3)",
+      "solution": "R(15°)=u²/(2g); R(30°)=u²√3/(2g), so R₁:R₂=1:√3 and x=√3.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -283,20 +283,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-031",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 11,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 31,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-07",
@@ -311,8 +316,8 @@
         "X_3",
         "All the metals will give out photoelectrons with same kinetic energies."
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "X_1",
+      "solution": "Photoelectric Kmax=hν−Φ. The smallest threshold frequency means the smallest work function, so X₁ gives the greatest kinetic energy for the same incident wavelength.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -325,20 +330,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-032",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 11,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 32,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-08",
@@ -353,8 +363,8 @@
         "2\\frac{D\\lambda}{a}",
         "3\\frac{D\\lambda}{a}"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2Dλ/a",
+      "solution": "Single-slit minima: yₙ=nλD/a. The separation between the third and first minima is y₃−y₁=2λD/a.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -367,20 +377,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-033",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 11,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 33,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-09",
@@ -395,8 +410,8 @@
         "1.9",
         "1"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2 mm",
+      "solution": "Extension ΔL=FL/(AY). With L_B=2L_A and Y_B=2Y_A, both strings extend 1 mm; total extension is 2 mm.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -409,20 +424,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-034",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 12,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 34,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-10",
@@ -437,8 +457,8 @@
         "\\frac{T_2P_1V_1+T_1P_2V_2}{T_1T_2PV}",
         "\\frac{|T_1-T_2|}{2}"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "T₁T₂PV/(T₂P₁V₁+T₁P₂V₂)",
+      "solution": "Using n₁=P₁V₁/(RT₁), n₂=P₂V₂/(RT₂), and PV=(n₁+n₂)RT gives T=T₁T₂PV/(T₂P₁V₁+T₁P₂V₂).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -451,26 +471,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-035",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 12,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 35,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-11",
       "subject": "Physics",
       "subject_question_number": 11,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "An ideal gas undergoes a process maintaining relation between pressure (P) and volume (V) as P=P_0\\left[1+\\left(\\frac{V_0}{V}\\right)^2\\right]^{-1}, where P_0 and V_0 are constants. If two samples A and B (two moles each) with initial volumes V_0 and 3V_0 respectively undergo the above-mentioned process and attain the same pressure, then the difference in the temperatures of these samples, T_B-T_A, is: (R = gas constant)",
       "question_type": "MCQ",
       "options": [
@@ -479,8 +504,8 @@
         "\\frac{7P_0V_0}{6R}",
         "\\frac{13P_0V_0}{11R}"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "11P₀V₀/(10R)",
+      "solution": "For P=P₀V²/(V²+V₀²), evaluate P at V₀ and 3V₀, then use T=PV/(2R). The temperature difference is 1.1P₀V₀/R. Source wording remains flagged.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -493,20 +518,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-036",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 12,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 36,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-12",
@@ -521,8 +551,8 @@
         "Connect a resistor of x\\,\\Omega in series with the voltmeter.",
         "Connect a resistor of 2x\\,\\Omega in parallel to the voltmeter."
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "x/2 Ω in series",
+      "solution": "Initial full-scale current is 20/x. For a 30 V range, 30=(20/x)(x+Rₛ), hence Rₛ=x/2 Ω.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -535,26 +565,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-037",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 13,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 37,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-13",
       "subject": "Physics",
       "subject_question_number": 13,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "Two 4-bit binary numbers, A=1101 and B=1010, are given at the inputs of a logic circuit shown in the figure below. The output (Y) will be:",
       "question_type": "MCQ",
       "options": [
@@ -564,7 +599,7 @@
         "Y=1000"
       ],
       "correct_answer": null,
-      "solution": null,
+      "solution": "Cannot determine the output because the logic-circuit diagram is missing from the supplied source extraction.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -577,28 +612,33 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-038",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 13,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 38,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "The official NTA PDF contains the logic-gate diagram; the earlier OCR text omitted it. Diagram description restored from the official source."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "physics-14",
       "subject": "Physics",
       "subject_question_number": 14,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "A rod of length 10 cm lies along the principal axis of a concave mirror of focal length 10 cm as shown in the figure. The length of the image is ___ cm.",
       "question_type": "MCQ",
       "options": [
@@ -607,8 +647,8 @@
         "7.5",
         "7"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "5 cm",
+      "solution": "Mirror formula gives image endpoints v₁=−20 cm for u₁=−20 cm and v₂=−15 cm for u₂=−30 cm; image length is 5 cm. Diagram-dependent geometry needs source review.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -621,20 +661,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-039",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 14,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 39,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-15",
@@ -649,8 +694,8 @@
         "-1",
         "2"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "−2",
+      "solution": "With constant battery voltage, U=ε₀AV²/(2x); for dx/dt=v, dU/dt=−ε₀AV²v/(2x²), so the exponent is −2.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -663,20 +708,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-040",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 14,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 40,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-16",
@@ -691,8 +741,8 @@
         "3.25",
         "1.2"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2.64",
+      "solution": "For turns uniformly spread radially, M=NIπ(r₁²+r₁r₂+r₂²)/3. With N=200, I=0.02 A, r₁=0.03 m and r₂=0.06 m, M≈2.64×10⁻² A·m².",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -705,20 +755,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-041",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 14,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 41,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-17",
@@ -733,8 +788,8 @@
         "2.1",
         "2.4"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2.2",
+      "solution": "The forward-biased diode contributes 10 Ω in series with 100 Ω. τ=(110 Ω)(20 μF)=2.2×10⁻³ s.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -747,28 +802,33 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-042",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 15,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 42,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "OCR notation normalized against the official PDF: diode forward resistance is 10 Ω and the requested coefficient is alpha."
+      ],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "physics-18",
       "subject": "Physics",
       "subject_question_number": 18,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "The voltage and the current between points A and B shown in the circuit are:",
       "question_type": "MCQ",
       "options": [
@@ -777,8 +837,8 @@
         "18 V, 12 A",
         "27 V, 4 A"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "24 V, 4 A",
+      "solution": "Four identical 27 V branches with 3 Ω internal resistance give Rth=3/4 Ω. A 6 Ω load then carries 27/(6.75)=4 A and has 24 V across it; verify the circuit diagram.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -791,20 +851,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-043",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 15,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 43,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-19",
@@ -819,8 +884,8 @@
         "244",
         "305"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "122 cm",
+      "solution": "Rayleigh criterion Δθ=1.22λ/D gives D=1.22 m for Δθ=5×10⁻⁷ rad and λ=500 nm, i.e. 122 cm.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -833,26 +898,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-044",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 16,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 44,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-20",
       "subject": "Physics",
       "subject_question_number": 20,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "An unpolarized light is incident on the plane interface of air-dielectric medium shown in the figure. If the incident angle is equal to Brewster angle, identify the expression representing reflected wave.",
       "question_type": "MCQ",
       "options": [
@@ -862,7 +932,7 @@
         "(E_x\\hat{i}+E_y\\hat{j}+E_z\\hat{k})\\sin(kx+ky-kz-\\omega t)"
       ],
       "correct_answer": null,
-      "solution": null,
+      "solution": "The proposed polarization/phase answer relies on a diagram and option interpretation; the supplied explanation itself notes that its selected option has a polarization-factor mismatch. Needs review.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -875,21 +945,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-045",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 16,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 45,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Vector hats, omega, and option subscripts normalized from the official PDF to correct OCR artifacts."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -900,8 +975,8 @@
       "question_text": "A 1 kg block subjected to two simultaneous forces \\((2\\hat{i}+3\\hat{j}+4\\hat{k})\\,N\\) and \\((3\\hat{i}-\\hat{j}-2\\hat{k})\\,N\\) is moved a distance of 25 m along \\((3\\hat{i}-4\\hat{j})\\) direction. The work done in this process is _____ J.",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "35",
+      "solution": "Net force=(5,2,2) N; displacement along (3,−4,0) with length 25 m is (15,−20,0) m. Work=75−40=35 J.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -914,31 +989,36 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-046",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 17,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 46,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "physics-22",
       "subject": "Physics",
       "subject_question_number": 22,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "The surface tension of a soap solution is \\(3.5\\times10^{-2}\\,N/m\\). The work required to increase the radius of a soap bubble from 1 cm to 2 cm is \\(\\alpha\\times10^{-6}\\,J\\). The value of \\(\\alpha\\) is _____ (\\(\\pi=22/7\\)).",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "264",
+      "solution": "Soap-bubble area doubles for two surfaces: ΔA=8π(r₂²−r₁²)=24π×10⁻⁴ m². W=TΔA=264×10⁻⁶ J for T=3.5×10⁻² N/m.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -951,21 +1031,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-047",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 17,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 47,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "OCR correction from supplied batch: '1 em' interpreted as '1 cm'; verify against the source PDF."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -976,8 +1061,8 @@
       "question_text": "The velocity of a particle executing simple harmonic motion along x-axis is described as \\(v^{2}=50-x^{2}\\), where x represents displacement. If the time period of motion is [EXPRESSION UNCLEAR IN SUPPLIED OCR], the value is _____.",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "44",
+      "solution": "Assuming the OCR text means T=x/7 and v²=50−x² implies ω=1 rad/s, T=2π and x≈44 using π≈22/7. The reconstructed question text needs source verification.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -990,33 +1075,38 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-048",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 17,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 48,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "The supplied OCR time-period expression is incomplete/corrupted; recover exact expression from source PDF before approval."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "physics-24",
       "subject": "Physics",
       "subject_question_number": 24,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "A body of mass 2 kg begins to move under the influence of time-dependent force \\(\\vec{F}=(2t\\hat{i}+6t^{2}\\hat{j})\\,N\\), where \\(\\hat{i}\\) and \\(\\hat{j}\\) are unit vectors along x and y-axis respectively. The power produced by the force at \\(t=2\\,s\\) is _____ W.",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "200",
+      "solution": "For m=2 kg and F=(2t,6t²), a=(t,3t²), v=(t²/2,t³). P=F·v=t³+6t⁵, so P(2)=200 W.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1029,21 +1119,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-049",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 17,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 49,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Duplicated OCR words and time formatting normalized; verify against the source PDF."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1054,8 +1149,8 @@
       "question_text": "An inductor of 10 mH, capacitor of 0.1 μF and a resistor of 100 Ω are connected in series across an a.c. power supply of 220 V, 70 Hz. The power factor of the given circuit is 0.5. The difference in the inductive reactance and capacitive reactance is [EXPRESSION UNCLEAR IN SUPPLIED OCR]. The value of α is _____.",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2",
+      "solution": "Power factor 0.5 with R=100 Ω gives Z=200 Ω. Then |X_L−X_C|=√(Z²−R²)=100√3 Ω; the OCR reconstruction of √3×10ᵃ needs review.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1068,28 +1163,33 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-050",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 18,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 50,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "OCR fragment for reactance difference is garbled; recover exact expression from source PDF."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "chemistry-01",
       "subject": "Chemistry",
       "subject_question_number": 1,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Number of moles and number of molecules in 1.4187 L of \\(SO_{2}\\) at STP respectively are:",
       "question_type": "MCQ",
       "options": [
@@ -1098,8 +1198,8 @@
         "0.1266; \\(7.6238\\times10^{22}\\)",
         "0.0633; \\(7.6238\\times10^{22}\\)"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "0.0633 mol; 3.812×10²² molecules",
+      "solution": "Using 22.4 L/mol at legacy STP: n=1.4187/22.4≈0.0633 mol; multiplying by Avogadro's constant gives ≈3.81×10²² molecules.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1112,21 +1212,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-051",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 18,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 51,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Scientific-notation superscripts normalized from OCR; verify volume/STP convention and options against source PDF."
+      ],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1142,8 +1247,8 @@
         "5:1.75",
         "5:27"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "500/81 = 5:0.81",
+      "solution": "Balmer first-line wavenumber=(5/36)R; Brackett first-line=(9/400)R. Their ratio is 500/81=5/0.81.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1156,20 +1261,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-052",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 18,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 52,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-03",
@@ -1184,8 +1294,8 @@
         "\\(n=4,\\ l=1,\\ m=0,\\ s=+\\frac12\\)",
         "\\(n=4,\\ l=0,\\ m=0,\\ s=+\\frac12\\)"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "n=4, l=0, mₗ=0, mₛ=+1/2",
+      "solution": "The 19th electron in the Aufbau filling sequence enters 4s; its quantum numbers are n=4, l=0, mₗ=0 and either spin ±1/2. The option OCR requires checking.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1198,21 +1308,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-053",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 19,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 53,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Removed apparent OCR artifacts from options; verify exact formatting against the source PDF."
+      ],
+      "correct_option": "D",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1228,8 +1343,8 @@
         "Statement I is true but Statement II is false",
         "Statement I is false but Statement II is true"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "Both statements false",
+      "solution": "For an ideal gas Cₚ−Cᵥ=R>0, so Cₚ>Cᵥ. At constant volume, heat withdrawn lowers internal energy and temperature; both statements as transcribed are false.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1242,26 +1357,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-054",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 19,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 54,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-05",
       "subject": "Chemistry",
       "subject_question_number": 5,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "At \\(T\\,K\\), the equilibrium constant of \\(A_{2}(g)+B_{2}(g)\\rightleftharpoons C(g)\\) is \\(2.7\\times10^{-5}\\). What is the equilibrium constant for \\(\\frac13A_{2}(g)+\\frac13B_{2}(g)\\rightleftharpoons\\frac13C(g)\\) at the same temperature?",
       "question_type": "MCQ",
       "options": [
@@ -1270,8 +1390,8 @@
         "\\(\\sqrt{2.7\\times10^{-5}}\\)",
         "\\(3\\times10^{-2}\\)"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "3×10⁻²",
+      "solution": "Scaling a reaction equation by 1/3 raises its equilibrium constant to the power 1/3: (2.7×10⁻⁵)^(1/3)=3×10⁻².",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1284,28 +1404,33 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-055",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 19,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 55,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Duplicated OCR word normalized; verify reaction and options against source PDF."
+      ],
+      "correct_option": "D",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "chemistry-06",
       "subject": "Chemistry",
       "subject_question_number": 6,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "In order to oxidise a mixture of 1 mole each of \\(FeC_{2}O_{4}\\), \\(Fe_{2}(C_{2}O_{4})_{3}\\), \\(FeSO_{4}\\) and \\(Fe_{2}(SO_{4})_{3}\\) in acidic medium, the number of moles of \\(KMnO_{4}\\) required is:",
       "question_type": "MCQ",
       "options": [
@@ -1314,8 +1439,8 @@
         "5",
         "7"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "2 mol KMnO₄",
+      "solution": "Reducing equivalents total 3 (FeC₂O₄)+6 (Fe₂(C₂O₄)₃)+1 (FeSO₄)=10. Acidic permanganate accepts 5 e⁻ per mole, so 2 mol are required.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1328,28 +1453,33 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-056",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 20,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 56,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Punctuation and compound separation normalized from OCR; verify against source PDF."
+      ],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "chemistry-07",
       "subject": "Chemistry",
       "subject_question_number": 7,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Consider the first-order reaction \\(R\\rightarrow P\\). The fraction of molecules decomposed in the given first-order reaction can be expressed as:",
       "question_type": "MCQ",
       "options": [
@@ -1358,8 +1488,8 @@
         "\\(1+e^{-k_{1}t}\\)",
         "\\(1-e^{-k_{1}t}\\)"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "1−e^(−k₁t)",
+      "solution": "For a first-order reaction, [R]=[R]₀e^(−k₁t); the decomposed fraction is 1−e^(−k₁t).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1372,21 +1502,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-057",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 20,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 57,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Option braces/exponents normalized from OCR; source-PDF check required."
+      ],
+      "correct_option": "D",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1402,8 +1537,8 @@
         "80, 16, gas",
         "81, 15, gas"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "80, 17, liquid",
+      "solution": "36 electrons in a monoatomic anion suggests Br⁻ (Z=35). With 45 neutrons, mass number is 80; bromine is group 17 and liquid at room temperature.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1416,26 +1551,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-058",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 20,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 58,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-09",
       "subject": "Chemistry",
       "subject_question_number": 9,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "Given below are two statements:\nStatement I: The covalency of oxygen is generally two but it can exceed up to four. The oxidation state of oxygen in \\(SO_{2}\\) is −2 and in \\(OF_{2}\\) it is +2.\nStatement II: The anomalous behaviour of oxygen when compared to the other elements of group 16 is due to its small size and high electronegativity.\nIn the light of the above statements, choose the correct answer from the options given below.",
       "question_type": "MCQ",
       "options": [
@@ -1444,8 +1584,8 @@
         "Statement I is true but Statement II is false",
         "Statement I is false but Statement II is true"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "Both statements true",
+      "solution": "Oxygen is −2 in SO₂ and +2 in OF₂; oxygen's small size and high electronegativity contribute to its anomalous group-16 behaviour. The exact covalency wording needs source scrutiny.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1458,26 +1598,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-059",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 21,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 59,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-10",
       "subject": "Chemistry",
       "subject_question_number": 10,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "The correct statements among the following are:\nA. \\(Mo(VI)\\) and \\(W(VI)\\) are less stable than \\(Cr(VI)\\).\nB. \\(Ce^{4+}\\) and \\(Tb^{4+}\\) are oxidants while \\(Eu^{2+}\\) and \\(Yb^{2+}\\) are reductants.\nC. Cm and Am have seven unpaired electrons.\nD. Actinoid contraction is greater from element to element than lanthanoid contraction.\nChoose the correct answer from the options given below.",
       "question_type": "MCQ",
       "options": [
@@ -1486,8 +1631,8 @@
         "B and D only",
         "A and C only"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "B and D only",
+      "solution": "The supplied analysis marks A false, B true, C false, D true. The actinoid electron-configuration claim should be independently checked before approval.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1500,20 +1645,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-060",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 21,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 60,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-11",
@@ -1528,8 +1678,8 @@
         "A and C only",
         "B and D only"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "A, C and D only",
+      "solution": "Dichromate oxidizes Fe²⁺ in acid; chromate/dichromate equilibrium depends on pH; the Cr−O−Cr angle is about 126°. Sodium dichromate is deliquescent and not the usual primary standard.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1542,20 +1692,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-061",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 21,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 61,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-12",
@@ -1570,8 +1725,8 @@
         "A-IV, B-II, C-I, D-III",
         "A-III, B-I, C-IV, D-II"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "A-III, B-I, C-IV, D-II",
+      "solution": "High-spin aqua complexes give Cr²⁺: 4 unpaired, Co²⁺: 3, Cu²⁺: 1, Mn²⁺: 5; spin-only moments match III, I, IV, II respectively.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1584,26 +1739,31 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-062",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 22,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 62,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "D",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-13",
       "subject": "Chemistry",
       "subject_question_number": 13,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "Increasing order of electron-withdrawing power of the following functional groups is:\na. −CN; b. −COOH; c. −NO₂; d. −I",
       "question_type": "MCQ",
       "options": [
@@ -1612,8 +1772,8 @@
         "d < b < a < c",
         "a < b < c < d"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "d<b<a<c",
+      "solution": "Approximate withdrawing strength increases from iodine (weak −I) to −COOH to −CN to −NO₂. Confirm the precise group labels against the source image.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1626,20 +1786,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-063",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 22,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 63,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": "C",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "chemistry-14",
@@ -1655,7 +1820,7 @@
         "[option D structure missing in OCR]"
       ],
       "correct_answer": null,
-      "solution": null,
+      "solution": "Ozonolysis structures and answer options are unreadable/missing in the source extraction; no answer should be guessed.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -1668,28 +1833,33 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-064",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 23,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 64,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Do not approve or publish until source image and all four option structures are recovered; supplied OCR has severe structure loss."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "chemistry-15",
       "subject": "Chemistry",
       "subject_question_number": 15,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Match List-I with List-II.\nList-I — Name of reaction: A. Finkelstein reaction; B. Swarts reaction; C. Sandmeyer reaction; D. Fittig reaction.\nList-II — Reagent or catalyst used: I. \\(SbF_{3}\\); II. Na, dry ether; III. NaI; IV. \\(Cu_{2}Cl_{2}\\).\nChoose the correct answer from the options given below:",
       "question_type": "MCQ",
       "options": [
@@ -1698,8 +1868,8 @@
         "A-IV, B-II, C-I, D-III",
         "A-I, B-III, C-II, D-IV"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "A-III, B-I, C-IV, D-II",
+      "solution": "Finkelstein: NaI; Swarts: SbF₃; Sandmeyer: Cu(I) chloride; Fittig: Na/dry ether.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1712,21 +1882,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-065",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 23,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 65,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Option mappings normalized from OCR; verify all mappings against source PDF."
+      ],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1742,8 +1917,8 @@
         "6",
         "3"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "5 compounds",
+      "solution": "The supplied list identifies 1-naphthol, dimethylaminophenol, ethylphenol, benzoic acid and naphthoic acid as soluble in aqueous NaOH; count=5. Verify the exact structures in the source.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -1756,21 +1931,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-066",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 24,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 66,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Visual audit of all nine structures is required; text-only record is insufficient to validate the answer."
+      ],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1786,8 +1966,8 @@
         "4-Bromo-1-nitrobenzene",
         "1,3,5-Tribromobenzene"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "1,3,5-tribromo-2-nitrobenzene",
+      "solution": "Aniline bromination gives 2,4,6-tribromoaniline, followed by diazotization and replacement of the diazonium group by NO₂ in the stated sequence. The final numbering/name needs checking against the original structures.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -1800,28 +1980,33 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-067",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 24,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 67,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Question depends on exact source reaction scheme; verify reagent sequence and options visually before approving."
+      ],
+      "correct_option": "B",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
       "slot_id": "chemistry-18",
       "subject": "Chemistry",
       "subject_question_number": 18,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "Given below are two statements:\nStatement I: The structure of maltose is given below. Maltose is a non-reducing sugar.\nStatement II: The structure of lactose is given below. Lactose is a reducing sugar.\nIn the light of the above statements, choose the correct answer from the options given below.",
       "question_type": "MCQ",
       "options": [
@@ -1830,8 +2015,8 @@
         "Statement I is true but Statement II is false",
         "Statement I is false but Statement II is true"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "Statement I false; Statement II true",
+      "solution": "Maltose and lactose are reducing sugars because each retains a free anomeric carbon; therefore the maltose statement is false and the lactose statement true.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -1844,21 +2029,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-068",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 25,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 68,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "The supplied OCR garbles the structures; verify both structure images against source PDF."
+      ],
+      "correct_option": "D",
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1874,8 +2064,8 @@
         "A-III, B-IV, C-I, D-II",
         "A-II, B-IV, C-I, D-III"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "A-II, B-I, C-IV, D-III",
+      "solution": "Arginine→R/essential or semi-essential; aspartic acid→D/non-essential; lysine→K/essential; glutamic acid→E/non-essential. Check exact source classification of arginine.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1888,21 +2078,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-069",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 25,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 69,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Option punctuation normalized from OCR; verify mappings against source PDF."
+      ],
+      "correct_option": "A",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1918,8 +2113,8 @@
         "Red",
         "Colourless"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "Colourless",
+      "solution": "Excess strong NaOH can convert phenolphthalein to a carbinol form with disrupted conjugation, which is colourless. Confirm the depicted compound X from the source.",
       "diagram": {
         "required": true,
         "asset_path": null,
@@ -1932,21 +2127,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-070",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 26,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 70,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Source figure's '(Pink)' label seems inconsistent with the answer choices; inspect the original figure and intended species before approval."
+      ],
+      "correct_option": "D",
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1957,8 +2157,8 @@
       "question_text": "According to Lewis theory, the total number of σ-bond pairs and lone pairs of electrons around the central atom of \\([XeO_{6}]^{4-}\\) is _____.",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "6",
+      "solution": "For XeO₆⁴⁻ as supplied, the solution assumes six Xe−O sigma bonds and no lone pairs on Xe, giving 6. The bonding/formal-charge explanation needs independent chemistry review.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1971,21 +2171,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-071",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 26,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 71,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Normalized OCR 'o bond-pairs' to 'σ-bond pairs'; verify wording against source PDF."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -1997,7 +2202,7 @@
       "question_type": "numerical",
       "options": [],
       "correct_answer": null,
-      "solution": null,
+      "solution": "The starting reactant is absent from the extracted reaction sequence. The proposed benzene assumption is not enough to set a definitive answer.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2010,21 +2215,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-072",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 27,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 72,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "The supplied OCR duplicates step (ii); step (iii) reconstructed tentatively. Verify complete reaction sequence and answer line against source PDF."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -2035,8 +2245,8 @@
       "question_text": "2.0 g of a bromo hydrocarbon (X) was subjected to Carius analysis, giving 3.36 g of AgBr. The percentage of carbon in compound X is 26.7%. The total number of carbon atoms in the empirical formula for compound X is _____. (Given molar masses in g mol⁻¹: H = 1, C = 12, Br = 80, Ag = 108.)",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "5",
+      "solution": "The supplied Carius calculation estimates Br≈71.5%, C=26.7%, H≈1.8%, giving approximate empirical ratio C:H:Br=5:4:2; carbon atom count=5. Verify rounding against the original data.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2049,21 +2259,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-073",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 27,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 73,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Normalized molar-mass unit from OCR; verify numerical data against source PDF."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -2074,8 +2289,8 @@
       "question_text": "The pH of a solution obtained by mixing 5 mL of 0.1 M NH₄OH solution with 250 mL of 0.1 M NH₄Cl solution is _____. Given: pK_b (NH₄OH) = 4.74; log 2 = 0.30; log 3 = 0.48; log 5 = 0.70. (Nearest integer; supplied OCR shows a detached \\(\\times10^{-2}\\) at the bottom of the page.)",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "756",
+      "solution": "Using the supplied basic-buffer setup: pOH=4.74+log(25/0.5)=6.44, pH=7.56, so the requested coefficient in 7.56=756×10⁻² is 756. Check whether the base/salt volumes were transcribed correctly.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2088,21 +2303,26 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-074",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 27,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 74,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Detached '×10⁻²' may be an answer-line fragment; exact required answer format needs source-PDF verification."
+      ],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
       ]
     },
     {
@@ -2113,8 +2333,8 @@
       "question_text": "A non-volatile, non-electrolyte solid solute is dissolved in 40 g of a solvent, and the vapour pressure of the solvent decreases from 760 mm Hg to 750 mm Hg. If the same solution boils at 320 K, then the number of moles of the solvent present in the solution is _____. (Nearest integer. Given: boiling point of the pure solvent = 319.5 K; \\(K_b\\) of the solvent = 0.3 K kg mol⁻¹.)",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "5 mol solvent",
+      "solution": "Boiling-point elevation gives n_solute=0.5×0.040/0.3=1/15 mol. From relative vapour-pressure lowering, n_solvent/n_solute=75, hence n_solvent=5 mol.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2127,20 +2347,25 @@
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
-        "mobile_render_checked": false
+        "mobile_render_checked": false,
+        "solution_syntax_normalized": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-075",
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 28,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 75,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": null
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option": null,
+      "review_notes": [
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+      ]
     },
     {
       "slot_id": "mathematics-01",
@@ -3231,6 +3456,7 @@
     }
   ],
   "important_notes": [
-    "Mathematics Q1–Q15 solution expressions normalized with explicit LaTeX delimiters for Workbench rendering. Mathematical/browser rendering and mobile display checks remain pending; do not treat syntax normalization alone as visual verification. Questions remain unpublished."
+    "Mathematics Q1–Q15 solution expressions normalized with explicit LaTeX delimiters for Workbench rendering. Mathematical/browser rendering and mobile display checks remain pending; do not treat syntax normalization alone as visual verification. Questions remain unpublished.",
+    "2026-10-23: Added supplied solution batch for Physics Q31–50 and Chemistry Q51–75. Correct option letters are stored separately from answer values where supplied. Numeric-response items retain answer values without option letters. Review flags preserved; nothing published."
   ]
 }
