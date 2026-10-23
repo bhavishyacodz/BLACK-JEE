@@ -83,7 +83,7 @@ body{background:radial-gradient(ellipse at 88% 0%,rgba(237,38,55,.09),transparen
 const SUPABASE_URL="https://yeydvwnihpwoixytcgek.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY="sb_publishable_MEX3TmUJZt62P5fOQkvz8g_nVfrmsKi";
 const $=id=>document.getElementById(id);
-async function signInToUnlockSolution(){if(!supabase){notify("Sign-in service is loading.");return;}const {data:{session}}=await supabase.auth.getSession();if(session?.user){notify("You are signed in. Use Chapter Practice and submit two incorrect answers to unlock the solution.");return;}const {error}=await supabase.auth.signInWithOAuth({provider:"google",options:{redirectTo:window.location.href}});if(error)notify("Google sign-in failed: "+error.message);}
+async function signInToUnlockSolution(){if(!supabase){notify("testNotice","Sign-in service is loading.");return;}const {data:{session}}=await supabase.auth.getSession();if(session?.user){notify("testNotice","You are signed in. Use Chapter Practice and submit two incorrect answers to unlock the solution.");return;}const {error}=await supabase.auth.signInWithOAuth({provider:"google",options:{redirectTo:window.location.href}});if(error)notify("testNotice","Google sign-in failed: "+error.message,true);}
 let supabase=null,allQuestions=[],testQuestions=[],testAnswers={},testGrades={},testIndex=0,testStartedAt=0,testDeadline=0,timerHandle=null,reviewMode=false;
 let browseVisibleCount=10;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
