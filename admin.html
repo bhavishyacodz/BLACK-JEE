@@ -492,10 +492,11 @@ let scheduleQueueRows=[];
 function formatScheduleTime(value){if(!value)return "time not set";return new Intl.DateTimeFormat("en-IN",{timeZone:"Asia/Kolkata",day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",hour12:true}).format(new Date(value))+" IST";}
 function scheduleState(q,now=Date.now()){
  if(q.is_live===false)return {key:"paused",label:"PAUSED · NOT PUBLISHING"};
- const start=q.starts_at?new Date(q.starts_at).getTime():NaN,end=q.ends_at?new Date(q.ends_at).getTime():NaN;
+ const start=q.starts_at?new Date(q.starts_at).getTime():NaN,end=q.ends_at?new Date(q.ends_at).getTime():NaN,release=q.results_release_at?new Date(q.results_release_at).getTime():NaN;
  if(Number.isFinite(start)&&now<start)return {key:"scheduled",label:"SCHEDULED · NOT LIVE"};
  if(Number.isFinite(start)&&Number.isFinite(end)&&now>=start&&now<end)return {key:"live",label:"LIVE NOW"};
- if(Number.isFinite(end)&&now>=end&&q.show_in_archive!==false)return {key:"archived",label:"RESULTS / ARCHIVE"};
+ if(Number.isFinite(end)&&now>=end&&Number.isFinite(release)&&now<release)return {key:"results",label:"CLOSED · RESULTS AT 6 PM"};
+ if(Number.isFinite(release)&&now>=release&&q.show_in_archive!==false)return {key:"archived",label:"RESULTS RELEASED"};
  return {key:"scheduled",label:"TIME WINDOW NOT SET"};
 }
 function renderScheduleQueue(){
