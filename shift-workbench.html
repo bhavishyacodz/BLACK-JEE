@@ -37,16 +37,20 @@ const checklistItems=["All source question slots accounted for","Physics compare
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function mathMarkup(value,forceMath=false){
  const raw=String(value??"");
- // Standalone options and answer values frequently contain bare LaTeX.
- if(forceMath&&!(/\\\(|\\\[|\$/.test(raw))&&(/\\[A-Za-z]+|[_^]/.test(raw))) return esc('\\('+raw+'\\)');
- // Keep existing math delimiters intact while repairing bare formulas around them.
+ // Standalone options/answers are expressions, so render bare LaTeX as one unit.
+ if(forceMath&&!(/\\\(|\\\[|\$/.test(raw))){
+  if(/^\s*-?\d+\/\d+\s*$/.test(raw)){const p=raw.trim().split("/");return esc('\\(\\frac{'+p[0]+'}{'+p[1]+'}\\)');}
+  if(/\\[A-Za-z]+|[_^]/.test(raw)) return esc('\\('+raw+'\\)');
+ }
+ // Preserve existing delimited math and repair common OCR formulas outside delimiters.
  const chunks=raw.split(/(\\\([^]*?\\\)|\\\[[^]*?\\\]|\$[^$]*\$)/g);
  const repaired=chunks.map((chunk,i)=>{
   if(i%2===1) return chunk;
   let t=chunk;
   t=t.replace(/\\(dfrac|tfrac|frac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g,m=>'\\('+m+'\\)');
-  t=t.replace(/\\times\s*\d+(?:\^\{[^{}]+\})?/g,m=>'\\('+m+'\\)');
+  t=t.replace(/\d*\s*\\times\s*\d+(?:\^\{[^{}]+\})?/g,m=>'\\('+m+'\\)');
   t=t.replace(/\\sqrt\s*\{[^{}]*\}/g,m=>'\\('+m+'\\)');
+  t=t.replace(/[A-Za-z0-9]+\s*\^\s*\\(?:alpha|beta|gamma|theta|pi|lambda|mu|sigma|omega|nu|Delta|delta)\b/g,m=>'\\('+m+'\\)');
   t=t.replace(/\\(alpha|beta|gamma|theta|pi|lambda|mu|sigma|omega|nu|Delta|delta|infty|cdot|pm|neq|leq|geq|hat|vec)\b(?:\{[^{}]*\})?/g,m=>'\\('+m+'\\)');
   t=t.replace(/\\mathrm\{[^{}]*\}(?:\/[^\s,.;:)]+)?/g,m=>'\\('+m+'\\)');
   t=t.replace(/([A-Za-z][A-Za-z0-9]*[_^]\{[^{}]+\})/g,m=>'\\('+m+'\\)');
