@@ -63,7 +63,18 @@ body{background:radial-gradient(ellipse at 88% 0%,rgba(237,38,55,.09),transparen
 .pyq-subnav a[aria-current="page"] .route-dot{background:var(--red);box-shadow:0 0 10px #ed263766}
 @media(max-width:720px){.wrap{width:calc(100% - 30px)}.top .nav{height:60px}.brand{font-size:.95rem;letter-spacing:0}.navlinks{display:none}.pyq-subnav{margin:0 -15px;padding:12px 15px 16px}.launch-tile{border-radius:14px}.mobile-nav{padding:7px 5px calc(7px + env(safe-area-inset-bottom))}}
 
-</style></head><body>
+</style><style id="blackjee-monochrome-consistency-v1">
+/* BLACK-JEE student UI: neutral monochrome accent, consistent across screens. */
+:root{--red:#f0f0f0!important;--red2:#bdbdbd!important;--brand-accent:#f0f0f0!important;--home-gold:#ededed!important;--clarity-gold:#e0e0e0!important;--amber:#d8d8d8!important;--green:#c5c5c5!important}
+.red,.tiny.red,.gold-subtitle,.guide-kicker{color:#ededed!important}
+.live-dot{background:#ededed!important;box-shadow:0 0 0 4px #ededed18!important}
+.btn-red,.hero-bottom .btn-red,.section-head .btn-red{background:#f0f0f0!important;border-color:#f0f0f0!important;color:#090909!important;box-shadow:none!important}
+.mobile-tabbar a.active,.mobile-tabbar a.active span,.mobile-tabs .mobile-tab.active{color:#f2f2f2!important}
+.mobile-tabbar a.active span{color:#f2f2f2!important}
+:where(button,a,input,textarea,select):focus-visible{outline-color:#f0f0f0!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head><body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html">BLACK <span>JEE</span> / PYQ</a><nav class="navlinks"><a href="index.html">Home</a><a href="prep.html">Prep Studio</a><a href="attempt.html">Challenge</a><a href="archive.html">Results</a><a href="profile.html">Profile</a></nav></div></header>
 <nav class="pyq-subnav wrap" aria-label="PYQ study modes"><a href="pyq.html" aria-current="page"><span class="route-dot"></span>All PYQs</a><a href="chapterwise.html"><span class="route-dot"></span>Chapter-wise</a><a href="mock-tests.html"><span class="route-dot"></span>Full Mock Tests</a><a href="prep.html"><span class="route-dot"></span>Prep Studio</a><a href="attempt.html"><span class="route-dot"></span>Daily Challenge</a></nav>
 <main class="wrap"><section class="hero" id="legacyHero"><div class="eyebrow">PRACTICE BUILDS PRECISION</div><h1>THE PYQ <span>ZONE.</span></h1><p class="lead">JEE Main previous-year questions, organized subject-wise and chapter-wise. Pick a chapter, take a timed practice set, review your score, and come back as new questions are added every day.</p><div class="stats"><div class="stat"><strong id="totalCount">—</strong><small>Published questions</small></div><div class="stat"><strong id="chapterCount">—</strong><small>Chapters covered</small></div><div class="stat"><strong>Daily</strong><small>New uploads planned</small></div></div></section>
