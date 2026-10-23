@@ -1131,20 +1131,20 @@
     "subject": "Chemistry",
     "chapter": "Chemical Kinetics",
     "source_question_number": 57,
-    "question_text": "For a reaction xA → yB, k = 0.3 M⁻¹ s⁻¹. Consider the statements: (i) If the concentration of A is made 4 times, the rate becomes 16 times. (ii) Decomposition of N₂O₅ is an example of this type of reaction. (iii) The order of the reaction is 2. (iv) A plot of ln([A]₀/[A]ₜ) versus time is a straight line. (v) The half-life is independent of the concentration of the reactant. Which option contains the correct set of statements?",
+    "question_text": "Consider the reaction aX → bY, for which the rate constant at 30°C is 1×10⁻³ mol⁻¹ L s⁻¹. Which of the following statements are true?\nA. When the concentration of X is increased to four times, the rate of reaction becomes 16 times.\nB. The reaction is a second order reaction.\nC. The half-life period is independent of the concentration of X.\nD. Decomposition of N₂O₅ is an example of the above reaction.\nE. The graph of ln([R₀]/[R]) versus time is a straight line, as shown.",
     "question_type": "MCQ",
     "options": [
-      "(i), (ii), (v)",
-      "(i), (iii)",
-      "(iii), (iv), (v)",
-      "(i), (iii), (v)"
+      "A and B Only",
+      "A, B and C Only",
+      "A, B, D and E Only",
+      "C and D Only"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
-    "image_url": "",
-    "correct_answer": "B",
-    "solution": "Audit against the question-paper text: k has units M⁻¹ s⁻¹, indicating a second-order reaction. Thus (i) is true because rate ∝ [A]², and (iii) is true. (ii) is false because N₂O₅ decomposition is first order; (iv) is the integrated first-order linear plot; (v) is false because second-order half-life depends on initial concentration. Correct set: (i), (iii), option B. The graph SVG previously attached to this record was not a diagram from this question and has been removed."
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q57.svg",
+    "correct_answer": "A",
+    "solution": "The units of k (mol⁻¹ L s⁻¹) indicate a second-order reaction, so rate ∝ [X]². Quadrupling [X] makes the rate 16 times larger (A true), and the reaction is second order (B true). For a second-order reaction, half-life depends on initial concentration (C false). N₂O₅ decomposition is first order (D false), and ln([R₀]/[R]) versus time is the first-order linear plot, not the second-order plot (E false). Therefore A and B only, option A; this matches the NTA final answer key."
   },
   {
     "year": 2026,
