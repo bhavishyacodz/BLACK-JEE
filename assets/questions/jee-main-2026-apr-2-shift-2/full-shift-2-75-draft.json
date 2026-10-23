@@ -17,8 +17,8 @@
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "B",
-    "solution": "From α+β=3 and α/2+2β=−3, obtain α=6 and β=−3. Their product gives r=αβ=−18. The two roots of x²+6x=m are 2α+β+2r=−27 and α−2β−r/2=21. Their product is m=−567, option B."
+    "correct_answer": "D",
+    "solution": "From α+β=3 and α/2+2β=−3, obtain α=6 and β=−3. Their product gives r=αβ=−18. The two roots of x²+6x=m are 2α+β+2r=−27 and α−2β−r/2=21. Their product is (−27)(21)=−567. Since x²+6x−m=0 has product of roots −m, we get −m=−567 and therefore m=567, option D."
   },
   {
     "year": 2026,
