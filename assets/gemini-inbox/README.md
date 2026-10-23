@@ -18,3 +18,23 @@ Because of this limitation, **I cannot physically extract image crops (PNGs), dr
 *   **Chemistry Q72 (`BJ-JM-20260404-S1-CHE-072`)**: The numerical question is missing the starting reactant for the multi-step synthesis (likely Benzene, but requires visual confirmation). Unresolved.
 
 Please use the provided JSON files to orchestrate the automated download and manual image cropping process in your local environment.
+
+## Screenshot-to-question crop workflow
+
+Use the published crop studio:
+- https://bhavishyacodz.github.io/BLACK-JEE/image-crop-studio.html
+
+1. Open the studio. It reads screenshots currently in this inbox and the shift question IDs.
+2. Select the screenshot and drag around the exact region to preserve. Choose the correct source question ID and crop type. Add more than one crop when a question has separate option diagrams.
+3. Export `crop-manifest.json`.
+4. Upload/commit that file to `assets/gemini-inbox/crop-manifest.json`.
+5. GitHub Actions validates the crop coordinates and IDs, creates PNGs under `assets/questions/jee-main-2026-apr-4-shift-1/images/`, and attaches them to the shift's **draft** metadata.
+6. Only after the processor completes successfully, it deletes the source screenshots referenced by that manifest. Unreferenced screenshots are retained.
+
+Safety rules:
+- The crop manifest must use the question ID shown by the studio. Do not guess or manually renumber IDs.
+- A crop is a source image asset, not proof that its text/answer has been verified. Source/render verification remains false until checked.
+- Processing does not publish questions or write to Supabase.
+- If a workflow fails, source screenshots remain in GitHub; fix the reported error and rerun.
+- After a successful run, the manifest records the processed source names and the number of generated assets.
+
