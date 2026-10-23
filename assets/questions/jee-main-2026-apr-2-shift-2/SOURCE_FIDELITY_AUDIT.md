@@ -108,3 +108,8 @@ A structural audit of the 75-record draft found that the current legacy candidat
 ## Source-order crosswalk correction — 2026-10-23
 
 The previous embedded `APR2S2_SOURCE_ORDER` lookup used keys that did not match the runtime lookup (`subject|question_text`), so those mappings could silently fall through to the fallback ordering. Rebuilt the map from the crosswalk and exact draft stems, and rebased Physics Q1–25 to the printed source sequence (legacy global Q26–50). Physics MCQ structure is now 20 MCQs + 5 numerical candidates after restoring legacy Q33 and Q42 to MCQ format. Q33's extracted surface-tension/options combination is internally inconsistent and remains unresolved; Q42's diagram remains a reconstruction. This does not certify the paper for publication.
+
+
+## Physics section structure recheck — 2026-10-23
+
+After restoring the printed Physics MCQ/numerical formats for legacy global Q33 and Q42, the draft now structurally contains 20 MCQs and 5 numerical questions for Physics. This is only a type-count check, not content certification. Legacy Q33's answer field is a provisional placeholder required by the draft schema; the record is explicitly marked not for scoring or publication until the source-text/options conflict is resolved. Legacy Q42's circuit remains an unverified reconstruction.
