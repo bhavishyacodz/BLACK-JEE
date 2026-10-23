@@ -1,6 +1,6 @@
 /* BLACK-JEE app-shell cache: instant page shell, live data stays network-backed.
    Bump CACHE_NAME whenever shell files change so installed clients refresh cleanly. */
-const CACHE_NAME = "black-jee-shell-v30";
+const CACHE_NAME = "black-jee-shell-v31";
 const APP_FILES = [
   "index.html",
   "attempt.html",
