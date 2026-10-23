@@ -694,45 +694,49 @@
       "subject": "Chemistry",
       "subject_question_number": 1,
       "section": "A",
-      "draft_candidate_global_number": 72,
-      "status": "candidate_needs_exact_review",
-      "notes": "decomposition kinetics candidate; reaction/time units need verification"
+      "draft_candidate_global_number": 51,
+      "status": "verified",
+      "notes": "Verified exact Chemistry Q51 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121201, correct option ID 691121682 = B). Draft global Q51 matches the carbon-to-hydrogen mass ratio, combustion mass, options, and independently calculated 11.44 g CO₂.",
+      "verification_evidence": "Verified exact Chemistry Q51 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121201, correct option ID 691121682 = B). Draft global Q51 matches the carbon-to-hydrogen mass ratio, combustion mass, options, and independently calculated 11.44 g CO₂."
     },
     {
       "paper_order": 52,
       "subject": "Chemistry",
       "subject_question_number": 2,
       "section": "A",
-      "draft_candidate_global_number": 55,
-      "status": "candidate_needs_exact_review",
-      "notes": "osmotic-pressure candidate; options need exact comparison"
+      "draft_candidate_global_number": 52,
+      "status": "verified",
+      "notes": "Verified exact Chemistry Q52 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121202, correct option ID 691121687 = C). Draft global Q52 matches both ionization constants, HCl concentration, HA⁻ request, options, and equilibrium estimate.",
+      "verification_evidence": "Verified exact Chemistry Q52 against NTA question paper PDF p.20 and final answer key PDF p.2 (question ID 691121202, correct option ID 691121687 = C). Draft global Q52 matches both ionization constants, HCl concentration, HA⁻ request, options, and equilibrium estimate."
     },
     {
       "paper_order": 53,
       "subject": "Chemistry",
       "subject_question_number": 3,
       "section": "A",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "unmatched: source asks H2SO4 molarity/density/molality/mole fraction"
+      "draft_candidate_global_number": 53,
+      "status": "verified",
+      "notes": "Verified exact Chemistry Q53 against NTA question paper PDF pp.20–21 and final answer key PDF p.2 (question ID 691121203, correct option ID 691121690 = B). Draft global Q53 matches the five species and combinations; seesaw-shape reasoning supports C and E only.",
+      "verification_evidence": "Verified exact Chemistry Q53 against NTA question paper PDF pp.20–21 and final answer key PDF p.2 (question ID 691121203, correct option ID 691121690 = B). Draft global Q53 matches the five species and combinations; seesaw-shape reasoning supports C and E only."
     },
     {
       "paper_order": 54,
       "subject": "Chemistry",
       "subject_question_number": 4,
       "section": "A",
-      "draft_candidate_global_number": 71,
-      "status": "candidate_needs_exact_review",
-      "notes": "similar photoelectric concept, but source values/presentation differ"
+      "draft_candidate_global_number": 54,
+      "status": "verified",
+      "notes": "Verified exact Chemistry Q54 against NTA question paper PDF p.21 and final answer key PDF p.2 (question ID 691121204, correct option ID 691121696 = D). Draft global Q54 matches both process statements and options; first-law calculation gives 14 J of work done on the gas.",
+      "verification_evidence": "Verified exact Chemistry Q54 against NTA question paper PDF p.21 and final answer key PDF p.2 (question ID 691121204, correct option ID 691121696 = D). Draft global Q54 matches both process statements and options; first-law calculation gives 14 J of work done on the gas."
     },
     {
       "paper_order": 55,
       "subject": "Chemistry",
       "subject_question_number": 5,
       "section": "A",
-      "draft_candidate_global_number": 51,
+      "draft_candidate_global_number": 55,
       "status": "candidate_needs_exact_review",
-      "notes": "combustion candidate; source mass/options need exact comparison"
+      "notes": "NOT VERIFIED: source wording/options match draft Q55, but NTA final answer key PDF p.2 maps question ID 691121205 to option A (ID 691121697), while independently applying π=nRT/V to the stated 0.5 L and 1 L solutions gives equal x, y, and z (option B). Keep this row on hold pending discrepancy resolution."
     },
     {
       "paper_order": 56,
