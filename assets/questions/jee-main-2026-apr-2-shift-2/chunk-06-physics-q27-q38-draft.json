@@ -93,7 +93,7 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "C",
-    "solution": "A soap bubble has two surfaces, so the increase in surface energy is W=2T×4π(r₂²−r₁²)=8πT(0.03²−0.01²)=0.000064π? Evaluating with radii in metres gives W=0.000064π J = 0.64π×10⁻⁴ J. Therefore α=0.64 (option B)."
+    "solution": "A soap bubble has two surfaces, so W=2T×4π(r₂²−r₁²)=8π(0.03)(0.03²−0.01²)=0.000192π J=1.92π×10⁻⁴ J. Thus α=1.92, option C."
   },
   {
     "year": 2026,
