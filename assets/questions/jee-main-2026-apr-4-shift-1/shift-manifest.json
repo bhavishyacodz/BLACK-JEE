@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "option_keys_mapped_where_exact_text_matches_diagram_and_source_review_pending",
+  "workflow_status": "user_answer_key_staged_with_unresolved_source_gaps_review_pending",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "Solutions for paper questions 31–75 have been staged from user-supplied solution batches. This is not publication approval. Questions with OCR/diagram/chemistry concerns remain needs_review; answer keys, source fidelity, MathJax and mobile rendering are not independently verified. No Supabase import or student publication was performed.",
+  "important_note": "Simplified answer key supplied by user on 2026-10-23 has been staged in the draft manifest. MCQ correct_option is stored separately from correct_answer (the option text/value). Numerical values are staged as answer text. User-supplied keys are not independently verified. Paper Q19 MAT, Q38 PHY, Q64 CHE, and Q72 CHE remain blocked for OCR/diagram/missing-reactant review. No Supabase import or student publication was performed.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -53,7 +53,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-026",
@@ -64,12 +67,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 26,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "D",
       "review_notes": [
-        "Option D maps to the supplied value; source option text contains an OCR artifact noted in the batch."
+        "Option D maps to the supplied value; source option text contains an OCR artifact noted in the batch.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -100,7 +105,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-027",
@@ -111,11 +119,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 27,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
-      "review_notes": []
+      "review_notes": [
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ]
     },
     {
       "slot_id": "physics-03",
@@ -130,7 +141,7 @@
         "5/9",
         "4/9"
       ],
-      "correct_answer": "\\frac59",
+      "correct_answer": "5/9",
       "solution": "On the smooth \\(45^\\circ\\) incline, \\(a_1=g/\\sqrt2\\). On the rough incline, \\(a_2=\\frac g{\\sqrt2}(1-\\mu_k)\\).\n\nFor a block starting from rest and sliding the same distance, \\(t=\\sqrt{2S/a}\\). Given \\(t_2=\\frac32t_1\\), squaring yields \\(a_1=\\frac94a_2\\). Hence\n\\(1=\\frac94(1-\\mu_k)\\), so \\(\\mu_k=1-\\frac49=\\frac59\\).\nCorrect option: C.",
       "diagram": {
         "required": false,
@@ -145,7 +156,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-028",
@@ -156,11 +170,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 28,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "C",
-      "review_notes": []
+      "review_notes": [
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ]
     },
     {
       "slot_id": "physics-04",
@@ -175,7 +192,7 @@
         "2.2",
         "4.3"
       ],
-      "correct_answer": "2.2",
+      "correct_answer": "7.9",
       "solution": "The reactants' total binding energy is\n\\(2(3\\times5.6)+(4\\times7.4)=33.6+29.6=63.2\\text{ MeV}\\).\nThe product's total binding energy is \\(10\\times6.1=61.0\\text{ MeV}\\).\n\nThus \\(Q=BE_{\\text{final}}-BE_{\\text{initial}}=61.0-63.2=-2.2\\text{ MeV}\\). The energy change has magnitude \\(|\\Delta Mc^2|=2.2\\text{ MeV}\\), so the requested value is \\(2.2\\), option C.",
       "diagram": {
         "required": false,
@@ -190,7 +207,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-029",
@@ -201,12 +221,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 29,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
-      "correct_option": "C",
+      "correct_option": "B",
       "review_notes": [
-        "The answer is the positive magnitude requested by ΔMc²; confirm the exact sign convention used in the source wording."
+        "The answer is the positive magnitude requested by ΔMc²; confirm the exact sign convention used in the source wording.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -237,7 +259,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-030",
@@ -248,13 +273,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 30,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Question wording matches the official source. Answer and solution remain pending; review the mass/radius relationship carefully when solving."
       ],
       "correct_option": "B",
-      "review_notes": []
+      "review_notes": [
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+      ]
     },
     {
       "slot_id": "physics-06",
@@ -269,7 +297,7 @@
         "2\\sqrt{3}",
         "\\frac{1}{\\sqrt{2}}"
       ],
-      "correct_answer": "sqrt(3)",
+      "correct_answer": "\\sqrt{3}",
       "solution": "R(15°)=u²/(2g); R(30°)=u²√3/(2g), so R₁:R₂=1:√3 and x=√3.",
       "diagram": {
         "required": false,
@@ -284,7 +312,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-031",
@@ -295,12 +326,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 31,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -331,7 +364,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-032",
@@ -342,12 +378,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 32,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -363,7 +401,7 @@
         "2\\frac{D\\lambda}{a}",
         "3\\frac{D\\lambda}{a}"
       ],
-      "correct_answer": "2Dλ/a",
+      "correct_answer": "2\\frac{D\\lambda}{a}",
       "solution": "Single-slit minima: yₙ=nλD/a. The separation between the third and first minima is y₃−y₁=2λD/a.",
       "diagram": {
         "required": false,
@@ -378,7 +416,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-033",
@@ -389,12 +430,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 33,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "C",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -410,7 +453,7 @@
         "1.9",
         "1"
       ],
-      "correct_answer": "2 mm",
+      "correct_answer": "2",
       "solution": "Extension ΔL=FL/(AY). With L_B=2L_A and Y_B=2Y_A, both strings extend 1 mm; total extension is 2 mm.",
       "diagram": {
         "required": false,
@@ -425,7 +468,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-034",
@@ -436,12 +482,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 34,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -457,7 +505,7 @@
         "\\frac{T_2P_1V_1+T_1P_2V_2}{T_1T_2PV}",
         "\\frac{|T_1-T_2|}{2}"
       ],
-      "correct_answer": "T₁T₂PV/(T₂P₁V₁+T₁P₂V₂)",
+      "correct_answer": "\\frac{T_1T_2PV}{T_2P_1V_1+T_1P_2V_2}",
       "solution": "Using n₁=P₁V₁/(RT₁), n₂=P₂V₂/(RT₂), and PV=(n₁+n₂)RT gives T=T₁T₂PV/(T₂P₁V₁+T₁P₂V₂).",
       "diagram": {
         "required": false,
@@ -472,7 +520,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-035",
@@ -483,12 +534,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 35,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -504,7 +557,7 @@
         "\\frac{7P_0V_0}{6R}",
         "\\frac{13P_0V_0}{11R}"
       ],
-      "correct_answer": "11P₀V₀/(10R)",
+      "correct_answer": "\\frac{11P_0V_0}{10R}",
       "solution": "For P=P₀V²/(V²+V₀²), evaluate P at V₀ and 3V₀, then use T=PV/(2R). The temperature difference is 1.1P₀V₀/R. Source wording remains flagged.",
       "diagram": {
         "required": false,
@@ -519,7 +572,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-036",
@@ -530,12 +586,14 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 36,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -551,7 +609,7 @@
         "Connect a resistor of x\\,\\Omega in series with the voltmeter.",
         "Connect a resistor of 2x\\,\\Omega in parallel to the voltmeter."
       ],
-      "correct_answer": "x/2 Ω in series",
+      "correct_answer": "Connect a resistor of \\frac{x}{2}\\,\\Omega in series with the voltmeter.",
       "solution": "Initial full-scale current is 20/x. For a 30 V range, 30=(20/x)(x+Rₛ), hence Rₛ=x/2 Ω.",
       "diagram": {
         "required": false,
@@ -566,7 +624,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-037",
@@ -577,12 +638,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 37,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -613,7 +676,8 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-038",
@@ -631,7 +695,8 @@
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
       ]
     },
     {
@@ -647,7 +712,7 @@
         "7.5",
         "7"
       ],
-      "correct_answer": "5 cm",
+      "correct_answer": "5",
       "solution": "Mirror formula gives image endpoints v₁=−20 cm for u₁=−20 cm and v₂=−15 cm for u₂=−30 cm; image length is 5 cm. Diagram-dependent geometry needs source review.",
       "diagram": {
         "required": true,
@@ -662,7 +727,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-039",
@@ -673,12 +741,14 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 39,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -694,7 +764,7 @@
         "-1",
         "2"
       ],
-      "correct_answer": "−2",
+      "correct_answer": "1",
       "solution": "With constant battery voltage, U=ε₀AV²/(2x); for dx/dt=v, dU/dt=−ε₀AV²v/(2x²), so the exponent is −2.",
       "diagram": {
         "required": false,
@@ -709,7 +779,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-040",
@@ -720,12 +793,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 40,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
-      "correct_option": "A",
+      "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -756,7 +831,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-041",
@@ -767,12 +845,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 41,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -803,7 +883,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-042",
@@ -814,14 +897,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 42,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "OCR notation normalized against the official PDF: diode forward resistance is 10 Ω and the requested coefficient is alpha."
       ],
       "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -852,7 +937,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-043",
@@ -863,12 +951,14 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 43,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -884,7 +974,7 @@
         "244",
         "305"
       ],
-      "correct_answer": "122 cm",
+      "correct_answer": "122",
       "solution": "Rayleigh criterion Δθ=1.22λ/D gives D=1.22 m for Δθ=5×10⁻⁷ rad and λ=500 nm, i.e. 122 cm.",
       "diagram": {
         "required": false,
@@ -899,7 +989,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-044",
@@ -910,12 +1003,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 44,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -931,7 +1026,7 @@
         "(E_x\\hat{j}+E_y\\hat{k})\\sin(ky+kz-\\omega t)",
         "(E_x\\hat{i}+E_y\\hat{j}+E_z\\hat{k})\\sin(kx+ky-kz-\\omega t)"
       ],
-      "correct_answer": null,
+      "correct_answer": "(E_x\\hat{i}+E_y\\hat{j})\\sin(kx-kz-\\omega t)",
       "solution": "The proposed polarization/phase answer relies on a diagram and option interpretation; the supplied explanation itself notes that its selected option has a polarization-factor mismatch. Needs review.",
       "diagram": {
         "required": true,
@@ -946,7 +1041,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-045",
@@ -957,21 +1055,23 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 45,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Vector hats, omega, and option subscripts normalized from the official PDF to correct OCR artifacts."
       ],
-      "correct_option": null,
+      "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
       "slot_id": "physics-21",
       "subject": "Physics",
       "subject_question_number": 21,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "A 1 kg block subjected to two simultaneous forces \\((2\\hat{i}+3\\hat{j}+4\\hat{k})\\,N\\) and \\((3\\hat{i}-\\hat{j}-2\\hat{k})\\,N\\) is moved a distance of 25 m along \\((3\\hat{i}-4\\hat{j})\\) direction. The work done in this process is _____ J.",
       "question_type": "numerical",
       "options": [],
@@ -990,7 +1090,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-046",
@@ -1001,19 +1103,22 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 46,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
       "slot_id": "physics-22",
       "subject": "Physics",
       "subject_question_number": 22,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "The surface tension of a soap solution is \\(3.5\\times10^{-2}\\,N/m\\). The work required to increase the radius of a soap bubble from 1 cm to 2 cm is \\(\\alpha\\times10^{-6}\\,J\\). The value of \\(\\alpha\\) is _____ (\\(\\pi=22/7\\)).",
       "question_type": "numerical",
       "options": [],
@@ -1032,7 +1137,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-047",
@@ -1043,14 +1150,17 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 47,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "OCR correction from supplied batch: '1 em' interpreted as '1 cm'; verify against the source PDF."
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
@@ -1076,7 +1186,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-048",
@@ -1087,21 +1199,24 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 48,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "The supplied OCR time-period expression is incomplete/corrupted; recover exact expression from source PDF before approval."
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
       "slot_id": "physics-24",
       "subject": "Physics",
       "subject_question_number": 24,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "A body of mass 2 kg begins to move under the influence of time-dependent force \\(\\vec{F}=(2t\\hat{i}+6t^{2}\\hat{j})\\,N\\), where \\(\\hat{i}\\) and \\(\\hat{j}\\) are unit vectors along x and y-axis respectively. The power produced by the force at \\(t=2\\,s\\) is _____ W.",
       "question_type": "numerical",
       "options": [],
@@ -1120,7 +1235,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-049",
@@ -1131,14 +1248,17 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 49,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Duplicated OCR words and time formatting normalized; verify against the source PDF."
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
@@ -1164,7 +1284,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-PHY-050",
@@ -1175,14 +1297,17 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 50,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "OCR fragment for reactance difference is garbled; recover exact expression from source PDF."
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
@@ -1198,7 +1323,7 @@
         "0.1266; \\(7.6238\\times10^{22}\\)",
         "0.0633; \\(7.6238\\times10^{22}\\)"
       ],
-      "correct_answer": "0.0633 mol; 3.812×10²² molecules",
+      "correct_answer": "0.0633; \\(3.812\\times10^{22}\\)",
       "solution": "Using 22.4 L/mol at legacy STP: n=1.4187/22.4≈0.0633 mol; multiplying by Avogadro's constant gives ≈3.81×10²² molecules.",
       "diagram": {
         "required": false,
@@ -1213,7 +1338,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-051",
@@ -1224,14 +1352,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 51,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Scientific-notation superscripts normalized from OCR; verify volume/STP convention and options against source PDF."
       ],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1247,7 +1377,7 @@
         "5:1.75",
         "5:27"
       ],
-      "correct_answer": "500/81 = 5:0.81",
+      "correct_answer": "5:0.81",
       "solution": "Balmer first-line wavenumber=(5/36)R; Brackett first-line=(9/400)R. Their ratio is 500/81=5/0.81.",
       "diagram": {
         "required": false,
@@ -1262,7 +1392,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-052",
@@ -1273,12 +1406,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 52,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1294,7 +1429,7 @@
         "\\(n=4,\\ l=1,\\ m=0,\\ s=+\\frac12\\)",
         "\\(n=4,\\ l=0,\\ m=0,\\ s=+\\frac12\\)"
       ],
-      "correct_answer": "n=4, l=0, mₗ=0, mₛ=+1/2",
+      "correct_answer": "\\(n=4,\\ l=0,\\ m=0,\\ s=+\\frac12\\)",
       "solution": "The 19th electron in the Aufbau filling sequence enters 4s; its quantum numbers are n=4, l=0, mₗ=0 and either spin ±1/2. The option OCR requires checking.",
       "diagram": {
         "required": false,
@@ -1309,7 +1444,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-053",
@@ -1320,14 +1458,16 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 53,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Removed apparent OCR artifacts from options; verify exact formatting against the source PDF."
       ],
       "correct_option": "D",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1343,7 +1483,7 @@
         "Statement I is true but Statement II is false",
         "Statement I is false but Statement II is true"
       ],
-      "correct_answer": "Both statements false",
+      "correct_answer": "Both Statement I and Statement II are false",
       "solution": "For an ideal gas Cₚ−Cᵥ=R>0, so Cₚ>Cᵥ. At constant volume, heat withdrawn lowers internal energy and temperature; both statements as transcribed are false.",
       "diagram": {
         "required": false,
@@ -1358,7 +1498,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-054",
@@ -1369,12 +1512,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 54,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1390,7 +1535,7 @@
         "\\(\\sqrt{2.7\\times10^{-5}}\\)",
         "\\(3\\times10^{-2}\\)"
       ],
-      "correct_answer": "3×10⁻²",
+      "correct_answer": "\\(3\\times10^{-2}\\)",
       "solution": "Scaling a reaction equation by 1/3 raises its equilibrium constant to the power 1/3: (2.7×10⁻⁵)^(1/3)=3×10⁻².",
       "diagram": {
         "required": false,
@@ -1405,7 +1550,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-055",
@@ -1416,14 +1564,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 55,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Duplicated OCR word normalized; verify reaction and options against source PDF."
       ],
       "correct_option": "D",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1439,7 +1589,7 @@
         "5",
         "7"
       ],
-      "correct_answer": "2 mol KMnO₄",
+      "correct_answer": "2",
       "solution": "Reducing equivalents total 3 (FeC₂O₄)+6 (Fe₂(C₂O₄)₃)+1 (FeSO₄)=10. Acidic permanganate accepts 5 e⁻ per mole, so 2 mol are required.",
       "diagram": {
         "required": false,
@@ -1454,7 +1604,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-056",
@@ -1465,14 +1618,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 56,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Punctuation and compound separation normalized from OCR; verify against source PDF."
       ],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1488,7 +1643,7 @@
         "\\(1+e^{-k_{1}t}\\)",
         "\\(1-e^{-k_{1}t}\\)"
       ],
-      "correct_answer": "1−e^(−k₁t)",
+      "correct_answer": "\\(1-e^{-k_{1}t}\\)",
       "solution": "For a first-order reaction, [R]=[R]₀e^(−k₁t); the decomposed fraction is 1−e^(−k₁t).",
       "diagram": {
         "required": false,
@@ -1503,7 +1658,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-057",
@@ -1514,14 +1672,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 57,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Option braces/exponents normalized from OCR; source-PDF check required."
       ],
       "correct_option": "D",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1552,7 +1712,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-058",
@@ -1563,12 +1726,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 58,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1584,7 +1749,7 @@
         "Statement I is true but Statement II is false",
         "Statement I is false but Statement II is true"
       ],
-      "correct_answer": "Both statements true",
+      "correct_answer": "Both Statement I and Statement II are true",
       "solution": "Oxygen is −2 in SO₂ and +2 in OF₂; oxygen's small size and high electronegativity contribute to its anomalous group-16 behaviour. The exact covalency wording needs source scrutiny.",
       "diagram": {
         "required": false,
@@ -1599,7 +1764,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-059",
@@ -1610,12 +1778,14 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 59,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1646,7 +1816,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-060",
@@ -1657,12 +1830,14 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 60,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "C",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1693,7 +1868,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-061",
@@ -1704,12 +1882,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 61,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1740,7 +1920,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-062",
@@ -1751,12 +1934,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 62,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "D",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1772,7 +1957,7 @@
         "d < b < a < c",
         "a < b < c < d"
       ],
-      "correct_answer": "d<b<a<c",
+      "correct_answer": "d < b < a < c",
       "solution": "Approximate withdrawing strength increases from iodine (weak −I) to −COOH to −CN to −NO₂. Confirm the precise group labels against the source image.",
       "diagram": {
         "required": false,
@@ -1787,7 +1972,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-063",
@@ -1798,12 +1986,14 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 63,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "C",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1834,7 +2024,8 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-064",
@@ -1852,7 +2043,8 @@
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
       ]
     },
     {
@@ -1883,7 +2075,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-065",
@@ -1894,14 +2089,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 65,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Option mappings normalized from OCR; verify all mappings against source PDF."
       ],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1917,7 +2114,7 @@
         "6",
         "3"
       ],
-      "correct_answer": "5 compounds",
+      "correct_answer": "5",
       "solution": "The supplied list identifies 1-naphthol, dimethylaminophenol, ethylphenol, benzoic acid and naphthoic acid as soluble in aqueous NaOH; count=5. Verify the exact structures in the source.",
       "diagram": {
         "required": true,
@@ -1932,7 +2129,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-066",
@@ -1943,14 +2143,16 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 66,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Visual audit of all nine structures is required; text-only record is insufficient to validate the answer."
       ],
       "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -1966,7 +2168,7 @@
         "4-Bromo-1-nitrobenzene",
         "1,3,5-Tribromobenzene"
       ],
-      "correct_answer": "1,3,5-tribromo-2-nitrobenzene",
+      "correct_answer": "1,3,5-Tribromo-2-nitrobenzene",
       "solution": "Aniline bromination gives 2,4,6-tribromoaniline, followed by diazotization and replacement of the diazonium group by NO₂ in the stated sequence. The final numbering/name needs checking against the original structures.",
       "diagram": {
         "required": true,
@@ -1981,7 +2183,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-067",
@@ -1992,14 +2197,16 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 67,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Question depends on exact source reaction scheme; verify reagent sequence and options visually before approving."
       ],
       "correct_option": "B",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2015,7 +2222,7 @@
         "Statement I is true but Statement II is false",
         "Statement I is false but Statement II is true"
       ],
-      "correct_answer": "Statement I false; Statement II true",
+      "correct_answer": "Statement I is false but Statement II is true",
       "solution": "Maltose and lactose are reducing sugars because each retains a free anomeric carbon; therefore the maltose statement is false and the lactose statement true.",
       "diagram": {
         "required": true,
@@ -2030,7 +2237,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-068",
@@ -2041,14 +2251,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 68,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "The supplied OCR garbles the structures; verify both structure images against source PDF."
       ],
       "correct_option": "D",
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2079,7 +2291,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-069",
@@ -2090,14 +2305,16 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 69,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Option punctuation normalized from OCR; verify mappings against source PDF."
       ],
       "correct_option": "A",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2128,7 +2345,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-070",
@@ -2139,14 +2359,16 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 70,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Source figure's '(Pink)' label seems inconsistent with the answer choices; inspect the original figure and intended species before approval."
       ],
       "correct_option": "D",
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2172,7 +2394,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-071",
@@ -2183,14 +2407,17 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 71,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Normalized OCR 'o bond-pairs' to 'σ-bond pairs'; verify wording against source PDF."
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
@@ -2216,7 +2443,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": false
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-072",
@@ -2234,7 +2463,9 @@
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Paper Q72 explicitly marked NEEDS REVIEW: missing reactant/source context; no numerical key was supplied."
       ]
     },
     {
@@ -2260,7 +2491,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-073",
@@ -2271,14 +2504,17 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 73,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Normalized molar-mass unit from OCR; verify numerical data against source PDF."
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
@@ -2304,7 +2540,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-074",
@@ -2315,25 +2553,28 @@
         "supplied_verification_status": "NEEDS_REVIEW",
         "source_paper_question_number": 74,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Detached '×10⁻²' may be an answer-line fragment; exact required answer format needs source-PDF verification."
       ],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
       "slot_id": "chemistry-25",
       "subject": "Chemistry",
       "subject_question_number": 25,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "A non-volatile, non-electrolyte solid solute is dissolved in 40 g of a solvent, and the vapour pressure of the solvent decreases from 760 mm Hg to 750 mm Hg. If the same solution boils at 320 K, then the number of moles of the solvent present in the solution is _____. (Nearest integer. Given: boiling point of the pure solvent = 319.5 K; \\(K_b\\) of the solvent = 0.3 K kg mol⁻¹.)",
       "question_type": "numerical",
       "options": [],
-      "correct_answer": "5 mol solvent",
+      "correct_answer": "5",
       "solution": "Boiling-point elevation gives n_solute=0.5×0.040/0.3=1/15 mol. From relative vapour-pressure lowering, n_solvent/n_solute=75, hence n_solvent=5 mol.",
       "diagram": {
         "required": false,
@@ -2348,7 +2589,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-CHE-075",
@@ -2359,12 +2602,15 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 75,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": null,
       "review_notes": [
-        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending."
+        "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
       ]
     },
     {
@@ -2396,7 +2642,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-001",
@@ -2407,13 +2655,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "A",
       "correct_option": "A",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2445,7 +2695,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-002",
@@ -2456,13 +2708,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "B",
       "correct_option": "B",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2494,7 +2748,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-003",
@@ -2505,13 +2761,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "A",
       "correct_option": "A",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2543,7 +2801,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-004",
@@ -2554,13 +2814,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "B",
       "correct_option": "B",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2592,7 +2854,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-005",
@@ -2603,13 +2867,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "D",
       "correct_option": "D",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2641,7 +2907,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-006",
@@ -2652,13 +2920,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "D",
       "correct_option": "D",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2674,7 +2944,7 @@
         "\\(\\frac{15}{29}\\)",
         "\\(\\frac{5}{29}\\)"
       ],
-      "correct_answer": "5/87",
+      "correct_answer": "\\(\\frac{5}{87}\\)",
       "solution": "The arithmetic progression has last term \\(\\ell=5\\). Applying the given sum condition and simplifying gives the common difference \\(d=\\frac{5}{87}\\).",
       "diagram": {
         "required": false,
@@ -2690,7 +2960,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-007",
@@ -2701,13 +2973,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "A",
       "correct_option": "A",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2739,7 +3013,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-008",
@@ -2750,13 +3026,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "D",
       "correct_option": "D",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2788,7 +3066,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-009",
@@ -2799,7 +3079,8 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "Assumes natural numbers are positive integers; with that convention k=6 is the smallest valid value."
@@ -2807,7 +3088,8 @@
       "correct_option_label": "B",
       "correct_option": "B",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2839,7 +3121,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-010",
@@ -2850,13 +3134,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "D",
       "correct_option": "D",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2888,7 +3174,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-011",
@@ -2899,13 +3187,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "A",
       "correct_option": "A",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2937,7 +3227,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-012",
@@ -2948,13 +3240,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "C",
       "correct_option": "C",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -2986,7 +3280,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-013",
@@ -2997,13 +3293,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "B",
       "correct_option": "B",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -3035,7 +3333,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-014",
@@ -3046,13 +3346,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "B",
       "correct_option": "B",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -3084,7 +3386,9 @@
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": true
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-015",
@@ -3095,13 +3399,15 @@
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23",
-        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option_label": "B",
       "correct_option": "B",
       "review_notes": [
-        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -3132,7 +3438,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-016",
@@ -3143,12 +3452,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 16,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "C",
       "review_notes": [
-        "Supplied derivation assumes the principal-arctangent branch is locally continuous at the evaluation point; verify the original function's denominator/domain from the official paper."
+        "Supplied derivation assumes the principal-arctangent branch is locally continuous at the evaluation point; verify the original function's denominator/domain from the official paper.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -3179,7 +3490,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-017",
@@ -3190,12 +3504,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 17,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "C",
       "review_notes": [
-        "Supplied calculation independently re-derived algebraically; official answer-key confirmation and rendered math checks remain pending."
+        "Supplied calculation independently re-derived algebraically; official answer-key confirmation and rendered math checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -3226,7 +3542,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-018",
@@ -3237,12 +3556,14 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 18,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "B",
       "review_notes": [
-        "Solution calculation checked algebraically against the supplied statement; source answer-key and browser-render verification remain pending."
+        "Solution calculation checked algebraically against the supplied statement; source answer-key and browser-render verification remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
@@ -3273,7 +3594,8 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-019",
@@ -3287,9 +3609,10 @@
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [],
-      "correct_option": "B",
+      "correct_option": null,
       "review_notes": [
-        "Corrected a mismatch in the supplied draft: the question asks β sin(β/2), not 3 sin(β/2). Under the supplied question wording, the result is 2 (option B). Confirm the integrand/statement against the official paper before approval."
+        "Corrected a mismatch in the supplied draft: the question asks β sin(β/2), not 3 sin(β/2). Under the supplied question wording, the result is 2 (option B). Confirm the integrand/statement against the official paper before approval.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
       ]
     },
     {
@@ -3305,7 +3628,7 @@
         "\\sqrt3\\tan(\\frac{11\\sqrt3}{12})",
         "\\frac{\\sqrt3}{2}\\tan(\\frac{11\\sqrt3}{6})"
       ],
-      "correct_answer": "\\sqrt3\\tan\\left(\\frac{11\\sqrt3}{12}\\right)",
+      "correct_answer": "\\sqrt3\\tan(\\frac{11\\sqrt3}{12})",
       "solution": "Separate variables:\n\\(\\int\\frac{dy}{y^2-y+1}=\\int(1+x+x^2)\\,dx\\).\n\nSince \\(y^2-y+1=(y-\\frac12)^2+\\frac34\\), integration gives\n\\(\\frac{2}{\\sqrt3}\\tan^{-1}\\left(\\frac{2y-1}{\\sqrt3}\\right)=\\frac{x^3}{3}+\\frac{x^2}{2}+x+C\\).\n\nUsing \\(y(0)=\\frac12\\) gives \\(C=0\\). At \\(x=1\\), the right side is \\(\\frac13+\\frac12+1=\\frac{11}{6}\\). Therefore\n\\(\\tan^{-1}\\left(\\frac{2y(1)-1}{\\sqrt3}\\right)=\\frac{11\\sqrt3}{12}\\).\n\nTaking tangent,\n\\(2y(1)-1=\\sqrt3\\tan\\left(\\frac{11\\sqrt3}{12}\\right)\\).\nCorrect option: C.",
       "diagram": {
         "required": false,
@@ -3320,7 +3643,10 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "answer_key_supplied_by_user": true,
+        "correct_option_mapped_from_option_text": false,
+        "correct_option_maps_to_existing_option": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-020",
@@ -3331,19 +3657,21 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 20,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "correct_option": "C",
       "review_notes": [
-        "Algebraic derivation checked against supplied equation; official answer-key confirmation and rendered math checks remain pending."
+        "Algebraic derivation checked against supplied equation; official answer-key confirmation and rendered math checks remain pending.",
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
       ]
     },
     {
       "slot_id": "mathematics-21",
       "subject": "Mathematics",
       "subject_question_number": 21,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "A coin is tossed 8 times. If the probability that exactly 4 heads appear in the first six tosses and exactly 3 heads appear in the last five tosses is p, then 96p is equal to:",
       "question_type": "numerical",
       "options": [],
@@ -3362,7 +3690,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-021",
@@ -3373,12 +3703,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 21,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "review_notes": [
-        "Numerical-response item; no A/B/C/D option key applies."
-      ]
+        "Numerical-response item; no A/B/C/D option key applies.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+      ],
+      "correct_option": null
     },
     {
       "slot_id": "mathematics-22",
@@ -3403,7 +3737,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-022",
@@ -3414,20 +3750,24 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 22,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [
         "The wording has been checked against the official NTA PDF and preserved as printed. Its mathematical interpretation is unusual; keep in needs_review until a subject-matter reviewer confirms the intended meaning."
       ],
       "review_notes": [
-        "Kept in needs_review: the wording about the intersection segment being the latus rectums is ambiguous and this interpretation must be checked against the official source before approval."
-      ]
+        "Kept in needs_review: the wording about the intersection segment being the latus rectums is ambiguous and this interpretation must be checked against the official source before approval.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+      ],
+      "correct_option": null
     },
     {
       "slot_id": "mathematics-23",
       "subject": "Mathematics",
       "subject_question_number": 23,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "If \\(A=\\frac{\\sin3^\\circ}{\\cos9^\\circ}+\\frac{\\sin9^\\circ}{\\cos27^\\circ}+\\frac{\\sin27^\\circ}{\\cos81^\\circ}\\) and \\(B=\\tan81^\\circ-\\tan3^\\circ\\), then \\(\\frac BA\\) is equal to:",
       "question_type": "numerical",
       "options": [],
@@ -3446,7 +3786,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-023",
@@ -3457,16 +3799,21 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 23,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
-      "review_notes": []
+      "review_notes": [
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+      ],
+      "correct_option": null
     },
     {
       "slot_id": "mathematics-24",
       "subject": "Mathematics",
       "subject_question_number": 24,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "Let \\(\\vec a_k=(\\tan\\theta_k)\\hat i+\\hat j\\) and \\(\\vec b_k=\\hat i-(\\cot\\theta_k)\\hat j\\), where \\(\\theta_k=\\frac{2^{k-1}\\pi}{2^n+1}\\), for some \\(n\\in\\mathbb N,\\ n>5\\). Then the value of \\(\\frac{\\sum_{k=1}^{n}|\\vec a_k|^2}{\\sum_{k=1}^{n}|\\vec b_k|^2}\\) is:",
       "question_type": "numerical",
       "options": [],
@@ -3485,7 +3832,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-024",
@@ -3496,18 +3845,22 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 24,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "review_notes": [
-        "The supplied solution notes an OCR artifact in the question text; source wording should be confirmed before approval."
-      ]
+        "The supplied solution notes an OCR artifact in the question text; source wording should be confirmed before approval.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+      ],
+      "correct_option": null
     },
     {
       "slot_id": "mathematics-25",
       "subject": "Mathematics",
       "subject_question_number": 25,
-      "status": "content_added",
+      "status": "needs_review",
       "question_text": "The number of points at which \\(f(x)=\\max\\{6x,\\,2+3x^2\\}+|x-1|\\cos|x^2-\\frac14|\\), \\(x\\in(-\\pi,\\pi)\\), is not differentiable, is:",
       "question_type": "numerical",
       "options": [],
@@ -3526,7 +3879,9 @@
         "solution_steps_checked": false,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": false,
+        "answer_key_supplied_by_user": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-025",
@@ -3537,12 +3892,16 @@
         "supplied_verification_status": "EXTRACTED_UNVERIFIED",
         "source_paper_question_number": 25,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
       "review_notes": [
-        "Numerical-response item; no A/B/C/D option key applies."
-      ]
+        "Numerical-response item; no A/B/C/D option key applies.",
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+      ],
+      "correct_option": null
     }
   ],
   "important_notes": [
