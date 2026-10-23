@@ -278,10 +278,10 @@ def main():
         except Exception:
             records = []
         if isinstance(records, list):
-            # JEE Main Paper 1 source order for this shift: Physics, Chemistry,
-            # Mathematics. Keep global source numbers aligned with the original paper.
-            subject_starts = {"Physics": 1, "Chemistry": args.expect_per_subject + 1,
-                              "Mathematics": 2 * args.expect_per_subject + 1}
+            # Official NTA Paper 1 display order for this shift: Mathematics,
+            # Physics, Chemistry. Keep global numbers aligned with the original PDF.
+            subject_starts = {"Mathematics": 1, "Physics": args.expect_per_subject + 1,
+                              "Chemistry": 2 * args.expect_per_subject + 1}
             for subject in sorted(SUBJECTS):
                 numbers = sorted(q.get("source_question_number") for q in records
                                  if isinstance(q, dict) and q.get("subject") == subject
