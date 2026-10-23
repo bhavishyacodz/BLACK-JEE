@@ -10,6 +10,7 @@
 .ops-panel{margin-top:14px;border:1px solid var(--line);border-radius:16px;padding:20px;background:linear-gradient(145deg,#151515,#0d0d0d)}
 .ops-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
 .ops-head h3{margin:0;font-size:19px}.ops-head p{margin:5px 0 0;font-size:13px;color:var(--muted)}
+.review-scope{display:grid;gap:6px;margin-top:16px;max-width:520px}.review-scope label{font-size:12px;font-weight:750;color:#ddd}.review-scope input{width:100%;padding:11px 12px;border-radius:9px;border:1px solid #414141;background:#090909;color:#f5f5f5;font:inherit}.review-scope input:focus{outline:2px solid #ed2438;outline-offset:2px}.review-scope small{font-size:12px;color:var(--muted)}
 .ops-progress{height:7px;background:#292929;border-radius:99px;overflow:hidden;margin:17px 0 8px}
 .ops-progress span{display:block;height:100%;width:0;background:var(--red);border-radius:99px;transition:width .18s ease}
 .ops-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
@@ -39,9 +40,10 @@
 <div class="section-head"><div><h2>Release checklist</h2><p class="muted">A small, repeatable gate before any question batch goes public.</p></div></div>
 <section class="ops-panel" aria-labelledby="opsTitle">
   <div class="ops-head">
-    <div><h3 id="opsTitle">Pre-publish quality gate</h3><p>Check each item for the shift you are working on. Progress is saved only in this browser on this device.</p></div>
-    <button class="btn" type="button" id="opsReset">Reset checklist</button>
+    <div><h3 id="opsTitle">Pre-publish quality gate</h3><p>Keep each shift review separate. Progress is saved only in this browser on this device.</p></div>
+    <button class="btn" type="button" id="opsReset">Reset this review</button>
   </div>
+  <div class="review-scope"><label for="opsScope">Review label (year + date + shift)</label><input id="opsScope" type="text" maxlength="100" value="General review" autocomplete="off" aria-describedby="opsScopeHelp"><small id="opsScopeHelp">Example: JEE Main 2026 · 4 April Shift 1. Changing this label opens that review’s separate checklist.</small></div>
   <div class="ops-progress" role="progressbar" aria-label="Checklist completion" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="opsProgress"><span id="opsBar"></span></div>
   <div class="ops-meta"><span id="opsCount">0 of 6 checks complete</span><span id="opsPercent">0%</span></div>
   <div class="ops-list" id="opsList">
@@ -61,30 +63,49 @@
 <script>
 (function () {
   "use strict";
-  const storageKey = "black-jee-owner-release-checklist-v1";
+  const storageKey = "black-jee-owner-release-checklist-v2";
+  const legacyKey = "black-jee-owner-release-checklist-v1";
   const list = document.getElementById("opsList");
   if (!list) return;
   const checks = Array.from(list.querySelectorAll('input[type="checkbox"][data-key]'));
+  const scope = document.getElementById("opsScope");
   const bar = document.getElementById("opsBar");
   const progress = document.getElementById("opsProgress");
   const count = document.getElementById("opsCount");
   const percent = document.getElementById("opsPercent");
   const status = document.getElementById("opsStatus");
   const reset = document.getElementById("opsReset");
-  function readSaved() {
+  let allReviews = {};
+  let activeScope = "";
+  function readAll() {
     try {
       const raw = window.localStorage.getItem(storageKey);
-      return raw ? JSON.parse(raw) : {};
-    } catch (_) { return {}; }
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) return parsed;
+      }
+      const legacyRaw = window.localStorage.getItem(legacyKey);
+      if (legacyRaw) {
+        const legacy = JSON.parse(legacyRaw);
+        if (legacy && typeof legacy === "object" && !Array.isArray(legacy)) {
+          return { "General review": legacy };
+        }
+      }
+    } catch (_) {}
+    return {};
+  }
+  function normalizedScope() {
+    return (scope.value || "").trim().slice(0, 100) || "General review";
   }
   function save() {
     const state = {};
     checks.forEach(function (input) { state[input.dataset.key] = input.checked; });
+    allReviews[activeScope] = state;
     try {
-      window.localStorage.setItem(storageKey, JSON.stringify(state));
-      status.textContent = "Saved on this device. This is a reminder, not proof that the content is correct.";
+      window.localStorage.setItem(storageKey, JSON.stringify(allReviews));
+      status.textContent = "Review saved on this device: " + activeScope + ". This reminder is not proof that content is correct.";
     } catch (_) {
-      status.textContent = "Browser storage is unavailable. Your checklist may not persist after leaving this page.";
+      status.textContent = "Browser storage is unavailable. This review may not persist after leaving this page.";
     }
   }
   function render() {
@@ -98,21 +119,40 @@
       const item = input.closest(".ops-item");
       if (item) item.classList.toggle("done", input.checked);
     });
-    if (complete === checks.length) status.textContent = "All checklist items marked. Perform the final live-site verification before considering release complete.";
+    if (complete === checks.length) status.textContent = "All checks marked for " + activeScope + ". Perform final live-site verification before release.";
   }
-  const saved = readSaved();
+  function loadScope(nextScope) {
+    activeScope = nextScope;
+    const state = allReviews[activeScope] || {};
+    checks.forEach(function (input) { input.checked = state[input.dataset.key] === true; });
+    render();
+    status.textContent = allReviews[activeScope] ? "Loaded saved review: " + activeScope + "." : "New review ready: " + activeScope + ".";
+  }
+  allReviews = readAll();
+  activeScope = normalizedScope();
+  loadScope(activeScope);
   checks.forEach(function (input) {
-    input.checked = saved[input.dataset.key] === true;
     input.addEventListener("change", function () { save(); render(); });
   });
+  scope.addEventListener("change", function () {
+    scope.value = normalizedScope();
+    loadScope(normalizedScope());
+  });
+  scope.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      scope.value = normalizedScope();
+      loadScope(normalizedScope());
+      scope.blur();
+    }
+  });
   reset.addEventListener("click", function () {
-    if (!window.confirm("Reset all six checklist items on this device?")) return;
+    if (!window.confirm('Reset all six checks for "' + activeScope + '" on this device? Other review labels will remain unchanged.')) return;
     checks.forEach(function (input) { input.checked = false; });
     save();
     render();
-    status.textContent = "Checklist reset for the next review.";
+    status.textContent = "Review reset: " + activeScope + ".";
   });
-  render();
 })();
 </script>
 
