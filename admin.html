@@ -252,7 +252,7 @@ const today = () => challengeDate();
 $("dateTag").textContent = new Date().toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric"}).toUpperCase();
 if($("adminDate"))$("adminDate").value = today();
 let supabase = null, currentQuestion = null, startedAt = null, ticker = null, elapsed = 0, selectedOption = null, chosenPhoto = null, adminUser = null;
-let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null,lastSolutionCheckAt=0;
+let sessionQuestionId = null, lastLoadedChallengeDate = null, lastSolutionCheck = null,lastSolutionCheckAt=0,lastSchedulePhase=null;
 const fallbackQuestion = {
  id:null, question_date:today(), title:"Loading challenge board", difficulty:"",
  tags:[],
