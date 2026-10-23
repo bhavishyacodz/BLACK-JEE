@@ -38,8 +38,8 @@
       "section": "A",
       "draft_candidate_global_number": 27,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q27 (rotating drum/friction); candidate text corrected to readable source values; final key pending.",
-      "verification_evidence": "",
+      "notes": "Legacy Q27 corrected to match readable source Physics Q3: hollow cylinder radius 1 m, angular speed 10 rad/s, coefficient-friction options 0.1/0.2/0.15/0.25. Candidate answer 0.1; final NTA answer-key confirmation still pending.",
+      "verification_evidence": "Compared against readable transcription PDF; official final answer key and any source figure still need confirmation.",
       "publishable": false
     },
     {
@@ -49,8 +49,8 @@
       "section": "A",
       "draft_candidate_global_number": 35,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q35 (rising air bubble/viscosity); options and calculated candidate still require source/key verification.",
-      "verification_evidence": "",
+      "notes": "Legacy Q35 corrected to match readable source Physics Q4: bubble radius 1 mm, speed 0.5 cm/s, liquid density 2000 kg/m³, source options 70/9, 20, 80/9 and 50 poise. Calculation gives 80/9 poise; final NTA key pending.",
+      "verification_evidence": "Compared against readable transcription PDF; official final answer key and any source figure still need confirmation.",
       "publishable": false
     },
     {
@@ -93,8 +93,8 @@
       "section": "A",
       "draft_candidate_global_number": 32,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q32 (screw gauge); zero error and reading details need exact source comparison.",
-      "verification_evidence": "",
+      "notes": "Legacy Q32 corrected to match readable source Physics Q8 wording and option values (5.55, 5.45, 5.056, 5.045 mm). Candidate calculation gives 5.045 mm, but zero-error sign and official final key remain to be confirmed.",
+      "verification_evidence": "Compared against readable transcription PDF; official final answer key and any source figure still need confirmation.",
       "publishable": false
     },
     {
