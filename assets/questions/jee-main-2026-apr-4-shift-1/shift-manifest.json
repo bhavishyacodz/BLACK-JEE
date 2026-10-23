@@ -2089,7 +2089,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2114,7 +2114,8 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Official NTA PDF page 23 confirms the stem: alkene X on reductive ozonolysis gives the displayed products. The four option structures are visible in the source but answer mapping and crop fidelity remain unverified; answer stays unset."
       ],
       "visual_assets": [
         {
@@ -3763,7 +3764,7 @@
         "4",
         "8"
       ],
-      "correct_answer": null,
+      "correct_answer": "2",
       "solution": "Let \\(\\alpha\\in(0,2)\\) be the unique solution of \\(\\alpha\\sin\\alpha=1\\). The integrand is even, so\n\\(I=2\\int_0^2\\sin x\\,dx+2\\int_0^2\\lfloor x\\sin x\\rfloor\\,dx\\).\n\nBecause \\(\\sin x>0\\) on \\((0,2]\\), the first term is \\(2(1-\\cos2)\\). The function \\(x\\sin x\\) increases from \\(0\\) to a value greater than \\(1\\) on \\([0,2]\\), and it crosses \\(1\\) at \\(\\alpha\\). Thus \\(\\lfloor x\\sin x\\rfloor=0\\) on \\([0,\\alpha)\\) and \\(1\\) on \\([\\alpha,2]\\), giving the second term \\(2(2-\\alpha)\\).\n\nTherefore \\(I=2(3-\\cos2)-2\\alpha\\). Comparing with \\(I=2(3-\\cos2)+\\beta\\), we obtain \\(\\beta=-2\\alpha\\).\n\nThe requested expression is\n\\(\\beta\\sin(\\beta/2)=(-2\\alpha)\\sin(-\\alpha)=2\\alpha\\sin\\alpha=2\\).\nCorrect option: B.",
       "diagram": {
         "required": false,
@@ -3774,12 +3775,12 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
-        "correct_option_mapped_from_option_text": false,
+        "correct_option_mapped_from_option_text": true,
         "answer_key_supplied_by_user": false
       },
       "source_reference": {
@@ -3788,16 +3789,17 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 7,
         "answer_source": "CALCULATED_INDEPENDENTLY",
-        "supplied_verification_status": "EXTRACTED_UNVERIFIED",
+        "supplied_verification_status": "ANSWER_RECALCULATED_SOURCE_WORDING_CONFIRMED",
         "source_paper_question_number": 19,
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [],
-      "correct_option": null,
+      "correct_option": "B",
       "review_notes": [
         "Corrected a mismatch in the supplied draft: the question asks β sin(β/2), not 3 sin(β/2). Under the supplied question wording, the result is 2 (option B). Confirm the integrand/statement against the official paper before approval.",
-        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete."
+        "Answer key intentionally unset: supplied key marks this question NEEDS REVIEW because source/OCR/diagram information is incomplete.",
+        "Checked against the official NTA paper: printed expression is β sin(β/2), options are 1, 2, 4, 8. Re-derivation gives β = −2α where α sin α = 1, hence β sin(β/2) = 2 (option B). Student-page math and mobile rendering remain pending."
       ]
     },
     {
