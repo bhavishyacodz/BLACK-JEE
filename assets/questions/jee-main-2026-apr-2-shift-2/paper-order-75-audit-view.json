@@ -245,7 +245,7 @@
       "legacy_global_question_number": 31,
       "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Topic candidate legacy Q31 (object falling from infinity); exact values/options and key pending.",
+      "audit_notes": "Added conceptual Earth-fall diagram with a far-away object and Earth's radius. This is a schematic reconstruction, not a source-certified copy.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
@@ -263,7 +263,7 @@
         "marks_correct": 4,
         "marks_wrong": -1,
         "is_published": false,
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q31.svg",
         "correct_answer": "B",
         "solution": "Using conservation of energy for an object released from rest at a very large distance, v = √(2GM/Re) = √(2gsRe) = √(2×9.8×6.4×10⁶) ≈ 11.2 km/s. Option B. Final NTA answer-key verification remains pending."
       }
@@ -385,7 +385,7 @@
       "legacy_global_question_number": 38,
       "source_match_status": "needs_exact_review",
       "publishable": false,
-      "audit_notes": "Topic candidate legacy Q38 (bulb/resistor circuit); verify the diagram and exact requested potential difference.",
+      "audit_notes": "Added a schematic circuit from the draft stem: 100 V battery, 200 Ω and 400 Ω series resistors, bulb across the 400 Ω resistor. Verify against the original source figure before certification.",
       "draft_candidate": {
         "year": 2026,
         "session": "2 April Shift 2",
@@ -403,7 +403,7 @@
         "marks_correct": 4,
         "marks_wrong": -1,
         "is_published": false,
-        "image_url": "",
+        "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q38.svg",
         "correct_answer": "B",
         "solution": "The bulb's rated resistance is R=V²/P=200²/100=400 Ω. It is in parallel with the 400 Ω resistor, giving 200 Ω; in series with 200 Ω, the total is 400 Ω. Current is 100/400=0.25 A, so the parallel branch voltage is 0.25×200=50 V. Option B."
       }
