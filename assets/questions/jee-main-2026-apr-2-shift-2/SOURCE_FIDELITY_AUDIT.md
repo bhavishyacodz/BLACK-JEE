@@ -190,3 +190,32 @@ Current ledger counts:
 These are candidate links only; the ledger deliberately does not mark any record as source-verified.
 
 The batch audit now checks the crosswalk's 1–75 order, expected subject sequence, subject-local numbering, Section A/B placement, and whether each draft candidate exists under the same subject. Any row marked `verified` must include verification evidence. Any unverified row now raises a hard CI error, so the batch cannot pass the release gate while source reconciliation remains incomplete. This makes the reconciliation queue machine-readable without allowing a topic-level similarity to masquerade as a verified match.
+
+
+## Re-audit: source text and numbering corrections
+
+A fresh line-by-line pass was made against the text-rendered 25-page paper PDF: [JEE Main 2026 April 2 Shift 2 question paper](https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf). The PDF states 75 questions and identifies the subject order as Physics, Chemistry, Mathematics; it also describes Section A as 1–20 and Section B as 21–25 (PDF extracted lines 5–16).
+
+### Corrected crosswalk statuses
+
+The crosswalk now records 75 slots and explicit audit notes:
+
+- 27 `candidate_matches_core_setup` — plausible content-level matches only, still not publication approval.
+- 21 `confirmed_mismatch` — at least one concrete difference in values, expression, options, requested output or numbering.
+- 12 `needs_exact_review` — topic is related but exact statement/options have not been confirmed.
+- 4 `needs_diagram_review` — diagrams are essential to determine equivalence.
+- 3 `no_candidate_confirmed` — no likely draft record identified.
+- 3 `source_diagram_unresolved` — source relies on a structure/diagram that has not been reconciled.
+- 5 `source_extraction_unresolved` — source question slots are not represented in the available text extraction.
+
+All 75 remain `publishable: false`. The categories are triage states, not verified correctness claims.
+
+### Corrections to earlier candidate mapping
+
+- Physics Q3 draft candidate differs in cylinder radius/setup; Physics Q7 differs in proton mass; Physics Q10 uses a different axis separation; Physics Q15 differs in force/field values; Physics Q19 describes a different electric-flux geometry; Physics Q24 differs in mass and drop height.
+- Chemistry Q1 has a time-unit mismatch (source: seconds, draft: minutes); Q7 differs in thermodynamic values; Q9 is H₂S/HS⁻ in the source rather than the draft's different acid; Q11 differs in the gadolinium ion charge; Q12 differs in the charge on BrF₄; Q17 has a different option set; Q24 has a different statement/effect.
+- Mathematics Q3 has different vectors; Q8 has a different second linear equation; Q12 has a different greatest-integer expression; Q15 asks for a different final expression; Q16's area transformation differs.
+- The Mathematics Section-B items must be indexed as subject-local questions 21–25, not 17–21. The previous crosswalk had incorrectly placed these candidates at 17–21. This has now been corrected.
+- The available text extraction shows Mathematics questions 1–16 followed by Section B questions 1–5, leaving source slots 17–20 unresolved in this extracted representation. Do not invent or infer those four questions. Obtain/inspect the original page images or an authoritative complete transcription before declaring the shift complete.
+
+The machine-readable file `source-to-draft-crosswalk.json` is the current audit index. It must not be used to automatically renumber or publish draft records.
