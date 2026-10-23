@@ -47,3 +47,16 @@ The official NTA PDF (PDF page 23) confirms the reductive-ozonolysis stem and sh
 6. Keep the batch draft-only until the owner explicitly approves publication.
 
 This report tracks follow-up progress; it is not a publication approval.
+
+## Additional independent calculations completed — 24 October 2026
+
+The following five answer/solution calculations were reworked and saved to the staging manifest. Their review status remains `needs_review`; none has been promoted to approved or published.
+
+- **Physics Q23:** comparing the velocity equation with the SHM relation gives \(\omega=1\), \(T=2\pi\), and requested value \(x=14\pi\approx44\) using \(\pi=22/7\).
+- **Physics Q25:** the power factor gives \(Z=200\,\Omega\), so \(|X_L-X_C|=\sqrt{Z^2-R^2}=100\sqrt3\,\Omega\) and \(\alpha=100\).
+- **Chemistry Q21:** the Lewis-theory count is recorded as six Xe–O sigma-bond pairs and no central-atom lone pairs. The exact source notation/representation still needs confirmation.
+- **Chemistry Q23:** the Carius-analysis figures give approximate empirical ratio C:H:Br = 5:4:2, hence five carbon atoms. Source-number/rounding confirmation remains pending.
+- **Chemistry Q24:** the buffer calculation gives pH approximately 7.56. Answer 756 is conditional on the source blank asking for the coefficient in \(N\times10^{-2}\); the printed answer-line format still needs confirmation.
+
+These are calculation checks on the staged text, not proof that every OCR-transcribed quantity matches the source PDF. The visual, mobile-rendering and release gates above remain in force.
+
