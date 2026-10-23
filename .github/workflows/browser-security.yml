@@ -9,6 +9,7 @@ on:
       - "scripts/check_inline_js.py"
       - "scripts/audit_static_references.py"
       - "scripts/process_question_crops.py"
+      - "scripts/test_math_rendering.py"
       - ".github/workflows/browser-security.yml"
   pull_request:
     paths:
@@ -17,6 +18,7 @@ on:
       - "scripts/audit_browser_security.py"
       - "scripts/check_inline_js.py"
       - "scripts/audit_static_references.py"
+      - "scripts/test_math_rendering.py"
       - ".github/workflows/browser-security.yml"
   workflow_dispatch:
 
@@ -39,5 +41,7 @@ jobs:
         run: python scripts/audit_browser_security.py
       - name: Syntax-check inline JavaScript
         run: python scripts/check_inline_js.py
+      - name: Test math notation rendering regressions
+        run: python scripts/test_math_rendering.py
       - name: Check local HTML resource references
         run: python scripts/audit_static_references.py
