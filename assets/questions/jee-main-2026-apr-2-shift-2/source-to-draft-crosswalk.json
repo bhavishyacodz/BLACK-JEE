@@ -335,11 +335,19 @@
         "subject_question_number": 17,
         "paper_order": 17
       },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 17
+      },
+      "status": "verified_exact_match",
       "publishable": false,
-      "verification": [],
-      "note": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked."
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Verified exact Mathematics Q17 against NTA paper PDF p.7 and final answer key PDF p.2. Source integral is ∫₀²⁰π(sin⁴x+cos⁴x)dx with options 15π/2, 25π, 15π, 25π/2; key maps question ID 691121167 to option ID 691121577 (C). Draft global Q17 matches; answer 15π."
     },
     {
       "source": {
@@ -347,11 +355,19 @@
         "subject_question_number": 18,
         "paper_order": 18
       },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 18
+      },
+      "status": "verified_exact_match",
       "publishable": false,
-      "verification": [],
-      "note": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked."
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Verified exact Mathematics Q18 against NTA paper PDF p.7 and final answer key PDF p.2. Source polynomial/extrema/limit wording and options 0, 50, 92, 112 match draft global Q18; key maps question ID 691121168 to option ID 691121582 (D). Independently, f(x)=3x⁵−5x³ gives f(2)−f(−2)=112."
     },
     {
       "source": {
@@ -359,11 +375,19 @@
         "subject_question_number": 19,
         "paper_order": 19
       },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 19
+      },
+      "status": "verified_exact_match",
       "publishable": false,
-      "verification": [],
-      "note": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked."
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Verified exact Mathematics Q19 against NTA paper PDF p.7 and final answer key PDF p.2. Integrand, f(4), f(7), natural-number exponents and options 31, 37, 39, 41 match draft global Q19; key maps question ID 691121169 to option ID 691121585 (C)."
     },
     {
       "source": {
@@ -371,11 +395,19 @@
         "subject_question_number": 20,
         "paper_order": 20
       },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 20
+      },
+      "status": "verified_exact_match",
       "publishable": false,
-      "verification": [],
-      "note": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked."
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Verified exact Mathematics Q20 against NTA paper PDF p.8 and final answer key PDF p.2. Differential equation, domain y>1, condition x(e)=e and options match draft global Q20; key maps question ID 691121170 to option ID 691121588 (B)."
     },
     {
       "source": {
