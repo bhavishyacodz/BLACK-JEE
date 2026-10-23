@@ -36,3 +36,27 @@ Keep three concepts separate in the canonical dataset:
 - `source_question_number`: legacy field in the current draft; it is presently used as a global paper position by the audit script and must not be confused with a subject-local number.
 
 For this shift, global paper positions 1–25 are Physics, 26–50 Chemistry, and 51–75 Mathematics. Preserve the original Section A/Section B identity separately if the UI needs it. Do not bulk-renumber the existing draft until each question has been matched by exact content, options, diagram, and answer to the source. When migrating the application schema, update importer, filters, UI labels, and tests together; do not silently rename fields in the JSON alone.
+
+
+## Source crosswalk gate
+
+For source reconciliation, maintain `assets/questions/<shift>/source-to-draft-crosswalk.json` as an audit-only index. Every source slot must be present in source order and classified with a status; a candidate mapping is only a pointer for review, never proof of equivalence. The crosswalk must not set `publishable: true` and must not trigger automatic renumbering.
+
+Run both fast validators before a manual source review:
+
+```bash
+python scripts/audit_source_crosswalk.py
+python scripts/audit_jee_batch.py --expect 75 --expect-per-subject 25 --json-out audit-report.json
+```
+
+The crosswalk validator checks 75 unique paper positions, 25 slots per subject, correct subject-local/global order, legacy candidate blocks, allowed review states, and the non-publication gate. The batch validator checks the draft's structural integrity. Both are required; passing either one alone is insufficient. For a new shift, parameterize the expected subject order and question counts from that shift's actual paper, rather than copying the April 2 Shift 2 assumptions.
+
+### Review-state meanings
+
+- `candidate_matches_core_setup`: similar core setup found; exact text/options/diagram/key still require review.
+- `confirmed_mismatch`: a concrete content discrepancy is already known.
+- `needs_exact_review`: plausible relationship, but exact matching is not established.
+- `needs_diagram_review`: the figure must be compared against the source.
+- `no_candidate_confirmed`: no likely draft record identified.
+- `source_diagram_unresolved`: a source structure/figure has not been reconciled.
+- `source_extraction_unresolved`: the available source text does not establish this slot; inspect original page images or another authoritative copy, do not guess.
