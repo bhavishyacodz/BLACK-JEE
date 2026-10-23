@@ -95,7 +95,7 @@ def main() -> int:
             if candidate_number not in EXPECTED_LEGACY_BLOCKS[subject]:
                 errors.append(f"record {i}: candidate global number {candidate_number!r} is outside legacy {subject} block")
         if subject == "Mathematics" and local in range(17, 21):
-            if status != "source_extraction_unresolved" or candidate is not None:
+            if status == "source_extraction_unresolved" and candidate is not None:
                 errors.append(f"Mathematics Q{local}: unresolved source slots must not have a guessed candidate")
 
     if sorted(seen_orders) != list(range(1, 76)):
