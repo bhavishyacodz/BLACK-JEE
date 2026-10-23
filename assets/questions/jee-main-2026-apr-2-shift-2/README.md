@@ -6,10 +6,10 @@ This folder contains custom SVG redraws associated with legacy draft records. **
 
 | Legacy draft ID | Topic | Asset |
 |---|---|---|
-| Q28 | Atwood machine with 2 kg and 1 kg blocks | [q28.svg](q28.svg) |
+| Q28 | Atwood machine with 2 kg and 1 kg blocks | [q28.svg](q28.svg) |\n| Q31 | Earth-fall conceptual schematic for Physics Q9 | [q31.svg](q31.svg) |\n| Q38 | Bulb/resistor circuit schematic for Physics Q14 | [q38.svg](q38.svg) |
 | Q30 | NAND logic circuit / equivalent gate (Semiconductor Electronics) | [q30.svg](q30.svg) |
 | Q41 | Equilateral prism with painted face / total internal reflection | [q41.svg](q41.svg) |
-| Q42 | Series RLC loop; S₂ bypasses L₂ and S₁ bypasses L₁ (redraw pending source verification) | [q42.svg](q42.svg) |
+| Q42 | Series RLC loop; S₁ bypasses L₁ and S₂ bypasses L₂ (redraw pending source verification) | [q42.svg](q42.svg) |\n| Q43 | Coplanar circular/square loop schematic for Physics Q20 | [q43.svg](q43.svg) |\n| Q46 | Young double-slit path-difference schematic for Physics Q21 | [q46.svg](q46.svg) |
 | Q50 | Moment of inertia: rod and sphere, parallel axes | [q50.svg](q50.svg) |
 | Q57 | Chemical kinetics statements (no diagram in the source question) | No image asset |
 | Q63 | Diarylmethyl carbocation / carbanion resonance statements | [q63.svg](q63.svg) |
@@ -22,10 +22,10 @@ This folder contains custom SVG redraws associated with legacy draft records. **
 
 These raw GitHub URLs identify draft assets only. Do not attach them to source questions until the exact question-to-diagram match has been verified:
 
-- Q28: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q28.svg
+- Q28: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q28.svg\n- Q31: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q31.svg\n- Q38: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q38.svg
 - Q30: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q30.svg
 - Q41: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q41.svg
-- Q42: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q42.svg
+- Q42: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q42.svg\n- Q43: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q43.svg\n- Q46: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q46.svg
 - Q50: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q50.svg
 - Q63: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q63.svg
 - Q66: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q66.svg
@@ -204,3 +204,8 @@ Post-cleanup database verification:
 - Re-fetched the committed gallery and all 10 referenced SVGs. Every referenced file exists and has an SVG root and closing tag; no stale Q57 reference remains.
 - Commits: [e1bd53b](https://github.com/bhavishyacodz/BLACK-JEE/commit/e1bd53bd4573124ce5ef4087d9af4a6eca890d80) (remove stale entry) and [d687a97](https://github.com/bhavishyacodz/BLACK-JEE/commit/d687a976745aa322c65d0da29a9666207e0bd4d6) (dynamic asset count).
 - This is source-level validation. Browser rendering and actual mobile load behavior remain to be tested. No question records or publication states were changed.
+
+
+## Current correction status — 23 October 2026
+
+The live source-fidelity status is maintained in [SOURCE_FIDELITY_AUDIT.md](SOURCE_FIDELITY_AUDIT.md) and [SOURCE_CROSSWALK.json](SOURCE_CROSSWALK.json). The 75-question draft remains on publication hold. Added SVGs q31, q38, q43 and q46 are explanatory reconstructions, not certified pixel-exact copies of the NTA figures. Physics Q23 / legacy Q42 now targets `3L₂ − L₁`, with S₁ bypassing L₁ and S₂ bypassing L₂; older descriptions elsewhere in this README or historical log may reflect prior drafts and are superseded by the latest correction log.
