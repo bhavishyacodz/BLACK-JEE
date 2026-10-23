@@ -545,4 +545,85 @@ if ("serviceWorker" in navigator) {
   }, { once: true });
 }
 </script>
+
+<style id="blackjee-interaction-polish">
+/* Quiet, consistent interaction layer: fast taps, visible focus, no exaggerated motion. */
+html{ -webkit-tap-highlight-color:transparent; }
+a,button,[role="button"],input[type="radio"],input[type="checkbox"],select{touch-action:manipulation}
+button,a,[role="button"]{-webkit-touch-callout:none}
+button:not(:disabled),a[href],[role="button"],label.option,label.preview,.option,.launch-tile{transition:transform .12s ease,border-color .16s ease,background-color .16s ease,box-shadow .16s ease}
+button:not(:disabled):active,a[href]:active,[role="button"]:active,label.option:active,.option:active,.launch-tile:active{transform:scale(.985)}
+button:disabled{transform:none!important}
+input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
+:focus-visible{outline:2px solid rgba(240,68,82,.9);outline-offset:3px}
+@media(hover:none){button:not(:disabled):hover,a[href]:hover{transform:none}}
+#blackjee-sound-toggle{position:fixed;z-index:120;right:16px;bottom:18px;display:flex;align-items:center;justify-content:center;gap:7px;min-width:44px;min-height:44px;padding:0 13px;border:1px solid #343943;border-radius:999px;background:rgba(18,20,25,.96);color:#cdd2dc;box-shadow:0 8px 28px rgba(0,0,0,.35);font:600 12px/1 system-ui,-apple-system,sans-serif;letter-spacing:.01em;backdrop-filter:blur(14px);cursor:pointer}
+#blackjee-sound-toggle svg{width:16px;height:16px;flex:0 0 auto}
+#blackjee-sound-toggle[aria-pressed="true"]{border-color:#4a5b51;color:#d8f6e5;background:rgba(16,31,24,.97)}
+#blackjee-sound-toggle:focus-visible{outline:2px solid #e4c477;outline-offset:3px}
+@media(max-width:720px){#blackjee-sound-toggle{right:12px;bottom:calc(82px + env(safe-area-inset-bottom));min-height:42px;padding:0 12px}}
+@media(prefers-reduced-motion:reduce){button:not(:disabled),a[href],[role="button"],label.option,.option,.launch-tile{transition:none!important}button:not(:disabled):active,a[href]:active,[role="button"]:active,label.option:active,.option:active,.launch-tile:active{transform:none!important}}
+</style>
+
+<script id="blackjee-interaction-polish-script">
+(()=> {
+  if (window.__blackJeeInteractionPolish) return;
+  window.__blackJeeInteractionPolish = true;
+  const storageKey = "blackjee-ui-sound-v1";
+  let soundOn = false, audioCtx = null;
+  try { soundOn = localStorage.getItem(storageKey) === "on"; } catch (_) {}
+  const icon = on => on
+    ? '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M15 9a5 5 0 0 1 0 6M17.5 6.5a8.5 8.5 0 0 1 0 11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>'
+    : '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 5 6 9H3v6h3l3 0" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m16 9 5 6m0-6-5 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>';
+  function playTick(preview=false) {
+    if (!soundOn && !preview) return;
+    try {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      if (!audioCtx) audioCtx = new Ctx();
+      if (audioCtx.state === "suspended") audioCtx.resume().catch(()=>{});
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(preview ? 620 : 470, now);
+      osc.frequency.exponentialRampToValueAtTime(preview ? 780 : 540, now + .025);
+      gain.gain.setValueAtTime(.0001, now);
+      gain.gain.exponentialRampToValueAtTime(preview ? .022 : .012, now + .006);
+      gain.gain.exponentialRampToValueAtTime(.0001, now + .045);
+      osc.connect(gain); gain.connect(audioCtx.destination);
+      osc.start(now); osc.stop(now + .05);
+    } catch (_) {}
+  }
+  function updateToggle(btn) {
+    btn.setAttribute("aria-pressed", String(soundOn));
+    btn.setAttribute("aria-label", soundOn ? "Turn interface sound effects off" : "Turn interface sound effects on");
+    btn.title = soundOn ? "Sound effects on — tap to turn off" : "Sound effects off — tap to turn on";
+    btn.innerHTML = icon(soundOn) + '<span>Sound ' + (soundOn ? 'on' : 'off') + '</span>';
+  }
+  function setup() {
+    if (document.getElementById("blackjee-sound-toggle")) return;
+    const btn = document.createElement("button");
+    btn.id = "blackjee-sound-toggle"; btn.type = "button"; btn.setAttribute("aria-pressed","false");
+    updateToggle(btn);
+    btn.addEventListener("click", () => {
+      soundOn = !soundOn;
+      try { localStorage.setItem(storageKey, soundOn ? "on" : "off"); } catch (_) {}
+      updateToggle(btn);
+      if (soundOn) playTick(true);
+      if (navigator.vibrate) { try { navigator.vibrate(8); } catch (_) {} }
+    });
+    document.body.appendChild(btn);
+  }
+  document.addEventListener("click", event => {
+    const target = event.target instanceof Element ? event.target : null;
+    if (!target) return;
+    const control = target.closest('button:not(:disabled),a[href],[role="button"],input[type="radio"],input[type="checkbox"],select,label.option,label.preview,.option,.launch-tile');
+    if (!control || control.id === "blackjee-sound-toggle" || control.closest("#blackjee-sound-toggle")) return;
+    if (navigator.vibrate) { try { navigator.vibrate(8); } catch (_) {} }
+    playTick(false);
+  }, true);
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", setup, {once:true});
+  else setup();
+})();
+</script>
 </body></html>
