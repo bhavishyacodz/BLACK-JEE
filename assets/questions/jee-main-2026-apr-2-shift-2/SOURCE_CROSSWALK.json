@@ -2,465 +2,15 @@
   "title": "JEE Main 2026 — 2 April Shift 2",
   "purpose": "Source-to-draft reconciliation ledger. Candidate links are not verified matches.",
   "source_order": [
-    "Mathematics",
-    "Physics",
-    "Chemistry"
+    "Mathematics 1-25",
+    "Physics 26-50",
+    "Chemistry 51-75"
   ],
   "publication_status": "HOLD",
   "verification_policy": "No row is verified. Match only after exact question text, options, diagram and answer-key comparison. Do not renumber or publish based on topic similarity.",
   "rows": [
     {
       "paper_order": 1,
-      "subject": "Physics",
-      "subject_question_number": 1,
-      "section": "A",
-      "draft_candidate_global_number": 28,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 2,
-      "subject": "Physics",
-      "subject_question_number": 2,
-      "section": "A",
-      "draft_candidate_global_number": 37,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 3,
-      "subject": "Physics",
-      "subject_question_number": 3,
-      "section": "A",
-      "draft_candidate_global_number": 27,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 4,
-      "subject": "Physics",
-      "subject_question_number": 4,
-      "section": "A",
-      "draft_candidate_global_number": 35,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 5,
-      "subject": "Physics",
-      "subject_question_number": 5,
-      "section": "A",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 6,
-      "subject": "Physics",
-      "subject_question_number": 6,
-      "section": "A",
-      "draft_candidate_global_number": 45,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 7,
-      "subject": "Physics",
-      "subject_question_number": 7,
-      "section": "A",
-      "draft_candidate_global_number": 44,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 8,
-      "subject": "Physics",
-      "subject_question_number": 8,
-      "section": "A",
-      "draft_candidate_global_number": 32,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 9,
-      "subject": "Physics",
-      "subject_question_number": 9,
-      "section": "A",
-      "draft_candidate_global_number": 31,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 10,
-      "subject": "Physics",
-      "subject_question_number": 10,
-      "section": "A",
-      "draft_candidate_global_number": 50,
-      "status": "candidate_needs_exact_review",
-      "notes": "Verification revoked: prior audit confused answer-key database ordering with source PDF section order. Exact source text, options/values, diagram if any, and final key must be rechecked."
-    },
-    {
-      "paper_order": 11,
-      "subject": "Physics",
-      "subject_question_number": 11,
-      "section": "A",
-      "draft_candidate_global_number": 33,
-      "status": "candidate_needs_exact_review",
-      "notes": "soap-bubble concept candidate; verify constants/options"
-    },
-    {
-      "paper_order": 12,
-      "subject": "Physics",
-      "subject_question_number": 12,
-      "section": "A",
-      "draft_candidate_global_number": 49,
-      "status": "candidate_needs_exact_review",
-      "notes": "lens concept candidate; verify curvature and requested parameter"
-    },
-    {
-      "paper_order": 13,
-      "subject": "Physics",
-      "subject_question_number": 13,
-      "section": "A",
-      "draft_candidate_global_number": 47,
-      "status": "candidate_needs_exact_review",
-      "notes": "Bohr orbit ratio candidate; verify ratio order"
-    },
-    {
-      "paper_order": 14,
-      "subject": "Physics",
-      "subject_question_number": 14,
-      "section": "A",
-      "draft_candidate_global_number": 38,
-      "status": "candidate_needs_exact_review",
-      "notes": "circuit candidate; ratings and diagram need verification"
-    },
-    {
-      "paper_order": 15,
-      "subject": "Physics",
-      "subject_question_number": 15,
-      "section": "A",
-      "draft_candidate_global_number": 29,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: force components and magnetic field differ"
-    },
-    {
-      "paper_order": 16,
-      "subject": "Physics",
-      "subject_question_number": 16,
-      "section": "A",
-      "draft_candidate_global_number": 41,
-      "status": "candidate_needs_exact_review",
-      "notes": "prism candidate; prompt wording and diagram need verification"
-    },
-    {
-      "paper_order": 17,
-      "subject": "Physics",
-      "subject_question_number": 17,
-      "section": "A",
-      "draft_candidate_global_number": 26,
-      "status": "candidate_needs_exact_review",
-      "notes": "dimensional-analysis candidate; verify variables/options"
-    },
-    {
-      "paper_order": 18,
-      "subject": "Physics",
-      "subject_question_number": 18,
-      "section": "A",
-      "draft_candidate_global_number": 30,
-      "status": "candidate_needs_exact_review",
-      "notes": "logic-gate candidate; diagram needs source comparison"
-    },
-    {
-      "paper_order": 19,
-      "subject": "Physics",
-      "subject_question_number": 19,
-      "section": "A",
-      "draft_candidate_global_number": 40,
-      "status": "candidate_needs_exact_review",
-      "notes": "flux candidate; verify charges, radii and ratio"
-    },
-    {
-      "paper_order": 20,
-      "subject": "Physics",
-      "subject_question_number": 20,
-      "section": "A",
-      "draft_candidate_global_number": 43,
-      "status": "candidate_needs_exact_review",
-      "notes": "mutual-inductance candidate; verify geometry and options"
-    },
-    {
-      "paper_order": 21,
-      "subject": "Physics",
-      "subject_question_number": 21,
-      "section": "B",
-      "draft_candidate_global_number": 46,
-      "status": "candidate_needs_exact_review",
-      "notes": "YDSE candidate; verify diagram and requested integer"
-    },
-    {
-      "paper_order": 22,
-      "subject": "Physics",
-      "subject_question_number": 22,
-      "section": "B",
-      "draft_candidate_global_number": 48,
-      "status": "candidate_needs_exact_review",
-      "notes": "gas thermodynamics candidate; verify all numerical data"
-    },
-    {
-      "paper_order": 23,
-      "subject": "Physics",
-      "subject_question_number": 23,
-      "section": "B",
-      "draft_candidate_global_number": 42,
-      "status": "candidate_needs_exact_review",
-      "notes": "LCR candidate; exact circuit and switch states need verification"
-    },
-    {
-      "paper_order": 24,
-      "subject": "Physics",
-      "subject_question_number": 24,
-      "section": "B",
-      "draft_candidate_global_number": 36,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source mass 1 kg and height 20 m; draft differs"
-    },
-    {
-      "paper_order": 25,
-      "subject": "Physics",
-      "subject_question_number": 25,
-      "section": "B",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "no exact candidate confirmed for this Section-B question"
-    },
-    {
-      "paper_order": 26,
-      "subject": "Chemistry",
-      "subject_question_number": 1,
-      "section": "A",
-      "draft_candidate_global_number": 72,
-      "status": "candidate_needs_exact_review",
-      "notes": "decomposition kinetics candidate; reaction/time units need verification"
-    },
-    {
-      "paper_order": 27,
-      "subject": "Chemistry",
-      "subject_question_number": 2,
-      "section": "A",
-      "draft_candidate_global_number": 55,
-      "status": "candidate_needs_exact_review",
-      "notes": "osmotic-pressure candidate; options need exact comparison"
-    },
-    {
-      "paper_order": 28,
-      "subject": "Chemistry",
-      "subject_question_number": 3,
-      "section": "A",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "unmatched: source asks H2SO4 molarity/density/molality/mole fraction"
-    },
-    {
-      "paper_order": 29,
-      "subject": "Chemistry",
-      "subject_question_number": 4,
-      "section": "A",
-      "draft_candidate_global_number": 71,
-      "status": "candidate_needs_exact_review",
-      "notes": "similar photoelectric concept, but source values/presentation differ"
-    },
-    {
-      "paper_order": 30,
-      "subject": "Chemistry",
-      "subject_question_number": 5,
-      "section": "A",
-      "draft_candidate_global_number": 51,
-      "status": "candidate_needs_exact_review",
-      "notes": "combustion candidate; source mass/options need exact comparison"
-    },
-    {
-      "paper_order": 31,
-      "subject": "Chemistry",
-      "subject_question_number": 6,
-      "section": "A",
-      "draft_candidate_global_number": 73,
-      "status": "candidate_needs_exact_review",
-      "notes": "electrochemistry candidate; half-reactions and efficiency need verification"
-    },
-    {
-      "paper_order": 32,
-      "subject": "Chemistry",
-      "subject_question_number": 7,
-      "section": "A",
-      "draft_candidate_global_number": 54,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source work by gas 10 J and heat absorbed 2 J"
-    },
-    {
-      "paper_order": 33,
-      "subject": "Chemistry",
-      "subject_question_number": 8,
-      "section": "A",
-      "draft_candidate_global_number": 57,
-      "status": "candidate_needs_exact_review",
-      "notes": "kinetics candidate; compare all statements/options"
-    },
-    {
-      "paper_order": 34,
-      "subject": "Chemistry",
-      "subject_question_number": 9,
-      "section": "A",
-      "draft_candidate_global_number": 52,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source uses H2S/HS- and different Ka values"
-    },
-    {
-      "paper_order": 35,
-      "subject": "Chemistry",
-      "subject_question_number": 10,
-      "section": "A",
-      "draft_candidate_global_number": 56,
-      "status": "candidate_needs_exact_review",
-      "notes": "titration candidate; preserve exact volumes/constants/log values"
-    },
-    {
-      "paper_order": 36,
-      "subject": "Chemistry",
-      "subject_question_number": 11,
-      "section": "A",
-      "draft_candidate_global_number": 74,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source list includes Gd2+; draft uses Gd3+"
-    },
-    {
-      "paper_order": 37,
-      "subject": "Chemistry",
-      "subject_question_number": 12,
-      "section": "A",
-      "draft_candidate_global_number": 53,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: BrF4 charge differs; inspect source image"
-    },
-    {
-      "paper_order": 38,
-      "subject": "Chemistry",
-      "subject_question_number": 13,
-      "section": "A",
-      "draft_candidate_global_number": 58,
-      "status": "candidate_needs_exact_review",
-      "notes": "oxide classification candidate; options need verification"
-    },
-    {
-      "paper_order": 39,
-      "subject": "Chemistry",
-      "subject_question_number": 14,
-      "section": "A",
-      "draft_candidate_global_number": 59,
-      "status": "candidate_needs_exact_review",
-      "notes": "ionisation-energy trend candidate; full statements need verification"
-    },
-    {
-      "paper_order": 40,
-      "subject": "Chemistry",
-      "subject_question_number": 15,
-      "section": "A",
-      "draft_candidate_global_number": 61,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: coordination complex pairings/options differ"
-    },
-    {
-      "paper_order": 41,
-      "subject": "Chemistry",
-      "subject_question_number": 16,
-      "section": "A",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "unmatched: source asks CFSE order of cobalt complexes"
-    },
-    {
-      "paper_order": 42,
-      "subject": "Chemistry",
-      "subject_question_number": 17,
-      "section": "A",
-      "draft_candidate_global_number": 70,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source options Zn2+, Fe3+, Fe2+, Co2+ differ"
-    },
-    {
-      "paper_order": 43,
-      "subject": "Chemistry",
-      "subject_question_number": 18,
-      "section": "A",
-      "draft_candidate_global_number": 69,
-      "status": "candidate_needs_exact_review",
-      "notes": "amino-acid/hormone candidate; options/codes need verification"
-    },
-    {
-      "paper_order": 44,
-      "subject": "Chemistry",
-      "subject_question_number": 19,
-      "section": "A",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "unmatched: organic conversion and product diagram need review"
-    },
-    {
-      "paper_order": 45,
-      "subject": "Chemistry",
-      "subject_question_number": 20,
-      "section": "A",
-      "draft_candidate_global_number": 75,
-      "status": "candidate_needs_exact_review",
-      "notes": "Carius method candidate; structure/bromine count need verification"
-    },
-    {
-      "paper_order": 46,
-      "subject": "Chemistry",
-      "subject_question_number": 21,
-      "section": "B",
-      "draft_candidate_global_number": 67,
-      "status": "candidate_needs_exact_review",
-      "notes": "product test candidate; structures/statements need verification"
-    },
-    {
-      "paper_order": 47,
-      "subject": "Chemistry",
-      "subject_question_number": 22,
-      "section": "B",
-      "draft_candidate_global_number": 65,
-      "status": "candidate_needs_exact_review",
-      "notes": "haloalkane statements candidate; compare each statement/options"
-    },
-    {
-      "paper_order": 48,
-      "subject": "Chemistry",
-      "subject_question_number": 23,
-      "section": "B",
-      "draft_candidate_global_number": 68,
-      "status": "candidate_needs_exact_review",
-      "notes": "reaction-sequence candidate; starting structure/reagents/labels need verification"
-    },
-    {
-      "paper_order": 49,
-      "subject": "Chemistry",
-      "subject_question_number": 24,
-      "section": "B",
-      "draft_candidate_global_number": 63,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source states +R effect; draft statement differs"
-    },
-    {
-      "paper_order": 50,
-      "subject": "Chemistry",
-      "subject_question_number": 25,
-      "section": "B",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "unmatched: structure-dependent source question needs transcription"
-    },
-    {
-      "paper_order": 51,
       "subject": "Mathematics",
       "subject_question_number": 1,
       "section": "A",
@@ -469,7 +19,7 @@
       "notes": "mean/variance candidate"
     },
     {
-      "paper_order": 52,
+      "paper_order": 2,
       "subject": "Mathematics",
       "subject_question_number": 2,
       "section": "A",
@@ -478,7 +28,7 @@
       "notes": "degree-five polynomial candidate"
     },
     {
-      "paper_order": 53,
+      "paper_order": 3,
       "subject": "Mathematics",
       "subject_question_number": 3,
       "section": "A",
@@ -487,7 +37,7 @@
       "notes": "vector candidate; vector components differ"
     },
     {
-      "paper_order": 54,
+      "paper_order": 4,
       "subject": "Mathematics",
       "subject_question_number": 4,
       "section": "A",
@@ -496,7 +46,7 @@
       "notes": "complex-circle candidate"
     },
     {
-      "paper_order": 55,
+      "paper_order": 5,
       "subject": "Mathematics",
       "subject_question_number": 5,
       "section": "A",
@@ -505,7 +55,7 @@
       "notes": "parabola candidate"
     },
     {
-      "paper_order": 56,
+      "paper_order": 6,
       "subject": "Mathematics",
       "subject_question_number": 6,
       "section": "A",
@@ -514,7 +64,7 @@
       "notes": "circle-locus candidate"
     },
     {
-      "paper_order": 57,
+      "paper_order": 7,
       "subject": "Mathematics",
       "subject_question_number": 7,
       "section": "A",
@@ -523,7 +73,7 @@
       "notes": "series candidate"
     },
     {
-      "paper_order": 58,
+      "paper_order": 8,
       "subject": "Mathematics",
       "subject_question_number": 8,
       "section": "A",
@@ -532,7 +82,7 @@
       "notes": "linear-system candidate; second equation differs"
     },
     {
-      "paper_order": 59,
+      "paper_order": 9,
       "subject": "Mathematics",
       "subject_question_number": 9,
       "section": "A",
@@ -541,7 +91,7 @@
       "notes": "integral candidate"
     },
     {
-      "paper_order": 60,
+      "paper_order": 10,
       "subject": "Mathematics",
       "subject_question_number": 10,
       "section": "A",
@@ -550,7 +100,7 @@
       "notes": "polygon triangle-count candidate"
     },
     {
-      "paper_order": 61,
+      "paper_order": 11,
       "subject": "Mathematics",
       "subject_question_number": 11,
       "section": "A",
@@ -559,7 +109,7 @@
       "notes": "relation candidate"
     },
     {
-      "paper_order": 62,
+      "paper_order": 12,
       "subject": "Mathematics",
       "subject_question_number": 12,
       "section": "A",
@@ -568,7 +118,7 @@
       "notes": "greatest-integer candidate; expression differs"
     },
     {
-      "paper_order": 63,
+      "paper_order": 13,
       "subject": "Mathematics",
       "subject_question_number": 13,
       "section": "A",
@@ -577,7 +127,7 @@
       "notes": "integral candidate"
     },
     {
-      "paper_order": 64,
+      "paper_order": 14,
       "subject": "Mathematics",
       "subject_question_number": 14,
       "section": "A",
@@ -586,7 +136,7 @@
       "notes": "circle/chord candidate"
     },
     {
-      "paper_order": 65,
+      "paper_order": 15,
       "subject": "Mathematics",
       "subject_question_number": 15,
       "section": "A",
@@ -595,7 +145,7 @@
       "notes": "differential-equation candidate; requested expression differs"
     },
     {
-      "paper_order": 66,
+      "paper_order": 16,
       "subject": "Mathematics",
       "subject_question_number": 16,
       "section": "A",
@@ -604,7 +154,7 @@
       "notes": "hyperbola/area candidate; requested expression differs"
     },
     {
-      "paper_order": 67,
+      "paper_order": 17,
       "subject": "Mathematics",
       "subject_question_number": 17,
       "section": "A",
@@ -613,7 +163,7 @@
       "notes": "no candidate recorded; exact source comparison required"
     },
     {
-      "paper_order": 68,
+      "paper_order": 18,
       "subject": "Mathematics",
       "subject_question_number": 18,
       "section": "A",
@@ -622,7 +172,7 @@
       "notes": "no candidate recorded; exact source comparison required"
     },
     {
-      "paper_order": 69,
+      "paper_order": 19,
       "subject": "Mathematics",
       "subject_question_number": 19,
       "section": "A",
@@ -631,7 +181,7 @@
       "notes": "no candidate recorded; exact source comparison required"
     },
     {
-      "paper_order": 70,
+      "paper_order": 20,
       "subject": "Mathematics",
       "subject_question_number": 20,
       "section": "A",
@@ -640,7 +190,7 @@
       "notes": "no candidate recorded; exact source comparison required"
     },
     {
-      "paper_order": 71,
+      "paper_order": 21,
       "subject": "Mathematics",
       "subject_question_number": 21,
       "section": "B",
@@ -649,7 +199,7 @@
       "notes": "Section-B trigonometry candidate; expression differs"
     },
     {
-      "paper_order": 72,
+      "paper_order": 22,
       "subject": "Mathematics",
       "subject_question_number": 22,
       "section": "B",
@@ -658,7 +208,7 @@
       "notes": "Section-B binomial identity candidate"
     },
     {
-      "paper_order": 73,
+      "paper_order": 23,
       "subject": "Mathematics",
       "subject_question_number": 23,
       "section": "B",
@@ -667,7 +217,7 @@
       "notes": "Section-B 3D geometry candidate"
     },
     {
-      "paper_order": 74,
+      "paper_order": 24,
       "subject": "Mathematics",
       "subject_question_number": 24,
       "section": "B",
@@ -676,13 +226,663 @@
       "notes": "Section-B matrix candidate; matrix B differs"
     },
     {
-      "paper_order": 75,
+      "paper_order": 25,
       "subject": "Mathematics",
       "subject_question_number": 25,
       "section": "B",
       "draft_candidate_global_number": 8,
       "status": "candidate_needs_exact_review",
       "notes": "Section-B probability candidate"
+    },
+    {
+      "paper_order": 26,
+      "subject": "Physics",
+      "subject_question_number": 1,
+      "section": "A",
+      "draft_candidate_global_number": 26,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q26; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 26,
+        "answer_key_question_id": "691121176",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 27,
+      "subject": "Physics",
+      "subject_question_number": 2,
+      "section": "A",
+      "draft_candidate_global_number": 27,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q27; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 27,
+        "answer_key_question_id": "691121177",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 28,
+      "subject": "Physics",
+      "subject_question_number": 3,
+      "section": "A",
+      "draft_candidate_global_number": 28,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q28; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 28,
+        "answer_key_question_id": "691121178",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 29,
+      "subject": "Physics",
+      "subject_question_number": 4,
+      "section": "A",
+      "draft_candidate_global_number": 29,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q29; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 29,
+        "answer_key_question_id": "691121179",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 30,
+      "subject": "Physics",
+      "subject_question_number": 5,
+      "section": "A",
+      "draft_candidate_global_number": 30,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q30; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 30,
+        "answer_key_question_id": "691121180",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 31,
+      "subject": "Physics",
+      "subject_question_number": 6,
+      "section": "A",
+      "draft_candidate_global_number": 31,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q31; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 31,
+        "answer_key_question_id": "691121181",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 32,
+      "subject": "Physics",
+      "subject_question_number": 7,
+      "section": "A",
+      "draft_candidate_global_number": 32,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q32; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 32,
+        "answer_key_question_id": "691121182",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 33,
+      "subject": "Physics",
+      "subject_question_number": 8,
+      "section": "A",
+      "draft_candidate_global_number": 33,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q33; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 33,
+        "answer_key_question_id": "691121183",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 34,
+      "subject": "Physics",
+      "subject_question_number": 9,
+      "section": "A",
+      "draft_candidate_global_number": 34,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q34; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 34,
+        "answer_key_question_id": "691121184",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 35,
+      "subject": "Physics",
+      "subject_question_number": 10,
+      "section": "A",
+      "draft_candidate_global_number": 35,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q35; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 35,
+        "answer_key_question_id": "691121185",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 36,
+      "subject": "Physics",
+      "subject_question_number": 11,
+      "section": "A",
+      "draft_candidate_global_number": 36,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q36; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 36,
+        "answer_key_question_id": "691121186",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 37,
+      "subject": "Physics",
+      "subject_question_number": 12,
+      "section": "A",
+      "draft_candidate_global_number": 37,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q37; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 37,
+        "answer_key_question_id": "691121187",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 38,
+      "subject": "Physics",
+      "subject_question_number": 13,
+      "section": "A",
+      "draft_candidate_global_number": 38,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q38; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 38,
+        "answer_key_question_id": "691121188",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 39,
+      "subject": "Physics",
+      "subject_question_number": 14,
+      "section": "A",
+      "draft_candidate_global_number": 39,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q39; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 39,
+        "answer_key_question_id": "691121189",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 40,
+      "subject": "Physics",
+      "subject_question_number": 15,
+      "section": "A",
+      "draft_candidate_global_number": 40,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q40; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 40,
+        "answer_key_question_id": "691121190",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 41,
+      "subject": "Physics",
+      "subject_question_number": 16,
+      "section": "A",
+      "draft_candidate_global_number": 41,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q41; official final answer-key option ID checked. Prism diagram visually checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 41,
+        "answer_key_question_id": "691121191",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 42,
+      "subject": "Physics",
+      "subject_question_number": 17,
+      "section": "A",
+      "draft_candidate_global_number": 42,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q42; official final answer-key option ID checked. LCR circuit diagram visually checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 42,
+        "answer_key_question_id": "691121192",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 43,
+      "subject": "Physics",
+      "subject_question_number": 18,
+      "section": "A",
+      "draft_candidate_global_number": 43,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q43; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 43,
+        "answer_key_question_id": "691121193",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 44,
+      "subject": "Physics",
+      "subject_question_number": 19,
+      "section": "A",
+      "draft_candidate_global_number": 44,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q44; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 44,
+        "answer_key_question_id": "691121194",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 45,
+      "subject": "Physics",
+      "subject_question_number": 20,
+      "section": "A",
+      "draft_candidate_global_number": 45,
+      "status": "verified",
+      "notes": "Exact statement/values/options matched to source PDF Q45; official final answer-key option ID checked. Audit-only; not permission to publish the incomplete shift.",
+      "verification_evidence": {
+        "source_pdf_question_number": 45,
+        "answer_key_question_id": "691121195",
+        "checks": [
+          "exact_statement_and_values",
+          "options_or_numerical_format",
+          "diagram_if_any",
+          "official_final_answer_key"
+        ]
+      }
+    },
+    {
+      "paper_order": 46,
+      "subject": "Physics",
+      "subject_question_number": 21,
+      "section": "B",
+      "draft_candidate_global_number": 46,
+      "status": "candidate_needs_exact_review",
+      "notes": "YDSE candidate; verify diagram and requested integer"
+    },
+    {
+      "paper_order": 47,
+      "subject": "Physics",
+      "subject_question_number": 22,
+      "section": "B",
+      "draft_candidate_global_number": 48,
+      "status": "candidate_needs_exact_review",
+      "notes": "gas thermodynamics candidate; verify all numerical data"
+    },
+    {
+      "paper_order": 48,
+      "subject": "Physics",
+      "subject_question_number": 23,
+      "section": "B",
+      "draft_candidate_global_number": 42,
+      "status": "candidate_needs_exact_review",
+      "notes": "LCR candidate; exact circuit and switch states need verification"
+    },
+    {
+      "paper_order": 49,
+      "subject": "Physics",
+      "subject_question_number": 24,
+      "section": "B",
+      "draft_candidate_global_number": 36,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: source mass 1 kg and height 20 m; draft differs"
+    },
+    {
+      "paper_order": 50,
+      "subject": "Physics",
+      "subject_question_number": 25,
+      "section": "B",
+      "draft_candidate_global_number": null,
+      "status": "unmatched",
+      "notes": "no exact candidate confirmed for this Section-B question"
+    },
+    {
+      "paper_order": 51,
+      "subject": "Chemistry",
+      "subject_question_number": 1,
+      "section": "A",
+      "draft_candidate_global_number": 72,
+      "status": "candidate_needs_exact_review",
+      "notes": "decomposition kinetics candidate; reaction/time units need verification"
+    },
+    {
+      "paper_order": 52,
+      "subject": "Chemistry",
+      "subject_question_number": 2,
+      "section": "A",
+      "draft_candidate_global_number": 55,
+      "status": "candidate_needs_exact_review",
+      "notes": "osmotic-pressure candidate; options need exact comparison"
+    },
+    {
+      "paper_order": 53,
+      "subject": "Chemistry",
+      "subject_question_number": 3,
+      "section": "A",
+      "draft_candidate_global_number": null,
+      "status": "unmatched",
+      "notes": "unmatched: source asks H2SO4 molarity/density/molality/mole fraction"
+    },
+    {
+      "paper_order": 54,
+      "subject": "Chemistry",
+      "subject_question_number": 4,
+      "section": "A",
+      "draft_candidate_global_number": 71,
+      "status": "candidate_needs_exact_review",
+      "notes": "similar photoelectric concept, but source values/presentation differ"
+    },
+    {
+      "paper_order": 55,
+      "subject": "Chemistry",
+      "subject_question_number": 5,
+      "section": "A",
+      "draft_candidate_global_number": 51,
+      "status": "candidate_needs_exact_review",
+      "notes": "combustion candidate; source mass/options need exact comparison"
+    },
+    {
+      "paper_order": 56,
+      "subject": "Chemistry",
+      "subject_question_number": 6,
+      "section": "A",
+      "draft_candidate_global_number": 73,
+      "status": "candidate_needs_exact_review",
+      "notes": "electrochemistry candidate; half-reactions and efficiency need verification"
+    },
+    {
+      "paper_order": 57,
+      "subject": "Chemistry",
+      "subject_question_number": 7,
+      "section": "A",
+      "draft_candidate_global_number": 54,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: source work by gas 10 J and heat absorbed 2 J"
+    },
+    {
+      "paper_order": 58,
+      "subject": "Chemistry",
+      "subject_question_number": 8,
+      "section": "A",
+      "draft_candidate_global_number": 57,
+      "status": "candidate_needs_exact_review",
+      "notes": "kinetics candidate; compare all statements/options"
+    },
+    {
+      "paper_order": 59,
+      "subject": "Chemistry",
+      "subject_question_number": 9,
+      "section": "A",
+      "draft_candidate_global_number": 52,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: source uses H2S/HS- and different Ka values"
+    },
+    {
+      "paper_order": 60,
+      "subject": "Chemistry",
+      "subject_question_number": 10,
+      "section": "A",
+      "draft_candidate_global_number": 56,
+      "status": "candidate_needs_exact_review",
+      "notes": "titration candidate; preserve exact volumes/constants/log values"
+    },
+    {
+      "paper_order": 61,
+      "subject": "Chemistry",
+      "subject_question_number": 11,
+      "section": "A",
+      "draft_candidate_global_number": 74,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: source list includes Gd2+; draft uses Gd3+"
+    },
+    {
+      "paper_order": 62,
+      "subject": "Chemistry",
+      "subject_question_number": 12,
+      "section": "A",
+      "draft_candidate_global_number": 53,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: BrF4 charge differs; inspect source image"
+    },
+    {
+      "paper_order": 63,
+      "subject": "Chemistry",
+      "subject_question_number": 13,
+      "section": "A",
+      "draft_candidate_global_number": 58,
+      "status": "candidate_needs_exact_review",
+      "notes": "oxide classification candidate; options need verification"
+    },
+    {
+      "paper_order": 64,
+      "subject": "Chemistry",
+      "subject_question_number": 14,
+      "section": "A",
+      "draft_candidate_global_number": 59,
+      "status": "candidate_needs_exact_review",
+      "notes": "ionisation-energy trend candidate; full statements need verification"
+    },
+    {
+      "paper_order": 65,
+      "subject": "Chemistry",
+      "subject_question_number": 15,
+      "section": "A",
+      "draft_candidate_global_number": 61,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: coordination complex pairings/options differ"
+    },
+    {
+      "paper_order": 66,
+      "subject": "Chemistry",
+      "subject_question_number": 16,
+      "section": "A",
+      "draft_candidate_global_number": null,
+      "status": "unmatched",
+      "notes": "unmatched: source asks CFSE order of cobalt complexes"
+    },
+    {
+      "paper_order": 67,
+      "subject": "Chemistry",
+      "subject_question_number": 17,
+      "section": "A",
+      "draft_candidate_global_number": 70,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: source options Zn2+, Fe3+, Fe2+, Co2+ differ"
+    },
+    {
+      "paper_order": 68,
+      "subject": "Chemistry",
+      "subject_question_number": 18,
+      "section": "A",
+      "draft_candidate_global_number": 69,
+      "status": "candidate_needs_exact_review",
+      "notes": "amino-acid/hormone candidate; options/codes need verification"
+    },
+    {
+      "paper_order": 69,
+      "subject": "Chemistry",
+      "subject_question_number": 19,
+      "section": "A",
+      "draft_candidate_global_number": null,
+      "status": "unmatched",
+      "notes": "unmatched: organic conversion and product diagram need review"
+    },
+    {
+      "paper_order": 70,
+      "subject": "Chemistry",
+      "subject_question_number": 20,
+      "section": "A",
+      "draft_candidate_global_number": 75,
+      "status": "candidate_needs_exact_review",
+      "notes": "Carius method candidate; structure/bromine count need verification"
+    },
+    {
+      "paper_order": 71,
+      "subject": "Chemistry",
+      "subject_question_number": 21,
+      "section": "B",
+      "draft_candidate_global_number": 67,
+      "status": "candidate_needs_exact_review",
+      "notes": "product test candidate; structures/statements need verification"
+    },
+    {
+      "paper_order": 72,
+      "subject": "Chemistry",
+      "subject_question_number": 22,
+      "section": "B",
+      "draft_candidate_global_number": 65,
+      "status": "candidate_needs_exact_review",
+      "notes": "haloalkane statements candidate; compare each statement/options"
+    },
+    {
+      "paper_order": 73,
+      "subject": "Chemistry",
+      "subject_question_number": 23,
+      "section": "B",
+      "draft_candidate_global_number": 68,
+      "status": "candidate_needs_exact_review",
+      "notes": "reaction-sequence candidate; starting structure/reagents/labels need verification"
+    },
+    {
+      "paper_order": 74,
+      "subject": "Chemistry",
+      "subject_question_number": 24,
+      "section": "B",
+      "draft_candidate_global_number": 63,
+      "status": "candidate_needs_exact_review",
+      "notes": "critical mismatch: source states +R effect; draft statement differs"
+    },
+    {
+      "paper_order": 75,
+      "subject": "Chemistry",
+      "subject_question_number": 25,
+      "section": "B",
+      "draft_candidate_global_number": null,
+      "status": "unmatched",
+      "notes": "unmatched: structure-dependent source question needs transcription"
     }
   ]
 }
