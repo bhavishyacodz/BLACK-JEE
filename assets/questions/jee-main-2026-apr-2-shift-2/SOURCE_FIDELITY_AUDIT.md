@@ -167,3 +167,12 @@ A repository-directory check confirmed that all 10 image references currently pr
 ## Automated gate result
 
 The structural audit run for commit `77ba2f35c8a7258bdd9b495b5c962a337d53bea4` failed with the three expected `SUBJECT_COVERAGE` errors: Chemistry was numbered 51–75 instead of 26–50, Mathematics 1–25 instead of 51–75, and Physics 26–50 instead of 1–25. This is an intentional publication blocker: the gate is detecting the source-order mismatch rather than passing an incorrectly arranged batch. Do not relabel the existing records en masse; reconcile their content first.
+
+
+## Machine-readable reconciliation index
+
+Added `source-to-draft-crosswalk.json`, containing 75 source slots in source order. It records candidate draft links only where a prior comparison identified a plausible item; otherwise it records `no_candidate_confirmed`. Every record remains `publishable: false` and carries required verification gates for exact wording/values, options or numerical format, diagrams, and official final answer key. This is an audit index, not a source transcription and not an instruction to auto-renumber.
+
+## Latest automation observation
+
+GitHub Actions runs were still queued during the latest status check, so the newest crosswalk commit has not yet received a confirmed audit result. The last completed structural audit failed on the expected subject-number ranges. Do not describe the current branch as passing CI until a completed run confirms it.
