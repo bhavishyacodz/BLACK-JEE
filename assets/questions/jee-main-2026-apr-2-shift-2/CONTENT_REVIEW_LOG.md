@@ -258,3 +258,8 @@ Added missing SVGs for the mutual-inductance setup (concentric coplanar square/c
 ## Diagram recovery — Physics Q9 and Q14 (2026-10-23)
 
 Added `q31.svg` as a conceptual Earth-fall diagram for Physics Q9 and `q38.svg` as a schematic circuit for Physics Q14. Both SVGs include accessible titles/descriptions and explicitly state that they are reconstructions, not pixel-exact source copies. Attached them to the draft and audit view; crosswalk rows remain `needs_exact_review` until compared with the original paper figures and final answer key.
+
+
+## Physics Q10 / legacy Q50 — moment-of-inertia correction (2026-10-23)
+
+The draft solution omitted the parallel-axis term for the sphere. With the sphere's axis 3 m from its centre, `I_sphere = (2/5)(10)R² + 10(3²) = 4R² + 90`; the rod's end-axis moment is `40(3²)/3 = 120`. Equating gives `R² = 15/2`, hence `α = 15`. Updated the answer, solution, crosswalk and audit view. The SVG depicts the 3 m separation but still requires visual comparison with the original source figure; status remains `needs_exact_review`, unpublished.
