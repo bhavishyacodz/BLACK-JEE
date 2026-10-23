@@ -1016,20 +1016,20 @@
     "subject": "Chemistry",
     "chapter": "Ionic Equilibrium",
     "source_question_number": 52,
-    "question_text": "The first and second ionization constants of a weak dibasic acid H₂A are 8.1×10⁻⁸ and 1.0×10⁻¹³, respectively. 0.1 mol of H₂A is dissolved in 1 L of 0.1 M HCl solution. The concentration of HA⁻ in the resultant solution is:",
+    "question_text": "0.1 mol of H₂S is dissolved in 1 L of 0.1 M HCl solution. Given Ka₁(H₂S) = 8.3 × 10⁻⁸ and Ka₂(H₂S) = 1.0 × 10⁻¹³, calculate the concentration of HS⁻ in the resultant solution.",
     "question_type": "MCQ",
     "options": [
       "0.1 M",
-      "9.53×10⁻⁶ M",
-      "8.1×10⁻⁸ M",
-      "1.0×10⁻¹³ M"
+      "9.53 × 10⁻⁶ M",
+      "8.3 × 10⁻⁸ M",
+      "1.0 × 10⁻¹³ M"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
     "correct_answer": "C",
-    "solution": "The strong acid fixes [H⁺]≈0.1 M and the formal concentration of H₂A is 0.1 M. For H₂A ⇌ H⁺+HA⁻, Ka1=[H⁺][HA⁻]/[H₂A], so [HA⁻]≈Ka1[H₂A]/[H⁺]=8.1×10⁻⁸×0.1/0.1=8.1×10⁻⁸ M. Option C."
+    "solution": "The strong acid gives [H⁺] ≈ 0.1 M. For H₂S ⇌ H⁺ + HS⁻, Ka₁ = [H⁺][HS⁻]/[H₂S]. With the formal H₂S concentration approximately 0.1 M, [HS⁻] ≈ Ka₁[H₂S]/[H⁺] = (8.3×10⁻⁸)(0.1)/(0.1) = 8.3×10⁻⁸ M. This is a calculated candidate; source option wording and final key still need exact verification."
   },
   {
     "year": 2026,
