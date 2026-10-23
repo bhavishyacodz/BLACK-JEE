@@ -145,3 +145,15 @@ Question Studio: https://bhavishyacodz.github.io/BLACK-JEE/attempt.html?admin=1
 - Deployment history: https://github.com/bhavishyacodz/BLACK-JEE/actions
 
 After changing HTML, wait for the GitHub Pages deployment to finish successfully before testing. On Android, if an older version appears, open the direct attempt link with a fresh query string or refresh the page.
+
+
+## Engineering quality and buyer review
+
+BLACK-JEE includes a technical due-diligence log and lightweight automated guardrails:
+
+- [Buyer technical due-diligence review](docs/BUYER_TECHNICAL_DUE_DILIGENCE.md) — current findings, remediations, and remaining release gates.
+- [Browser security scan](scripts/audit_browser_security.py) — checks root-level HTML/JS for common embedded-secret patterns and inconsistent Supabase project references.
+- [Inline JavaScript syntax check](scripts/check_inline_js.py) — syntax-checks inline scripts with Node.js.
+- [PYQ solution-gate database regression test](supabase/tests/secure_jee_pyq_solution_gate.sql) — checks anonymous answer withholding, the two-incorrect-attempt unlock, and per-user attempt isolation. Run in a transaction against a staging database after database changes.
+
+These checks are guardrails, not a certification or a substitute for end-to-end browser testing, a full RLS/Storage review, backups/restore drills, and an independent security review. The PYQ solution gate stores authenticated users' attempt counts in the private database schema; anonymous users can check correctness but cannot retrieve the answer key or worked solution through the grading RPC.
