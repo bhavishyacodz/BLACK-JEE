@@ -8,7 +8,7 @@
   <path d="M80 130 H110 M86 160 H104"/>
   <rect x="170" y="82" width="80" height="36" rx="2" fill="#fff"/>
   <rect x="330" y="82" width="80" height="36" rx="2" fill="#fff"/>
-  <path d="M370 100 V175 H450 M510 175 H540 V100" stroke="#2563eb"/>
+  <path d="M330 100 V175 H450 M510 175 H410 V100" stroke="#2563eb"/>
   <circle cx="480" cy="175" r="30" fill="#fff" stroke="#2563eb"/>
   <path d="M460 155 L500 195 M500 155 L460 195" stroke="#2563eb"/>
   <path d="M450 175 H460 M500 175 H510" stroke="#2563eb"/>
