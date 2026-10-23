@@ -442,7 +442,18 @@ body.menu-open{overflow:hidden}
 :where(.btn,button.btn):active{transform:translateY(1px)}
 :where(.section){scroll-margin-top:86px}
 .site-menu-panel a{-webkit-tap-highlight-color:transparent}
-</style></head>
+</style><style id="blackjee-monochrome-consistency-v1">
+/* BLACK-JEE student UI: neutral monochrome accent, consistent across screens. */
+:root{--red:#f0f0f0!important;--red2:#bdbdbd!important;--brand-accent:#f0f0f0!important;--home-gold:#ededed!important;--clarity-gold:#e0e0e0!important;--amber:#d8d8d8!important;--green:#c5c5c5!important}
+.red,.tiny.red,.gold-subtitle,.guide-kicker{color:#ededed!important}
+.live-dot{background:#ededed!important;box-shadow:0 0 0 4px #ededed18!important}
+.btn-red,.hero-bottom .btn-red,.section-head .btn-red{background:#f0f0f0!important;border-color:#f0f0f0!important;color:#090909!important;box-shadow:none!important}
+.mobile-tabbar a.active,.mobile-tabbar a.active span,.mobile-tabs .mobile-tab.active{color:#f2f2f2!important}
+.mobile-tabbar a.active span{color:#f2f2f2!important}
+:where(button,a,input,textarea,select):focus-visible{outline-color:#f0f0f0!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head>
 <body class="attempt-page">
 <div class="challenge-intro" id="challengeIntro" aria-live="assertive" aria-label="Challenge starting">
   <div class="intro-inner">
