@@ -7,7 +7,12 @@
     "source_question_number": 27,
     "question_text": "A 0.5 kg mass is in contact against the inner wall of a cylindrical drum of radius 4 m rotating about its vertical axis. The minimum rotational speed of the drum to enable the mass to remain stuck to the wall (without falling) is 5 rad/s. The coefficient of friction between the drum's inner wall surface and mass is (take g = 10 m/s²).",
     "question_type": "MCQ",
-    "options": ["0.1", "0.5", "0.7", "0.3"],
+    "options": [
+      "0.1",
+      "0.5",
+      "0.7",
+      "0.3"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -23,11 +28,16 @@
     "source_question_number": 28,
     "question_text": "Two blocks of masses 2 kg and 1 kg respectively are tied to the ends of a string passing over a light frictionless pulley. The masses are held at rest at the same horizontal level and then released. The distance travelled by the centre of mass in 2 s is (take g = 10 m/s²).",
     "question_type": "MCQ",
-    "options": ["3.33", "3.12", "2.22", "1.42"],
+    "options": [
+      "3.33",
+      "3.12",
+      "2.22",
+      "1.42"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
-    "image_url": "",
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q28.svg",
     "correct_answer": "C",
     "solution": "The Atwood acceleration is a=(2−1)g/(2+1)=10/3 m/s². Each block travels s=at²/2=20/3 m. The centre-of-mass displacement magnitude is |2s−s|/3=s/3=20/9≈2.22 m. Option C."
   },
@@ -39,7 +49,12 @@
     "source_question_number": 29,
     "question_text": "A particle having charge 10⁻⁹ C moving in the x-y plane in fields E = 0.4 ĵ N/C and B = 4×10⁻³ k̂ T experiences a force (4 î + 2 ĵ)×10⁻¹⁰ N. The velocity of the particle at that instant is:",
     "question_type": "MCQ",
-    "options": ["50 î + 100 ĵ", "100 î + 50 ĵ", "−50 î + 100 ĵ", "50 î − 100 ĵ"],
+    "options": [
+      "50 î + 100 ĵ",
+      "100 î + 50 ĵ",
+      "−50 î + 100 ĵ",
+      "50 î − 100 ĵ"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -55,7 +70,12 @@
     "source_question_number": 31,
     "question_text": "If a body of mass 1 kg falls on the earth from infinity, it attains velocity v and kinetic energy K on reaching the surface of earth. The values of v and K respectively are (Earth radius = 6400 km, g = 9.8 m/s²).",
     "question_type": "MCQ",
-    "options": ["11.2 km/s; 6.27×10⁷ J", "11.2 km/s; 12.54×10⁷ J", "8.8 km/s; 6.27×10⁷ J", "8.8 km/s; 12.54×10⁷ J"],
+    "options": [
+      "11.2 km/s; 6.27×10⁷ J",
+      "11.2 km/s; 12.54×10⁷ J",
+      "8.8 km/s; 6.27×10⁷ J",
+      "8.8 km/s; 12.54×10⁷ J"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -71,7 +91,12 @@
     "source_question_number": 32,
     "question_text": "In a screw gauge, the zero of the main scale reference line coincides with the fifth division of the circular scale when two studs are in contact. There are 100 divisions in the circular scale and the pitch is 0.1 mm. When the diameter of a sphere is measured, the reading of the main scale is 5 mm and the 50th division of the circular scale coincides with the reference line of the main scale. The diameter of the sphere is ____ mm.",
     "question_type": "MCQ",
-    "options": ["5.045", "5.055", "5.450", "5.550"],
+    "options": [
+      "5.045",
+      "5.055",
+      "5.450",
+      "5.550"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -87,7 +112,12 @@
     "source_question_number": 33,
     "question_text": "The surface tension of a soap bubble is 0.03 N/m. The work done in increasing the diameter of the bubble from 2 cm to 6 cm is α π × 10⁻⁴ J. Take π = 3.14. The value of α is:",
     "question_type": "MCQ",
-    "options": ["0.86", "0.64", "1.92", "7.68"],
+    "options": [
+      "0.86",
+      "0.64",
+      "1.92",
+      "7.68"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -103,7 +133,12 @@
     "source_question_number": 34,
     "question_text": "A mixture of carbon dioxide and oxygen gases has volume 8310 cm³, temperature 300 K, pressure 100 kPa and mass 13.2 g. The number of moles of carbon dioxide and oxygen gases in the mixture respectively are (R=8.31 J mol⁻¹ K⁻¹; both gases behave ideally).",
     "question_type": "MCQ",
-    "options": ["0.15 and 0.18", "0.25 and 0.08", "0.21 and 0.12", "0.13 and 0.20"],
+    "options": [
+      "0.15 and 0.18",
+      "0.25 and 0.08",
+      "0.21 and 0.12",
+      "0.13 and 0.20"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -119,7 +154,12 @@
     "source_question_number": 35,
     "question_text": "An air bubble of diameter 2 mm rises steadily through a liquid of density 2000 kg/m³ at a rate of 0.5 cm/s. The coefficient of viscosity of the liquid is ____ poise (take g=10 m/s²).",
     "question_type": "MCQ",
-    "options": ["0.88", "8.8", "88.8", "0.088"],
+    "options": [
+      "0.88",
+      "8.8",
+      "88.8",
+      "0.088"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -135,7 +175,12 @@
     "source_question_number": 36,
     "question_text": "A spherical ball of mass 2 kg falls from a height of 10 m and is brought to rest after penetrating 10 cm into sand. The average force exerted by sand on the ball is ____ N (take g=10 m/s²).",
     "question_type": "MCQ",
-    "options": ["1980", "2020", "2000", "1000"],
+    "options": [
+      "1980",
+      "2020",
+      "2000",
+      "1000"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -151,7 +196,12 @@
     "source_question_number": 37,
     "question_text": "An electromagnetic wave travels in free space along the x-direction. At a particular point in space and time, B = 2×10⁻⁷ ĵ T. The value of the corresponding electric field E at this point is:",
     "question_type": "MCQ",
-    "options": ["60 k̂", "−60 k̂", "30 k̂", "−600 k̂"],
+    "options": [
+      "60 k̂",
+      "−60 k̂",
+      "30 k̂",
+      "−600 k̂"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
@@ -167,7 +217,12 @@
     "source_question_number": 38,
     "question_text": "Two resistors of 200 Ω and 400 Ω are connected in series with a battery of 100 V. A bulb rated 200 V, 100 W is connected across the 400 Ω resistance. The potential drop across the bulb is:",
     "question_type": "MCQ",
-    "options": ["25", "50", "66.6", "100"],
+    "options": [
+      "25",
+      "50",
+      "66.6",
+      "100"
+    ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
