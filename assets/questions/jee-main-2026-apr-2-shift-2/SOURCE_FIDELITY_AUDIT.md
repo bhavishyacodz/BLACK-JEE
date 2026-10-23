@@ -1,45 +1,25 @@
 # Source-Fidelity Audit — JEE Main 2 April 2026 Shift 2
 
-## Status: HOLD — 62/75 exact mappings verified; 13 rows remain unresolved pending direct source checks, and student-side visual/scoring validation remains
+## Status: HOLD — source verification reset
+
+The source-order review exposed a foundational mismatch between the printed NTA paper and the legacy draft's internal global numbering.
+
+- **Official printed paper order:** Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25.
+- **Legacy draft global slots:** Mathematics 1–25, Physics 26–50, Chemistry 51–75.
+- **Corrected crosswalk:** source rows are ordered Physics → Chemistry → Mathematics and candidates are aligned to the draft by subject and subject-local question number.
+- **Verification status:** all 75 crosswalk rows have been reset to `needs_exact_review`. This is intentionally conservative: a matching subject and local number is only a candidate mapping, not proof of matching text, values, options, diagrams, or answers.
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
 - [NTA final answer key PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf)
 
-## Correct source order
+A published transcription of the paper identifies the parts as Physics, Chemistry, then Mathematics; the repository's prior audit text incorrectly stated Mathematics, Physics, then Chemistry. That earlier statement and its 62/75 verified count are withdrawn. The old Chemistry answer-key table labelled source Q63–Q75 is also not authoritative for global source order and must not be used as proof of exact matches.
 
-The NTA question-paper PDF displays Mathematics Q1–25, Physics Q26–50, then Chemistry Q51–75. The legacy draft uses the same displayed global numbering blocks. Answer-key question IDs are a separate identifier system; do not infer source order from the numeric appearance of answer-key IDs.
+## Audit gates
 
-## Verified Physics chunk
+1. Compare each source question with the subject-local draft candidate, including every value, option, diagram and question type.
+2. Check the exact question's official final answer key; independently recompute numerical answers where practical.
+3. Verify MathJax/diagram rendering, mobile layout, answer submission, scoring and solution behavior in the student UI.
+4. Keep every row `publishable: false` and publication status `HOLD` until all 75 mappings and end-to-end tests pass.
 
-Mathematics Q1–Q16 and Q21–Q25, Physics Q26–Q50, and Chemistry Q51–Q62 have been compared against the original paper and final answer key. For Q46–Q50, the numerical answers were independently checked as 6, 32, 300, 20, and 60. The Q41 prism, Q42 LCR circuit, and Q50 rod/sphere diagram were visually compared with the source where applicable. Mathematics Q1–Q5 statements, options, and official answer-key IDs were matched; their key answers for Q1–Q5 are D, C, B, D, and B; Q6–Q10 are C, C, C, D, and C. The verified rows remain audit-only; this does not authorize publication of the full shift.
-
-## Remaining work
-
-The authoritative `source-to-draft-crosswalk.json` currently records 62 `verified_exact_match` rows and 13 rows requiring review or replacement: 1 `needs_diagram_review`, 11 `needs_exact_review`, and 1 `source_diagram_unresolved`. The automated structural audit passes, but a passing structural audit does not turn unresolved rows into exact matches. A candidate-reuse review found that Chemistry rows 66–75 had been linked to other question numbers by topic rather than their same-numbered global slots. Both crosswalk files now use the corrected candidate slots; this corrects mapping metadata only and does not certify exact source fidelity. `SOURCE_CROSSWALK.json` has been synchronized to these statuses so it no longer overstates verification. This is **source mapping and structural validation**, not proof that every diagram, mathematical rendering, answer interaction, scoring result, or mobile layout has passed in the live student experience. Keep the shift unpublished until unresolved rows are resolved and end-to-end checks are completed.
-
-## Chemistry answer-key cross-check (source questions 63–75)
-
-The official final answer-key IDs/results for Chemistry Q63–Q75 are recorded below. These answer-key mappings alone do **not** certify that the current draft question text, options, or diagrams match the official paper:
-
-| Chemistry source question | Official answer-key result |
-|---:|---|
-| 63 | Option A (question ID 691121213 → option ID 691121729) |
-| 64 | Option C (691121214 → 691121735) |
-| 65 | Option C (691121215 → 691121739) |
-| 66 | Option C (691121216 → 691121743) |
-| 67 | Option D (691121217 → 691121748) |
-| 68 | Option B (691121218 → 691121750) |
-| 69 | Option C (691121219 → 691121755) |
-| 70 | Option D (691121220 → 691121760) |
-| 71 | Numerical answer 5 (question ID 691121221) |
-| 72 | Numerical answer 20 (691121222) |
-| 73 | Numerical answer 560 (691121223) |
-| 74 | Numerical answer 3 (691121224) |
-| 75 | Numerical answer 1 (691121225) |
-
-The official answer-key identifiers are recorded, but the source-to-draft crosswalk still flags several Chemistry candidates for exact wording/diagram review or replacement. Do not treat this table as proof that the draft content is publishable. The release hold remains until those issues and the live student interface are verified.
-
-## Release gate
-
-Keep the shift unpublished until all 75 source mappings have explicit evidence, every unresolved/mismatched candidate is corrected or replaced, all diagrams are checked, the answer key is reconciled against the exact question, and the student mock passes end-to-end rendering and scoring tests.
+Structural CI only validates data shape, asset paths, mapping consistency and release guards. A passing structural audit is not source-fidelity approval.
