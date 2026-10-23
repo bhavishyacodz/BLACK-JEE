@@ -114,6 +114,18 @@ limit 10;
 
 If tables appear in the database but the browser reports a table/API permission error, check Supabase **Integrations → Data API** and ensure the \`public\` schema is exposed as intended. Keep RLS enabled.
 
+## 9. Fast PYQ audit system
+
+Run a quick structural audit of the staged 75-question April 2 Shift 2 batch before source review:
+
+```bash
+python scripts/audit_jee_batch.py --expect 75 --json-out audit-report.json
+```
+
+The audit checks JSON structure, required fields, duplicate question numbers, MCQ option/key shape, numerical-key format, draft publication state, referenced SVG existence, and basic SVG safety/structure. GitHub Actions reruns it when the staged batch or audit code changes; its JSON report is available as a workflow artifact.
+
+**Important:** a clean structural report does not prove official-paper fidelity or answer correctness. Those still require independent source comparison and solving. The audit never edits or publishes questions. Full workflow: [AUDIT_SYSTEM.md](assets/questions/jee-main-2026-apr-2-shift-2/AUDIT_SYSTEM.md).
+
 ## Notes
 
 - The visible timer starts only when **Start Attempt** is clicked. The server records the start time and calculates completion time independently for leaderboard ranking.
