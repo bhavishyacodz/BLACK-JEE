@@ -456,8 +456,8 @@ async function importBulkQuestions(){
   const taken=new Set((existing||[]).map(r=>r.question_date));
   const payload=validatedBulkQuestions.filter(r=>!taken.has(r.question_date)).map(r=>{
    const date=r.question_date;
-   const startsAt=new Date(date+"T06:00:00+05:30");
-   const resultAt=new Date(date+"T18:00:00+05:30");
+   const resultAt=new Date(date+"T12:00:00+05:30");
+   const startsAt=new Date(resultAt.getTime()-24*60*60*1000);
    const sunday=new Date(date+"T00:00:00Z").getUTCDay()===0;
    let title=r.title;
    if(sunday&&!title.toUpperCase().includes("SOVEREIGN GAUNTLET"))title="THE SOVEREIGN GAUNTLET — GOLDEN SUNDAY: "+title;
@@ -468,7 +468,7 @@ async function importBulkQuestions(){
     options:[r.option_a,r.option_b,r.option_c,r.option_d],
     correct_answer:r.correct_answer.trim().toUpperCase(),
     solution:r.solution,solution_published:false,is_live:true,
-    starts_at:startsAt.toISOString(),ends_at:resultAt.toISOString(),
+    starts_at:startsAt.toISOString(),ends_at:resultAt.toISOString(),results_release_at:new Date(date+"T18:00:00+05:30").toISOString(),
     show_in_archive:true,challenge_type:sunday?"golden_sunday":"daily"
    };
   });
@@ -514,7 +514,7 @@ function renderScheduleQueue(){
   const main=document.createElement("div");main.className="schedule-row-main";
   const title=document.createElement("div");title.className="schedule-row-title";title.textContent=(q.question_date||"Undated")+" · "+(q.title||"Untitled challenge");
   const meta=document.createElement("div");meta.className="schedule-row-meta";
-  meta.textContent=(Array.isArray(q.tags)?q.tags.join(" · "):"")+(q.difficulty?" · "+q.difficulty:"")+"\nOPENS "+formatScheduleTime(q.starts_at)+"\nCLOSES "+formatScheduleTime(q.ends_at)+"\nRESULTS / SOLUTION "+(q.ends_at?formatScheduleTime(new Date(new Date(q.ends_at).getTime()+6*60*60*1000)):"not scheduled");
+  meta.textContent=(Array.isArray(q.tags)?q.tags.join(" · "):"")+(q.difficulty?" · "+q.difficulty:"")+"\nOPENS "+formatScheduleTime(q.starts_at)+"\nCLOSES "+formatScheduleTime(q.ends_at)+"\nRESULTS / SOLUTION "+formatScheduleTime(q.results_release_at);
   meta.style.whiteSpace="pre-line";
   main.append(title,meta);
   const badge=document.createElement("span");badge.className="schedule-state "+state.key;badge.textContent=state.label;
@@ -526,7 +526,7 @@ async function loadScheduleQueue(){
  if(!supabase||adminUser?.app_metadata?.role!=="admin"){host.innerHTML='<div class="empty">Admin sign-in required to view the publishing timeline.</div>';return;}
  const btn=$("refreshScheduleQueueBtn");if(btn)btn.disabled=true;
  try{
-  const {data,error}=await supabase.from("daily_questions").select("id,question_date,title,tags,difficulty,starts_at,ends_at,is_live,show_in_archive,solution_published,challenge_type").order("question_date",{ascending:false}).limit(200);
+  const {data,error}=await supabase.from("daily_questions").select("id,question_date,title,tags,difficulty,starts_at,ends_at,results_release_at,is_live,show_in_archive,solution_published,challenge_type").order("question_date",{ascending:false}).limit(200);
   if(error)throw error;
   scheduleQueueRows=Array.isArray(data)?data:[];
   renderScheduleQueue();
@@ -550,19 +550,19 @@ async function publishWrittenQuestion(){
   if(existing)throw new Error("A question is already scheduled for "+date+". Existing questions are protected from accidental replacement.");
   const imageUrl=$("writtenImageUrl").value.trim();
   if(imageUrl&&!(/^https?:[/][/]/i.test(imageUrl)||(/^assets[/]questions[/][a-zA-Z0-9._/-]+[.](?:png|jpe?g|webp|gif|svg)$/i.test(imageUrl)&&!imageUrl.includes(".."))))throw new Error("Use an HTTPS image URL or a safe relative path under assets/questions/.");
-  const startsAt=new Date(date+"T06:00:00+05:30"),resultAt=new Date(date+"T18:00:00+05:30");
+  const resultAt=new Date(date+"T12:00:00+05:30"),startsAt=new Date(resultAt.getTime()-24*60*60*1000),releaseAt=new Date(date+"T18:00:00+05:30");
   const sunday=new Date(date+"T00:00:00Z").getUTCDay()===0;
   const title=sunday&&!titleInput.toUpperCase().includes("SOVEREIGN GAUNTLET")?"THE SOVEREIGN GAUNTLET — GOLDEN SUNDAY: "+titleInput:titleInput;
   const payload={
    question_date:date,title,statement,image_url:imageUrl||null,
    tags:$("writtenTags").value.split(",").map(x=>x.trim()).filter(Boolean),
    difficulty:$("writtenDifficulty").value,options:opts,correct_answer:$("writtenCorrectAnswer").value,
-   solution,solution_published:false,is_live:true,starts_at:startsAt.toISOString(),ends_at:resultAt.toISOString(),
+   solution,solution_published:false,is_live:true,starts_at:startsAt.toISOString(),ends_at:resultAt.toISOString(),results_release_at:releaseAt.toISOString(),
    show_in_archive:true,challenge_type:sunday?"golden_sunday":"daily"
   };
   const {error:saveError}=await supabase.from("daily_questions").insert(payload);
   if(saveError){if(saveError.code==="23505")throw new Error("A question already exists for "+date+". No existing record was replaced.");throw saveError;}
-  notify(note,"SCHEDULED: "+title+" · opens "+formatScheduleTime(startsAt)+" · closes "+formatScheduleTime(resultAt)+" · results and solution unlock at "+formatScheduleTime(new Date(resultAt.getTime()+6*60*60*1000))+".","success");
+  notify(note,"SCHEDULED: "+title+" · opens "+formatScheduleTime(startsAt)+" · closes "+formatScheduleTime(resultAt)+" · results and solution unlock at "+formatScheduleTime(releaseAt)+".","success");
   clearWrittenEditor();
   await loadScheduleQueue();
  }catch(e){notify(note,"Could not schedule question: "+e.message,"error");}
@@ -576,15 +576,15 @@ async function publishQuestionLink(){
 }
 async function removeQuestionLink(){const note=$("questionAdminNotice");clearNotify(note);if(!supabase||adminUser?.app_metadata?.role!=="admin"){notify(note,"Admin sign-in required.","error");return;}if(!confirm("Remove the live question from the student dashboard? Student submissions and scheduled question records will be kept."))return;const btn=$("removeQuestionLinkBtn");btn.disabled=true;try{const {error:linkError}=await supabase.from("active_question_links").update({is_live:false,updated_at:new Date().toISOString()}).eq("is_live",true);if(linkError)throw linkError;const {error:writtenError}=await supabase.from("daily_questions").update({is_live:false}).eq("is_live",true);if(writtenError)throw writtenError;notify(note,"Live question removed. Student submissions and saved question records were kept.","success");await Promise.allSettled([loadActiveQuestionLink(),loadQuestion()]);}catch(e){notify(note,"Could not remove live question: "+e.message,"error");}finally{btn.disabled=false;}}
 function scheduleTick(){
- const p=indiaParts(),now=Date.now(),midnight=Date.UTC(p.year,p.month-1,p.day),sixAm=midnight+0.5*60*60*1000;
- const nextSixAm=p.hour<6?sixAm:sixAm+86400000;
+ const p=indiaParts(),now=Date.now(),midnight=Date.UTC(p.year,p.month-1,p.day),noon=midnight+6.5*60*60*1000;
+ const nextNoon=p.hour<12?noon:noon+86400000;
  const duration=ms=>{const t=Math.max(0,Math.floor(ms/1000));return [Math.floor(t/3600),Math.floor(t%3600/60),t%60].map(n=>String(n).padStart(2,"0")).join(":");};
- $("challengeCountdown").textContent=duration(nextSixAm-now);
+ $("challengeCountdown").textContent=duration(nextNoon-now);
  const activeDate=today(),resultDate=p.year+"-"+String(p.month).padStart(2,"0")+"-"+String(p.day).padStart(2,"0");
  const releaseAt=midnight+12.5*60*60*1000,released=now>=releaseAt;
  $("solutionCountdown").textContent=released?"CHECK ARCHIVE":duration(releaseAt-now);
  $("solutionCountdown").classList.toggle("schedule-green",released);
- const phase=p.hour<6?"prelive":p.hour<18?"live":"postlive";
+ const phase=p.hour<12?"prelive":p.hour<18?"results_pending":"postlive";
  if(lastLoadedChallengeDate!==activeDate||lastSchedulePhase!==phase){lastSchedulePhase=phase;loadQuestion();}
  if(released&&supabase&&lastSolutionCheck!==resultDate&&Date.now()-lastSolutionCheckAt>60000){
   lastSolutionCheckAt=Date.now();
