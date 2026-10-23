@@ -7,7 +7,7 @@ The source-order review exposed a foundational mismatch between the printed NTA 
 - **Official printed paper order:** Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25.
 - **Legacy draft global slots:** Mathematics 1–25, Physics 26–50, Chemistry 51–75.
 - **Corrected crosswalk:** source rows are ordered Physics → Chemistry → Mathematics and candidates are aligned to the draft by subject and subject-local question number.
-- **Verification status:** all 75 crosswalk rows have been reset to `needs_exact_review`. This is intentionally conservative: a matching subject and local number is only a candidate mapping, not proof of matching text, values, options, diagrams, or answers.
+- **Current verification status:** 21 rows are marked `confirmed_mismatch`, 48 remain `needs_exact_review`, and 6 are `source_extraction_unresolved`. All 75 remain non-publishable; none is marked `verified_exact_match`. These are preliminary content-comparison statuses based on a readable transcription, not final answer-key certification.
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
