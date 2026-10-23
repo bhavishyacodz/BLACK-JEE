@@ -816,7 +816,7 @@
       "section": "A",
       "draft_candidate_global_number": 63,
       "status": "candidate_needs_exact_review",
-      "notes": "Candidate global Q63 has the matching substituted diarylmethyl carbocation/carbanion topic and q63.svg, but its wording is a paraphrase. Compare the original source text and diagram directly before marking exact match.",
+      "notes": "Candidate global Q63 has the matching substituted diarylmethyl carbocation/carbanion topic and q63.svg, but its wording is a paraphrase. Compare the original source text and diagram directly before marking exact match. Official final answer key checked: question ID 691121213 maps to option ID 691121729 (option A). This confirms the source key only; exact prompt/options/diagram are still unverified.",
       "verification_evidence": ""
     },
     {
@@ -826,7 +826,7 @@
       "section": "A",
       "draft_candidate_global_number": 64,
       "status": "candidate_needs_exact_review",
-      "notes": "Candidate global Q64 has the matching heptane/isomerization-aromatization-cyclization topic, but exact source wording/options still require direct comparison. Keep audit-only.",
+      "notes": "Candidate global Q64 has the matching heptane/isomerization-aromatization-cyclization topic, but exact source wording/options still require direct comparison. Keep audit-only. Official final answer key checked: question ID 691121214 maps to option ID 691121735 (option C). This confirms the source key only; exact prompt/options are still unverified.",
       "verification_evidence": ""
     },
     {
@@ -836,7 +836,7 @@
       "section": "A",
       "draft_candidate_global_number": 65,
       "status": "candidate_needs_exact_review",
-      "notes": "Candidate global Q65 has the matching alkyl-halide statement-combination topic, but exact source wording/options still require direct comparison. Keep audit-only.",
+      "notes": "Candidate global Q65 has the matching alkyl-halide statement-combination topic, but exact source wording/options still require direct comparison. Keep audit-only. Official final answer key checked: question ID 691121215 maps to option ID 691121739 (option C). This confirms the source key only; exact prompt/statements/options are still unverified.",
       "verification_evidence": ""
     },
     {
@@ -846,7 +846,7 @@
       "section": "A",
       "draft_candidate_global_number": null,
       "status": "unmatched",
-      "notes": "unmatched: source asks CFSE order of cobalt complexes"
+      "notes": "unmatched: source asks CFSE order of cobalt complexes Official final answer key checked: question ID 691121216 maps to option ID 691121743 (option C). Source topic is CFSE order of cobalt complexes; no draft candidate is confirmed, so do not map this answer onto an unrelated draft question."
     },
     {
       "paper_order": 67,
@@ -855,7 +855,7 @@
       "section": "A",
       "draft_candidate_global_number": 70,
       "status": "candidate_needs_exact_review",
-      "notes": "Confirmed mismatch against NTA source: Chemistry Q67 (global source Q67; question ID 691121217) has the source choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy draft global Q70 instead uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺ and a different question formulation. Do not mark verified; replace the draft using exact source prompt/options and official final key.",
+      "notes": "Confirmed mismatch against NTA source: Chemistry Q67 (global source Q67; question ID 691121217) has the source choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy draft global Q70 instead uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺ and a different question formulation. Do not mark verified; replace the draft using exact source prompt/options and official final key. Official final answer key checked: question ID 691121217 maps to option ID 691121748 (option D). Known mismatch remains: candidate global Q70 has different prompt/options; answer-key agreement alone cannot verify it.",
       "verification_evidence": ""
     },
     {
@@ -865,7 +865,7 @@
       "section": "A",
       "draft_candidate_global_number": 69,
       "status": "candidate_needs_exact_review",
-      "notes": "amino-acid/hormone candidate; options/codes need verification"
+      "notes": "amino-acid/hormone candidate; options/codes need verification Official final answer key checked: question ID 691121218 maps to option ID 691121750 (option B). Current candidate mapping points to global Q69 (amino-acid/hormone topic), so the source-to-draft match is not established."
     },
     {
       "paper_order": 69,
@@ -874,7 +874,7 @@
       "section": "A",
       "draft_candidate_global_number": null,
       "status": "unmatched",
-      "notes": "unmatched: organic conversion and product diagram need review"
+      "notes": "unmatched: organic conversion and product diagram need review Official final answer key checked: question ID 691121219 maps to option ID 691121755 (option C). No draft candidate is confirmed; organic conversion/product diagram still needs exact source transcription."
     },
     {
       "paper_order": 70,
@@ -883,7 +883,7 @@
       "section": "A",
       "draft_candidate_global_number": 75,
       "status": "candidate_needs_exact_review",
-      "notes": "Carius method candidate; structure/bromine count need verification"
+      "notes": "Carius method candidate; structure/bromine count need verification Official final answer key checked: question ID 691121220 maps to option ID 691121760 (option D). Current candidate global Q75 is not confirmed against the exact source prompt/structure."
     },
     {
       "paper_order": 71,
@@ -892,7 +892,7 @@
       "section": "B",
       "draft_candidate_global_number": 67,
       "status": "candidate_needs_exact_review",
-      "notes": "product test candidate; structures/statements need verification"
+      "notes": "product test candidate; structures/statements need verification Official final answer key checked: question ID 691121221 has numerical answer 5. Candidate global Q67 has a different structure-dependent prompt; mapping remains unverified."
     },
     {
       "paper_order": 72,
@@ -901,7 +901,7 @@
       "section": "B",
       "draft_candidate_global_number": 65,
       "status": "candidate_needs_exact_review",
-      "notes": "haloalkane statements candidate; compare each statement/options"
+      "notes": "haloalkane statements candidate; compare each statement/options Official final answer key checked: question ID 691121222 has numerical answer 20. Candidate global Q65 is not confirmed against the exact source statements/options."
     },
     {
       "paper_order": 73,
@@ -910,7 +910,7 @@
       "section": "B",
       "draft_candidate_global_number": 68,
       "status": "candidate_needs_exact_review",
-      "notes": "reaction-sequence candidate; starting structure/reagents/labels need verification"
+      "notes": "reaction-sequence candidate; starting structure/reagents/labels need verification Official final answer key checked: question ID 691121223 has numerical answer 560. Candidate global Q68 is not confirmed against exact source wording/reaction sequence."
     },
     {
       "paper_order": 74,
@@ -919,7 +919,7 @@
       "section": "B",
       "draft_candidate_global_number": 63,
       "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source states +R effect; draft statement differs"
+      "notes": "critical mismatch: source states +R effect; draft statement differs Official final answer key checked: question ID 691121224 has numerical answer 3. Candidate global Q63 is not confirmed; its draft statement is already noted as a critical mismatch."
     },
     {
       "paper_order": 75,
@@ -928,7 +928,7 @@
       "section": "B",
       "draft_candidate_global_number": null,
       "status": "unmatched",
-      "notes": "unmatched: structure-dependent source question needs transcription"
+      "notes": "unmatched: structure-dependent source question needs transcription Official final answer key checked: question ID 691121225 has numerical answer 1. No draft candidate is confirmed; structure-dependent source question and diagram still need transcription."
     }
   ]
 }
