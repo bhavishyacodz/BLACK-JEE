@@ -69,8 +69,8 @@ def audit_file(path):
     subject_counts, type_counts = Counter(), Counter()
     seen = defaultdict(list)
 
-    # Preserve source-paper order: the canonical shift batch must not silently
-    # shuffle questions between tabs/subjects during import.
+    # Preserve the legacy draft's global numbering order. This is not the
+    # printed-paper section order; the source-to-draft crosswalk handles that.
     ordered_numbers = [
         q.get("source_question_number") if isinstance(q, dict) else None
         for q in records
@@ -312,8 +312,9 @@ def main():
         except Exception:
             records = []
         if isinstance(records, list):
-            # Official NTA Paper 1 display order for this shift: Mathematics,
-            # Physics, Chemistry. Keep global numbers aligned with the original PDF.
+            # Legacy draft global numbering: Mathematics 1–25, Physics 26–50,
+            # Chemistry 51–75. Official printed section order is checked separately
+            # by audit_crosswalk() and must not be inferred from these IDs.
             subject_starts = {"Mathematics": 1, "Physics": args.expect_per_subject + 1,
                               "Chemistry": 2 * args.expect_per_subject + 1}
             for subject in sorted(SUBJECTS):
