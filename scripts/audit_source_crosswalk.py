@@ -94,6 +94,15 @@ def main() -> int:
             candidate_number = candidate.get("legacy_global_question_number")
             if candidate_number not in EXPECTED_LEGACY_BLOCKS[subject]:
                 errors.append(f"record {i}: candidate global number {candidate_number!r} is outside legacy {subject} block")
+            elif isinstance(local, int) and 1 <= local <= 25:
+                expected_candidate = EXPECTED_LEGACY_BLOCKS[subject].start + local - 1
+                if candidate_number != expected_candidate:
+                    errors.append(
+                        f"record {i}: {subject} Q{local} must map to legacy global "
+                        f"Q{expected_candidate}, got Q{candidate_number}"
+                    )
+            if status != "verified_exact_match" and record.get("publishable") is not False:
+                errors.append(f"record {i}: unverified candidate must remain publishable=false")
         if subject == "Mathematics" and local in range(17, 21):
             if status == "source_extraction_unresolved" and candidate is not None:
                 errors.append(f"Mathematics Q{local}: unresolved source slots must not have a guessed candidate")
@@ -114,6 +123,11 @@ def main() -> int:
     print(f"- records={len(records)}")
     print(f"- subjects={dict(counts)}")
     print(f"- statuses={dict(status_counts)}")
+    pending = [r for r in records if r.get("status") != "verified_exact_match"]
+    print(f"- pending_exact_review={len(pending)}")
+    if pending:
+        by_subject = Counter(str(r.get("source", {}).get("subject")) for r in pending)
+        print(f"- pending_by_subject={dict(by_subject)}")
     print("- all records are audit-only; no candidate can trigger automatic publication")
     if errors:
         for error in errors:
