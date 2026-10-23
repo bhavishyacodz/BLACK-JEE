@@ -26,3 +26,13 @@ This log records content-level findings that structural validation alone cannot 
 - Structural CI success means the data shape and local assets passed automated checks. It does **not** certify official wording, chemistry/physics correctness, or diagram fidelity.
 - Keep items in the manual review queue unpublished until resolved.
 - When a finding is fixed, add the evidence and change summary here, then rerun CI.
+
+## Independent calculation pass — Mathematics Q21–Q25
+
+- **Status:** Internal calculations checked; official wording and key still need source comparison.
+- **Q21:** Counted 8 valid divisor pairs and 15 ordered pairs satisfying the second coordinate condition; product 120 matches the draft key.
+- **Q22:** Recomputed the trace using the given matrices; the requested absolute trace is 34, matching the draft key.
+- **Q23:** The tangency locus is an ellipse with foci at (±3, 0), semi-major axis 6, and eccentricity 1/2; 72e² = 18.
+- **Q24:** Integrating between the upper hyperbola branch and line on x ∈ [3,5] gives A = 8 − 6 ln 3; requested value is 24.
+- **Q25:** The increasing expression crosses integer levels 2 through 11 on [2,4], giving 10 discontinuities.
+- **Boundary:** These checks validate the displayed mathematics only; they do not prove transcription fidelity to the official paper or the final NTA key.
