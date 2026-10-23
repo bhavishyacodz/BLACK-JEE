@@ -26,7 +26,7 @@
 
 The database function `public.grade_jee_pyq(uuid, text)` previously returned `correct_answer` and `solution` to any caller. A database migration now records wrong attempts against the authenticated user and question in the private schema. Anonymous users can still check correctness but receive no answer key or solution; signed-in users receive the worked solution only after two incorrect attempts. The attempt table has RLS enabled and direct table privileges revoked. The front-end practice page supports retrying incorrect answers and offers Google sign-in for server-side tracking.
 
-**Smoke tests performed:** an anonymous RPC call returned correctness only with no answer/solution fields; two wrong authenticated calls unlocked the solution; a different user began at one wrong attempt rather than inheriting the first user's counter; the temporary test writes were rolled back. These were direct SQL smoke tests, not yet automated CI integration tests.
+**Regression test executed:** `supabase/tests/secure_jee_pyq_solution_gate.sql` passed against the active database inside a transaction and rolled back its test writes. It checks anonymous key/solution withholding, no unlock after one wrong answer, unlock after two wrong answers, and cross-user attempt isolation. This test is committed but not yet wired into CI because CI has no database credentials; rerun it in staging after future database changes.
 
 ### P1 — Leaked-password protection is disabled
 
@@ -50,6 +50,7 @@ The existing PYQ workflow validates question-batch structure and crosswalk data;
 
 - `scripts/audit_browser_security.py` scans root-level HTML/JS for common embedded-secret patterns and enforces one consistent Supabase project reference.
 - `scripts/check_inline_js.py` extracts inline scripts and asks Node.js to syntax-check them.
+- `supabase/tests/secure_jee_pyq_solution_gate.sql` is a transaction-wrapped database regression test for answer withholding and per-user attempt isolation.
 - `.github/workflows/browser-security.yml` runs both checks when browser files or the guardrail scripts change.
 
 The new browser guardrail workflow passed on commit `68f9f812`, including inline JavaScript syntax validation. The question-batch audit also passed on commit `db08c1a9`. These checks are intentionally narrow. They do **not** prove that RLS policies are correct, that RPCs are safe, or that a buyer-facing penetration test would pass.
