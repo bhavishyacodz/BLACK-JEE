@@ -664,8 +664,8 @@
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "",
-    "solution": "The available source PDF transcription lists these options, but the extracted surface-tension value and options do not agree with the standard two-surface energy calculation. Preserve this as an unpublished source-review candidate; verify the original page image and official final key before assigning an answer."
+    "correct_answer": "C",
+    "solution": "PROVISIONAL DRAFT ONLY — option C is a placeholder candidate from the source transcription, not a verified answer. The extracted surface-tension value and options do not agree with the standard two-surface energy calculation. Do not use this record for scoring or publish it until the original page image and official final key resolve the discrepancy."
   },
   {
     "year": 2026,
