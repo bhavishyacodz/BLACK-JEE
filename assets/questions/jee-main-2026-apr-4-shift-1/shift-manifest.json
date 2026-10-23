@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "partial_content_added_needs_review",
+  "workflow_status": "source_checked_content_added_needs_review",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "25 Mathematics questions (subject slots 1–25) and 5 Physics questions (paper questions 26–30; Physics subject slots 1–5) have been added from user-supplied batches. OCR-corrupted items are marked needs_review. Answers and solutions were not supplied. All entries remain staging drafts, source verification and math-render checks are false, and nothing has been imported into Supabase or published.",
+  "important_note": "30 populated questions (Mathematics subject slots 1–25 and Physics subject slots 1–5, corresponding to paper questions 1–30) have been cross-checked against the official NTA question-paper PDF. Source wording and options were verified against the cited PDF pages; OCR/transcription errors found during comparison were corrected. Mathematics slot 22 remains needs_review because the official wording itself is unusual and requires subject-matter interpretation. Answer keys, worked solutions, MathJax browser checks, and mobile rendering checks remain pending. All entries are staging drafts; nothing has been imported into Supabase or published.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -29,7 +29,7 @@
       "slot_id": "physics-01",
       "subject": "Physics",
       "subject_question_number": 1,
-      "status": "needs_review",
+      "status": "content_added",
       "question_text": "In a screw gauge, when the circular scale is given five complete rotations it moves linearly by 2.5 mm. If the circular scale has 100 divisions, the least count of the screw gauge is ___ mm.",
       "question_type": "MCQ",
       "options": [
@@ -48,7 +48,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -60,12 +60,12 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 9,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
-        "source_paper_question_number": 26
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 26,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR options C and D contained a duplicated leading '5'; options have been normalized for display, pending source verification."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "physics-02",
@@ -90,7 +90,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -103,7 +103,9 @@
         "source_page": 9,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 27
+        "source_paper_question_number": 27,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -130,7 +132,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -143,7 +145,9 @@
         "source_page": 10,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 28
+        "source_paper_question_number": 28,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -170,7 +174,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -183,7 +187,9 @@
         "source_page": 10,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 29
+        "source_paper_question_number": 29,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -191,8 +197,8 @@
       "slot_id": "physics-05",
       "subject": "Physics",
       "subject_question_number": 5,
-      "status": "needs_review",
-      "question_text": "A solid sphere of mass \\(M\\) and radius \\(R\\) is divided into two unequal parts. The smaller part, having mass \\(M/8\\), is converted into a sphere of radius \\(r\\), and the larger part is converted into a circular disc of thickness \\(t\\) and radius \\(2R\\). If \\(I_1\\) is the moment of inertia of the sphere about an axis through its centre and \\(I_2\\) is the moment of inertia of the disc about its diameter, the ratio \\(I_2/I_1\\) is:",
+      "status": "content_added",
+      "question_text": "A solid sphere of mass \\(M\\) and radius \\(R\\) is divided into two unequal parts. The smaller part, having mass \\(M/8\\), is converted into a sphere of radius \\(r\\), and the larger part is converted into a circular disc of thickness \\(t\\) and radius \\(2R\\). If \\(I_1\\) is the moment of inertia of a sphere having radius \\(r\\) about an axis through its centre and \\(I_2\\) is the moment of inertia of a disc about its diameter, the ratio \\(I_2/I_1\\) is:",
       "question_type": "MCQ",
       "options": [
         "35",
@@ -210,7 +216,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -222,11 +228,13 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 10,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "needs_review",
-        "source_paper_question_number": 30
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 30,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
-        "Question wording and mass/density assumptions should be checked against the source paper before answer verification."
+        "Question wording matches the official source. Answer and solution remain pending; review the mass/radius relationship carefully when solving."
       ]
     },
     {
@@ -1449,7 +1457,7 @@
       "subject": "Mathematics",
       "subject_question_number": 1,
       "status": "needs_review",
-      "question_text": "Let [] denote the greatest integer function. If the domain of the function f(x)=cos^{-1}(\\frac{4x+2[x]}{3}) is [a,  ]. then 12 (\\alpha+\\beta) is equal to:",
+      "question_text": "Let \\([\\,\\cdot\\,]\\) denote the greatest integer function. If the domain of the function \\(f(x)=\\cos^{-1}\\left(\\frac{4x+2[x]}{3}\\right)\\) is \\([\\alpha,\\beta]\\), then \\(12(\\alpha+\\beta)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
         "6",
@@ -1467,7 +1475,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1479,18 +1487,18 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 1,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Domain interval text unclear/corrupted, appears as '[a,  ]'."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-02",
       "subject": "Mathematics",
       "subject_question_number": 2,
       "status": "needs_review",
-      "question_text": "If the set of all solutions of |x^{2}+x-9|=|x|+|x^{2}-9| is [ , β] U [γ,  ), then (\\alpha^{2}+\\beta^{2}+\\gamma^{2}) is equal to:",
+      "question_text": "If the set of all solutions of \\(|x^2+x-9|=|x|+|x^2-9|\\) is \\([\\alpha,\\beta]\\cup[\\gamma,\\infty)\\), then \\((\\alpha^2+\\beta^2+\\gamma^2)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
         "9",
@@ -1508,7 +1516,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1520,18 +1528,18 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Solution interval text corrupted, missing alpha and infinity symbols, appears as '[ , β] U [γ,  )'."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-03",
       "subject": "Mathematics",
       "subject_question_number": 3,
       "status": "needs_review",
-      "question_text": "Let z be a complex number such that |z+2|=|z-2| and arg |z|^{2} is equal to: (\\frac{z+3}{z-i})=\\frac{\\pi}{4} Then",
+      "question_text": "Let \\(z\\) be a complex number such that \\(|z+2|=|z-2|\\) and \\(\\arg\\left(\\frac{z+3}{z-i}\\right)=\\frac{\\pi}{4}\\). Then \\(|z|^2\\) is equal to:",
       "question_type": "MCQ",
       "options": [
         "9",
@@ -1549,7 +1557,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1561,11 +1569,11 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Question text is scrambled in OCR. 'arg' and '|z|^2' and the formula are out of order. Transcribed as provided."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-04",
@@ -1590,7 +1598,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1602,7 +1610,9 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+        "supplied_verification_status": "content_added",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -1629,7 +1639,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1641,18 +1651,18 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR typo: 'Let :S={' instead of 'Let S={'. Matrix formatting normalized for display; verify against source."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-06",
       "subject": "Mathematics",
       "subject_question_number": 6,
       "status": "needs_review",
-      "question_text": "Let A=[[1,1,2],[-2,0,1],[1,3,5]]. Then the sum of all elements of the matrix adj(adj (2(adjA)¹)) is equal to:",
+      "question_text": "Let \\(A=\\begin{bmatrix}1&1&2\\\\-2&0&1\\\\1&3&5\\end{bmatrix}\\). Then the sum of all elements of the matrix \\(\\operatorname{adj}(\\operatorname{adj}(2(\\operatorname{adj}A)^{-1}))\\) is equal to:",
       "question_type": "MCQ",
       "options": [
         "3",
@@ -1670,7 +1680,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1682,11 +1692,11 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Exponent on adjA appears as '¹' instead of '^{-1}'. Option C was malformed in the supplied JSON (label '-4' with no text); displayed as -4 pending confirmation."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-07",
@@ -1696,10 +1706,10 @@
       "question_text": "The first term of an A.P. of 30 non-negative terms is 10/3. If the sum of this A.P. is the cube of its last term, then its common difference is:",
       "question_type": "MCQ",
       "options": [
-        "5/87",
-        "83 25/83",
-        "15/29",
-        "5/29"
+        "\\(\\frac{5}{87}\\)",
+        "\\(\\frac{25}{83}\\)",
+        "\\(\\frac{15}{29}\\)",
+        "\\(\\frac{5}{29}\\)"
       ],
       "correct_answer": null,
       "solution": null,
@@ -1711,7 +1721,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1723,11 +1733,11 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Option B appears corrupted in OCR as '83 25/83'; preserved as supplied."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-08",
@@ -1752,7 +1762,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1764,7 +1774,9 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+        "supplied_verification_status": "content_added",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -1773,7 +1785,7 @@
       "subject": "Mathematics",
       "subject_question_number": 9,
       "status": "needs_review",
-      "question_text": "Let the smallest value of k∈N for which the coefficient of x³ in (1+x)³+(1+x)⁴+(1+x)⁵+...+(1+x)⁹⁹+(1+kx)¹⁰⁰, x≠0, is (43n+101/4)(¹⁰⁰C₃) for some n∈N be p. Then the value of p+n is:",
+      "question_text": "Let the smallest value of \\(k\\in\\mathbb N\\), for which the coefficient of \\(x^3\\) in \\((1+x)^3+(1+x)^4+(1+x)^5+\\cdots+(1+x)^{99}+(1+kx)^{100}\\), \\(x\\ne0\\), is \\(\\left(43n+\\frac{101}{4}\\right)\\binom{100}{3}\\) for some \\(n\\in\\mathbb N\\), be \\(p\\). Then the value of \\(p+n\\) is:",
       "question_type": "MCQ",
       "options": [
         "10",
@@ -1791,7 +1803,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1803,11 +1815,11 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR contains 'forfor :' and 'nis:'; coefficient condition formatting may be corrupted. Verify full expression against source."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-10",
@@ -1832,7 +1844,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1844,7 +1856,9 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+        "supplied_verification_status": "content_added",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -1871,7 +1885,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1883,18 +1897,18 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+        "supplied_verification_status": "content_added",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR 'BC2: AC2' interpreted as BC²:AC²; verify notation against source."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-12",
       "subject": "Mathematics",
       "subject_question_number": 12,
       "status": "needs_review",
-      "question_text": "Let the vertex A of a triangle ABC be (1, 2), and the mid-point of the side AB be (5.1). If the centroid of this triangle is (3, 4) and its circumcenter is (a, β), then 21(α+β) is equal to:",
+      "question_text": "Let the vertex \\(A\\) of a triangle \\(ABC\\) be \\((1,2)\\), and the mid-point of the side \\(AB\\) be \\((5,-1)\\). If the centroid of this triangle is \\((3,4)\\) and its circumcenter is \\((\\alpha,\\beta)\\), then \\(21(\\alpha+\\beta)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
         "309",
@@ -1912,7 +1926,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1924,18 +1938,18 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Mid-point coordinates supplied as '(5.1)' (likely '(5, 1)'); circumcenter variables appear as 'a, β' and expression uses α+β. Verify source."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-13",
       "subject": "Mathematics",
       "subject_question_number": 13,
       "status": "needs_review",
-      "question_text": "Suppose that two chords, drawn from the point (1, 2) on the circle x²+y²+x−3y=0 are bisected by the y-axis. If the other ends of these chords are R and S, and the mid point of the line segment RS is (a, β), then 6(a+β) is equal to:",
+      "question_text": "Suppose that two chords, drawn from the point \\((1,2)\\) on the circle \\(x^2+y^2+x-3y=0\\), are bisected by the \\(y\\)-axis. If the other ends of these chords are \\(R\\) and \\(S\\), and the midpoint of the line segment \\(RS\\) is \\((\\alpha,\\beta)\\), then \\(6(\\alpha+\\beta)\\) is equal to:",
       "question_type": "MCQ",
       "options": [
         "1",
@@ -1953,7 +1967,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -1965,11 +1979,11 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 5,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "NEEDS_REVIEW"
+        "supplied_verification_status": "needs_review",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "Variables appear as 'a, β' in the midpoint and 'a+β' in the expression; verify whether alpha was intended."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-14",
@@ -1994,7 +2008,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2006,7 +2020,9 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 5,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+        "supplied_verification_status": "content_added",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -2033,7 +2049,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2045,7 +2061,9 @@
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 5,
         "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+        "supplied_verification_status": "content_added",
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -2072,7 +2090,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2085,7 +2103,9 @@
         "source_page": 6,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 16
+        "source_paper_question_number": 16,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -2112,7 +2132,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2125,18 +2145,18 @@
         "source_page": 6,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "needs_review",
-        "source_paper_question_number": 17
+        "source_paper_question_number": 17,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR typo 'ff(0)=0' interpreted as 'If f(0)=0'; verify against source PDF."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-18",
       "subject": "Mathematics",
       "subject_question_number": 18,
       "status": "content_added",
-      "question_text": "The area of the region \\(\\{(x,y): y\\le \\pi-|x|,\\ y\\le x\\sin x,\\ y\\ge0\\}\\) is:",
+      "question_text": "The area of the region \\(\\{(x,y): y\\le \\pi-|x|,\\ y\\le |x\\sin x|,\\ y\\ge0\\}\\) is:",
       "question_type": "MCQ",
       "options": [
         "1+\\frac{\\pi^2}{8}",
@@ -2154,7 +2174,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2167,7 +2187,9 @@
         "source_page": 6,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 18
+        "source_paper_question_number": 18,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -2176,7 +2198,7 @@
       "subject": "Mathematics",
       "subject_question_number": 19,
       "status": "needs_review",
-      "question_text": "Let \\([\\,\\cdot\\,]\\) denote the greatest integer function. If \\(\\int_{-2}^{2} (|\\sin x|+[x\\sin x])\\,dx=2(3-\\cos 2)+\\beta\\), then \\(3\\sin(\\beta/2)\\) equals:",
+      "question_text": "Let \\([\\,\\cdot\\,]\\) denote the greatest integer function. If \\(\\int_{-2}^{2}\\left(|\\sin x|+[x\\sin x]\\right)\\,dx=2(3-\\cos 2)+\\beta\\), then \\(\\beta\\sin\\left(\\frac{\\beta}{2}\\right)\\) equals:",
       "question_type": "MCQ",
       "options": [
         "1",
@@ -2194,7 +2216,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2207,11 +2229,11 @@
         "source_page": 7,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "needs_review",
-        "source_paper_question_number": 19
+        "source_paper_question_number": 19,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR text was interleaved around the integral equation; reconstructed punctuation and variable placement need source verification."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-20",
@@ -2236,7 +2258,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2249,7 +2271,9 @@
         "source_page": 7,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 20
+        "source_paper_question_number": 20,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     },
@@ -2271,7 +2295,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2284,7 +2308,9 @@
         "source_page": 7,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 21
+        "source_paper_question_number": 21,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
         "Numerical-type question; answer not supplied."
@@ -2295,7 +2321,7 @@
       "subject": "Mathematics",
       "subject_question_number": 22,
       "status": "needs_review",
-      "question_text": "Consider the parabola \\(P:y^2=4kx\\) and the ellipse \\(E:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\). Let the line segment joining the points of intersection of \\(P\\) and \\(E\\) be their latus rectums. If the eccentricity of \\(E\\) is \\(e\\), then \\(e^2+2\\sqrt2\\) is equal to:",
+      "question_text": "Consider the parabola \\(P:y^2=4kx\\) and the ellipse \\(E:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\). Let the line segment joining the points of intersection of \\(P\\) and \\(E\\), be their latus rectums. If the eccentricity of \\(E\\) is \\(e\\), then \\(e^2+2\\sqrt2\\) is equal to:",
       "question_type": "numerical",
       "options": [],
       "correct_answer": null,
@@ -2308,7 +2334,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2321,10 +2347,12 @@
         "source_page": 8,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "needs_review",
-        "source_paper_question_number": 22
+        "source_paper_question_number": 22,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": [
-        "OCR wording around 'line segment ... be their latus rectums' is unclear; do not treat this reconstructed sentence as source-verified."
+        "The wording has been checked against the official NTA PDF and preserved as printed. Its mathematical interpretation is unusual; keep in needs_review until a subject-matter reviewer confirms the intended meaning."
       ]
     },
     {
@@ -2332,7 +2360,7 @@
       "subject": "Mathematics",
       "subject_question_number": 23,
       "status": "needs_review",
-      "question_text": "If \\(A=\\frac{\\sin 3^\\circ}{\\cos 9^\\circ}+\\frac{\\sin 9^\\circ}{\\cos 27^\\circ}+\\frac{\\sin 27^\\circ}{\\cos 81^\\circ}\\) and \\(B=\\tan81^\\circ-\\tan3^\\circ\\), then \\(\\frac BA\\) is equal to:",
+      "question_text": "If \\(A=\\frac{\\sin3^\\circ}{\\cos9^\\circ}+\\frac{\\sin9^\\circ}{\\cos27^\\circ}+\\frac{\\sin27^\\circ}{\\cos81^\\circ}\\) and \\(B=\\tan81^\\circ-\\tan3^\\circ\\), then \\(\\frac BA\\) is equal to:",
       "question_type": "numerical",
       "options": [],
       "correct_answer": null,
@@ -2345,7 +2373,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2358,18 +2386,18 @@
         "source_page": 8,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "needs_review",
-        "source_paper_question_number": 23
+        "source_paper_question_number": 23,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR prefix 'f A=' interpreted as 'If A='; verify exact expression against source."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-24",
       "subject": "Mathematics",
       "subject_question_number": 24,
       "status": "needs_review",
-      "question_text": "Let \\(\\vec a_k=(\\tan\\theta_k)\\hat i+\\hat j\\) and \\(\\vec b_k=\\hat i-(\\cot\\theta_k)\\hat j\\), where \\(\\theta_k=\\frac{2^{k-1}\\pi}{2^n+1}\\), \\(n\\in\\mathbb N,\\ n>5\\). Then the value of \\(\\frac{\\sum_{k=1}^{n}|\\vec a_k|^2}{\\sum_{k=1}^{n}|\\vec b_k|^2}\\) is equal to:",
+      "question_text": "Let \\(\\vec a_k=(\\tan\\theta_k)\\hat i+\\hat j\\) and \\(\\vec b_k=\\hat i-(\\cot\\theta_k)\\hat j\\), where \\(\\theta_k=\\frac{2^{k-1}\\pi}{2^n+1}\\), for some \\(n\\in\\mathbb N,\\ n>5\\). Then the value of \\(\\frac{\\sum_{k=1}^{n}|\\vec a_k|^2}{\\sum_{k=1}^{n}|\\vec b_k|^2}\\) is:",
       "question_type": "numerical",
       "options": [],
       "correct_answer": null,
@@ -2382,7 +2410,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2395,11 +2423,11 @@
         "source_page": 8,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "needs_review",
-        "source_paper_question_number": 24
+        "source_paper_question_number": 24,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": [
-        "OCR formula was structurally corrupted: numerator prefix missing and vector b used '\\hat t' instead of likely '\\hat i'. Formula reconstructed for readability; source verification required."
-      ]
+      "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-25",
@@ -2419,7 +2447,7 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": false,
+        "source_wording_verified": true,
         "answer_independently_checked": false,
         "solution_steps_checked": false,
         "math_render_checked": false,
@@ -2432,7 +2460,9 @@
         "source_page": 9,
         "answer_source": "NOT_PROVIDED",
         "supplied_verification_status": "content_added",
-        "source_paper_question_number": 25
+        "source_paper_question_number": 25,
+        "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+        "source_verification_date": "2026-10-23"
       },
       "reviewer_notes": []
     }
