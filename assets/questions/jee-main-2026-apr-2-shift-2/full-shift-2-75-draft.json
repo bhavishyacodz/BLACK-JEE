@@ -652,20 +652,15 @@
     "subject": "Physics",
     "chapter": "Mechanical Properties of Fluids",
     "source_question_number": 33,
-    "question_text": "The surface tension of a soap bubble is 0.03 N/m. The work done in increasing the diameter of the bubble from 2 cm to 6 cm is α π × 10⁻⁴ J. Take π = 3.14. The value of α is:",
-    "question_type": "MCQ",
-    "options": [
-      "0.86",
-      "0.64",
-      "1.92",
-      "7.68"
-    ],
+    "question_text": "A soap bubble has surface tension 0.03 N/m. The work done in increasing its diameter from 2 cm to 6 cm is α π × 10⁻⁴ J. Find α.",
+    "question_type": "Numerical",
+    "options": [],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "C",
-    "solution": "A soap bubble has two surfaces, so W=2T×4π(r₂²−r₁²)=8π(0.03)(0.03²−0.01²)=0.000192π J=1.92π×10⁻⁴ J. Thus α=1.92, option C."
+    "correct_answer": "1.92",
+    "solution": "A soap bubble has two surfaces, so the increase in surface energy is W = 2TΔA = 8πT(r₂²−r₁²). Here T=0.03 N/m, r₁=0.01 m and r₂=0.03 m. Thus W=8π(0.03)(0.03²−0.01²)=1.92π×10⁻⁴ J, so α=1.92. Confirm the numerical format and final answer against the official key before publication."
   },
   {
     "year": 2026,
