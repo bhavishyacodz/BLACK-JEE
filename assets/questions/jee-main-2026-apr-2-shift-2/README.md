@@ -110,3 +110,16 @@ Checked the current draft solutions and keyed answers for Chemistry Q51–Q75 ag
 - **Q63, Q66, Q67, Q68 and Q75:** the associated SVGs are present in the repository and their intended subject matter matches the question topics. This is a topic/structure check, not a pixel-by-pixel match to the official figures.
 - **Source-fidelity limitation:** this pass validates the logic of the draft as currently written. It does not establish that every option, compound name, diagram detail, or statement is transcribed verbatim from the official question paper.
 - **Publication decision:** no questions were published by this audit. Continue keeping the batch staged as drafts until the source transcription and official answer-key reconciliation are complete; Q41 remains a known wording/key conflict.
+
+
+## Verification log — Chunk 22: Official-paper diagram comparison (2026-10-23)
+
+Compared the available rendered pages of the official NTA PDF with the custom redraws for Physics Q28, Q30, Q41, Q42 and Q50.
+
+- **Q28 Atwood machine:** pulley, 2 kg/1 kg masses and release-from-same-level condition match the official figure's essentials. Improved the redraw so mass labels sit clearly below the blocks rather than inside them.
+- **Q30 logic circuit:** verified the source's tied-input NAND topology. The circuit reduces to NOR, matching the option in the draft; the SVG is a simplified redraw rather than a pixel-perfect copy.
+- **Q41 prism:** the official PDF visibly says “minimum value of n₂”, and its ray is incident normally on the prism face. The physical condition gives (n_2 \le 1.6\sin 60^\circ = 4\sqrt{3}/5), i.e. a **maximum** permissible index. This is a source-level inconsistency; both Q41 records remain unpublished.
+- **Q42 LCR circuit:** the official figure confirms the capacitor/resistor top branch, L₂ and S₁ in the left shunt, L₁ and S₂ in the right shunt, and the source (v=V_0\sin(300t)). The redraw includes these elements and values; it is not pixel-identical.
+- **Q50 rod/sphere moment of inertia:** the official figure shows a 40 kg, 3 m rod about axis AB and a 10 kg sphere of radius R with its parallel axis 3 m away. The redraw was corrected to include the sphere's missing **10 kg** label and clearer dimensions.
+
+The original PDF's chemistry pages were not consistently retrievable as screenshots in this audit pass, so chemistry diagram assets are still treated as topic-level redraws rather than source-verified copies. No publication status was changed. This audit records direct visual comparison where the official pages were available, and does not claim that all 75 questions have been fully transcribed or answer-key verified.
