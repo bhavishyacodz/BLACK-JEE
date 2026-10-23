@@ -114,17 +114,18 @@ limit 10;
 
 If tables appear in the database but the browser reports a table/API permission error, check Supabase **Integrations → Data API** and ensure the \`public\` schema is exposed as intended. Keep RLS enabled.
 
-## 9. Fast PYQ audit system
+## 9. April 4 Shift 1 PYQ staging and audit
 
-Run a quick structural audit of the staged 75-question April 2 Shift 2 batch before source review:
+The active repository staging package for JEE Main 2026, 4 April Shift 1 is:
 
-```bash
-python scripts/audit_jee_batch.py --expect 75 --json-out audit-report.json
-```
+- [Shift manifest](assets/questions/jee-main-2026-apr-4-shift-1/shift-manifest.json) — 75 subject-local tracking slots and review status.
+- [Question metadata manifest](assets/questions/jee-main-2026-apr-4-shift-1/manifest.json) — source question IDs and referenced visual assets.
+- [Physics audit](assets/questions/jee-main-2026-apr-4-shift-1/PHYSICS_AUDIT_ROUND1.md) and [round-two audit](assets/questions/jee-main-2026-apr-4-shift-1/SECOND_AUDIT_ROUND2.md) — known review gaps and release gates.
+- [Shift Workbench](https://bhavishyacodz.github.io/BLACK-JEE/shift-workbench.html) — inspect the question-management workflow.
 
-The audit checks JSON structure, required fields, duplicate question numbers, MCQ option/key shape, numerical-key format, draft publication state, referenced SVG existence, and basic SVG safety/structure. GitHub Actions reruns it when the staged batch or audit code changes; its JSON report is available as a workflow artifact.
+The GitHub Actions **April 4 Shift 1 manifest audit** checks the 75-slot structure, subject counts, draft-only staging policy, and existence of referenced assets. It is a structural check only; it does not prove official question wording, answer-key correctness, solution quality, or source-diagram fidelity.
 
-**Important:** a clean structural report does not prove official-paper fidelity or answer correctness. Those still require independent source comparison and solving. The audit never edits or publishes questions. Full workflow: [AUDIT_SYSTEM.md](assets/questions/jee-main-2026-apr-2-shift-2/AUDIT_SYSTEM.md).
+The scripts `scripts/audit_jee_batch.py` and `scripts/audit_source_crosswalk.py` were built for an older April 2 import/crosswalk workflow. Their old input files were removed during cleanup, so do not treat those legacy scripts as the current April 4 audit path.
 
 ## Notes
 
