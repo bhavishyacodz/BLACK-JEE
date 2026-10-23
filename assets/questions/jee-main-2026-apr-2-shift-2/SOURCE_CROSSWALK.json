@@ -174,40 +174,40 @@
       "subject": "Mathematics",
       "subject_question_number": 17,
       "section": "A",
-      "draft_candidate_global_number": 17,
-      "status": "verified",
-      "notes": "Verified exact Mathematics Q17 against NTA question paper PDF p.7 and final answer key PDF p.2 (question ID 691121167, correct option ID 691121574 = C). Draft global Q17 matches integrand, bounds 0 to 20π, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q17 against NTA question paper PDF p.7 and final answer key PDF p.2 (question ID 691121167, correct option ID 691121574 = C). Draft global Q17 matches integrand, bounds 0 to 20π, options, and key."
+      "draft_candidate_global_number": null,
+      "status": "source_extraction_unresolved",
+      "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
+      "verification_evidence": ""
     },
     {
       "paper_order": 18,
       "subject": "Mathematics",
       "subject_question_number": 18,
       "section": "A",
-      "draft_candidate_global_number": 18,
-      "status": "verified",
-      "notes": "Verified exact Mathematics Q18 against NTA question paper PDF p.7 and final answer key PDF p.2 (question ID 691121168, correct option ID 691121577 = D). Draft global Q18 matches degree, extrema points, limit, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q18 against NTA question paper PDF p.7 and final answer key PDF p.2 (question ID 691121168, correct option ID 691121577 = D). Draft global Q18 matches degree, extrema points, limit, options, and key."
+      "draft_candidate_global_number": null,
+      "status": "source_extraction_unresolved",
+      "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
+      "verification_evidence": ""
     },
     {
       "paper_order": 19,
       "subject": "Mathematics",
       "subject_question_number": 19,
       "section": "A",
-      "draft_candidate_global_number": 19,
-      "status": "verified",
-      "notes": "Verified exact Mathematics Q19 against NTA question paper PDF p.7 and final answer key PDF p.2 (question ID 691121169, correct option ID 691121581 = C). Draft global Q19 matches rational integrand, both function values, natural-number parameters, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q19 against NTA question paper PDF p.7 and final answer key PDF p.2 (question ID 691121169, correct option ID 691121581 = C). Draft global Q19 matches rational integrand, both function values, natural-number parameters, options, and key."
+      "draft_candidate_global_number": null,
+      "status": "source_extraction_unresolved",
+      "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
+      "verification_evidence": ""
     },
     {
       "paper_order": 20,
       "subject": "Mathematics",
       "subject_question_number": 20,
       "section": "A",
-      "draft_candidate_global_number": 20,
-      "status": "verified",
-      "notes": "Verified exact Mathematics Q20 against NTA question paper PDF p.8 and final answer key PDF p.2 (question ID 691121170, correct option ID 691121584 = B). Draft global Q20 matches differential equation, domain, initial condition, options, and key.",
-      "verification_evidence": "Verified exact Mathematics Q20 against NTA question paper PDF p.8 and final answer key PDF p.2 (question ID 691121170, correct option ID 691121584 = B). Draft global Q20 matches differential equation, domain, initial condition, options, and key."
+      "draft_candidate_global_number": null,
+      "status": "source_extraction_unresolved",
+      "notes": "UNRESOLVED: the source question text/options have not been reliably extracted and matched for this slot. Do not guess a legacy draft candidate or mark verified until the source content is checked directly. Audit-only; publication remains blocked.",
+      "verification_evidence": ""
     },
     {
       "paper_order": 21,
