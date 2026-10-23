@@ -445,6 +445,35 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .home-guide-card{height:100%}
 }
 </style>
+<style id="blackjee-home-challenge-ux-v3">
+/* Home + challenge overview: clear hierarchy, neutral premium controls, comfortable tap targets. */
+:root{scroll-padding-top:84px}
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:2px solid #f1f1f1!important;outline-offset:3px}
+#challenge .card,#challenge .side-card,.home-guide-card{border-radius:16px}
+.home-guide-card{border-color:#303238;background:linear-gradient(145deg,#141518,#0d0e10);transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.home-guide-card:hover{transform:translateY(-2px);border-color:#666970;background:linear-gradient(145deg,#191a1e,#101113)}
+.home-guide-card>b{color:#f3f3f3}
+.hero.wrap>.hero-bottom .btn.btn-red,#challenge .btn.btn-red{background:#f2f2f2!important;color:#101010!important;border-color:#f2f2f2!important;box-shadow:none!important}
+.hero.wrap>.hero-bottom .btn.btn-red:hover,#challenge .btn.btn-red:hover{background:#fff!important;transform:translateY(-1px)}
+#challenge .section-head{gap:12px}
+#challenge .section-head .tag,#challenge .card-top>.tag{white-space:nowrap}
+#challenge .card{border-color:#303238;background:linear-gradient(155deg,#121316,#0c0d0f)}
+#challenge .card-body{padding:clamp(16px,2.3vw,26px)}
+#challenge .question-title{max-width:760px;overflow-wrap:anywhere}
+#challenge .side-card{border-color:#303238}
+#challenge .dashboard-start-question{min-height:50px;font-weight:750;letter-spacing:.035em}
+@media(max-width:780px){
+ .hero.wrap>.hero-bottom .btn{min-height:50px}
+ .home-guide-card{border-radius:14px}
+ #challenge .section-head{grid-template-columns:minmax(0,1fr) auto}
+ #challenge .section-head h2{font-size:clamp(1.5rem,6.3vw,2rem);line-height:1.1}
+ #challenge .section-head .tag{font-size:.62rem;max-width:44vw;white-space:normal;text-align:center;line-height:1.35}
+ #challenge .card{border-radius:14px}
+ #challenge .card-body{padding:16px}
+ #challenge .dashboard-start-question{min-height:52px}
+}
+@media(prefers-reduced-motion:reduce){.home-guide-card{transition:none}.home-guide-card:hover{transform:none}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#challenge">Skip to today's challenge</a>
