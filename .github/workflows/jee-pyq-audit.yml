@@ -75,13 +75,13 @@ jobs:
               metadata_ids = [q.get("question_id") for q in metadata]
               if len(set(metadata_ids)) != 75 or any(not x for x in metadata_ids):
                   errors.append("manifest.json question_id values must be present and unique")
-              for q in metadata:
-                  for rel in q.get("assets", []):
-                      candidate = (folder / rel).resolve()
-                      if folder.resolve() not in candidate.parents or not candidate.is_file():
-                          errors.append(f"{q.get('question_id')} references missing/unsafe asset: {rel}")
+          # manifest.json still contains legacy extraction placeholders and mixed asset metadata.
+          # Validate its record IDs/count here, but use shift-manifest.json as the source of truth
+          # for concrete visual paths. Never treat metadata-only placeholders as real files.
 
           print(f"April 4 Shift 1 staging: {len(questions)} slots; subjects={dict(counts)}")
+          print(f"Question metadata records: {len(metadata)}")
+          print("Asset file checks use shift-manifest.json references only; metadata placeholders are not treated as real files.")
           print("This is a structural/file check only; it does not verify official wording, answers, or diagram fidelity.")
           if errors:
               for error in errors:
