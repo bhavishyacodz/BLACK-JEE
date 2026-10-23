@@ -174,3 +174,12 @@ Post-cleanup database verification:
 - Chemistry: 25 rows, all published
 - Mathematics: 25 rows, all published
 - **Total: exactly 75 published rows**
+
+## Verification log — Chunk 24: Q68 diagram answer-leak fix (2026-10-23)
+
+- Replaced the Q68 schematic that displayed the intermediate substituents and final 2-bromobenzoic-acid identity, which exposed the answer to a question asking students to identify A and E.
+- The revised diagram shows the p-ethylnitrobenzene starting material, the reaction conditions, and placeholders for unknown A and E. It intentionally does not display the answer structures.
+- Added a clearer aromatic-ring depiction and accessible SVG title/description text.
+- Re-fetched the committed SVG and checked its root element, viewBox, closing tag, and presence of the A/E placeholders. The checks passed.
+- Commits: [1cafae2](https://github.com/bhavishyacodz/BLACK-JEE/commit/1cafae2d256cff5607ecb5579aa2f6cb625c39e8) (answer-leak fix) and [819f07d](https://github.com/bhavishyacodz/BLACK-JEE/commit/819f07d5dbe09bd9fa29de804bfca5cc03461de3) (ring depiction polish).
+- The SVG source is structurally validated; actual browser/device rendering and comparison against the official Q68 page remain pending. No database or publication status was changed.
