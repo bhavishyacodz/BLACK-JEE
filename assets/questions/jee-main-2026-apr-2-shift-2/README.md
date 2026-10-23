@@ -1,6 +1,6 @@
 # JEE Main 2026 — 2 April Shift 2 draft diagram assets
 
-This folder contains custom SVG redraws associated with legacy draft records. **The `qNN.svg` names and Q labels below are legacy draft IDs, not verified NTA displayed question numbers.** These files are only candidate redraws; compare each against the official source before attaching it to a published PYQ.
+This folder contains custom SVG redraws associated with legacy draft records. **The `qNN.svg` names and Q labels are candidate IDs. Treat them as NTA displayed question numbers only where the individual match has been verified.** These files are only candidate redraws; compare each against the official source before attaching it to a published PYQ.
 
 | Legacy draft ID | Topic | Asset |
 |---|---|---|
