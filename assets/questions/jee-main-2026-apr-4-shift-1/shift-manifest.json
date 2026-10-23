@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "awaiting_source_content",
+  "workflow_status": "partial_content_added_needs_review",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "This is a tracking manifest only. It contains no authentic question wording, answer keys, solutions, or verified diagrams. Do not import these slots as student questions or publish them.",
+  "important_note": "15 Mathematics questions have been added from user-supplied Batch 1 (slots 1–15). Several question/option strings are OCR-corrupted. Answers and solutions were not supplied. These are staging drafts only; not source-verified, not imported into Supabase, and not published.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -1379,14 +1379,19 @@
       "slot_id": "mathematics-01",
       "subject": "Mathematics",
       "subject_question_number": 1,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let [] denote the greatest integer function. If the domain of the function f(x)=cos^{-1}(\\frac{4x+2[x]}{3}) is [a,  ]. then 12 (\\alpha+\\beta) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "4"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1399,21 +1404,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-001",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 1,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "Domain interval text unclear/corrupted, appears as '[a,  ]'."
+      ]
     },
     {
       "slot_id": "mathematics-02",
       "subject": "Mathematics",
       "subject_question_number": 2,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "If the set of all solutions of |x^{2}+x-9|=|x|+|x^{2}-9| is [ , β] U [γ,  ), then (\\alpha^{2}+\\beta^{2}+\\gamma^{2}) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "9",
+        "18",
+        "36",
+        "72"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1426,21 +1445,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-002",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 2,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "Solution interval text corrupted, missing alpha and infinity symbols, appears as '[ , β] U [γ,  )'."
+      ]
     },
     {
       "slot_id": "mathematics-03",
       "subject": "Mathematics",
       "subject_question_number": 3,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let z be a complex number such that |z+2|=|z-2| and arg |z|^{2} is equal to: (\\frac{z+3}{z-i})=\\frac{\\pi}{4} Then",
+      "question_type": "MCQ",
+      "options": [
+        "9",
+        "4",
+        "5",
+        "1"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1453,21 +1486,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-003",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 2,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "Question text is scrambled in OCR. 'arg' and '|z|^2' and the formula are out of order. Transcribed as provided."
+      ]
     },
     {
       "slot_id": "mathematics-04",
       "subject": "Mathematics",
       "subject_question_number": 4,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The number of functions f:{1,2,3,4}→{a,b,c}, which are not onto, is:",
+      "question_type": "MCQ",
+      "options": [
+        "48",
+        "45",
+        "51",
+        "35"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1480,21 +1527,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-004",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 2,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-05",
       "subject": "Mathematics",
       "subject_question_number": 5,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let S={A=[a b; c d]: a,b,c,d∈{0,1,2,3,4} and A²−4A+3I=0} be a set of 2×2 matrices. Then the number of matrices in S, for which the sum of the diagonal elements is equal to 4, is:",
+      "question_type": "MCQ",
+      "options": [
+        "20",
+        "17",
+        "21",
+        "19"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1507,21 +1566,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-005",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 2,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "OCR typo: 'Let :S={' instead of 'Let S={'. Matrix formatting normalized for display; verify against source."
+      ]
     },
     {
       "slot_id": "mathematics-06",
       "subject": "Mathematics",
       "subject_question_number": 6,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let A=[[1,1,2],[-2,0,1],[1,3,5]]. Then the sum of all elements of the matrix adj(adj (2(adjA)¹)) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "3",
+        "4",
+        "-4",
+        "-3"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1534,21 +1607,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-006",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 3,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "Exponent on adjA appears as '¹' instead of '^{-1}'. Option C was malformed in the supplied JSON (label '-4' with no text); displayed as -4 pending confirmation."
+      ]
     },
     {
       "slot_id": "mathematics-07",
       "subject": "Mathematics",
       "subject_question_number": 7,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "The first term of an A.P. of 30 non-negative terms is 10/3. If the sum of this A.P. is the cube of its last term, then its common difference is:",
+      "question_type": "MCQ",
+      "options": [
+        "5/87",
+        "83 25/83",
+        "15/29",
+        "5/29"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1561,21 +1648,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-007",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 3,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "Option B appears corrupted in OCR as '83 25/83'; preserved as supplied."
+      ]
     },
     {
       "slot_id": "mathematics-08",
       "subject": "Mathematics",
       "subject_question_number": 8,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The number of ways of forming a queue of 4 boys and 3 girls such that all the girls are not together, is:",
+      "question_type": "MCQ",
+      "options": [
+        "5040",
+        "3050",
+        "3410",
+        "4320"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1588,21 +1689,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-008",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 3,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-09",
       "subject": "Mathematics",
       "subject_question_number": 9,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let the smallest value of k∈N for which the coefficient of x³ in (1+x)³+(1+x)⁴+(1+x)⁵+...+(1+x)⁹⁹+(1+kx)¹⁰⁰, x≠0, is (43n+101/4)(¹⁰⁰C₃) for some n∈N be p. Then the value of p+n is:",
+      "question_type": "MCQ",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1615,21 +1728,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-009",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 4,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "OCR contains 'forfor :' and 'nis:'; coefficient condition formatting may be corrupted. Verify full expression against source."
+      ]
     },
     {
       "slot_id": "mathematics-10",
       "subject": "Mathematics",
       "subject_question_number": 10,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Suppose that the mean and median of the non-negative numbers 21, 8, 17, a, 51, 103, b, 13, 67, (a>b), are 40 and 21, respectively. If the mean deviation about the median is 26, then 2a is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "109",
+        "117",
+        "161",
+        "131"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1642,21 +1769,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-010",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 4,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-11",
       "subject": "Mathematics",
       "subject_question_number": 11,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Let the line L1:x+3=0 intersect the lines L2:x−y=0 and L3:3x+y=0 at the points A and B, respectively. Let the bisector of the obtuse angle between the lines L2 and L3 intersect the line L1 at the point C. Then BC²:AC² is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "5:1",
+        "1:5",
+        "2:3",
+        "3:2"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1669,21 +1808,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-011",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 4,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+      },
+      "reviewer_notes": [
+        "OCR 'BC2: AC2' interpreted as BC²:AC²; verify notation against source."
+      ]
     },
     {
       "slot_id": "mathematics-12",
       "subject": "Mathematics",
       "subject_question_number": 12,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let the vertex A of a triangle ABC be (1, 2), and the mid-point of the side AB be (5.1). If the centroid of this triangle is (3, 4) and its circumcenter is (a, β), then 21(α+β) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "309",
+        "403",
+        "497",
+        "524"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1696,21 +1849,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-012",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 4,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "Mid-point coordinates supplied as '(5.1)' (likely '(5, 1)'); circumcenter variables appear as 'a, β' and expression uses α+β. Verify source."
+      ]
     },
     {
       "slot_id": "mathematics-13",
       "subject": "Mathematics",
       "subject_question_number": 13,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Suppose that two chords, drawn from the point (1, 2) on the circle x²+y²+x−3y=0 are bisected by the y-axis. If the other ends of these chords are R and S, and the mid point of the line segment RS is (a, β), then 6(a+β) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "1",
+        "3",
+        "4",
+        "6"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1723,21 +1890,35 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-013",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 5,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "NEEDS_REVIEW"
+      },
+      "reviewer_notes": [
+        "Variables appear as 'a, β' in the midpoint and 'a+β' in the expression; verify whether alpha was intended."
+      ]
     },
     {
       "slot_id": "mathematics-14",
       "subject": "Mathematics",
       "subject_question_number": 14,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A line with direction ratios 1, −1, 2 intersects the lines x/2=y/3=(z+1)/3 and (x+1)/(−1)=(y−2)/1=z/4 at the points P and Q, respectively. If the length of the line segment PQ is a, then 225a² is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "1024",
+        "1014",
+        "1104",
+        "1204"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1750,21 +1931,33 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-014",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 5,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-15",
       "subject": "Mathematics",
       "subject_question_number": 15,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The square of the distance of the point (−2,−8,6) from the line (x−1)/1=(y−1)/2=z/(−1) along the line (x+5)/1=(y+5)/(−1)=z/2 is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "12"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -1777,7 +1970,14 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-015",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 5,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "EXTRACTED_UNVERIFIED"
+      },
       "reviewer_notes": []
     },
     {
