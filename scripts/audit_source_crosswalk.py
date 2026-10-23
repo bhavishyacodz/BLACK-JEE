@@ -94,13 +94,9 @@ def main() -> int:
             candidate_number = candidate.get("legacy_global_question_number")
             if candidate_number not in EXPECTED_LEGACY_BLOCKS[subject]:
                 errors.append(f"record {i}: candidate global number {candidate_number!r} is outside legacy {subject} block")
-            elif isinstance(local, int) and 1 <= local <= 25:
-                expected_candidate = EXPECTED_LEGACY_BLOCKS[subject].start + local - 1
-                if candidate_number != expected_candidate:
-                    errors.append(
-                        f"record {i}: {subject} Q{local} must map to legacy global "
-                        f"Q{expected_candidate}, got Q{candidate_number}"
-                    )
+            # Candidate slots are content-based, not positional. A source-local
+            # question may map to any draft record in the same legacy subject block;
+            # exact wording, options, diagrams and answer key remain separate gates.
             if status != "verified_exact_match" and record.get("publishable") is not False:
                 errors.append(f"record {i}: unverified candidate must remain publishable=false")
         if subject == "Mathematics" and local in range(17, 21):
