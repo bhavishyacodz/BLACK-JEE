@@ -1,0 +1,149 @@
+[
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Chemistry",
+    "chapter": "Coordination Compounds",
+    "source_question_number": 60,
+    "question_text": "Given below are two statements. Statement I: Among Zn, Mn, Sc and Cu, the energy required to remove the third valence electron is highest for Zn and lowest for Sc. Statement II: The correct order of the following complexes in terms of CFSE is [Co(H₂O)₆]²⁺ < [Co(H₂O)₆]³⁺ < [Co(en)₃]³⁺. Choose the correct answer.",
+    "question_type": "MCQ",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "A",
+    "solution": "Statement I is true: Zn²⁺ has a filled 3d¹⁰ subshell, making removal of a third electron especially difficult; Sc²⁺ has a single 3d electron that is removed more readily. Statement II is true: Co(III) has greater octahedral splitting than Co(II), and en produces stronger splitting than H₂O. Therefore both statements are true, option A."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Chemistry",
+    "chapter": "Haloalkanes and Haloarenes",
+    "source_question_number": 65,
+    "question_text": "Correct statements regarding alkyl halides (R–X) among the following are: A. Alcoholic KOH favours elimination because alcohol is less polar than water. B. Reactivity towards Sᴺ1 is C₆H₅CH₂Cl > (C₆H₅)₂CHCl. C. Non-substituted aryl halides exhibit properties similar to alkyl halides. D. Vinyl chloride is a haloalkene and allyl chloride is a haloalkyne. E. R–Cl can be prepared from R–OH using SOCl₂, but Ar–Cl cannot be prepared from Ar–OH using SOCl₂. Choose the correct combination.",
+    "question_type": "MCQ",
+    "options": [
+      "A, B and C only",
+      "B and D only",
+      "A and E only",
+      "D and E only"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "C",
+    "solution": "A is true: alcoholic KOH favours elimination. B is false because the diphenylmethyl carbocation is more resonance-stabilised than the benzyl carbocation. C is false: aryl halides are less reactive toward ordinary nucleophilic substitution. D is false: allyl chloride is an allylic halide, not a haloalkyne. E is true because thionyl chloride converts alcohols to alkyl chlorides, but phenols do not undergo the analogous substitution. Hence A and E only, option C."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Chemistry",
+    "chapter": "Aldehydes and Ketones",
+    "source_question_number": 66,
+    "question_text": "An organic compound X, in which the molar amounts of C, O and H are equal, on treatment with 50% KOH under reflux followed by acidification produces Y. The molar mass of X is 58 g mol⁻¹. The most likely structure of Y is:",
+    "question_type": "MCQ",
+    "options": [
+      "CH₂=CH–COOH (acrylic acid)",
+      "CH₃–CH=CH–CHO (crotonaldehyde)",
+      "HO–CH₂–COOH (glycolic acid)",
+      "CH₃–COOH (acetic acid)"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q66.svg",
+    "correct_answer": "C",
+    "solution": "Equal molar amounts of C, H and O with molar mass 58 imply C₂H₂O₂, consistent with glyoxal. Under concentrated KOH and reflux, glyoxal undergoes disproportionation; after acidification the product is glycolic acid, HOCH₂COOH. Option C."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Chemistry",
+    "chapter": "Aldehydes and Ketones",
+    "source_question_number": 67,
+    "question_text": "A molecule X with the structure shown in the diagram is hydrolysed under mild acidic conditions to produce Y and Z. Identify the correct statements: A. Y and Z have the same molar mass. B. Y and Z can be distinguished from each other by NaHCO₃. C. Y and Z react with HCN at the same rates. D. Y and Z undergo addition reactions with 2,4-DNP. Choose the correct combination.",
+    "question_type": "MCQ",
+    "options": [
+      "A, B and C only",
+      "B and C only",
+      "C and D only",
+      "A and D only"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q67.svg",
+    "correct_answer": "D",
+    "solution": "Hydrolysis gives propanal and acetone. Both have molar mass 58 g mol⁻¹, so A is true. Neither is a carboxylic acid, so NaHCO₃ does not distinguish them (B false). Aldehydes and ketones do not react with HCN at identical rates (C false). Both contain a carbonyl group and give the 2,4-DNP test (D true). Thus A and D only, option D."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Chemistry",
+    "chapter": "Aromatic Compounds",
+    "source_question_number": 68,
+    "question_text": "Identify compounds A and E in the reaction sequence shown in the diagram. The starting material is p-ethylnitrobenzene; the sequence uses Br₂/AlBr₃, Sn/HCl, NaNO₂/HCl at 273–278 K, ethanol, and finally KMnO₄/KOH followed by H₃O⁺.",
+    "question_type": "MCQ",
+    "options": [
+      "A: 2-bromo-1-ethyl-4-nitrobenzene; E: 2-bromobenzoic acid",
+      "A: 1-(2-bromoethyl)-4-nitrobenzene; E: benzoic acid",
+      "A: 2-bromo-1-ethyl-4-nitrobenzene; E: 2-bromo-4-hydroxybenzoic acid",
+      "A: 1-ethyl-2-bromo-4-nitrobenzene; E: 3-bromobenzoic acid"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q68.svg",
+    "correct_answer": "A",
+    "solution": "Ethyl directs electrophilic substitution ortho/para; with the para position occupied by nitro, bromination occurs ortho to ethyl and meta to nitro. Sn/HCl reduces nitro to amino; diazotisation followed by ethanol replaces the amino group with hydrogen. Oxidation converts the ethyl side chain to COOH without removing ring bromine, giving 2-bromobenzoic acid. Option A."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Chemistry",
+    "chapter": "Biomolecules",
+    "source_question_number": 69,
+    "question_text": "Identify the correct pair having amino acid (A) and hormone (B) that is an iodinated derivative of the amino acid. (T and Y represent one-letter codes for amino acids.)",
+    "question_type": "MCQ",
+    "options": [
+      "T — Insulin",
+      "T — Thyroxine",
+      "Y — Thyroxine",
+      "Y — Insulin"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "C",
+    "solution": "Y is tyrosine. Thyroxine is formed by iodination and coupling of tyrosine residues, so the correct pair is Y and thyroxine, option C."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Chemistry",
+    "chapter": "d- and f-Block Elements",
+    "source_question_number": 70,
+    "question_text": "Among Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺, the ion that shows a positive borax-bead test and has the highest ionisation enthalpy is:",
+    "question_type": "MCQ",
+    "options": [
+      "Fe²⁺",
+      "Zn²⁺",
+      "Cr²⁺",
+      "Fe³⁺"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "D",
+    "solution": "Zn²⁺ gives a colourless borax bead, so it does not satisfy the positive-test condition. Fe³⁺ gives a characteristic coloured bead and its stable 3d⁵ configuration makes removal of another electron especially difficult among the remaining listed ions. Option D."
+  }
+]
