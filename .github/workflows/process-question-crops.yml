@@ -46,6 +46,7 @@ jobs:
           git add assets/questions/jee-main-2026-apr-4-shift-1/shift-manifest.json
           git add assets/questions/jee-main-2026-apr-4-shift-1/manifest.json
           git add assets/questions/jee-main-2026-apr-4-shift-1/images
+          rm -f assets/gemini-inbox/crop-manifest.json
           git add assets/gemini-inbox
           if git diff --cached --quiet; then
             echo "No crop changes to commit."
