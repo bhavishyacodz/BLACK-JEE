@@ -4,7 +4,7 @@
 Run from repository root:
   python scripts/audit_jee_batch.py
   python scripts/audit_jee_batch.py path/to/batch.json --json-out audit-report.json
-  python scripts/audit_jee_batch.py --all-json
+  python scripts/audit_jee_batch.py path/to/batch.json
 
 This catches structural defects and obvious asset problems. It cannot prove source fidelity,
 scientific correctness, or that a diagram matches the official paper; those need review.
@@ -67,8 +67,8 @@ def audit_file(path):
     subject_counts, type_counts = Counter(), Counter()
     seen = defaultdict(list)
 
-    # Preserve the legacy draft's global numbering order. This is not the
-    # printed-paper section order; the source-to-draft crosswalk handles that.
+    # Preserve global source numbering when the input uses it. This does not
+    # establish the official paper's displayed order; verify that separately.
     ordered_numbers = [
         q.get("source_question_number") if isinstance(q, dict) else None
         for q in records
@@ -197,7 +197,7 @@ def main():
         if isinstance(records, list):
             # Legacy draft global numbering: Mathematics 1–25, Physics 26–50,
             # Chemistry 51–75. Official printed section order is checked separately
-            # by audit_crosswalk() and must not be inferred from these IDs.
+            # the source paper; do not infer it from these legacy IDs.
             subject_starts = {"Mathematics": 1, "Physics": args.expect_per_subject + 1,
                               "Chemistry": 2 * args.expect_per_subject + 1}
             for subject in sorted(SUBJECTS):
@@ -230,9 +230,7 @@ def main():
     }
     print("BLACK-JEE FAST AUDIT")
     for r in reports:
-        crosswalk = r.get("crosswalk")
-        crosswalk_text = f" | crosswalk={crosswalk['verified_rows']}/{crosswalk['rows']} verified" if crosswalk else ""
-        print(f"- {r['file']}: {r['records']} records | subjects={r['subjects']} | types={r['types']} | images={r['images']} | published={r['published']}{crosswalk_text} | errors={r['errors']} | warnings={r['warnings']}")
+        print(f"- {r['file']}: {r['records']} records | subjects={r['subjects']} | types={r['types']} | images={r['images']} | published={r['published']} | errors={r['errors']} | warnings={r['warnings']}")
         for i in r["issues"]:
             print(f"  {i['level']} {i['code']} [{i['where']}]: {i['message']}")
     s = combined["summary"]
