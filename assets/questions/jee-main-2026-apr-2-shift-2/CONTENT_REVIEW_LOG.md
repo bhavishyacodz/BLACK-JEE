@@ -179,3 +179,10 @@ This log records content-level findings that structural validation alone cannot 
 - Chemistry Q11 / legacy Q74: replaced Gd³⁺ with source ion Gd²⁺ and restored the source ion list; calculated paramagnetic count 3, pending key.
 - Chemistry Q17 / legacy Q70: restored source options Zn²⁺, Fe³⁺, Fe²⁺, Co²⁺; candidate answer Fe³⁺ (B), pending key.
 - Both remain non-publishable pending official-key and full-stem verification.
+
+
+## AC diagram / test-format correction — 2026-10-23
+- Physics Q23 / legacy Q42: redrew the circuit as a true series loop with C, R, L₂ and L₁. S₂ bypasses L₂; S₁ bypasses L₁.
+- Corrected expression to `3L₂ − L₁`; changed response type to numerical and removed MCQ options.
+- Calculated candidate answer: `2/9 H` for ω=300 rad/s and C=100 μF.
+- Still on HOLD pending independent comparison with the original NTA diagram and final answer key.
