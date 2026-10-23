@@ -1,0 +1,32 @@
+[
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Relations and Functions",
+    "question_text": "Q21. Let A={2,3,4,5,6}. A relation R on A x A is defined by (x,y)R(z,w) iff x divides z and y<=w. Find the number of elements in R.",
+    "question_type": "Numerical",
+    "options": [],
+    "marks_correct": 4,
+    "marks_wrong": 0,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "120",
+    "solution": "There are 8 ordered pairs (x,z) in A squared with x dividing z and 15 ordered pairs (y,w) with y<=w. Therefore |R|=8*15=120."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Matrices",
+    "question_text": "Q22. Let A=[[2,-2],[4,-2]] and B=[[3,9],[1,3]]. If PA=B and AQ=B, find the absolute value of the sum of the diagonal elements of 2(P+Q).",
+    "question_type": "Numerical",
+    "options": [],
+    "marks_correct": 4,
+    "marks_wrong": 0,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "34",
+    "solution": "P=BA^-1 and Q=A^-1B. By cyclic invariance of trace, tr(P)=tr(Q)=tr(A^-1B)=-17/2. Thus |tr(2(P+Q))|=34."
+  }
+]
