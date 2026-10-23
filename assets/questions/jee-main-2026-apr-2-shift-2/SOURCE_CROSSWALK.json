@@ -621,7 +621,8 @@
       "section": "B",
       "draft_candidate_global_number": 46,
       "status": "verified",
-      "notes": "Verified against NTA source Q46: exact YDSE intensity/path-difference statement and requested x; independently checked result x=6 against final key. No source diagram is required. Audit-only; full-shift release gate stays closed."
+      "notes": "Verified against NTA source Q46: exact YDSE intensity/path-difference statement and requested x; independently checked result x=6 against final key. No source diagram is required. Audit-only; full-shift release gate stays closed.",
+      "verification_evidence": "NTA question paper PDF p.18, Q46; final answer key PDF p.2, Physics Q ID 691121196 gives 6. Independently checked YDSE relation and x=6."
     },
     {
       "paper_order": 47,
@@ -630,7 +631,8 @@
       "section": "B",
       "draft_candidate_global_number": 47,
       "status": "verified",
-      "notes": "Verified against NTA source Q47: exact Bohr-model magnetic-field ratio prompt; independently checked B₂/B₄=32 against final key. Audit-only; full-shift release gate stays closed."
+      "notes": "Verified against NTA source Q47: exact Bohr-model magnetic-field ratio prompt; independently checked B₂/B₄=32 against final key. Audit-only; full-shift release gate stays closed.",
+      "verification_evidence": "NTA question paper PDF p.18, Q47; final answer key PDF p.2, Physics Q ID 691121197 gives 32. Independently checked Bohr-orbit magnetic-field ratio B2/B4=32."
     },
     {
       "paper_order": 48,
@@ -639,7 +641,8 @@
       "section": "B",
       "draft_candidate_global_number": 48,
       "status": "verified",
-      "notes": "Verified against NTA source Q48: exact 5-mole constant-volume heating data, cp and R units, and requested ΔU in calories; independently checked result 300 against final key. Audit-only; full-shift release gate stays closed."
+      "notes": "Verified against NTA source Q48: exact 5-mole constant-volume heating data, cp and R units, and requested ΔU in calories; independently checked result 300 against final key. Audit-only; full-shift release gate stays closed.",
+      "verification_evidence": "NTA question paper PDF p.19, Q48; final answer key PDF p.2, Physics Q ID 691121198 gives 300. Independently checked ΔU=5(8−2)10=300 cal."
     },
     {
       "paper_order": 49,
@@ -648,7 +651,8 @@
       "section": "B",
       "draft_candidate_global_number": 49,
       "status": "verified",
-      "notes": "Verified against NTA source Q49: exact sunlight/convex-lens, 30 cm focal distance, 60 cm curvature radius, and α/10 refractive-index prompt; independently checked α=20 against final key. Audit-only; full-shift release gate stays closed."
+      "notes": "Verified against NTA source Q49: exact sunlight/convex-lens, 30 cm focal distance, 60 cm curvature radius, and α/10 refractive-index prompt; independently checked α=20 against final key. Audit-only; full-shift release gate stays closed.",
+      "verification_evidence": "NTA question paper PDF p.19, Q49; final answer key PDF p.2, Physics Q ID 691121199 gives 20. Independently checked lens-maker result n=2 and α=20."
     },
     {
       "paper_order": 50,
@@ -657,7 +661,8 @@
       "section": "B",
       "draft_candidate_global_number": 50,
       "status": "verified",
-      "notes": "Verified against NTA source Q50: exact rod/sphere masses, length/radius, 3 m axis separation, and R=√(α/2) prompt. q50.svg diagram was visually compared with the source figure; independently checked α=60 against final key. Audit-only; full-shift release gate stays closed."
+      "notes": "Verified against NTA source Q50: exact rod/sphere masses, length/radius, 3 m axis separation, and R=√(α/2) prompt. q50.svg diagram was visually compared with the source figure; independently checked α=60 against final key. Audit-only; full-shift release gate stays closed.",
+      "verification_evidence": "NTA question paper PDF p.19, Q50 and source figure; final answer key PDF p.2, Physics Q ID 691121200 gives 60. Visually compared q50.svg rod/sphere axes and 3 m separation with source; independently checked α=60."
     },
     {
       "paper_order": 51,
