@@ -3,705 +3,164 @@
   "purpose": "Audit-only crosswalk. Candidate links indicate where to inspect; they are not verified equivalence and must not drive automatic renumbering or publication.",
   "source_paper": "JEE Main 2026 April 2 Shift 2",
   "source_order": [
-    "Mathematics 1-25",
-    "Physics 26-50",
-    "Chemistry 51-75"
+    "Physics 1-25",
+    "Chemistry 1-25",
+    "Mathematics 1-25"
   ],
   "draft_file": "assets/questions/jee-main-2026-apr-2-shift-2/full-shift-2-75-draft.json",
   "records": [
     {
       "source": {
-        "subject": "Mathematics",
+        "subject": "Physics",
         "subject_question_number": 1,
         "paper_order": 1
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 9
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "mean/variance with partial sum 48 and sum of squares 496 appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 2,
-        "paper_order": 2
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 18
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "degree-five polynomial, extrema at ±1 and limit −5 appear aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 3,
-        "paper_order": 3
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 16
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source vectors are PS=i+j and PQ=−j+k; draft has different vectors"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 4,
-        "paper_order": 4
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 2
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "nested-circle distance problem appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 5,
-        "paper_order": 5
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 12
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "parabola through (1,−1) and vertex-distance condition appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 6,
-        "paper_order": 6
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 23
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "circle of radius 6 and A=(3,0) diameter-locus problem appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 7,
-        "paper_order": 7
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 5
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "eight-term series appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 8,
-        "paper_order": 8
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 3
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source's second linear equation is 2x+2y+4z=1; draft uses different coefficients/RHS"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 9,
-        "paper_order": 9
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 17
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "integral of sin⁴x+cos⁴x from 0 to 20π appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 10,
-        "paper_order": 10
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 7
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "polygon triangle-count condition appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 11,
-        "paper_order": 11
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 21
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "relation on A×A with divisibility and ≤ appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 12,
-        "paper_order": 12
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 25
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source greatest-integer expression is [x²−x+2]; draft uses x²−x−1/2"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 13,
-        "paper_order": 13
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 19
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "partial-fraction integral and logarithm condition appear aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 14,
-        "paper_order": 14
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 10
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "perpendicular-line intersection as circle centre and chord-length problem appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 15,
-        "paper_order": 15
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 20
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "source asks for 3x(e²)/e²; draft asks for x(e²)"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 16,
-        "paper_order": 16
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 24
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "curves align, but source asks A from area=A−6ln3 while draft asks a different transformed expression"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 17,
-        "paper_order": 17
-      },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "the available text extraction exposes no verified source statement for this slot"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 18,
-        "paper_order": 18
-      },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "the available text extraction exposes no verified source statement for this slot"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 19,
-        "paper_order": 19
-      },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "the available text extraction exposes no verified source statement for this slot"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 20,
-        "paper_order": 20
-      },
-      "draft_candidate": null,
-      "status": "source_extraction_unresolved",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "the available text extraction exposes no verified source statement for this slot"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 21,
-        "paper_order": 21
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 13
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "this is Section-B numerical question 1, not source Mathematics question 17; the expression differs from the draft"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 22,
-        "paper_order": 22
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 6
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "this is Section-B numerical question 2; binomial-coefficient identity appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 23,
-        "paper_order": 23
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 15
-      },
-      "status": "candidate_matches_core_setup",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "this is Section-B numerical question 3; 3D foot/midpoint setup appears aligned"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 24,
-        "paper_order": 24
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 22
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "this is Section-B numerical question 4; source matrix B is [[1,3],[3,9]], unlike the draft"
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 25,
-        "paper_order": 25
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 8
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "this is Section-B numerical question 5; source asks for m+n, while draft asks for probability m/n"
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 1,
-        "paper_order": 26
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 26
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q26: exact statement and options match; official final answer-key option matches. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 2,
-        "paper_order": 27
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 27
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q27: exact statement and options match; official final answer-key option matches. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 3,
-        "paper_order": 28
       },
       "draft_candidate": {
         "subject": "Physics",
         "legacy_global_question_number": 28
       },
-      "status": "verified_exact_match",
+      "status": "needs_exact_review",
       "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q28: exact statement and options match; official final answer-key option matches. Diagram redraw also visually checked against the official source. "
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 2,
+        "paper_order": 2
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 37
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 3,
+        "paper_order": 3
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 27
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 4,
-        "paper_order": 29
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 29
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q29: exact statement and options match; official final answer-key option matches. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 5,
-        "paper_order": 30
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 30
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q30: exact statement and options match; official final answer-key option matches. Diagram redraw also visually checked against the official source. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 6,
-        "paper_order": 31
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 31
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q31: exact statement and options match; official final answer-key option matches. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 7,
-        "paper_order": 32
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 32
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q32: exact statement and options match; official final answer-key option matches. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 8,
-        "paper_order": 33
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 33
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q33: exact statement and options match; official final answer-key option matches. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 9,
-        "paper_order": 34
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 34
-      },
-      "status": "verified_exact_match",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q34: exact statement and options match; official final answer-key option matches. "
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 10,
-        "paper_order": 35
+        "paper_order": 4
       },
       "draft_candidate": {
         "subject": "Physics",
         "legacy_global_question_number": 35
       },
-      "status": "verified_exact_match",
+      "status": "needs_exact_review",
       "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verified against official NTA displayed Q35: exact statement and options match; official final answer-key option matches. "
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 5,
+        "paper_order": 5
+      },
+      "draft_candidate": null,
+      "status": "no_candidate_confirmed",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 6,
+        "paper_order": 6
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 45
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 7,
+        "paper_order": 7
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 44
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 8,
+        "paper_order": 8
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 32
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 9,
+        "paper_order": 9
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 31
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 10,
+        "paper_order": 10
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 50
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [],
+      "note": "Verification status reset: a prior audit incorrectly confused answer-key database ordering with the source PDF's subject order. Recheck exact wording, values, options, diagram if any, and final answer key against the original paper before calling this an exact match."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 11,
-        "paper_order": 36
+        "paper_order": 11
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -721,7 +180,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 12,
-        "paper_order": 37
+        "paper_order": 12
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -741,7 +200,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 13,
-        "paper_order": 38
+        "paper_order": 13
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -761,7 +220,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 14,
-        "paper_order": 39
+        "paper_order": 14
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -781,7 +240,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 15,
-        "paper_order": 40
+        "paper_order": 15
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -801,7 +260,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 16,
-        "paper_order": 41
+        "paper_order": 16
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -821,7 +280,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 17,
-        "paper_order": 42
+        "paper_order": 17
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -841,7 +300,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 18,
-        "paper_order": 43
+        "paper_order": 18
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -861,7 +320,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 19,
-        "paper_order": 44
+        "paper_order": 19
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -881,7 +340,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 20,
-        "paper_order": 45
+        "paper_order": 20
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -901,7 +360,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 21,
-        "paper_order": 46
+        "paper_order": 21
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -921,7 +380,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 22,
-        "paper_order": 47
+        "paper_order": 22
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -941,7 +400,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 23,
-        "paper_order": 48
+        "paper_order": 23
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -961,7 +420,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 24,
-        "paper_order": 49
+        "paper_order": 24
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -981,7 +440,7 @@
       "source": {
         "subject": "Physics",
         "subject_question_number": 25,
-        "paper_order": 50
+        "paper_order": 25
       },
       "draft_candidate": null,
       "status": "source_extraction_unresolved",
@@ -998,7 +457,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 1,
-        "paper_order": 51
+        "paper_order": 26
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1018,7 +477,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 2,
-        "paper_order": 52
+        "paper_order": 27
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1038,7 +497,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 3,
-        "paper_order": 53
+        "paper_order": 28
       },
       "draft_candidate": null,
       "status": "no_candidate_confirmed",
@@ -1055,7 +514,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 4,
-        "paper_order": 54
+        "paper_order": 29
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1075,7 +534,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 5,
-        "paper_order": 55
+        "paper_order": 30
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1095,7 +554,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 6,
-        "paper_order": 56
+        "paper_order": 31
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1115,7 +574,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 7,
-        "paper_order": 57
+        "paper_order": 32
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1135,7 +594,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 8,
-        "paper_order": 58
+        "paper_order": 33
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1155,7 +614,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 9,
-        "paper_order": 59
+        "paper_order": 34
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1175,7 +634,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 10,
-        "paper_order": 60
+        "paper_order": 35
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1195,7 +654,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 11,
-        "paper_order": 61
+        "paper_order": 36
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1215,7 +674,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 12,
-        "paper_order": 62
+        "paper_order": 37
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1235,7 +694,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 13,
-        "paper_order": 63
+        "paper_order": 38
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1255,7 +714,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 14,
-        "paper_order": 64
+        "paper_order": 39
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1275,7 +734,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 15,
-        "paper_order": 65
+        "paper_order": 40
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1295,7 +754,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 16,
-        "paper_order": 66
+        "paper_order": 41
       },
       "draft_candidate": null,
       "status": "no_candidate_confirmed",
@@ -1312,7 +771,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 17,
-        "paper_order": 67
+        "paper_order": 42
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1332,7 +791,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 18,
-        "paper_order": 68
+        "paper_order": 43
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1352,7 +811,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 19,
-        "paper_order": 69
+        "paper_order": 44
       },
       "draft_candidate": null,
       "status": "source_diagram_unresolved",
@@ -1369,7 +828,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 20,
-        "paper_order": 70
+        "paper_order": 45
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1389,7 +848,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 21,
-        "paper_order": 71
+        "paper_order": 46
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1409,7 +868,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 22,
-        "paper_order": 72
+        "paper_order": 47
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1429,7 +888,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 23,
-        "paper_order": 73
+        "paper_order": 48
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1449,7 +908,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 24,
-        "paper_order": 74
+        "paper_order": 49
       },
       "draft_candidate": {
         "subject": "Chemistry",
@@ -1469,7 +928,7 @@
       "source": {
         "subject": "Chemistry",
         "subject_question_number": 25,
-        "paper_order": 75
+        "paper_order": 50
       },
       "draft_candidate": null,
       "status": "source_diagram_unresolved",
@@ -1481,6 +940,494 @@
         "official_final_answer_key"
       ],
       "note": "source structure-dependent hydrocarbon item lacks a confirmed exact candidate"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 1,
+        "paper_order": 51
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 9
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "mean/variance with partial sum 48 and sum of squares 496 appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 2,
+        "paper_order": 52
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 18
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "degree-five polynomial, extrema at ±1 and limit −5 appear aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 3,
+        "paper_order": 53
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 16
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "source vectors are PS=i+j and PQ=−j+k; draft has different vectors"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 4,
+        "paper_order": 54
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 2
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "nested-circle distance problem appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 5,
+        "paper_order": 55
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 12
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "parabola through (1,−1) and vertex-distance condition appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 6,
+        "paper_order": 56
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 23
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "circle of radius 6 and A=(3,0) diameter-locus problem appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 7,
+        "paper_order": 57
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 5
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "eight-term series appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 8,
+        "paper_order": 58
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 3
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "source's second linear equation is 2x+2y+4z=1; draft uses different coefficients/RHS"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 9,
+        "paper_order": 59
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 17
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "integral of sin⁴x+cos⁴x from 0 to 20π appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 10,
+        "paper_order": 60
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 7
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "polygon triangle-count condition appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 11,
+        "paper_order": 61
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 21
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "relation on A×A with divisibility and ≤ appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 12,
+        "paper_order": 62
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 25
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "source greatest-integer expression is [x²−x+2]; draft uses x²−x−1/2"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 13,
+        "paper_order": 63
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 19
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "partial-fraction integral and logarithm condition appear aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 14,
+        "paper_order": 64
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 10
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "perpendicular-line intersection as circle centre and chord-length problem appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 15,
+        "paper_order": 65
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 20
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "source asks for 3x(e²)/e²; draft asks for x(e²)"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 16,
+        "paper_order": 66
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 24
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "curves align, but source asks A from area=A−6ln3 while draft asks a different transformed expression"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 17,
+        "paper_order": 67
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 18,
+        "paper_order": 68
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 19,
+        "paper_order": 69
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 20,
+        "paper_order": 70
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "the available text extraction exposes no verified source statement for this slot"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 21,
+        "paper_order": 71
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 13
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "this is Section-B numerical question 1, not source Mathematics question 17; the expression differs from the draft"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 22,
+        "paper_order": 72
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 6
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "this is Section-B numerical question 2; binomial-coefficient identity appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 23,
+        "paper_order": 73
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 15
+      },
+      "status": "candidate_matches_core_setup",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "this is Section-B numerical question 3; 3D foot/midpoint setup appears aligned"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 24,
+        "paper_order": 74
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 22
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "this is Section-B numerical question 4; source matrix B is [[1,3],[3,9]], unlike the draft"
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 25,
+        "paper_order": 75
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 8
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "this is Section-B numerical question 5; source asks for m+n, while draft asks for probability m/n"
     }
   ],
   "source_pdf": "https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf",
