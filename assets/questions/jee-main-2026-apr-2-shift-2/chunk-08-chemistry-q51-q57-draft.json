@@ -142,7 +142,7 @@
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
-    "image_url": "https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q57.svg",
+    "image_url": "",
     "correct_answer": "A",
     "solution": "The units L mol⁻¹ s⁻¹ identify a second-order reaction. Its rate is proportional to [X]², so quadrupling [X] multiplies the rate by 16 (A true, B true). For a second-order reaction, half-life depends on initial concentration (C false); N₂O₅ decomposition is first order (D false); the logarithmic integrated plot in E is characteristic of first-order kinetics (E false). Therefore A and B only, option A."
   }
