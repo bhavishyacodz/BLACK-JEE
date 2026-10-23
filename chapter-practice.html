@@ -29,7 +29,7 @@ const params=new URLSearchParams(location.search),subject=params.get("subject")|
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let supabase=null,questions=[],sessionQuestions=[],answers={},grades={},index=0,deadline=0,timerHandle=null,finished=false;
 function note(id,message,bad=false){$(id).textContent=message;$(id).style.color=bad?"#ff9ca5":""}
-function typeset(el){if(!el||!window.MathJax?.typesetPromise)return;try{window.MathJax.typesetClear([el]);window.MathJax.typesetPromise([el]).catch(()=>{});}catch(_){}}
+function typeset(el){if(!el)return;const run=()=>{if(!window.MathJax?.typesetPromise)return;try{window.MathJax.typesetClear([el]);window.MathJax.typesetPromise([el]).catch(()=>{});}catch(_){}};if(window.MathJax?.startup?.promise){window.MathJax.startup.promise.then(run).catch(()=>{});return;}if(window.MathJax?.typesetPromise){run();return;}window.addEventListener("load",run,{once:true});}
 function imageHtml(q){const url=String(q.image_url||"").trim();if(!url)return"";return '<img class="qimage" loading="lazy" alt="Question diagram" src="'+esc(url)+'" onerror="this.style.display=\'none\'">'}
 function fmt(q){return [q.year,q.session].filter(Boolean).join(" · ")}
 function shuffle(arr){const out=arr.slice();for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]]}return out}
