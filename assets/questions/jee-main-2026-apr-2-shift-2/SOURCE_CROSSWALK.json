@@ -239,90 +239,100 @@
       "subject": "Physics",
       "subject_question_number": 1,
       "section": "A",
-      "draft_candidate_global_number": 28,
-      "status": "candidate_needs_exact_review",
-      "notes": "concept candidate; exact values and wording need verification"
+      "draft_candidate_global_number": 26,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q26: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q26; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121151 through 691121160 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 27,
       "subject": "Physics",
       "subject_question_number": 2,
       "section": "A",
-      "draft_candidate_global_number": 37,
-      "status": "candidate_needs_exact_review",
-      "notes": "similar field/force concept; statement differs"
+      "draft_candidate_global_number": 27,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q27: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q27; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121152 through 691121161 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 28,
       "subject": "Physics",
       "subject_question_number": 3,
       "section": "A",
-      "draft_candidate_global_number": 27,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source cylinder radius/setup differs"
+      "draft_candidate_global_number": 28,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q28: wording and options checked; official final answer-key option checked. Custom SVG compared visually with the source diagram. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q28; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121153 through 691121162 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 29,
       "subject": "Physics",
       "subject_question_number": 4,
       "section": "A",
-      "draft_candidate_global_number": 35,
-      "status": "candidate_needs_exact_review",
-      "notes": "viscosity concept candidate; verify units/options"
+      "draft_candidate_global_number": 29,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q29: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q29; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121154 through 691121163 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 30,
       "subject": "Physics",
       "subject_question_number": 5,
       "section": "A",
-      "draft_candidate_global_number": null,
-      "status": "unmatched",
-      "notes": "no exact candidate confirmed; photoelectric values must match source"
+      "draft_candidate_global_number": 30,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q30: wording and options checked; official final answer-key option checked. Custom SVG compared visually with the source diagram. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q30; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121155 through 691121164 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 31,
       "subject": "Physics",
       "subject_question_number": 6,
       "section": "A",
-      "draft_candidate_global_number": 45,
-      "status": "candidate_needs_exact_review",
-      "notes": "SHM candidate; phase and options need verification"
+      "draft_candidate_global_number": 31,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q31: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q31; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121156 through 691121165 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 32,
       "subject": "Physics",
       "subject_question_number": 7,
       "section": "A",
-      "draft_candidate_global_number": 44,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: proton mass and answer options differ"
+      "draft_candidate_global_number": 32,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q32: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q32; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121157 through 691121166 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 33,
       "subject": "Physics",
       "subject_question_number": 8,
       "section": "A",
-      "draft_candidate_global_number": 32,
-      "status": "candidate_needs_exact_review",
-      "notes": "screw-gauge candidate; reading and zero-error details need verification"
+      "draft_candidate_global_number": 33,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q33: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q33; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121158 through 691121167 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 34,
       "subject": "Physics",
       "subject_question_number": 9,
       "section": "A",
-      "draft_candidate_global_number": 31,
-      "status": "candidate_needs_exact_review",
-      "notes": "gravity concept candidate; verify all givens"
+      "draft_candidate_global_number": 34,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q34: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q34; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121159 through 691121168 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 35,
       "subject": "Physics",
       "subject_question_number": 10,
       "section": "A",
-      "draft_candidate_global_number": 50,
-      "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: source axis separation is 9 m; draft says 3 m"
+      "draft_candidate_global_number": 35,
+      "status": "verified",
+      "notes": "Exact match to official NTA displayed Q35: wording and options checked; official final answer-key option checked. Answer key reference: official NTA final key, 2 April 2026 Shift 2, page 2.",
+      "verification_evidence": "Official NTA question paper PDF, displayed Q35; official NTA Session-II final answer key, 2 April 2026 Shift 2, page 2 (question IDs 691121160 through 691121169 are in the Physics block; see the corresponding displayed-question row). Exact text/options and the keyed option were compared."
     },
     {
       "paper_order": 36,
