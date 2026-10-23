@@ -170,24 +170,37 @@ input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
   const icon = on => on
     ? '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M15 9a5 5 0 0 1 0 6M17.5 6.5a8.5 8.5 0 0 1 0 11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>'
     : '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 5 6 9H3v6h3l3 0" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m16 9 5 6m0-6-5 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>';
-  function playTick(preview=false) {
+  function playSound(kind="tap", preview=false) {
     if (!soundOn && !preview) return;
     try {
       const Ctx = window.AudioContext || window.webkitAudioContext;
       if (!Ctx) return;
       if (!audioCtx) audioCtx = new Ctx();
       if (audioCtx.state === "suspended") audioCtx.resume().catch(()=>{});
-      const now = audioCtx.currentTime;
-      const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
-      osc.type = "sine";
-      osc.frequency.setValueAtTime(preview ? 620 : 470, now);
-      osc.frequency.exponentialRampToValueAtTime(preview ? 780 : 540, now + .025);
-      gain.gain.setValueAtTime(.0001, now);
-      gain.gain.exponentialRampToValueAtTime(preview ? .055 : .032, now + .008);
-      gain.gain.exponentialRampToValueAtTime(.0001, now + .075);
-      osc.connect(gain); gain.connect(audioCtx.destination);
-      osc.start(now); osc.stop(now + .08);
+      const patterns = {
+        tap:      {notes:[440], gap:.00, duration:.055, volume:.018, wave:"sine"},
+        nav:      {notes:[523,659], gap:.045, duration:.075, volume:.022, wave:"sine"},
+        answer:   {notes:[660,523], gap:.035, duration:.065, volume:.023, wave:"sine"},
+        review:   {notes:[392,494], gap:.055, duration:.065, volume:.018, wave:"triangle"},
+        submit:   {notes:[523,659,784], gap:.055, duration:.09, volume:.025, wave:"sine"},
+        success:  {notes:[523,659,784], gap:.065, duration:.105, volume:.028, wave:"sine"},
+        gentle:   {notes:[349,311], gap:.07, duration:.09, volume:.018, wave:"sine"},
+        preview:  {notes:[587,740], gap:.055, duration:.085, volume:.026, wave:"sine"}
+      };
+      const p = patterns[preview ? "preview" : kind] || patterns.tap;
+      p.notes.forEach((frequency, index) => {
+        const start = audioCtx.currentTime + index * p.gap;
+        const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+        osc.type = p.wave;
+        osc.frequency.setValueAtTime(frequency, start);
+        gain.gain.setValueAtTime(.0001, start);
+        gain.gain.exponentialRampToValueAtTime(p.volume, start + .008);
+        gain.gain.exponentialRampToValueAtTime(.0001, start + p.duration);
+        osc.connect(gain); gain.connect(audioCtx.destination);
+        osc.start(start); osc.stop(start + p.duration + .005);
+      });
     } catch (_) {}
+  } catch (_) {}
   }
   function updateToggle(btn) {
     btn.setAttribute("aria-pressed", String(soundOn));
@@ -204,18 +217,30 @@ input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
       soundOn = !soundOn;
       try { localStorage.setItem(storageKey, soundOn ? "on" : "off"); } catch (_) {}
       updateToggle(btn);
-      if (soundOn) playTick(true);
+      if (soundOn) playSound("preview", true);
       if (navigator.vibrate) { try { navigator.vibrate(8); } catch (_) {} }
     });
     document.body.appendChild(btn);
   }
+  let lastFeedbackAt = 0;
   document.addEventListener("click", event => {
     const target = event.target instanceof Element ? event.target : null;
     if (!target) return;
     const control = target.closest('button:not(:disabled),a[href],[role="button"],input[type="radio"],input[type="checkbox"],select,label.option,label.preview,.option,.launch-tile');
     if (!control || control.id === "blackjee-sound-toggle" || control.closest("#blackjee-sound-toggle")) return;
-    if (navigator.vibrate) { try { navigator.vibrate(8); } catch (_) {} }
-    playTick(false);
+    const now = performance.now();
+    if (now - lastFeedbackAt < 65) return;
+    lastFeedbackAt = now;
+    const text = (control.innerText || control.getAttribute("aria-label") || control.title || "").trim().toLowerCase();
+    const isAnswer = !!control.closest("label.option,.option,[data-option],.answer-option") || /^(option\s*)?[abcd]([.)]|$)/i.test(text);
+    const kind = isAnswer ? "answer"
+      : /review|mark for later|flag/.test(text) ? "review"
+      : /submit|finish test|final submit|confirm answer/.test(text) ? "submit"
+      : /correct|well done|great job/.test(text) ? "success"
+      : /incorrect|wrong answer|try again/.test(text) ? "gentle"
+      : control.matches("a[href]") ? "nav" : "tap";
+    if (navigator.vibrate) { try { navigator.vibrate(kind === "submit" ? [8,25,8] : kind === "answer" ? 6 : 8); } catch (_) {} }
+    playSound(kind);
   }, true);
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", setup, {once:true});
   else setup();
