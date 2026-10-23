@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "15 Mathematics questions have been added from user-supplied Batch 1 (slots 1–15). Several question/option strings are OCR-corrupted. Answers and solutions were not supplied. These are staging drafts only; not source-verified, not imported into Supabase, and not published.",
+  "important_note": "25 Mathematics questions (subject slots 1–25) and 5 Physics questions (paper questions 26–30; Physics subject slots 1–5) have been added from user-supplied batches. OCR-corrupted items are marked needs_review. Answers and solutions were not supplied. All entries remain staging drafts, source verification and math-render checks are false, and nothing has been imported into Supabase or published.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -29,14 +29,19 @@
       "slot_id": "physics-01",
       "subject": "Physics",
       "subject_question_number": 1,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "In a screw gauge, when the circular scale is given five complete rotations it moves linearly by 2.5 mm. If the circular scale has 100 divisions, the least count of the screw gauge is ___ mm.",
+      "question_type": "MCQ",
+      "options": [
+        "1\\times10^{-2}",
+        "1\\times10^{-3}",
+        "5\\times10^{-2}",
+        "5\\times10^{-3}"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -49,21 +54,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-026",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 9,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 26
+      },
+      "reviewer_notes": [
+        "OCR options C and D contained a duplicated leading '5'; options have been normalized for display, pending source verification."
+      ]
     },
     {
       "slot_id": "physics-02",
       "subject": "Physics",
       "subject_question_number": 2,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The increase in pressure required to decrease the volume (\\(\\Delta V\\)) of water is \\(6.3\\times10^7\\,\\mathrm{N/m^2}\\). The percentage decrease in volume is (bulk modulus of water \\(=2.1\\times10^9\\,\\mathrm{N/m^2}\\)):",
+      "question_type": "MCQ",
+      "options": [
+        "2%",
+        "3%",
+        "6%",
+        "4%"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -76,21 +96,34 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-027",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 9,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 27
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-03",
       "subject": "Physics",
       "subject_question_number": 3,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The time taken by a block of mass m to slide from the highest point to the lowest point on a rough inclined plane is 50% more than the time taken by the same block on an identical smooth inclined plane. Both planes are at 45° to the horizontal. The coefficient of kinetic friction is:",
+      "question_type": "MCQ",
+      "options": [
+        "3/4",
+        "2/3",
+        "5/9",
+        "4/9"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -103,21 +136,34 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-028",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 10,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 28
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-04",
       "subject": "Physics",
       "subject_question_number": 4,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Two nuclei of mass number 3 combine with another nucleus of mass number 4 to yield a nucleus of mass number 10. If the binding energies per nucleon for mass numbers 3, 4 and 10 are 5.6 MeV, 7.4 MeV and 6.1 MeV, respectively, then in the process \\(\\Delta Mc^2=\\) ___ MeV.",
+      "question_type": "MCQ",
+      "options": [
+        "6.9",
+        "7.9",
+        "2.2",
+        "4.3"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -130,21 +176,34 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-029",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 10,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 29
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "physics-05",
       "subject": "Physics",
       "subject_question_number": 5,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "A solid sphere of mass \\(M\\) and radius \\(R\\) is divided into two unequal parts. The smaller part, having mass \\(M/8\\), is converted into a sphere of radius \\(r\\), and the larger part is converted into a circular disc of thickness \\(t\\) and radius \\(2R\\). If \\(I_1\\) is the moment of inertia of the sphere about an axis through its centre and \\(I_2\\) is the moment of inertia of the disc about its diameter, the ratio \\(I_2/I_1\\) is:",
+      "question_type": "MCQ",
+      "options": [
+        "35",
+        "70",
+        "140",
+        "210"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -157,8 +216,18 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-PHY-030",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 10,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 30
+      },
+      "reviewer_notes": [
+        "Question wording and mass/density assumptions should be checked against the source paper before answer verification."
+      ]
     },
     {
       "slot_id": "physics-06",
@@ -1984,14 +2053,19 @@
       "slot_id": "mathematics-16",
       "subject": "Mathematics",
       "subject_question_number": 16,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "If \\(y=\\tan^{-1}\\left(\\frac{3\\cos x-4\\sin x}{4\\cos x+3\\sin x}\\right)+2\\tan^{-1}\\left(\\frac{x}{1+\\sqrt{1-x^{2}}}\\right)\\), then \\(\\frac{dy}{dx}\\) at \\(x=\\frac{\\sqrt3}{2}\\) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "3",
+        "-1",
+        "1",
+        "2"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2004,21 +2078,34 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-016",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 6,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 16
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-17",
       "subject": "Mathematics",
       "subject_question_number": 17,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let \\(f\\) be a real polynomial of degree \\(n\\) such that \\(f(x)=f'(x)f''(x)\\) for all \\(x\\in\\mathbb R\\). If \\(f(0)=0\\), then \\(36\\left(f'(2)+f''(2)+\\int_0^2 f(x)\\,dx\\right)\\) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "42",
+        "46",
+        "56",
+        "66"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2031,21 +2118,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-017",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 6,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 17
+      },
+      "reviewer_notes": [
+        "OCR typo 'ff(0)=0' interpreted as 'If f(0)=0'; verify against source PDF."
+      ]
     },
     {
       "slot_id": "mathematics-18",
       "subject": "Mathematics",
       "subject_question_number": 18,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The area of the region \\(\\{(x,y): y\\le \\pi-|x|,\\ y\\le x\\sin x,\\ y\\ge0\\}\\) is:",
+      "question_type": "MCQ",
+      "options": [
+        "1+\\frac{\\pi^2}{8}",
+        "2+\\frac{\\pi^2}{4}",
+        "\\frac{\\pi^2}{8}-1",
+        "4+\\frac{\\pi^2}{2}"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2058,21 +2160,34 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-018",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 6,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 18
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-19",
       "subject": "Mathematics",
       "subject_question_number": 19,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let \\([\\,\\cdot\\,]\\) denote the greatest integer function. If \\(\\int_{-2}^{2} (|\\sin x|+[x\\sin x])\\,dx=2(3-\\cos 2)+\\beta\\), then \\(3\\sin(\\beta/2)\\) equals:",
+      "question_type": "MCQ",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2085,21 +2200,36 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-019",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 7,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 19
+      },
+      "reviewer_notes": [
+        "OCR text was interleaved around the integral equation; reconstructed punctuation and variable placement need source verification."
+      ]
     },
     {
       "slot_id": "mathematics-20",
       "subject": "Mathematics",
       "subject_question_number": 20,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "Let \\(y=y(x)\\) be the solution of the differential equation \\(\\frac{dy}{dx}=(1+x+x^2)(1-y+y^2)\\), \\(y(0)=\\frac12\\). Then \\(2y(1)-1\\) is equal to:",
+      "question_type": "MCQ",
+      "options": [
+        "\\sqrt3\\tan(\\frac{11\\sqrt3}{6})",
+        "\\frac{\\sqrt3}{2}\\tan(\\frac{11\\sqrt3}{12})",
+        "\\sqrt3\\tan(\\frac{11\\sqrt3}{12})",
+        "\\frac{\\sqrt3}{2}\\tan(\\frac{11\\sqrt3}{6})"
+      ],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2112,21 +2242,29 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-020",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 7,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 20
+      },
       "reviewer_notes": []
     },
     {
       "slot_id": "mathematics-21",
       "subject": "Mathematics",
       "subject_question_number": 21,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "A coin is tossed 8 times. If the probability that exactly 4 heads appear in the first six tosses and exactly 3 heads appear in the last five tosses is p, then 96p is equal to:",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2139,21 +2277,31 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-021",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 7,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 21
+      },
+      "reviewer_notes": [
+        "Numerical-type question; answer not supplied."
+      ]
     },
     {
       "slot_id": "mathematics-22",
       "subject": "Mathematics",
       "subject_question_number": 22,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Consider the parabola \\(P:y^2=4kx\\) and the ellipse \\(E:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\). Let the line segment joining the points of intersection of \\(P\\) and \\(E\\) be their latus rectums. If the eccentricity of \\(E\\) is \\(e\\), then \\(e^2+2\\sqrt2\\) is equal to:",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2166,21 +2314,31 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-022",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 8,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 22
+      },
+      "reviewer_notes": [
+        "OCR wording around 'line segment ... be their latus rectums' is unclear; do not treat this reconstructed sentence as source-verified."
+      ]
     },
     {
       "slot_id": "mathematics-23",
       "subject": "Mathematics",
       "subject_question_number": 23,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "If \\(A=\\frac{\\sin 3^\\circ}{\\cos 9^\\circ}+\\frac{\\sin 9^\\circ}{\\cos 27^\\circ}+\\frac{\\sin 27^\\circ}{\\cos 81^\\circ}\\) and \\(B=\\tan81^\\circ-\\tan3^\\circ\\), then \\(\\frac BA\\) is equal to:",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2193,21 +2351,31 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-023",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 8,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 23
+      },
+      "reviewer_notes": [
+        "OCR prefix 'f A=' interpreted as 'If A='; verify exact expression against source."
+      ]
     },
     {
       "slot_id": "mathematics-24",
       "subject": "Mathematics",
       "subject_question_number": 24,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "needs_review",
+      "question_text": "Let \\(\\vec a_k=(\\tan\\theta_k)\\hat i+\\hat j\\) and \\(\\vec b_k=\\hat i-(\\cot\\theta_k)\\hat j\\), where \\(\\theta_k=\\frac{2^{k-1}\\pi}{2^n+1}\\), \\(n\\in\\mathbb N,\\ n>5\\). Then the value of \\(\\frac{\\sum_{k=1}^{n}|\\vec a_k|^2}{\\sum_{k=1}^{n}|\\vec b_k|^2}\\) is equal to:",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2220,21 +2388,31 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
-      "reviewer_notes": []
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-024",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 8,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "needs_review",
+        "source_paper_question_number": 24
+      },
+      "reviewer_notes": [
+        "OCR formula was structurally corrupted: numerator prefix missing and vector b used '\\hat t' instead of likely '\\hat i'. Formula reconstructed for readability; source verification required."
+      ]
     },
     {
       "slot_id": "mathematics-25",
       "subject": "Mathematics",
       "subject_question_number": 25,
-      "status": "awaiting_source",
-      "question_text": null,
-      "question_type": null,
-      "options": null,
+      "status": "content_added",
+      "question_text": "The number of points at which \\(f(x)=\\max\\{6x,\\,2+3x^2\\}+|x-1|\\cos|x^2-\\frac14|\\), \\(x\\in(-\\pi,\\pi)\\), is not differentiable, is:",
+      "question_type": "numerical",
+      "options": [],
       "correct_answer": null,
       "solution": null,
       "diagram": {
-        "required": null,
+        "required": false,
         "asset_path": null,
         "alt_text": null,
         "source_verified": false,
@@ -2247,7 +2425,15 @@
         "math_render_checked": false,
         "mobile_render_checked": false
       },
-      "source_reference": null,
+      "source_reference": {
+        "question_id": "BJ-JM-20260404-S1-MAT-025",
+        "paper_id": "BJ-JM-20260404-S1",
+        "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
+        "source_page": 9,
+        "answer_source": "NOT_PROVIDED",
+        "supplied_verification_status": "content_added",
+        "source_paper_question_number": 25
+      },
       "reviewer_notes": []
     }
   ]
