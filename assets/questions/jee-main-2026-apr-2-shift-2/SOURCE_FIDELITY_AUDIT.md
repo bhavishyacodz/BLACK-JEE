@@ -158,3 +158,12 @@ The source-paper comparison supports these candidate links, but “candidate” 
 - Source Section-B Q5 → draft Math Q8 (coin probability).
 
 These mappings establish where to inspect first; they are not permission to change question numbers without fixing each mismatch. Keep the batch unpublished until each source record is reconciled with the exact source image and final answer key.
+
+
+## Asset-path integrity check
+
+A repository-directory check confirmed that all 10 image references currently present in the staged JSON resolve to files in the shift asset folder: q28.svg, q30.svg, q41.svg, q42.svg, q50.svg, q63.svg, q66.svg, q67.svg, q68.svg and q75.svg. This only verifies file existence, not correctness against the original question diagrams. Several assets may be attached to a draft question whose source numbering/content is wrong; visually compare each asset after the question-to-source mapping is corrected.
+
+## Automated gate result
+
+The structural audit run for commit `77ba2f35c8a7258bdd9b495b5c962a337d53bea4` failed with the three expected `SUBJECT_COVERAGE` errors: Chemistry was numbered 51–75 instead of 26–50, Mathematics 1–25 instead of 51–75, and Physics 26–50 instead of 1–25. This is an intentional publication blocker: the gate is detecting the source-order mismatch rather than passing an incorrectly arranged batch. Do not relabel the existing records en masse; reconcile their content first.
