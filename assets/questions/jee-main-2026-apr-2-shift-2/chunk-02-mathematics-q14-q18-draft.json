@@ -1,0 +1,107 @@
+[
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Vectors",
+    "source_question_number": 14,
+    "question_text": "Let vectors a = −i + j + 3k and b = i + 3j + k. For some λ, μ ∈ R, let c = λa + μb. If c·(3i − 6j + 2k) = 10 and c·(i + j + k) = −2, then |c|² is:",
+    "question_type": "MCQ",
+    "options": [
+      "8",
+      "12",
+      "14",
+      "15"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "B",
+    "solution": "The dot-product conditions give −3λ−13μ=10 and 3λ+5μ=−2. Solving gives λ=1, μ=−1, so c=a−b=(−2,−2,2) and |c|²=12."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Three-Dimensional Geometry",
+    "source_question_number": 15,
+    "question_text": "Let A be the foot of the perpendicular drawn from P(a,b,0) on the line (x−1)/2 = (y−2)/1 = (z−α)/3. If the midpoint of PA is (0, 3/4, −1/4), then a²+b²+α² equals:",
+    "question_type": "MCQ",
+    "options": [
+      "1",
+      "2",
+      "6",
+      "9"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "A",
+    "solution": "The midpoint gives A=(−a, 3/2−b, −1/2). Since A lies on the line and PA is perpendicular to direction (2,1,3), the resulting equations give a=b=0 and α=1. Thus a²+b²+α²=1."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Trigonometry",
+    "source_question_number": 16,
+    "question_text": "Two adjacent sides of a parallelogram PQRS are PQ = j + k and PS = i − j. If side PS is rotated about P by an acute angle α in the plane of the parallelogram so that it becomes perpendicular to side PQ, then sin²(5α/2) − sin²(α/2) equals:",
+    "question_type": "MCQ",
+    "options": [
+      "1/2",
+      "√3/2",
+      "√3/4",
+      "2√3/5"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "B",
+    "solution": "The vectors have equal length √2 and dot product −1, so the angle between them is 120°. The acute rotation needed to make them perpendicular is α=30°. Therefore sin²75°−sin²15°=cos30°=√3/2."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Definite Integration",
+    "source_question_number": 17,
+    "question_text": "The value of ∫₀²⁰π (sin⁴x + cos⁴x) dx is:",
+    "question_type": "MCQ",
+    "options": [
+      "15π/2",
+      "25π",
+      "15π",
+      "25π/2"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "C",
+    "solution": "sin⁴x+cos⁴x = 1−(1/2)sin²2x, whose average over each full period is 3/4. Over 0 to 20π the integral is (3/4)(20π)=15π."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Polynomials",
+    "source_question_number": 18,
+    "question_text": "Let f(x) be a polynomial of degree 5, with extrema at x=1 and x=−1. If lim(x→0) f(x)/x³ = −5, then f(2)−f(−2) equals:",
+    "question_type": "MCQ",
+    "options": [
+      "0",
+      "50",
+      "92",
+      "112"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "D",
+    "solution": "The limit forces f(x)=ax⁵+bx⁴−5x³. Since f′(1)=f′(−1)=0, b=0 and 5a−15=0, so a=3. Thus f(x)=3x⁵−5x³ and f(2)−f(−2)=112."
+  }
+]
