@@ -142,3 +142,8 @@ This log records content-level findings that structural validation alone cannot 
 - **Q74:** Mn²⁺, Cu²⁺ and Gd³⁺ are paramagnetic; count = 3.
 - **Q75:** Monobrominated toluidine C₇H₈BrN gives about 1.01 g AgBr per 1.0 g product; nearest integer = 1, if q75.svg confirms a single bromination.
 - **Boundary:** All results above are draft-level calculations, not certification of official wording, answer keys, or diagram fidelity. Q63, Q66–Q70 and Q75 need source-specific checks where noted.
+
+
+## Critical source-fidelity gate — 2 April 2026 Shift 2
+
+**HOLD publication.** Direct comparison with the accessible text-rendered paper exposed a fundamental mismatch: the source paper orders Physics Q1–25, Chemistry Q26–50, and Mathematics Q51–75, while the staged batch currently labels Mathematics Q1–25, Physics Q26–50, and Chemistry Q51–75. Several records also differ from source wording/values, so a simple reorder is not safe. See `SOURCE_FIDELITY_AUDIT.md` for concrete examples including Physics Q7/Q10 and Chemistry Q3/Q7/Q9/Q11/Q17/Q24. The batch audit now enforces the source subject ranges and should block the current draft until the records are reconciled. No publication or live database write should occur until all 75 questions are matched one-to-one with source content, diagrams and final keys.
