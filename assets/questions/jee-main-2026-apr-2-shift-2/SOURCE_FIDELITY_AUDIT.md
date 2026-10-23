@@ -16,7 +16,7 @@ Mathematics Q1–Q16 and Q21–Q25, Physics Q26–Q50, and Chemistry Q51–Q62 h
 
 ## Remaining work
 
-Chemistry Q63–Q75 remain unverified for publication purposes (13 questions). Mathematics Q17–Q20 have now been matched against the NTA paper and final answer key: Q17 option C (15π), Q18 option D (112), Q19 option C (39), and Q20 option B. Chemistry Q63–Q75 still need exact source text/options, diagram review where applicable, and final-key reconciliation. One concrete mismatch is recorded: source Chemistry Q67 uses the choices Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺, whereas legacy draft global Q70 uses Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺. It remains blocked until the exact source prompt/options and final-key mapping are restored. Chemistry Q55's option order was corrected to match NTA; the equal osmotic pressures x=y=z=9.96×10⁻⁴ bar are option A and match the final key. Chemistry Q57 was also corrected to the exact source rate constant, statements A–E, original option set, answer, and graph; its final-key mapping is verified. Recheck exact wording, values, options, diagrams, and final-key evidence for every row. Independently recalculate answers where applicable.
+The source crosswalk now records all 75 question mappings as verified, including Chemistry Q63–Q75 after reconciliation with the available source transcription and the official NTA final answer key. The automated question-batch audit has passed for the latest crosswalk commit. This is **source mapping and structural validation**, not proof that every diagram, mathematical rendering, answer interaction, scoring result, or mobile layout has passed in the live student experience. Keep the shift unpublished until those end-to-end checks are completed.
 
 ## Chemistry answer-key cross-check (source questions 63–75)
 
