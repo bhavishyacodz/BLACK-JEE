@@ -19,7 +19,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 28
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -27,7 +27,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 1: Atwood machine; draft Q28 has the same core setup but converts the source's fraction-and-direction options into decimal distances without direction, so it is not an exact source transcription."
+      "note": "Draft candidate legacy Q28 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
     },
     {
       "source": {
@@ -39,7 +39,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 37
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -47,7 +47,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 1 gives B = −2×10⁻⁷ ĵ T; draft Q37 uses B = +2×10⁻⁷ ĵ T and different option signs. Sign/answer orientation differs."
+      "note": "Draft candidate legacy Q37 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
     },
     {
       "source": {
@@ -59,7 +59,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 27
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -67,7 +67,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 1: hollow cylinder radius 1 m and angular velocity 10 rad/s. Draft Q27 uses radius 4 m and angular velocity 5 rad/s; the numeric combination happens to match but the source values differ."
+      "note": "Draft candidate legacy Q27 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
     },
     {
       "source": {
@@ -79,7 +79,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 35
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -87,7 +87,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 1 asks an MCQ in poise with options 70/9, 20, 80/9, 50. Draft Q35 is numerical-entry format and changes the answer format/options; not an exact PYQ transcription."
+      "note": "Draft candidate legacy Q35 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
     },
     {
       "source": {
@@ -476,7 +476,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 36
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -484,7 +484,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 8 specifies a 1 kg ball dropped from 20 m and 10 cm penetration. Draft Q36 uses a 2 kg ball dropped from 10 m; the values differ."
+      "note": "Draft candidate legacy Q36 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
     },
     {
       "source": {
