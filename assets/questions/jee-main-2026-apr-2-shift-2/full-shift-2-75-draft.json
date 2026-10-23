@@ -1399,20 +1399,20 @@
     "subject": "Chemistry",
     "chapter": "d- and f-Block Elements",
     "source_question_number": 70,
-    "question_text": "Among Fe²⁺, Fe³⁺, Cr²⁺ and Zn²⁺, the ion that shows a positive borax bead test and has the highest ionisation enthalpy is:",
+    "question_text": "Among Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺, which ion gives a positive borax-bead test and has the largest ionization energy?",
     "question_type": "MCQ",
     "options": [
-      "Fe²⁺",
       "Zn²⁺",
-      "Cr²⁺",
-      "Fe³⁺"
+      "Fe³⁺",
+      "Fe²⁺",
+      "Co²⁺"
     ],
     "marks_correct": 4,
     "marks_wrong": -1,
     "is_published": false,
     "image_url": "",
-    "correct_answer": "D",
-    "solution": "Zn²⁺ gives a colourless borax bead, so it does not satisfy the positive-test condition. Fe³⁺ gives a characteristic coloured bead and its stable 3d⁵ configuration makes removal of another electron especially difficult among the remaining listed ions. Option D."
+    "correct_answer": "B",
+    "solution": "Zn²⁺ gives a colourless borax bead, so it fails the positive-test condition. The transition-metal ions can give coloured beads; Fe³⁺ has a particularly stable 3d⁵ configuration, making further electron removal energetically difficult. The candidate answer is Fe³⁺ (option B), pending official answer-key verification."
   },
   {
     "year": 2026,
@@ -1468,7 +1468,7 @@
     "subject": "Chemistry",
     "chapter": "d- and f-Block Elements",
     "source_question_number": 74,
-    "question_text": "The number of paramagnetic ions among the following d- and f-block metal ions is ____: Mn²⁺, Cu²⁺, Zn²⁺, Yb²⁺, Sc³⁺, La³⁺, Gd³⁺, Lu³⁺, Ti⁴⁺, Ce⁴⁺. Atomic numbers: Mn = 25, Cu = 29, Zn = 30, Yb = 70, Sc = 21, La = 57, Gd = 64, Lu = 71, Ti = 22, Ce = 58.",
+    "question_text": "The number of paramagnetic ions among the following is ____: Lu³⁺, Yb²⁺, Gd²⁺, Ce⁴⁺, La³⁺, Zn²⁺, Cu²⁺, Mn²⁺, Sc³⁺ and Ti⁴⁺. Atomic numbers: Lu = 71, Yb = 70, Gd = 64, Ce = 58, La = 57, Zn = 30, Cu = 29, Mn = 25, Sc = 21 and Ti = 22.",
     "question_type": "Numerical",
     "options": [],
     "marks_correct": 4,
@@ -1476,7 +1476,7 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "3",
-    "solution": "Mn²⁺ is 3d⁵, Cu²⁺ is 3d⁹, and Gd³⁺ is 4f⁷; each has unpaired electrons and is paramagnetic. Zn²⁺ (3d¹⁰), Yb²⁺ (4f¹⁴), Sc³⁺ (d⁰), La³⁺ (f⁰), Lu³⁺ (4f¹⁴), Ti⁴⁺ (d⁰), and Ce⁴⁺ (f⁰) are diamagnetic. Count = 3."
+    "solution": "Lu³⁺ (4f¹⁴), Yb²⁺ (4f¹⁴), Ce⁴⁺ (4f⁰), La³⁺ (f⁰), Zn²⁺ (3d¹⁰), Sc³⁺ (d⁰), and Ti⁴⁺ (d⁰) are diamagnetic. Gd²⁺, Cu²⁺ and Mn²⁺ have unpaired electrons and are paramagnetic, giving a total of 3. Verify the Gd²⁺ configuration and answer against the official key before publication."
   },
   {
     "year": 2026,
