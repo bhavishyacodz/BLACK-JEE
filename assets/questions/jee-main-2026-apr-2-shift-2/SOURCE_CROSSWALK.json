@@ -125,8 +125,8 @@
       "subject_question_number": 11,
       "section": "A",
       "draft_candidate_global_number": 33,
-      "status": "confirmed_mismatch",
-      "notes": "Source transcription page 2 asks for numerical α. Draft Q33 changes it to MCQ with four decimal options; the source response format is not preserved.",
+      "status": "needs_exact_review",
+      "notes": "Legacy Q33 corrected to preserve source numerical-response format: asks for α in W=απ×10⁻⁴ J. Surface-energy calculation gives α=1.92; official key confirmation remains pending.",
       "verification_evidence": "",
       "publishable": false
     },
