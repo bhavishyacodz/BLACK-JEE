@@ -78,3 +78,8 @@ Legacy Q33 now preserves the source's numerical-response format instead of prese
 - **Chemistry Q17 / legacy Q70:** corrected the options to Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Candidate answer is Fe³⁺ (option B), pending official key verification.
 
 Both crosswalk rows moved to `needs_exact_review`. Publication remains HOLD.
+
+
+## Diagram correction — Physics Q23 / legacy Q42 (2026-10-23)
+
+The previous `q42.svg` incorrectly drew the inductors as shunt branches rather than as series elements with switch bypasses. It has been redrawn as one series RLC loop containing C, R, L₂ and L₁, with S₂ across L₂ and S₁ across L₁. The stem was corrected to request numerical `3L₂ − L₁` (not `3L₁ − L₂`), and the MCQ options were removed to preserve the numerical-response format. The circuit relations give the candidate value `2/9 H`. This remains `needs_exact_review`: original NTA figure and final key must still be independently checked. Do not treat the redraw as source-certified.
