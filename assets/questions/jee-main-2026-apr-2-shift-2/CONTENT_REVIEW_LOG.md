@@ -229,3 +229,8 @@ This log records content-level findings that structural validation alone cannot 
 - Physics Q5 and Q25 are unmapped; do not substitute unrelated records. Physics Q10, Q19 and Q24 remain confirmed content mismatches.
 - The runtime order map now has 67 mapped stems; eight source questions lack candidate mappings. Full-shift start remains blocked until all mappings and content are reviewed.
 - Current crosswalk statuses: 11 confirmed mismatches, 57 needing exact review, 7 source-extraction unresolved. Paper remains on HOLD.
+
+
+## Correction pass — Physics Q24 / legacy Q36 (2026-10-23)
+
+Corrected the candidate question to the readable source transcription: 1 kg ball released from 20 m above sand, 10 cm penetration, options 1000 N / 1980 N / 2010 N / 2020 N. Work–energy gives the candidate answer 2010 N (option C). Updated the draft record, source crosswalk, paper-order audit view, and embedded source-order key together. Status is `needs_exact_review`, not verified; official final NTA answer-key confirmation remains outstanding. Publication remains HOLD.
