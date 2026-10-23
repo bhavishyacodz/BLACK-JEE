@@ -41,7 +41,8 @@ for index, item in enumerate(crops, 1):
     if qid not in questions_by_id:
         fail(f"crop #{index}: unknown question_id {qid!r} in shift-manifest.json")
     target_q = questions_by_id[qid]
-    source_number = int(qid.rsplit("-", 1)[-1])\n    target_key = (target_q.get("subject"), source_number)
+    source_number = int(qid.rsplit("-", 1)[-1])
+    target_key = (target_q.get("subject"), source_number)
     if target_key not in manifest_by_subject_number:
         fail(f"crop #{index}: no matching question in manifest.json for {target_key!r}")
     source = item.get("source_screenshot", "")
@@ -94,7 +95,7 @@ for item, source_path, qid, filename, (x, y, w, h) in validated:
     q.setdefault("visual_assets", []).append(visual)
     if item.get("kind") in ("diagram", "reaction", "matching", "question_visual") and not (q.get("diagram") or {}).get("asset_path"):
         q["diagram"] = {"required": True, "asset_path": rel, "alt_text": visual["alt_text"], "source_verified": False, "render_verified": False}
-    qm = manifest_by_subject_number[(q.get("subject"), int(q.get("subject_question_number", -1)))]
+    qm = manifest_by_subject_number[target_key]
     qm["visual_required"] = True
     qm.setdefault("assets", []).append(rel)
     # Keep all existing unresolved issues until a human confirms they are resolved.
