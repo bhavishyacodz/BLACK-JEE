@@ -719,9 +719,9 @@
       "subject_question_number": 15,
       "section": "A",
       "draft_candidate_global_number": 20,
-      "status": "confirmed_mismatch",
-      "notes": "Source Mathematics Q15 asks for 3x(e²)/e² from the differential equation; legacy Q20 asks directly for x(e²). The requested output differs.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Corrected the requested output to 3x(e²)/e² and transformed the legacy options consistently from the solved x(e²) values. The derived answer is 2; original printed options and official key still need direct source-page confirmation.",
+      "verification_evidence": "Corrected the requested expression and independently derived the numerical result; exact source-page option check and official NTA key remain pending.",
       "publishable": false
     },
     {
@@ -730,9 +730,9 @@
       "subject_question_number": 16,
       "section": "A",
       "draft_candidate_global_number": 24,
-      "status": "confirmed_mismatch",
-      "notes": "Source Mathematics Q16 asks A where the area is expressed as A−6 ln 3; legacy Q24 asks for 3(A+6 ln 3). The requested expression differs.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Corrected the requested output to the source form where the area is A − 6 ln 3; the candidate integral gives A = 8. Exact printed stem and official key remain pending.",
+      "verification_evidence": "Corrected the requested expression and independently derived the numerical result; exact source-page option check and official NTA key remain pending.",
       "publishable": false
     },
     {
