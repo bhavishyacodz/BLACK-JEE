@@ -71,8 +71,7 @@ begin
       existing.solution_unlocked_at,
       case when not v_correct and existing.wrong_attempts + 1 >= 2 then now() else null end
     )
-  returning private.jee_pyq_answer_attempts.wrong_attempts,
-            private.jee_pyq_answer_attempts.solution_unlocked_at
+  returning wrong_attempts, solution_unlocked_at
     into v_wrong_attempts, v_unlocked_at;
 
   v_unlocked := v_unlocked_at is not null;
