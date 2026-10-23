@@ -615,6 +615,37 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
  .attempt-step small{display:none}
 }
 </style>
+<style id="blackjee-one-screen-challenge-v4">
+/* Challenge first view: start action and timing above the fold where viewport allows. */
+@media(max-width:780px){
+ .hero.wrap{padding-top:8px;padding-bottom:6px}
+ .hero.wrap>.eyebrow{font-size:.62rem;gap:6px}
+ .hero.wrap h1{font-size:clamp(1.95rem,8.2vw,2.55rem);line-height:.94;margin:7px 0}
+ .hero.wrap .hero-copy{font-size:.78rem;line-height:1.4;margin-bottom:8px}
+ .hero.wrap>.hero-bottom{grid-template-columns:minmax(0,1fr) minmax(0,.62fr);gap:6px;margin-bottom:7px}
+ .hero.wrap>.hero-bottom .btn{min-height:40px;padding:8px 6px;font-size:.63rem}
+ .hero.wrap>.schedule-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+ .hero.wrap>.schedule-strip .schedule-box{min-height:49px;padding:7px;border-radius:9px}
+ .hero.wrap>.schedule-strip .schedule-box small{font-size:.56rem;line-height:1.25}
+ .hero.wrap>.schedule-strip .schedule-box strong{font-size:.77rem}
+ .hero.wrap>.schedule-strip .schedule-box:nth-child(2){display:none!important}
+ #challenge{padding-top:8px}
+ #challenge .section-head{margin-bottom:7px}
+ #challenge .section-head h2{font-size:1.28rem}
+ #challenge .card-top{padding:9px 11px}
+ #challenge .card-body{padding:10px}
+ .attempt-steps{margin-bottom:8px;padding:8px 6px}
+ .prestart-panel{margin:6px 0 9px;padding:13px 11px}
+ .prestart-panel h3{font-size:1.18rem;margin:3px 0 5px}
+ .prestart-panel>p{font-size:.78rem;line-height:1.4;margin:5px 0 8px}
+ .prestart-rules{margin:7px 0;gap:4px}
+ .prestart-rules span{padding:7px 5px;font-size:.58rem}
+ .prestart-rules b{font-size:.64rem}
+ .prestart-note{font-size:.65rem}
+ .prestart-start{min-height:46px}
+ .prestart-start-hint{margin-top:6px;font-size:.65rem}
+}
+</style>
 </head>
 <body class="attempt-page">
 <div class="challenge-intro" id="challengeIntro" aria-live="assertive" aria-label="Challenge starting">
