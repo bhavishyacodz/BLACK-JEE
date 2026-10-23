@@ -97,7 +97,7 @@ for item, source_path, qid, filename, (x, y, w, h) in validated:
     qm = manifest_by_subject_number[(q.get("subject"), int(q.get("subject_question_number", -1)))]
     qm["visual_required"] = True
     qm.setdefault("assets", []).append(rel)
-    qm["unresolved_issues"] = [issue for issue in qm.get("unresolved_issues", []) if "missing" not in str(issue).lower()]
+    # Keep all existing unresolved issues until a human confirms they are resolved.
 
 SHIFT_MANIFEST.write_text(json.dumps(shift_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 QUESTION_MANIFEST.write_text(json.dumps(question_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
