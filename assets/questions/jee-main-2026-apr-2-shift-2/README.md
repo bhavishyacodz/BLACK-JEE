@@ -1,5 +1,7 @@
 # JEE Main 2026 — 2 April Shift 2 draft diagram assets
 
+> **Audit hold:** these are legacy draft SVG assets, not certified NTA diagrams. The source paper is ordered Physics, Chemistry, Mathematics, while legacy draft IDs use Mathematics, Physics, Chemistry global slots. All source matches are currently unverified; do not infer a source question number from an asset filename. See [SOURCE_FIDELITY_AUDIT.md](SOURCE_FIDELITY_AUDIT.md).
+
 This folder contains custom SVG redraws associated with legacy draft records. **The `qNN.svg` names and Q labels are candidate IDs. Treat them as NTA displayed question numbers only where the individual match has been verified.** These files are only candidate redraws; compare each against the official source before attaching it to a published PYQ.
 
 | Legacy draft ID | Topic | Asset |
