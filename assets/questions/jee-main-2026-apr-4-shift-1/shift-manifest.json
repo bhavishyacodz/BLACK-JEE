@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "solutions_batches_3_5_staged_physics_q31_q50_chemistry_q51_q75_review_pending",
+  "workflow_status": "option_keys_mapped_where_exact_text_matches_diagram_and_source_review_pending",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -2390,12 +2390,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-001",
@@ -2405,10 +2406,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "correct_option": "A",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-02",
@@ -2433,12 +2439,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-002",
@@ -2448,10 +2455,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "correct_option": "B",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-03",
@@ -2476,12 +2488,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-003",
@@ -2491,10 +2504,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "correct_option": "A",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-04",
@@ -2519,12 +2537,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-004",
@@ -2534,10 +2553,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "correct_option": "B",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-05",
@@ -2562,12 +2586,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-005",
@@ -2577,10 +2602,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "correct_option": "D",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-06",
@@ -2605,12 +2635,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-006",
@@ -2620,10 +2651,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "correct_option": "D",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-07",
@@ -2648,12 +2684,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-007",
@@ -2663,10 +2700,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "correct_option": "A",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-08",
@@ -2691,12 +2733,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-008",
@@ -2706,10 +2749,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "correct_option": "D",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-09",
@@ -2734,12 +2782,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-009",
@@ -2749,12 +2798,17 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [
         "Assumes natural numbers are positive integers; with that convention k=6 is the smallest valid value."
       ],
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "correct_option": "B",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-10",
@@ -2779,12 +2833,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-010",
@@ -2794,10 +2849,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "correct_option": "D",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-11",
@@ -2822,12 +2882,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-011",
@@ -2837,10 +2898,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "correct_option": "A",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-12",
@@ -2865,12 +2931,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-012",
@@ -2880,10 +2947,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "correct_option": "C",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-13",
@@ -2908,12 +2980,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-013",
@@ -2923,10 +2996,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "correct_option": "B",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-14",
@@ -2951,12 +3029,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-014",
@@ -2966,10 +3045,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "correct_option": "B",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-15",
@@ -2994,12 +3078,13 @@
         "render_verified": false
       },
       "quality_checks": {
-        "source_wording_verified": true,
-        "answer_independently_checked": true,
+        "source_wording_verified": false,
+        "answer_independently_checked": false,
         "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
-        "solution_syntax_normalized": true
+        "solution_syntax_normalized": true,
+        "correct_option_mapped_from_option_text": true
       },
       "source_reference": {
         "question_id": "BJ-JM-20260404-S1-MAT-015",
@@ -3009,10 +3094,15 @@
         "answer_source": "CALCULATED_INDEPENDENTLY",
         "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
-        "source_verification_date": "2026-10-23"
+        "source_verification_date": "2026-10-23",
+        "option_key_mapping": "EXACT_NORMALIZED_TEXT_MATCH"
       },
       "reviewer_notes": [],
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "correct_option": "B",
+      "review_notes": [
+        "Correct option letter mapped by exact normalized answer-value-to-option-text match; this is a mechanical mapping, not independent correctness verification."
+      ]
     },
     {
       "slot_id": "mathematics-16",
@@ -3457,6 +3547,7 @@
   ],
   "important_notes": [
     "Mathematics Q1–Q15 solution expressions normalized with explicit LaTeX delimiters for Workbench rendering. Mathematical/browser rendering and mobile display checks remain pending; do not treat syntax normalization alone as visual verification. Questions remain unpublished.",
-    "2026-10-23: Added supplied solution batch for Physics Q31–50 and Chemistry Q51–75. Correct option letters are stored separately from answer values where supplied. Numeric-response items retain answer values without option letters. Review flags preserved; nothing published."
+    "2026-10-23: Added supplied solution batch for Physics Q31–50 and Chemistry Q51–75. Correct option letters are stored separately from answer values where supplied. Numeric-response items retain answer values without option letters. Review flags preserved; nothing published.",
+    "2026-10-23: For MCQs with a unique exact normalized text match between stored answer value and one option, correct_option was filled mechanically and annotated. This does not verify mathematical correctness or source fidelity; diagram-dependent keys remain unset."
   ]
 }
