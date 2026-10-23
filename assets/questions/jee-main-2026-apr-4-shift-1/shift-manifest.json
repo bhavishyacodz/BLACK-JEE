@@ -1238,7 +1238,7 @@
       "question_type": "numerical",
       "options": [],
       "correct_answer": "44",
-      "solution": "Comparing \\(v^2=50-x^2\\) with \\(v^2=\\omega^2(A^2-x^2)\\) gives \\(\\omega=1\\,\\mathrm{rad\\,s^{-1}}\\), so the period is \\(T=2\\pi\\,\\mathrm{s}\\). Given \\(T=x/7\\,\\mathrm{s}\\), \\(x=14\\pi\\approx44\\) using \\(\\pi=22/7\\).",
+      "solution": "Comparing v² = 50 − x² with the SHM relation v² = ω²(A² − x²), we obtain ω² = 1, so ω = 1 rad s⁻¹. Thus T = 2π/ω = 2π s. Since T = x/7 s, x = 14π ≈ 44 when π is taken as 22/7. The requested numerical value is 44.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1273,7 +1273,7 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+        "Independent check: coefficient comparison gives ω=1 rad s⁻¹ and T=2π s; therefore x=14π≈44 using π=22/7. Source wording was previously transcribed, but math/mobile rendering remain pending."
       ]
     },
     {
@@ -1332,7 +1332,7 @@
       "question_type": "numerical",
       "options": [],
       "correct_answer": "100",
-      "solution": "The power factor is \\(R/Z=0.5\\), so \\(Z=100/0.5=200\\,\\Omega\\). Therefore \\(|X_L-X_C|=\\sqrt{Z^2-R^2}=\\sqrt{200^2-100^2}=100\\sqrt{3}\\,\\Omega\\). Since this equals \\(\\sqrt{3}\\alpha\\,\\Omega\\), \\(\\alpha=100\\).",
+      "solution": "For a series RLC circuit, power factor cosφ = R/Z = 0.5. With R = 100 Ω, Z = 200 Ω. Hence |X_L − X_C| = √(Z² − R²) = √(200² − 100²) = 100√3 Ω. Comparing this with √3 α Ω gives α = 100.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -1367,7 +1367,7 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+        "Independent check: the impedance triangle gives |X_L−X_C|=100√3 Ω, so α=100. Source wording was previously transcribed; math/mobile rendering remain pending."
       ]
     },
     {
@@ -2553,7 +2553,7 @@
       "question_type": "numerical",
       "options": [],
       "correct_answer": "6",
-      "solution": "For XeO₆⁴⁻ as supplied, the solution assumes six Xe−O sigma bonds and no lone pairs on Xe, giving 6. The bonding/formal-charge explanation needs independent chemistry review.",
+      "solution": "For [XeO₆]⁴⁻, the oxidation state of Xe is +8 because x + 6(−2) = −4. In the Lewis-theory representation used for this ion, Xe is connected to six O atoms by six Xe–O σ bonds and has no lone pair left on the central atom. Therefore, σ-bond pairs + lone pairs on Xe = 6 + 0 = 6. Confirm the exact source notation before release.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2563,8 +2563,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -2588,7 +2588,7 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+        "Independent Lewis-count check gives six central-atom σ-bond pairs and zero lone pairs (total 6). Source wording and the intended Lewis representation still need confirmation; keep held from approval."
       ]
     },
     {
@@ -2659,7 +2659,7 @@
       "question_type": "numerical",
       "options": [],
       "correct_answer": "5",
-      "solution": "The supplied Carius calculation estimates Br≈71.5%, C=26.7%, H≈1.8%, giving approximate empirical ratio C:H:Br=5:4:2; carbon atom count=5. Verify rounding against the original data.",
+      "solution": "Moles of AgBr = 3.36/(108+80) = 3.36/188 ≈ 0.01787 mol, so the bromine mass is about 0.01787×80 = 1.430 g. In the 2.0 g sample this is about 71.5% Br. The remaining hydrogen percentage is 100−71.5−26.7 ≈ 1.8%. Per 100 g: C ≈ 26.7/12 = 2.225 mol, H ≈ 1.8 mol, Br ≈ 71.5/80 = 0.894 mol. Dividing by 0.447 gives approximately C:H:Br = 5:4:2. The empirical formula contains 5 carbon atoms.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2669,8 +2669,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -2694,7 +2694,7 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+        "Independent Carius-analysis calculation gives approximate empirical ratio C:H:Br = 5:4:2, so the carbon-atom count is 5. Source numbers and rounding still need direct source-PDF confirmation; keep held from approval."
       ]
     },
     {
@@ -2706,7 +2706,7 @@
       "question_type": "numerical",
       "options": [],
       "correct_answer": "756",
-      "solution": "Using the supplied basic-buffer setup: pOH=4.74+log(25/0.5)=6.44, pH=7.56, so the requested coefficient in 7.56=756×10⁻² is 756. Check whether the base/salt volumes were transcribed correctly.",
+      "solution": "Moles of NH₄OH = 0.1×0.005 = 5.0×10⁻⁴ mol; moles of NH₄Cl = 0.1×0.250 = 2.50×10⁻² mol. For the basic buffer, pOH = pK_b + log(n_salt/n_base) = 4.74 + log(50) ≈ 4.74 + 1.70 = 6.44. Thus pH = 14 − 6.44 = 7.56. If the answer blank asks for the coefficient in pH = N×10⁻², then N = 756; the original answer-line formatting must be confirmed.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2716,8 +2716,8 @@
       },
       "quality_checks": {
         "source_wording_verified": false,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false,
         "solution_syntax_normalized": true,
@@ -2741,7 +2741,7 @@
       "correct_option": null,
       "review_notes": [
         "Imported from supplied solution batch; review required before any verified/approved status. Rendering and mobile checks remain pending.",
-        "Numerical answer recorded from user-supplied simplified answer key; independent calculation/source verification remains pending."
+        "Independent buffer calculation gives pH≈7.56, equivalent to coefficient 756 only if the source answer blank requests N×10⁻². Verify the printed answer-line format and original volumes before approval."
       ]
     },
     {
