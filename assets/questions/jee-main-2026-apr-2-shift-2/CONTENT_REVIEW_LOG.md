@@ -66,3 +66,32 @@ This log records content-level findings that structural validation alone cannot 
 - **Q9:** Variance gives total square sum 80n. Equating the last observation and its square yields 4n² − 53n + 175 = 0; the only integer solution is n = 7 (option D).
 - **Q10:** Perpendicularity gives k = −1; the circle centre is (1,2), radius squared 5, and line distance squared 1/2. Chord squared is 18 (option C).
 - **Boundary:** These are independent mathematical checks, not proof of official paper transcription or answer-key fidelity.
+
+
+## Independent calculation pass — Physics Q26–Q40
+
+- **Status:** Arithmetic and physics reasoning checked against the current draft statements. Official wording/key and diagram fidelity are not certified by this pass.
+- **Q26:** Dimensional matching gives \([G]=[h]T^{-1}LM^{-2}\), option B.
+- **Q27:** At the limiting friction condition, \(\mu=g/(\omega^2r)=0.1\), option A.
+- **Q28:** Atwood acceleration is \(10/3\,\mathrm{m/s^2}\); centre-of-mass displacement magnitude after 2 s is \(20/9\approx2.22\,\mathrm m\), option C.
+- **Q29:** Lorentz-force components give \(v_x=50\) and \(v_y=100\,\mathrm{m/s}\), option A.
+- **Q30:** The described NAND/inverter arrangement yields NOR (option D) if the SVG wiring matches the text; visually compare the actual circuit with the official paper before publication.
+- **Q31:** Energy conservation gives \(v\approx11.2\,\mathrm{km/s}\) and \(K\approx6.27\times10^7\,\mathrm J\), option A.
+- **Q32:** Least count is 0.001 mm; correcting a +0.005 mm zero error gives 5.045 mm, option A.
+- **Q33:** Accounting for both soap-bubble surfaces gives \(W=1.92\pi\times10^{-4}\,\mathrm J\), so \(\alpha=1.92\), option C.
+- **Q34:** Ideal-gas total is 1/3 mol; combining total moles and 13.2 g gives about 0.211 mol CO₂ and 0.122 mol O₂, option C.
+- **Q35:** Stokes-law calculation gives about 0.889 Pa·s = 8.89 poise. Draft key B (8.8) is the nearest listed choice, but check the official statement/rounding convention before publication.
+- **Q36:** Work-energy over the 10.1 m fall gives average sand force 2020 N, option B.
+- **Q37:** \(E=cB=60\,\mathrm{V/m}\); with propagation along +x and B along +y, E points −z, option B.
+- **Q38:** Rated bulb resistance is 400 Ω; parallel branch becomes 200 Ω, giving 50 V across the bulb, option B.
+- **Q39:** Levitation requires a 480 V potential difference; the lower plate must be at higher potential for positive droplets, option A.
+- **Q40:** Gauss's law gives enclosed charges 8 μC and 6 μC, so the flux ratio is 4:3, option C.
+- **Boundary:** This is a calculation pass only. Do not treat it as official paper transcription/key verification.
+
+## Repeatable shift-import rule — single source of truth
+
+- Every uploaded shift must have **one canonical ordered dataset** (one question record per source question); student tabs, admin tabs, previews, chapter filters and review views must consume that same record rather than maintaining separate copies.
+- Preserve the original source question number and source order. For a 75-question B.E./B.Tech shift, validate exactly 25 Mathematics, then 25 Physics, then 25 Chemistry if that is the source-paper ordering; use the source's actual numbering/order rather than reordering by convenience.
+- Keep diagrams as separate version-controlled assets referenced by stable paths from the canonical records. Never replace a missing diagram with a guess; flag it and block publication.
+- Run automated structure/order/duplicate/asset checks first, then calculation/key checks and official-paper visual comparison. Publish only after the review gate passes; keep the staging dataset unpublished while any critical issue remains.
+- Target: fast ingestion and deterministic checks, with uncertain content flagged rather than silently “fixed.” Automated checks reduce avoidable mistakes but cannot guarantee perfection without source comparison.
