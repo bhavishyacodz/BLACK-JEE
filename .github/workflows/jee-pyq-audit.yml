@@ -1,0 +1,41 @@
+name: BLACK-JEE question batch audit
+
+on:
+  push:
+    paths:
+      - "assets/questions/jee-main-2026-apr-2-shift-2/**"
+      - "scripts/audit_jee_batch.py"
+      - ".github/workflows/jee-pyq-audit.yml"
+  pull_request:
+    paths:
+      - "assets/questions/jee-main-2026-apr-2-shift-2/**"
+      - "scripts/audit_jee_batch.py"
+      - ".github/workflows/jee-pyq-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structural-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Audit the canonical 75-question batch
+        run: python scripts/audit_jee_batch.py --expect 75 --json-out audit-report.json
+
+      - name: Upload machine-readable report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: black-jee-audit-report
+          path: audit-report.json
+          if-no-files-found: ignore
+          retention-days: 14
