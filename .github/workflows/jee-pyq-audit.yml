@@ -1,19 +1,13 @@
-name: BLACK-JEE question batch audit
+name: BLACK-JEE April 4 Shift 1 manifest audit
 
 on:
   push:
     paths:
-      - "assets/questions/jee-main-2026-apr-2-shift-2/**"
-      - "scripts/audit_jee_batch.py"
-      - "scripts/audit_source_crosswalk.py"
-      - "assets/questions/jee-main-2026-apr-2-shift-2/source-to-draft-crosswalk.json"
+      - "assets/questions/jee-main-2026-apr-4-shift-1/**"
       - ".github/workflows/jee-pyq-audit.yml"
   pull_request:
     paths:
-      - "assets/questions/jee-main-2026-apr-2-shift-2/**"
-      - "scripts/audit_jee_batch.py"
-      - "scripts/audit_source_crosswalk.py"
-      - "assets/questions/jee-main-2026-apr-2-shift-2/source-to-draft-crosswalk.json"
+      - "assets/questions/jee-main-2026-apr-4-shift-1/**"
       - ".github/workflows/jee-pyq-audit.yml"
   workflow_dispatch:
 
@@ -21,7 +15,7 @@ permissions:
   contents: read
 
 jobs:
-  structural-audit:
+  manifest-audit:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -32,17 +26,66 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate source-to-draft crosswalk integrity
-        run: python scripts/audit_source_crosswalk.py
+      - name: Validate April 4 manifest structure and referenced assets
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
 
-      - name: Audit the canonical 75-question batch
-        run: python scripts/audit_jee_batch.py --expect 75 --expect-per-subject 25 --json-out audit-report.json
+          root = Path(".")
+          folder = root / "assets/questions/jee-main-2026-apr-4-shift-1"
+          shift_path = folder / "shift-manifest.json"
+          metadata_path = folder / "manifest.json"
+          shift = json.loads(shift_path.read_text(encoding="utf-8"))
+          metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+          questions = shift.get("questions", [])
+          errors = []
 
-      - name: Upload machine-readable report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: black-jee-audit-report
-          path: audit-report.json
-          if-no-files-found: ignore
-          retention-days: 14
+          if shift.get("publication_policy") != "DRAFT_ONLY":
+              errors.append("shift-manifest publication_policy must remain DRAFT_ONLY")
+          if len(questions) != 75:
+              errors.append(f"expected 75 shift slots, found {len(questions)}")
+
+          counts = Counter(q.get("subject") for q in questions)
+          for subject in ("Physics", "Chemistry", "Mathematics"):
+              if counts[subject] != 25:
+                  errors.append(f"{subject}: expected 25 slots, found {counts[subject]}")
+
+          ids = [q.get("slot_id") for q in questions]
+          if len(set(ids)) != len(ids) or any(not x for x in ids):
+              errors.append("slot_id values must be present and unique")
+
+          for index, q in enumerate(questions, 1):
+              diagram = q.get("diagram") or {}
+              paths = []
+              if diagram.get("asset_path"):
+                  paths.append(diagram["asset_path"])
+              for visual in q.get("visual_assets", []):
+                  if visual.get("asset_path"):
+                      paths.append(visual["asset_path"])
+              for rel in paths:
+                  candidate = (folder / rel).resolve()
+                  if folder.resolve() not in candidate.parents or not candidate.is_file():
+                      errors.append(f"question {q.get('slot_id', index)} references missing/unsafe asset: {rel}")
+
+          if not isinstance(metadata, list) or len(metadata) != 75:
+              errors.append(f"manifest.json must contain 75 question metadata records; found {len(metadata) if isinstance(metadata, list) else 'non-list'}")
+          else:
+              metadata_ids = [q.get("question_id") for q in metadata]
+              if len(set(metadata_ids)) != 75 or any(not x for x in metadata_ids):
+                  errors.append("manifest.json question_id values must be present and unique")
+              for q in metadata:
+                  for rel in q.get("assets", []):
+                      candidate = (folder / rel).resolve()
+                      if folder.resolve() not in candidate.parents or not candidate.is_file():
+                          errors.append(f"{q.get('question_id')} references missing/unsafe asset: {rel}")
+
+          print(f"April 4 Shift 1 staging: {len(questions)} slots; subjects={dict(counts)}")
+          print("This is a structural/file check only; it does not verify official wording, answers, or diagram fidelity.")
+          if errors:
+              for error in errors:
+                  print("ERROR:", error)
+              raise SystemExit(1)
+          print("PASS: manifest shape, draft-only policy, and referenced assets are structurally valid.")
+          PY
