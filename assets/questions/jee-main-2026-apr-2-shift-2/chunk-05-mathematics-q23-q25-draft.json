@@ -12,7 +12,8 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "18",
-    "solution": "Internal tangency gives |B+A|+|B-A|=12, an ellipse with foci at A and -A. Thus 2a=12 and c=3, so e=1/2 and 72e^2=18."
+    "solution": "Internal tangency gives |B+A|+|B-A|=12, an ellipse with foci at A and -A. Thus 2a=12 and c=3, so e=1/2 and 72e^2=18.",
+    "source_question_number": 23
   },
   {
     "year": 2026,
@@ -27,7 +28,8 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "24",
-    "solution": "The intersections are (3,0) and (5,16/3). Integrating the upper hyperbola minus the line from x=3 to x=5 gives A=8-6 ln 3. Therefore 3(A+6 ln 3)=24."
+    "solution": "The intersections are (3,0) and (5,16/3). Integrating the upper hyperbola minus the line from x=3 to x=5 gives A=8-6 ln 3. Therefore 3(A+6 ln 3)=24.",
+    "source_question_number": 24
   },
   {
     "year": 2026,
@@ -42,6 +44,7 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "10",
-    "solution": "The expression x^2-x-1/2 is strictly increasing on [2,4], from 3/2 to 23/2. It crosses the integers 2 through 11, giving 10 discontinuities."
+    "solution": "The expression x^2-x-1/2 is strictly increasing on [2,4], from 3/2 to 23/2. It crosses the integers 2 through 11, giving 10 discontinuities.",
+    "source_question_number": 25
   }
 ]
