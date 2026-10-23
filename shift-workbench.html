@@ -37,6 +37,9 @@ const checklistItems=["All source question slots accounted for","Physics compare
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function mathMarkup(value){
  let t=String(value??"");
+ // Already-delimited formulas must pass through untouched; nested MathJax delimiters break otherwise valid LaTeX.
+ if(/\\\(|\\\[|\$/.test(t)) return esc(t);
+ // For older OCR batches with bare LaTeX, wrap common commands so they render instead of appearing as raw slashes.
  t=t.replace(/\\(frac|dfrac|tfrac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g,(_,cmd,a,b)=>'\\('+'\\'+cmd+'{'+a+'}{'+b+'}'+'\\)');
  t=t.replace(/\\(alpha|beta|gamma|theta|pi|lambda|mu|sigma|omega|infty|cdot|times|pm|neq|leq|geq|sqrt)\b/g,m=>'\\('+m+'\\)');
  t=t.replace(/\\(cos|sin|tan|log|ln|arg|lim)\b/g,m=>'\\('+m+'\\)');
