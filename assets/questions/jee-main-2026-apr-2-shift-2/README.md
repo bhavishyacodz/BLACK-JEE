@@ -4,6 +4,7 @@ Source checked against the user-provided question-paper PDF. The question number
 
 | Question | Subject | Verified question topic | Asset |
 |---|---|---|---|
+| Q28 | Physics | Atwood machine with 2 kg and 1 kg masses over a fixed pulley | [q28.svg](q28.svg) |
 | Q30 | Physics | NAND logic circuit; identify the equivalent gate | [q30.svg](q30.svg) |
 | Q41 | Physics | Equilateral prism with one painted face; total internal reflection | [q41.svg](q41.svg) |
 | Q42 | Physics | LCR series circuit with switches S1 and S2 | [q42.svg](q42.svg) |
@@ -14,6 +15,7 @@ Source checked against the user-provided question-paper PDF. The question number
 
 Use the **raw** GitHub URL (not the `/blob/main/` page URL) when entering an image URL. These are the corresponding URLs:
 
+- Q28: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q28.svg
 - Q30: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q30.svg
 - Q41: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q41.svg
 - Q42: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q42.svg
@@ -22,6 +24,6 @@ Use the **raw** GitHub URL (not the `/blob/main/` page URL) when entering an ima
 
 ## Import / attachment status
 
-The PYQ database was checked during this work and contained **0 rows** in `public.jee_pyq_questions`. Therefore no database row can currently be matched or updated. Once the corresponding questions are imported, set each row's `image_url` to the raw URL above. Do not attach by row order or question text similarity alone; verify the displayed question number and topic first.
+The PYQ database was checked during this work and contained **0 rows** in `public.jee_pyq_questions`. Therefore no database row can currently be matched or updated. Once the corresponding questions are imported, set each row's `image_url` to the raw URL above. Q28's source-paper pulley figure was missing from its draft record; a matching SVG has now been added and the draft record points to it. Do not attach by row order or question text similarity alone; verify the displayed question number and topic first.
 
 The daily challenge tables are separate and must not be modified as part of this mapping.
