@@ -6,6 +6,21 @@
 <style>
 :root{color-scheme:dark;--bg:#090909;--panel:#121212;--line:#292929;--muted:#a7a7a7;--red:#ed2438;--white:#f5f5f5}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#351016 0,transparent 48%),var(--bg);color:var(--white);font:15px/1.55 Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.top{padding:28px 0 20px;border-bottom:1px solid var(--line)}.brand{font-size:12px;letter-spacing:.2em;color:var(--red);font-weight:800}.top h1{font-size:clamp(28px,5vw,46px);line-height:1.08;margin:12px 0}.muted{color:var(--muted)}.status{display:inline-flex;align-items:center;gap:8px;border:1px solid #343434;background:#121212;padding:7px 11px;border-radius:999px;font-size:12px;color:#d5d5d5}.dot{width:7px;height:7px;background:#e5e5e5;border-radius:50%}main{padding:26px 0 60px}.section-head{display:flex;justify-content:space-between;gap:16px;align-items:end;margin:28px 0 14px}.section-head h2{margin:0;font-size:20px}.section-head p{margin:4px 0 0;font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:linear-gradient(145deg,#171717,#101010);border:1px solid var(--line);border-radius:16px;padding:20px;min-width:0}.card:hover{border-color:#5b252b}.num{font-size:11px;color:var(--red);font-weight:800;letter-spacing:.14em}.card h3{font-size:19px;margin:8px 0}.card p{font-size:13px;color:var(--muted);margin:0 0 18px}.actions{display:flex;flex-wrap:wrap;gap:9px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 13px;border:1px solid #3a3a3a;border-radius:9px;background:#1b1b1b;font-size:12px;font-weight:750;letter-spacing:.02em}.btn.primary{background:var(--red);border-color:var(--red);color:white}.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.step{padding:14px;border:1px solid var(--line);border-radius:12px;background:#101010}.step b{display:block;font-size:12px;margin:5px 0}.step span{font-size:12px;color:var(--muted)}.callout{border-left:3px solid var(--red);padding:12px 15px;background:#151112;border-radius:0 10px 10px 0;color:#ddd;font-size:13px;margin-top:16px}footer{border-top:1px solid var(--line);padding:20px 0 32px;font-size:12px;color:var(--muted)}@media(max-width:680px){.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}.card{padding:17px}}
+
+.ops-panel{margin-top:14px;border:1px solid var(--line);border-radius:16px;padding:20px;background:linear-gradient(145deg,#151515,#0d0d0d)}
+.ops-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.ops-head h3{margin:0;font-size:19px}.ops-head p{margin:5px 0 0;font-size:13px;color:var(--muted)}
+.ops-progress{height:7px;background:#292929;border-radius:99px;overflow:hidden;margin:17px 0 8px}
+.ops-progress span{display:block;height:100%;width:0;background:var(--red);border-radius:99px;transition:width .18s ease}
+.ops-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
+.ops-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:16px}
+.ops-item{display:flex;align-items:flex-start;gap:11px;padding:12px;border:1px solid #303030;border-radius:11px;background:#101010;cursor:pointer;min-width:0}
+.ops-item input{accent-color:var(--red);width:17px;height:17px;flex:0 0 auto;margin:2px 0 0}
+.ops-item strong{display:block;font-size:13px}.ops-item small{display:block;color:var(--muted);font-size:12px;margin-top:3px;line-height:1.45}
+.ops-item.done{border-color:#31533f;background:#0e1711}.ops-item.done strong{color:#a7e4bd}
+.ops-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:12px;color:var(--muted)}
+@media(max-width:680px){.ops-panel{padding:15px}.ops-list{grid-template-columns:1fr}.ops-head .btn{width:100%}}
+
 </style>
 </head>
 <body>
@@ -20,6 +35,85 @@
 </div>
 <div class="section-head"><div><h2>Recommended operating order</h2><p class="muted">Use the same sequence every time to reduce accidental publishing and missing-question issues.</p></div></div>
 <div class="steps"><div class="step"><div class="num">STEP 01</div><b>Prepare</b><span>Draft or import the content.</span></div><div class="step"><div class="num">STEP 02</div><b>Validate</b><span>Check answers, maths, diagrams and metadata.</span></div><div class="step"><div class="num">STEP 03</div><b>Preview</b><span>Open the student-facing view on mobile too.</span></div><div class="step"><div class="num">STEP 04</div><b>Publish</b><span>Only publish after checks pass.</span></div><div class="step"><div class="num">STEP 05</div><b>Verify</b><span>Reload as a student and confirm visibility.</span></div></div>
+
+<div class="section-head"><div><h2>Release checklist</h2><p class="muted">A small, repeatable gate before any question batch goes public.</p></div></div>
+<section class="ops-panel" aria-labelledby="opsTitle">
+  <div class="ops-head">
+    <div><h3 id="opsTitle">Pre-publish quality gate</h3><p>Check each item for the shift you are working on. Progress is saved only in this browser on this device.</p></div>
+    <button class="btn" type="button" id="opsReset">Reset checklist</button>
+  </div>
+  <div class="ops-progress" role="progressbar" aria-label="Checklist completion" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="opsProgress"><span id="opsBar"></span></div>
+  <div class="ops-meta"><span id="opsCount">0 of 6 checks complete</span><span id="opsPercent">0%</span></div>
+  <div class="ops-list" id="opsList">
+    <label class="ops-item"><input type="checkbox" data-key="source"><span><strong>Source fidelity checked</strong><small>Question wording, values, options and paper order match the source.</small></span></label>
+    <label class="ops-item"><input type="checkbox" data-key="answer"><span><strong>Answer and explanation reviewed</strong><small>Verify the answer independently; do not rely on OCR or an unverified key.</small></span></label>
+    <label class="ops-item"><input type="checkbox" data-key="math"><span><strong>Maths and notation rendered</strong><small>Check fractions, powers, symbols, matrices and mobile line wrapping.</small></span></label>
+    <label class="ops-item"><input type="checkbox" data-key="visuals"><span><strong>Every required visual exists</strong><small>Inspect circuits, graphs, chemical structures and option diagrams; no placeholders.</small></span></label>
+    <label class="ops-item"><input type="checkbox" data-key="import"><span><strong>Import validation passed</strong><small>Check unique IDs, subject counts, required fields and duplicate records.</small></span></label>
+    <label class="ops-item"><input type="checkbox" data-key="student"><span><strong>Student view tested before release</strong><small>Open on a phone, test filters and navigation, then verify published visibility.</small></span></label>
+  </div>
+  <div class="ops-foot"><span id="opsStatus" role="status" aria-live="polite">Checklist ready. Mark items only after checking them.</span><span>Local browser only · not a database audit log</span></div>
+</section>
+
 <div class="callout"><strong>Safety rule:</strong> do not use bulk-clear or destructive cleanup controls as routine housekeeping. Export and verify a backup first. Never put Supabase service-role keys in browser code. A successful GitHub commit alone does not prove that the live website or database flow works.</div>
 </main><footer><div class="wrap">BLACK-JEE Owner Workspace · Shortcuts only; data changes happen inside each linked tool.</div></footer>
+
+<script>
+(function () {
+  "use strict";
+  const storageKey = "black-jee-owner-release-checklist-v1";
+  const list = document.getElementById("opsList");
+  if (!list) return;
+  const checks = Array.from(list.querySelectorAll('input[type="checkbox"][data-key]'));
+  const bar = document.getElementById("opsBar");
+  const progress = document.getElementById("opsProgress");
+  const count = document.getElementById("opsCount");
+  const percent = document.getElementById("opsPercent");
+  const status = document.getElementById("opsStatus");
+  const reset = document.getElementById("opsReset");
+  function readSaved() {
+    try {
+      const raw = window.localStorage.getItem(storageKey);
+      return raw ? JSON.parse(raw) : {};
+    } catch (_) { return {}; }
+  }
+  function save() {
+    const state = {};
+    checks.forEach(function (input) { state[input.dataset.key] = input.checked; });
+    try {
+      window.localStorage.setItem(storageKey, JSON.stringify(state));
+      status.textContent = "Saved on this device. This is a reminder, not proof that the content is correct.";
+    } catch (_) {
+      status.textContent = "Browser storage is unavailable. Your checklist may not persist after leaving this page.";
+    }
+  }
+  function render() {
+    const complete = checks.filter(function (input) { return input.checked; }).length;
+    const pct = checks.length ? Math.round(complete / checks.length * 100) : 0;
+    bar.style.width = pct + "%";
+    progress.setAttribute("aria-valuenow", String(complete));
+    count.textContent = complete + " of " + checks.length + " checks complete";
+    percent.textContent = pct + "%";
+    checks.forEach(function (input) {
+      const item = input.closest(".ops-item");
+      if (item) item.classList.toggle("done", input.checked);
+    });
+    if (complete === checks.length) status.textContent = "All checklist items marked. Perform the final live-site verification before considering release complete.";
+  }
+  const saved = readSaved();
+  checks.forEach(function (input) {
+    input.checked = saved[input.dataset.key] === true;
+    input.addEventListener("change", function () { save(); render(); });
+  });
+  reset.addEventListener("click", function () {
+    if (!window.confirm("Reset all six checklist items on this device?")) return;
+    checks.forEach(function (input) { input.checked = false; });
+    save();
+    render();
+    status.textContent = "Checklist reset for the next review.";
+  });
+  render();
+})();
+</script>
+
 </body></html>
