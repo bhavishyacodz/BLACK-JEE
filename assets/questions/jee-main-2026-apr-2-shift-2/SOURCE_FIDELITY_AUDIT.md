@@ -4,15 +4,17 @@
 
 The staged file `assets/questions/jee-main-2026-apr-2-shift-2/full-shift-2-75-draft.json` is not yet a faithful, source-ordered transcription of the shift paper. Do not publish it or import it into the live database until this audit is resolved.
 
-## Source order confirmed from the paper
+## Official source order and audit correction
 
-The source paper is arranged as:
+The official NTA PDF displays the paper in this order:
 
-- Physics: source questions 1–25
-- Chemistry: source questions 26–50
-- Mathematics: source questions 51–75
+- Mathematics: displayed questions 1–25
+- Physics: displayed questions 26–50
+- Chemistry: displayed questions 51–75
 
-The staged JSON instead labels Mathematics as 1–25, Physics as 26–50, and Chemistry as 51–75. This is a critical mismatch. The deterministic audit has been updated to expect the source order, so it should fail on the current draft rather than falsely passing it.
+The staged JSON uses those same subject/global-number blocks. A previous version of this audit and its validators incorrectly claimed Physics came first; that was an audit error, not a defect in the staged numbering. The validators and crosswalk order have now been corrected against the official NTA PDF.
+
+**This correction does not certify the question content.** The draft still has substantive text/value/option/diagram mismatches listed below, and the 75 source-to-draft mappings remain unverified. Publication remains on HOLD. In the tables below, “source Q1–Q25” for Physics or Chemistry means the subject-local position; the NTA displayed/global numbers are Physics 26–50 and Chemistry 51–75, respectively.
 
 ## Additional content mismatches found by direct text comparison
 
@@ -69,9 +71,9 @@ A content-based scan of the source paper shows that several mathematical records
 
 ## Expanded comparison against the text-rendered shift paper
 
-The paper copy used for comparison explicitly orders Physics first, Chemistry second, and Mathematics third. It also confirms the standard subject structure (20 MCQs plus 5 numerical questions per subject). The following are **content-level differences**, not mere numbering differences:
+The official NTA PDF explicitly orders Mathematics first (displayed 1–25), Physics second (26–50), and Chemistry third (51–75). It confirms the standard subject structure (20 MCQs plus 5 numerical questions per subject). The earlier statement in this report that the source ordered Physics first was incorrect and has been superseded above. The following are **content-level differences**, not mere numbering differences:
 
-### Physics: source questions 1–25
+### Physics: subject-local questions 1–25 (NTA displayed numbers 26–50)
 
 | Source Q | Draft candidate | Comparison result |
 |---|---|---|
@@ -101,7 +103,7 @@ The paper copy used for comparison explicitly orders Physics first, Chemistry se
 | 24 | Physics Q36 | Critical mismatch: source ball mass is 1 kg and fall height is 20 m; draft uses 2 kg and 10 m. |
 | 25 | No confirmed exact match | Reconcile the source Section-B questions against the staged numerical records; do not assume topic similarity means exact transcription. |
 
-### Chemistry: source questions 1–25
+### Chemistry: subject-local questions 1–25 (NTA displayed numbers 51–75)
 
 | Source Q | Draft candidate | Comparison result |
 |---|---|---|
