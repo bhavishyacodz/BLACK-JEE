@@ -17,6 +17,46 @@
       },
       "draft_candidate": {
         "subject": "Physics",
+        "legacy_global_question_number": 26
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Legacy Q26 has the matching topic but its dimensional-analysis options need exact transcription verification."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 2,
+        "paper_order": 2
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 27
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Legacy Q27 currently uses different drum radius/mass/rotation data than the source PDF; confirmed content mismatch."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 3,
+        "paper_order": 3
+      },
+      "draft_candidate": {
+        "subject": "Physics",
         "legacy_global_question_number": 28
       },
       "status": "needs_exact_review",
@@ -27,47 +67,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Draft candidate legacy Q28 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 2,
-        "paper_order": 2
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 37
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Draft candidate legacy Q37 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 3,
-        "paper_order": 3
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 27
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Draft candidate legacy Q27 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
+      "note": "Rebased to candidate legacy Q28 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
@@ -77,7 +77,7 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 35
+        "legacy_global_question_number": 29
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -87,7 +87,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Draft candidate legacy Q35 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
+      "note": "Rebased to candidate legacy Q29 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
@@ -104,73 +104,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 1 is a photoelectric-effect question (work function 2.3 eV, maximum kinetic energy 0.18 eV). No Physics draft candidate found; a work-function question exists at legacy Q71 but is incorrectly labelled Chemistry and needs separate triage."
+      "note": "No draft candidate is currently mapped to Physics Q5; source extraction/import is required."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 6,
         "paper_order": 6
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 45
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Topic-level candidate: source transcription page 2 SHM question with x=A sin(50t+π/3), asking first times for zero speed and zero acceleration; compare every symbol, unit and option against draft Q45 before any verification."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 7,
-        "paper_order": 7
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 44
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Topic-level candidate: source transcription page 2 binding energy per nucleon of ²⁰⁹Bi; compare the exact isotope mass, constants and options against draft Q44."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 8,
-        "paper_order": 8
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 32
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Topic-level candidate: source transcription page 2 screw-gauge question; verify the zero-error convention, values and options against draft Q32."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 9,
-        "paper_order": 9
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -184,19 +124,19 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Legacy Q31 corrected to match the readable transcription's speed-only stem/options. Still pending official final answer-key and source-image verification."
+      "note": "Rebased to candidate legacy Q31 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
         "subject": "Physics",
-        "subject_question_number": 10,
-        "paper_order": 10
+        "subject_question_number": 7,
+        "paper_order": 7
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 50
+        "legacy_global_question_number": 32
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -204,13 +144,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 2 specifies a 9 m axis separation and R=α/2. Draft Q50 uses a 3 m separation and different mass/length values; not an exact transcription."
+      "note": "Rebased to candidate legacy Q32 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
         "subject": "Physics",
-        "subject_question_number": 11,
-        "paper_order": 11
+        "subject_question_number": 8,
+        "paper_order": 8
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -224,7 +164,67 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Legacy Q33 corrected to numerical-response format and α calculated as 1.92 from the source values. Official final-key verification remains pending."
+      "note": "Legacy Q33 restored to MCQ format from the PDF transcription, but extracted value/options conflict with the calculation; original page image and key needed."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 9,
+        "paper_order": 9
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 34
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Rebased to candidate legacy Q34 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 10,
+        "paper_order": 10
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 35
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Legacy Q35 has matching bubble dimensions/velocity/density, but its option set differs from the PDF transcription; confirmed option mismatch."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 11,
+        "paper_order": 11
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 36
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Legacy Q36 currently uses different ball mass and drop height than the source PDF; confirmed content mismatch."
     },
     {
       "source": {
@@ -234,7 +234,7 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 49
+        "legacy_global_question_number": 37
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -244,33 +244,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Topic-level candidate: source transcription page 2 lens burning-paper question; verify the exact radius, focal distance, refractive-index expression and numerical answer against draft Q49."
+      "note": "Rebased to candidate legacy Q37 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 13,
         "paper_order": 13
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 47
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Topic-level candidate: source transcription page 2 Bohr-orbit magnetic-field ratio; verify the exact orbit notation and requested ratio against draft Q47."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 14,
-        "paper_order": 14
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -284,17 +264,17 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 2 refers to potential difference across a bulb shown in a figure. Draft Q38 contains a specific 200 Ω/400 Ω network; exact circuit diagram and values must be compared before treating as a match."
+      "note": "Rebased to candidate legacy Q38 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
         "subject": "Physics",
-        "subject_question_number": 15,
-        "paper_order": 15
+        "subject_question_number": 14,
+        "paper_order": 14
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 29
+        "legacy_global_question_number": 39
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -304,7 +284,27 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Legacy Q29 corrected to the readable transcription's force vector, magnetic field and options. Independent official final-key verification remains pending."
+      "note": "Rebased to candidate legacy Q39 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 15,
+        "paper_order": 15
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 40
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Legacy Q40 matches the point-charge/sphere geometry in the source PDF; exact options and official key still need verification."
     },
     {
       "source": {
@@ -324,7 +324,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Topic-level candidate only: source transcription page 2 asks for refractive index of a thin layer below an equilateral prism using a ray diagram. Draft Q41 concerns a prism/coating and total internal reflection; inspect the actual diagrams and all conditions before deciding whether it is the same question."
+      "note": "Rebased to candidate legacy Q41 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
@@ -334,7 +334,7 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 26
+        "legacy_global_question_number": 42
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -344,53 +344,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Topic-level candidate: source transcription page 2 asks for dimensions of G using h, L, M and T. Draft Q26 has the same topic; compare exact options and the source's dimensional expression."
+      "note": "Legacy Q42 restored to MCQ and the source expression (3L₁ − L₂); switch wiring in the diagram remains a reconstructed candidate pending visual verification."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 18,
         "paper_order": 18
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 30
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Topic-level candidate: source transcription page 2 logic-gate circuit. Draft Q30 has a custom SVG; exact gate symbols and connections must be visually compared to the source figure."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 19,
-        "paper_order": 19
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 40
-      },
-      "status": "confirmed_mismatch",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Source transcription page 2 specifies sphere radii 4 m and 6 m with charges 8 μC and 2 μC. Draft Q40 instead uses point charges at 2 cm and 4 cm and spheres of 3 cm and 5 cm; geometry and values differ."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 20,
-        "paper_order": 20
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -404,7 +364,47 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Topic-level candidate: source transcription page 2 mutual-inductance system with a square of side L and R≪L. Draft Q43 has a similar setup; compare the source diagram, current geometry and options before verification."
+      "note": "Rebased to candidate legacy Q43 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 19,
+        "paper_order": 19
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 44
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Legacy Q44 matches the bismuth binding-energy stem; options and official key still need verification."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 20,
+        "paper_order": 20
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 45
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Rebased to candidate legacy Q45 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
@@ -424,13 +424,33 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Topic-level candidate: source transcription page 7 YDSE question with intensity 3/4 of maximum and path difference λ/α; compare the source figure and exact requested symbol against draft Q46."
+      "note": "Rebased to candidate legacy Q46 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
         "subject": "Physics",
         "subject_question_number": 22,
         "paper_order": 22
+      },
+      "draft_candidate": {
+        "subject": "Physics",
+        "legacy_global_question_number": 47
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Rebased to candidate legacy Q47 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
+    },
+    {
+      "source": {
+        "subject": "Physics",
+        "subject_question_number": 23,
+        "paper_order": 23
       },
       "draft_candidate": {
         "subject": "Physics",
@@ -444,27 +464,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Topic-level candidate: source transcription page 8 ideal-gas internal-energy change with 5 moles, Cp=8 cal/mol°C and temperature 10°C to 20°C; verify exact wording and units against draft Q48."
-    },
-    {
-      "source": {
-        "subject": "Physics",
-        "subject_question_number": 23,
-        "paper_order": 23
-      },
-      "draft_candidate": {
-        "subject": "Physics",
-        "legacy_global_question_number": 42
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Legacy Q42 revised: diagram now places C, R, L₂ and L₁ in one series loop, with S₂ bypassing L₂ and S₁ bypassing L₁. Stem now asks numerical 3L₂−L₁ (not 3L₁−L₂). Calculated candidate is 2/9 H; original NTA figure and final key still require independent visual confirmation."
+      "note": "Rebased to candidate legacy Q48 from the source PDF's actual printed Physics order. Exact source transcription and official final key remain pending."
     },
     {
       "source": {
@@ -474,7 +474,7 @@
       },
       "draft_candidate": {
         "subject": "Physics",
-        "legacy_global_question_number": 36
+        "legacy_global_question_number": 49
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -484,7 +484,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Draft candidate legacy Q36 was edited to match the readable transcription's source values/options. Still pending independent official final-key and exact source verification."
+      "note": "Legacy Q49 matches the convex-lens question topic; exact source wording and numerical key remain to be checked."
     },
     {
       "source": {
@@ -493,7 +493,7 @@
         "paper_order": 25
       },
       "draft_candidate": null,
-      "status": "source_extraction_unresolved",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -501,7 +501,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "The available transcription jumps from Physics Q24 to Chemistry Q1 and does not expose Physics Q25. No candidate is assigned until the missing source item is inspected in the PDF page image."
+      "note": "Legacy Q50 matches the rod/sphere moment-of-inertia topic; exact source figure and expression need verification."
     },
     {
       "source": {
@@ -1472,5 +1472,5 @@
     }
   ],
   "source_pdf": "https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf",
-  "audit_note": "Status labels are conservative audit annotations based on text-extracted source material. Candidate alignment does not establish exact equivalence. Mathematics source slots 17–20 were not present in the extracted text and are explicitly unresolved; Section-B numerical questions are mapped to subject-local slots 21–25."
+  "audit_note": "Status labels are conservative audit annotations based on text-extracted source material. Candidate alignment does not establish exact equivalence. Mathematics source slots 17–20 were not present in the extracted text and are explicitly unresolved; Section-B numerical questions are mapped to subject-local slots 21–25. Physics records rebased on 2026-10-23 to the source PDF's printed sequence (Q1–25 -> legacy Q26–50); no Physics record is publishable pending content and answer-key verification."
 }
