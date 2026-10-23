@@ -243,3 +243,8 @@ Corrected the candidate question to the readable source transcription: 1 kg ball
 - **Physics Q8 / legacy Q32:** restored the exact source option values, including 5.056 mm. The candidate answer is 5.045 mm; zero-error sign convention and final answer key remain open.
 
 Updated the draft, source crosswalk, audit view and embedded source-order keys together. All three remain `needs_exact_review` and unpublished until official answer-key and relevant figure checks are complete.
+
+
+## Diagram and expression correction — Physics Q23 / legacy Q42 (2026-10-23)
+
+The source transcription asks for `3L₂ − L₁`, but the draft incorrectly asked for `3L₁ − L₂`. The reconstructed diagram also had the switches bypassing the opposite inductors from what the source expression requires. Corrected the stem, swapped the S₁/S₂ bypass labels so S₁ bypasses L₁ and S₂ bypasses L₂, and re-derived the result: `3L₂ − L₁ = 2/(ω²C) = 2/9 H`. Updated the draft, SVG, crosswalk, audit view and embedded source-order key together. Status remains `needs_exact_review` pending comparison with the original source figure and final NTA answer key; publication remains HOLD.
