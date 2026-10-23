@@ -814,27 +814,30 @@
       "subject": "Chemistry",
       "subject_question_number": 13,
       "section": "A",
-      "draft_candidate_global_number": 58,
-      "status": "candidate_needs_exact_review",
-      "notes": "oxide classification candidate; options need verification"
+      "draft_candidate_global_number": 63,
+      "status": "candidate_needs_diagram_review",
+      "notes": "Candidate global Q63 has the matching substituted diarylmethyl carbocation/carbanion topic and q63.svg, but its wording is a paraphrase. Compare the original source text and diagram directly before marking exact match.",
+      "verification_evidence": ""
     },
     {
       "paper_order": 64,
       "subject": "Chemistry",
       "subject_question_number": 14,
       "section": "A",
-      "draft_candidate_global_number": 59,
+      "draft_candidate_global_number": 64,
       "status": "candidate_needs_exact_review",
-      "notes": "ionisation-energy trend candidate; full statements need verification"
+      "notes": "Candidate global Q64 has the matching heptane/isomerization-aromatization-cyclization topic, but exact source wording/options still require direct comparison. Keep audit-only.",
+      "verification_evidence": ""
     },
     {
       "paper_order": 65,
       "subject": "Chemistry",
       "subject_question_number": 15,
       "section": "A",
-      "draft_candidate_global_number": 61,
+      "draft_candidate_global_number": 65,
       "status": "candidate_needs_exact_review",
-      "notes": "critical mismatch: coordination complex pairings/options differ"
+      "notes": "Candidate global Q65 has the matching alkyl-halide statement-combination topic, but exact source wording/options still require direct comparison. Keep audit-only.",
+      "verification_evidence": ""
     },
     {
       "paper_order": 66,
