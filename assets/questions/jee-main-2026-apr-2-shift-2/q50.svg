@@ -1,21 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="620" height="320" viewBox="0 0 620 320" role="img" aria-labelledby="title desc">
-<title id="title">JEE Main 2026 April 2 Shift 2 Question 50 moment of inertia diagram</title>
-<desc id="desc">A uniform rod of mass 40 kilograms and length 3 metres rotates about the vertical axis AB at its right end. A solid sphere of radius R has a vertical rotation axis through its centre, parallel to AB. The two parallel axes are separated by 3 metres.</desc>
-<rect width="620" height="320" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="360" viewBox="0 0 620 360" role="img" aria-labelledby="title desc">
+<title id="title">JEE Main 2026 April 2 Shift 2 Question 50 rod and sphere moment of inertia</title>
+<desc id="desc">A uniform rod of mass 40 kg and length 3 m rotates about vertical axis AB at its right end. A solid sphere of mass 10 kg and radius R has a vertical axis through its centre, parallel to AB. The axes are separated by 3 m.</desc>
+<rect width="620" height="360" fill="white"/>
 <g stroke="#111" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M300 35 V275 M292 45 L300 30 L308 45 M292 265 L300 280 L308 265"/>
-  <rect x="65" y="82" width="235" height="24" fill="#fff"/>
-  <path d="M65 118 H300 M65 128 H300 M65 118 V128 M300 118 V128"/>
-  <circle cx="105" cy="205" r="42" fill="#fff"/>
-  <path d="M105 205 L130 181 M130 181 L124 183 M130 181 L128 188"/>
-  <path d="M105 145 V265" stroke-dasharray="6 6"/>
-  <path d="M105 205 H300" stroke-dasharray="5 6"/>
-  <path d="M105 168 V242" stroke-width="1.5" stroke-dasharray="3 5"/>
+  <!-- Rotation axis AB at the right end of the rod -->
+  <path d="M355 34 V286 M347 44 L355 29 L363 44 M347 276 L355 291 L363 276"/>
+  <!-- Uniform rod and its centre line -->
+  <rect x="95" y="90" width="260" height="22" fill="white"/>
+  <path d="M95 101 H355" stroke-dasharray="5 5" stroke-width="1.5"/>
+  <circle cx="225" cy="101" r="4" fill="#111"/>
+  <!-- Rod length dimension -->
+  <path d="M95 126 H355 M95 120 V132 M355 120 V132" stroke-width="1.5"/>
+  <!-- Sphere and its central parallel axis -->
+  <circle cx="95" cy="218" r="42" fill="white"/>
+  <path d="M95 166 V270" stroke-dasharray="5 5" stroke-width="1.5"/>
+  <circle cx="95" cy="218" r="3.5" fill="#111"/>
+  <path d="M95 218 L122 193 M122 193 L115 195 M122 193 L120 201" stroke-width="2"/>
+  <!-- Separation between the two axes -->
+  <path d="M95 278 V300 M355 278 V300 M95 290 H355 M95 284 V296 M355 284 V296" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <!-- Rotation arrow around sphere axis -->
+  <path d="M63 274 A48 48 0 0 0 128 277" stroke-width="2"/>
+  <path d="M128 277 L119 273 M128 277 L123 285" stroke-width="2"/>
 </g>
-<g fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="20">
-  <text x="312" y="45">A</text><text x="312" y="280">B</text>
-  <text x="170" y="72">M = 40 kg</text><text x="155" y="148">Rod length = 3 m</text>
-  <text x="126" y="185">R</text><text x="175" y="195">3 m between axes</text>
-  <text x="120" y="288" font-size="16">Sphere axis through centre</text>
+<g fill="#111" font-family="Arial, Helvetica, sans-serif" font-size="19">
+  <text x="367" y="43">A</text><text x="367" y="292">B</text>
+  <text x="177" y="78">M = 40 kg</text>
+  <text x="191" y="149">Rod length = 3 m</text>
+  <text x="113" y="203">R</text>
+  <text x="38" y="163">10 kg</text>
+  <text x="164" y="282">3 m between axes</text>
+  <text x="140" y="334" font-size="16">Sphere axis passes through its centre</text>
 </g>
 </svg>
