@@ -710,7 +710,7 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 74
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -718,7 +718,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source Chemistry Q11 asks paramagnetic count for Lu³⁺, Yb²⁺, Gd²⁺, Ce⁴⁺, La³⁺, Zn²⁺, Cu²⁺, Mn²⁺, Sc³⁺ and Ti⁴⁺. Legacy Q74 substitutes Gd³⁺ for Gd²⁺, changing the ion list."
+      "note": "Legacy Q74 corrected to use source ion Gd²⁺ instead of Gd³⁺ and the source ion list/order. Count remains calculated as 3; final-key verification pending."
     },
     {
       "source": {
@@ -815,7 +815,7 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 70
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -823,7 +823,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source Chemistry Q17 asks which ion both gives a positive borax-bead test and has the largest ionization energy, among Zn²⁺, Fe³⁺, Fe²⁺ and Co²⁺. Legacy Q70 substitutes Cr²⁺ for Co²⁺."
+      "note": "Legacy Q70 corrected to the source ion list Zn²⁺, Fe³⁺, Fe²⁺, Co²⁺. Candidate answer Fe³⁺ (option B); official final-key verification pending."
     },
     {
       "source": {
