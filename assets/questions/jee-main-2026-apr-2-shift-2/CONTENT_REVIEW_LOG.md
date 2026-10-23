@@ -248,3 +248,8 @@ Updated the draft, source crosswalk, audit view and embedded source-order keys t
 ## Diagram and expression correction — Physics Q23 / legacy Q42 (2026-10-23)
 
 The source transcription asks for `3L₂ − L₁`, but the draft incorrectly asked for `3L₁ − L₂`. The reconstructed diagram also had the switches bypassing the opposite inductors from what the source expression requires. Corrected the stem, swapped the S₁/S₂ bypass labels so S₁ bypasses L₁ and S₂ bypasses L₂, and re-derived the result: `3L₂ − L₁ = 2/(ω²C) = 2/9 H`. Updated the draft, SVG, crosswalk, audit view and embedded source-order key together. Status remains `needs_exact_review` pending comparison with the original source figure and final NTA answer key; publication remains HOLD.
+
+
+## Diagram recovery — Physics Q20 and Q21 (2026-10-23)
+
+Added missing SVGs for the mutual-inductance setup (concentric coplanar square/circular loops, L ≫ R) and the YDSE path-difference setup (slits S₁/S₂, screen point P, paths S₁P and S₂P). Attached both assets to the draft records and audit view. These are clearly described as schematic reconstructions, not pixel-exact source figures. Compare against the original paper figures and verify final keys before certification; both rows remain `needs_exact_review` and unpublished.
