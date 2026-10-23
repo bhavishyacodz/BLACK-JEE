@@ -1139,7 +1139,7 @@
         "subject": "Chemistry",
         "legacy_global_question_number": 57
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1147,7 +1147,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "CONFIRMED MISMATCH: NTA Chemistry Q57 (paper PDF p.21; question ID 691121207) gives k=1×10⁻³ mol⁻¹ L s⁻¹ and five statements A–E with combinations. Draft global Q57 instead gives k=0.3 M⁻¹ s⁻¹ and rewrites the statements/options. Do not verify or publish this draft row until replaced with exact source wording/options and keyed to option ID 691121705."
+      "note": "Verified after correcting draft global Q57 to match NTA Chemistry Q57 exactly: rate constant 1×10⁻³ mol⁻¹ L s⁻¹, statements A–E, four original options, and source graph. NTA final answer key PDF p.2 maps question ID 691121207 to option ID 691121705 (A and B Only)."
     },
     {
       "source": {
