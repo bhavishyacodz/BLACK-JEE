@@ -28,8 +28,13 @@ def extract_function(source: str, signature: str) -> str:
 
 def main() -> int:
     pages = {
-        "pyq.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
+        "admin.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
+        "chapter-practice.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
+        "chapterwise.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
+        "mock-tests.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
+        "prep.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
         "pyq-admin.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
+        "pyq.html": ("prettyQuestionText", r"function\s+prettyQuestionText\(value\)"),
         "shift-workbench.html": ("mathMarkup", r"function\s+mathMarkup\(value,forceMath=false\)"),
     }
     failures, total = [], 0
