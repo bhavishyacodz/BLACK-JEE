@@ -29,6 +29,9 @@ jobs:
       - name: Install image processor
         run: python -m pip install --disable-pip-version-check Pillow==11.1.0
 
+      - name: Check processor syntax
+        run: python -m py_compile scripts/process_question_crops.py
+
       - name: Process validated crop manifest
         run: python scripts/process_question_crops.py
 
