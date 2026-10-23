@@ -11,6 +11,7 @@ CROSSWALK = Path("assets/questions/jee-main-2026-apr-2-shift-2/source-to-draft-c
 SUBJECTS = ("Mathematics", "Physics", "Chemistry")
 ALLOWED_STATUSES = {
     "candidate_matches_core_setup",
+    "verified_exact_match",
     "confirmed_mismatch",
     "needs_exact_review",
     "needs_diagram_review",
