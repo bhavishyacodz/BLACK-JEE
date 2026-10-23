@@ -342,7 +342,7 @@
       "subject": "Physics",
       "subject_question_number": 7,
       "status": "content_added",
-      "question_text": "The graph shows variation of stopping potential V_0 with the frequency \\nu of the incident radiation for three photosensitive metals X_1, X_2 and X_3. Which metal will give out electrons with greater kinetic energy, for the same wavelength of incident radiation?",
+      "question_text": "The graph shows variation of stopping potential \\(V_0\\) with the frequency \\(\\nu\\) of the incident radiation for three photosensitive metals \\(X_1\\), \\(X_2\\) and \\(X_3\\). Which metal will give out electrons with greater kinetic energy, for the same wavelength of incident radiation?",
       "question_type": "MCQ",
       "options": [
         "X_1",
@@ -351,7 +351,7 @@
         "All the metals will give out photoelectrons with same kinetic energies."
       ],
       "correct_answer": "X_1",
-      "solution": "Photoelectric Kmax=hν−Φ. The smallest threshold frequency means the smallest work function, so X₁ gives the greatest kinetic energy for the same incident wavelength.",
+      "solution": "The maximum photoelectron kinetic energy is \\(K_{\\max}=h\\nu-\\Phi\\). For the same incident wavelength, the metal with the lowest threshold frequency has the smallest work function and therefore gives the greatest kinetic energy. Confirm the graph's labels against the source before approval.",
       "diagram": {
         "required": true,
         "asset_path": "images/BJ-JM-20260404-S1-PHY-032-diagram-1.png",
@@ -404,7 +404,7 @@
       "subject": "Physics",
       "subject_question_number": 8,
       "status": "content_added",
-      "question_text": "A slit of width a is illuminated by light of wavelength \\lambda. The linear separation between 1st and 3rd minima in the diffraction pattern produced on a screen placed at a distance D from the slit system is:",
+      "question_text": "A slit of width a is illuminated by light of wavelength \\(\\lambda\\). The linear separation between 1st and 3rd minima in the diffraction pattern produced on a screen placed at a distance D from the slit system is:",
       "question_type": "MCQ",
       "options": [
         "\\frac{D\\lambda}{a}",
@@ -456,7 +456,7 @@
       "subject": "Physics",
       "subject_question_number": 9,
       "status": "content_added",
-      "question_text": "A string A of length 0.314 m and Young's modulus 2\\times10^{10}\\,\\mathrm{N/m^2} is connected to another string B of length and Young's modulus both twice of those of A. This series combination of strings is then suspended from a rigid support and its free end is fixed to a load of mass 0.8 kg. The net change in length of the combination is ___ mm. (Radius of both the strings is 0.2 mm and acceleration due to gravity = 10 m/s^2.) (Mass of both strings is to be neglected as compared to the mass of load.)",
+      "question_text": "A string A of length 0.314 m and Young's modulus \\(2\\times10^{10}\\,\\mathrm{N/m^2}\\) is connected to another string B of length and Young's modulus both twice of those of A. This series combination of strings is then suspended from a rigid support and its free end is fixed to a load of mass 0.8 kg. The net change in length of the combination is ___ mm. (Radius of both the strings is 0.2 mm and acceleration due to gravity = 10 m/s^2.) (Mass of both strings is to be neglected as compared to the mass of load.)",
       "question_type": "MCQ",
       "options": [
         "3",
@@ -508,7 +508,7 @@
       "subject": "Physics",
       "subject_question_number": 10,
       "status": "content_added",
-      "question_text": "One gas of n_1 mole of molecules at temperature T_1, volume V_1, and pressure P_1, and another gas of n_2 mole of molecules at temperature T_2, volume V_2, and pressure P_2, are mixed resulting in pressure P and volume V of the mixture. The temperature of the mixture is:",
+      "question_text": "One gas of \\(n_1\\) mole of molecules at temperature \\(T_1\\), volume \\(V_1\\), and pressure \\(P_1\\), and another gas of \\(n_2\\) mole of molecules at temperature \\(T_2\\), volume \\(V_2\\), and pressure \\(P_2, are mixed resulting in pressure P and volume V of the mixture. The temperature of the mixture is:",
       "question_type": "MCQ",
       "options": [
         "\\frac{T_1+T_2}{2}",
@@ -517,7 +517,7 @@
         "\\frac{|T_1-T_2|}{2}"
       ],
       "correct_answer": "\\frac{T_1T_2PV}{T_2P_1V_1+T_1P_2V_2}",
-      "solution": "Using n₁=P₁V₁/(RT₁), n₂=P₂V₂/(RT₂), and PV=(n₁+n₂)RT gives T=T₁T₂PV/(T₂P₁V₁+T₁P₂V₂).",
+      "solution": "Using \\(n_1=\\frac{P_1V_1}{RT_1}\\), \\(n_2=\\frac{P_2V_2}{RT_2}\\), and \\(PV=(n_1+n_2)RT\\), the mixture temperature is \\(T=\\frac{T_1T_2PV}{T_2P_1V_1+T_1P_2V_2}\\).",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -560,7 +560,7 @@
       "subject": "Physics",
       "subject_question_number": 11,
       "status": "needs_review",
-      "question_text": "An ideal gas undergoes a process maintaining relation between pressure (P) and volume (V) as P=P_0\\left[1+\\left(\\frac{V_0}{V}\\right)^2\\right]^{-1}, where P_0 and V_0 are constants. If two samples A and B (two moles each) with initial volumes V_0 and 3V_0 respectively undergo the above-mentioned process and attain the same pressure, then the difference in the temperatures of these samples, T_B-T_A, is: (R = gas constant)",
+      "question_text": "An ideal gas undergoes a process maintaining relation between pressure (P) and volume (V) as \\(P=P_0\\left[1+\\left(\\frac{V_0}{V}\\right)^2\\right]^{-1}\\), where P_0 and V_0 are constants. If two samples A and B (two moles each) with initial volumes V_0 and 3V_0 respectively undergo the above-mentioned process and attain the same pressure, then the difference in the temperatures of these samples, \\(T_B-T_A\\), is: (R = gas constant)",
       "question_type": "MCQ",
       "options": [
         "\\frac{9P_0V_0}{8R}",
@@ -612,7 +612,7 @@
       "subject": "Physics",
       "subject_question_number": 12,
       "status": "content_added",
-      "question_text": "A voltmeter with internal resistance x\\,\\Omega can be used to measure up to 20 V. In order to increase its measuring range to 30 V, the required modification is to:",
+      "question_text": "A voltmeter with internal resistance \\(x\\,\\Omega\\) can be used to measure up to 20 V. In order to increase its measuring range to 30 V, the required modification is to:",
       "question_type": "MCQ",
       "options": [
         "Connect a resistor of \\frac{x}{2}\\,\\Omega in series with the voltmeter.",
@@ -787,7 +787,7 @@
       "subject": "Physics",
       "subject_question_number": 15,
       "status": "content_added",
-      "question_text": "A parallel-plate air capacitor is connected to a battery. The plates are pulled apart at uniform speed v. If x is the separation between the plates at any instant, then the time rate of change of electrostatic energy of the capacitor is proportional to x^\\alpha, where \\alpha is:",
+      "question_text": "A parallel-plate air capacitor is connected to a battery. The plates are pulled apart at uniform speed v. If x is the separation between the plates at any instant, then the time rate of change of electrostatic energy of the capacitor is proportional to \\(x^\\alpha\\), where \\(\\alpha\\) is:",
       "question_type": "MCQ",
       "options": [
         "-2",
@@ -840,7 +840,7 @@
       "subject": "Physics",
       "subject_question_number": 16,
       "status": "content_added",
-      "question_text": "An insulated wire is wound so that it forms a flat coil with N=200 turns. The radius of the innermost turn is r_1=3 cm, and of the outermost turn r_2=6 cm. If 20 mA current flows in it, then the magnetic moment will be \\alpha\\times10^{-2}\\,\\mathrm{A\\,m^2}. The value of \\alpha is:",
+      "question_text": "An insulated wire is wound so that it forms a flat coil with \\(N=200\\) turns. The radius of the innermost turn is \\(r_1=3\\) cm, and of the outermost turn \\(r_2=6\\) cm. If 20 mA current flows in it, then the magnetic moment will be \\(\\alpha\\times10^{-2}\\,\\mathrm{A\\,m^2}\\). The value of \\(\\alpha\\) is:",
       "question_type": "MCQ",
       "options": [
         "4.4",
@@ -892,7 +892,7 @@
       "subject": "Physics",
       "subject_question_number": 17,
       "status": "content_added",
-      "question_text": "Consider a circuit consisting of a capacitor (20\\,\\mu\\mathrm{F}), resistor (100\\,\\Omega) and two identical diodes as shown in the figure. The resistance of a diode under forward-biasing condition is 10\\,\\Omega. The time constant of the circuit is \\alpha\\times10^{-3}\\,\\mathrm{s}. The value of \\alpha is:",
+      "question_text": "Consider a circuit consisting of a capacitor (\\(20\\,\\mu\\mathrm{F}\\)), resistor (\\(100\\,\\Omega\\)) and two identical diodes as shown in the figure. The resistance of a diode under forward-biasing condition is \\(10\\,\\Omega\\). The time constant of the circuit is \\(\\alpha\\times10^{-3}\\,\\mathrm{s}\\). The value of \\(\\alpha\\) is:",
       "question_type": "MCQ",
       "options": [
         "2.2",
@@ -1018,7 +1018,7 @@
       "subject": "Physics",
       "subject_question_number": 19,
       "status": "content_added",
-      "question_text": "A telescope with objective diameter R is used to observe a distant star emitting light of wavelength 500 nm, at a resolution of 5\\times10^{-7} radian. The value of R is ___ cm.",
+      "question_text": "A telescope with objective diameter R is used to observe a distant star emitting light of wavelength \\(500\\,\\mathrm{nm}\\), at a resolution of \\(5\\times10^{-7}\\) radian. The value of R is ___ cm.",
       "question_type": "MCQ",
       "options": [
         "61",
