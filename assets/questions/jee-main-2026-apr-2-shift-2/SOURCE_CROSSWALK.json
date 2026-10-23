@@ -258,7 +258,7 @@
       "section": "B",
       "draft_candidate_global_number": 42,
       "status": "needs_exact_review",
-      "notes": "Topic-level candidate: source transcription page 8 switch/phase-angle capacitor question; compare the circuit diagram, component labels and expression 3L₂−L₁ against draft Q42.",
+      "notes": "Legacy Q42 revised: diagram now places C, R, L₂ and L₁ in one series loop, with S₂ bypassing L₂ and S₁ bypassing L₁. Stem now asks numerical 3L₂−L₁ (not 3L₁−L₂). Calculated candidate is 2/9 H; original NTA figure and final key still require independent visual confirmation.",
       "verification_evidence": "",
       "publishable": false
     },
