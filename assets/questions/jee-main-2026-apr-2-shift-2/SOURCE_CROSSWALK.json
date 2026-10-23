@@ -225,8 +225,8 @@
       "section": "A",
       "draft_candidate_global_number": 43,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q43 (mutual-inductance/current-loop geometry); exact figure and formula need source verification.",
-      "verification_evidence": "",
+      "notes": "Added schematic reconstruction for the concentric coplanar square/circular loops (L ≫ R). Diagram geometry is inferred from the candidate stem and still needs comparison against the original paper figure; do not mark verified.",
+      "verification_evidence": "Schematic asset added to restore missing diagram display; original source figure comparison and official final answer key remain pending.",
       "publishable": false
     },
     {
@@ -236,8 +236,8 @@
       "section": "B",
       "draft_candidate_global_number": 46,
       "status": "needs_exact_review",
-      "notes": "Topic candidate legacy Q46 (YDSE intensity); exact condition/options and key pending.",
-      "verification_evidence": "",
+      "notes": "Added schematic reconstruction of YDSE with point P and S₁P/S₂P path difference. Diagram is explanatory, not source-certified; exact original figure and answer key remain to review.",
+      "verification_evidence": "Schematic asset added to restore missing diagram display; original source figure comparison and official final answer key remain pending.",
       "publishable": false
     },
     {
