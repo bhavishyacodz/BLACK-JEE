@@ -360,7 +360,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -438,7 +438,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -461,7 +461,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -506,7 +506,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -529,7 +529,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -563,7 +563,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -760,8 +760,10 @@
         "visual_details_verified": false
       }
     ],
-    "visual_required": false,
-    "unresolved_issues": []
+    "visual_required": true,
+    "unresolved_issues": [
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
+    ]
   },
   {
     "question_id": "BJ-JM-20260404-S1-CHE-063",
@@ -830,7 +832,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -851,8 +853,10 @@
         "visual_details_verified": false
       }
     ],
-    "visual_required": false,
-    "unresolved_issues": []
+    "visual_required": true,
+    "unresolved_issues": [
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
+    ]
   },
   {
     "question_id": "BJ-JM-20260404-S1-CHE-066",
@@ -874,7 +878,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -897,7 +901,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -920,7 +924,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -941,8 +945,10 @@
         "visual_details_verified": false
       }
     ],
-    "visual_required": false,
-    "unresolved_issues": []
+    "visual_required": true,
+    "unresolved_issues": [
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
+    ]
   },
   {
     "question_id": "BJ-JM-20260404-S1-CHE-070",
@@ -964,7 +970,7 @@
     ],
     "visual_required": true,
     "unresolved_issues": [
-      "Visual assets could not be extracted directly from text transcript"
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
     ]
   },
   {
@@ -997,7 +1003,9 @@
       }
     ],
     "visual_required": true,
-    "unresolved_issues": []
+    "unresolved_issues": [
+      "Image file is present, but official-source fidelity and student-page rendering remain unverified."
+    ]
   },
   {
     "question_id": "BJ-JM-20260404-S1-CHE-073",
