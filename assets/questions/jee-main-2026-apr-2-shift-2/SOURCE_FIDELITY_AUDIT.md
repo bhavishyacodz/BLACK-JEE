@@ -44,3 +44,24 @@ These examples are enough to establish that a simple reorder would preserve inco
 ## Reference used
 
 The NTA JEE Main documents page lists “B Tech 2nd Apr 2026 Shift 2” under Question Papers. The text comparison in this report used an accessible text-rendered copy of that paper to locate source questions; final publication should still be cross-checked against the official NTA-hosted paper and final answer key.
+
+
+## Mathematics cross-map findings
+
+A content-based scan of the source paper shows that several mathematical records exist in the batch but are assigned a different draft number, while others have altered values or no confirmed match. Examples:
+
+- Source Mathematics Q1 (mean/variance) resembles draft Mathematics Q9.
+- Source Mathematics Q2 (degree-5 polynomial and limit) resembles draft Mathematics Q18.
+- Source Mathematics Q4 (nested circles in the complex plane) resembles draft Mathematics Q2.
+- Source Mathematics Q5 (parabola through (1,−1)) resembles draft Mathematics Q12.
+- Source Mathematics Q6 (circle-diameter locus/eccentricity) resembles draft Mathematics Q23.
+- Source Mathematics Q7 (sum of a cubic-sum series) resembles draft Mathematics Q5.
+- Source Mathematics Q9 (integral of sin⁴x + cos⁴x) resembles draft Mathematics Q17.
+- Source Mathematics Q10 (regular-polygon triangle count) resembles draft Mathematics Q7.
+- Source Mathematics Q11 (relation on A×A) resembles draft Mathematics Q21.
+- Source Mathematics Q13 (partial-fraction integral) resembles draft Mathematics Q19.
+- Source Mathematics Q14 (circle chord) resembles draft Mathematics Q10.
+- Source Mathematics Q15 (differential equation) resembles draft Mathematics Q20.
+- Source Mathematics Q16 (hyperbola and line area) resembles draft Mathematics Q24.
+
+“Resembles” is not a verification result. Examples of substantive differences still present include the system of equations in source Mathematics Q8 not matching the staged system; the greatest-integer function in source Q12 differing from draft Q25; and source Section-B Q1's trigonometric expression differing from draft Q13. Source Section-B Q4's matrix B also differs from draft Q22. These need exact reconciliation before records are renumbered.
