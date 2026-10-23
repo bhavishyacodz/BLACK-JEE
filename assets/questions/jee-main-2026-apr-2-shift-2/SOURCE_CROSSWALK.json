@@ -268,9 +268,9 @@
       "subject_question_number": 24,
       "section": "B",
       "draft_candidate_global_number": 36,
-      "status": "confirmed_mismatch",
-      "notes": "Topic candidate legacy Q36 (ball penetrating sand) uses different mass/height than the source transcription; confirmed content mismatch.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Legacy Q36 corrected to match the readable source transcription (1 kg, 20 m, 10 cm; options 1000/1980/2010/2020 N; candidate answer 2010 N). Keep unpublished until the official final answer key is checked.",
+      "verification_evidence": "Readable transcription: JEE Main 2026 April 2 Shift 2, Physics Q24. Final NTA answer key still pending.",
       "publishable": false
     },
     {
