@@ -121,7 +121,20 @@ body.menu-open{overflow:hidden}
 :where(.btn,button.btn):active{transform:translateY(1px)}
 :where(.section){scroll-margin-top:86px}
 .site-menu-panel a{-webkit-tap-highlight-color:transparent}
-</style></head>
+</style><style id="black-jee-monochrome-polish">
+:root{--red:#f2f2f2;--red2:#c5c5c5}
+body{background:radial-gradient(ellipse at 15% -10%,#202020 0,transparent 38%),var(--bg)}
+.mark{background:#f2f2f2;color:#090909}
+h1 span,.red{color:#f2f2f2}
+.btn-red,.btn-red:hover{background:#f2f2f2;border-color:#f2f2f2;color:#090909}
+.option:hover,.option:has(input:checked){border-color:#dedede;background:#191919}
+.option input,.progress div{accent-color:#f2f2f2;background-color:#f2f2f2}
+.tag{border-color:#454545;color:#dedede}
+.quote{border-color:#aaa}
+:focus-visible{outline:2px solid #f2f2f2;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head>
 <body class="admin-page">
 <header class="topbar"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">B</span><span>BLACK <span class="red">JEE</span></span></a><div class="nav-right"><a class="nav-link" href="#challenge">TODAY'S CHALLENGE</a><a class="nav-link" href="#hall">HALL OF PROOF</a><a class="nav-link" href="attempt.html?admin=1" target="_blank" rel="noopener">QUESTION STUDIO ↗</a><a class="nav-link" href="admin.html?admin=1" target="_blank" rel="noopener">ADMIN DASHBOARD ↗</a><button class="btn btn-quiet" id="adminNav" type="button" onclick="window.open('admin.html?admin=1','_blank','noopener')">ADMIN ↗</button><div class="top-action-links"><a class="top-action-link" href="admin.html?admin=1" aria-label="Open admin dashboard">ADMIN</a><a class="top-action-link" href="profile.html" aria-label="Open your profile">PROFILE</a></div><button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header>
 <div class="site-menu-shell" id="siteMenu" hidden><div class="site-menu-panel" role="dialog" aria-modal="true" aria-label="BLACK JEE navigation"><div class="site-menu-heading"><div><strong>BLACK JEE</strong><small>Choose where to go</small></div><span aria-hidden="true">✦</span></div><a class="site-menu-link" href="index.html"><span class="menu-symbol">⌂</span><span>Home</span></a><a class="site-menu-link" href="attempt.html"><span class="menu-symbol">◉</span><span>Live challenge</span></a><a class="site-menu-link" href="archive.html"><span class="menu-symbol">▤</span><span>Challenge archive</span></a><a class="site-menu-link" href="profile.html"><span class="menu-symbol">◎</span><span>My profile</span></a><a class="site-menu-link" href="attempt.html?admin=1"><span class="menu-symbol">✎</span><span>Question studio</span></a><a class="site-menu-link menu-admin" href="admin.html?admin=1"><span class="menu-symbol">⚙</span><span>Admin dashboard</span></a><div class="site-menu-footer">One question. Full focus. Your next step starts here.</div></div></div>
