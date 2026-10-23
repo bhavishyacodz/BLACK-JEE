@@ -1,0 +1,44 @@
+[
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Indefinite Integration",
+    "source_question_number": 19,
+    "question_text": "Let f(x) = ∫ [(16x + 24)/(x² + 2x − 15)] dx. If f(4) = 14 ln(3) and f(7) = ln(2^α · 3^β), where α, β ∈ N, then α + β is:",
+    "question_type": "MCQ",
+    "options": [
+      "31",
+      "37",
+      "39",
+      "41"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "C",
+    "solution": "Partial fractions give (16x+24)/[(x+5)(x−3)] = 7/(x+5)+9/(x−3). Thus f(x)=7ln|x+5|+9ln|x−3|+C. The condition f(4)=14ln3 gives C=0. Then f(7)=7ln12+9ln4=32ln2+7ln3, so α+β=39."
+  },
+  {
+    "year": 2026,
+    "session": "2 April Shift 2",
+    "subject": "Mathematics",
+    "chapter": "Differential Equations",
+    "source_question_number": 20,
+    "question_text": "Let x=x(y) be the solution of 2y²(dx/dy) − 2xy + x² = 0, y > 1, with x(e)=e. Then x(e²) is:",
+    "question_type": "MCQ",
+    "options": [
+      "(3/2)e²",
+      "(2/3)e²",
+      "e²",
+      "2e²"
+    ],
+    "marks_correct": 4,
+    "marks_wrong": -1,
+    "is_published": false,
+    "image_url": "",
+    "correct_answer": "B",
+    "solution": "Set x=yz. The differential equation reduces to 2y(dz/dy)+z²=0, so 1/z=(1/2)ln y+C. From x(e)=e, z(e)=1 and C=1/2. Hence x=2y/(1+ln y), giving x(e²)=2e²/3."
+  }
+]
