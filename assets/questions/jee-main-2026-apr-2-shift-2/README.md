@@ -1,8 +1,8 @@
-# JEE Main 2026 — 2 April Shift 2 diagram audit
+# JEE Main 2026 — 2 April Shift 2 draft diagram assets
 
-This folder contains custom SVG redraws and draft metadata for diagram-based PYQ work. The question numbers refer to the displayed numbers in the source paper.
+This folder contains custom SVG redraws associated with legacy draft records. **The `qNN.svg` names and Q labels below are legacy draft IDs, not verified NTA displayed question numbers.** These files are only candidate redraws; compare each against the official source before attaching it to a published PYQ.
 
-| Question | Topic | Asset |
+| Legacy draft ID | Topic | Asset |
 |---|---|---|
 | Q28 | Atwood machine with 2 kg and 1 kg blocks | [q28.svg](q28.svg) |
 | Q30 | NAND logic circuit / equivalent gate (Semiconductor Electronics) | [q30.svg](q30.svg) |
@@ -18,7 +18,7 @@ This folder contains custom SVG redraws and draft metadata for diagram-based PYQ
 
 ## Diagram URLs
 
-Use raw GitHub URLs for the database's `image_url` field:
+These raw GitHub URLs identify draft assets only. Do not attach them to source questions until the exact question-to-diagram match has been verified:
 
 - Q28: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q28.svg
 - Q30: https://raw.githubusercontent.com/bhavishyacodz/BLACK-JEE/main/assets/questions/jee-main-2026-apr-2-shift-2/q30.svg
