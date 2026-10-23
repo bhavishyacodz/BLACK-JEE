@@ -215,7 +215,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   </nav>
   <div class="admin-workflow-note"><strong>Safe workflow</strong><span>1. Prepare</span><span>→</span><span>2. Preview</span><span>→</span><span>3. Publish</span><span>→</span><span>4. Verify student view</span><span>→</span><span>5. Review submissions</span></div>
 </div>
-<div class="live-control-bar"><div class="live-control-copy"><span class="tiny red">LIVE BOARD CONTROL</span><strong>Currently displayed question</strong><span id="currentLiveQuestionSummary">Checking which question is live…</span></div><button class="btn remove-current-btn" id="removeCurrentQuestionBtn" type="button" onclick="removeCurrentQuestion()">REMOVE CURRENT QUESTION</button></div><div class="admin-overview" id="adminOverview"><div class="overview-card"><span>CONTROL MODE</span><strong>LIVE BOARD</strong><small>One active question at a time</small></div><div class="overview-card"><span>QUESTION TYPES</span><strong>2 WAYS</strong><small>Written question or external link</small></div><div class="overview-card"><span>DATA SAFETY</span><strong>PROTECTED</strong><small>Existing submissions are preserved</small></div></div><div class="admin-grid"><div><div class="editor-card bulk-scheduler" id="bulkChallengeScheduler"><div class="tiny red">01 / BATCH SCHEDULER</div><h3>Schedule 7, 15, or 30 challenges</h3><p class="muted" style="font-size:.85rem">Prepare one CSV row per date. This imports only into dates that are empty; existing dates are skipped, never overwritten. Imported official solutions stay hidden until release. Review the preview before importing.</p><div class="action-row"><button class="btn" type="button" onclick="downloadBulkCsvTemplate()">DOWNLOAD CSV TEMPLATE</button><span class="muted" style="font-size:.78rem">Required fields include date, title, question, four options, correct answer, tags, difficulty, and solution.</span></div><div class="field"><label for="bulkQuestionCsv">CHALLENGE BATCH CSV</label><input id="bulkQuestionCsv" type="file" accept=".csv,text/csv"></div><div class="action-row"><button class="btn" type="button" onclick="previewBulkQuestions()">CHECK FILE & PREVIEW</button><button class="btn btn-red" id="importBulkBtn" type="button" onclick="importBulkQuestions()" disabled>IMPORT VALID DATES</button></div><div class="notice" id="bulkQuestionNotice" role="status"></div><div id="bulkQuestionPreview" aria-live="polite"></div>
+<div class="live-control-bar"><div class="live-control-copy"><span class="tiny red">LIVE BOARD CONTROL</span><strong>Currently displayed question</strong><span id="currentLiveQuestionSummary">Checking which question is live…</span></div><button class="btn remove-current-btn" id="removeCurrentQuestionBtn" type="button" onclick="removeCurrentQuestion()">REMOVE CURRENT QUESTION</button></div><div class="admin-overview" id="adminOverview"><div class="overview-card"><span>CONTROL MODE</span><strong>LIVE BOARD</strong><small>One active question at a time</small></div><div class="overview-card"><span>QUESTION TYPES</span><strong>2 WAYS</strong><small>Written question or external link</small></div><div class="overview-card"><span>DATA SAFETY</span><strong>PROTECTED</strong><small>Existing submissions are preserved</small></div></div><div class="admin-grid"><div><div class="editor-card bulk-scheduler" id="bulkChallengeScheduler"><div class="tiny red">01 / BATCH SCHEDULER</div><h3>Schedule 7, 15, or 30 challenges</h3><p class="muted" style="font-size:.85rem">Prepare one CSV row per date. This imports only into dates that are empty; existing dates are skipped, never overwritten. Imported official solutions stay hidden until release. Review the preview before importing.</p><div class="action-row"><button class="btn" type="button" onclick="downloadBulkCsvTemplate()">DOWNLOAD CSV TEMPLATE</button><span class="muted" style="font-size:.78rem">Required fields include date, title, question, four options, correct answer, tags, difficulty, and solution. Optional image_url supports a diagram.</span></div><div class="field"><label for="bulkQuestionCsv">CHALLENGE BATCH CSV</label><input id="bulkQuestionCsv" type="file" accept=".csv,text/csv"></div><div class="action-row"><button class="btn" type="button" onclick="previewBulkQuestions()">CHECK FILE & PREVIEW</button><button class="btn btn-red" id="importBulkBtn" type="button" onclick="importBulkQuestions()" disabled>IMPORT VALID DATES</button></div><div class="notice" id="bulkQuestionNotice" role="status"></div><div id="bulkQuestionPreview" aria-live="polite"></div>
 <div class="schedule-queue" id="scheduleQueuePanel">
   <div class="schedule-queue-head">
     <div><div class="tiny red">SCHEDULE CONTROL</div><h4>Publishing timeline</h4><p class="muted">Every saved date stays in this queue. Status changes automatically as the scheduled times pass.</p></div>
@@ -400,7 +400,7 @@ function parseCsvText(text){
  if(quoted)throw new Error("CSV contains an unclosed quoted field.");
  if(field.length||row.length){row.push(field.replace(/\r$/,""));if(row.some(v=>v.trim()!==""))rows.push(row);}
  if(rows.length<2)throw new Error("CSV needs a header row and at least one question.");
- const headers=rows.shift().map(h=>h.replace(/^\\uFEFF/,"").trim().toLowerCase());
+ const headers=rows.shift().map(h=>h.replace(/^\uFEFF/,"").trim().toLowerCase());
  const required=["question_date","title","statement","option_a","option_b","option_c","option_d","correct_answer","tags","difficulty","solution"];
  const missing=required.filter(h=>!headers.includes(h));
  if(missing.length)throw new Error("Missing CSV headers: "+missing.join(", "));
@@ -420,6 +420,7 @@ async function previewBulkQuestions(){
    if(!/^\d{4}-\d{2}-\d{2}$/.test(r.question_date)||Number.isNaN(Date.parse(r.question_date+"T00:00:00Z")))errs.push("invalid date");
    if(!r.title)errs.push("missing title");
    if(!r.statement)errs.push("missing statement");
+   if((r.image_url||"").trim()&&!(/^https?:[/][/]/i.test(r.image_url.trim())||(/^assets[/]questions[/][a-zA-Z0-9._/-]+[.](?:png|jpe?g|webp|gif|svg)$/i.test(r.image_url.trim())&&!r.image_url.includes(".."))))errs.push("image_url must be HTTPS or a safe assets/questions path");
    if(!r.option_a||!r.option_b||!r.option_c||!r.option_d)errs.push("four options required");
    if(!["A","B","C","D"].includes((r.correct_answer||"").trim().toUpperCase()))errs.push("correct_answer must be A, B, C, or D");
    if(!r.solution)errs.push("missing solution");
@@ -460,7 +461,7 @@ async function importBulkQuestions(){
    let title=r.title;
    if(sunday&&!title.toUpperCase().includes("SOVEREIGN GAUNTLET"))title="THE SOVEREIGN GAUNTLET — GOLDEN SUNDAY: "+title;
    return {
-    question_date:date,title,statement:r.statement,
+    question_date:date,title,statement:r.statement,image_url:(r.image_url||"").trim()||null,
     tags:r.tags.split("|").flatMap(x=>x.split(",")).map(x=>x.trim()).filter(Boolean),
     difficulty:r.difficulty||"JEE Advanced",
     options:[r.option_a,r.option_b,r.option_c,r.option_d],
@@ -481,7 +482,7 @@ async function importBulkQuestions(){
 }
 function initializeQuestionDate(){const input=$("writtenQuestionDate");if(!input)return;const p=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Kolkata",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const v=Object.fromEntries(p.map(x=>[x.type,x.value]));input.min=v.year+"-"+v.month+"-"+v.day;if(!input.value)input.value=input.min;}
 function downloadBulkCsvTemplate(){
- const csv="question_date,title,statement,option_a,option_b,option_c,option_d,correct_answer,tags,difficulty,solution\n2026-10-25,Example challenge,Write the full question here,Option A,Option B,Option C,Option D,B,Physics|Mechanics,JEE Advanced,Write the official solution here\n";
+ const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Kolkata",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date()),v=Object.fromEntries(parts.map(x=>[x.type,x.value]));const d=new Date(v.year+"-"+v.month+"-"+v.day+"T00:00:00Z");d.setUTCDate(d.getUTCDate()+1);const exampleDate=d.toISOString().slice(0,10);const csv="question_date,title,statement,image_url,option_a,option_b,option_c,option_d,correct_answer,tags,difficulty,solution\n"+exampleDate+",Example challenge,Write the full question here,,Option A,Option B,Option C,Option D,B,Physics|Mechanics,JEE Advanced,Write the official solution here\n";
  const blob=new Blob(["\uFEFF",csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="black-jee-bulk-questions-template.csv";a.click();URL.revokeObjectURL(url);
 }
