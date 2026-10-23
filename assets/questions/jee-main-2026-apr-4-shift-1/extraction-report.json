@@ -1,0 +1,13 @@
+{
+  "questions_inspected": 75,
+  "visual_assets_extracted": 0,
+  "questions_with_diagrams_expected": 10,
+  "answer_option_diagrams_extracted": 0,
+  "complete_question_crops_created": 0,
+  "questions_with_ocr_concerns": 10,
+  "unresolved_or_missing_assets": 10,
+  "manifest_asset_match": false,
+  "manifest_paths_exist": false,
+  "all_ids_unique_and_present": true,
+  "unprocessed_pages": "Original PDF was not supplied; only OCR text was available in the context."
+}
