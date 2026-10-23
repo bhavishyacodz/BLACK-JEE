@@ -33,11 +33,26 @@ Use raw GitHub URLs for the database's `image_url` field:
 
 ## Current database attachment status
 
-The latest recorded database audit found **23 rows** for this shift: **22 published and 1 draft**. That count is historical and has not been rechecked in this session because the available Supabase tool returned a permissions error. The recorded audit said Q30 is published with a diagram URL; Q28 had an SVG but no database row; Q57 and Q63 had URLs in draft metadata; and Q66, Q67, Q68 and Q75 were not attached to live database rows. Treat these attachment details as unverified until database access is restored.
+Rechecked directly against Supabase on 2026-10-23 for `year=2026`, `session='2 April Shift 2'`:
 
-A complete 75-record JSON batch is stored at [full-shift-2-75-draft.json](full-shift-2-75-draft.json). It has now been reconciled against the configured BLACK-JEE PYQ database by normalized question text: all 75 source records match a database row, and all have answer keys and solutions. The batch is not fully source-verified; newly staged records remain drafts and are not visible to students.
+| Subject | Rows | Published | Drafts | Rows with image URL |
+|---|---:|---:|---:|---:|
+| Chemistry | 25 | 0 | 25 | 5 |
+| Mathematics | 25 | 18 | 7 | 0 |
+| Physics | 26 | 3 | 23 | 6 |
+| **Total** | **76** | **21** | **55** | **11** |
 
-The PYQ browse pages and Prep Studio now retry a failed raw-GitHub diagram request using the GitHub Pages asset URL, then show an explicit fallback link if both loads fail.
+The 76 rows represent the 75 source-question batch plus one additional legacy Q41 duplicate. All 75 JSON draft records had previously been reconciled to database rows with answer keys and solutions. This does not mean all wording/options are verified against the official paper.
+
+Current diagram attachment check:
+- **Published with image URLs:** Q30 semiconductor circuit, Q42 LCR circuit and Q50 rod/sphere moment-of-inertia diagram.
+- **Image attached but unpublished:** Q28 Atwood machine; both Q41 prism versions; Q63, Q66, Q67, Q68 and Q75 chemistry diagrams.
+- **Q41:** both duplicate/alternate records remain unpublished because of the source wording/key inconsistency.
+- The published count is 21 total records (18 Mathematics, 3 Physics); no Chemistry record from this batch is published. No publication change was made during this audit.
+
+The PYQ browse pages and Prep Studio retry a failed raw-GitHub diagram request using the GitHub Pages asset URL, then show an explicit fallback link if both loads fail.
+
+A complete 75-record JSON batch is stored at [full-shift-2-75-draft.json](full-shift-2-75-draft.json). Newly staged records remain drafts and are not visible to students.
 
 ## Source wording note
 
