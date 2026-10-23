@@ -114,9 +114,9 @@
       "subject_question_number": 10,
       "section": "A",
       "draft_candidate_global_number": 50,
-      "status": "confirmed_mismatch",
-      "notes": "Topic candidate legacy Q50 (rod/sphere moment of inertia). Candidate stem has different values/geometry; confirmed content mismatch; do not publish.",
-      "verification_evidence": "",
+      "status": "needs_exact_review",
+      "notes": "Legacy Q50 solution corrected to include the parallel-axis term for the sphere's axis 3 m from its centre. Equating moments gives α = 15. The reconstructed diagram has the 3 m separation; compare its labels/geometry against the original paper figure and verify the official key.",
+      "verification_evidence": "Independent calculation: Irod = 40×3²/3 = 120; Isphere = (2/5)(10)R² + 10×3²; R² = 15/2; α = 15. Official final key and source figure still pending.",
       "publishable": false
     },
     {
