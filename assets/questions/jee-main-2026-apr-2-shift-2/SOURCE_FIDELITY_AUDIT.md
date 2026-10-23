@@ -7,7 +7,7 @@ The source-order review exposed a foundational mismatch between the printed NTA 
 - **Official printed paper order:** Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25.
 - **Legacy draft global slots:** Mathematics 1–25, Physics 26–50, Chemistry 51–75.
 - **Corrected crosswalk:** source rows are ordered Physics → Chemistry → Mathematics and candidates are aligned to the draft by subject and subject-local question number.
-- **Current verification status:** 11 rows are marked `confirmed_mismatch`, 58 remain `needs_exact_review`, and 6 are `source_extraction_unresolved`. All 75 remain non-publishable; none is marked `verified_exact_match`. These are preliminary content-comparison statuses based on a readable transcription, not final answer-key certification.
+- **Current verification status:** 10 rows are marked `confirmed_mismatch`, 59 remain `needs_exact_review`, and 6 are `source_extraction_unresolved`. All 75 remain non-publishable; none is marked `verified_exact_match`. These are preliminary content-comparison statuses based on a readable transcription, not final answer-key certification.
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
@@ -88,3 +88,8 @@ The previous `q42.svg` incorrectly drew the inductors as shunt branches rather t
 ## Test-order view (2026-10-23)
 
 Created `paper-order-75-audit-view.json` to inspect the paper in the printed sequence: Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25. Rows with no candidate remain explicitly unfilled instead of being guessed. This is an audit-only view: it preserves legacy candidates and attaches source-order/crosswalk metadata, but does not certify or publish question content. All 75 entries remain `publishable: false` pending source fidelity and final-key verification.
+
+
+## Correction pass — Chemistry Q9 (2026-10-23)
+
+Legacy Q52 was aligned to the readable source transcription: H₂S in 0.1 M HCl, Ka₁=8.3×10⁻⁸, Ka₂=1.0×10⁻¹³, and the requested species [HS⁻]. The equilibrium estimate gives 8.3×10⁻⁸ M. The option list is only a candidate reconstruction; exact source options and official final-key verification remain open. Status moved to `needs_exact_review`; publication remains HOLD.
