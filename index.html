@@ -900,38 +900,37 @@ function notify(el,msg,type="success"){el.className="notice show "+type;el.textC
 function clearNotify(el){el.className="notice";el.textContent="";}
 function formatTime(s){s=Math.max(0,Math.floor(s));return [Math.floor(s/3600),Math.floor(s%3600/60),s%60].map(n=>String(n).padStart(2,"0")).join(":");}
 function setTimer(){const s=startedAt?Math.floor((Date.now()-startedAt)/1000):elapsed;$("timer").textContent=formatTime(s);$("timer").classList.toggle("running",!!startedAt);$("timerState").textContent=startedAt?"CLOCK RUNNING":elapsed?"ATTEMPT PAUSED / SUBMITTED":"CLOCK NOT STARTED";$("progressFill").style.width=startedAt?Math.min(100,s/900*100)+"%":elapsed?"100%":"0%";$("progressLabel").textContent=startedAt?"TIME IS TICKING":elapsed?"ATTEMPT SUBMITTED":"READY WHEN YOU ARE";}
-function startAttempt(){if(startedAt)return;if(!currentUser){notify($("attemptNotice"),"Sign in with Google first. Your account will remember your name for future attempts.","error");$("googleAuthBtn")?.scrollIntoView({behavior:"smooth",block:"center"});return;}if(elapsed||submissionSaved){notify($("attemptNotice"),"This attempt has already been submitted. Refresh to start a new session.","error");return;}if(!currentQuestion?.id){notify($("attemptNotice"),"The live question is still loading. Please wait and try again.","error");return;}startedAt=Date.now();sessionQuestionId=currentQuestion.id;ticker=setInterval(setTimer,1000);$("startBtn").disabled=true;$("submitBtn").disabled=false;document.querySelectorAll('input[name="answer"]').forEach(input=>input.disabled=false);$("timerState").textContent="CLOCK RUNNING";setTimer();}
+function startAttempt(){if(!currentQuestion?.id){notify($("attemptNotice"),"No scored challenge is available. Check the schedule and try again at noon.","error");return;}const opened=window.open("attempt.html","_blank","noopener,noreferrer");if(!opened)window.location.href="attempt.html";}
 let mathJaxPromise=null;
 function loadMathJax(){if(window.MathJax?.typesetPromise)return Promise.resolve();if(mathJaxPromise)return mathJaxPromise;window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true,processEnvironments:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]},startup:{typeset:false}};mathJaxPromise=new Promise((resolve,reject)=>{const script=document.createElement("script");script.src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";script.async=true;script.onload=resolve;script.onerror=()=>{mathJaxPromise=null;reject(Error("Math rendering unavailable"));};document.head.appendChild(script);});return mathJaxPromise;}
 function typesetMath(el){if(!el)return;const text=el.textContent||"";if(!(text.includes("\\(")||text.includes("\\[")||text.includes("$")))return;loadMathJax().then(()=>{if(window.MathJax?.typesetPromise){window.MathJax.typesetClear([el]);return window.MathJax.typesetPromise([el]);}}).catch(()=>{});}
 function renderQuestion(q){
  currentQuestion=q;selectedOption=null;
- $("startBtn").disabled=!q?.question_link_id&&!q?.id;$("submitBtn").disabled=true;
- $("questionTitle").textContent=q.title||"Today's challenge";
- $("questionText").textContent=q.statement||"Open the challenge page and tap Start to reveal the question. Your timer begins then.";
- const imageWrap=$("questionImageWrap"),questionImage=$("questionImage"),imageUrl=String(q?.image_url||"").trim();
- const safeImageUrl=/^https?:[/][/]/i.test(imageUrl)?imageUrl:(/^assets[/]questions[/][a-zA-Z0-9._/-]+[.](?:png|jpe?g|webp|gif|svg)$/i.test(imageUrl)&&!imageUrl.includes("..")?imageUrl:"");
- if(imageWrap&&questionImage&&safeImageUrl){questionImage.onerror=()=>{imageWrap.hidden=true;questionImage.removeAttribute("src");};questionImage.src=safeImageUrl;questionImage.alt="Diagram for "+(q?.title||"BLACK-JEE question");$("questionImageCaption").textContent="QUESTION DIAGRAM";imageWrap.hidden=false;}else if(imageWrap&&questionImage){questionImage.removeAttribute("src");imageWrap.hidden=true;}
- if(q.url){const wrap=document.createElement("div");wrap.style.marginTop="16px";const link=document.createElement("a");link.className="btn btn-red";link.href=q.url;link.target="_blank";link.rel="noopener noreferrer";link.textContent="OPEN QUESTION LINK ↗";wrap.appendChild(link);$("questionText").appendChild(wrap);}
- $("questionMeta").textContent="BLACK JEE / "+(q.question_date||today())+" / "+(q.challenge_type==="golden_sunday"?"GOLDEN SUNDAY · THE SOVEREIGN GAUNTLET":"DAILY PROBLEM");$("liveStatus").textContent="LIVE CHALLENGE";$("questionChips").innerHTML="";
- (q.tags||["Physics","Integrated","Advanced"]).forEach(t=>{const chip=document.createElement("span");chip.className="chip";chip.textContent=t;$("questionChips").appendChild(chip);});
- if(q.challenge_type==="golden_sunday"){const chip=document.createElement("span");chip.className="chip golden";chip.textContent="✦ GOLDEN SUNDAY";$("questionChips").appendChild(chip);}
+ $("startBtn").disabled=!q?.id;$("submitBtn").disabled=true;
+ $("questionTitle").textContent=q?.title||"Today's challenge";
+ $("questionText").textContent="Question content is hidden on Home. Select START ATTEMPT to open the dedicated attempt screen; the timer starts when you reveal it there.";
+ const imageWrap=$("questionImageWrap"),questionImage=$("questionImage");
+ if(questionImage)questionImage.removeAttribute("src");
+ if(imageWrap)imageWrap.hidden=true;
+ $("questionMeta").textContent="BLACK JEE / "+(q?.question_date||today())+" / "+(q?.challenge_type==="golden_sunday"?"GOLDEN SUNDAY · THE SOVEREIGN GAUNTLET":"DAILY PROBLEM");
+ $("liveStatus").textContent="LIVE CHALLENGE";$("questionChips").innerHTML="";
+ (q?.tags||[]).forEach(t=>{const chip=document.createElement("span");chip.className="chip";chip.textContent=t;$("questionChips").appendChild(chip);});
  $("questionOptions").innerHTML="";
- if(q.url){const label=document.createElement("label");label.className="field";label.style.marginTop="18px";const caption=document.createElement("span");caption.textContent="YOUR ANSWER (OPTIONAL)";const input=document.createElement("input");input.type="text";input.maxLength=500;input.placeholder="Type your final answer";input.autocomplete="off";input.addEventListener("input",()=>{selectedOption=input.value.trim()||null;});label.append(caption,input);$("questionOptions").appendChild(label);}
- else{(q.options||[]).forEach(opt=>{const label=document.createElement("label");label.className="option";const input=document.createElement("input");input.type="radio";input.name="answer";input.value=opt;input.addEventListener("change",()=>selectedOption=opt);const span=document.createElement("span");span.textContent=String(opt).replace(/^\s*[A-D]\s*[\).:-]\s*/i,"");label.append(input,span);$("questionOptions").appendChild(label);});}
- if(q.solution_published&&q.solution){$("solutionPanel").classList.add("show");$("solutionText").textContent=q.solution;$("solutionByline").textContent="OFFICIAL SOLUTION · "+(q.question_date||"");$("solutionStatus").textContent="Official solution is live";$("solutionStatusCopy").textContent="The owner has released the step-by-step solution.";}else{$("solutionPanel").classList.remove("show");$("solutionStatus").textContent="Official answer not released yet";$("solutionStatusCopy").textContent="After the official results release, check the Challenge Archive for the correct option, any published worked solution, and confirmed winners.";}typesetMath($("questionText"));typesetMath($("questionOptions"));typesetMath($("solutionText"));
+ $("solutionPanel").classList.remove("show");
+ $("solutionStatus").textContent="Official answer not released yet";
+ $("solutionStatusCopy").textContent="Open the dedicated attempt screen to reveal the question. Results are released at 6:00 PM IST on the closing date.";
 }
 async function loadQuestion(){
  lastLoadedChallengeDate=today();lastSolutionCheck=null,lastSolutionCheckAt=0;
  const showEmpty=()=>{currentQuestion=null;$("questionTitle").textContent="No live question";$("questionText").textContent="No challenge is open right now. Check the homepage schedule and return when the next one opens.";$("questionMeta").textContent="BLACK JEE / WAITING FOR THE NEXT CHALLENGE";$("questionChips").innerHTML="";$("questionOptions").innerHTML="";$("liveStatus").textContent="NO LIVE QUESTION";$("dateTag").textContent="COMING SOON";$("startBtn").disabled=true;$("submitBtn").disabled=true;};
  if(!supabase){showEmpty();return;}
  try{
-  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,image_url,solution_published,is_live,created_at,starts_at,ends_at,challenge_type").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
+  let {data:written,error:writtenError}=await supabase.from("daily_questions").select("id,question_date,title,tags,difficulty,solution_published,is_live,created_at,starts_at,ends_at,challenge_type,show_in_archive,results_release_at").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
   if(writtenError)throw writtenError;
   // The active challenge date may be tomorrow after the daily release time.
   // If no older/equal row exists, accept the newest live row permitted by Supabase RLS.
   if(!written){
-   const retry=await supabase.from("daily_questions").select("id,question_date,title,statement,tags,difficulty,options,image_url,solution_published,is_live,created_at,starts_at,ends_at,challenge_type").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
+   const retry=await supabase.from("daily_questions").select("id,question_date,title,tags,difficulty,solution_published,is_live,created_at,starts_at,ends_at,challenge_type,show_in_archive,results_release_at").eq("is_live",true).lte("starts_at",new Date().toISOString()).gt("ends_at",new Date().toISOString()).order("question_date",{ascending:false}).limit(1).maybeSingle();
    if(retry.error)throw retry.error;
    written=retry.data;
   }
@@ -956,14 +955,7 @@ function displayNameFor(user){const m=user?.user_metadata||{};return String(m.fu
 function updateAuthUI(){const status=$("authStatus"),login=$("googleAuthBtn"),logout=$("signOutBtn");if(!status||!login)return;if(currentUser){status.textContent="SIGNED IN · "+displayNameFor(currentUser);login.classList.add("hidden");if(logout)logout.hidden=false;}else{status.textContent="GOOGLE LOGIN REQUIRED";login.classList.remove("hidden");if(logout)logout.hidden=true;}}
 async function signInWithGoogle(){if(!supabase){notify($("attemptNotice"),"The sign-in service is still loading. Please try again in a moment.","error");return;}const {error}=await supabase.auth.signInWithOAuth({provider:"google",options:{redirectTo:window.location.href.split("?")[0].split("#")[0]}});if(error)notify($("attemptNotice"),"Google sign-in failed: "+error.message,"error");}
 async function signOutUser(){if(!supabase)return;const {error}=await supabase.auth.signOut();if(error){notify($("attemptNotice"),"Could not sign out: "+error.message,"error");return;}currentUser=null;adminUser=null;updateAuthUI();showAdminState();}
-async function submitAttempt(){
- if(!currentUser){notify($("attemptNotice"),"Sign in with Google before starting and submitting your attempt.","error");$("googleAuthBtn")?.scrollIntoView({behavior:"smooth",block:"center"});return;}
- if(!startedAt&&!elapsed){notify($("attemptNotice"),"Start the attempt first so the timer records your time.","error");return;}
- if(!selectedOption){notify($("attemptNotice"),"Choose an answer option before submitting.","error");return;}
- if(startedAt){elapsed=Math.floor((Date.now()-startedAt)/1000);startedAt=null;clearInterval(ticker);ticker=null;setTimer();}
- $("submitBtn").disabled=true;document.querySelectorAll('input[name="answer"]').forEach(input=>input.disabled=true);
- await finishSubmission();
-}
+async function submitAttempt(){notify($("attemptNotice"),"Submissions are disabled on Home. Use the dedicated attempt tab so your server-timed attempt is protected.","error");}
 async function finishSubmission(){
  if(!supabase||!currentUser){notify($("attemptNotice"),"Please sign in with Google and try again.","error");$("submitBtn").disabled=false;return;}
  if(!currentQuestion?.question_link_id&&!currentQuestion?.id){notify($("attemptNotice"),"There is no live question to submit against. Refresh the page.","error");$("submitBtn").disabled=false;return;}
@@ -1241,4 +1233,6 @@ input[type="radio"],input[type="checkbox"]{accent-color:var(--red,#f04452)}
   else setup();
 })();
 </script>
+
+<style id="home-attempt-routing">#challenge .timerbar,#challenge #questionOptions,#challenge #submitBtn,#challenge .submission-form,#challenge #submissionFlow{display:none!important}</style>
 </body></html>
