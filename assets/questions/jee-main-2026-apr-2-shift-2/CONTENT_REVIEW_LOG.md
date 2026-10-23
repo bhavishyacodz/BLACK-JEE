@@ -234,3 +234,12 @@ This log records content-level findings that structural validation alone cannot 
 ## Correction pass — Physics Q24 / legacy Q36 (2026-10-23)
 
 Corrected the candidate question to the readable source transcription: 1 kg ball released from 20 m above sand, 10 cm penetration, options 1000 N / 1980 N / 2010 N / 2020 N. Work–energy gives the candidate answer 2010 N (option C). Updated the draft record, source crosswalk, paper-order audit view, and embedded source-order key together. Status is `needs_exact_review`, not verified; official final NTA answer-key confirmation remains outstanding. Publication remains HOLD.
+
+
+## Correction pass — Physics Q3, Q4 and Q8 (2026-10-23)
+
+- **Physics Q3 / legacy Q27:** corrected the cylinder radius and angular speed to 1 m and 10 rad/s, with source options 0.1, 0.2, 0.15 and 0.25; the friction calculation gives 0.1.
+- **Physics Q4 / legacy Q35:** corrected the bubble radius to 1 mm and restored source options 70/9, 20, 80/9 and 50 poise; Stokes' law gives 80/9 poise.
+- **Physics Q8 / legacy Q32:** restored the exact source option values, including 5.056 mm. The candidate answer is 5.045 mm; zero-error sign convention and final answer key remain open.
+
+Updated the draft, source crosswalk, audit view and embedded source-order keys together. All three remain `needs_exact_review` and unpublished until official answer-key and relevant figure checks are complete.
