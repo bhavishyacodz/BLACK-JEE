@@ -69,3 +69,8 @@ These are calculation checks on the staged text, not proof that every OCR-transc
 
 These derivations were saved and marked as independently calculated in the staging manifest. Source wording, browser math rendering, mobile layout, and the overall publication gate remain pending.
 
+- **Mathematics Q14 (3D geometry):** parameterizing both lines and imposing \(Q-P=\lambda(1,-1,2)\) gives \(\lambda=-13/15\). Therefore \(225a^2=225\lambda^2\lVert(1,-1,2)\rVert^2=1014\).
+- **Mathematics Q15 (distance along a specified direction):** intersecting the given line with the line through the point in direction \((1,-1,2)\) gives parameter \(s=-1\), so the squared distance is \(s^2(1+1+4)=6\).
+
+The derivations for Mathematics Q5, Q7, Q10, Q11, Q14 and Q15 are now expanded in the staging manifest. All remain held from approval until source wording and rendering checks are complete.
+
