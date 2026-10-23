@@ -12,7 +12,8 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "120",
-    "solution": "There are 8 ordered pairs (x,z) in A squared with x dividing z and 15 ordered pairs (y,w) with y<=w. Therefore |R|=8*15=120."
+    "solution": "There are 8 ordered pairs (x,z) in A squared with x dividing z and 15 ordered pairs (y,w) with y<=w. Therefore |R|=8*15=120.",
+    "source_question_number": 21
   },
   {
     "year": 2026,
@@ -27,6 +28,7 @@
     "is_published": false,
     "image_url": "",
     "correct_answer": "34",
-    "solution": "P=BA^-1 and Q=A^-1B. By cyclic invariance of trace, tr(P)=tr(Q)=tr(A^-1B)=-17/2. Thus |tr(2(P+Q))|=34."
+    "solution": "P=BA^-1 and Q=A^-1B. By cyclic invariance of trace, tr(P)=tr(Q)=tr(A^-1B)=-17/2. Thus |tr(2(P+Q))|=34.",
+    "source_question_number": 22
   }
 ]
