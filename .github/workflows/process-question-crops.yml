@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   crop-and-attach:
-    if: github.actor != 'github-actions[bot]' && hashFiles('assets/gemini-inbox/crop-manifest.json') != ''
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,15 +27,19 @@ jobs:
           python-version: "3.12"
 
       - name: Install image processor
+        if: hashFiles('assets/gemini-inbox/crop-manifest.json') != ''
         run: python -m pip install --disable-pip-version-check Pillow==11.1.0
 
       - name: Check processor syntax
+        if: hashFiles('assets/gemini-inbox/crop-manifest.json') != ''
         run: python -m py_compile scripts/process_question_crops.py
 
       - name: Process validated crop manifest
+        if: hashFiles('assets/gemini-inbox/crop-manifest.json') != ''
         run: python scripts/process_question_crops.py
 
       - name: Commit permanent assets and remove processed source screenshots
+        if: hashFiles('assets/gemini-inbox/crop-manifest.json') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
