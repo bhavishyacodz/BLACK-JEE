@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "solution_audit_round_1_corrected_math_01_06_13_and_flagged_incomplete_derivations",
+  "workflow_status": "solution_audit_round_1_corrected_math_and_physics_key_mismatches_review_pending",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "User-supplied answer keys remain draft-only. Round 1 solution audit corrected Mathematics Q1, Q6 and Q13; Mathematics Q12 was held because its staged wording conflicts with the supplied key. Mathematics Q5, Q7, Q10, Q11, Q14 and Q15 were flagged for insufficient solution detail. Physics Q38, Chemistry Q64 and Chemistry Q72 remain blocked for missing source content. No Supabase import or student publication was performed.",
+  "important_note": "Round 1 audit corrected Mathematics Q1, Q6 and Q13 solutions, held Mathematics Q12 for a source-wording conflict, and corrected Physics Q29 and Q40 option-key mismatches against the user-supplied answer key and staged solution calculations. Mathematics Q5, Q7, Q10, Q11, Q14 and Q15 remain flagged for insufficient derivation. All supplied answer keys remain draft-only and are not independently verified against the official paper. Physics Q38, Chemistry Q64 and Chemistry Q72 remain blocked for missing source content. No Supabase import or student publication was performed.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -192,7 +192,7 @@
         "2.2",
         "4.3"
       ],
-      "correct_answer": "7.9",
+      "correct_answer": "2.2",
       "solution": "The reactants' total binding energy is\n\\(2(3\\times5.6)+(4\\times7.4)=33.6+29.6=63.2\\text{ MeV}\\).\nThe product's total binding energy is \\(10\\times6.1=61.0\\text{ MeV}\\).\n\nThus \\(Q=BE_{\\text{final}}-BE_{\\text{initial}}=61.0-63.2=-2.2\\text{ MeV}\\). The energy change has magnitude \\(|\\Delta Mc^2|=2.2\\text{ MeV}\\), so the requested value is \\(2.2\\), option C.",
       "diagram": {
         "required": false,
@@ -225,10 +225,11 @@
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
-      "correct_option": "B",
+      "correct_option": "C",
       "review_notes": [
         "The answer is the positive magnitude requested by ΔMc²; confirm the exact sign convention used in the source wording.",
-        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
+        "Corrected option-key mismatch found during audit: paper Q29 is option C (2.2 MeV), not option B (7.9 MeV). Calculation gives product binding energy 61.0 MeV vs initial 63.2 MeV, so ΔMc² magnitude is 2.2 MeV."
       ]
     },
     {
@@ -764,7 +765,7 @@
         "-1",
         "2"
       ],
-      "correct_answer": "1",
+      "correct_answer": "-2",
       "solution": "With constant battery voltage, U=ε₀AV²/(2x); for dx/dt=v, dU/dt=−ε₀AV²v/(2x²), so the exponent is −2.",
       "diagram": {
         "required": false,
@@ -797,10 +798,11 @@
         "answer_key_source": "USER_SUPPLIED_SIMPLIFIED_ANSWER_KEY_2026-10-23"
       },
       "reviewer_notes": [],
-      "correct_option": "B",
+      "correct_option": "A",
       "review_notes": [
         "Imported from supplied solution batch; independently verify against source paper and answer options before approval. Rendering and mobile checks remain pending.",
-        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification."
+        "Option key recorded from user-supplied simplified answer key; this is not an independent source-paper verification.",
+        "Corrected option-key mismatch found during audit: paper Q40 is option A (−2), matching dU/dt ∝ x^(−2) for a constant-voltage capacitor."
       ]
     },
     {
