@@ -1,0 +1,12 @@
+{
+  "total_pages_inspected": 0,
+  "total_questions_inspected": 75,
+  "actual_image_files_extracted": 0,
+  "question_crops_created": 0,
+  "questions_with_visual_assets": 11,
+  "questions_with_ocr_concerns": 11,
+  "unresolved_or_missing_assets": 22,
+  "all_ids_unique_and_present": true,
+  "manifest_asset_match": false,
+  "unprocessed_pages": "Original PDF was not supplied in the environment; only OCR text was available. No images extracted."
+}
