@@ -123,3 +123,30 @@ Compared the available rendered pages of the official NTA PDF with the custom re
 - **Q50 rod/sphere moment of inertia:** the official figure shows a 40 kg, 3 m rod about axis AB and a 10 kg sphere of radius R with its parallel axis 3 m away. The redraw was corrected to include the sphere's missing **10 kg** label and clearer dimensions.
 
 The original PDF's chemistry pages were not consistently retrievable as screenshots in this audit pass, so chemistry diagram assets are still treated as topic-level redraws rather than source-verified copies. No publication status was changed. This audit records direct visual comparison where the official pages were available, and does not claim that all 75 questions have been fully transcribed or answer-key verified.
+
+
+## Verification log — Chunk 23: Chemistry numerical and concept spot-check (Q51–Q75)
+
+Performed a second, item-by-item consistency check on the currently stored Chemistry questions, using the written stems/options and recalculating numerical values where possible.
+
+Checked numerical outcomes:
+- **Q51:** (3.38\,g) of (C_2H_2) gives (11.44\,g) of (CO_2), option B.
+- **Q52:** ([HA^-]\approx K_{a1}[H_2A]/[H^+]=8.1\times10^{-8}\,M), option C.
+- **Q54:** reverse-process work is 14 J done on the gas, option D.
+- **Q55:** both initial osmotic pressures are (9.96\times10^{-4}\,bar); after mixing, the concentration and pressure remain the same, option B.
+- **Q56:** initial pH is about 2.0 and half-equivalence pH is 3.3, option B.
+- **Q62:** sample mass is about (0.273\,g), so the requested integer is 273.
+- **Q71:** the wavelength is approximately 500 nm, giving (x=5).
+- **Q72:** calculated partial pressure of C after 30 minutes is 20 mm Hg.
+- **Q73:** 80% of the six-electron fuel-cell work is approximately 560 kJ; at 1 kPa this corresponds to about 560 m³.
+- **Q74:** three listed ions are paramagnetic.
+- **Q75:** one gram of the brominated product yields approximately 1 g of AgBr (nearest integer).
+
+Concept checks also support the current keyed choices for Q53, Q58–Q61, Q63–Q70. These are internal consistency checks of the current draft, not confirmation of the official answer key.
+
+### Remaining source-fidelity caution
+
+- Q41 remains blocked due to the “minimum” versus “maximum” refractive-index inconsistency already recorded.
+- Q68's SVG is a schematic reaction-sequence redraw. Its positional labels need a clearer source-page comparison before treating it as a faithful official-paper diagram.
+- Q66's option SVG is a candidate-structure panel; it is not the original source figure.
+- No publication status was changed by this chunk.
