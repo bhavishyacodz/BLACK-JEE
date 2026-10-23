@@ -1,6 +1,6 @@
 # Source-Fidelity Audit — JEE Main 2 April 2026 Shift 2
 
-## Status: HOLD — 62/75 exact mappings verified; 13 rows remain unresolved or mismatched, and student-side visual/scoring validation remains
+## Status: HOLD — 62/75 exact mappings verified; 13 rows remain unresolved pending direct source checks, and student-side visual/scoring validation remains
 
 Official source documents:
 - [NTA question-paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf)
@@ -16,7 +16,7 @@ Mathematics Q1–Q16 and Q21–Q25, Physics Q26–Q50, and Chemistry Q51–Q62 h
 
 ## Remaining work
 
-The authoritative `source-to-draft-crosswalk.json` currently records 62 `verified_exact_match` rows and 13 rows requiring review or replacement: 1 `needs_diagram_review`, 6 `needs_exact_review`, 1 `no_candidate_confirmed`, 2 `confirmed_mismatch`, and 3 `source_diagram_unresolved`. The automated structural audit passes, but a passing structural audit does not turn unresolved rows into exact matches. `SOURCE_CROSSWALK.json` has been synchronized to these statuses so it no longer overstates verification. This is **source mapping and structural validation**, not proof that every diagram, mathematical rendering, answer interaction, scoring result, or mobile layout has passed in the live student experience. Keep the shift unpublished until unresolved rows are resolved and end-to-end checks are completed.
+The authoritative `source-to-draft-crosswalk.json` currently records 62 `verified_exact_match` rows and 13 rows requiring review or replacement: 1 `needs_diagram_review`, 11 `needs_exact_review`, and 1 `source_diagram_unresolved`. The automated structural audit passes, but a passing structural audit does not turn unresolved rows into exact matches. A candidate-reuse review found that Chemistry rows 66–75 had been linked to other question numbers by topic rather than their same-numbered global slots. Both crosswalk files now use the corrected candidate slots; this corrects mapping metadata only and does not certify exact source fidelity. `SOURCE_CROSSWALK.json` has been synchronized to these statuses so it no longer overstates verification. This is **source mapping and structural validation**, not proof that every diagram, mathematical rendering, answer interaction, scoring result, or mobile layout has passed in the live student experience. Keep the shift unpublished until unresolved rows are resolved and end-to-end checks are completed.
 
 ## Chemistry answer-key cross-check (source questions 63–75)
 
