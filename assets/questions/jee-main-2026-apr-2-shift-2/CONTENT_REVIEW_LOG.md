@@ -46,3 +46,13 @@ This log records content-level findings that structural validation alone cannot 
 - **Q19:** Partial fractions give 7/(x+5) + 9/(x−3). Applying f(4) fixes the constant at zero; f(7) = 32 ln 2 + 7 ln 3, so α + β = 39 (option C).
 - **Q20:** Substitution x = yz gives x = 2y/(1 + ln y); hence x(e²) = 2e²/3 (option B).
 - **Boundary:** This is a mathematical consistency pass only. Do not treat it as official source/key verification.
+
+## Independent calculation pass — Mathematics Q11–Q15
+
+- **Status:** Calculations checked against the displayed draft statements; source-paper transcription and official answer-key comparison remain outstanding.
+- **Q11:** The midpoint relation gives Q = (1 − x, −1 − y); combining both points on xy = 12 gives x − y = 1. The points are (4,3) and (−3,−4), so the triangle area is 7/2 (option C).
+- **Q12:** The vertex height is −1 − (p + 2)²/4, minimized in absolute value at p = −2, q = 0; p² + q² = 4 (option B).
+- **Q13:** On the stated domain, the expression simplifies to 2 − sin²2θ, strictly greater than 1 and at most 2. No integer square lies in that interval; answer 0 (option A).
+- **Q14:** The two dot-product equations yield λ = 1, μ = −1, hence c = (−2, −2, 2) and |c|² = 12 (option B).
+- **Q15:** Midpoint, line-membership and perpendicularity conditions give a = b = 0 and α = 1; requested value is 1 (option A).
+- **Boundary:** Mathematical consistency only; official source/key verification is still needed.
