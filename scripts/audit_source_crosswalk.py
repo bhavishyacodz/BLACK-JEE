@@ -68,6 +68,22 @@ def main() -> int:
             errors.append(f"record {i}: {subject} Q{local} should have paper_order {expected_order}, got {paper_order!r}")
         if status not in ALLOWED_STATUSES:
             errors.append(f"record {i}: unknown status {status!r}")
+        if status == "verified_exact_match":
+            required_evidence = {
+                "exact_statement_and_values",
+                "options_or_numerical_format",
+                "diagram_if_any",
+                "official_final_answer_key",
+            }
+            supplied = set(record.get("verification", []))
+            missing_evidence = sorted(required_evidence - supplied)
+            if missing_evidence:
+                errors.append(
+                    f"record {i}: verified_exact_match is missing evidence checks: "
+                    + ", ".join(missing_evidence)
+                )
+            if not str(record.get("note", "")).strip():
+                errors.append(f"record {i}: verified_exact_match requires a verification note")
         if record.get("publishable") is not False:
             errors.append(f"record {i}: audit-only crosswalk record must remain publishable=false")
 
