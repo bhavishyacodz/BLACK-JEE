@@ -46,9 +46,9 @@ const status=(msg,kind='')=>{$('status').textContent=msg;$('status').className='
 async function api(path){const r=await fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path+'?ref=main',{headers:{Accept:'application/vnd.github+json'}});if(!r.ok)throw Error('GitHub API '+r.status+' while reading '+path);return r.json()}
 async function init(){
  try{
-  const [listing,mf]=await Promise.all([api(INBOX),fetch('assets/questions/'+SHIFT+'/manifest.json').then(r=>{if(!r.ok)throw Error('Question manifest unavailable');return r.json()})]);
+  const [listing,sm]=await Promise.all([api(INBOX),fetch('assets/questions/'+SHIFT+'/shift-manifest.json').then(r=>{if(!r.ok)throw Error('Shift question manifest unavailable');return r.json()})]);
   files=listing.filter(x=>x.type==='file'&&/^Screenshot_.*\.(jpg|jpeg|png|webp)$/i.test(x.name)).map(x=>({name:x.name,path:x.path,url:'https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/main/'+x.path,size:x.size}));
-  questions=mf;
+  questions=(sm.questions||[]).map(q=>({question_id:(q.source_reference||{}).question_id,subject:q.subject,paper_question_number:q.subject_question_number,visual_required:!!(q.diagram||{}).required,slot_id:q.slot_id})).filter(q=>q.question_id);
   $('source').innerHTML=files.length?files.map((f,i)=>'<option value="'+i+'">'+escapeHtml(f.name)+' · '+Math.round(f.size/1024)+' KB</option>').join(''):'<option value="">No screenshots found in inbox</option>';
   $('question').innerHTML=questions.map(q=>'<option value="'+escapeHtml(q.question_id)+'">'+escapeHtml(q.question_id)+' · '+escapeHtml(q.subject)+' · Q'+q.paper_question_number+(q.visual_required?' · VISUAL':'')+'</option>').join('');
   if(!files.length){status('No screenshot files found in '+INBOX+'. Upload screenshots there first.','warn');return}
