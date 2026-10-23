@@ -176,7 +176,7 @@
         "subject": "Physics",
         "legacy_global_question_number": 31
       },
-      "status": "confirmed_mismatch",
+      "status": "needs_exact_review",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -184,7 +184,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Source transcription page 2 asks for speed only. Draft Q31 asks for both speed and kinetic energy, so the question/answer format differs."
+      "note": "Legacy Q31 corrected to match the readable transcription's speed-only stem/options. Still pending official final answer-key and source-image verification."
     },
     {
       "source": {
