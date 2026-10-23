@@ -83,3 +83,8 @@ Both crosswalk rows moved to `needs_exact_review`. Publication remains HOLD.
 ## Diagram correction — Physics Q23 / legacy Q42 (2026-10-23)
 
 The previous `q42.svg` incorrectly drew the inductors as shunt branches rather than as series elements with switch bypasses. It has been redrawn as one series RLC loop containing C, R, L₂ and L₁, with S₂ across L₂ and S₁ across L₁. The stem was corrected to request numerical `3L₂ − L₁` (not `3L₁ − L₂`), and the MCQ options were removed to preserve the numerical-response format. The circuit relations give the candidate value `2/9 H`. This remains `needs_exact_review`: original NTA figure and final key must still be independently checked. Do not treat the redraw as source-certified.
+
+
+## Test-order view (2026-10-23)
+
+Created `paper-order-75-audit-view.json` to inspect the paper in the printed sequence: Physics Q1–25, Chemistry Q1–25, Mathematics Q1–25. Rows with no candidate remain explicitly unfilled instead of being guessed. This is an audit-only view: it preserves legacy candidates and attaches source-order/crosswalk metadata, but does not certify or publish question content. All 75 entries remain `publishable: false` pending source fidelity and final-key verification.
