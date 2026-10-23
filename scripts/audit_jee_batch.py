@@ -186,7 +186,10 @@ def audit_crosswalk(report, batch_records):
         issue(report, "ERROR", "CROSSWALK_ROWS", CROSSWALK_PATH,
               "Crosswalk must contain a rows array.")
         return
-    expected_subject = ["Mathematics"] * 25 + ["Physics"] * 25 + ["Chemistry"] * 25
+    # Official NTA printed order is Physics, Chemistry, Mathematics. The draft JSON
+    # keeps its own legacy global slots (Mathematics, Physics, Chemistry); the
+    # crosswalk maps between these two orders by subject-local question number.
+    expected_subject = ["Physics"] * 25 + ["Chemistry"] * 25 + ["Mathematics"] * 25
     orders = [row.get("paper_order") if isinstance(row, dict) else None for row in rows]
     if orders != list(range(1, 76)):
         issue(report, "ERROR", "CROSSWALK_ORDER", CROSSWALK_PATH,
