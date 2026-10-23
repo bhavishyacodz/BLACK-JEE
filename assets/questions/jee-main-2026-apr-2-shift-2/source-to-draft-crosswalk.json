@@ -1117,9 +1117,9 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 73
+        "legacy_global_question_number": 56
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1127,7 +1127,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "same half-cell reactions and 80% efficiency concept; verify expansion pressure and requested ΔV"
+      "note": "Verified source Chemistry Q56 against NTA paper PDF p.21 and final answer key PDF p.2 (question ID 691121206, correct option ID 691121702 = B). Draft global Q56 matches acid concentration, volume, Ka/pKa, α≪1, pH checkpoints and option ordering."
     },
     {
       "source": {
@@ -1137,7 +1137,7 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 54
+        "legacy_global_question_number": 57
       },
       "status": "confirmed_mismatch",
       "publishable": false,
@@ -1147,7 +1147,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source work by gas is 10 J and heat absorbed is 2 J; draft uses different values"
+      "note": "CONFIRMED MISMATCH: NTA Chemistry Q57 (paper PDF p.21; question ID 691121207) gives k=1×10⁻³ mol⁻¹ L s⁻¹ and five statements A–E with combinations. Draft global Q57 instead gives k=0.3 M⁻¹ s⁻¹ and rewrites the statements/options. Do not verify or publish this draft row until replaced with exact source wording/options and keyed to option ID 691121705."
     },
     {
       "source": {
@@ -1157,9 +1157,9 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 57
+        "legacy_global_question_number": 58
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1167,7 +1167,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "second-order kinetics statement set appears aligned; compare every statement and option"
+      "note": "Verified source Chemistry Q58 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121208, correct option ID 691121711 = C). Draft global Q58 matches all four oxide sets and the key."
     },
     {
       "source": {
@@ -1177,9 +1177,9 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 52
+        "legacy_global_question_number": 59
       },
-      "status": "confirmed_mismatch",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1187,7 +1187,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "source is H₂S/HS⁻ equilibrium with Ka₁=8.3×10^-8 and Ka₂=10^-13; draft is a different acid"
+      "note": "Verified source Chemistry Q59 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121209, correct option ID 691121714 = B). Draft global Q59 matches both statements and options; both statements are false, consistent with official key."
     },
     {
       "source": {
@@ -1197,9 +1197,9 @@
       },
       "draft_candidate": {
         "subject": "Chemistry",
-        "legacy_global_question_number": 56
+        "legacy_global_question_number": 60
       },
-      "status": "candidate_matches_core_setup",
+      "status": "verified_exact_match",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1207,7 +1207,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "weak-acid/NaOH titration appears aligned; verify exact pH outputs and option order"
+      "note": "Verified source Chemistry Q60 against NTA paper PDF p.22 and final answer key PDF p.2 (question ID 691121210, correct option ID 691121717 = A). Draft global Q60 matches both statements, complex order and option ordering; official key is option A."
     },
     {
       "source": {
