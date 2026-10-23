@@ -532,6 +532,52 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
  .home-guide-card{min-height:88px}
 }
 </style>
+<style id="blackjee-one-screen-home-v5">
+/* One-screen pass: fewer competing elements, clear primary action, compact quick navigation. */
+@media(max-width:780px){
+ .hero.wrap{padding-top:10px;padding-bottom:10px}
+ .hero.wrap>.eyebrow{font-size:.64rem;gap:7px}
+ .hero.wrap h1{font-size:clamp(2.05rem,9vw,2.8rem);letter-spacing:-.06em;margin:8px 0 9px;line-height:.94}
+ .hero.wrap .hero-copy{font-size:.82rem;line-height:1.42;max-width:42rem;margin:0 0 10px}
+ .hero.wrap>.hero-bottom{grid-template-columns:minmax(0,1fr) minmax(0,.66fr);gap:7px;margin-bottom:9px}
+ .hero.wrap>.hero-bottom .btn{min-height:42px;font-size:.66rem;letter-spacing:.01em}
+ .hero.wrap>.schedule-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+ .hero.wrap>.schedule-strip .schedule-box{min-height:54px;padding:8px 9px;border-radius:10px}
+ .hero.wrap>.schedule-strip .schedule-box small{font-size:.58rem;line-height:1.28}
+ .hero.wrap>.schedule-strip .schedule-box strong{font-size:.8rem;line-height:1.22}
+ .hero.wrap>.schedule-strip .schedule-box:nth-child(2){display:none!important}
+ .hero.wrap>.hero-stats{display:none!important}
+ .home-guide.wrap{padding-top:12px;padding-bottom:12px}
+ .home-guide-heading{margin-bottom:8px}
+ .home-guide-heading h2{font-size:1.05rem;line-height:1.2;margin:3px 0}
+ .home-guide-heading p{font-size:.72rem;line-height:1.35;margin:3px 0}
+ .home-guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px}
+ .home-guide-card{min-height:80px;padding:10px;border-radius:11px;gap:5px}
+ .home-guide-card .guide-kicker{font-size:.53rem;line-height:1.25}
+ .home-guide-card strong{font-size:.77rem;line-height:1.25}
+ .home-guide-card>span:not(.guide-kicker){display:none!important}
+ .home-guide-card>b{font-size:.58rem;line-height:1.25;margin-top:auto}
+ #challenge{padding-top:12px}
+ #challenge .section-head{margin-bottom:9px}
+}
+@media(max-width:380px){
+ .hero.wrap h1{font-size:2.02rem}
+ .hero.wrap .hero-copy{font-size:.78rem}
+ .hero.wrap>.hero-bottom{grid-template-columns:1fr}
+ .hero.wrap>.hero-bottom .btn{width:100%;min-height:40px}
+ .home-guide-card{min-height:74px;padding:9px}
+ .home-guide-card strong{font-size:.73rem}
+}
+@media(min-width:781px) and (max-height:800px){
+ .hero.wrap{padding-top:18px;padding-bottom:18px}
+ .hero.wrap h1{font-size:clamp(2.5rem,4vw,3.8rem);margin:10px 0}
+ .hero.wrap .hero-copy{line-height:1.5;margin-bottom:12px}
+ .hero.wrap>.hero-bottom{margin-bottom:12px}
+ .hero.wrap>.schedule-strip .schedule-box{min-height:66px;padding:10px 12px}
+ .hero.wrap>.hero-stats{margin-top:8px;padding-top:8px}
+ .home-guide.wrap{padding-top:14px;padding-bottom:14px}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#challenge">Skip to today's challenge</a>
