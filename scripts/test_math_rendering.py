@@ -16,6 +16,8 @@ CASES = [
     ("spaced subscript", "P small A", r"P_{A}"),
     ("numbered subscript", "Tsmall1", r"T_{1}"),
     ("squared variable", "r square", r"r^2"),
+    ("already delimited power", r"\\(10 ki minus 9\\)", r"10^{-9}"),
+    ("already delimited subscript", r"\\(P small A\\)", r"P_{A}"),
 ]
 
 def extract_function(source: str, signature: str) -> str:
