@@ -229,10 +229,15 @@ def audit_crosswalk(report, batch_records):
         if status == "verified" and not str(row.get("verification_evidence", "")).strip():
             issue(report, "ERROR", "CROSSWALK_VERIFICATION_EVIDENCE", where,
                   "Verified rows require a source citation/page and answer-key check note.")
+    allowed_statuses = {"unmatched", "candidate_needs_exact_review", "verified"}
+    for status in status_counts:
+        if status not in allowed_statuses:
+            issue(report, "ERROR", "CROSSWALK_UNKNOWN_STATUS", CROSSWALK_PATH.name,
+                  f"Unsupported crosswalk status: {status!r}.")
     pending = sum(count for status, count in status_counts.items() if status != "verified")
     if pending:
-        issue(report, "WARN", "SOURCE_FIDELITY_PENDING", CROSSWALK_PATH.name,
-              f"{pending} of {len(rows)} source rows are not verified; publication must remain blocked.")
+        issue(report, "ERROR", "SOURCE_FIDELITY_PENDING", CROSSWALK_PATH.name,
+              f"{pending} of {len(rows)} source rows are not verified; publication gate must fail.")
     report["crosswalk"] = {
         "rows": len(rows),
         "statuses": dict(sorted((str(k), v) for k, v in status_counts.items())),
