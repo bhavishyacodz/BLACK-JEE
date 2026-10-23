@@ -42,14 +42,15 @@ The PYQ browse pages and Prep Studio now retry a failed raw-GitHub diagram reque
 
 ## Source wording note
 
-The prior audit flagged Q41's “minimum” refractive-index wording as potentially inconsistent with the TIR upper-limit condition; the original question and options must be rechecked before changing the wording. Do not silently rewrite the exam question.
+The official [NTA question paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf) confirms that Q41 says “minimum value of n₂ required for total internal reflection”. The physics threshold n₂ = 1.6 sin 60° = 4√3/5 is the **maximum permissible** coating refractive index, so the source wording appears internally inconsistent. The JSON draft now preserves the official wording and explicitly flags the inconsistency instead of silently rewriting the question.
 
 
 ## Verification log — 2026-10-23
 
 - Repository path check: all 11 SVG paths listed above were retrievable from the default branch.
 - Restored the 75-record JSON draft archive to the default branch; static validation found 25 records per subject, no duplicate question numbers within each subject sequence, all required fields present, and all 75 records unpublished. These structural checks do not establish that the questions reproduce the official paper or that every answer is correct.
-- Q30 and Q42 SVG source files were re-fetched and exist; this is not a live-browser render test or proof of source-paper fidelity.
+- Compared the following question content and diagram topics against the official NTA PDF: Q28 Atwood machine, Q30 NAND circuit, Q41 prism, Q42 LCR circuit, Q50 rod/sphere axes, Q57 kinetics graph, Q63 substituted diarylmethyl ions, Q66 product structures, Q67 enol ether, Q68 reaction sequence and Q75 Carius-analysis sequence. These spot checks confirm the draft topic/diagram mapping; the entire 75-question bank and every answer key have not yet been independently audited.
+- Q30 and Q42 SVG source files were re-fetched and exist; live-browser rendering is still unverified.
 - Q63 SVG was corrected in commit [e6f99e83920d9ad9814c615d80ee91d1ebd36724](https://github.com/bhavishyacodz/BLACK-JEE/commit/e6f99e83920d9ad9814c615d80ee91d1ebd36724) to make the diarylmethyl central-carbon/ring connections explicit.
 - The responsive gallery at [diagram-audit.html](../../../../diagram-audit.html) is an asset-loading preview only; its status badges do not certify scientific correctness.
 - Supabase table inspection was denied in this session. No database writes were made.
