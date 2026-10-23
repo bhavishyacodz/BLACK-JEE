@@ -8,7 +8,7 @@
     "shift": 1,
     "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf"
   },
-  "workflow_status": "content_added_source_verification_pending",
+  "workflow_status": "solutions_batch_1_independently_verified_staging",
   "publication_policy": "DRAFT_ONLY",
   "expected_counts": {
     "Physics": 25,
@@ -16,7 +16,7 @@
     "Mathematics": 25,
     "total": 75
   },
-  "important_note": "All 75 question slots now contain staging content: Mathematics slots 1–25, Physics slots 1–25, and Chemistry slots 1–25, corresponding to paper questions 1–75. The first 45 questions were previously checked against the official NTA paper. Newly supplied paper questions 46–75 have been transcribed into the manifest but have not yet been independently checked against the official PDF; OCR-corrupted formulas and structure-dependent questions are explicitly flagged for review. Answer keys, worked solutions, MathJax browser checks, mobile rendering checks, and diagram asset/render verification remain pending. All entries remain staging-only; nothing has been imported into Supabase or published.",
+  "important_note": "Solutions batch 1: Mathematics questions 1–15 have answer keys and independently checked derivations in staging. Browser MathJax/mobile rendering remains unchecked. Questions remain unpublished; no Supabase import was performed. Awaiting solutions for Mathematics Q16–25, Physics Q26–50, and Chemistry Q51–75.",
   "status_definitions": {
     "awaiting_source": "Question content has not yet been recovered or supplied.",
     "content_added": "Content added but not verified against a trustworthy source.",
@@ -2136,8 +2136,8 @@
         "9",
         "4"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "6",
+      "solution": "For arccos, -3<=4x+2[x]<=3. Splitting by floor intervals gives x in [-1/4,0) when [x]=-1 and x in [0,3/4] when [x]=0; all other integer intervals give no solutions. Thus [alpha,beta]=[-1/4,3/4] and 12(alpha+beta)=6.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2147,8 +2147,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2157,12 +2157,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 1,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "A"
     },
     {
       "slot_id": "mathematics-02",
@@ -2177,8 +2178,8 @@
         "36",
         "72"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "18",
+      "solution": "Since x^2+x-9=x+(x^2-9), |A+B|=|A|+|B| iff AB>=0 gives x(x-3)(x+3)>=0. Hence x in [-3,0] union [3,infinity), so alpha^2+beta^2+gamma^2=9+0+9=18.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2188,8 +2189,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2198,12 +2199,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "B"
     },
     {
       "slot_id": "mathematics-03",
@@ -2218,8 +2220,8 @@
         "5",
         "1"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "9",
+      "solution": "|z+2|=|z-2| implies Re(z)=0, so z=iy. Then (z+3)/(z-i)=(y-3i)/(y-1). Argument pi/4 requires equal positive real and imaginary parts, so y=-3; both parts are 3/4. Thus |z|^2=|-3i|^2=9.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2229,8 +2231,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2239,12 +2241,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "A"
     },
     {
       "slot_id": "mathematics-04",
@@ -2259,8 +2262,8 @@
         "51",
         "35"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "45",
+      "solution": "Total functions=3^4=81. By inclusion-exclusion, onto functions=3^4-3(2^4)+3(1^4)=36. Therefore not-onto functions=81-36=45.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2270,8 +2273,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2280,12 +2283,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "B"
     },
     {
       "slot_id": "mathematics-05",
@@ -2300,8 +2304,8 @@
         "21",
         "19"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "19",
+      "solution": "A^2-4A+3I=0 gives eigenvalues 1,3; trace 4 forces one of each, so det(A)=3. With a+d=4 and ad-bc=3, diagonal pairs (0,4),(1,3),(2,2),(3,1),(4,0) require bc=-3,0,1,0,-3, yielding 0,9,1,9,0 ordered (b,c) pairs. Total=19.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2311,8 +2315,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2321,12 +2325,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 2,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "D"
     },
     {
       "slot_id": "mathematics-06",
@@ -2341,8 +2346,8 @@
         "-4",
         "-3"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "-3",
+      "solution": "det(A)=-4 and X=2(adj A)^(-1)=2A/det(A)=-A/2. For 3x3 X, adj(adj X)=det(X)X; det(X)=(-1/2)^3(-4)=1/2. The result is -A/4. Since the sum of entries of A is 12, the requested sum is -3.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2352,8 +2357,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2362,12 +2367,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "D"
     },
     {
       "slot_id": "mathematics-07",
@@ -2382,8 +2388,8 @@
         "\\(\\frac{15}{29}\\)",
         "\\(\\frac{5}{29}\\)"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "5/87",
+      "solution": "Let last term l. S30=15(10/3+l)=50+15l=l^3, so l^3-15l-50=(l-5)(l^2+5l+10)=0. The quadratic has negative discriminant, hence l=5. Then 5=10/3+29d, giving d=5/87.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2393,8 +2399,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2403,12 +2409,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "A"
     },
     {
       "slot_id": "mathematics-08",
@@ -2423,8 +2430,8 @@
         "3410",
         "4320"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "4320",
+      "solution": "All queues: 7!=5040. With all girls together, treat them as a block: 5! ways for the 5 entities and 3! within the block, total 720. Hence 5040-720=4320.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2434,8 +2441,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2444,12 +2451,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 3,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "D"
     },
     {
       "slot_id": "mathematics-09",
@@ -2464,8 +2472,8 @@
         "12",
         "13"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "11",
+      "solution": "The x^3 coefficient in sum_{r=3}^{99}(1+x)^r is sum C(r,3)=C(100,4); the last term contributes C(100,3)k^3. Using C(100,4)/C(100,3)=97/4 gives k^3-1=43n. For positive natural n, k=1 is excluded; k=2..5 fail divisibility, while k=6 gives n=5. Thus p+n=6+5=11.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2475,8 +2483,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2485,12 +2493,15 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [
+        "Assumes natural numbers are positive integers; with that convention k=6 is the smallest valid value."
+      ],
+      "correct_option_label": "B"
     },
     {
       "slot_id": "mathematics-10",
@@ -2505,8 +2516,8 @@
         "161",
         "131"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "131",
+      "solution": "Mean 40 gives a+b=80. The seven known values have total absolute deviation from median 21 equal to 183; total deviation is 9*26=234, so |a-21|+|b-21|=51. Since a>b and median is 21, a>=21>=b, so a-b=51. Solving with a+b=80 gives 2a=131.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2516,8 +2527,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2526,12 +2537,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "D"
     },
     {
       "slot_id": "mathematics-11",
@@ -2546,8 +2558,8 @@
         "2:3",
         "3:2"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "5:1",
+      "solution": "A=(-3,-3), B=(-3,9), O=(0,0). OA·OB=-18, so angle AOB is obtuse. By the angle-bisector theorem AC/CB=OA/OB=sqrt(18)/sqrt(90)=1/sqrt(5); hence BC^2:AC^2=5:1.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2557,8 +2569,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2567,12 +2579,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "A"
     },
     {
       "slot_id": "mathematics-12",
@@ -2587,8 +2600,8 @@
         "497",
         "524"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "497",
+      "solution": "Midpoint AB=(5,-1) gives B=(9,-4); centroid (3,4) gives C=(-1,14). Circumcenter (alpha,beta) satisfies 4alpha-3beta=23 and -alpha+6beta=48. Thus beta=215/21, alpha=282/21, and 21(alpha+beta)=497.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2598,8 +2611,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2608,12 +2621,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 4,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "C"
     },
     {
       "slot_id": "mathematics-13",
@@ -2628,8 +2642,8 @@
         "4",
         "6"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "3",
+      "solution": "If a chord midpoint on the y-axis is (0,k), its other endpoint is Q=(-1,2k-2). Substitution in the circle gives 4k^2-14k+10=0, so k=1 or 5/2 and the endpoints are S=(-1,0), R=(-1,3). Their midpoint is (-1,3/2), so 6(alpha+beta)=3.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2639,8 +2653,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2649,12 +2663,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 5,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "B"
     },
     {
       "slot_id": "mathematics-14",
@@ -2669,8 +2684,8 @@
         "1104",
         "1204"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "1014",
+      "solution": "Parametrize P=(2s,3s,3s-1), Q=(-t-1,t+2,4t). Since PQ is parallel to (1,-1,2), component relations give s=1/5 and t=-8/15. Then PQ=(-13/15,13/15,-26/15), so 225a^2=169(1+1+4)=1014.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2680,8 +2695,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2690,12 +2705,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 5,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "B"
     },
     {
       "slot_id": "mathematics-15",
@@ -2710,8 +2726,8 @@
         "8",
         "12"
       ],
-      "correct_answer": null,
-      "solution": null,
+      "correct_answer": "6",
+      "solution": "A point on the line through (-2,-8,6) parallel to (1,-1,2) is Q=(k-2,-k-8,2k+6). Intersection with the first line gives k-3=(-k-9)/2=-2k-6, hence k=-1 and Q=(-3,-7,4). Therefore PQ^2=1+1+4=6.",
       "diagram": {
         "required": false,
         "asset_path": null,
@@ -2721,8 +2737,8 @@
       },
       "quality_checks": {
         "source_wording_verified": true,
-        "answer_independently_checked": false,
-        "solution_steps_checked": false,
+        "answer_independently_checked": true,
+        "solution_steps_checked": true,
         "math_render_checked": false,
         "mobile_render_checked": false
       },
@@ -2731,12 +2747,13 @@
         "paper_id": "BJ-JM-20260404-S1",
         "source_pdf": "JEE-Main-2026-Question-Paper-B-Tech-4th-Apr-Shift-1.pdf",
         "source_page": 5,
-        "answer_source": "NOT_PROVIDED",
-        "supplied_verification_status": "content_added",
+        "answer_source": "CALCULATED_INDEPENDENTLY",
+        "supplied_verification_status": "INDEPENDENTLY_VERIFIED",
         "official_source_url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
         "source_verification_date": "2026-10-23"
       },
-      "reviewer_notes": []
+      "reviewer_notes": [],
+      "correct_option_label": "B"
     },
     {
       "slot_id": "mathematics-16",
