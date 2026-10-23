@@ -57,6 +57,13 @@ The official [NTA question paper PDF](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2f
 - **Q57 corrected in commit [0cf4c7f](https://github.com/bhavishyacodz/BLACK-JEE/commit/0cf4c7f78a14d697862066e66140aae6065c4cf4):** matched the kinetics statements to the source paper, set the correct statement set to (i) and (iii), answer B, and removed the unrelated logarithmic-plot SVG. The database question/options/answer key/solution were updated and confirmed returned answer B. It remains unpublished pending the broader bank audit.
 - No newly imported question was published during this step because the full answer-key and diagram audit is not complete.
 
+
+### Chunk 19 — Mathematics solution audit (Q7–Q25)
+
+- Independently recalculated the draft answers and main derivation steps for Q7–Q25, covering combinations/probability/statistics, coordinate geometry, trigonometry, integration, polynomials, differential equations, vectors, matrices, conics, area under curves and greatest-integer discontinuities.
+- The checked results agree with the draft keys: Q7 C (5), Q8 C (107), Q9 D (7), Q10 C (18), Q11 C (7/2), Q12 B (4), Q13 A (0), Q14 B (12), Q15 A (1), Q16 B (√3/2), Q17 C (15π), Q18 D (112), Q19 C (39), Q20 B (2e²/3), Q21 120, Q22 34, Q23 18, Q24 24 and Q25 10.
+- No answer-key changes were needed in this mathematical recalculation pass. This is a calculation audit of the draft, **not** proof that every question statement/options exactly match the official paper. These rows remain under the existing publication state; no new question was published.
+
 ## Outstanding before calling the shift complete
 
 1. Compare every diagram and its labels/values against the original JEE Main 2026 April 2 Shift 2 paper.
