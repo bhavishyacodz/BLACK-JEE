@@ -150,3 +150,16 @@ Concept checks also support the current keyed choices for Q53, Q58–Q61, Q63–
 - Q68's SVG is a schematic reaction-sequence redraw. Its positional labels need a clearer source-page comparison before treating it as a faithful official-paper diagram.
 - Q66's option SVG is a candidate-structure panel; it is not the original source figure.
 - No publication status was changed by this chunk.
+
+
+## Publication status — 23 October 2026
+
+Following the owner's instruction to publish first and correct issues iteratively, all database rows for **2026 / 2 April Shift 2** were switched to `is_published = true`.
+
+Verified database counts after the update:
+- Mathematics: 25 published / 25 rows
+- Chemistry: 25 published / 25 rows
+- Physics: 26 published / 26 rows
+- Total: **76 published rows**.
+
+**Important:** the intended shift set is 75 questions; Physics has one extra legacy duplicate row, so the live database currently contains 76 published rows. This is flagged for deduplication during the correction pass. Publishing was an owner's explicit choice and does not mean all source text, answers, or diagrams have been independently verified. Corrections will be made one by one; Q41 wording/key and diagram-source fidelity remain priorities.
