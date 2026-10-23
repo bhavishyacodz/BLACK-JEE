@@ -990,166 +990,6 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 1
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 2,
-        "paper_order": 52
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 2
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 3,
-        "paper_order": 53
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 3
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 4,
-        "paper_order": 54
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 4
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 5,
-        "paper_order": 55
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 5
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 6,
-        "paper_order": 56
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 6
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 7,
-        "paper_order": 57
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 7
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 8,
-        "paper_order": 58
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 8
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 9,
-        "paper_order": 59
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
         "legacy_global_question_number": 9
       },
       "status": "needs_exact_review",
@@ -1160,173 +1000,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Mathematics Q1 gives sum of first n−1 observations 48 and sum of squares 496, with mean 8 and variance 16; compare exact notation/options against legacy Q9."
     },
     {
       "source": {
         "subject": "Mathematics",
-        "subject_question_number": 10,
-        "paper_order": 60
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 10
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 11,
-        "paper_order": 61
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 11
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 12,
-        "paper_order": 62
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 12
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 13,
-        "paper_order": 63
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 13
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 14,
-        "paper_order": 64
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 14
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 15,
-        "paper_order": 65
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 15
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 16,
-        "paper_order": 66
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 16
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 17,
-        "paper_order": 67
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 17
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 18,
-        "paper_order": 68
+        "subject_question_number": 2,
+        "paper_order": 52
       },
       "draft_candidate": {
         "subject": "Mathematics",
@@ -1340,17 +1020,37 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Mathematics Q2 is a degree-5 polynomial with extrema at ±1 and limit f(x)/x³ = −5, asking f(2)−f(−2); compare exact stem/options against legacy Q18."
     },
     {
       "source": {
         "subject": "Mathematics",
-        "subject_question_number": 19,
-        "paper_order": 69
+        "subject_question_number": 3,
+        "paper_order": 53
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 19
+        "legacy_global_question_number": 16
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Mathematics Q3 uses PS = i+j and PQ = −j+k. Legacy Q16 uses different parallelogram side vectors (PQ = j+k and PS = i−j); the vectors differ."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 4,
+        "paper_order": 54
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 2
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -1360,17 +1060,17 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Strong topic-level candidate: source Mathematics Q4 uses |z|=r and |z−3−4i|=5 with minimum distance 2; legacy Q2 has the same circles and condition. Verify options and any extra constraints."
     },
     {
       "source": {
         "subject": "Mathematics",
-        "subject_question_number": 20,
-        "paper_order": 70
+        "subject_question_number": 5,
+        "paper_order": 55
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 20
+        "legacy_global_question_number": 12
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -1380,53 +1080,13 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Mathematics Q5 parabola y=x²+px+q through (1,−1), minimizing vertex distance from x-axis; compare exact wording and options against legacy Q12."
     },
     {
       "source": {
         "subject": "Mathematics",
-        "subject_question_number": 21,
-        "paper_order": 71
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 21
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 22,
-        "paper_order": 72
-      },
-      "draft_candidate": {
-        "subject": "Mathematics",
-        "legacy_global_question_number": 22
-      },
-      "status": "needs_exact_review",
-      "publishable": false,
-      "verification": [
-        "exact_statement_and_values",
-        "options_or_numerical_format",
-        "diagram_if_any",
-        "official_final_answer_key"
-      ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
-    },
-    {
-      "source": {
-        "subject": "Mathematics",
-        "subject_question_number": 23,
-        "paper_order": 73
+        "subject_question_number": 6,
+        "paper_order": 56
       },
       "draft_candidate": {
         "subject": "Mathematics",
@@ -1440,7 +1100,335 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Mathematics Q6 circle of radius 6 and A=(3,0), with variable-diameter circle touching it; legacy Q23 uses this setup. Verify internal/external tangency condition and requested expression."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 7,
+        "paper_order": 57
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 5
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Q7 series of sums of cubes over sums of odd integers through 8 terms; compare the full expression and options against legacy Q5."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 8,
+        "paper_order": 58
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 3
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Mathematics Q8 has equations x+5y+6z=4, 2x+2y+4z=1, and x+yz? with infinitely many solutions; legacy Q3 uses different coefficients and right-hand sides. Exact stem differs."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 9,
+        "paper_order": 59
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 17
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Q9 integral of sin⁴x+cos⁴x from 0 to 20π; compare options and notation against legacy Q17."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 10,
+        "paper_order": 60
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 7
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Q10 polygon triangle-count relation P(n+1)−P(n)=66; compare exact wording and requested prime-divisor sum against legacy Q7."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 11,
+        "paper_order": 61
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 21
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Q11 relation on A×A where x divides a and y≤b, with A={2,3,4,5,6}; compare definition and options against legacy Q21."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 12,
+        "paper_order": 62
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 25
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Mathematics Q12 uses the greatest-integer function [x²−x+2] on [2,4]; legacy Q25 uses [x²−x−1/2]. The expression differs."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 13,
+        "paper_order": 63
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 19
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Q13 integral of (16x+24)/(x²+2x−15), with I(4)=14 ln 3 and I(7)=ln(2^α·3^β); compare the endpoint notation and requested α+β against legacy Q19."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 14,
+        "paper_order": 64
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 10
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Q14 circle-centre intersection of perpendicular lines x+(k−1)y+3=0 and 2x+k²y−4=0; legacy Q10 has this setup. Verify coefficients and requested chord-length square."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 15,
+        "paper_order": 65
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 20
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Mathematics Q15 asks for 3x(e²)/e² from the differential equation; legacy Q20 asks directly for x(e²). The requested output differs."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 16,
+        "paper_order": 66
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 24
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Mathematics Q16 asks A where the area is expressed as A−6 ln 3; legacy Q24 asks for 3(A+6 ln 3). The requested expression differs."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 17,
+        "paper_order": 67
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "The available transcription skips Mathematics Section-A Q17–Q20 and moves from Q16 to Section B. No candidate assigned without inspecting the source page image."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 18,
+        "paper_order": 68
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "The available transcription skips Mathematics Section-A Q17–Q20 and moves from Q16 to Section B. No candidate assigned without inspecting the source page image."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 19,
+        "paper_order": 69
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "The available transcription skips Mathematics Section-A Q17–Q20 and moves from Q16 to Section B. No candidate assigned without inspecting the source page image."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 20,
+        "paper_order": 70
+      },
+      "draft_candidate": null,
+      "status": "source_extraction_unresolved",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "The available transcription skips Mathematics Section-A Q17–Q20 and moves from Q16 to Section B. No candidate assigned without inspecting the source page image."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 21,
+        "paper_order": 71
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 13
+      },
+      "status": "confirmed_mismatch",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Source Mathematics Section-B Q1 uses (cos²θ−sin²θ)sec2θ = a²; legacy Q13 uses 2(cos⁸θ−sin⁸θ)sec2θ = a². The expression differs."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 22,
+        "paper_order": 72
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 6
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Section-B Q2 binomial sum with coefficients 1,3,3,1 and binomial indices 30−r through 33−r; compare the exact equation and domain against legacy Q6."
+    },
+    {
+      "source": {
+        "subject": "Mathematics",
+        "subject_question_number": 23,
+        "paper_order": 73
+      },
+      "draft_candidate": {
+        "subject": "Mathematics",
+        "legacy_global_question_number": 15
+      },
+      "status": "needs_exact_review",
+      "publishable": false,
+      "verification": [
+        "exact_statement_and_values",
+        "options_or_numerical_format",
+        "diagram_if_any",
+        "official_final_answer_key"
+      ],
+      "note": "Topic-level candidate: source Mathematics Section-B Q3 foot of perpendicular to line (x−1)/2=(y−2)/1=(z−α)/3 and midpoint (0,3/4,−1/4); compare exact line and values against legacy Q15."
     },
     {
       "source": {
@@ -1450,9 +1438,9 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 24
+        "legacy_global_question_number": 22
       },
-      "status": "needs_exact_review",
+      "status": "confirmed_mismatch",
       "publishable": false,
       "verification": [
         "exact_statement_and_values",
@@ -1460,7 +1448,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Source Mathematics Section-B Q4 matrix B is [[1,3],[3,9]], while legacy Q22 uses [[3,9],[1,3]]. Matrix entries differ."
     },
     {
       "source": {
@@ -1470,7 +1458,7 @@
       },
       "draft_candidate": {
         "subject": "Mathematics",
-        "legacy_global_question_number": 25
+        "legacy_global_question_number": 8
       },
       "status": "needs_exact_review",
       "publishable": false,
@@ -1480,7 +1468,7 @@
         "diagram_if_any",
         "official_final_answer_key"
       ],
-      "note": "Verification reset: the official paper is ordered Physics, Chemistry, Mathematics, while the legacy draft global numbering is Mathematics, Physics, Chemistry. This candidate is aligned by subject and local question number only; compare exact statement, values, options/answer format, diagrams and final NTA key before verification."
+      "note": "Topic-level candidate: source Mathematics Section-B Q5 coin score with 10 points for heads and 5 for tails, asking m+n for probability of exactly 30 points; compare probability condition and output against legacy Q8."
     }
   ],
   "source_pdf": "https://image-static.collegedunia.com/public/image/JEE_Main_2026_April_2_Shift_2_Question_Paper_a61eefd575669441bcfedf17fe413c6c.pdf",
