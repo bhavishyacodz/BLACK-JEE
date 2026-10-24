@@ -173,14 +173,15 @@ function fmt(q){return q.year+(q.session?" · "+q.session:"")+" · "+q.subject+"
 function optionsOf(q){return Array.isArray(q.options)?q.options:[];}
 function optionContentHtml(o,q){
  const raw=String(o??"").trim();
+ const normalized=raw.replace(/^\s*(?:\(?[A-D]\)?\s*[.)]\s*)/i,"").trim();
  let src="",alt="Option image";
- if(/^IMAGE:/i.test(raw))src=raw.slice(6).trim();
+ if(/^IMAGE:/i.test(normalized))src=normalized.slice(6).trim();
  else {
-  const md=raw.match(/^!\[([^\]]*)\]\((https:\/\/[^)\s]+)\)$/i);
-  const html=raw.match(/^<img\b[^>]*\bsrc\s*=\s*["'](https:\/\/[^"']+)["'][^>]*>/i);
+  const md=normalized.match(/^!\[([^\]]*)\]\((https:\/\/[^)\s]+)\)$/i);
+  const html=normalized.match(/^<img\b[^>]*\bsrc\s*=\s*["'](https:\/\/[^"']+)["'][^>]*>/i);
   if(md){alt=md[1]||alt;src=md[2];}
-  else if(html){src=html[1];const a=raw.match(/\balt\s*=\s*["']([^"']*)["']/i);if(a)alt=a[1]||alt;}
-  else if(/^https:\/\/\S+\.(?:png|jpe?g|gif|webp|svg)(?:[?#].*)?$/i.test(raw))src=raw;
+  else if(html){src=html[1];const a=normalized.match(/\balt\s*=\s*["']([^"']*)["']/i);if(a)alt=a[1]||alt;}
+  else if(/^https:\/\/\S+\.(?:png|jpe?g|gif|webp|svg)(?:[?#].*)?$/i.test(normalized))src=normalized;
  }
  if(src){
   if(!/^https:\/\/\S+$/i.test(src))return '<span class="muted">Option image unavailable: invalid HTTPS URL</span>';
@@ -188,7 +189,7 @@ function optionContentHtml(o,q){
   const fallback=pages!==src?pages:"";
   return '<span class="option-image-wrap" style="display:block;margin-top:5px"><img src="'+esc(src)+'" data-pages-src="'+esc(fallback)+'" alt="'+esc(alt)+'" loading="lazy" decoding="async" style="display:block;width:100%;max-width:360px;max-height:220px;object-fit:contain;object-position:left center;background:#fff;border-radius:7px;padding:6px" onerror="if(this.dataset.pagesSrc){this.src=this.dataset.pagesSrc;this.dataset.pagesSrc=\'\';}else{this.alt=\'Option image failed to load\';this.style.display=\'none\';this.nextElementSibling.style.display=\'block\';}"><span class="muted" style="display:none;font-size:.78rem">Option image failed to load. <a href="'+esc(src)+'" target="_blank" rel="noopener">Open image</a></span></span>';
  }
- return esc(prettyOptionText(raw,q));
+ return esc(prettyOptionText(normalized,q));
 }
 let mathJaxPromise=null;
 function loadMathJax(){if(window.MathJax?.typesetPromise)return Promise.resolve();if(mathJaxPromise)return mathJaxPromise;window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true,processEnvironments:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};mathJaxPromise=new Promise((resolve,reject)=>{const script=document.createElement("script");script.src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";script.async=true;script.onload=resolve;script.onerror=()=>{mathJaxPromise=null;reject(Error("Math rendering library unavailable"));};document.head.appendChild(script);});return mathJaxPromise;}
