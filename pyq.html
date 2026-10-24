@@ -173,7 +173,7 @@ function fmt(q){return q.year+(q.session?" · "+q.session:"")+" · "+q.subject+"
 function optionsOf(q){return Array.isArray(q.options)?q.options:[];}
 function optionContentHtml(o,q){
  const raw=String(o??"").trim();
- const normalized=raw.replace(/^\s*(?:\(?[A-D]\)?\s*[.)]\s*)/i,"").trim();
+ const normalized=raw.replace(/^\s*(?:[A-D]\s*[.)]|\([A-D]\)\s*)\s*/i,"").trim();
  let src="",alt="Option image";
  if(/^IMAGE:/i.test(normalized))src=normalized.slice(6).trim();
  else {
