@@ -171,7 +171,25 @@ function prettyOptionText(value,q){
 function notify(id,msg,bad=false){const e=$(id);if(e){e.textContent=msg;e.style.color=bad?"#ff8992":"#9aa3b2";}}
 function fmt(q){return q.year+(q.session?" · "+q.session:"")+" · "+q.subject+" · "+q.chapter;}
 function optionsOf(q){return Array.isArray(q.options)?q.options:[];}
-function optionContentHtml(o,q){const raw=String(o??"");if(raw.startsWith("IMAGE:")){const src=raw.slice(6).trim();if(!/^https:\/\//i.test(src))return '<span class="muted">Option image unavailable</span>';return '<img src="'+esc(src)+'" alt="Option image" loading="lazy" decoding="async" style="display:block;width:100%;max-width:360px;max-height:190px;object-fit:contain;object-position:left center;background:#fff;border-radius:7px;padding:6px;margin-top:5px" onerror="this.alt=\'Option image failed to load\';this.style.display=\'none\'">';}return esc(prettyOptionText(o,q));}
+function optionContentHtml(o,q){
+ const raw=String(o??"").trim();
+ let src="",alt="Option image";
+ if(/^IMAGE:/i.test(raw))src=raw.slice(6).trim();
+ else {
+  const md=raw.match(/^!\[([^\]]*)\]\((https:\/\/[^)\s]+)\)$/i);
+  const html=raw.match(/^<img\b[^>]*\bsrc\s*=\s*["'](https:\/\/[^"']+)["'][^>]*>/i);
+  if(md){alt=md[1]||alt;src=md[2];}
+  else if(html){src=html[1];const a=raw.match(/\balt\s*=\s*["']([^"']*)["']/i);if(a)alt=a[1]||alt;}
+  else if(/^https:\/\/\S+\.(?:png|jpe?g|gif|webp|svg)(?:[?#].*)?$/i.test(raw))src=raw;
+ }
+ if(src){
+  if(!/^https:\/\/\S+$/i.test(src))return '<span class="muted">Option image unavailable: invalid HTTPS URL</span>';
+  const pages=src.replace(/^https:\/\/raw\.githubusercontent\.com\/bhavishyacodz\/BLACK-JEE\/main\//,"https://bhavishyacodz.github.io/BLACK-JEE/");
+  const fallback=pages!==src?pages:"";
+  return '<span class="option-image-wrap" style="display:block;margin-top:5px"><img src="'+esc(src)+'" data-pages-src="'+esc(fallback)+'" alt="'+esc(alt)+'" loading="lazy" decoding="async" style="display:block;width:100%;max-width:360px;max-height:220px;object-fit:contain;object-position:left center;background:#fff;border-radius:7px;padding:6px" onerror="if(this.dataset.pagesSrc){this.src=this.dataset.pagesSrc;this.dataset.pagesSrc=\'\';}else{this.alt=\'Option image failed to load\';this.style.display=\'none\';this.nextElementSibling.style.display=\'block\';}"><span class="muted" style="display:none;font-size:.78rem">Option image failed to load. <a href="'+esc(src)+'" target="_blank" rel="noopener">Open image</a></span></span>';
+ }
+ return esc(prettyOptionText(raw,q));
+}
 let mathJaxPromise=null;
 function loadMathJax(){if(window.MathJax?.typesetPromise)return Promise.resolve();if(mathJaxPromise)return mathJaxPromise;window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true,processEnvironments:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};mathJaxPromise=new Promise((resolve,reject)=>{const script=document.createElement("script");script.src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";script.async=true;script.onload=resolve;script.onerror=()=>{mathJaxPromise=null;reject(Error("Math rendering library unavailable"));};document.head.appendChild(script);});return mathJaxPromise;}
 function typesetMath(target){if(!target)return;const text=target.textContent||"";if(!(text.includes("\\(")||text.includes("\\[")||text.includes("$")))return;loadMathJax().then(()=>{if(window.MathJax?.typesetPromise){window.MathJax.typesetClear([target]);return window.MathJax.typesetPromise([target]);}}).catch(()=>{});}
